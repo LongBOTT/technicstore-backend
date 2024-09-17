@@ -3,29 +3,28 @@ package com.example.technicstore.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "`brand`")
-public class Brand {
+@Table(name = "`carrier`")
+public class Carrier {
 
     // region Attributes
-
     // Khai báo khoá chính của bảng và tự động generate ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Tên thương hiệu với độ dài 256
+    // Tên đơn vị vận chuyển với độ dài 256
     @Column(length = 256)
     private String name;
     // endregion
 
     // region Constructor
 
-    public Brand() {
+    public Carrier() {
     }
 
     // endregion
 
-    // region  Getter and Setter
+    // region Getter and Setter
 
     public Long getId() {
         return id;

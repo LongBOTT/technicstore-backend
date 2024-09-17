@@ -2,9 +2,11 @@ package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
-@Table(name = "`order_detail`")
-public class OrderDetail {
+@Table(name = "`stock_receive_detail`")
+public class StockReceiveDetail {
 
     // region Attributes
 
@@ -13,32 +15,26 @@ public class OrderDetail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Đơn đặt hàng chứa chi tiết đơn đặt hàng
     @ManyToOne
-    @JoinColumn(name = "order_id")
-    private Order order;
+    @JoinColumn(name = "stock_receive_id")
+    private StockReceive stock_receive;
 
-    // Sản phẩm thuộc chi tiết đơn đặt hàng
     @OneToOne
     @JoinColumn(name = "product_id")
     private Product product;
 
-    // Số lượng sản phẩm được đặt
     private int quantity;
-
-    // Giá trị của chi tiết đơn đặt hàng
     private double unit_price;
-
     // endregion
 
     // region Constructor
 
-    public OrderDetail() {
+    public StockReceiveDetail() {
     }
 
     // endregion
 
-    //region Getter and Setter
+    // region Getter and Setter
 
     public Long getId() {
         return id;
@@ -48,12 +44,12 @@ public class OrderDetail {
         this.id = id;
     }
 
-    public Order getOrder() {
-        return order;
+    public StockReceive getStock_receive() {
+        return stock_receive;
     }
 
-    public void setOrder(Order order) {
-        this.order = order;
+    public void setStock_receive(StockReceive stock_receive) {
+        this.stock_receive = stock_receive;
     }
 
     public Product getProduct() {
@@ -80,5 +76,5 @@ public class OrderDetail {
         this.unit_price = unit_price;
     }
 
-    //endregion
+    // endregion
 }

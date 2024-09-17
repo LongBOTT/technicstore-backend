@@ -8,7 +8,7 @@ import java.util.Set;
 @Table(name = "`category`")
 public class Category {
 
-    // region Thuộc tính
+    // region Attributes
 
     // Khai báo khoá chính của bảng và tự động generate ID
     @Id

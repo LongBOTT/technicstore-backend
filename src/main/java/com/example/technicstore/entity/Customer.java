@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "`customer`")
 public class Customer {
 
-    // region Thuộc tính
+    // region Attributes
 
     // Khai báo khoá chính của bảng và tự động generate ID
     @Id

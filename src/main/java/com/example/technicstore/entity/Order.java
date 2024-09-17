@@ -9,7 +9,7 @@ import java.util.Set;
 @Table(name = "`order`")
 public class Order {
 
-    // region Thuộc tính
+    // region Attributes
 
     // Khai báo khoá chính của bảng và tự động generate ID
     @Id
@@ -30,6 +30,11 @@ public class Order {
 
     // Trạng thái đơn đặt hàng
     private String status;
+
+    // đôn vị phụ trách vận chuyển
+    @ManyToOne
+    @JoinColumn(name = "carrier_id")
+    private Carrier carrier;
 
     // Danh sách chi tiết đơn đặt hàng
     @OneToMany(mappedBy = "order")
