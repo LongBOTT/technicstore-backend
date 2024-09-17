@@ -34,6 +34,11 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    // Thương hiệu
+    @ManyToOne
+    @JoinColumn(name = "brand_id")
+    private Brand brand;
+
     // Nhà cung cấp sản phẩm
     @ManyToMany
     @JoinTable(
@@ -92,6 +97,14 @@ public class Product {
 
     public void setStock_quantity(int stock_quantity) {
         this.stock_quantity = stock_quantity;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
 
     public Category getCategory() {
