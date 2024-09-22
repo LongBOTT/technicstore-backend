@@ -23,12 +23,6 @@ public class Product {
     @Column(length = 4096)
     private String description;
 
-    // Giá bán của sản phẩm
-    private double price;
-
-    // Số lượng sản phẩm trong kho
-    private int stock_quantity;
-
     // Thể loại sản phẩm
     @ManyToOne
     @JoinColumn(name = "category_id")
@@ -83,20 +77,12 @@ public class Product {
         this.description = description;
     }
 
-    public double getPrice() {
-        return price;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public int getStock_quantity() {
-        return stock_quantity;
-    }
-
-    public void setStock_quantity(int stock_quantity) {
-        this.stock_quantity = stock_quantity;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     public Brand getBrand() {
@@ -105,14 +91,6 @@ public class Product {
 
     public void setBrand(Brand brand) {
         this.brand = brand;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
     }
 
     public Set<Supplier> getSuppliers() {
