@@ -2,35 +2,35 @@ package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
 
-import java.util.Set;
-
 @Entity
-@Table(name = "`stock_receive_detail`")
-public class StockReceiveDetail {
+@Table(name = "`purchase_order_detail`")
+public class PurchaseOrderDetail {
 
-    // region Attributes
 
+    // region Attribute
     // Khai báo khoá chính của bảng và tự động generate ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @ManyToOne
-    @JoinColumn(name = "stock_receive_id")
-    private StockReceive stock_receive;
 
     // Phien bản đặt hàng
     @ManyToOne
     @JoinColumn(name = "variant_id")
     private Variant variant;
 
+    // số lượng dặt
     private int quantity;
-    private double unit_price;
+
+    // phieu dat
+    @ManyToOne
+    @JoinColumn(name = "purchase_order_id")
+    private PurchaseOrder purchase_order;
+
     // endregion
 
     // region Constructor
 
-    public StockReceiveDetail() {
+    public PurchaseOrderDetail() {
     }
 
     // endregion
@@ -43,14 +43,6 @@ public class StockReceiveDetail {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public StockReceive getStock_receive() {
-        return stock_receive;
-    }
-
-    public void setStock_receive(StockReceive stock_receive) {
-        this.stock_receive = stock_receive;
     }
 
     public Variant getVariant() {
@@ -69,12 +61,12 @@ public class StockReceiveDetail {
         this.quantity = quantity;
     }
 
-    public double getUnit_price() {
-        return unit_price;
+    public PurchaseOrder getPurchase_order() {
+        return purchase_order;
     }
 
-    public void setUnit_price(double unit_price) {
-        this.unit_price = unit_price;
+    public void setPurchase_order(PurchaseOrder purchase_order) {
+        this.purchase_order = purchase_order;
     }
 
     // endregion

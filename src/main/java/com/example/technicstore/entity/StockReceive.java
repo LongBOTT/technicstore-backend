@@ -50,14 +50,6 @@ public class StockReceive {
         this.id = id;
     }
 
-    public Supplier getSupplier() {
-        return supplier;
-    }
-
-    public void setSupplier(Supplier supplier) {
-        this.supplier = supplier;
-    }
-
     public double getTotal() {
         return total;
     }

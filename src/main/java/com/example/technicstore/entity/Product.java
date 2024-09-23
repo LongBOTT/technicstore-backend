@@ -84,13 +84,5 @@ public class Product {
         this.brand = brand;
     }
 
-    public Set<Supplier> getSuppliers() {
-        return suppliers;
-    }
-
-    public void setSuppliers(Set<Supplier> suppliers) {
-        this.suppliers = suppliers;
-    }
-
     //endregion
 }

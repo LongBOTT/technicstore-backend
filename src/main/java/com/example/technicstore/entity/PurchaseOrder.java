@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "`purchase_order`")
@@ -21,16 +22,13 @@ public class PurchaseOrder {
     @JoinColumn(name = "supplier_id")
     private Supplier supplier;
 
-    // Phien bản đặt hàng
-    @ManyToOne
-    @JoinColumn(name = "variant_id")
-    private Variant variant;
-
-    // số lượng dặt
-    private int quantity;
-
     // Ngày đặt hàng
     private Date order_date;
+
+    // Danh sách chi tiết đơn đặt hàng
+    @OneToMany(mappedBy = "purchase_order")
+    private Set<PurchaseOrderDetail> purchase_order_details;
+
     //endregion
 
     // region Constructor
@@ -58,22 +56,6 @@ public class PurchaseOrder {
         this.supplier = supplier;
     }
 
-    public Variant getVariant() {
-        return variant;
-    }
-
-    public void setVariant(Variant variant) {
-        this.variant = variant;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
     public Date getOrder_date() {
         return order_date;
     }
@@ -82,5 +64,12 @@ public class PurchaseOrder {
         this.order_date = order_date;
     }
 
+    public Set<PurchaseOrderDetail> getPurchase_order_details() {
+        return purchase_order_details;
+    }
+
+    public void setPurchase_order_details(Set<PurchaseOrderDetail> purchase_order_details) {
+        this.purchase_order_details = purchase_order_details;
+    }
     // endregion
 }
