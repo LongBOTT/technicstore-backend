@@ -33,15 +33,6 @@ public class Product {
     @JoinColumn(name = "brand_id")
     private Brand brand;
 
-    // Nhà cung cấp sản phẩm
-    @ManyToMany
-    @JoinTable(
-            name = "product_supplier", // Tên bảng trung gian
-            joinColumns = @JoinColumn(name = "product_id"), // Khóa ngoại tới bảng Product
-            inverseJoinColumns = @JoinColumn(name = "supplier_id") // Khóa ngoại tới bảng Supplier
-    )
-    private Set<Supplier> suppliers;
-
     // endregion
 
     // region Constructor

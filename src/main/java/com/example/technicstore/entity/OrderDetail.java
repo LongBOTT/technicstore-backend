@@ -18,10 +18,10 @@ public class OrderDetail {
     @JoinColumn(name = "order_id")
     private Order order;
 
-    // Sản phẩm thuộc chi tiết đơn đặt hàng
+    // IMEI sản phẩm đặt
     @OneToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+    @JoinColumn(name = "IMEI_code")
+    private Imei Imei;
 
     // Số lượng sản phẩm được đặt
     private int quantity;
@@ -29,11 +29,26 @@ public class OrderDetail {
     // Giá trị của chi tiết đơn đặt hàng
     private double unit_price;
 
+    // Đơn vị
+    private String unit;
+
+    // Tổng tiền
+    private double total;
+
     // endregion
 
     // region Constructor
 
     public OrderDetail() {
+    }
+
+    public OrderDetail(Order order, com.example.technicstore.entity.Imei imei, int quantity, double unit_price, String unit) {
+        this.order = order;
+        Imei = imei;
+        this.quantity = quantity;
+        this.unit_price = unit_price;
+        this.unit = unit;
+        this.total = this.unit_price * this.quantity;
     }
 
     // endregion
@@ -56,12 +71,12 @@ public class OrderDetail {
         this.order = order;
     }
 
-    public Product getProduct() {
-        return product;
+    public com.example.technicstore.entity.Imei getImei() {
+        return Imei;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setImei(com.example.technicstore.entity.Imei imei) {
+        Imei = imei;
     }
 
     public int getQuantity() {
@@ -78,6 +93,22 @@ public class OrderDetail {
 
     public void setUnit_price(double unit_price) {
         this.unit_price = unit_price;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 
     //endregion

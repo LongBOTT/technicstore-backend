@@ -29,7 +29,16 @@ public class Order {
     private double total_amount;
 
     // Trạng thái đơn đặt hàng
-    private String status;
+    private String order_status;
+
+    // Trạng thái thanh toan
+    private String payment_status;
+
+    // Trạng thái giao hang
+    private String delivery_status;
+
+    // Trạng thái thu ho
+    private String cod_status;
 
     // đôn vị phụ trách vận chuyển
     @ManyToOne
@@ -39,6 +48,15 @@ public class Order {
     // Danh sách chi tiết đơn đặt hàng
     @OneToMany(mappedBy = "order")
     private Set<OrderDetail> order_details;
+
+    // Phương thức thanh toán (Tiền mặt hoặc Chuyển khoản)
+    @Column(name = "payment_method", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private PaymentMethod payment_method;
+
+    // Ghi chú với độ dài 4096
+    @Column(length = 4096)
+    private String note;
     // endregion
 
     // region Constructor
@@ -82,12 +100,44 @@ public class Order {
         this.total_amount = total_amount;
     }
 
-    public String getStatus() {
-        return status;
+    public String getOrder_status() {
+        return order_status;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setOrder_status(String order_status) {
+        this.order_status = order_status;
+    }
+
+    public String getPayment_status() {
+        return payment_status;
+    }
+
+    public void setPayment_status(String payment_status) {
+        this.payment_status = payment_status;
+    }
+
+    public String getDelivery_status() {
+        return delivery_status;
+    }
+
+    public void setDelivery_status(String delivery_status) {
+        this.delivery_status = delivery_status;
+    }
+
+    public String getCod_status() {
+        return cod_status;
+    }
+
+    public void setCod_status(String cod_status) {
+        this.cod_status = cod_status;
+    }
+
+    public Carrier getCarrier() {
+        return carrier;
+    }
+
+    public void setCarrier(Carrier carrier) {
+        this.carrier = carrier;
     }
 
     public Set<OrderDetail> getOrder_details() {
@@ -98,5 +148,38 @@ public class Order {
         this.order_details = order_details;
     }
 
-    //endregion
+    public PaymentMethod getPayment_method() {
+        return payment_method;
+    }
+
+    public void setPayment_method(PaymentMethod payment_method) {
+        this.payment_method = payment_method;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
+//endregion
+
+    public enum PaymentMethod {
+        Cash("Tiền mặt"),
+        BankTransfer("Chuyển khoản");
+
+        private final String description;
+
+        // Constructor cho enum
+        PaymentMethod(String description) {
+            this.description = description;
+        }
+
+        // Phương thức để lấy mô tả
+        public String getDescription() {
+            return description;
+        }
+    }
 }

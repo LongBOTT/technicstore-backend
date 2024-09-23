@@ -14,15 +14,15 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Khóa ngoại đến bảng Products
+    // Khóa ngoại đến bảng Variants
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+    @JoinColumn(name = "variant_id")
+    private Variant variant;
 
-    // Khóa ngoại đến bảng Customers
+    // Khóa ngoại đến bảng Accounts
     @ManyToOne
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
+    @JoinColumn(name = "account_id")
+    private Account account;
 
     // Đánh giá sản phẩm (từ 1 đến 5)
     @Column(name = "rating")
@@ -46,7 +46,6 @@ public class Review {
 
     // region Getter and Setter
 
-
     public Long getId() {
         return id;
     }
@@ -55,20 +54,20 @@ public class Review {
         this.id = id;
     }
 
-    public Product getProduct() {
-        return product;
+    public Variant getVariant() {
+        return variant;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setVariant(Variant variant) {
+        this.variant = variant;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Account getAccount() {
+        return account;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public int getRating() {
@@ -94,5 +93,7 @@ public class Review {
     public void setCreated_at(LocalDateTime created_at) {
         this.created_at = created_at;
     }
+
+
     //endregion
 }

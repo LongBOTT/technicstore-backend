@@ -1,6 +1,7 @@
 package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
+import org.aspectj.weaver.ast.Var;
 
 import java.time.LocalDateTime;
 
@@ -15,24 +16,19 @@ public class ShoppingCart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Khóa ngoại đến bảng Customers
+    // Khóa ngoại đến bảng accounts
     @ManyToOne
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
+    @JoinColumn(name = "account_id")
+    private Account account;
 
     // Khóa ngoại đến bảng Products
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+    @JoinColumn(name = "variant_id")
+    private Variant variant;
 
     // Số lượng sản phẩm trong giỏ hàng
     @Column(name = "quantity")
     private int quantity;
-
-    // Thời gian thêm vào giỏ hàng
-    @Column(name = "added_at", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
-    private LocalDateTime added_at;
-
 
     // endregion
 
@@ -53,20 +49,20 @@ public class ShoppingCart {
         this.id = id;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Account getAccount() {
+        return account;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
-    public Product getProduct() {
-        return product;
+    public Variant getVariant() {
+        return variant;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setVariant(Variant variant) {
+        this.variant = variant;
     }
 
     public int getQuantity() {
@@ -77,13 +73,6 @@ public class ShoppingCart {
         this.quantity = quantity;
     }
 
-    public LocalDateTime getAdded_at() {
-        return added_at;
-    }
-
-    public void setAdded_at(LocalDateTime added_at) {
-        this.added_at = added_at;
-    }
 
     // endregion
 }

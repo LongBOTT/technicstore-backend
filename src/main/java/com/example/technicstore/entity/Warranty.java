@@ -2,8 +2,6 @@ package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
 
-import java.util.Date;
-
 @Entity
 @Table(name = "`warranty`")
 public class Warranty {
@@ -15,23 +13,16 @@ public class Warranty {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "order_detail_id")
-    private OrderDetail order_detail;
+    // Tên chính sách bảo hành
+    private String name;
 
-    // Ngày bắt đầu bảo hành
-    @Column(name = "warranty_start_date")
-    private Date warranty_start_date;
+    // Số tháng bảo hành
+    private int month_number;
 
-    // Ngày kết thúc bảo hành
-    @Column(name = "warranty_end_date")
-    private Date warranty_end_date;
-
-    // Trạng thái bảo hành
-    @Column(name = "status")
-    private String status;
-
-    // endregion
+    // Ghi chú với độ dài 4096
+    @Column(length = 4096)
+    private String note;
+    //endregion
 
     // region Constructor
 
@@ -40,7 +31,7 @@ public class Warranty {
 
     // endregion
 
-    // Getter and Setter
+    // region Getter and Setter
 
     public Long getId() {
         return id;
@@ -50,37 +41,31 @@ public class Warranty {
         this.id = id;
     }
 
-    public OrderDetail getOrder_detail() {
-        return order_detail;
+    public String getName() {
+        return name;
     }
 
-    public void setOrder_detail(OrderDetail order_detail) {
-        this.order_detail = order_detail;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Date getWarranty_start_date() {
-        return warranty_start_date;
+    public int getMonth_number() {
+        return month_number;
     }
 
-    public void setWarranty_start_date(Date warranty_start_date) {
-        this.warranty_start_date = warranty_start_date;
+    public void setMonth_number(int month_number) {
+        this.month_number = month_number;
     }
 
-    public Date getWarranty_end_date() {
-        return warranty_end_date;
+    public String getNote() {
+        return note;
     }
 
-    public void setWarranty_end_date(Date warranty_end_date) {
-        this.warranty_end_date = warranty_end_date;
+    public void setNote(String note) {
+        this.note = note;
     }
 
-    public String getStatus() {
-        return status;
-    }
+    // region
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
 
-    // endregion
 }

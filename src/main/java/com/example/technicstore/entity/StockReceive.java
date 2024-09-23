@@ -16,11 +16,6 @@ public class StockReceive {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Khóa ngoại đến bảng Suppliers
-    @ManyToOne
-    @JoinColumn(name = "supplier")
-    private Supplier supplier;
-
     // Số tiền
     @Column(name = "total")
     private double total;
