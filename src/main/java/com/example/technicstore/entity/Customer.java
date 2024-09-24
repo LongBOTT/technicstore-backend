@@ -29,8 +29,10 @@ public class Customer {
     @Column(length = 256)
     private String address;
 
-    // Danh sách phiếu mua hàng của khách hàng
+    private String city;
 
+    // Quan/huyen
+    private String district;
     // endregion
 
     // region Constructor
@@ -38,11 +40,13 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(String name, String email, String phone, String address) {
+    public Customer(String name, String email, String phone, String address, String district, String city) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.address = address;
+        this.district = district;
+        this.city = city;
     }
 // endregion
 
@@ -88,5 +92,20 @@ public class Customer {
         this.address = address;
     }
 
-    //endregion
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+//endregion
 }

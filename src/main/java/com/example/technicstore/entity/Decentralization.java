@@ -13,15 +13,15 @@ public class Decentralization {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "role_id")
     private Role role;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "function_id")
     private Function function;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "module_id")
     private Module module;
 
