@@ -26,6 +26,7 @@ public class StockReceiveDetail {
 
     private int quantity;
     private double unit_price;
+    private String unit;
     // endregion
 
     // region Constructor
@@ -77,5 +78,12 @@ public class StockReceiveDetail {
         this.unit_price = unit_price;
     }
 
-    // endregion
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+// endregion
 }

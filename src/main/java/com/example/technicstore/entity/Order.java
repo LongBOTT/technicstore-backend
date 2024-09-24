@@ -27,6 +27,8 @@ public class Order {
 
     // Tổng tiền của đơn đặt hàng
     private double total_amount;
+    // Phi van chuyen
+    private double delivery_fee;
 
     // Trạng thái đơn đặt hàng
     private String order_status;
@@ -98,6 +100,14 @@ public class Order {
 
     public void setTotal_amount(double total_amount) {
         this.total_amount = total_amount;
+    }
+
+    public double getDelivery_fee() {
+        return delivery_fee;
+    }
+
+    public void setDelivery_fee(double delivery_fee) {
+        this.delivery_fee = delivery_fee;
     }
 
     public String getOrder_status() {

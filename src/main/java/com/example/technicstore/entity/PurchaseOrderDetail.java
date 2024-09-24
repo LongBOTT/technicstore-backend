@@ -20,7 +20,7 @@ public class PurchaseOrderDetail {
 
     // số lượng dặt
     private int quantity;
-
+    private String unit;
     // phieu dat
     @ManyToOne
     @JoinColumn(name = "purchase_order_id")
@@ -59,6 +59,14 @@ public class PurchaseOrderDetail {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     public PurchaseOrder getPurchase_order() {

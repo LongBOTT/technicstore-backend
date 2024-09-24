@@ -16,8 +16,11 @@ public class Warranty {
     // Tên chính sách bảo hành
     private String name;
 
-    // Số tháng bảo hành
-    private int month_number;
+    // Thời gian bảo hành
+    private int value;
+
+    // Đơn vị
+    private String unit;
 
     // Ghi chú với độ dài 4096
     @Column(length = 4096)
@@ -49,14 +52,6 @@ public class Warranty {
         this.name = name;
     }
 
-    public int getMonth_number() {
-        return month_number;
-    }
-
-    public void setMonth_number(int month_number) {
-        this.month_number = month_number;
-    }
-
     public String getNote() {
         return note;
     }
@@ -65,7 +60,22 @@ public class Warranty {
         this.note = note;
     }
 
-    // region
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+// region
 
 
 }
