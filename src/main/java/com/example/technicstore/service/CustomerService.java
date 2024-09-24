@@ -22,21 +22,31 @@ public class CustomerService {
         return customerRepository.findById(id);
     }
 
+    public Optional<Customer> getCustomersByPhoneOrEmail(String phone, String email) {
+        return customerRepository.findCustomerByPhoneOrEmail(phone, email);
+    }
+
+    public List<Customer> getCustomersByName(String name) {
+        return customerRepository.findCustomerByNameContainsIgnoreCase(name);
+    }
+
     public Customer createCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
 
     public Customer updateCustomer(Long id, Customer updatedCustomer) {
-//        Optional<Customer> customerOptional = customerRepository.findById(id);
-//        if (customerOptional.isPresent()) {
-//            Customer existingCustomer = customerOptional.get();
-//            existingCustomer.setFullName(updatedCustomer.getFullName());
-//            existingCustomer.setEmail(updatedCustomer.getEmail());
-//            existingCustomer.setPhoneNumber(updatedCustomer.getPhoneNumber());
-//            existingCustomer.setAddress(updatedCustomer.getAddress());
-//            return customerRepository.save(existingCustomer);
-//        }
-        return null; // Hoặc có thể ném ngoại lệ
+        Optional<Customer> customerOptional = customerRepository.findById(id);
+        if (customerOptional.isPresent()) {
+            Customer existingCustomer = customerOptional.get();
+            existingCustomer.setName(updatedCustomer.getName());
+            existingCustomer.setEmail(updatedCustomer.getEmail());
+            existingCustomer.setPhone(updatedCustomer.getPhone());
+            existingCustomer.setAddress(updatedCustomer.getAddress());
+            existingCustomer.setDistrict(updatedCustomer.getDistrict());
+            existingCustomer.setCity(updatedCustomer.getCity());
+            return customerRepository.save(existingCustomer);
+        }
+        return null;
     }
 
     public void deleteCustomer(Long id) {

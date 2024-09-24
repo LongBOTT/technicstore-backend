@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class DataInitializer implements CommandLineRunner {
@@ -72,84 +73,84 @@ public class DataInitializer implements CommandLineRunner {
         // endregion
 
         // region decentralization
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Trang bán hàng").get(0), functionRepository.findFunctionByName("Xem").get(0));
+        seedDataDecentralization("Admin", "Trang bán hàng", "Xem");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý tài khoản").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý tài khoản").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý tài khoản").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý tài khoản").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý tài khoản").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý tài khoản").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý tài khoản", "Xem");
+        seedDataDecentralization("Admin", "Quản lý tài khoản", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý tài khoản", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý tài khoản", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý tài khoản", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý tài khoản", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý khách hàng").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý khách hàng").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý khách hàng").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý khách hàng").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý khách hàng").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý khách hàng").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý khách hàng", "Xem");
+        seedDataDecentralization("Admin", "Quản lý khách hàng", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý khách hàng", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý khách hàng", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý khách hàng", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý khách hàng", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phí vận chuyển").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phí vận chuyển").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phí vận chuyển").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phí vận chuyển").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phí vận chuyển").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phí vận chuyển").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý phí vận chuyển", "Xem");
+        seedDataDecentralization("Admin", "Quản lý phí vận chuyển", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý phí vận chuyển", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý phí vận chuyển", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý phí vận chuyển", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý phí vận chuyển", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý sản phẩm").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý sản phẩm").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý sản phẩm").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý sản phẩm").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý sản phẩm").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý sản phẩm").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý sản phẩm", "Xem");
+        seedDataDecentralization("Admin", "Quản lý sản phẩm", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý sản phẩm", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý sản phẩm", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý sản phẩm", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý sản phẩm", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý đơn hàng", "Xem");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu đặt hàng").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu đặt hàng").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu đặt hàng").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu đặt hàng").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu đặt hàng").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu đặt hàng").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý phiếu đặt hàng", "Xem");
+        seedDataDecentralization("Admin", "Quản lý phiếu đặt hàng", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý phiếu đặt hàng", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý phiếu đặt hàng", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý phiếu đặt hàng", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý phiếu đặt hàng", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu nhập hàng").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu nhập hàng").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu nhập hàng").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu nhập hàng").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu nhập hàng").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý phiếu nhập hàng").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý phiếu nhập hàng", "Xem");
+        seedDataDecentralization("Admin", "Quản lý phiếu nhập hàng", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý phiếu nhập hàng", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý phiếu nhập hàng", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý phiếu nhập hàng", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý phiếu nhập hàng", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý nhà cung cấp").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý nhà cung cấp").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý nhà cung cấp").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý nhà cung cấp").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý nhà cung cấp").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý nhà cung cấp").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý nhà cung cấp", "Xem");
+        seedDataDecentralization("Admin", "Quản lý nhà cung cấp", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý nhà cung cấp", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý nhà cung cấp", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý nhà cung cấp", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý nhà cung cấp", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý giao dịch khách hàng").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý giao dịch khách hàng").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý giao dịch khách hàng").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý giao dịch khách hàng").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý giao dịch khách hàng").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý giao dịch khách hàng").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý giao dịch khách hàng", "Xem");
+        seedDataDecentralization("Admin", "Quản lý giao dịch khách hàng", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý giao dịch khách hàng", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý giao dịch khách hàng", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý giao dịch khách hàng", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý giao dịch khách hàng", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý chính sách bảo hành").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý chính sách bảo hành").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý chính sách bảo hành").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý chính sách bảo hành").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý chính sách bảo hành").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý chính sách bảo hành").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý chính sách bảo hành", "Xem");
+        seedDataDecentralization("Admin", "Quản lý chính sách bảo hành", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý chính sách bảo hành", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý chính sách bảo hành", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý chính sách bảo hành", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý chính sách bảo hành", "In file");
 
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng bảo hành").get(0), functionRepository.findFunctionByName("Xem").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng bảo hành").get(0), functionRepository.findFunctionByName("Thêm").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng bảo hành").get(0), functionRepository.findFunctionByName("Sửa").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng bảo hành").get(0), functionRepository.findFunctionByName("Xoá").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng bảo hành").get(0), functionRepository.findFunctionByName("Xuất file").get(0));
-        seedDataDecentralization(roleRepository.findRoleByName("Admin").get(0), moduleRepository.findModuleByName("Quản lý đơn hàng bảo hành").get(0), functionRepository.findFunctionByName("In file").get(0));
+        seedDataDecentralization("Admin", "Quản lý đơn hàng bảo hành", "Xem");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng bảo hành", "Thêm");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng bảo hành", "Sửa");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng bảo hành", "Xoá");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng bảo hành", "Xuất file");
+        seedDataDecentralization("Admin", "Quản lý đơn hàng bảo hành", "In file");
 
         // endregion
 
@@ -233,7 +234,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataCustomer(String name, String phone, String address, String email, String district, String city) {
-        List<Customer> customers = customerRepository.findCustomerByPhoneOrEmail(phone, email);
+        Optional<Customer> customers = customerRepository.findCustomerByPhoneOrEmail(phone, email);
         if (customers.isEmpty()) {
             Customer customer = new Customer(name, email, phone, address, district, city);
             customerRepository.save(customer);
@@ -241,7 +242,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataAttribute(String name) {
-        List<Attribute> attributes = attributeRepository.findAttributeByName(name);
+        Optional<Attribute> attributes = attributeRepository.findAttributeByName(name);
         if (attributes.isEmpty()) {
             Attribute attribute = new Attribute();
             attribute.setName(name);
@@ -250,7 +251,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataBrand(String name) {
-        List<Brand> brands = brandRepository.findBrandByName(name);
+        Optional<Brand> brands = brandRepository.findBrandByName(name);
         if (brands.isEmpty()) {
             Brand brand = new Brand();
             brand.setName(name);
@@ -259,7 +260,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataCategory(String name) {
-        List<Category> categories = categoryRepository.findCategoryByName(name);
+        Optional<Category> categories = categoryRepository.findCategoryByName(name);
         if (categories.isEmpty()) {
             Category category = new Category();
             category.setName(name);
@@ -268,7 +269,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataSupplier(String name, String email, String phone) {
-        List<Supplier> suppliers = supplierRepository.findSupplierByName(name);
+        Optional<Supplier> suppliers = supplierRepository.findSupplierByName(name);
         if (suppliers.isEmpty()) {
             Supplier supplier = new Supplier();
             supplier.setName(name);
@@ -279,7 +280,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataCarrier(String name) {
-        List<Carrier> carriers = carrierRepository.findCarrierByName(name);
+        Optional<Carrier> carriers = carrierRepository.findCarrierByName(name);
         if (carriers.isEmpty()) {
             Carrier carrier = new Carrier();
             carrier.setName(name);
@@ -288,7 +289,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataWarranty(String name, String unit , int value) {
-        List<Warranty> warranties = warrantyRepository.findWarrantyByName(name);
+        Optional<Warranty> warranties = warrantyRepository.findWarrantyByName(name);
         if (warranties.isEmpty()) {
             Warranty warranty = new Warranty();
             warranty.setName(name);
@@ -299,7 +300,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataRole(String name) {
-        List<Role> roles = roleRepository.findRoleByName(name);
+        Optional<Role> roles = roleRepository.findRoleByName(name);
         if (roles.isEmpty()) {
             Role role = new Role();
             role.setName(name);
@@ -308,7 +309,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataFunction(String name) {
-        List<Function> functions = functionRepository.findFunctionByName(name);
+        Optional<Function> functions = functionRepository.findFunctionByName(name);
         if (functions.isEmpty()) {
             Function function = new Function();
             function.setName(name);
@@ -317,7 +318,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataModule(String name) {
-        List<Module> modules = moduleRepository.findModuleByName(name);
+        Optional<Module> modules = moduleRepository.findModuleByName(name);
         if (modules.isEmpty()) {
             Module module = new Module();
             module.setName(name);
@@ -325,14 +326,23 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    public void seedDataDecentralization(Role role, Module module, Function function) {
-        List<Decentralization> decentralizations = decentralizationRepository.findDecentralizationByRoleAndModuleAndFunction(role, module, function);
-        if (decentralizations.isEmpty()) {
-            Decentralization decentralization = new Decentralization();
+    public void seedDataDecentralization(String role_name, String module_name, String function_name) {
+        Decentralization decentralization = new Decentralization();
+        Optional<Role> roleOptional = roleRepository.findRoleByName(role_name);
+        if (roleOptional.isPresent()) {
+            Role role = roleOptional.get();
             decentralization.setRole(role);
-            decentralization.setModule(module);
-            decentralization.setFunction(function);
-            decentralizationRepository.save(decentralization);
         }
+        Optional<Module> moduleOptional = moduleRepository.findModuleByName(module_name);
+        if (moduleOptional.isPresent()) {
+            Module module = moduleOptional.get();
+            decentralization.setModule(module);
+        }
+        Optional<Function> functionOptional = functionRepository.findFunctionByName(function_name);
+        if (functionOptional.isPresent()) {
+            Function function = functionOptional.get();
+            decentralization.setFunction(function);
+        }
+        decentralizationRepository.save(decentralization);
     }
 }

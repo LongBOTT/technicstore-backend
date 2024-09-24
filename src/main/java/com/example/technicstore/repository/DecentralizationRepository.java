@@ -7,9 +7,11 @@ import com.example.technicstore.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface DecentralizationRepository extends JpaRepository<Decentralization, Long> {
 
     // Tìm kiếm theo role, module, function
-    List<Decentralization> findDecentralizationByRoleAndModuleAndFunction(Role role, Module module, Function function);
+    Optional<Decentralization> findDecentralizationByRoleAndModuleAndFunction(Role role, Module module, Function function);
+
 }
