@@ -16,10 +16,16 @@ public class StockReceive {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Số tiền
+    // Số tiền hàng
+    @Column(name = "total_value")
+    private double total_value;
+
+    // Chi phí phát sinh
+    @Column(name = "cost")
+    private double cost;
+    // Tổng giá trị phiếu nhập
     @Column(name = "total")
     private double total;
-
     // Ngày nhập kho
     @Column(name = "receive_date")
     private LocalDateTime receive_date;
@@ -80,6 +86,22 @@ public class StockReceive {
 
     public void setStock_receive_details(Set<StockReceiveDetail> stock_receive_details) {
         this.stock_receive_details = stock_receive_details;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public double getTotal_value() {
+        return total_value;
+    }
+
+    public void setTotal_value(double total_value) {
+        this.total_value = total_value;
     }
     // endregion
 }

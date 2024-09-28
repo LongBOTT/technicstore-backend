@@ -15,7 +15,7 @@ public class WarrantyNote {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "order_detail_id")
     private OrderDetail order_detail;
 

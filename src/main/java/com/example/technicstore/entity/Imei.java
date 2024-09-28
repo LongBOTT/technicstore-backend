@@ -15,8 +15,8 @@ public class Imei {
 
     private String IMEI_code;
     @OneToOne
-    @JoinColumn(name = "variant_id")
-    private Variant variant;
+    @JoinColumn(name = "stock_receive_detail_id")
+    private StockReceiveDetail stock_receive_detail;
 
     // endregion
 
@@ -45,12 +45,12 @@ public class Imei {
         this.IMEI_code = IMEI_code;
     }
 
-    public Variant getVariant() {
-        return variant;
+    public StockReceiveDetail getStock_receive_detail() {
+        return stock_receive_detail;
     }
 
-    public void setVariant(Variant variant) {
-        this.variant = variant;
+    public void setStock_receive_detail(StockReceiveDetail stock_receive_detail) {
+        this.stock_receive_detail = stock_receive_detail;
     }
 
     // endregion

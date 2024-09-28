@@ -36,6 +36,10 @@ public class Product {
     @JoinColumn(name = "brand_id")
     private Brand brand;
 
+    @ManyToOne
+    @JoinColumn(name = "warranty_id")
+    private Warranty warranty;
+
     // endregion
 
     // region Constructor
@@ -94,5 +98,14 @@ public class Product {
     public void setWeight(double weight) {
         this.weight = weight;
     }
-//endregion
+
+    public Warranty getWarranty() {
+        return warranty;
+    }
+
+    public void setWarranty(Warranty warranty) {
+        this.warranty = warranty;
+    }
+
+    //endregion
 }
