@@ -19,8 +19,15 @@ public class Product {
     @Column(length = 256)
     private String name;
 
+    // Tổng số lượng tồn của tất cả phiên bản cộng lại
+    private int total;
+
+    // Số lượng sản phẩm có thể bán
+    private int available;
+
     // khối lượng
     private double weight;
+
 
     // Mô tả sản phẩm với độ dài 4096
     @Column(length = 4096)
@@ -40,7 +47,8 @@ public class Product {
     @JoinColumn(name = "warranty_id")
     private Warranty warranty;
 
-    // endregion
+   // xóa sản phẩm
+    private int deleted; // 0: chưa xóa, 1: đã xóa
 
     // region Constructor
 
@@ -73,6 +81,18 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    public void setTotal(int total) {
+        this.total = total;
+    }
+    public int getTotal() {
+        return total;
+    }
+    public void setAvailable(int available) {
+        this.available = available;
+    }
+    public int getAvailable() {
+        return available;
     }
 
     public Category getCategory() {
@@ -107,5 +127,11 @@ public class Product {
         this.warranty = warranty;
     }
 
+    public int getDeleted() {
+        return deleted;
+    }
+    public void setDeleted(int deleted) {
+        this.deleted = deleted;
+    }
     //endregion
 }

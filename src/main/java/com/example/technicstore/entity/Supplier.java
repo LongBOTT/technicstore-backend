@@ -31,6 +31,18 @@ public class Supplier {
     @Column(length = 256)
     private String address;
 
+    // số đơn hàng đã mua
+    private int count;
+
+    // công nợ nhà cung cấp
+    private double debt;
+
+    // Tổng chi tiêu nhà cung cấp
+    private double total;
+
+    // đã xóa
+    private int deleted; // 0: chưa xóa, 1: đã xóa
+
     // endregion
 
     // region Constructor

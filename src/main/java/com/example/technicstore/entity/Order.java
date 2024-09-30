@@ -30,22 +30,16 @@ public class Order {
     // Phi van chuyen
     private double delivery_fee;
 
-    // Trạng thái đơn đặt hàng
+    // Check xem có vận đơn hay chưa (đã tạo vận đơn hay chưa)
     private String order_status;
 
     // Trạng thái thanh toan
     private String payment_status;
 
-    // Trạng thái giao hang
-    private String delivery_status;
 
     // Trạng thái thu ho
     private String cod_status;
 
-    // đôn vị phụ trách vận chuyển
-    @ManyToOne
-    @JoinColumn(name = "carrier_id")
-    private Carrier carrier;
 
     // Danh sách chi tiết đơn đặt hàng
     @OneToMany(mappedBy = "order")
@@ -126,13 +120,7 @@ public class Order {
         this.payment_status = payment_status;
     }
 
-    public String getDelivery_status() {
-        return delivery_status;
-    }
 
-    public void setDelivery_status(String delivery_status) {
-        this.delivery_status = delivery_status;
-    }
 
     public String getCod_status() {
         return cod_status;
@@ -142,13 +130,6 @@ public class Order {
         this.cod_status = cod_status;
     }
 
-    public Carrier getCarrier() {
-        return carrier;
-    }
-
-    public void setCarrier(Carrier carrier) {
-        this.carrier = carrier;
-    }
 
     public Set<OrderDetail> getOrder_details() {
         return order_details;

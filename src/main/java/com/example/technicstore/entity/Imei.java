@@ -18,6 +18,15 @@ public class Imei {
     @JoinColumn(name = "stock_receive_detail_id")
     private StockReceiveDetail stock_receive_detail;
 
+    // đã bán hay chưa
+
+    private String sold; //  chưa bán, đã bán
+
+    // đã trả nhà cung cấp hay chưa
+    private String returned; //  chưa trả,  đã trả
+
+    // đã kích hoạt hay chưa
+    private String activated; //  chưa kích hoạt,  đã kích hoạt
     // endregion
 
     // region Constructor
@@ -52,6 +61,34 @@ public class Imei {
     public void setStock_receive_detail(StockReceiveDetail stock_receive_detail) {
         this.stock_receive_detail = stock_receive_detail;
     }
+
+    public String getSold() {
+        return sold;
+    }
+
+    public void setSold(String sold) {
+        this.sold = sold;
+    }
+
+    public String getReturned() {
+        return returned;
+    }
+
+    public void setReturned(String returned) {
+        this.returned = returned;
+    }
+
+    public String getActivated() {
+        return activated;
+    }
+
+    public void setActivated(String activated) {
+        this.activated = activated;
+    }
+
+
+
+
 
     // endregion
 }

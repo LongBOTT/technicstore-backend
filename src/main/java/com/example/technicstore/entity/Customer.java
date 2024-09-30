@@ -21,6 +21,18 @@ public class Customer {
     @Column(length = 256)
     private String email;
 
+    // Tổng chi tiêu
+    private double total;
+
+    //Tổng số lần mua hàng
+    private int count;
+
+    //Tổng số lần trả hàng
+    private int returnCount;
+
+    // công nợ
+    private double debt;
+
     // Số điện thoại khách hàng với độ dài 256
     @Column(length = 256)
     private String phone;
@@ -107,5 +119,39 @@ public class Customer {
     public void setDistrict(String district) {
         this.district = district;
     }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getReturnCount() {
+        return returnCount;
+    }
+
+    public void setReturnCount(int returnCount) {
+        this.returnCount = returnCount;
+    }
+
+    public double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(double debt) {
+        this.debt = debt;
+    }
+
+
 //endregion
 }
