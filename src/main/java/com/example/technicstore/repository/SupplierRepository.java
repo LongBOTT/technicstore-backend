@@ -8,9 +8,21 @@ import java.util.Optional;
 
 public interface SupplierRepository extends JpaRepository<Supplier, Long> {
 
-    // Tìm kiếm theo tên nhà cung cấp
-    Optional<Supplier> findSupplierByName(String name);
 
     // Tìm kiếm theo gần đúng tên nhà cung cấp
     List<Supplier> findSupplierByNameContainingIgnoreCase(String name);
+
+    // Tìm kiếm gần đúng theo số điện thoại
+    List<Supplier> findSupplierByPhoneContainingIgnoreCase(String phone);
+
+    // Tìm kiếm gần đúng theo email
+    List<Supplier> findSupplierByEmailContainingIgnoreCase(String email);
+
+    // Tìm kiếm gần đúng theo số điện thoại hoặc email
+    List<Supplier> findSupplierByPhoneContainingOrEmailContainingIgnoreCase(String phone, String email);
+
+    // Tìm kiếm theo địa chỉ
+    List<Supplier> findSupplierByAddressContainingIgnoreCase(String address);
+
+
 }

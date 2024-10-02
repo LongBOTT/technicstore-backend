@@ -30,6 +30,21 @@ public class CustomerController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    // Lấy thông tin khách hàng theo số điện thoại hoặc email
+    @GetMapping("/search")
+    public ResponseEntity<Customer> getCustomersByPhoneOrEmail(@RequestParam(required = false) String phone, @RequestParam(required = false) String email) {
+        Optional<Customer> customer = customerService.getCustomersByPhoneOrEmail(phone, email);
+        return customer.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    // Lấy danh sách khách hàng theo tên
+    @GetMapping("/search/name")
+    public List<Customer> getCustomersByName(@RequestParam String name) {
+        return customerService.getCustomersByName(name);
+    }
+
+
     // Tạo mới một khách hàng
     @PostMapping
     public ResponseEntity<Customer> createCustomer(@RequestBody Customer customer) {

@@ -13,4 +13,6 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
 
     // Tìm kiếm theo gần đúng tên tài khoản
     List<Account> findAccountByUsernameContainingIgnoreCase(String name);
+
+
 }
