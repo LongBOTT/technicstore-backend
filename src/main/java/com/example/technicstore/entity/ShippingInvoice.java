@@ -36,10 +36,18 @@ public class ShippingInvoice {
     private Carrier carrier;
 
     // Trạng thái đối soát
-    private String reconciliation_status;
+    @ManyToOne
+    @JoinColumn(name = "check_sheet_id")
+    private CheckSheet check_sheet;
+
+    //trạng thái giao hàng
+    private String status;
 
     // Có phải vận đơn mới nhất không
     private int is_latest;
+
+    public ShippingInvoice() {
+    }
 
     public Carrier getCarrier() {
         return carrier;
@@ -89,13 +97,13 @@ public class ShippingInvoice {
         this.delivery_date = delivery_date;
     }
 
-    public String getReconciliation_status() {
-        return reconciliation_status;
+
+    public CheckSheet getCheck_sheet() {
+        return check_sheet;
     }
 
-
-    public void setReconciliation_status(String reconciliation_status) {
-        this.reconciliation_status = reconciliation_status;
+    public void setCheck_sheet(CheckSheet check_sheet) {
+        this.check_sheet = check_sheet;
     }
 
     public int getIs_latest() {
@@ -106,5 +114,11 @@ public class ShippingInvoice {
         this.is_latest = is_latest;
     }
 
+    public String getStatus() {
+        return status;
+    }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

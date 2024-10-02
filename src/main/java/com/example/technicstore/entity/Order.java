@@ -34,7 +34,7 @@ public class Order {
     private String order_status;
 
     // Trạng thái thanh toan
-    private String payment_status;
+    private Boolean payment_status;
 
 
     // Trạng thái thu ho
@@ -112,14 +112,13 @@ public class Order {
         this.order_status = order_status;
     }
 
-    public String getPayment_status() {
+    public Boolean getPayment_status() {
         return payment_status;
     }
 
-    public void setPayment_status(String payment_status) {
+    public void setPayment_status(Boolean payment_status) {
         this.payment_status = payment_status;
     }
-
 
 
     public String getCod_status() {

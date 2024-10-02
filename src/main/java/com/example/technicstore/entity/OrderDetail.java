@@ -19,9 +19,12 @@ public class OrderDetail {
     private Order order;
 
     // IMEI sản phẩm đặt
-    @OneToOne
-    @JoinColumn(name = "IMEI_code")
-    private Imei Imei;
+//    @OneToOne
+//    @JoinColumn(name = "IMEI_code")
+//    private Imei Imei;
+    @ManyToOne
+    @JoinColumn(name = "variant_id")
+    private Variant variant;
 
     // Số lượng sản phẩm được đặt
     private int quantity;
@@ -42,14 +45,14 @@ public class OrderDetail {
     public OrderDetail() {
     }
 
-    public OrderDetail(Order order, com.example.technicstore.entity.Imei imei, int quantity, double unit_price, String unit) {
-        this.order = order;
-        Imei = imei;
-        this.quantity = quantity;
-        this.unit_price = unit_price;
-        this.unit = unit;
-        this.total = this.unit_price * this.quantity;
-    }
+//    public OrderDetail(Order order, com.example.technicstore.entity.Imei imei, int quantity, double unit_price, String unit) {
+//        this.order = order;
+//        Imei = imei;
+//        this.quantity = quantity;
+//        this.unit_price = unit_price;
+//        this.unit = unit;
+//        this.total = this.unit_price * this.quantity;
+//    }
 
     // endregion
 
@@ -71,12 +74,21 @@ public class OrderDetail {
         this.order = order;
     }
 
-    public com.example.technicstore.entity.Imei getImei() {
-        return Imei;
+//    public com.example.technicstore.entity.Imei getImei() {
+//        return Imei;
+//    }
+//
+//    public void setImei(com.example.technicstore.entity.Imei imei) {
+//        Imei = imei;
+//    }
+
+
+    public Variant getVariant() {
+        return variant;
     }
 
-    public void setImei(com.example.technicstore.entity.Imei imei) {
-        Imei = imei;
+    public void setVariant(Variant variant) {
+        this.variant = variant;
     }
 
     public int getQuantity() {

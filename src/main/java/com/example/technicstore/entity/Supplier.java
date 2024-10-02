@@ -34,8 +34,6 @@ public class Supplier {
     // số đơn hàng đã mua
     private int count;
 
-    // công nợ nhà cung cấp
-    private double debt;
 
     // Tổng chi tiêu nhà cung cấp
     private double total;
@@ -94,5 +92,28 @@ public class Supplier {
         this.address = address;
     }
 
-    //endregion
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public int getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(int deleted) {
+        this.deleted = deleted;
+    }
+//endregion
 }

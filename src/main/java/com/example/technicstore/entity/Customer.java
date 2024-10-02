@@ -30,8 +30,6 @@ public class Customer {
     //Tổng số lần trả hàng
     private int returnCount;
 
-    // công nợ
-    private double debt;
 
     // Số điện thoại khách hàng với độ dài 256
     @Column(length = 256)
@@ -144,13 +142,7 @@ public class Customer {
         this.returnCount = returnCount;
     }
 
-    public double getDebt() {
-        return debt;
-    }
 
-    public void setDebt(double debt) {
-        this.debt = debt;
-    }
 
 
 //endregion

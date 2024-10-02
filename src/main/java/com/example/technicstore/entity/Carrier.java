@@ -15,6 +15,20 @@ public class Carrier {
     // Tên đơn vị vận chuyển với độ dài 256
     @Column(length = 256)
     private String name;
+
+    // Số điện thoại
+    @Column(length = 256)
+    private String phone;
+
+    // email
+    @Column(length = 256)
+    private String email;
+
+    // Địa chỉ
+    @Column(length = 256)
+    private String address;
+
+
     // endregion
 
     // region Constructor

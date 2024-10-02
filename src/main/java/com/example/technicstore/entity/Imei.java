@@ -18,9 +18,10 @@ public class Imei {
     @JoinColumn(name = "stock_receive_detail_id")
     private StockReceiveDetail stock_receive_detail;
 
-    // đã bán hay chưa
-
-    private String sold; //  chưa bán, đã bán
+    // đã bán hay chưa và cần dùng khi tạo đơn trả
+    @ManyToOne
+    @JoinColumn(name = "order_detail_id")
+    private OrderDetail order_detail;
 
     // đã trả nhà cung cấp hay chưa
     private String returned; //  chưa trả,  đã trả
@@ -62,13 +63,6 @@ public class Imei {
         this.stock_receive_detail = stock_receive_detail;
     }
 
-    public String getSold() {
-        return sold;
-    }
-
-    public void setSold(String sold) {
-        this.sold = sold;
-    }
 
     public String getReturned() {
         return returned;
@@ -86,9 +80,9 @@ public class Imei {
         this.activated = activated;
     }
 
+    public OrderDetail getOrder_detail() {
+        return order_detail;
+    }
 
-
-
-
-    // endregion
+// endregion
 }

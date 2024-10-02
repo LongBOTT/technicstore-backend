@@ -16,6 +16,11 @@ public class StockReceive {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    //nhân viên nhập kho
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private Employee employee;
+
 // nhà cung cấp
     @ManyToOne
     @JoinColumn(name = "supplier_id")
@@ -52,6 +57,22 @@ public class StockReceive {
     // endregion
 
     // region Getter and Setter
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public Supplier getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
+    }
 
     public Long getId() {
         return id;
