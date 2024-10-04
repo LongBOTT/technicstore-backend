@@ -32,14 +32,14 @@ public class SupplierService {
         return supplierRepository.findSupplierByNameContainingIgnoreCase(name);
     }
 
-    // tìm kiếm chính xác theo số điện thoại
-    public Optional<Supplier> getSupplierByPhoneContaining(String phone) {
-        return supplierRepository.findSupplierByPhone(phone);
+    // tìm kiếm gần đúng theo số điện thoại (chứa chuỗi phone)
+    public List<Supplier> getSupplierByPhoneContaining(String phone) {
+        return supplierRepository.findSupplierByPhoneContainingIgnoreCase(phone);
     }
 
-    // tìm kiếm gần đúng theo số điện thoại (chứa chuỗi phone)
-    public List<Supplier> getSupplierByPhone(String phone) {
-        return supplierRepository.findSupplierByPhoneContainingIgnoreCase(phone);
+    // tìm kiếm chính xác theo số điện thoại
+    public Optional<Supplier> getSupplierByPhone(String phone) {
+        return supplierRepository.findSupplierByPhone(phone);
     }
 
     // tìm kiếm chính xác theo email

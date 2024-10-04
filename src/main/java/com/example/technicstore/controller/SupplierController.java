@@ -32,7 +32,7 @@ public class SupplierController {
     }
 
     // Tìm nhà cung cấp theo tên chính xác
-    @GetMapping("/search/name")
+    @GetMapping("/search/name/exact")
     public ResponseEntity<Supplier> getSupplierByName(@RequestParam String name) {
         Optional<Supplier> supplier = supplierService.getSupplierByName(name);
         return supplier.map(ResponseEntity::ok)
@@ -46,9 +46,9 @@ public class SupplierController {
     }
 
     // Tìm nhà cung cấp theo số điện thoại chính xác
-    @GetMapping("/search/phone")
+    @GetMapping("/search/phone/exact")
     public ResponseEntity<Supplier> getSupplierByPhone(@RequestParam String phone) {
-        Optional<Supplier> supplier = supplierService.getSupplierByPhoneContaining(phone);
+        Optional<Supplier> supplier = supplierService.getSupplierByPhone(phone);
         return supplier.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
@@ -56,11 +56,11 @@ public class SupplierController {
     // Tìm nhà cung cấp theo số điện thoại gần đúng (chứa chuỗi phone)
     @GetMapping("/search/phone/containing")
     public List<Supplier> getSupplierByPhoneContaining(@RequestParam String phone) {
-        return supplierService.getSupplierByPhone(phone);
+        return supplierService.getSupplierByPhoneContaining(phone);
     }
 
     // Tìm nhà cung cấp theo email chính xác
-    @GetMapping("/search/email")
+    @GetMapping("/search/email/exact")
     public ResponseEntity<Supplier> getSupplierByEmail(@RequestParam String email) {
         Optional<Supplier> supplier = supplierService.getSupplierByEmail(email);
         return supplier.map(ResponseEntity::ok)

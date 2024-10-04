@@ -29,8 +29,6 @@ public interface SupplierRepository extends JpaRepository<Supplier, Long> {
     // Tìm kiếm gần đúng theo email (chứa chuỗi email)
     List<Supplier> findSupplierByEmailContainingIgnoreCase(String email);
 
-    // Tìm kiếm theo số điện thoại hoặc email (chính xác)
-    Optional<Supplier> findSupplierByPhoneOrEmail(String phone, String email);
 
     // Tìm kiếm gần đúng theo số điện thoại hoặc email chính xác (chứa chuỗi phone hoặc email)
     List<Supplier> findSupplierByPhoneContainingOrEmailContainingIgnoreCase(String phone, String email);

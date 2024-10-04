@@ -29,11 +29,19 @@ public class FunctionController {
     }
 
 
-    // Tìm các chức năng gần đúng theo tên
-    @GetMapping("/search/name")
-    public List<Function> searchFunctionsByName(@RequestParam String name) {
+    // Tìm các chức năng gần đúng theo tên chứa chuỗi name
+    @GetMapping("/search/name/containing")
+    public List<Function> searchFunctionsByNameContaining(@RequestParam String name) {
         return functionService.getFunctionsByNameContaining(name);
     }
+  // Tìm các chức năng theo tên chính xác
+    @GetMapping("/search/name/exact")
+    public ResponseEntity<Function> searchFunctionsByName(@RequestParam String name) {
+        Optional<Function> function = functionService.getFunctionByName(name);
+        return function.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
 
     @PostMapping
     public ResponseEntity<Function> createFunction(@RequestBody Function function) {

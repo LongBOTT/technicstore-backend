@@ -31,8 +31,14 @@ public class AttributeController {
     }
 
     // Lấy danh sách thuộc tính theo tên gần đúng
-    @GetMapping("/search/name")
+    @GetMapping("/search/name/containing")
     public List<Attribute> getAttributeByNameContaining(@RequestParam String name) {
+        return attributeService.getAttributeByNameContaining(name);
+    }
+
+    // Lấy danh sách thuộc tính theo tên chính xác
+    @GetMapping("/search/name/exact")
+    public Optional<Attribute> getAttributeByName(@RequestParam String name) {
         return attributeService.getAttributeByName(name);
     }
 

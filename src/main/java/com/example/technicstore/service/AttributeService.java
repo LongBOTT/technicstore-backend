@@ -25,8 +25,13 @@ public class AttributeService {
     }
 
     // Lấy thuộc tính theo tên gần đúng
-    public List<Attribute> getAttributeByName(String name) {
+    public List<Attribute> getAttributeByNameContaining(String name) {
         return attributeRepository.findAttributeByNameContainingIgnoreCase(name);
+    }
+
+    // Lấy thuộc tính theo tên chính xác
+    public Optional<Attribute> getAttributeByName(String name) {
+        return attributeRepository.findAttributeByName(name);
     }
 
     // Tạo mới thuộc tính

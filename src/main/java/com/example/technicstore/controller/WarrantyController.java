@@ -31,8 +31,13 @@ public class WarrantyController {
     }
 
     // Lấy danh sách chính sách bảo hành theo tên gần đúng
-    @GetMapping("/search/name")
+    @GetMapping("/search/name/containing")
     public List<Warranty> getWarrantyByNameContaining(@RequestParam String name) {
+        return warrantyService.getWarrantyByNameContaining(name);
+    }
+    // Lấy danh sách chính sách bảo hành theo tên chính xác
+    @GetMapping("/search/name/exact")
+    public Optional<Warranty> getWarrantyByName(@RequestParam String name) {
         return warrantyService.getWarrantyByName(name);
     }
 

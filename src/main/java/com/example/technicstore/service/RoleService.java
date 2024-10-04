@@ -24,6 +24,11 @@ public class RoleService {
         return roleRepository.findById(id);
     }
 
+    // Tìm role theo tên chính xác
+    public Optional<Role> getRoleByName(String name) {
+        return roleRepository.findRoleByName(name);
+    }
+
     // Tìm role gần đúng theo tên
     public List<Role> getRoleByNameContaining(String name) {
         return roleRepository.findRoleByNameContainingIgnoreCase(name);

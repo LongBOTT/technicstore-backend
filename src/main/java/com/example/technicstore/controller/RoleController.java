@@ -30,12 +30,19 @@ public class RoleController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // Lấy role theo tên
-    @GetMapping("/search/name")
+    // Lấy role theo tên chứa chuỗi name
+    @GetMapping("/search/name/containing")
     public List<Role> getRoleByNameContaining(@RequestParam String name) {
         return roleService.getRoleByNameContaining(name);
     }
 
+    // Lấy role theo tên chính xác
+    @GetMapping("/search/name/exact")
+    public ResponseEntity<Role> getRoleByName(@RequestParam String name) {
+        Optional<Role> role = roleService.getRoleByName(name);
+        return role.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
     @PostMapping
     public ResponseEntity<Role> createRole(@RequestBody Role role) {
         Role createdRole = roleService.createRole(role);

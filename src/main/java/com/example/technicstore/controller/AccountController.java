@@ -31,16 +31,16 @@ public class AccountController {
     }
 
     // Tìm tài khoản theo tên tài khoản chính xác
-    @GetMapping("/username/{username}")
-    public ResponseEntity<Account> getAccountByUsername(@PathVariable String username) {
+    @GetMapping("/search/username/exact")
+    public ResponseEntity<Account> getAccountByUsername(@RequestParam String username) {
         Optional<Account> account = accountService.getAccountByUsername(username);
         return account.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     // Tìm các tài khoản gần đúng theo tên tài khoản
-    @GetMapping("/search/username")
-    public List<Account> searchAccountsByUsername(@RequestParam String username) {
+    @GetMapping("/search/username/containing")
+    public List<Account> searchAccountsByUsernameContaining(@RequestParam String username) {
         return accountService.getAccountsByUsernameContaining(username);
     }
 

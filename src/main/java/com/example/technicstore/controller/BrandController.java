@@ -30,9 +30,15 @@ public class BrandController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // Lấy danh sách thương hiệu theo tên
-    @GetMapping("/search/name")
-    public List<Brand> getBrandByNameContaining(@RequestParam String name) {
+    // Lấy danh sách thương hiệu theo tên chính xác
+    @GetMapping("/search/name/exact")
+    public Optional<Brand> getBrandByNameContaining(@RequestParam String name) {
+        return brandService.getBrandByName(name);
+    }
+
+    // Lấy danh sách thương hiệu theo tên chứa chuỗi name
+    @GetMapping("/search/name/containing")
+    public List<Brand> getBrandByName(@RequestParam String name) {
         return brandService.getBrandByNameContaining(name);
     }
 

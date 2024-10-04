@@ -31,16 +31,16 @@ public class CarrierController {
     }
 
     // Tìm đơn vị vận chuyển theo tên chính xác
-    @GetMapping("/name/{name}")
-    public ResponseEntity<Carrier> getCarrierByName(@PathVariable String name) {
+    @GetMapping("/search/name/exact")
+    public ResponseEntity<Carrier> getCarrierByName(@RequestParam String name) {
         Optional<Carrier> carrier = carrierService.getCarrierByName(name);
         return carrier.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     // Tìm các đơn vị vận chuyển gần đúng theo tên
-    @GetMapping("/search/name")
-    public List<Carrier> searchCarriersByName(@RequestParam String name) {
+    @GetMapping("/search/name/containing")
+    public List<Carrier> searchCarriersByNameContaining(@RequestParam String name) {
         return carrierService.getCarriersByNameContaining(name);
     }
 

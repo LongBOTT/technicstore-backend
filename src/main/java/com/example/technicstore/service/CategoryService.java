@@ -22,7 +22,7 @@ public class CategoryService {
         return categoryRepository.findById(id);
     }
 
-    // Tìm kiếm danh mục theo tên
+    // Tìm kiếm danh mục theo tên chính xác
     public Optional<Category> getCategoryByName(String name) {
         return categoryRepository.findCategoryByName(name);
     }

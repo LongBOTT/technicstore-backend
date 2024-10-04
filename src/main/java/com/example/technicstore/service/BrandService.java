@@ -22,6 +22,12 @@ public class BrandService {
         return brandRepository.findById(id);
     }
 
+    // Lấy danh sách thương hiệu theo tên chính xác
+    public Optional<Brand> getBrandByName(String name) {
+        return brandRepository.findBrandByName(name);
+    }
+
+    // Lấy danh sách thương hiệu theo tên chứa chuỗi name
     public List<Brand> getBrandByNameContaining(String name) {
         return brandRepository.findBrandByNameContainingIgnoreCase(name);
     }

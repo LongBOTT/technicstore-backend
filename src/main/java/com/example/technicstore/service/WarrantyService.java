@@ -25,10 +25,14 @@ public class WarrantyService {
     }
 
     // Tìm chính sách bảo hành theo tên gần đúng
-    public List<Warranty> getWarrantyByName(String name) {
+    public List<Warranty> getWarrantyByNameContaining(String name) {
         return warrantyRepository.findWarrantiesByNameContainsIgnoreCase(name);
     }
 
+    // Tìm chính sách bảo hành theo tên chính xác
+    public Optional<Warranty> getWarrantyByName(String name) {
+        return warrantyRepository.findWarrantyByName(name);
+    }
     // Tạo mới chính sách bảo hành
     public Warranty createWarranty(Warranty warranty) {
         return warrantyRepository.save(warranty);

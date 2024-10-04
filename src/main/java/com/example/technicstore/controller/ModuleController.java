@@ -32,7 +32,7 @@ public class ModuleController {
 
 
     // Tìm kiếm theo tên module
-    @GetMapping("/search")
+    @GetMapping("/search/name/exact")
     public ResponseEntity<Module> findModuleByName(@RequestParam String name) {
         Optional<Module> module = moduleService.findModuleByName(name);
         return module.map(ResponseEntity::ok)
@@ -40,7 +40,7 @@ public class ModuleController {
     }
 
     // Tìm kiếm theo tên module gần đúng
-    @GetMapping("/search/like")
+    @GetMapping("/search/name/containing")
     public List<Module> findModulesByNameContaining(@RequestParam String name) {
         return moduleService.findModulesByNameContainingIgnoreCase(name);
     }
