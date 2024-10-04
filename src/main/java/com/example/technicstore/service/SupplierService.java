@@ -22,12 +22,32 @@ public class SupplierService {
         return supplierRepository.findById(id);
     }
 
-    // tìm kiếm gần đúng theo số điện thoại
-    public List<Supplier> getSupplierByPhoneContaining(String phone) {
+    // tìm kiếm theo tên nhà cung cấp chính xác
+    public Optional<Supplier> getSupplierByName(String name) {
+        return supplierRepository.findSupplierByName(name);
+    }
+
+    // tìm kiếm gần đúng theo tên nhà cung cấp gần đúng (chứa chuỗi name)
+    public List<Supplier> getSupplierByNameContaining(String name) {
+        return supplierRepository.findSupplierByNameContainingIgnoreCase(name);
+    }
+
+    // tìm kiếm chính xác theo số điện thoại
+    public Optional<Supplier> getSupplierByPhoneContaining(String phone) {
+        return supplierRepository.findSupplierByPhone(phone);
+    }
+
+    // tìm kiếm gần đúng theo số điện thoại (chứa chuỗi phone)
+    public List<Supplier> getSupplierByPhone(String phone) {
         return supplierRepository.findSupplierByPhoneContainingIgnoreCase(phone);
     }
 
-    // tìm kiếm gần đúng theo email
+    // tìm kiếm chính xác theo email
+    public Optional<Supplier> getSupplierByEmail(String email) {
+        return supplierRepository.findSupplierByEmail(email);
+    }
+
+    // tìm kiếm gần đúng theo email (chứa chuỗi email)
     public List<Supplier> getSupplierByEmailContaining(String email) {
         return supplierRepository.findSupplierByEmailContainingIgnoreCase(email);
     }
@@ -35,11 +55,6 @@ public class SupplierService {
     // tìm kiếm gần đúng theo số điện thoại hoặc email
     public List<Supplier> getSupplierByPhoneContainingOrEmailContaining(String phone, String email) {
         return supplierRepository.findSupplierByPhoneContainingOrEmailContainingIgnoreCase(phone, email);
-    }
-
-    //tìm kiếm theo tên
-    public List<Supplier> getSupplierByNameContaining(String name) {
-        return supplierRepository.findSupplierByNameContainingIgnoreCase(name);
     }
 
     // tìm kiếm theo địa chỉ
@@ -62,6 +77,16 @@ public class SupplierService {
         }
         return null;
     }
+    // tìm kiếm một hoặc nhiều điều kiện
+    public List<Supplier> searchAll(String name, String phone, String email, String address) {
+        return supplierRepository.searchAll(name, phone, email, address);
+    }
+
+    // check tồn tại chính xác dùng khi thêm hoặc sửa
+    public List<Supplier> checkExist(String name,String phone, String email) {
+        return supplierRepository.checkExist(name,phone, email);
+    }
+
 
     public void deleteSupplier(Long id) {
         supplierRepository.deleteById(id);
