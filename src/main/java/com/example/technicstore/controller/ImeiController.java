@@ -30,6 +30,14 @@ public class ImeiController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    // Lấy thông tin một IMEI theo mã IMEI
+    @GetMapping("/imei_code/{imei_code}")
+    public ResponseEntity<Imei> getImeiByImeiCode(@PathVariable String imei_code) {
+        Optional<Imei> imei = imeiService.getImeiByImeiCode(imei_code);
+        return imei.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
     // Tạo mới một IMEI
     @PostMapping
     public ResponseEntity<Imei> createImei(@RequestBody Imei imei) {

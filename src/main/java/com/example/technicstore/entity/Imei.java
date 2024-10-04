@@ -13,7 +13,7 @@ public class Imei {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String IMEI_code;
+    private String imeiCode;
     @OneToOne
     @JoinColumn(name = "stock_receive_detail_id")
     private StockReceiveDetail stock_receive_detail;
@@ -37,12 +37,12 @@ public class Imei {
         this.id = id;
     }
 
-    public String getIMEI_code() {
-        return IMEI_code;
+    public String getImeiCode() {
+        return imeiCode;
     }
 
-    public void setIMEI_code(String IMEI_code) {
-        this.IMEI_code = IMEI_code;
+    public void setImeiCode(String imeiCode) {
+        this.imeiCode = imeiCode;
     }
 
     public StockReceiveDetail getStock_receive_detail() {

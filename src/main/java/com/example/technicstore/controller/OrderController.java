@@ -44,7 +44,7 @@ public class OrderController {
     }
 
     // Lấy danh sách đơn hàng theo ngày đặt hàng
-    @GetMapping("/search/order-date")
+    @GetMapping("/search/order_date")
     public List<Order> getOrdersByOrderDateBetween(@RequestParam Date startDate, @RequestParam Date  endDate) {
         return orderService.getOrdersByOrderDateBetween(startDate, endDate);
     }
@@ -74,9 +74,5 @@ public class OrderController {
         return ResponseEntity.noContent().build();
     }
 
-    // Tìm kiếm theo trạng thái đơn hàng
-    @GetMapping("/search/status")
-    public List<Order> findOrdersByStatus(@RequestParam String status) {
-        return orderService.findOrdersByStatus(status);
-    }
+
 }

@@ -23,7 +23,7 @@ public class Order {
 
     // Ngày đặt hàng
     @Temporal(TemporalType.TIMESTAMP)
-    private Date order_date;
+    private Date orderDate;
 
     // Tổng tiền của đơn đặt hàng
     private double total_amount;
@@ -31,7 +31,7 @@ public class Order {
     private double delivery_fee;
 
     // Trạng thái đơn đặt hàng
-    private String order_status;
+    private String orderStatus;
 
     // Trạng thái thanh toan
     private String payment_status;
@@ -86,12 +86,20 @@ public class Order {
         this.customer = customer;
     }
 
-    public Date getOrder_date() {
-        return order_date;
+    public Date getOrderDate() {
+        return orderDate;
     }
 
-    public void setOrder_date(Date order_date) {
-        this.order_date = order_date;
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public double getTotal_amount() {
@@ -110,13 +118,7 @@ public class Order {
         this.delivery_fee = delivery_fee;
     }
 
-    public String getOrder_status() {
-        return order_status;
-    }
 
-    public void setOrder_status(String order_status) {
-        this.order_status = order_status;
-    }
 
     public String getPayment_status() {
         return payment_status;

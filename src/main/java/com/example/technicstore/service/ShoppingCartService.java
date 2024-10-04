@@ -44,17 +44,19 @@ public class ShoppingCartService {
     }
 
     // Cập nhật giỏ hàng
-    public ShoppingCart updateShoppingCart(Long id, ShoppingCart shoppingCart) {
-        if (shoppingCartRepository.existsById(id)) {
-            shoppingCart.setId(id);
-            return shoppingCartRepository.save(shoppingCart);
+    public ShoppingCart updateShoppingCart(Long id, ShoppingCart UpdateShoppingCart) {
+        Optional<ShoppingCart> shoppingCartOptional = shoppingCartRepository.findById(id);
+    if (shoppingCartOptional.isPresent()) {
+        ShoppingCart existingShoppingCart = shoppingCartOptional.get();
+        existingShoppingCart.setQuantity(UpdateShoppingCart.getQuantity());
+        return shoppingCartRepository.save(existingShoppingCart);
         }
-        return null; // Hoặc ném ra Exception
-    }
+    return null;
+}
 
-    // Xóa giỏ hàng
-    public void deleteShoppingCart(Long id) {
-        shoppingCartRepository.deleteById(id);
+    // Xóa phiên bản trong giỏ hàng
+    public void deleteShoppingCart(Long variann_id) {
+        shoppingCartRepository.deleteById(variann_id);
     }
 
 }

@@ -30,7 +30,15 @@ public class CategoryController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // Lấy danh sách thể loại theo tên
+    // Lấy danh sách thể loại theo tên (chính xác)
+    @GetMapping("/name/{name}")
+    public ResponseEntity<Category> getCategoryByName(@PathVariable String name) {
+        Optional<Category> category = categoryService.getCategoryByName(name);
+        return category.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    // Lấy danh sách thể loại theo tên (chứa chuỗi name)
     @GetMapping("/search/name")
     public List<Category> getCategoryByNameContaining(@RequestParam String name) {
         return categoryService.getCategoryByNameContaining(name);

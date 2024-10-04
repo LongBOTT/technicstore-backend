@@ -29,11 +29,6 @@ public class OrderDetailService {
         return orderDetailRepository.findById(id);
     }
 
-    // Tìm kiếm chi tiết đơn đặt hàng theo IMEI
-    public List<OrderDetail> getOrderDetailsByImei(Imei imei) {
-        return orderDetailRepository.findByImei(imei);
-    }
-
 
 
     // Tạo chi tiết đơn đặt hàng mới

@@ -22,6 +22,12 @@ public class CategoryService {
         return categoryRepository.findById(id);
     }
 
+    // Tìm kiếm danh mục theo tên
+    public Optional<Category> getCategoryByName(String name) {
+        return categoryRepository.findCategoryByName(name);
+    }
+
+    // Tim kiem danh muc theo tên gần đúng (chứa chuỗi name)
     public List<Category> getCategoryByNameContaining(String name) {
         return categoryRepository.findCategoryByNameContainingIgnoreCase(name);
     }

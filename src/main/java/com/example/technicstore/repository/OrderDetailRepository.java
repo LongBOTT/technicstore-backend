@@ -10,6 +10,5 @@ public interface OrderDetailRepository extends JpaRepository<OrderDetail, Long> 
     // Tìm kiếm theo đơn hàng
     List<OrderDetail> findByOrderId(Long orderId);
 
-    // Tìm kiếm theo IMEI
-    List<OrderDetail> findByImei(Imei imei);
+
 }

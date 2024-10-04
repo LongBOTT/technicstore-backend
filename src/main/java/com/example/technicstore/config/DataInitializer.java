@@ -1,9 +1,11 @@
 package com.example.technicstore.config;
 
+import com.example.technicstore.TechnicStoreApplication;
 import com.example.technicstore.entity.*;
 import com.example.technicstore.entity.Module;
 import com.example.technicstore.repository.*;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -37,6 +39,8 @@ public class DataInitializer implements CommandLineRunner {
         this.moduleRepository = moduleRepository;
         this.decentralizationRepository = decentralizationRepository;
     }
+
+
 
     @Override
     @Transactional
@@ -344,5 +348,10 @@ public class DataInitializer implements CommandLineRunner {
             decentralization.setFunction(function);
         }
         decentralizationRepository.save(decentralization);
+    }
+    public static void main(String[] args) {
+        // thêm data vào database
+
+
     }
 }

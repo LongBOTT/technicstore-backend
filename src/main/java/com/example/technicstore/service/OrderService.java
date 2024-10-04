@@ -50,10 +50,10 @@ public class OrderService {
         if (orderOptional.isPresent()) {
             Order existingOrder = orderOptional.get();
             existingOrder.setCustomer(updatedOrder.getCustomer());
-            existingOrder.setOrder_date(updatedOrder.getOrder_date());
+            existingOrder.setOrderDate(updatedOrder.getOrderDate());
             existingOrder.setTotal_amount(updatedOrder.getTotal_amount());
             existingOrder.setDelivery_fee(updatedOrder.getDelivery_fee());
-            existingOrder.setOrder_status(updatedOrder.getOrder_status());
+            existingOrder.setOrderStatus(updatedOrder.getOrderStatus());
             existingOrder.setPayment_status(updatedOrder.getPayment_status());
             existingOrder.setDelivery_status(updatedOrder.getDelivery_status());
             existingOrder.setCod_status(updatedOrder.getCod_status());
@@ -71,8 +71,5 @@ public class OrderService {
         orderRepository.deleteById(id);
     }
 
-    // Tìm kiếm theo trạng thái đơn hàng
-    public List<Order> findOrdersByStatus(String status) {
-        return orderRepository.findOrdersByOrderStatus(status);
-    }
+
 }

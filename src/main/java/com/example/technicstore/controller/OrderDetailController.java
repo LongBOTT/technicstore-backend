@@ -27,11 +27,8 @@ public class OrderDetailController {
         return orderDetailService.getOrderDetailsByOrderId(orderId);
     }
 
-    // Tìm kiếm chi tiết đơn đặt hàng theo IMEI
-    @GetMapping("/imei/{imei}")
-    public List<OrderDetail> getOrderDetailsByImei(@PathVariable Imei imei) {
-        return orderDetailService.getOrderDetailsByImei(imei);
-    }
+
+
 
     // Lấy chi tiết đơn đặt hàng theo ID
     @GetMapping("/{id}")

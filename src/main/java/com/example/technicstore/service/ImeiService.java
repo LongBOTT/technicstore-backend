@@ -24,6 +24,11 @@ public class ImeiService {
         return imeiRepository.findById(id);
     }
 
+    // Lấy IMEI theo mã IMEI
+    public Optional<Imei> getImeiByImeiCode(String imeiCode) {
+        return imeiRepository.findImeiByImeiCode(imeiCode);
+    }
+
     // Tạo mới IMEI
     public Imei createImei(Imei imei) {
         return imeiRepository.save(imei);
@@ -34,7 +39,7 @@ public class ImeiService {
         Optional<Imei> imeiOptional = imeiRepository.findById(id);
         if (imeiOptional.isPresent()) {
             Imei existingImei = imeiOptional.get();
-            existingImei.setIMEI_code(updatedImei.getIMEI_code());
+            existingImei.setImeiCode(updatedImei.getImeiCode());
             existingImei.setStock_receive_detail(updatedImei.getStock_receive_detail());
             return imeiRepository.save(existingImei);
         }
