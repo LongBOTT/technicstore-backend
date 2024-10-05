@@ -30,6 +30,11 @@ public class ProductService {
         return productRepository.findProductByNameContainingIgnoreCase(name);
     }
 
+    // Tìm sản phẩm theo tên chính xác
+    public Optional<Product> getProductByName(String name) {
+        return productRepository.findProductByName(name);
+    }
+
     // Tạo mới một sản phẩm
     public Product createProduct(Product product) {
         return productRepository.save(product);

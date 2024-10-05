@@ -31,11 +31,18 @@ public class ProductController {
     }
 
     // Tìm các sản phẩm gần đúng theo tên
-    @GetMapping("/search")
-    public List<Product> searchProductsByName(@RequestParam String name) {
+    @GetMapping("/search/name/containing")
+    public List<Product> searchProductsByNameContaining(@RequestParam String name) {
         return productService.getProductsByNameContaining(name);
     }
 
+    // Tìm sản phẩm theo tên chính xác
+    @GetMapping("/search/name/exact")
+    public ResponseEntity<Product> getProductByName(@RequestParam String name) {
+        Optional<Product> product = productService.getProductByName(name)  ;
+        return product.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
     // Tạo mới sản phẩm
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
