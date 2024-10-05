@@ -5,8 +5,6 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "`variant_attribute`")
 public class Variant_Attribute {
-
-
     // region Attribute
     // Khai báo khoá chính của bảng và tự động generate ID
     @Id
