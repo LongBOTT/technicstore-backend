@@ -401,7 +401,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // region variant
         // Điện thoại
-        //Iphone
+        // Iphone
         // iphone14
         seedDataVariant("iphone14", 17090000.0, 10, 1);
         seedDataVariant("iphone14", 19090000.0, 10, 1);
@@ -439,8 +439,9 @@ public class DataInitializer implements CommandLineRunner {
         // Xiaomi
         // Xiaomi Mi 11
 
-        // end region
-      //  region variant_attribute
+        // endregion
+
+        // region variant_attribute
 
         // điện thoại iphone 14 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 17.090.000
         seedDataVariantAtribute("Đen", 1, 1);
@@ -532,7 +533,7 @@ public class DataInitializer implements CommandLineRunner {
         // Xiaomi
 
 
-        // end region
+        // endregion
 
     }
 
