@@ -1,6 +1,8 @@
 package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 @Entity
 @Table(name = "`brand`")
