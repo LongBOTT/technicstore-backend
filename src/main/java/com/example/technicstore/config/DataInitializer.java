@@ -241,16 +241,16 @@ public class DataInitializer implements CommandLineRunner {
         // endregion
 
         // region supplier
-        seedDataSupplier("Apple", "apple@gmail.com", "0123456789");
-        seedDataSupplier("Samsung", "samsung@gmail.com", "0987654321");
-        seedDataSupplier("Dell", "dell@gmail.com", "0112233445");
-        seedDataSupplier("HP", "hp@gmail.com", "0223344556");
-        seedDataSupplier("Lenovo", "lenovo@gmail.com", "0334455667");
-        seedDataSupplier("Xiaomi", "xiaomi@gmail.com", "0445566778");
-        seedDataSupplier("Asus", "asus@gmail.com", "0556677889");
-        seedDataSupplier("Sony", "sony@gmail.com", "0667788990");
-        seedDataSupplier("Microsoft", "microsoft@gmail.com", "0778899001");
-        seedDataSupplier("Huawei", "huawei@gmail.com", "0889900112");
+        seedDataSupplier("Apple", "apple@gmail.com", "0123456789", "123 Đường A, Quận 1, TP HCM","Đang giao dịch");
+        seedDataSupplier("Samsung", "samsung@gmail.com", "0987654321", "456 Đường B, Quận 2, TP HCM","Đang giao dịch");
+        seedDataSupplier("Dell", "dell@gmail.com", "0112233445", "789 Đường C, Quận 3, TP HCM","Đang giao dịch");
+        seedDataSupplier("HP", "hp@gmail.com", "0223344556", "101 Đường D, Quận 4, TP HCM","Đang giao dịch");
+        seedDataSupplier("Lenovo", "lenovo@gmail.com", "0334455667", "202 Đường E, Quận 5, TP HCM","Ngưng giao dịch");
+        seedDataSupplier("Xiaomi", "xiaomi@gmail.com", "0445566778", "303 Đường F, Quận 6, TP HCM","Đang giao dịch");
+        seedDataSupplier("Asus", "asus@gmail.com", "0556677889", "404 Đường G, Quận 7, TP HCM","Ngưng giao dịch");
+        seedDataSupplier("Sony", "sony@gmail.com", "0667788990", "505 Đường H, Quận 8, TP HCM","Đang giao dịch");
+        seedDataSupplier("Microsoft", "microsoft@gmail.com", "0778899001", "606 Đường I, Quận 9, TP HCM","Ngưng giao dịch");
+        seedDataSupplier("Huawei", "huawei@gmail.com", "0889900112", "707 Đường K, Quận 10, TP HCM","Đang giao dịch");
         // endregion
 
         // region carrier
@@ -612,13 +612,15 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    public void seedDataSupplier(String name, String email, String phone) {
+    public void seedDataSupplier(String name, String email, String phone, String address, String status) {
         Optional<Supplier> suppliers = supplierRepository.findSupplierByName(name);
         if (suppliers.isEmpty()) {
             Supplier supplier = new Supplier();
             supplier.setName(name);
             supplier.setEmail(email);
             supplier.setPhone(phone);
+            supplier.setAddress(address);
+            supplier.setStatus(status);
             supplierRepository.save(supplier);
         }
     }

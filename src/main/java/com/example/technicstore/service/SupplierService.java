@@ -5,6 +5,7 @@ import com.example.technicstore.repository.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -61,6 +62,18 @@ public class SupplierService {
     public List<Supplier> getSupplierByAddressContaining(String address) {
         return supplierRepository.findSupplierByAddressContainingIgnoreCase(address);
     }
+
+    // tìm kiếm theo trạng thái
+    public List<Supplier> getSuppliersByStatus(String status) {
+        if (status == null || status.equals("all")) {
+            return supplierRepository.findAll();
+        } else if (status.equals("active")) {
+            return supplierRepository.getSuppliersByStatus("Đang giao dịch");
+        } else if (status.equals("inactive")) {
+            return supplierRepository.getSuppliersByStatus("Ngưng giao dịch");
+        }
+        return null; // Trả về danh sách rỗng nếu trạng thái không hợp lệ
+    }
     public Supplier createSupplier(Supplier supplier) {
         return supplierRepository.save(supplier);
     }
@@ -73,6 +86,7 @@ public class SupplierService {
             existingSupplier.setEmail(updatedSupplier.getEmail());
             existingSupplier.setPhone(updatedSupplier.getPhone());
             existingSupplier.setAddress(updatedSupplier.getAddress());
+            existingSupplier.setStatus(updatedSupplier.getStatus());
             return supplierRepository.save(existingSupplier);
         }
         return null;
