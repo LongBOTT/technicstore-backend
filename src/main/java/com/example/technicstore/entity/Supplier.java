@@ -30,6 +30,7 @@ public class Supplier {
     // Địa chỉ nhà cung cấp với độ dài 256
     @Column(length = 256)
     private String address;
+    private String status;
 
     // endregion
 
@@ -82,5 +83,13 @@ public class Supplier {
         this.address = address;
     }
 
-    //endregion
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+//endregion
 }

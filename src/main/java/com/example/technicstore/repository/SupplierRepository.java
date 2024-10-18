@@ -35,6 +35,8 @@ public interface SupplierRepository extends JpaRepository<Supplier, Long> {
 
     // Tìm kiếm theo địa chỉ
     List<Supplier> findSupplierByAddressContainingIgnoreCase(String address);
+    // Tìm kiếm theo trạng thái
+    List<Supplier> getSuppliersByStatus(String status);
 
     @Query("SELECT s FROM Supplier s WHERE "
             + "(:name IS NULL OR :name = '' OR s.name LIKE %:name%) AND "

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/suppliers")
 public class SupplierController {
@@ -43,6 +44,13 @@ public class SupplierController {
     @GetMapping("/search/name/containing")
     public List<Supplier> getSupplierByNameContaining(@RequestParam String name) {
         return supplierService.getSupplierByNameContaining(name);
+    }
+
+    // Phương thức lấy danh sách nhà cung cấp với tùy chọn lọc
+    @GetMapping("/search/status")
+    public List<Supplier> getSuppliersByStatus(
+            @RequestParam String status) {
+        return supplierService.getSuppliersByStatus(status);
     }
 
     // Tìm nhà cung cấp theo số điện thoại chính xác
@@ -125,7 +133,7 @@ public class SupplierController {
     public List<Supplier> checkExist(@RequestParam(required = false) String name,
                                      @RequestParam(required = false) String phone,
                                      @RequestParam(required = false) String email) {
-        return supplierService.checkExist(name,phone,email);
+        return supplierService.checkExist(name, phone, email);
     }
 }
 
