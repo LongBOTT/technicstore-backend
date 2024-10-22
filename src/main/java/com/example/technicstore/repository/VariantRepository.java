@@ -16,5 +16,5 @@ public interface VariantRepository extends JpaRepository<Variant, Long> {
 
     // Tìm kiếm theo giá
     List<Variant> findByPrice(double price);
-
+    List<Variant> findByProductsIdAndPrice(Long productId, double price);
 }

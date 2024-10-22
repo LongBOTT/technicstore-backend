@@ -40,6 +40,10 @@ public class Product {
     @JoinColumn(name = "warranty_id")
     private Warranty warranty;
 
+    // Tên sản phẩm với độ dài 256
+    @Column(length = 256)
+    private String image;
+
     // endregion
 
     // region Constructor
@@ -107,5 +111,12 @@ public class Product {
         this.warranty = warranty;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
     //endregion
 }

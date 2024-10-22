@@ -1769,31 +1769,40 @@ public class DataInitializer implements CommandLineRunner {
 
 
     public void seedDataVariant(String image, Double price, int quantity, int product_id) {
-        Variant variant = new Variant();
-        variant.setImage(image);
-        variant.setPrice(price);
-        variant.setQuantity(quantity);
-        variant.setProducts(productRepository.findById((long) product_id).get());
-        variantRepository.save(variant);
+        List<Variant> variants = variantRepository.findByProductsIdAndPrice((long) product_id, price);
+        if (variants.isEmpty()) {
+            Variant variant = new Variant();
+            variant.setImage(image);
+            variant.setPrice(price);
+            variant.setQuantity(quantity);
+            variant.setProducts(productRepository.findById((long) product_id).get());
+            variantRepository.save(variant);
+        }
     }
 
     public void seedDataVariantAtribute(String value, int attribute_id, int variant_id) {
-        Variant_Attribute variant_attribute = new Variant_Attribute();
-        variant_attribute.setValue(value);
-        variant_attribute.setAttribute(attributeRepository.findById((long) attribute_id).get());
-        variant_attribute.setVariant(variantRepository.findById((long) variant_id).get());
-        variantValueRepository.save(variant_attribute);
+        List<Variant_Attribute> variantAttributes = variantValueRepository.findByVariantId((long)variant_id);
+        if (variantAttributes.isEmpty()) {
+            Variant_Attribute variant_attribute = new Variant_Attribute();
+            variant_attribute.setValue(value);
+            variant_attribute.setAttribute(attributeRepository.findById((long) attribute_id).get());
+            variant_attribute.setVariant(variantRepository.findById((long) variant_id).get());
+            variantValueRepository.save(variant_attribute);
+        }
     }
 
     public void seedDataProduct(String name, String description, Double weight, int brand_id, int category_id, int warranty_id) {
-        Product product = new Product();
-        product.setName(name);
-        product.setDescription(description);
-        product.setWeight(weight);
-        product.setBrand(brandRepository.findById((long) brand_id).get());
-        product.setCategory(categoryRepository.findById((long) category_id).get());
-        product.setWarranty(warrantyRepository.findById((long) warranty_id).get());
-        productRepository.save(product);
+        Optional<Product> products = productRepository.findProductByName(name);
+        if (products.isEmpty()) {
+            Product product = new Product();
+            product.setName(name);
+            product.setDescription(description);
+            product.setWeight(weight);
+            product.setBrand(brandRepository.findById((long) brand_id).get());
+            product.setCategory(categoryRepository.findById((long) category_id).get());
+            product.setWarranty(warrantyRepository.findById((long) warranty_id).get());
+            productRepository.save(product);
+        }
     }
 
     public void seedDataCustomer(String name, String phone, String address, String email, String district, String city) {
