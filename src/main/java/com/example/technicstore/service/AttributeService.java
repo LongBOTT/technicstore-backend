@@ -30,8 +30,8 @@ public class AttributeService {
     }
 
     // Lấy thuộc tính theo tên chính xác
-    public Optional<Attribute> getAttributeByName(String name) {
-        return attributeRepository.findAttributeByName(name);
+    public List<Attribute> getAttributeByName(String name) {
+        return attributeRepository.findAttributesByName(name);
     }
 
     // Tạo mới thuộc tính
@@ -45,6 +45,7 @@ public class AttributeService {
         if (attributeOptional.isPresent()) {
             Attribute existingAttribute = attributeOptional.get();
             existingAttribute.setName(updatedAttribute.getName());
+            existingAttribute.setParent(updatedAttribute.getParent())   ;
             return attributeRepository.save(existingAttribute);
         }
         return null;

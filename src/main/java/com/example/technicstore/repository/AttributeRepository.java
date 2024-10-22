@@ -9,7 +9,10 @@ import java.util.Optional;
 public interface AttributeRepository extends JpaRepository<Attribute, Long> {
 
     // Tìm kiếm theo ten thuoc tinh
-    Optional<Attribute> findAttributeByName(String name);
+    List<Attribute> findAttributesByName(String name);
+
+    // Tìm kiếm theo thuộc tính cha
+    List<Attribute> findAttributeByParent(String parent);
 
     // Tìm kiếm theo gần đúng tên thuộc tính
     List<Attribute> findAttributeByNameContainingIgnoreCase(String name);

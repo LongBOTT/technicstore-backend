@@ -14,6 +14,8 @@ public class Attribute {
     private Long id;
 
     private String name;
+
+    private String parent;
     // endregion
 
     // region Constructor
@@ -39,6 +41,14 @@ public class Attribute {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getParent() {
+        return parent;
+    }
+
+    public void setParent(String parent) {
+        this.parent = parent;
     }
 
     // endregion
