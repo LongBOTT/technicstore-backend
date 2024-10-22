@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
@@ -36,6 +37,18 @@ public class ProductController {
         return productService.getProductsByNameContaining(name);
     }
 
+    // Tìm các sản phẩm gần đúng theo tên
+    @GetMapping("/search/brand/exact")
+    public List<Product> searchProductsByBrand_Id(@RequestParam long id) {
+        return productService.getProductsByBrand_Id(id);
+    }
+
+    // Tìm các sản phẩm gần đúng theo tên
+    @GetMapping("/search/categoryName/exact")
+    public List<Product> searchProductsByCategory_Name(@RequestParam String name) {
+        return productService.getProductByCategory_Name(name);
+    }
+
     // Tìm sản phẩm theo tên chính xác
     @GetMapping("/search/name/exact")
     public ResponseEntity<Product> getProductByName(@RequestParam String name) {
@@ -43,6 +56,7 @@ public class ProductController {
         return product.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
+
     // Tạo mới sản phẩm
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {

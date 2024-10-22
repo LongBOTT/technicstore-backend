@@ -1,5 +1,6 @@
 package com.example.technicstore.service;
 
+import com.example.technicstore.entity.Brand;
 import com.example.technicstore.entity.Product;
 import com.example.technicstore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,16 @@ public class ProductService {
     public List<Product> getProductsByNameContaining(String name) {
         return productRepository.findProductByNameContainingIgnoreCase(name);
     }
+
+    // Tìm các sản phẩm gần đúng theo tên
+    public List<Product> getProductsByBrand_Id(long id) {
+        return productRepository.findProductsByBrand_Id(id);
+    }
+
+    public List<Product> getProductByCategory_Name(String name) {
+        return productRepository.findProductsByCategory_Name(name);
+    }
+
 
     // Tìm sản phẩm theo tên chính xác
     public Optional<Product> getProductByName(String name) {

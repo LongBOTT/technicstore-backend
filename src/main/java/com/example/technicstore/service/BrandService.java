@@ -1,10 +1,15 @@
 package com.example.technicstore.service;
 
 import com.example.technicstore.entity.Brand;
+import com.example.technicstore.entity.Category;
+import com.example.technicstore.entity.Product;
 import com.example.technicstore.repository.BrandRepository;
+import com.example.technicstore.repository.CategoryRepository;
+import com.example.technicstore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,6 +18,10 @@ public class BrandService {
 
     @Autowired
     private BrandRepository brandRepository;
+    @Autowired
+    private CategoryRepository categoryRepository;
+    @Autowired
+    private ProductRepository productRepository;
 
     public List<Brand> getAllBrands() {
         return brandRepository.findAll();
@@ -31,6 +40,25 @@ public class BrandService {
     public List<Brand> getBrandByNameContaining(String name) {
         return brandRepository.findBrandByNameContainingIgnoreCase(name);
     }
+
+    public List<Brand> getBrandsByCategory(String name) {
+        Category category = categoryRepository.findCategoryByName(name).orElse(null);
+        if (category!= null) {
+            List<Product> products = productRepository.findProductsByCategory_Id(category.getId());
+            List<Brand> brandList = new ArrayList<Brand>();
+
+            for (Product product : products) {
+                Brand brand = product.getBrand();
+                if (!brandList.contains(brand)) {
+                    brandList.add(brand);
+                    System.out.println(brand.getName());
+                }
+            }
+            return brandList;
+        }
+        return null;
+    }
+
     public Brand createBrand(Brand brand) {
         return brandRepository.save(brand);
     }

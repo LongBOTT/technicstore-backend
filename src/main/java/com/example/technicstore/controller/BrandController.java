@@ -42,6 +42,12 @@ public class BrandController {
         return brandService.getBrandByNameContaining(name);
     }
 
+    @GetMapping("/search/category/exact")
+    public List<Brand> getBrandByCategoryName(@RequestParam String name) {
+        return brandService.getBrandsByCategory(name);
+    }
+
+
     @PostMapping
     public ResponseEntity<Brand> createBrand(@RequestBody Brand brand) {
         Brand createdBrand = brandService.createBrand(brand);

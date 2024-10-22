@@ -219,11 +219,13 @@ public class DataInitializer implements CommandLineRunner {
         // endregion
 
         // region category
-        seedDataCategory("Điện thoại di động");
-        seedDataCategory("Laptop");
-        seedDataCategory("Tablet");
-        seedDataCategory("Smartwatch");
+        seedDataCategory("ĐIỆN THOẠI");
+        seedDataCategory("LAPTOP");
+        seedDataCategory("MÁY TÍNH BẢNG");
+        seedDataCategory("ĐỒNG HỒ THÔNG MINH");
 
+        seedDataCategory("PHỤ KIỆN");
+        seedDataCategory("ĐIỆN MÁY");
 
         // Loa,tai nghe
         seedDataCategory("Loa");

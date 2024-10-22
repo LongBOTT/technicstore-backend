@@ -44,7 +44,6 @@ public class CustomerController {
         return customerService.getCustomersByName(name);
     }
 
-
     // Tạo mới một khách hàng
     @PostMapping
     public ResponseEntity<Customer> createCustomer(@RequestBody Customer customer) {
