@@ -18,6 +18,7 @@ public class Variant_Attribute {
     @JoinColumn(name = "attribute_id")
     private Attribute attribute;
 
+    @Column(columnDefinition = "TEXT")
     private String value;
 
     // endregion
