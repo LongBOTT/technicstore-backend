@@ -44,9 +44,9 @@ public class ProductController {
     }
 
     // Tìm các sản phẩm gần đúng theo tên
-    @GetMapping("/search/categoryName/exact")
-    public List<Product> searchProductsByCategory_Name(@RequestParam String name) {
-        return productService.getProductByCategory_Name(name);
+    @GetMapping("/search/category/exact")
+    public List<Product> searchProductsByCategory_Id(@RequestParam long id) {
+        return productService.getProductByCategory_Id(id);
     }
 
     // Tìm sản phẩm theo tên chính xác

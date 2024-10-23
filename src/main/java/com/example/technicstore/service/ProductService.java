@@ -36,8 +36,8 @@ public class ProductService {
         return productRepository.findProductsByBrand_Id(id);
     }
 
-    public List<Product> getProductByCategory_Name(String name) {
-        return productRepository.findProductsByCategory_Name(name);
+    public List<Product> getProductByCategory_Id(long id) {
+        return productRepository.findProductsByCategory_Id(id);
     }
 
 

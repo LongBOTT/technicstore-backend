@@ -41,8 +41,8 @@ public class BrandService {
         return brandRepository.findBrandByNameContainingIgnoreCase(name);
     }
 
-    public List<Brand> getBrandsByCategory(String name) {
-        Category category = categoryRepository.findCategoryByName(name).orElse(null);
+    public List<Brand> getBrandsByCategoryId(long id) {
+        Category category = categoryRepository.findById(id).orElse(null);
         if (category!= null) {
             List<Product> products = productRepository.findProductsByCategory_Id(category.getId());
             List<Brand> brandList = new ArrayList<Brand>();

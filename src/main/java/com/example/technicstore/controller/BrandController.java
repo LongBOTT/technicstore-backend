@@ -42,9 +42,14 @@ public class BrandController {
         return brandService.getBrandByNameContaining(name);
     }
 
+//    @GetMapping("/search/category/exact")
+//    public List<Brand> getBrandByCategoryName(@RequestParam String name) {
+//        return brandService.getBrandsByCategory(name);
+//    }
+
     @GetMapping("/search/category/exact")
-    public List<Brand> getBrandByCategoryName(@RequestParam String name) {
-        return brandService.getBrandsByCategory(name);
+    public List<Brand> getBrandByCategoryId(@RequestParam long id) {
+        return brandService.getBrandsByCategoryId(id);
     }
 
 
