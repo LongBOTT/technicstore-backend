@@ -17,6 +17,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     // Tìm kiếm sản phẩm theo thể loại
     List<Product> findProductsByCategory_Id(long categoryId);
+
     List<Product> findProductsByCategory_Name(String name);
 
     List<Product> findProductsByBrand_Id(long id);

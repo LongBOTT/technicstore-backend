@@ -5,9 +5,11 @@ import com.example.technicstore.service.VariantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import com.example.technicstore.entity.Product;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/api/variants")
@@ -39,7 +41,16 @@ public class VariantController {
     public List<Variant> getVariantsByPriceRange(@RequestParam Double minPrice, @RequestParam Double maxPrice) {
         return variantService.getVariantsByPriceRange(minPrice, maxPrice);
     }
-
+    // tìm kiếm phiên bản theo mảng sản phẩm và khoảng giá
+    @PostMapping("/search")
+    public ResponseEntity<List<Variant>> searchVariantsByProductsAndPrice(
+            @RequestBody List<Product> products,
+            @RequestParam Double minPrice,
+            @RequestParam Double maxPrice
+    ) {
+        List<Variant> variants = variantService.getVariantsByProductsAndPriceRange(products, minPrice, maxPrice);
+        return ResponseEntity.ok(variants);
+    }
     // Tạo mới một biến thể
     @PostMapping
     public ResponseEntity<Variant> createVariant(@RequestBody Variant variant) {

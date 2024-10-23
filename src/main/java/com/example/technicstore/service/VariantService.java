@@ -1,5 +1,6 @@
 package com.example.technicstore.service;
 
+import com.example.technicstore.entity.Product;
 import com.example.technicstore.entity.Variant;
 import com.example.technicstore.repository.VariantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,11 @@ public class VariantService {
         return variantRepository.findByPriceBetween(minPrice, maxPrice);
     }
 
+
+    // Hàm tìm kiếm phiên bản theo mảng sản phẩm và khoảng giá
+    public List<Variant> getVariantsByProductsAndPriceRange(List<Product> products, Double minPrice, Double maxPrice) {
+        return variantRepository.findByProductsInAndPriceBetween(products, minPrice, maxPrice);
+    }
     // Tạo mới biến thể
     public Variant createVariant(Variant variant) {
         return variantRepository.save(variant);
