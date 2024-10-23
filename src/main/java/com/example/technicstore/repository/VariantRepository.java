@@ -14,7 +14,8 @@ public interface VariantRepository extends JpaRepository<Variant, Long> {
     // Tim kiem theo ID bien the
     Optional<Variant> findById(Long id);
 
-    // Tìm kiếm theo giá
-    List<Variant> findByPrice(double price);
+    // Tìm các biến thể có giá nằm trong khoảng
+    List<Variant> findByPriceBetween(Double minPrice, Double maxPrice);
     List<Variant> findByProductsIdAndPrice(Long productId, double price);
+
 }

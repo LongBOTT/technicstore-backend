@@ -29,7 +29,10 @@ public class VariantService {
         return variantRepository.findByProductsId(productId);
     }
 
-
+    // Tìm các biến thể trong khoảng giá
+    public List<Variant> getVariantsByPriceRange(Double minPrice, Double maxPrice) {
+        return variantRepository.findByPriceBetween(minPrice, maxPrice);
+    }
 
     // Tạo mới biến thể
     public Variant createVariant(Variant variant) {

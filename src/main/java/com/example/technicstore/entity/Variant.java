@@ -16,7 +16,7 @@ public class Variant {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "productId")
     private Product products;
 
     private double price;
