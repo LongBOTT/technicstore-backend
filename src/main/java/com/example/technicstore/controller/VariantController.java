@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/variants")
 public class VariantController {
@@ -28,6 +28,16 @@ public class VariantController {
         Optional<Variant> variant = variantService.getVariantById(id);
         return variant.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+    // Lấy thông tin biến thể theo ID sản phẩm
+    @GetMapping("/search/product/productID")
+    public List<Variant> getAllVariantsByProductID(@RequestParam Long productID) {
+        return variantService.getVariantsByProductId(productID);
+    }
+    // Tìm các biến thể trong khoảng giá
+    @GetMapping("/search/price")
+    public List<Variant> getVariantsByPriceRange(@RequestParam Double minPrice, @RequestParam Double maxPrice) {
+        return variantService.getVariantsByPriceRange(minPrice, maxPrice);
     }
 
     // Tạo mới một biến thể
