@@ -2,12 +2,12 @@ package com.example.technicstore.service;
 
 import com.example.technicstore.entity.Brand;
 import com.example.technicstore.entity.Product;
+import com.example.technicstore.entity.Variant;
 import com.example.technicstore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class ProductService {
@@ -40,6 +40,21 @@ public class ProductService {
         return productRepository.findProductsByCategory_Id(id);
     }
 
+    public List<Product> getProductInVariants(List<Variant> variants) {
+        Set<Long> productIds = new HashSet<>();  // Sử dụng Set để theo dõi các ID sản phẩm đã được thêm
+        List<Product> products = new ArrayList<>();  // Danh sách các sản phẩm kết quả
+
+        for (Variant variant : variants) {
+            Product product = variant.getProducts();  // Lấy sản phẩm từ variant
+
+            if (product != null && !productIds.contains(product.getId())) {  // Kiểm tra sản phẩm có tồn tại trong Set không
+                products.add(product);  // Thêm sản phẩm vào danh sách
+                productIds.add(product.getId());  // Thêm ID sản phẩm vào Set để theo dõi
+            }
+        }
+
+        return products;  // Trả về danh sách các sản phẩm duy nhất
+    }
 
     // Tìm sản phẩm theo tên chính xác
     public Optional<Product> getProductByName(String name) {

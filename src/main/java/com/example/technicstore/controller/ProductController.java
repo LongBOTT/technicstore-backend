@@ -1,6 +1,7 @@
 package com.example.technicstore.controller;
 
 import com.example.technicstore.entity.Product;
+import com.example.technicstore.entity.Variant;
 import com.example.technicstore.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin("*")
+
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
@@ -47,6 +48,12 @@ public class ProductController {
     @GetMapping("/search/category/exact")
     public List<Product> searchProductsByCategory_Id(@RequestParam long id) {
         return productService.getProductByCategory_Id(id);
+    }
+    // Tìm các sản phẩm trong danh sách biến thể
+    @PostMapping("/search/variants")
+    public List<Product> searchProductsInVariants(@RequestBody List<Variant> variants) {
+        // Logic xử lý để trả về danh sách Product dựa trên Variant
+        return productService.getProductInVariants(variants);
     }
 
     // Tìm sản phẩm theo tên chính xác

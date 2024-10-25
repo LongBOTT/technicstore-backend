@@ -2,6 +2,7 @@ package com.example.technicstore.repository;
 
 import com.example.technicstore.entity.Brand;
 import com.example.technicstore.entity.Product;
+import com.example.technicstore.entity.Variant;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -20,4 +21,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     List<Product> findProductsByBrand_Id(long id);
 
+
+//    List<Product> findByProductInVariants(List<Variant> variants);
 }

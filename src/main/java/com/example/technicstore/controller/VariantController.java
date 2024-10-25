@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/variants")
 public class VariantController {
@@ -37,10 +36,13 @@ public class VariantController {
         return variantService.getVariantsByProductId(productID);
     }
     // Tìm các biến thể trong khoảng giá
-    @GetMapping("/search/price")
-    public List<Variant> getVariantsByPriceRange(@RequestParam Double minPrice, @RequestParam Double maxPrice) {
-        return variantService.getVariantsByPriceRange(minPrice, maxPrice);
+    @PostMapping("/search/price")
+    public List<Variant> getVariantsByPriceRange(@RequestParam Double minPrice,
+                                                 @RequestParam Double maxPrice,
+                                                 @RequestBody List<Variant> variants) {
+        return variantService.getVariantsByPriceRange(minPrice, maxPrice, variants);
     }
+
     // tìm kiếm phiên bản theo mảng sản phẩm và khoảng giá
     @PostMapping("/search")
     public ResponseEntity<List<Variant>> searchVariantsByProductsAndPrice(
@@ -74,5 +76,17 @@ public class VariantController {
     public ResponseEntity<Void> deleteVariant(@PathVariable Long id) {
         variantService.deleteVariant(id);
         return ResponseEntity.noContent().build();
+    }
+
+    // Lấy thông tin biến thể theo ID sản phẩm
+    @GetMapping("/search/category/categoryID")
+    public List<Variant> getAllVariantsByCategoryId(@RequestParam Long categoryID) {
+        return variantService.getVariantsByCategoryId(categoryID);
+    }
+
+    // Lấy thông tin biến thể theo ID sản phẩm
+    @GetMapping("/search/brand/brandID")
+    public List<Variant> getAllVariantsByBrandId(@RequestParam Long brandID) {
+        return variantService.getVariantsByBrandId(brandID);
     }
 }
