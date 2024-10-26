@@ -1781,7 +1781,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataVariantAtribute(String value, int attribute_id, int variant_id) {
-        List<Variant_Attribute> variantAttributes = variantValueRepository.findByVariantId((long)variant_id);
+        List<Variant_Attribute> variantAttributes = variantValueRepository.findVariant_AttributesByVariant_IdAndAndAttribute_Id((long)variant_id, (long)attribute_id);
         if (variantAttributes.isEmpty()) {
             Variant_Attribute variant_attribute = new Variant_Attribute();
             variant_attribute.setValue(value);

@@ -15,9 +15,9 @@ public class Variant_AttributeController {
     private Variant_AttributeService variant_attributeService;
 
     // Tìm kiếm theo ID biến thể
-    @GetMapping("/{variantId}")
-    public List<Variant_Attribute> findByVariantId(@PathVariable Long variantId) {
-        return variant_attributeService.findByVariantId(variantId);
+    @GetMapping("/search/variant/variantID")
+    public List<Variant_Attribute> findByVariantId(@RequestParam long variantID) {
+        return variant_attributeService.findVariant_AttributeByVariantId(variantID);
     }
 
     // Tạo mới thuộc tính biến thể

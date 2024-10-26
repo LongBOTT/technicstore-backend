@@ -13,8 +13,8 @@ public class Variant_AttributeService {
     @Autowired
     private Variant_AttributeRepository variant_AttributeRepository;
     // Tìm kiếm theo ID biến thể
-    public List<Variant_Attribute> findByVariantId(Long variantId) {
-        return variant_AttributeRepository.findByVariantId(variantId);
+    public List<Variant_Attribute> findVariant_AttributeByVariantId(long variantId) {
+        return variant_AttributeRepository.findVariant_AttributeByVariantId(variantId);
     }
 
     // Tạo mới thuộc tính biến thể
