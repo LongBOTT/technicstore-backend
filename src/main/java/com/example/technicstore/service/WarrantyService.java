@@ -24,6 +24,10 @@ public class WarrantyService {
         return warrantyRepository.findById(id);
     }
 
+    public Warranty findById(Long id) {
+        return warrantyRepository.findById(id).orElseThrow(() -> new RuntimeException("Warranty not found"));
+    }
+
     // Tìm chính sách bảo hành theo tên gần đúng
     public List<Warranty> getWarrantyByNameContaining(String name) {
         return warrantyRepository.findWarrantiesByNameContainsIgnoreCase(name);

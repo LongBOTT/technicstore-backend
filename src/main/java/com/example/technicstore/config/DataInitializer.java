@@ -35,9 +35,10 @@ public class DataInitializer implements CommandLineRunner {
     private final VariantRepository variantRepository;
 
     private final Variant_AttributeRepository variantValueRepository;
+    private final CategoryAttributeRepository categoryAttributeRepository;
 
 
-    public DataInitializer(CustomerRepository customerRepository, AttributeRepository attributeRepository, BrandRepository brandRepository, CategoryRepository categoryRepository, SupplierRepository supplierRepository, CarrierRepository carrierRepository, WarrantyRepository warrantyRepository, RoleRepository roleRepository, FunctionRepository functionRepository, ModuleRepository moduleRepository, DecentralizationRepository decentralizationRepository, AccountRepository accountRepository, ProductRepository productRepository, ImeiRepository imeiRepository, VariantRepository variantRepository, Variant_AttributeRepository variantValueRepository1) {
+    public DataInitializer(CustomerRepository customerRepository, AttributeRepository attributeRepository, BrandRepository brandRepository, CategoryRepository categoryRepository, SupplierRepository supplierRepository, CarrierRepository carrierRepository, WarrantyRepository warrantyRepository, RoleRepository roleRepository, FunctionRepository functionRepository, ModuleRepository moduleRepository, DecentralizationRepository decentralizationRepository, AccountRepository accountRepository, ProductRepository productRepository, ImeiRepository imeiRepository, VariantRepository variantRepository, Variant_AttributeRepository variantValueRepository1, CategoryAttributeRepository categoryAttributeRepository) {
         this.customerRepository = customerRepository;
         this.attributeRepository = attributeRepository;
         this.brandRepository = brandRepository;
@@ -54,6 +55,7 @@ public class DataInitializer implements CommandLineRunner {
         this.imeiRepository = imeiRepository;
         this.variantRepository = variantRepository;
         this.variantValueRepository = variantValueRepository1;
+        this.categoryAttributeRepository = categoryAttributeRepository;
     }
 
 
@@ -197,7 +199,6 @@ public class DataInitializer implements CommandLineRunner {
 
         // region attribute
 
-
         seedDataAttribute("Xuất sứ", "Thông tin hàng hóa");
         seedDataAttribute("Thời điểm ra mắt", "Thông tin hàng hóa");
         seedDataAttribute("Màu sắc", "Thông tin hàng hóa");
@@ -305,7 +306,6 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataAttribute("Số luồng", "Bộ xử lý");
         seedDataAttribute("Bộ nhớ", "Đồ họa");
-
 
 
         // region brand
@@ -1683,7 +1683,7 @@ public class DataInitializer implements CommandLineRunner {
         //MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB
         seedDataVariant("MacBookAir13inchM120208CPU7GPU8GB256GB", 22990000.0, 10, 21);
 
-       // MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB
+        // MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB
         seedDataVariant("MacBookAir13inchM120208CPU7GPU16GB256GB", 29990000.0, 10, 21);
 
         // Thông số
@@ -1761,12 +1761,32 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute(" Apple M1 GPU 7 nhân", 64, 41);
 
 
-
         // endregion
-
+        SeedDataCategoryAttribute(1L, 1L);
+        SeedDataCategoryAttribute(1L, 2L);
+        SeedDataCategoryAttribute(1L, 3L);
+        SeedDataCategoryAttribute(1L, 4L);
+        SeedDataCategoryAttribute(1L, 5L);
+        SeedDataCategoryAttribute(1L, 6L);
+        SeedDataCategoryAttribute(1L, 7L);
+        SeedDataCategoryAttribute(1L, 8L);
+        SeedDataCategoryAttribute(1L, 9L);
+        SeedDataCategoryAttribute(1L, 10L);
+        SeedDataCategoryAttribute(1L, 11L);
+        SeedDataCategoryAttribute(1L, 12L);
+        SeedDataCategoryAttribute(2L, 15L);
+        SeedDataCategoryAttribute(2L, 16L);
 
     }
-
+    public void SeedDataCategoryAttribute(Long category_id, Long attribute_id) {
+        List<Category_Atrribute>  category_attribute = categoryAttributeRepository.findByCategoryIdAndAttributeId(category_id, attribute_id);
+        if (category_attribute.isEmpty()) {
+            Category_Atrribute categoryAttribute = new Category_Atrribute();
+            categoryAttribute.setCategory(categoryRepository.findById(category_id).get());
+            categoryAttribute.setAttribute(attributeRepository.findById(attribute_id).get());
+            categoryAttributeRepository.save(categoryAttribute);
+        }
+    }
 
     public void seedDataVariant(String image, Double price, int quantity, int product_id) {
         List<Variant> variants = variantRepository.findByProductsIdAndPrice((long) product_id, price);
@@ -1781,7 +1801,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataVariantAtribute(String value, int attribute_id, int variant_id) {
-        List<Variant_Attribute> variantAttributes = variantValueRepository.findVariant_AttributesByVariant_IdAndAndAttribute_Id((long)variant_id, (long)attribute_id);
+        List<Variant_Attribute> variantAttributes = variantValueRepository.findVariant_AttributesByVariant_IdAndAndAttribute_Id((long) variant_id, (long) attribute_id);
         if (variantAttributes.isEmpty()) {
             Variant_Attribute variant_attribute = new Variant_Attribute();
             variant_attribute.setValue(value);
@@ -1824,6 +1844,8 @@ public class DataInitializer implements CommandLineRunner {
             accountRepository.save(account);
         }
     }
+
+
 
     public void seedDataAttribute(String name, String parent) {
         // Tìm kiếm tất cả các thuộc tính theo tên

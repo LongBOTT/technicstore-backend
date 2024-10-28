@@ -21,6 +21,9 @@ public class CategoryService {
     public Optional<Category> getCategoryById(Long id) {
         return categoryRepository.findById(id);
     }
+    public Category findById(Long id) {
+        return categoryRepository.findById(id).orElseThrow(() -> new RuntimeException("Category not found"));
+    }
 
     // Tìm kiếm danh mục theo tên chính xác
     public Optional<Category> getCategoryByName(String name) {

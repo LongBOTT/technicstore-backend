@@ -31,6 +31,10 @@ public class BrandService {
         return brandRepository.findById(id);
     }
 
+    public Brand findById(Long id) {
+        return brandRepository.findById(id).orElseThrow(() -> new RuntimeException("Brand not found"));
+    }
+
     // Lấy danh sách thương hiệu theo tên chính xác
     public Optional<Brand> getBrandByName(String name) {
         return brandRepository.findBrandByName(name);
