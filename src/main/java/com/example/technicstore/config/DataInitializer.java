@@ -193,7 +193,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataCarrier("Giao hàng tiết kiệm");
         seedDataCarrier("Lalamove");
         seedDataCarrier("ViettelPost");
-        //end region
+        //endregion
 
         // region attribute
 
@@ -394,8 +394,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Điện thoại
-        //Iphone 14
-        seedDataProduct("Iphone 14", "Điện thoại", 0.5, 1, 1, 1);
+        //iPhone 14
+        seedDataProduct("iPhone 14", "Điện thoại", 0.5, 1, 1, 1, "iphone_14_48a46d1684.png");
 
         // phiên bản iphone 14
         seedDataVariant("iphone14", 21990000.0, 10, 1);
@@ -461,7 +461,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 1);
 
         // iphone 14 plus
-        seedDataProduct("Iphone 14 Plus", "Điện thoại", 0.5, 1, 1, 1);
+        seedDataProduct("iPhone 14 Plus", "Điện thoại", 0.5, 1, 1, 1, "iphone_14_48a46d1684.png");
 
         // phiên bản iphone 14 plus
         seedDataVariant("iphone14plus", 24990000.0, 10, 2);
@@ -528,7 +528,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 4);
 
         // iphone 15
-        seedDataProduct("Iphone 15", "Điện thoại", 0.5, 1, 1, 1);
+        seedDataProduct("iPhone 15", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_a9308b6994.png");
 
         // phiên bản iphone 15
         seedDataVariant("iphone15", 22990000.0, 10, 3);
@@ -603,7 +603,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 7);
 
         // iphone 15 plus
-        seedDataProduct("Iphone 15 Plus", "Điện thoại", 0.5, 1, 1, 1);
+        seedDataProduct("iPhone 15 Plus", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_a9308b6994.png");
 
         // phiên bản iphone 15 plus
         seedDataVariant("iphone15plus", 25990000.0, 10, 4);
@@ -678,7 +678,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 10);
 
         // iphone 15 pro
-        seedDataProduct("Iphone 15 Pro", "Điện thoại", 0.5, 1, 1, 1);
+        seedDataProduct("iPhone 15 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro
         seedDataVariant("iphone15pro", 28990000.0, 10, 5);
@@ -758,7 +758,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 13);
 
         // iphone 15 pro max
-        seedDataProduct("Iphone 15 Pro Max", "Điện thoại", 0.5, 1, 1, 1);
+        seedDataProduct("iPhone 15 Pro Max", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro max
         seedDataVariant("iphone15promax", 34990000.0, 10, 6);
@@ -830,7 +830,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 17);
 
         // iphone 16
-        seedDataProduct("Iphone 16", "Điện thoại", 0.5, 1, 1, 1);
+        seedDataProduct("iPhone 16", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16
         seedDataVariant("iphone16", 22990000.0, 10, 7);
@@ -905,7 +905,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 20);
 
         // iphone 16 pro
-        seedDataProduct("Iphone 16 Pro", "Điện thoại", 0.5, 1, 1, 1);
+        seedDataProduct("iPhone 16 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16 pro
         seedDataVariant("iphone16pro", 28990000.0, 10, 8);
@@ -988,7 +988,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 23);
 
         // sam sung galaxy s24 FE
-        seedDataProduct("Samsung Galaxy S24 FE", "Điện thoại", 0.5, 2, 1, 2);
+        seedDataProduct("Samsung Galaxy S24 FE", "Điện thoại", 0.5, 2, 1, 2, "samssung_galaxy_s24_fe_xanh_723e4e6443.png");
 
         // phiên bản samsung galaxy s24 FE
         seedDataVariant("samsunggalaxys24fe", 16990000.0, 10, 9);
@@ -1040,7 +1040,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp, Sách HDSD, Que lấy SIM", 51, 27);
 
         // sam sung galaxy s23
-        seedDataProduct("Samsung Galaxy S23", "Điện thoại", 0.5, 2, 1, 2);
+        seedDataProduct("Samsung Galaxy S23", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s23_591dfc2c85.png");
 
         // phiên bản samsung galaxy s23
         seedDataVariant("samsunggalaxys23", 24990000.0, 10, 10);
@@ -1102,7 +1102,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp, Sách HDSD, Que lấy SIM", 51, 28);
 
         //Samsung Galaxy S24 Ultra
-        seedDataProduct("Samsung Galaxy S24 Ultra", "Điện thoại", 0.5, 2, 1, 2);
+        seedDataProduct("Samsung Galaxy S24 Ultra", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s24_ultra_2f8a5ee174.png");
 
         // phiên bản Samsung Galaxy S24 Ultra
         seedDataVariant("samsunggalaxys24ultra", 33990000.0, 10, 11);
@@ -1171,7 +1171,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp Type C, Sách HDSD, Que lấy SIM", 51, 29);
 
         //Samsung Galaxy Z Flip5
-        seedDataProduct("Samsung Galaxy Z Flip5", "Điện thoại", 0.5, 2, 1, 2);
+        seedDataProduct("Samsung Galaxy Z Flip5", "Điện thoại", 0.5, 2, 1, 2, "2024_3_28_638472353992099331_samsung-galaxy-zflip-5-xanh-ai.jpg");
 
         // phiên bản Samsung Galaxy Z Flip5
         seedDataVariant("samsunggalaxyzflip5", 25990000.0, 10, 12);
@@ -1232,7 +1232,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute(" Sách HDSD, Que lấy SIM", 51, 31);
 
         // Samsung Galaxy A06
-        seedDataProduct("Samsung Galaxy A06", "Điện thoại", 0.5, 2, 1, 1);
+        seedDataProduct("Samsung Galaxy A06", "Điện thoại", 0.5, 2, 1, 1, "samsung_galaxy_a06_blue_black_1_46d3694f11.png");
 
         // phiên bản Samsung Galaxy A06
         seedDataVariant("samsunggalaxya06", 3490000.0, 10, 13);
@@ -1286,7 +1286,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp, Sách HDSD, Que lấy SIM", 51, 32);
 
         // Samsung Galaxy A05
-        seedDataProduct("Samsung Galaxy A05", "Điện thoại", 0.5, 2, 1, 1);
+        seedDataProduct("Samsung Galaxy A05", "Điện thoại", 0.5, 2, 1, 1, "2023_10_4_638320083060239206_samsung-galaxy-a05-xanh-3.jpg");
 
         // phiên bản Samsung Galaxy A05
         seedDataVariant("samsunggalaxya05", 2790000.0, 10, 14);
@@ -1333,7 +1333,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp, Sách HDSD, Que lấy SIM", 51, 33);
 
         // OPPO A3
-        seedDataProduct("OPPO A3", "Điện thoại", 0.5, 4, 1, 1);
+        seedDataProduct("OPPO A3", "Điện thoại", 0.5, 4, 1, 1, "oppo_a3_tim_5_a81a5f4bf7.jpg");
 
         // phiên bản OPPO A3
         seedDataVariant("oppoa3", 4990000.0, 10, 15);
@@ -1389,7 +1389,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Củ sạc, Cáp Type C, Ốp lưng,Sách HDSD,Que lấy SIM", 51, 34);
 
         // OPPO Reno12
-        seedDataProduct("OPPO Reno12", "Điện thoại", 0.5, 4, 1, 1);
+        seedDataProduct("OPPO Reno12", "Điện thoại", 0.5, 4, 1, 1, "oppo_reno_12_trang_d776379731.jpg");
 
         // phiên bản OPPO Reno12 256 GB
         seedDataVariant("opporeno12", 12690000.0, 10, 16);
@@ -1452,7 +1452,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB Type C, Củ sạc, Ốp lưng, Sách HDSD, Que lấy SIM", 51, 35);
 
         // Xiaomi POCO X6
-        seedDataProduct("Xiaomi POCO X6", "Điện thoại", 0.5, 3, 1, 1);
+        seedDataProduct("Xiaomi POCO X6", "Điện thoại", 0.5, 3, 1, 1, "00909923_poco_x6_blue_5e570f66db.png");
 
         // phiên bản Xiaomi POCO X6 256 GB
         seedDataVariant("xiaomipocox6", 8990000.0, 10, 17);
@@ -1509,7 +1509,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Android 13", 50, 36);
 
         // Xiaomi Poco M6
-        seedDataProduct("Xiaomi Poco M6", "Điện thoại", 0.5, 3, 1, 1);
+        seedDataProduct("Xiaomi Poco M6", "Điện thoại", 0.5, 3, 1, 1, "poco_m6_cc5c059d02.png");
 
         // phiên bản Xiaomi Poco M6 128 GB
         seedDataVariant("xiaomipocom6", 4290000.0, 10, 18);
@@ -1566,7 +1566,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Android 14 (Hyper OS)", 50, 37);
 
         // Xiaomi Redmi Note 13
-        seedDataProduct("Xiaomi Redmi Note 13", "Điện thoại", 0.5, 3, 1, 1);
+        seedDataProduct("Xiaomi Redmi Note 13", "Điện thoại", 0.5, 3, 1, 1, "2024_1_5_638400663079293145_xiaomi-redmi-note-13-xanh.png");
 
         // phiên bản Xiaomi Redmi Note 13 128 GB
         seedDataVariant("xiaomiredminote13", 4990000.0, 10, 19);
@@ -1617,7 +1617,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sạc, Cáp, Ốp lưng, Sách HDSD, Que lấy SIM", 51, 38);
 
         // Xiaomi Redmi Note 13 Pro+
-        seedDataProduct("Xiaomi Redmi Note 13 Pro+", "Điện thoại", 0.5, 3, 1, 1);
+        seedDataProduct("Xiaomi Redmi Note 13 Pro+", "Điện thoại", 0.5, 3, 1, 1, "2024_1_5_638400663079293145_xiaomi-redmi-note-13-xanh.png");
 
         // phiên bản Xiaomi Redmi Note 13 Pro+ 256 GB
         seedDataVariant("xiaomiredminote13proplus", 8990000.0, 10, 20);
@@ -1672,7 +1672,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sạc, Cáp, Ốp lưng, Sách HDSD, Que lấy SIM", 51, 39);
 
         //MacBook Air
-        seedDataProduct("MacBook Air", "Laptop", 1.29, 6, 2, 2);
+        seedDataProduct("MacBook Air", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
 
         // phiên bản  MacBook Air M2 13 2022 8CPU 10GPU 8GB 512GB
         seedDataVariant("MacbookAir13inchm220228CPU10GPU8GB512GB", 31990000.0, 10, 21);
@@ -1781,7 +1781,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     public void seedDataVariantAtribute(String value, int attribute_id, int variant_id) {
-        List<Variant_Attribute> variantAttributes = variantValueRepository.findVariant_AttributesByVariant_IdAndAndAttribute_Id((long)variant_id, (long)attribute_id);
+        List<Variant_Attribute> variantAttributes = variantValueRepository.findVariant_AttributesByVariant_IdAndAndAttribute_IdAndAndValue((long)variant_id, (long)attribute_id, value);
         if (variantAttributes.isEmpty()) {
             Variant_Attribute variant_attribute = new Variant_Attribute();
             variant_attribute.setValue(value);
@@ -1791,7 +1791,7 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    public void seedDataProduct(String name, String description, Double weight, int brand_id, int category_id, int warranty_id) {
+    public void seedDataProduct(String name, String description, Double weight, int brand_id, int category_id, int warranty_id, String image) {
         Optional<Product> products = productRepository.findProductByName(name);
         if (products.isEmpty()) {
             Product product = new Product();
@@ -1801,6 +1801,7 @@ public class DataInitializer implements CommandLineRunner {
             product.setBrand(brandRepository.findById((long) brand_id).get());
             product.setCategory(categoryRepository.findById((long) category_id).get());
             product.setWarranty(warrantyRepository.findById((long) warranty_id).get());
+            product.setImage("/src/assets/products/" + image);
             productRepository.save(product);
         }
     }

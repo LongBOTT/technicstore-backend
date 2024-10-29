@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 public interface Variant_AttributeRepository extends JpaRepository<Variant_Attribute, Long>{
     // Tìm kiếm theo ID biến thể
-    List<Variant_Attribute> findVariant_AttributesByVariant_IdAndAndAttribute_Id(long variantId, long attributeId);
+    List<Variant_Attribute> findVariant_AttributesByVariant_IdAndAndAttribute_IdAndAndValue(long variantId, long attributeId, String attributeValue);
     List<Variant_Attribute> findVariant_AttributeByVariantId(long variantId);
 
 }
