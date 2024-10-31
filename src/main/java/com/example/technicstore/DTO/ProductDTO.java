@@ -1,15 +1,21 @@
 package com.example.technicstore.DTO;
 
+import com.example.technicstore.entity.Brand;
+import com.example.technicstore.entity.Category;
+import com.example.technicstore.entity.Warranty;
+
+import java.util.List;
+
 public class ProductDTO {
     private Long id;
     private String name;
     private String description;
     private double weight;
-    private Long categoryId;
-    private Long brandId;
-    private Long warrantyId;
+    private Category category;
+    private Brand brand;
+    private Warranty warranty;
     private String image;
-
+    private List<VariantDTO> variants;
     // Getters and Setters
 
     public ProductDTO() {
@@ -47,28 +53,28 @@ public class ProductDTO {
         this.weight = weight;
     }
 
-    public Long getCategoryId() {
-        return categoryId;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
-    public Long getBrandId() {
-        return brandId;
+    public Brand getBrand() {
+        return brand;
     }
 
-    public void setBrandId(Long brandId) {
-        this.brandId = brandId;
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
 
-    public Long getWarrantyId() {
-        return warrantyId;
+    public Warranty getWarranty() {
+        return warranty;
     }
 
-    public void setWarrantyId(Long warrantyId) {
-        this.warrantyId = warrantyId;
+    public void setWarranty(Warranty warranty) {
+        this.warranty = warranty;
     }
 
     public String getImage() {
@@ -77,5 +83,13 @@ public class ProductDTO {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public List<VariantDTO> getVariants() {
+        return variants;
+    }
+
+    public void setVariants(List<VariantDTO> variants) {
+        this.variants = variants;
     }
 }

@@ -30,6 +30,7 @@ public class VariantService {
         return variantRepository.findById(id);
     }
 
+
     // Lấy biến thể theo ID sản phẩm
     public List<Variant> getVariantsByProductId(Long productId) {
         return variantRepository.findByProductsId(productId);
