@@ -1,26 +1,27 @@
-package com.example.technicstore.DTO;
+package com.example.technicstore.DTO.Request;
 
-public class ProductDTO {
-    private Long id;
+public class ProductCreationRequest {
     private String name;
     private String description;
+    private String unit;
     private double weight;
     private Long categoryId;
     private Long brandId;
     private Long warrantyId;
     private String image;
+    private String status;
 
     // Getters and Setters
 
-    public ProductDTO() {
+    public ProductCreationRequest() {
     }
 
-    public Long getId() {
-        return id;
+    public String getUnit() {
+        return unit;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     public String getName() {
@@ -78,4 +79,14 @@ public class ProductDTO {
     public void setImage(String image) {
         this.image = image;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+
 }

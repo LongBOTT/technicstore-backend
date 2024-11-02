@@ -1,5 +1,8 @@
 package com.example.technicstore.service;
 
+import com.example.technicstore.DTO.Request.VariantCreationRequest;
+import com.example.technicstore.DTO.Response.VariantResponse;
+import com.example.technicstore.Mapper.VariantMapper;
 import com.example.technicstore.entity.Product;
 import com.example.technicstore.entity.Variant;
 import com.example.technicstore.repository.ProductRepository;
@@ -20,6 +23,10 @@ public class VariantService {
     private VariantRepository variantRepository;
     @Autowired
     private ProductRepository productRepository;
+
+
+    @Autowired
+    private VariantMapper variantMapper;
     // Lấy tất cả biến thể
     public List<Variant> getAllVariants() {
         return variantRepository.findAll();
@@ -29,6 +36,7 @@ public class VariantService {
     public Optional<Variant> getVariantById(Long id) {
         return variantRepository.findById(id);
     }
+
 
     // Lấy biến thể theo ID sản phẩm
     public List<Variant> getVariantsByProductId(Long productId) {
@@ -76,7 +84,12 @@ public class VariantService {
         return variantRepository.findByProductsInAndPriceBetween(products, minPrice, maxPrice);
     }
     // Tạo mới biến thể
-    public Variant createVariant(Variant variant) {
+
+    public Variant createVariant(VariantCreationRequest variantReques) {
+        // Sử dụng VariantMapper để map VariantDTO sang Variant
+        Variant variant = variantMapper.toEntity(variantReques);
+        Product product = productRepository.findById(variantReques.getProductId()).orElseThrow(() -> new RuntimeException("Product not found"));
+        variant.setProducts(product);
         return variantRepository.save(variant);
     }
 

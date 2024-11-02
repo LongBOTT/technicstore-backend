@@ -1,4 +1,5 @@
 package com.example.technicstore.controller;
+import com.example.technicstore.DTO.Request.VariantAttributeCreation;
 import com.example.technicstore.entity.Variant_Attribute;
 import com.example.technicstore.service.Variant_AttributeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,8 @@ public class Variant_AttributeController {
 
     // Tạo mới thuộc tính biến thể
     @PostMapping
-    public ResponseEntity<Variant_Attribute> createVariant_Attribute(@RequestBody Variant_Attribute variant_Attribute) {
-        Variant_Attribute createdVariant_Attribute = variant_attributeService.createVariant_Attribute(variant_Attribute);
+    public ResponseEntity<Variant_Attribute> createVariant_Attribute(@RequestBody VariantAttributeCreation  variantAttributeRequest) {
+        Variant_Attribute createdVariant_Attribute = variant_attributeService.createVariant_Attribute(variantAttributeRequest);
         return ResponseEntity.ok(createdVariant_Attribute);
     }
 

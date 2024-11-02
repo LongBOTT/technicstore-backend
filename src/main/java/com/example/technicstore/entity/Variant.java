@@ -18,9 +18,13 @@ public class Variant {
     @ManyToOne
     @JoinColumn(name = "productId")
     private Product products;
-
+    private String name;
+    private double costPrice;
     private double price;
+
     private double quantity;
+
+    private String status;
 
     @Column(length = 4096)
     private String image;
@@ -45,6 +49,14 @@ public class Variant {
 
     public Product getProducts() {
         return products;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setProducts(Product products) {
@@ -75,5 +87,26 @@ public class Variant {
         this.image = image;
     }
 
-    // endregion
+    public double getCostPrice() {
+        return costPrice;
+    }
+
+    public void setCostPrice(double costPrice) {
+        this.costPrice = costPrice;
+    }
+
+
+
+
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+
+// endregion
 }

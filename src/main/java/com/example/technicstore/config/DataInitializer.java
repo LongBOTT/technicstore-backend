@@ -6599,8 +6599,12 @@ public class DataInitializer implements CommandLineRunner {
         SeedDataCategoryAttribute(1L, 10L);
         SeedDataCategoryAttribute(1L, 11L);
         SeedDataCategoryAttribute(1L, 12L);
+        SeedDataCategoryAttribute(1L, 24L);
+        SeedDataCategoryAttribute(2L, 3L);
+
         SeedDataCategoryAttribute(2L, 15L);
         SeedDataCategoryAttribute(2L, 16L);
+
 
     }
     public void SeedDataCategoryAttribute(Long category_id, Long attribute_id) {

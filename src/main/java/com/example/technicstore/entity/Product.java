@@ -44,6 +44,10 @@ public class Product {
     @Column(length = 256)
     private String image;
 
+    private String status;
+
+    private String unit;
+
     // endregion
 
     // region Constructor
@@ -118,5 +122,20 @@ public class Product {
     public void setImage(String image) {
         this.image = image;
     }
-    //endregion
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
 }

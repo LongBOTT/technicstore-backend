@@ -1,5 +1,7 @@
 package com.example.technicstore.controller;
 
+import com.example.technicstore.DTO.Request.VariantCreationRequest;
+import com.example.technicstore.DTO.Response.VariantResponse;
 import com.example.technicstore.entity.Variant;
 import com.example.technicstore.service.VariantService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import com.example.technicstore.entity.Product;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/variants")
@@ -55,8 +56,8 @@ public class VariantController {
     }
     // Tạo mới một biến thể
     @PostMapping
-    public ResponseEntity<Variant> createVariant(@RequestBody Variant variant) {
-        Variant createdVariant = variantService.createVariant(variant);
+    public ResponseEntity<Variant> createVariant(@RequestBody VariantCreationRequest variantRequest) {
+        Variant createdVariant = variantService.createVariant(variantRequest);
         return ResponseEntity.ok(createdVariant);
     }
 
