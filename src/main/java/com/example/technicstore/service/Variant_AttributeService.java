@@ -1,7 +1,13 @@
 package com.example.technicstore.service;
 
+import com.example.technicstore.DTO.Request.VariantAttributeCreation;
+import com.example.technicstore.Mapper.VariantAttributeMapper;
+import com.example.technicstore.entity.Attribute;
+import com.example.technicstore.entity.Variant;
 import com.example.technicstore.entity.Variant_Attribute;
+import com.example.technicstore.repository.AttributeRepository;
 import com.example.technicstore.repository.SupplierRepository;
+import com.example.technicstore.repository.VariantRepository;
 import com.example.technicstore.repository.Variant_AttributeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,13 +18,22 @@ import java.util.Optional;
 public class Variant_AttributeService {
     @Autowired
     private Variant_AttributeRepository variant_AttributeRepository;
+    @Autowired
+    private VariantRepository variantRepository;
+    @Autowired
+    private AttributeRepository attributeRepository;
     // Tìm kiếm theo ID biến thể
     public List<Variant_Attribute> findVariant_AttributeByVariantId(long variantId) {
         return variant_AttributeRepository.findVariant_AttributeByVariantId(variantId);
     }
 
     // Tạo mới thuộc tính biến thể
-    public Variant_Attribute createVariant_Attribute(Variant_Attribute variant_Attribute) {
+    public Variant_Attribute createVariant_Attribute(VariantAttributeCreation variant_AttributeRequest) {
+        Variant_Attribute variant_Attribute = VariantAttributeMapper.toEntity(variant_AttributeRequest);
+        Variant variant = variantRepository.findById(variant_AttributeRequest.getVariantId()).orElseThrow(() -> new RuntimeException("Variant not found"));
+        Attribute attribute = attributeRepository.findById(variant_AttributeRequest.getAttributeId()).orElseThrow(() -> new RuntimeException("Attribute not found"));
+        variant_Attribute.setVariant(variant);
+        variant_Attribute.setAttribute(attribute);
         return variant_AttributeRepository.save(variant_Attribute);
     }
 

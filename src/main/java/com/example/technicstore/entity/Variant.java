@@ -21,9 +21,10 @@ public class Variant {
     private String name;
     private double costPrice;
     private double price;
-    private double minStock;
+
     private double quantity;
-    private double available;
+
+    private String status;
 
     @Column(length = 4096)
     private String image;
@@ -94,20 +95,18 @@ public class Variant {
         this.costPrice = costPrice;
     }
 
-    public double getMinStock() {
-        return minStock;
+
+
+
+
+    public String getStatus() {
+        return status;
     }
 
-    public void setMinStock(double minStock) {
-        this.minStock = minStock;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public double getAvailable() {
-        return available;
-    }
 
-    public void setAvailable(double available) {
-        this.available = available;
-    }
 // endregion
 }

@@ -1,16 +1,17 @@
 package com.example.technicstore.service;
 
-import com.example.technicstore.DTO.ProductDTO;
-import com.example.technicstore.DTO.VariantAttributeDTO;
-import com.example.technicstore.DTO.VariantDTO;
+import com.example.technicstore.DTO.Request.ProductCreationRequest;
+import com.example.technicstore.DTO.Response.ProductResponese;
+import com.example.technicstore.DTO.Response.VariantAttributeResponse;
+import com.example.technicstore.DTO.Response.VariantResponse;
 import com.example.technicstore.Mapper.ProductMapper;
 import com.example.technicstore.Mapper.VariantAttributeMapper;
 import com.example.technicstore.Mapper.VariantMapper;
-import com.example.technicstore.entity.Brand;
-import com.example.technicstore.entity.Product;
-import com.example.technicstore.entity.Variant;
-import com.example.technicstore.entity.Variant_Attribute;
+import com.example.technicstore.entity.*;
+import com.example.technicstore.repository.BrandRepository;
+import com.example.technicstore.repository.CategoryRepository;
 import com.example.technicstore.repository.ProductRepository;
+import com.example.technicstore.repository.WarrantyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +28,14 @@ public class ProductService {
     private AttributeService attributeService;
     @Autowired
     private Variant_AttributeService variant_AttributeService;
+    @Autowired
+    private CategoryRepository categoryRepository;
+
+    @Autowired
+    private BrandRepository brandRepository;
+
+    @Autowired
+    private WarrantyRepository warrantyRepository;
 
     // Lấy tất cả sản phẩm
     public List<Product> getAllProducts() {
@@ -49,41 +58,44 @@ public class ProductService {
         return productRepository.findProductsByBrand_Id(id);
     }
 
-    //    public AttributeDTO toAttributeDTO(Attribute attribute){
-//        AttibuteDTO attibuteDTO = new AttibuteDTO();
-//        attibuteDTO.setId(attribute.getId());
-//        attibuteDTO.setName(attribute.getName());
-//        attibuteDTO.setValue(attribute.getValue());
-//        return attibuteDTO;
-//    }
-//    public VariantDTO toVariantDTO(Variant variant){
-//        VariantDTO variantDTO = new VariantDTO();
-//        variantDTO.setId(variant.getId());
-//        variantDTO.setPrice(variant.getPrice());
-//        variantDTO.setQuantity(variant.getQuantity());
-//        variantDTO.setProductId(variant.getProducts().getId());
-//        variantDTO.setAttributes();
-//        return variantDTO;
-//    }
-    public List<ProductDTO> getProductsAndVariants() {
+
+    public List<ProductResponese> getProductsAndVariants() {
         List<Product> products = productRepository.findAll();
-        List<ProductDTO> productDTOS = new ArrayList<>();
+        List<ProductResponese> productDTOS = new ArrayList<>();
 
 //        List<VariantAttributeDTO> variantAttributeDTOS = new ArrayList<>();
         for (Product product : products) {
-            List<VariantDTO> variantDTOS = new ArrayList<>();
-            ProductDTO productDTO = ProductMapper.toDTO(product);
+            List<VariantResponse> variantDTOS = new ArrayList<>();
+            ProductResponese productDTO = ProductMapper.toDTO(product);
             List<Variant> variants = variantService.getVariantsByProductId(product.getId());
-            System.out.println("mảng variant=====================================================: " );
             for (Variant variant : variants) {
-                VariantDTO variantDTO = VariantMapper.toDTO(variant);
-                System.out.println("mảng variant=====================================================: " +variant.getId());
+                VariantResponse variantDTO = VariantMapper.toDTO(variant);
                 variantDTOS.add(variantDTO);
             }
             productDTO.setVariants(variantDTOS);
             productDTOS.add(productDTO);
         }
         return productDTOS;
+    }
+
+    public ProductResponese getProductsAndVariantsAndAttributes(Long productId) {
+        Product product = productRepository.findProductById(productId);
+        ProductResponese productDTO = ProductMapper.toDTO(product);
+        List<Variant> variants = variantService.getVariantsByProductId(product.getId());
+        List<VariantResponse> variantDTOS = new ArrayList<>();
+        for (Variant variant : variants) {
+            VariantResponse variantDTO = VariantMapper.toDTO(variant);
+            variantDTOS.add(variantDTO);
+            List<Variant_Attribute> variant_attributes = variant_AttributeService.findVariant_AttributeByVariantId(variant.getId());
+            List<VariantAttributeResponse> variantAttributeDTOs = new ArrayList<>();
+            for (Variant_Attribute variant_attribute : variant_attributes) {
+                VariantAttributeResponse variantAttributeDTO = VariantAttributeMapper.toDTO(variant_attribute);
+                variantAttributeDTOs.add(variantAttributeDTO);
+            }
+            variantDTO.setAttributes(variantAttributeDTOs);
+        }
+        productDTO.setVariants(variantDTOS);
+        return productDTO;
     }
 
     public List<Product> getProductByCategory_Id(long id) {
@@ -112,7 +124,17 @@ public class ProductService {
     }
 
     // Tạo mới một sản phẩm
-    public Product createProduct(Product product) {
+    public Product createProduct(ProductCreationRequest request) {
+        if (productRepository.findProductByName(request.getName()).isPresent()) {
+            throw new RuntimeException("Product is already exist");
+        }
+        Product product = ProductMapper.toEntity(request);
+        Category category = categoryRepository.findById(request.getCategoryId()).orElseThrow(() -> new RuntimeException("Category not found"));
+        Brand brand = brandRepository.findById(request.getBrandId()).orElseThrow(() -> new RuntimeException("Brand not found"));
+        Warranty warranty = warrantyRepository.findById(request.getWarrantyId()).orElseThrow(() -> new RuntimeException("Warranty not found"));
+        product.setCategory(category);
+        product.setBrand(brand);
+        product.setWarranty(warranty);
         return productRepository.save(product);
     }
 

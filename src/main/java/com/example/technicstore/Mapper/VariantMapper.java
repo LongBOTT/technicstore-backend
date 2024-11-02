@@ -1,42 +1,40 @@
 package com.example.technicstore.Mapper;
 
-import com.example.technicstore.DTO.VariantDTO;
+import com.example.technicstore.DTO.Request.VariantCreationRequest;
+import com.example.technicstore.DTO.Response.VariantResponse;
+import com.example.technicstore.entity.Product;
 import com.example.technicstore.entity.Variant;
+import com.example.technicstore.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 public class VariantMapper {
 
     private final VariantAttributeMapper variantAttributeMapper = new VariantAttributeMapper();
+    @Autowired
+    private ProductRepository productRepository;
 
-    public static Variant toEntity(VariantDTO variantDTO) {
+    public Variant toEntity(VariantCreationRequest variantRequest) {
         Variant variant = new Variant();
-        variant.setId(variantDTO.getId());
-        variant.setCostPrice(variantDTO.getCostPrice());
-        variant.setImage(variantDTO.getImage());
-        variant.setMinStock(variantDTO.getMinStock());
-        variant.setPrice(variantDTO.getPrice());
-        variant.setQuantity(variantDTO.getQuantity());
-        variant.setAvailable(variantDTO.getAvailable());
-        variant.setName(variantDTO.getName());
-
+        variant.setName(variantRequest.getName());
+        variant.setCostPrice(variantRequest.getCostPrice());
+        variant.setImage(variantRequest.getImage());
+        variant.setPrice(variantRequest.getPrice());
+        variant.setQuantity(variantRequest.getQuantity());
+        variant.setStatus(variantRequest.getStatus());
         return variant;
     }
 
-    public static VariantDTO toDTO(Variant variant) {
-        VariantDTO variantDTO = new VariantDTO();
+    public static VariantResponse toDTO(Variant variant) {
+        VariantResponse variantDTO = new VariantResponse();
         variantDTO.setId(variant.getId());
         variantDTO.setCostPrice(variant.getCostPrice());
         variantDTO.setImage(variant.getImage());
-        variantDTO.setMinStock(variant.getMinStock());
         variantDTO.setName(variant.getName());
         variantDTO.setPrice(variant.getPrice());
         variantDTO.setQuantity(variant.getQuantity());
-        variantDTO.setAvailable(variant.getAvailable());
-
+        variantDTO.setProductId(variant.getProducts().getId());
         return variantDTO;
     }
 }

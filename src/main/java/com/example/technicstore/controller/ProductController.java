@@ -1,6 +1,7 @@
 package com.example.technicstore.controller;
 
-import com.example.technicstore.DTO.ProductDTO;
+import com.example.technicstore.DTO.Request.ProductCreationRequest;
+import com.example.technicstore.DTO.Response.ProductResponese;
 import com.example.technicstore.entity.*;
 import com.example.technicstore.service.BrandService;
 import com.example.technicstore.service.CategoryService;
@@ -74,36 +75,23 @@ public class ProductController {
         return product.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
-    @GetMapping("/getProductsAndVariantsAndAttributes")
-    public ResponseEntity<List<ProductDTO>> getProductsAndVariantsAndAttributes() {
-        List<ProductDTO> productsWithVariants = productService.getProductsAndVariants(); // Retrieve from service
+    @GetMapping("/getProductsAndVariants")
+    public ResponseEntity<List<ProductResponese>> getProductsAndVariants() {
+        List<ProductResponese> productsWithVariants = productService.getProductsAndVariants(); // Retrieve from service
+        return ResponseEntity.ok(productsWithVariants); // Wrap in ResponseEntity
+    }
+    @GetMapping("/getProductAndVariantsAndAttributes/{id}")
+    public ResponseEntity<ProductResponese> getProductsAndVariantsAndAttributes(@PathVariable Long id) {
+        ProductResponese productsWithVariants = productService.getProductsAndVariantsAndAttributes(id); // Retrieve from service
         return ResponseEntity.ok(productsWithVariants); // Wrap in ResponseEntity
     }
 
 
-//    @PostMapping
-//    public ResponseEntity<Product> createProduct(@RequestBody ProductDTO productDTO) {
-//        System.out.println( productDTO.getName() + " " + productDTO.getDescription() + " " + productDTO.getWeight() + " " + productDTO.getImage() + " " + productDTO.getCategoryId() + " " + productDTO.getBrandId() + " " + productDTO.getWarrantyId());
-//        // Create a new Product entity
-//        Product product = new Product();
-//        product.setName(productDTO.getName());
-//        product.setDescription(productDTO.getDescription());
-//        product.setWeight(productDTO.getWeight());
-//        product.setImage(productDTO.getImage());
-//
-//        // Find and set the category, brand, and warranty by ID
-//        Category category = categoryService.findById(productDTO.getCategoryId());
-//        Brand brand = brandService.findById(productDTO.getBrandId());
-//        Warranty warranty = warrantyService.findById(productDTO.getWarrantyId());
-//
-//        product.setCategory(category);
-//        product.setBrand(brand);
-//        product.setWarranty(warranty);
-//
-//        // Save the product
-//        Product createdProduct = productService.createProduct(product);
-//        return ResponseEntity.ok(createdProduct);
-//    }
+    @PostMapping
+    public ResponseEntity<Product> createProduct(@RequestBody ProductCreationRequest request) {
+        Product createdProduct = productService.createProduct(request);
+        return ResponseEntity.ok(createdProduct);
+    }
 
     // Cập nhật sản phẩm
     @PutMapping("/{id}")

@@ -1,19 +1,18 @@
-package com.example.technicstore.DTO;
+package com.example.technicstore.DTO.Response;
 
 import java.util.List;
 
-public class VariantDTO {
+public class VariantResponse {
     private Long id;
     private double costPrice;
     private String name;
     private String image;
-    private double minStock;
-    private double available;
+
     private double price;
     private double quantity;
     private Long productId; // Mã sản phẩm liên kết
-    private List<VariantAttributeDTO> attributes; // Danh sách thuộc tính của phiên bản
-    // Constructor, Getters, và Setters
+    private List<VariantAttributeResponse> attributes; // Danh sách thuộc tính của phiên bản
+
 
     public Long getId() {
         return id;
@@ -39,13 +38,7 @@ public class VariantDTO {
         this.image = image;
     }
 
-    public double getMinStock() {
-        return minStock;
-    }
 
-    public void setMinStock(double minStock) {
-        this.minStock = minStock;
-    }
 
     public String getName() {
         return name;
@@ -79,19 +72,13 @@ public class VariantDTO {
         this.productId = productId;
     }
 
-    public double getAvailable() {
-        return available;
-    }
 
-    public void setAvailable(double available) {
-        this.available = available;
-    }
 
-    public List<VariantAttributeDTO> getAttributes() {
+    public List<VariantAttributeResponse> getAttributes() {
         return attributes;
     }
 
-    public void setAttributes(List<VariantAttributeDTO> attributes) {
+    public void setAttributes(List<VariantAttributeResponse> attributes) {
         this.attributes = attributes;
     }
 

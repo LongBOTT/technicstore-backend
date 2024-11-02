@@ -1,4 +1,4 @@
-package com.example.technicstore.DTO;
+package com.example.technicstore.DTO.Response;
 
 import com.example.technicstore.entity.Brand;
 import com.example.technicstore.entity.Category;
@@ -6,7 +6,7 @@ import com.example.technicstore.entity.Warranty;
 
 import java.util.List;
 
-public class ProductDTO {
+public class ProductResponese {
     private Long id;
     private String name;
     private String description;
@@ -15,10 +15,12 @@ public class ProductDTO {
     private Brand brand;
     private Warranty warranty;
     private String image;
-    private List<VariantDTO> variants;
+
+    private String status;
+    private List<VariantResponse> variants;
     // Getters and Setters
 
-    public ProductDTO() {
+    public ProductResponese() {
     }
 
     public Long getId() {
@@ -85,11 +87,19 @@ public class ProductDTO {
         this.image = image;
     }
 
-    public List<VariantDTO> getVariants() {
+    public List<VariantResponse> getVariants() {
         return variants;
     }
 
-    public void setVariants(List<VariantDTO> variants) {
+    public void setVariants(List<VariantResponse> variants) {
         this.variants = variants;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

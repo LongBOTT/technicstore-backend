@@ -1,6 +1,6 @@
-package com.example.technicstore.DTO;
+package com.example.technicstore.DTO.Response;
 
-public class AttributeDTO {
+public class AttributeResponse {
     private Long id;
 
     private String name;
