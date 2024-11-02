@@ -1,8 +1,11 @@
 package com.example.technicstore.controller;
 
-import com.example.technicstore.entity.Product;
-import com.example.technicstore.entity.Variant;
+import com.example.technicstore.DTO.ProductDTO;
+import com.example.technicstore.entity.*;
+import com.example.technicstore.service.BrandService;
+import com.example.technicstore.service.CategoryService;
 import com.example.technicstore.service.ProductService;
+import com.example.technicstore.service.WarrantyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +21,14 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private CategoryService categoryService;
+
+    @Autowired
+    private BrandService brandService;
+
+    @Autowired
+    private WarrantyService warrantyService;
     // Lấy tất cả sản phẩm
     @GetMapping
     public List<Product> getAllProducts() {
@@ -64,9 +75,26 @@ public class ProductController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // Tạo mới sản phẩm
     @PostMapping
-    public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+    public ResponseEntity<Product> createProduct(@RequestBody ProductDTO productDTO) {
+        System.out.println( productDTO.getName() + " " + productDTO.getDescription() + " " + productDTO.getWeight() + " " + productDTO.getImage() + " " + productDTO.getCategoryId() + " " + productDTO.getBrandId() + " " + productDTO.getWarrantyId());
+        // Create a new Product entity
+        Product product = new Product();
+        product.setName(productDTO.getName());
+        product.setDescription(productDTO.getDescription());
+        product.setWeight(productDTO.getWeight());
+        product.setImage(productDTO.getImage());
+
+        // Find and set the category, brand, and warranty by ID
+        Category category = categoryService.findById(productDTO.getCategoryId());
+        Brand brand = brandService.findById(productDTO.getBrandId());
+        Warranty warranty = warrantyService.findById(productDTO.getWarrantyId());
+
+        product.setCategory(category);
+        product.setBrand(brand);
+        product.setWarranty(warranty);
+
+        // Save the product
         Product createdProduct = productService.createProduct(product);
         return ResponseEntity.ok(createdProduct);
     }
