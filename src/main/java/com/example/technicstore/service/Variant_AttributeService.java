@@ -57,4 +57,14 @@ public class Variant_AttributeService {
         return true;
     }
 
+    // Xóa thuộc tính biến thể theo ID biến thể
+    public boolean deleteVariant_AttributeByVariantId(Long variantId) {
+        List<Variant_Attribute> variantAttributes = variant_AttributeRepository.findVariant_AttributeByVariantId(variantId);
+        if (variantAttributes.isEmpty()) {
+            return false;
+        }
+        variant_AttributeRepository.deleteAll(variantAttributes);
+        return true;
+    }
+
 }

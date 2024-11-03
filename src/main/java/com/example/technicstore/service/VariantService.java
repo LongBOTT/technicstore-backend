@@ -7,6 +7,7 @@ import com.example.technicstore.entity.Product;
 import com.example.technicstore.entity.Variant;
 import com.example.technicstore.repository.ProductRepository;
 import com.example.technicstore.repository.VariantRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,9 +25,12 @@ public class VariantService {
     @Autowired
     private ProductRepository productRepository;
 
+    @Autowired
+    private Variant_AttributeService variant_attributeService;
 
     @Autowired
     private VariantMapper variantMapper;
+
     // Lấy tất cả biến thể
     public List<Variant> getAllVariants() {
         return variantRepository.findAll();
@@ -78,7 +82,6 @@ public class VariantService {
     }
 
 
-
     // Hàm tìm kiếm phiên bản theo mảng sản phẩm và khoảng giá
     public List<Variant> getVariantsByProductsAndPriceRange(List<Product> products, Double minPrice, Double maxPrice) {
         return variantRepository.findByProductsInAndPriceBetween(products, minPrice, maxPrice);
@@ -111,4 +114,18 @@ public class VariantService {
     public void deleteVariant(Long id) {
         variantRepository.deleteById(id);
     }
-}
+
+
+    // Xóa biến thể theo mã sản phẩm
+    @Transactional
+    public void deleteVariantByProductId(Long productId) {
+        List<Variant> variants = variantRepository.findByProductsId(productId);
+        for (Variant variant : variants) {
+            // Xóa variant_attributes của biến thể
+            variant_attributeService.deleteVariant_AttributeByVariantId(variant.getId());
+        }
+        // Sau đó, xóa tất cả các variants trong một truy vấn duy nhất
+        variantRepository.deleteAll(variants);
+    }
+
+    }

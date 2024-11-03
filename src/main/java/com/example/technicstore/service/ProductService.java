@@ -98,6 +98,60 @@ public class ProductService {
         return productDTO;
     }
 
+
+    public List<ProductResponese> searchProductWithVariantByName(String name) {
+        List<Product> products = productRepository.findProductByNameContainingIgnoreCase(name);
+        List<com.example.technicstore.DTO.Response.ProductResponese> productDTOS = new ArrayList<>();
+
+        for (Product product : products) {
+            List<VariantResponse> variantDTOS = new ArrayList<>();
+            com.example.technicstore.DTO.Response.ProductResponese productDTO = ProductMapper.toDTO(product);
+            List<Variant> variants = variantService.getVariantsByProductId(product.getId());
+            for (Variant variant : variants) {
+                VariantResponse variantDTO = VariantMapper.toDTO(variant);
+                variantDTOS.add(variantDTO);
+            }
+            productDTO.setVariants(variantDTOS);
+            productDTOS.add(productDTO);
+        }
+        return productDTOS;
+    }
+
+    public List<ProductResponese> searchProductWithVariantByCategory(Long categoryID) {
+        List<Product> products = productRepository.findProductsByCategory_Id(categoryID);
+        List<com.example.technicstore.DTO.Response.ProductResponese> productDTOS = new ArrayList<>();
+
+        for (Product product : products) {
+            List<VariantResponse> variantDTOS = new ArrayList<>();
+            com.example.technicstore.DTO.Response.ProductResponese productDTO = ProductMapper.toDTO(product);
+            List<Variant> variants = variantService.getVariantsByProductId(product.getId());
+            for (Variant variant : variants) {
+                VariantResponse variantDTO = VariantMapper.toDTO(variant);
+                variantDTOS.add(variantDTO);
+            }
+            productDTO.setVariants(variantDTOS);
+            productDTOS.add(productDTO);
+        }
+        return productDTOS;
+    }
+    public List<ProductResponese> searchProductWithVariantByBrand(Long brandID) {
+        List<Product> products = productRepository.findProductsByBrand_Id(brandID);
+        List<com.example.technicstore.DTO.Response.ProductResponese> productDTOS = new ArrayList<>();
+
+        for (Product product : products) {
+            List<VariantResponse> variantDTOS = new ArrayList<>();
+            com.example.technicstore.DTO.Response.ProductResponese productDTO = ProductMapper.toDTO(product);
+            List<Variant> variants = variantService.getVariantsByProductId(product.getId());
+            for (Variant variant : variants) {
+                VariantResponse variantDTO = VariantMapper.toDTO(variant);
+                variantDTOS.add(variantDTO);
+            }
+            productDTO.setVariants(variantDTOS);
+            productDTOS.add(productDTO);
+        }
+        return productDTOS;
+    }
+
     public List<Product> getProductByCategory_Id(long id) {
         return productRepository.findProductsByCategory_Id(id);
     }
@@ -138,21 +192,37 @@ public class ProductService {
         return productRepository.save(product);
     }
 
+
     // Cập nhật thông tin sản phẩm
-    public Product updateProduct(Long id, Product updatedProduct) {
+    public Product updateProduct(Long id, ProductCreationRequest updatedProduct) {
         Optional<Product> productOptional = productRepository.findById(id);
-        if (productOptional.isPresent()) {
-            Product existingProduct = productOptional.get();
-            existingProduct.setName(updatedProduct.getName());
-            existingProduct.setDescription(updatedProduct.getDescription());
-            existingProduct.setWeight(updatedProduct.getWeight());
-            existingProduct.setCategory(updatedProduct.getCategory());
-            existingProduct.setBrand(updatedProduct.getBrand());
-            existingProduct.setWarranty(updatedProduct.getWarranty());
-            return productRepository.save(existingProduct);
+
+        if (productOptional.isEmpty()) {
+            throw new RuntimeException("Product not found");
         }
-        return null;
+
+        Product existingProduct = productOptional.get();
+
+
+        Category category = categoryRepository.findById(updatedProduct.getCategoryId())
+                .orElseThrow(() -> new RuntimeException("Category not found"));
+        Brand brand = brandRepository.findById(updatedProduct.getBrandId())
+                .orElseThrow(() -> new RuntimeException("Brand not found"));
+        Warranty warranty = warrantyRepository.findById(updatedProduct.getWarrantyId())
+                .orElseThrow(() -> new RuntimeException("Warranty not found"));
+
+        existingProduct.setName(updatedProduct.getName());
+        existingProduct.setImage(updatedProduct.getImage());
+        existingProduct.setUnit(updatedProduct.getUnit());
+        existingProduct.setDescription(updatedProduct.getDescription());
+        existingProduct.setWeight(updatedProduct.getWeight());
+        existingProduct.setCategory(category);
+        existingProduct.setBrand(brand);
+        existingProduct.setWarranty(warranty);
+
+        return productRepository.save(existingProduct);
     }
+
 
     // Xóa sản phẩm
     public void deleteProduct(Long id) {

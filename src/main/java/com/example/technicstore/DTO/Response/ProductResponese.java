@@ -10,7 +10,8 @@ public class ProductResponese {
     private Long id;
     private String name;
     private String description;
-    private double weight;
+    private String weight;
+    private String unit;
     private Category category;
     private Brand brand;
     private Warranty warranty;
@@ -47,11 +48,11 @@ public class ProductResponese {
         this.description = description;
     }
 
-    public double getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
@@ -101,5 +102,13 @@ public class ProductResponese {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 }

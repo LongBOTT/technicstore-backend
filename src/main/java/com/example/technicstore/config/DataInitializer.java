@@ -416,20 +416,15 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 14 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 21.990.000
         seedDataVariantAtribute("Đen", 3, 1);
-        seedDataVariantAtribute("Trắng", 3, 1);
-        seedDataVariantAtribute("Xanh", 3, 1);
         seedDataVariantAtribute("128GB", 24, 1);
 
         // điện thoại iphone 14 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 24.990.000
-        seedDataVariantAtribute("Đen", 3, 2);
-        seedDataVariantAtribute("Trắng", 3, 2);
         seedDataVariantAtribute("Xanh", 3, 2);
         seedDataVariantAtribute("256GB", 24, 2);
 
         // điện thoại iphone 14 dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 27.990.000
-        seedDataVariantAtribute("Đen", 3, 3);
+
         seedDataVariantAtribute("Trắng", 3, 3);
-        seedDataVariantAtribute("Xanh", 3, 3);
         seedDataVariantAtribute("512GB", 24, 3);
 
         // thông số kĩ thuật
@@ -6599,8 +6594,44 @@ public class DataInitializer implements CommandLineRunner {
         SeedDataCategoryAttribute(1L, 10L);
         SeedDataCategoryAttribute(1L, 11L);
         SeedDataCategoryAttribute(1L, 12L);
+        SeedDataCategoryAttribute(1L, 13L);
+        SeedDataCategoryAttribute(1L, 14L);
+        SeedDataCategoryAttribute(1L, 15L);
+        SeedDataCategoryAttribute(1L, 16L);
+        SeedDataCategoryAttribute(1L, 17L);
+        SeedDataCategoryAttribute(1L, 18L);
+        SeedDataCategoryAttribute(1L, 19L);
+        SeedDataCategoryAttribute(1L, 20L);
+        SeedDataCategoryAttribute(1L, 21L);
+        SeedDataCategoryAttribute(1L, 22L);
+        SeedDataCategoryAttribute(1L, 23L);
         SeedDataCategoryAttribute(1L, 24L);
-        SeedDataCategoryAttribute(2L, 3L);
+        SeedDataCategoryAttribute(1L, 25L);
+        SeedDataCategoryAttribute(1L, 26L);
+        SeedDataCategoryAttribute(1L, 27L);
+        SeedDataCategoryAttribute(1L, 28L);
+        SeedDataCategoryAttribute(1L, 29L);
+        SeedDataCategoryAttribute(1L, 30L);
+        SeedDataCategoryAttribute(1L, 31L);
+        SeedDataCategoryAttribute(1L, 32L);
+        SeedDataCategoryAttribute(1L, 33L);
+        SeedDataCategoryAttribute(1L, 34L);
+        SeedDataCategoryAttribute(1L, 35L);
+        SeedDataCategoryAttribute(1L, 36L);
+        SeedDataCategoryAttribute(1L, 37L);
+        SeedDataCategoryAttribute(1L, 38L);
+        SeedDataCategoryAttribute(1L, 39L);
+        SeedDataCategoryAttribute(1L, 40L);
+        SeedDataCategoryAttribute(1L, 41L);
+        SeedDataCategoryAttribute(1L, 42L);
+        SeedDataCategoryAttribute(1L, 43L);
+        SeedDataCategoryAttribute(1L, 44L);
+        SeedDataCategoryAttribute(1L, 45L);
+        SeedDataCategoryAttribute(1L, 46L);
+        SeedDataCategoryAttribute(2L, 47L);
+        SeedDataCategoryAttribute(2L, 48L);
+        SeedDataCategoryAttribute(2L, 49L);
+        SeedDataCategoryAttribute(2L, 50L);
 
         SeedDataCategoryAttribute(2L, 15L);
         SeedDataCategoryAttribute(2L, 16L);
@@ -6646,7 +6677,7 @@ public class DataInitializer implements CommandLineRunner {
             Product product = new Product();
             product.setName(name);
             product.setDescription(description);
-            product.setWeight(weight);
+            product.setWeight(weight+"kg");
             product.setBrand(brandRepository.findById((long) brand_id).get());
             product.setCategory(categoryRepository.findById((long) category_id).get());
             product.setWarranty(warrantyRepository.findById((long) warranty_id).get());

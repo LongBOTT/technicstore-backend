@@ -79,6 +79,12 @@ public class VariantController {
         return ResponseEntity.noContent().build();
     }
 
+    // Xóa biến thể theo id sản phẩm
+    @DeleteMapping("/product/{id}")
+    public ResponseEntity<Void> deleteVariantByProductId(@PathVariable Long id) {
+        variantService.deleteVariantByProductId(id);
+        return ResponseEntity.noContent().build();
+    }
     // Lấy thông tin biến thể theo ID sản phẩm
     @GetMapping("/search/category/categoryID")
     public List<Variant> getAllVariantsByCategoryId(@RequestParam Long categoryID) {

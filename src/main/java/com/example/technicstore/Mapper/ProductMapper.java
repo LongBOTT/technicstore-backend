@@ -25,6 +25,7 @@ public class ProductMapper {
         ProductResponese productDTO = new ProductResponese();
         productDTO.setId(product.getId());
         productDTO.setName(product.getName());
+        productDTO.setUnit(product.getUnit());
         productDTO.setDescription(product.getDescription());
         productDTO.setWeight(product.getWeight());
         productDTO.setImage(product.getImage());

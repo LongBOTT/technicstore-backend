@@ -3,10 +3,7 @@ package com.example.technicstore.controller;
 import com.example.technicstore.DTO.Request.ProductCreationRequest;
 import com.example.technicstore.DTO.Response.ProductResponese;
 import com.example.technicstore.entity.*;
-import com.example.technicstore.service.BrandService;
-import com.example.technicstore.service.CategoryService;
-import com.example.technicstore.service.ProductService;
-import com.example.technicstore.service.WarrantyService;
+import com.example.technicstore.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +27,9 @@ public class ProductController {
 
     @Autowired
     private WarrantyService warrantyService;
+
+    @Autowired
+    private VariantService variantService;
     // Lấy tất cả sản phẩm
     @GetMapping
     public List<Product> getAllProducts() {
@@ -80,6 +80,27 @@ public class ProductController {
         List<ProductResponese> productsWithVariants = productService.getProductsAndVariants(); // Retrieve from service
         return ResponseEntity.ok(productsWithVariants); // Wrap in ResponseEntity
     }
+    // tìm kiếm sản phẩm và variant theo tên sản phẩm gần đúng
+    @GetMapping("/search/name/searchProductWithVariantByName")
+    public ResponseEntity<List<ProductResponese>> searchProductWithVariantByName(@RequestParam String name) {
+        List<ProductResponese> productsWithVariants = productService.searchProductWithVariantByName(name); // Retrieve from service
+        return ResponseEntity.ok(productsWithVariants); // Wrap in ResponseEntity
+    }
+
+    // tìm kiếm sản phẩm và variant theo category
+    @GetMapping("/search/category/searchProductWithVariantByCategoryId/{id}")
+    public ResponseEntity<List<ProductResponese>> searchProductWithVariantByCategory(@PathVariable Long id) {
+        List<ProductResponese> productsWithVariants = productService.searchProductWithVariantByCategory(id); // Retrieve from service
+        return ResponseEntity.ok(productsWithVariants); // Wrap in ResponseEntity
+    }
+
+    // tìm kiếm sản phẩm và variant theo brand
+    @GetMapping("/search/brand/searchProductWithVariantByBrandId/{id}")
+    public ResponseEntity<List<ProductResponese>> searchProductWithVariantByBrand(@PathVariable Long id) {
+        List<ProductResponese> productsWithVariants = productService.searchProductWithVariantByBrand(id); // Retrieve from service
+        return ResponseEntity.ok(productsWithVariants); // Wrap in ResponseEntity
+    }
+
     @GetMapping("/getProductAndVariantsAndAttributes/{id}")
     public ResponseEntity<ProductResponese> getProductsAndVariantsAndAttributes(@PathVariable Long id) {
         ProductResponese productsWithVariants = productService.getProductsAndVariantsAndAttributes(id); // Retrieve from service
@@ -95,8 +116,8 @@ public class ProductController {
 
     // Cập nhật sản phẩm
     @PutMapping("/{id}")
-    public ResponseEntity<Product> updateProduct(@PathVariable Long id, @RequestBody Product product) {
-        Product updatedProduct = productService.updateProduct(id, product);
+    public ResponseEntity<Product> updateProduct(@PathVariable Long id, @RequestBody ProductCreationRequest request) {
+        Product updatedProduct = productService.updateProduct(id, request);
         if (updatedProduct != null) {
             return ResponseEntity.ok(updatedProduct);
         } else {
@@ -107,6 +128,7 @@ public class ProductController {
     // Xóa sản phẩm
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
+        variantService.deleteVariantByProductId(id);
         productService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }

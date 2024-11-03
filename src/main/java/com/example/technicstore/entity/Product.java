@@ -20,7 +20,7 @@ public class Product {
     private String name;
 
     // khối lượng
-    private double weight;
+    private String weight;
 
     // Mô tả sản phẩm với độ dài 4096
     @Column(length = 4096)
@@ -99,11 +99,11 @@ public class Product {
         this.brand = brand;
     }
 
-    public double getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 

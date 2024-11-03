@@ -4,7 +4,7 @@ public class ProductCreationRequest {
     private String name;
     private String description;
     private String unit;
-    private double weight;
+    private String weight;
     private Long categoryId;
     private Long brandId;
     private Long warrantyId;
@@ -40,11 +40,11 @@ public class ProductCreationRequest {
         this.description = description;
     }
 
-    public double getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 

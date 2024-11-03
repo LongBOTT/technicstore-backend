@@ -23,4 +23,6 @@ public interface VariantRepository extends JpaRepository<Variant, Long> {
     List<Variant> findByProductsIdAndPrice(Long productId, double price);
 
     List<Variant> findByProductsIn(List<Product> products);
+
+
 }
