@@ -6682,6 +6682,7 @@ public class DataInitializer implements CommandLineRunner {
             product.setCategory(categoryRepository.findById((long) category_id).get());
             product.setWarranty(warrantyRepository.findById((long) warranty_id).get());
             product.setImage("/src/assets/products/" + image);
+            product.setStatus("active");
             productRepository.save(product);
         }
     }

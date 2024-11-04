@@ -17,11 +17,22 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     // Tìm kiếm sản phẩm theo tên gần đúng
     List<Product> findProductByNameContainingIgnoreCase(String name);
+    // Tìm kiếm sản phẩm theo tên gần đúng và trạng thái là 'active'
+    List<Product> findProductByNameContainingIgnoreCaseAndStatus(String name, String status);
+
 
     // Tìm kiếm sản phẩm theo thể loại
     List<Product> findProductsByCategory_Id(long categoryId);
 
     List<Product> findProductsByBrand_Id(long id);
+
+    // Tìm kiếm sản phẩm theo trạng thái
+    List<Product> findProductsByStatus(String status);
+    // Tìm kiếm sản phẩm theo thể loại và trạng thái là 'active'
+    List<Product> findProductsByCategory_IdAndStatus(long categoryId, String status);
+
+    // Tìm kiếm sản phẩm theo thương hiệu và trạng thái là 'active'
+    List<Product> findProductsByBrand_IdAndStatus(long brandId, String status);
 
 
 //    List<Product> findByProductInVariants(List<Variant> variants);

@@ -60,7 +60,7 @@ public class ProductService {
 
 
     public List<ProductResponese> getProductsAndVariants() {
-        List<Product> products = productRepository.findAll();
+        List<Product> products = productRepository.findProductsByStatus("active");
         List<ProductResponese> productDTOS = new ArrayList<>();
 
 //        List<VariantAttributeDTO> variantAttributeDTOS = new ArrayList<>();
@@ -100,7 +100,7 @@ public class ProductService {
 
 
     public List<ProductResponese> searchProductWithVariantByName(String name) {
-        List<Product> products = productRepository.findProductByNameContainingIgnoreCase(name);
+        List<Product> products = productRepository.findProductByNameContainingIgnoreCaseAndStatus(name, "active");
         List<com.example.technicstore.DTO.Response.ProductResponese> productDTOS = new ArrayList<>();
 
         for (Product product : products) {
@@ -118,7 +118,7 @@ public class ProductService {
     }
 
     public List<ProductResponese> searchProductWithVariantByCategory(Long categoryID) {
-        List<Product> products = productRepository.findProductsByCategory_Id(categoryID);
+        List<Product> products = productRepository.findProductsByCategory_IdAndStatus(categoryID,"active");
         List<com.example.technicstore.DTO.Response.ProductResponese> productDTOS = new ArrayList<>();
 
         for (Product product : products) {
@@ -135,7 +135,7 @@ public class ProductService {
         return productDTOS;
     }
     public List<ProductResponese> searchProductWithVariantByBrand(Long brandID) {
-        List<Product> products = productRepository.findProductsByBrand_Id(brandID);
+        List<Product> products = productRepository.findProductsByBrand_IdAndStatus(brandID,"active");
         List<com.example.technicstore.DTO.Response.ProductResponese> productDTOS = new ArrayList<>();
 
         for (Product product : products) {
@@ -172,6 +172,18 @@ public class ProductService {
         return products;  // Trả về danh sách các sản phẩm duy nhất
     }
 
+    // cập nhật trạng thái theo id
+    public Product updateStatus(Long id, String status) {
+        Optional<Product> productOptional = productRepository.findById(id);
+
+        if (productOptional.isEmpty()) {
+            throw new RuntimeException("Product not found");
+        }
+
+        Product existingProduct = productOptional.get();
+        existingProduct.setStatus(status);
+        return productRepository.save(existingProduct);
+    }
     // Tìm sản phẩm theo tên chính xác
     public Optional<Product> getProductByName(String name) {
         return productRepository.findProductByName(name);

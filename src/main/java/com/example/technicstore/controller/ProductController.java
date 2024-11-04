@@ -125,6 +125,18 @@ public class ProductController {
         }
     }
 
+    // xóa sản phẩm bằng cách cập nhật  trạng thái theo id
+    @PutMapping("/updateStatus/{id}")
+    public ResponseEntity<Product> updateStatus(@PathVariable Long id) {
+        Product updatedProduct = productService.updateStatus(id,"inactive");
+        variantService.deleteVariantByProductId(id);
+        if (updatedProduct != null) {
+            return ResponseEntity.ok(updatedProduct);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     // Xóa sản phẩm
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
