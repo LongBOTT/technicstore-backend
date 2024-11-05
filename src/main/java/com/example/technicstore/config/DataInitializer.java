@@ -477,19 +477,13 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 14 plus dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 24.990.000
         seedDataVariantAtribute("Đen", 3, 4);
-        seedDataVariantAtribute("Trắng", 3, 4);
-        seedDataVariantAtribute("Xanh", 3, 4);
         seedDataVariantAtribute("128GB", 24, 4);
 
         // điện thoại iphone 14 plus dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 27.990.000
-        seedDataVariantAtribute("Đen", 3, 5);
         seedDataVariantAtribute("Trắng", 3, 5);
-        seedDataVariantAtribute("Xanh", 3, 5);
         seedDataVariantAtribute("256GB", 24, 5);
 
         // điện thoại iphone 14 plus dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 32.990.000
-        seedDataVariantAtribute("Đen", 3, 6);
-        seedDataVariantAtribute("Trắng", 3, 6);
         seedDataVariantAtribute("Xanh", 3, 6);
         seedDataVariantAtribute("512GB", 24, 6);
 
@@ -544,19 +538,13 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 15 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 22.990.000
         seedDataVariantAtribute("Đen", 3, 7);
-        seedDataVariantAtribute("Trắng", 3, 7);
-        seedDataVariantAtribute("Xanh", 3, 7);
         seedDataVariantAtribute("128GB", 24, 7);
 
         // điện thoại iphone 15 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
-        seedDataVariantAtribute("Đen", 3, 8);
         seedDataVariantAtribute("Trắng", 3, 8);
-        seedDataVariantAtribute("Xanh", 3, 8);
         seedDataVariantAtribute("256GB", 24, 8);
 
         // điện thoại iphone 15 dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 31.990.000
-        seedDataVariantAtribute("Đen", 3, 9);
-        seedDataVariantAtribute("Trắng", 3, 9);
         seedDataVariantAtribute("Xanh", 3, 9);
         seedDataVariantAtribute("512GB", 24, 9);
 
@@ -619,19 +607,14 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 15 plus dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
         seedDataVariantAtribute("Đen", 3, 10);
-        seedDataVariantAtribute("Trắng", 3, 10);
-        seedDataVariantAtribute("Xanh", 3, 10);
         seedDataVariantAtribute("128GB", 24, 10);
 
         // điện thoại iphone 15 plus dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 28.990.000
-        seedDataVariantAtribute("Đen", 3, 11);
+
         seedDataVariantAtribute("Trắng", 3, 11);
-        seedDataVariantAtribute("Xanh", 3, 11);
         seedDataVariantAtribute("256GB", 24, 11);
 
         // điện thoại iphone 15 plus dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 34.990.000
-        seedDataVariantAtribute("Đen", 3, 12);
-        seedDataVariantAtribute("Trắng", 3, 12);
         seedDataVariantAtribute("Xanh", 3, 12);
         seedDataVariantAtribute("512GB", 24, 12);
 
@@ -695,26 +678,18 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 15 pro dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 28.990.000
         seedDataVariantAtribute("Đen", 3, 13);
-        seedDataVariantAtribute("Trắng", 3, 13);
-        seedDataVariantAtribute("Xanh", 3, 13);
         seedDataVariantAtribute("128GB", 24, 13);
 
         // điện thoại iphone 15 pro dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 31.990.000
-        seedDataVariantAtribute("Đen", 3, 14);
         seedDataVariantAtribute("Trắng", 3, 14);
-        seedDataVariantAtribute("Xanh", 3, 14);
         seedDataVariantAtribute("256GB", 24, 14);
 
         // điện thoại iphone 15 pro dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 37.990.000
-        seedDataVariantAtribute("Đen", 3, 15);
-        seedDataVariantAtribute("Trắng", 3, 15);
         seedDataVariantAtribute("Xanh", 3, 15);
         seedDataVariantAtribute("512GB", 24, 15);
 
         // điện thoại iphone 15 pro dung lượng 1 TB có 3 màu Đen, Trắng, Xanh giá 43.990.000
         seedDataVariantAtribute("Đen", 3, 16);
-        seedDataVariantAtribute("Trắng", 3, 16);
-        seedDataVariantAtribute("Xanh", 3, 16);
         seedDataVariantAtribute("1TB", 24, 16);
 
         // thông số kĩ thuật
@@ -774,19 +749,13 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 15 pro max dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 34.990.000
         seedDataVariantAtribute("Đen", 3, 17);
-        seedDataVariantAtribute("Trắng", 3, 17);
-        seedDataVariantAtribute("Xanh", 3, 17);
         seedDataVariantAtribute("256GB", 24, 17);
 
         // điện thoại iphone 15 pro max dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 40.990.000
-        seedDataVariantAtribute("Đen", 3, 18);
         seedDataVariantAtribute("Trắng", 3, 18);
-        seedDataVariantAtribute("Xanh", 3, 18);
         seedDataVariantAtribute("512GB", 24, 18);
 
         // điện thoại iphone 15 pro max dung lượng 1 TB có 3 màu Đen, Trắng, Xanh giá 46.990.000
-        seedDataVariantAtribute("Đen", 3, 19);
-        seedDataVariantAtribute("Trắng", 3, 19);
         seedDataVariantAtribute("Xanh", 3, 19);
         seedDataVariantAtribute("1TB", 24, 19);
 
@@ -846,19 +815,13 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 16 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 22.990.000
         seedDataVariantAtribute("Đen", 3, 20);
-        seedDataVariantAtribute("Trắng", 3, 20);
-        seedDataVariantAtribute("Xanh", 3, 20);
         seedDataVariantAtribute("128GB", 24, 20);
 
         // điện thoại iphone 16 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
-        seedDataVariantAtribute("Đen", 3, 21);
         seedDataVariantAtribute("Trắng", 3, 21);
-        seedDataVariantAtribute("Xanh", 3, 21);
         seedDataVariantAtribute("256GB", 24, 21);
 
         // điện thoại iphone 16 dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 30.990.000
-        seedDataVariantAtribute("Đen", 3, 22);
-        seedDataVariantAtribute("Trắng", 3, 22);
         seedDataVariantAtribute("Xanh", 3, 22);
         seedDataVariantAtribute("512GB", 24, 22);
 
@@ -922,26 +885,19 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại iphone 16 pro dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 28.990.000
         seedDataVariantAtribute("Đen", 3, 23);
-        seedDataVariantAtribute("Trắng", 3, 23);
-        seedDataVariantAtribute("Xanh", 3, 23);
         seedDataVariantAtribute("128GB", 24, 23);
 
         // điện thoại iphone 16 pro dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 31.990.000
-        seedDataVariantAtribute("Đen", 3, 24);
+
         seedDataVariantAtribute("Trắng", 3, 24);
-        seedDataVariantAtribute("Xanh", 3, 24);
         seedDataVariantAtribute("256GB", 24, 24);
 
         // điện thoại iphone 16 pro dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 37.990.000
-        seedDataVariantAtribute("Đen", 3, 25);
-        seedDataVariantAtribute("Trắng", 3, 25);
         seedDataVariantAtribute("Xanh", 3, 25);
         seedDataVariantAtribute("512GB", 24, 25);
 
         // điện thoại iphone 16 pro dung lượng 1 TB có 3 màu Đen, Trắng, Xanh giá 43.990.000
         seedDataVariantAtribute("Đen", 3, 26);
-        seedDataVariantAtribute("Trắng", 3, 26);
-        seedDataVariantAtribute("Xanh", 3, 26);
         seedDataVariantAtribute("1TB", 24, 26);
 
         // thông số kĩ thuật
@@ -1002,8 +958,6 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại samsung galaxy s24 FE dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 16.990.000
         seedDataVariantAtribute("Đen", 3, 27);
-        seedDataVariantAtribute("Trắng", 3, 27);
-        seedDataVariantAtribute("Xanh", 3, 27);
         seedDataVariantAtribute("128GB", 24, 27);
 
         // thông số kĩ thuật
@@ -1053,8 +1007,6 @@ public class DataInitializer implements CommandLineRunner {
 
         // Thông số
         // điện thoại samsung galaxy s23 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 24.990.000
-        seedDataVariantAtribute("Đen", 3, 28);
-        seedDataVariantAtribute("Trắng", 3, 28);
         seedDataVariantAtribute("Xanh", 3, 28);
         seedDataVariantAtribute("256GB", 24, 28);
 
@@ -1117,13 +1069,9 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại Samsung Galaxy S24 Ultra dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 33.990.000
         seedDataVariantAtribute("Đen", 3, 29);
-        seedDataVariantAtribute("Trắng", 3, 29);
-        seedDataVariantAtribute("Xanh", 3, 29);
         seedDataVariantAtribute("256GB", 24, 29);
 
         // điện thoại Samsung Galaxy S24 Ultra dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 37.990.000
-        seedDataVariantAtribute("Đen", 3, 30);
-        seedDataVariantAtribute("Trắng", 3, 30);
         seedDataVariantAtribute("Xanh", 3, 30);
         seedDataVariantAtribute("512GB", 24, 30);
 
@@ -1185,8 +1133,6 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại Samsung Galaxy Z Flip5 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
         seedDataVariantAtribute("Đen", 3, 31);
-        seedDataVariantAtribute("Trắng", 3, 31);
-        seedDataVariantAtribute("Xanh", 3, 31);
         seedDataVariantAtribute("256GB", 24, 31);
 
         // thông số kĩ thuật
@@ -1246,8 +1192,6 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại Samsung Galaxy A06 dung lượng128 GB có 3 màu Đen, Trắng, Xanh giá 3.490.000
         seedDataVariantAtribute("Đen", 3, 32);
-        seedDataVariantAtribute("Trắng", 3, 32);
-        seedDataVariantAtribute("Xanh", 3, 32);
         seedDataVariantAtribute("128GB", 24, 32);
 
         // thông số kĩ thuật
@@ -1299,8 +1243,6 @@ public class DataInitializer implements CommandLineRunner {
 
         // Thông số
         // điện thoại Samsung Galaxy A05 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 2.790.000
-        seedDataVariantAtribute("Đen", 3, 33);
-        seedDataVariantAtribute("Trắng", 3, 33);
         seedDataVariantAtribute("Xanh", 3, 33);
         seedDataVariantAtribute("128GB", 24, 33);
 
@@ -1347,8 +1289,6 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại OPPO A3 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.990.000
         seedDataVariantAtribute("Đen", 3, 34);
-        seedDataVariantAtribute("Trắng", 3, 34);
-        seedDataVariantAtribute("Xanh", 3, 34);
         seedDataVariantAtribute("128GB", 24, 34);
 
         // thông số kĩ thuật
@@ -1402,8 +1342,6 @@ public class DataInitializer implements CommandLineRunner {
 
         // Thông số
         // điện thoại OPPO Reno12 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 12.690.000
-        seedDataVariantAtribute("Đen", 3, 35);
-        seedDataVariantAtribute("Trắng", 3, 35);
         seedDataVariantAtribute("Xanh", 3, 35);
         seedDataVariantAtribute("256GB", 24, 35);
 
@@ -1465,8 +1403,6 @@ public class DataInitializer implements CommandLineRunner {
 
         // Thông số
         // điện thoại Xiaomi POCO X6 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 8.990.000
-        seedDataVariantAtribute("Đen", 3, 36);
-        seedDataVariantAtribute("Trắng", 3, 36);
         seedDataVariantAtribute("Xanh", 3, 36);
         seedDataVariantAtribute("256GB", 24, 36);
 
@@ -1523,8 +1459,6 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // điện thoại Xiaomi Poco M6 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.290.000
         seedDataVariantAtribute("Đen", 3, 37);
-        seedDataVariantAtribute("Trắng", 3, 37);
-        seedDataVariantAtribute("Xanh", 3, 37);
         seedDataVariantAtribute("128GB", 24, 37);
 
         // thông số kĩ thuật
@@ -1579,8 +1513,6 @@ public class DataInitializer implements CommandLineRunner {
 
         // Thông số
         // điện thoại Xiaomi Redmi Note 13 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.990.000
-        seedDataVariantAtribute("Đen", 3, 38);
-        seedDataVariantAtribute("Trắng", 3, 38);
         seedDataVariantAtribute("Xanh", 3, 38);
         seedDataVariantAtribute("128GB", 24, 38);
 
@@ -1630,9 +1562,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Thông số
         // điện thoại Xiaomi Redmi Note 13 Pro+ dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 8.990.000
-        seedDataVariantAtribute("Đen", 3, 39);
         seedDataVariantAtribute("Trắng", 3, 39);
-        seedDataVariantAtribute("Xanh", 3, 39);
         seedDataVariantAtribute("256GB", 24, 39);
 
         // thông số kĩ thuật
@@ -1696,8 +1626,6 @@ public class DataInitializer implements CommandLineRunner {
         // Thông số
         // Laptop MacBook Air 13 inch M2 2022 8CPU 10GPU 8GB/512GB có 3 màu Đen, Trắng, Xám giá 31.990.000
         seedDataVariantAtribute("Đen", 3, 40);
-        seedDataVariantAtribute("Trắng", 3, 40);
-        seedDataVariantAtribute("Xám", 3, 40);
         seedDataVariantAtribute("512GB", 24, 40);
 
         // thông số kĩ thuật
