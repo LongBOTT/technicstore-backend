@@ -2,6 +2,7 @@ package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Set;
 
@@ -23,7 +24,7 @@ public class Order {
 
     // Ngày đặt hàng
     @Temporal(TemporalType.TIMESTAMP)
-    private Date orderDate;
+    private LocalDateTime orderDate;
 
     // Tổng tiền của đơn đặt hàng
     private double total_amount;
@@ -74,11 +75,11 @@ public class Order {
         this.customer = customer;
     }
 
-    public Date getOrderDate() {
+    public LocalDateTime getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
 
