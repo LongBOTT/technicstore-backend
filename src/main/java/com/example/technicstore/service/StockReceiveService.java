@@ -29,13 +29,33 @@ public class StockReceiveService {
     public List<StockReceiveResponse> getAllStockReceives() {
         List<StockReceive> stockReceives = stockReceiveRepository.findAll();
         List<StockReceiveResponse> stockReceiveResponses = new ArrayList<>();
-        StockReceiveResponse stockReceiveResponse;
         for (StockReceive stockReceive : stockReceives) {
-            stockReceiveResponse = StockReceiveMappter.toDTO(stockReceive);
-
-
+            StockReceiveResponse stockReceiveResponse = StockReceiveMappter.toDTO(stockReceive);
+            stockReceiveResponses.add(stockReceiveResponse);
         }
+        return stockReceiveResponses;
+    }
 
+    // lấy tất cả phiếu nhập theo id nhà cung cấp
+    public List<StockReceiveResponse> getStockReceivesBySupplierId(Long supplierId) {
+        List<StockReceive> stockReceives = stockReceiveRepository.findStockReceivesBySupplier_Id(supplierId);
+        List<StockReceiveResponse> stockReceiveResponses = new ArrayList<>();
+        for (StockReceive stockReceive : stockReceives) {
+            StockReceiveResponse stockReceiveResponse = StockReceiveMappter.toDTO(stockReceive);
+            stockReceiveResponses.add(stockReceiveResponse);
+        }
+        return stockReceiveResponses;
+    }
+
+    // lấy phiếu nhập gần đúng theo id gần đúng
+
+    public List<StockReceiveResponse> getStockReceivesByIdContaining(Long id) {
+        List<StockReceive> stockReceives = stockReceiveRepository.findStockReceivesByIdContaining(id.toString());
+        List<StockReceiveResponse> stockReceiveResponses = new ArrayList<>();
+        for (StockReceive stockReceive : stockReceives) {
+            StockReceiveResponse stockReceiveResponse = StockReceiveMappter.toDTO(stockReceive);
+            stockReceiveResponses.add(stockReceiveResponse);
+        }
         return stockReceiveResponses;
     }
     // tạo phiết nhập

@@ -51,13 +51,21 @@ public class StockReceiveDetailService {
 
     // Tạo chi tiết phiếu nhập
     public StockReceiveDetail createStockReceiveDetail(StockReceiveDetailRequest stockReceiveDetailRequest) {
-        System.out.println("stockReceiveDetailRequest"+stockReceiveDetailRequest.getStockReceiveId());
-        System.out.println("stockReceiveDetailRequest"+stockReceiveDetailRequest.getVariantId());
         StockReceiveDetail stockReceiveDetail = StockReceiveDetailMapper.toEntity(stockReceiveDetailRequest);
         StockReceive stockReceive = stockReceiveRepository.findById(stockReceiveDetailRequest.getStockReceiveId()).orElseThrow(() -> new RuntimeException("StockReceive not found"));
         Variant variant = variantRepository.findById(stockReceiveDetailRequest.getVariantId()).orElseThrow(() -> new RuntimeException("Variant not found"));
         stockReceiveDetail.setStockReceive(stockReceive);
         stockReceiveDetail.setVariant(variant);
-        return stockReceiveDetailRepository.save(stockReceiveDetail);
+
+        StockReceiveDetail savedStockReceiveDetail = stockReceiveDetailRepository.save(stockReceiveDetail);
+
+        // Cập nhật số lượng của phiên bản sản phẩm
+        int updatedQuantity = (int) (variant.getQuantity() + stockReceiveDetailRequest.getQuantity());
+        variant.setQuantity(updatedQuantity);
+
+        // Lưu phiên bản sản phẩm đã cập nhật vào database
+        variantRepository.save(variant);
+
+        return savedStockReceiveDetail;
     }
 }
