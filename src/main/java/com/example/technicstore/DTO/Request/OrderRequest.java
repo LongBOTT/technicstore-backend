@@ -6,13 +6,14 @@ import com.example.technicstore.entity.Order;
 import com.example.technicstore.entity.OrderDetail;
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Set;
 
 public class OrderRequest {
     private Long id;
     private int customer_id;
-    private Date orderDate;
+    private LocalDateTime orderDate;
     private double total_amount;
     private String orderStatus;
     private String payment_status;
@@ -31,10 +32,10 @@ public class OrderRequest {
     public void setCustomer_id(int customer_id) {
         this.customer_id = customer_id;
     }
-    public Date getOrderDate() {
+    public LocalDateTime getOrderDate() {
         return orderDate;
     }
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
     public double getTotal_amount() {

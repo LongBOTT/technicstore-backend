@@ -6681,16 +6681,24 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    public void seedDataOrder(String note, String order_status, String payment_method,String payment_status, double Total, Long customerId, LocalDateTime order_date) {
+    public void seedDataOrder(String note, String order_status, String payment_method,String payment_status, double total, Long customerId, LocalDateTime order_date) {
         List<Order> orders = orderRepository.findOrdersByCustomerId(customerId);
         if (orders.isEmpty()) {
             Order order = new Order();
             order.setNote(note);
             order.setOrderStatus(order_status);
             order.setPayment_status(payment_status);
-            order.setPayment_method(payment_method);
-            order.setCustomer(customerRepository.findById(customerId).get());
+
+            // Chuyển đổi chuỗi thành enum PaymentMethod
+            try {
+                Order.PaymentMethod method = Order.PaymentMethod.valueOf(payment_method);
+                order.setPayment_method(method);
+            } catch (IllegalArgumentException e) {
+                throw new RuntimeException("Phương thức thanh toán không hợp lệ: " + payment_method);
+            }
+            order.setCustomer(customerRepository.findById(customerId).orElseThrow(() -> new RuntimeException("Customer not found")));
             order.setOrderDate(order_date);
+            order.setTotal_amount(total);
             orderRepository.save(order);
         }
 

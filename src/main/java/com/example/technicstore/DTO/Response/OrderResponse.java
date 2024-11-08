@@ -3,13 +3,14 @@ package com.example.technicstore.DTO.Response;
 import com.example.technicstore.entity.Customer;
 import com.example.technicstore.entity.Order;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
 public class OrderResponse {
     private Long id;
     private Customer customer;
-    private Date orderDate;
+    private LocalDateTime orderDate;
     private double total_amount;
     private String orderStatus;
     private String payment_status;
@@ -37,11 +38,11 @@ public class OrderResponse {
         this.customer = customer;
     }
 
-    public Date getOrderDate() {
+    public LocalDateTime getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
     public double getTotal_amount() {
