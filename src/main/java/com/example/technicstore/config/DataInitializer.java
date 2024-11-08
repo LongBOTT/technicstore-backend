@@ -6527,7 +6527,7 @@ public class DataInitializer implements CommandLineRunner {
         SeedDataCategoryAttribute(1L, 39L);
         SeedDataCategoryAttribute(1L, 40L);
         SeedDataCategoryAttribute(1L, 41L);
-        SeedDataCategoryAttribute(1L, 42L);
+        SeedDataCategoryAttribue(1L, 42L);
         SeedDataCategoryAttribute(1L, 43L);
         SeedDataCategoryAttribute(1L, 44L);
         SeedDataCategoryAttribute(1L, 45L);
@@ -6539,6 +6539,7 @@ public class DataInitializer implements CommandLineRunner {
 
         SeedDataCategoryAttribute(2L, 15L);
         SeedDataCategoryAttribute(2L, 16L);
+
 
 
     }
