@@ -16,13 +16,7 @@ public class StockReceive {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Số tiền hàng
-    @Column(name = "total_value")
-    private double total_value;
 
-    // Chi phí phát sinh
-    @Column(name = "cost")
-    private double cost;
     // Tổng giá trị phiếu nhập
     @Column(name = "total")
     private double total;
@@ -34,9 +28,14 @@ public class StockReceive {
     @Column(name = "note")
     private String note;
 
-    // Danh sách chi tiết phiếu nhập kho
-    @OneToMany(mappedBy = "stock_receive")
-    private Set<StockReceiveDetail> stock_receive_details;
+    // Nhà cung cấp sản phẩm
+    @ManyToOne
+    @JoinColumn(name = "supplierId")
+    private Supplier supplier;
+
+//    // Danh sách chi tiết phiếu nhập kho
+//    @OneToMany(mappedBy = "stockReceive")
+//    private Set<StockReceiveDetail> stockReceiveDetails;
     // endregion
 
     // region Constructor
@@ -80,28 +79,21 @@ public class StockReceive {
         this.note = note;
     }
 
-    public Set<StockReceiveDetail> getStock_receive_details() {
-        return stock_receive_details;
+    public Supplier getSupplier() {
+        return supplier;
     }
 
-    public void setStock_receive_details(Set<StockReceiveDetail> stock_receive_details) {
-        this.stock_receive_details = stock_receive_details;
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
     }
 
-    public double getCost() {
-        return cost;
-    }
+//    public Set<StockReceiveDetail> getStockReceiveDetails() {
+//        return stockReceiveDetails;
+//    }
+//
+//    public void setStockReceiveDetails(Set<StockReceiveDetail> stockReceiveDetails) {
+//        this.stockReceiveDetails = stockReceiveDetails;
+//    }
 
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
-
-    public double getTotal_value() {
-        return total_value;
-    }
-
-    public void setTotal_value(double total_value) {
-        this.total_value = total_value;
-    }
     // endregion
 }

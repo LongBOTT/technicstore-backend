@@ -17,7 +17,7 @@ public class StockReceiveDetail {
 
     @ManyToOne
     @JoinColumn(name = "stock_receive_id")
-    private StockReceive stock_receive;
+    private StockReceive stockReceive;
 
     // Phien bản đặt hàng
     @ManyToOne
@@ -25,8 +25,8 @@ public class StockReceiveDetail {
     private Variant variant;
 
     private int quantity;
-    private double unit_price;
-    private String unit;
+    private double price;
+
     // endregion
 
     // region Constructor
@@ -46,12 +46,12 @@ public class StockReceiveDetail {
         this.id = id;
     }
 
-    public StockReceive getStock_receive() {
-        return stock_receive;
+    public StockReceive getStockReceive() {
+        return stockReceive;
     }
 
-    public void setStock_receive(StockReceive stock_receive) {
-        this.stock_receive = stock_receive;
+    public void setStockReceive(StockReceive stockReceive) {
+        this.stockReceive = stockReceive;
     }
 
     public Variant getVariant() {
@@ -70,20 +70,13 @@ public class StockReceiveDetail {
         this.quantity = quantity;
     }
 
-    public double getUnit_price() {
-        return unit_price;
+    public double getPrice() {
+        return price;
     }
 
-    public void setUnit_price(double unit_price) {
-        this.unit_price = unit_price;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getUnit() {
-        return unit;
-    }
-
-    public void setUnit(String unit) {
-        this.unit = unit;
-    }
 // endregion
 }

@@ -30,7 +30,7 @@ public class DataInitializer implements CommandLineRunner {
 
     private final ProductRepository productRepository;
 
-    private final ImeiRepository imeiRepository;
+
 
     private final VariantRepository variantRepository;
 
@@ -52,7 +52,7 @@ public class DataInitializer implements CommandLineRunner {
         this.decentralizationRepository = decentralizationRepository;
         this.accountRepository = accountRepository;
         this.productRepository = productRepository;
-        this.imeiRepository = imeiRepository;
+
         this.variantRepository = variantRepository;
         this.variantValueRepository = variantValueRepository1;
         this.categoryAttributeRepository = categoryAttributeRepository;

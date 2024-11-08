@@ -1,12 +1,15 @@
 package com.example.technicstore.controller;
 
+import com.example.technicstore.DTO.Request.ImeiRequest;
 import com.example.technicstore.entity.Imei;
 import com.example.technicstore.service.ImeiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -29,19 +32,21 @@ public class ImeiController {
         return imei.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
-
-    // Lấy thông tin một IMEI theo mã IMEI
-    @GetMapping("/imei_code/{imei_code}")
-    public ResponseEntity<Imei> getImeiByImeiCode(@PathVariable String imei_code) {
-        Optional<Imei> imei = imeiService.getImeiByImeiCode(imei_code);
-        return imei.map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+    // kiểm tra imei có tồn tại chưa
+    @GetMapping("/check-existence/{imei_code}")
+    public ResponseEntity<Map<String, Boolean>> checkImeiExistence(@PathVariable String imei_code) {
+        boolean exists = imeiService.getImeiByImeiCode(imei_code).isPresent();
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("exists", exists);
+        return ResponseEntity.ok(response);
     }
+
+
 
     // Tạo mới một IMEI
     @PostMapping
-    public ResponseEntity<Imei> createImei(@RequestBody Imei imei) {
-        Imei createdImei = imeiService.createImei(imei);
+    public ResponseEntity<Imei> createImei(@RequestBody ImeiRequest request) {
+        Imei createdImei = imeiService.createImei(request);
         return ResponseEntity.ok(createdImei);
     }
 
