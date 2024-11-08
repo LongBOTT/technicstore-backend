@@ -36,4 +36,9 @@ public class StockReceiveController {
     public ResponseEntity<List<StockReceiveResponse>> getStockReceiveBySupplierId(@PathVariable Long supplierId) {
         return ResponseEntity.ok(stockReceiveService.getStockReceivesBySupplierId(supplierId));
     }
+
+   @GetMapping("getStockReceiveAndStockReceiveDetailById/{id}")
+    public ResponseEntity<StockReceiveResponse> getStockReceiveAndStockReceiveDetailById(@PathVariable Long id) {
+        return ResponseEntity.ok(stockReceiveService.getStockReceiveAndStockReceiveDetailById(id));
+   }
 }

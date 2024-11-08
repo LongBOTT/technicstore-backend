@@ -1,8 +1,13 @@
 package com.example.technicstore.service;
 
 import com.example.technicstore.DTO.Request.StockReceiveRequest;
+import com.example.technicstore.DTO.Response.ImeiResponse;
 import com.example.technicstore.DTO.Response.StockReceiveResponse;
+import com.example.technicstore.DTO.Response.StockReciveDetailResponse;
+import com.example.technicstore.Mapper.ImeiMapper;
+import com.example.technicstore.Mapper.StockReceiveDetailMapper;
 import com.example.technicstore.Mapper.StockReceiveMappter;
+import com.example.technicstore.entity.Imei;
 import com.example.technicstore.entity.StockReceive;
 import com.example.technicstore.entity.StockReceiveDetail;
 import com.example.technicstore.entity.Supplier;
@@ -21,6 +26,7 @@ public class StockReceiveService {
     private StockReceiveRepository stockReceiveRepository;
     @Autowired
     private StockReceiveDetailService stockReceiveDetailService;
+    @Autowired ImeiService imeiService;
 
     @Autowired
     SupplierRepository supplierRepository;
@@ -58,8 +64,30 @@ public class StockReceiveService {
         }
         return stockReceiveResponses;
     }
+
+    // lấy phiếu nhập và thông tin chi tiết phiếu nhập theo id phiếu nhập
+    public StockReceiveResponse getStockReceiveAndStockReceiveDetailById(Long id) {
+        StockReceive stockReceive = stockReceiveRepository.findStockReceiveById(id);
+        StockReceiveResponse stockReceiveResponse = StockReceiveMappter.toDTO(stockReceive);
+        List<StockReceiveDetail> stockReceiveDetails = stockReceiveDetailService.getStockReceiveDetailsByStockReceiveId(stockReceive.getId());
+        List<StockReciveDetailResponse> stockReceiveResponses = new ArrayList<>();
+        for (StockReceiveDetail stockReceiveDetail : stockReceiveDetails) {
+            StockReciveDetailResponse stockReceiveDetailResponse = StockReceiveDetailMapper.toDTO(stockReceiveDetail);
+            List<Imei> imeis = imeiService.getImeisByStockReceiveDetailId(stockReceiveDetail.getId());
+            List<ImeiResponse> imeiResponses = new ArrayList<>();
+            for (Imei imei : imeis) {
+                ImeiResponse imeiResponse = ImeiMapper.toDTO(imei);
+                imeiResponses.add(imeiResponse);
+            }
+            stockReceiveDetailResponse.setImeiResponses(imeiResponses);
+            stockReceiveResponses.add(stockReceiveDetailResponse);
+        }
+        stockReceiveResponse.setStockReciveDetailResponseList(stockReceiveResponses);
+        return stockReceiveResponse;
+    }
+
     // tạo phiết nhập
-    public StockReceive createStockReceive (StockReceiveRequest stockReceiveRequest) {
+    public StockReceive createStockReceive(StockReceiveRequest stockReceiveRequest) {
         StockReceive stockReceive = StockReceiveMappter.toEntity(stockReceiveRequest);
         Supplier supplier = supplierRepository.findById(stockReceiveRequest.getSupplierId()).orElseThrow(() -> new RuntimeException("Supplier not found"));
         stockReceive.setSupplier(supplier);

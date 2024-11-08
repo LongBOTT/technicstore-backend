@@ -27,10 +27,7 @@ public class OrderDetail {
     private int quantity;
 
     // Giá trị của chi tiết đơn đặt hàng
-    private double unit_price;
-
-    // Đơn vị
-    private String unit;
+    private double price;
 
     // Tổng tiền
     private double total;
@@ -42,13 +39,12 @@ public class OrderDetail {
     public OrderDetail() {
     }
 
-    public OrderDetail(Order order, com.example.technicstore.entity.Imei imei, int quantity, double unit_price, String unit) {
+    public OrderDetail(Order order, com.example.technicstore.entity.Imei imei, int quantity, double price) {
         this.order = order;
         Imei = imei;
         this.quantity = quantity;
-        this.unit_price = unit_price;
-        this.unit = unit;
-        this.total = this.unit_price * this.quantity;
+        this.price = price;
+        this.total = this.price * this.quantity;
     }
 
     // endregion
@@ -87,20 +83,12 @@ public class OrderDetail {
         this.quantity = quantity;
     }
 
-    public double getUnit_price() {
-        return unit_price;
+    public double getPrice() {
+        return price;
     }
 
-    public void setUnit_price(double unit_price) {
-        this.unit_price = unit_price;
-    }
-
-    public String getUnit() {
-        return unit;
-    }
-
-    public void setUnit(String unit) {
-        this.unit = unit;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public double getTotal() {

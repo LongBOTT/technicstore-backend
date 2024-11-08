@@ -32,21 +32,8 @@ public class StockReceiveDetailService {
     private ImeiService imeiService;
 
     // lấy tất cả chi tiết phiếu nhập theo id phiếu nhập
-    public List<StockReciveDetailResponse> getStockReceiveDetailsByStockReceiveId(Long stockReceiveId) {
-          List<StockReceiveDetail>StockReceiveDetails = stockReceiveDetailRepository.findStockReceiveDetailsByStockReceive_Id(stockReceiveId);
-          List<StockReciveDetailResponse> stockReciveDetailResponses = new ArrayList<>();
-          for(StockReceiveDetail stockReceiveDetail : StockReceiveDetails){
-              StockReciveDetailResponse stockReciveDetailResponse = StockReceiveDetailMapper.toDTO(stockReceiveDetail);
-              List<Imei> imeis = imeiService.getImeisByStockReceiveDetailId(stockReceiveDetail.getId());
-                List<ImeiResponse> imeiResponses = new ArrayList<>();
-                for(Imei imei : imeis){
-                   ImeiResponse imeiResponse = ImeiMapper.toDTO(imei);
-
-                }
-
-
-          }
-          return stockReciveDetailResponses;
+  public List <StockReceiveDetail> getStockReceiveDetailsByStockReceiveId(Long stockReceiveId) {
+        return stockReceiveDetailRepository.findStockReceiveDetailsByStockReceive_Id(stockReceiveId);
     }
 
     // Tạo chi tiết phiếu nhập

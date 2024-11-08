@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
+    // Tìm kiếm đơn hàng theo id
+    Order findOrderById(Long id);
 
     // Tìm kiếm đơn hàng theo trạng thái
     List<Order> findOrdersByOrderStatus(String status);
