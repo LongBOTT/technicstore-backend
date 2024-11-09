@@ -1,5 +1,6 @@
 package com.example.technicstore.controller;
 
+import com.example.technicstore.DTO.Response.OrderResponse;
 import com.example.technicstore.entity.Order;
 import com.example.technicstore.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,8 @@ public class OrderController {
 
     // Lấy danh sách tất cả đơn hàng
     @GetMapping
-    public List<Order> getAllOrders() {
-        return orderService.getAllOrders();
+    public List<OrderResponse> getAllOrders() {
+        return orderService.getAllOrderResponse();
     }
 
     // Lấy thông tin một đơn hàng theo ID
@@ -33,10 +34,15 @@ public class OrderController {
 
     // Lấy danh sách đơn hàng theo trạng thái
     @GetMapping("/search/status")
-    public List<Order> getOrdersByStatus(@RequestParam String status) {
+    public List<OrderResponse> getOrdersByStatus(@RequestParam String status) {
         return orderService.getOrdersByStatus(status);
     }
 
+    // Lấy danh sách đơn hàng theo phương thức thanh toán
+    @GetMapping("/search/payment_method")
+    public List<OrderResponse> getOrdersByPaymentMethod(@RequestParam String paymentMethod) {
+        return orderService.getOrdersByPaymentMethod(paymentMethod);
+    }
     // Lấy danh sách đơn hàng theo khách hàng
     @GetMapping("/search/customer")
     public List<Order> getOrdersByCustomerId(@RequestParam Long customerId) {

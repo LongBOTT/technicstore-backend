@@ -21,6 +21,9 @@ public class OrderRequest {
     private String note;
 
     private String address;
+
+    private String phone;
+
     // endregion
     public Long getId() {
         return id;
@@ -86,5 +89,12 @@ public class OrderRequest {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

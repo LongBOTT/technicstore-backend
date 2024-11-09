@@ -34,10 +34,7 @@ public class OrderService {
         return orderRepository.findById(id);
     }
 
-    // Lấy đơn hàng theo trạng thái
-    public List<Order> getOrdersByStatus(String status) {
-        return orderRepository.findOrdersByOrderStatus(status);
-    }
+
 
     // Lấy đơn hàng theo khách hàng
     public List<Order> getOrdersByCustomerId(Long customerId) {
@@ -62,6 +59,40 @@ public class OrderService {
         }
         return orderResponses;
     }
+    // Lấy đơn hàng theo trạng thái
+    public List<OrderResponse> getOrdersByStatus(String status) {
+        List<Order> orders = orderRepository.findOrdersByOrderStatus(status);
+        List<OrderResponse> orderResponses = new ArrayList<>();
+        for(Order order : orders) {
+            OrderResponse orderResponse = OrderMapper.toDTO(order);
+            orderResponses.add(orderResponse);
+        }
+        return orderResponses;
+    }
+
+    // Lấy đơn hàng theo phương thức thanh toán
+    public List<OrderResponse> getOrdersByPaymentMethod(String paymentMethod) {
+        // Chuyển đổi từ chuỗi sang enum PaymentMethod
+        Order.PaymentMethod method;
+        try {
+            method = Order.PaymentMethod.valueOf(paymentMethod);
+        } catch (IllegalArgumentException e) {
+            throw new RuntimeException("Phương thức thanh toán không hợp lệ: " + paymentMethod);
+        }
+
+        // Sử dụng phương thức tìm kiếm của repository
+        List<Order> orders = orderRepository.findOrdersByPaymentMethod(method);
+        List<OrderResponse> orderResponses = new ArrayList<>();
+
+        // Chuyển đổi mỗi Order sang OrderResponse
+        for (Order order : orders) {
+            OrderResponse orderResponse = OrderMapper.toDTO(order);
+            orderResponses.add(orderResponse);
+        }
+
+        return orderResponses;
+    }
+
     public OrderResponse getOrderResponseById(Long id) {
         Order order = orderRepository.findOrderById(id);
         OrderResponse orderResponse = OrderMapper.toDTO(order);

@@ -4,7 +4,6 @@ import com.example.technicstore.entity.Customer;
 import com.example.technicstore.entity.Order;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 public class OrderResponse {
@@ -14,9 +13,10 @@ public class OrderResponse {
     private double total_amount;
     private String orderStatus;
     private String payment_status;
-    private Order.PaymentMethod payment_method;
+    private String payment_method;
     private String note;
     private String address;
+    private String phone;
     private List<OrderDetailResponse> orderDetailResponseList;
 
     public OrderResponse() {
@@ -70,13 +70,15 @@ public class OrderResponse {
         this.payment_status = payment_status;
     }
 
-    public Order.PaymentMethod getPayment_method() {
+
+    public String getPayment_method() {
         return payment_method;
     }
 
-    public void setPayment_method(Order.PaymentMethod payment_method) {
+    public void setPayment_method(String payment_method) {
         this.payment_method = payment_method;
     }
+
     public String getNote() {
         return note;
     }
@@ -91,6 +93,14 @@ public class OrderResponse {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public List<OrderDetailResponse> getOrderDetailResponseList() {

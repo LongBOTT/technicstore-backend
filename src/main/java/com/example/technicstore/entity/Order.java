@@ -1,6 +1,7 @@
 package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
+import org.hibernate.dialect.identity.HANAIdentityColumnSupport;
 
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -50,6 +51,8 @@ public class Order {
     private String note;
 
     private String address;
+
+    private String phone ;
 
     // endregion
 
@@ -141,6 +144,14 @@ public class Order {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
 //endregion

@@ -15,9 +15,10 @@ public class OrderMapper {
         orderDTO.setTotal_amount(order.getTotal_amount());
         orderDTO.setOrderStatus(order.getOrderStatus());
         orderDTO.setPayment_status(order.getPayment_status());
-        orderDTO.setPayment_method(order.getPayment_method());
+        orderDTO.setPayment_method(order.getPayment_method().getDescription());
         orderDTO.setNote(order.getNote());
-        orderDTO.setAddress(order.getAddress();
+        orderDTO.setAddress(order.getAddress());
+        orderDTO.setPhone(order.getPhone());
         return orderDTO;
     }
 
@@ -29,6 +30,7 @@ public class OrderMapper {
         order.setTotal_amount(orderRequest.getTotal_amount());
         order.setNote(orderRequest.getNote());
         order.setAddress(orderRequest.getAddress());
+        order.setPhone(orderRequest.getPhone());
         return order;
     }
 }
