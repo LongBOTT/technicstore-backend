@@ -6527,7 +6527,7 @@ public class DataInitializer implements CommandLineRunner {
         SeedDataCategoryAttribute(1L, 39L);
         SeedDataCategoryAttribute(1L, 40L);
         SeedDataCategoryAttribute(1L, 41L);
-        SeedDataCategoryAttribue(1L, 42L);
+        SeedDataCategoryAttribute(1L, 42L);
         SeedDataCategoryAttribute(1L, 43L);
         SeedDataCategoryAttribute(1L, 44L);
         SeedDataCategoryAttribute(1L, 45L);
@@ -6540,7 +6540,8 @@ public class DataInitializer implements CommandLineRunner {
         SeedDataCategoryAttribute(2L, 15L);
         SeedDataCategoryAttribute(2L, 16L);
 
-
+        // order
+        seedDataOrder("abc", "Đang xử lý", "Thanh toán khi nhận hàng", "Chưa thanh toán", 3199000.0, 1L, LocalDateTime.now());
 
     }
 
