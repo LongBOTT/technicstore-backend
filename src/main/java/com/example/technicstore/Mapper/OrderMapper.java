@@ -17,6 +17,7 @@ public class OrderMapper {
         orderDTO.setPayment_status(order.getPayment_status());
         orderDTO.setPayment_method(order.getPayment_method());
         orderDTO.setNote(order.getNote());
+        orderDTO.setAddress(order.getAddress();
         return orderDTO;
     }
 
@@ -27,6 +28,7 @@ public class OrderMapper {
         order.setOrderDate(orderRequest.getOrderDate());
         order.setTotal_amount(orderRequest.getTotal_amount());
         order.setNote(orderRequest.getNote());
+        order.setAddress(orderRequest.getAddress());
         return order;
     }
 }

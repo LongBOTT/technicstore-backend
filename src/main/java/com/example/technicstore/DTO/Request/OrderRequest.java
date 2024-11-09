@@ -19,6 +19,8 @@ public class OrderRequest {
     private String payment_status;
     private  String payment_method;
     private String note;
+
+    private String address;
     // endregion
     public Long getId() {
         return id;
@@ -78,4 +80,11 @@ public class OrderRequest {
         this.note = note;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

@@ -48,6 +48,9 @@ public class Order {
     // Ghi chú với độ dài 4096
     @Column(length = 4096)
     private String note;
+
+    private String address;
+
     // endregion
 
     // region Constructor
@@ -130,6 +133,14 @@ public class Order {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
 //endregion

@@ -16,6 +16,7 @@ public class OrderResponse {
     private String payment_status;
     private Order.PaymentMethod payment_method;
     private String note;
+    private String address;
     private List<OrderDetailResponse> orderDetailResponseList;
 
     public OrderResponse() {
@@ -82,6 +83,14 @@ public class OrderResponse {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public List<OrderDetailResponse> getOrderDetailResponseList() {
