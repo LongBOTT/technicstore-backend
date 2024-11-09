@@ -1,7 +1,12 @@
 package com.example.technicstore.service;
 
+import com.example.technicstore.DTO.Request.ImeiRequest;
+import com.example.technicstore.Mapper.ImeiMapper;
+import com.example.technicstore.entity.Brand;
 import com.example.technicstore.entity.Imei;
+import com.example.technicstore.entity.StockReceiveDetail;
 import com.example.technicstore.repository.ImeiRepository;
+import com.example.technicstore.repository.StockReceiveDetailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +19,9 @@ public class ImeiService {
     @Autowired
     private ImeiRepository imeiRepository;
 
+    @Autowired
+    StockReceiveDetailRepository stockReceiveDetailRepository;
+
     // Lấy tất cả IMEI
     public List<Imei> getAllImeis() {
         return imeiRepository.findAll();
@@ -24,14 +32,23 @@ public class ImeiService {
         return imeiRepository.findById(id);
     }
 
+    // Lấy tất cả imei theo chi tiết phiếu nhập
+    public List<Imei> getImeisByStockReceiveDetailId(Long stockReceiveDetailId) {
+        return imeiRepository.findImeiByStockReceiveDetail_Id(stockReceiveDetailId);
+    }
+
+
     // Lấy IMEI theo mã IMEI
     public Optional<Imei> getImeiByImeiCode(String imeiCode) {
         return imeiRepository.findImeiByImeiCode(imeiCode);
     }
 
     // Tạo mới IMEI
-    public Imei createImei(Imei imei) {
-        return imeiRepository.save(imei);
+    public Imei createImei(ImeiRequest imeiRequest) {
+        Imei newImei = ImeiMapper.toEntity(imeiRequest);
+        StockReceiveDetail stockReceiveDetail = stockReceiveDetailRepository.findStockReceiveDetailById(imeiRequest.getReceiveDetailId()).orElseThrow(() -> new RuntimeException("StockReceiveDetail not found"));
+        newImei.setStockReceiveDetail(stockReceiveDetail);
+        return imeiRepository.save(newImei);
     }
 
     // Cập nhật IMEI
@@ -40,7 +57,7 @@ public class ImeiService {
         if (imeiOptional.isPresent()) {
             Imei existingImei = imeiOptional.get();
             existingImei.setImeiCode(updatedImei.getImeiCode());
-            existingImei.setStock_receive_detail(updatedImei.getStock_receive_detail());
+            existingImei.setStockReceiveDetail(updatedImei.getStockReceiveDetail());
             return imeiRepository.save(existingImei);
         }
         return null;

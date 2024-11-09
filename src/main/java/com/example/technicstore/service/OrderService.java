@@ -1,10 +1,17 @@
 package com.example.technicstore.service;
 
+import com.example.technicstore.DTO.Response.OrderDetailResponse;
+import com.example.technicstore.DTO.Response.OrderResponse;
+import com.example.technicstore.Mapper.OrderDetailMapper;
+import com.example.technicstore.Mapper.OrderMapper;
 import com.example.technicstore.entity.Order;
+import com.example.technicstore.entity.OrderDetail;
+import com.example.technicstore.repository.OrderDetailRepository;
 import com.example.technicstore.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -14,6 +21,8 @@ public class OrderService {
 
     @Autowired
     private OrderRepository orderRepository;
+    @Autowired
+    private OrderDetailRepository orderDetailRepository;
 
     // Lấy tất cả đơn hàng
     public List<Order> getAllOrders() {
@@ -44,6 +53,28 @@ public class OrderService {
         return orderRepository.save(order);
     }
 
+    public List<OrderResponse> getAllOrderResponse() {
+        List<Order> orders = orderRepository.findAll();
+        List<OrderResponse> orderResponses = new ArrayList<>();
+        for(Order order : orders) {
+            OrderResponse orderResponse = OrderMapper.toDTO(order);
+            orderResponses.add(orderResponse);
+        }
+        return orderResponses;
+    }
+    public OrderResponse getOrderResponseById(Long id) {
+        Order order = orderRepository.findOrderById(id);
+        OrderResponse orderResponse = OrderMapper.toDTO(order);
+        List<OrderDetail> orderDetails = orderDetailRepository.findByOrderId(id);
+        List<OrderDetailResponse> orderDetailResponses = new ArrayList<>();
+        for(OrderDetail orderDetail : orderDetails) {
+           OrderDetailResponse orderDetailResponse = OrderDetailMapper.toDTO(orderDetail);
+           orderDetailResponses.add(orderDetailResponse);
+        }
+        orderResponse.setOrderDetailResponseList(orderDetailResponses);
+        return orderResponse;
+    }
+
     // Cập nhật thông tin đơn hàng
     public Order updateOrder(Long id, Order updatedOrder) {
         Optional<Order> orderOptional = orderRepository.findById(id);
@@ -52,12 +83,8 @@ public class OrderService {
             existingOrder.setCustomer(updatedOrder.getCustomer());
             existingOrder.setOrderDate(updatedOrder.getOrderDate());
             existingOrder.setTotal_amount(updatedOrder.getTotal_amount());
-            existingOrder.setDelivery_fee(updatedOrder.getDelivery_fee());
             existingOrder.setOrderStatus(updatedOrder.getOrderStatus());
             existingOrder.setPayment_status(updatedOrder.getPayment_status());
-            existingOrder.setDelivery_status(updatedOrder.getDelivery_status());
-            existingOrder.setCod_status(updatedOrder.getCod_status());
-            existingOrder.setCarrier(updatedOrder.getCarrier());
             existingOrder.setOrder_details(updatedOrder.getOrder_details());
             existingOrder.setPayment_method(updatedOrder.getPayment_method());
             existingOrder.setNote(updatedOrder.getNote());

@@ -14,9 +14,12 @@ public class Imei {
     private Long id;
 
     private String imeiCode;
-    @OneToOne
-    @JoinColumn(name = "stock_receive_detail_id")
-    private StockReceiveDetail stock_receive_detail;
+    @ManyToOne
+    @JoinColumn(name = "stock_receive_detail_id", unique = false)
+    private StockReceiveDetail stockReceiveDetail;
+
+    private String status;
+
 
     // endregion
 
@@ -45,12 +48,20 @@ public class Imei {
         this.imeiCode = imeiCode;
     }
 
-    public StockReceiveDetail getStock_receive_detail() {
-        return stock_receive_detail;
+    public StockReceiveDetail getStockReceiveDetail() {
+        return stockReceiveDetail;
     }
 
-    public void setStock_receive_detail(StockReceiveDetail stock_receive_detail) {
-        this.stock_receive_detail = stock_receive_detail;
+    public void setStockReceiveDetail(StockReceiveDetail stockReceiveDetail) {
+        this.stockReceiveDetail = stockReceiveDetail;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     // endregion

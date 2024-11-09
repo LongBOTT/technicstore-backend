@@ -2,6 +2,7 @@ package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Set;
 
@@ -23,12 +24,10 @@ public class Order {
 
     // Ngày đặt hàng
     @Temporal(TemporalType.TIMESTAMP)
-    private Date orderDate;
+    private LocalDateTime orderDate;
 
     // Tổng tiền của đơn đặt hàng
     private double total_amount;
-    // Phi van chuyen
-    private double delivery_fee;
 
     // Trạng thái đơn đặt hàng
     private String orderStatus;
@@ -36,16 +35,6 @@ public class Order {
     // Trạng thái thanh toan
     private String payment_status;
 
-    // Trạng thái giao hang
-    private String delivery_status;
-
-    // Trạng thái thu ho
-    private String cod_status;
-
-    // đôn vị phụ trách vận chuyển
-    @ManyToOne
-    @JoinColumn(name = "carrier_id")
-    private Carrier carrier;
 
     // Danh sách chi tiết đơn đặt hàng
     @OneToMany(mappedBy = "order")
@@ -86,11 +75,11 @@ public class Order {
         this.customer = customer;
     }
 
-    public Date getOrderDate() {
+    public LocalDateTime getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
 
@@ -110,15 +99,6 @@ public class Order {
         this.total_amount = total_amount;
     }
 
-    public double getDelivery_fee() {
-        return delivery_fee;
-    }
-
-    public void setDelivery_fee(double delivery_fee) {
-        this.delivery_fee = delivery_fee;
-    }
-
-
 
     public String getPayment_status() {
         return payment_status;
@@ -126,30 +106,6 @@ public class Order {
 
     public void setPayment_status(String payment_status) {
         this.payment_status = payment_status;
-    }
-
-    public String getDelivery_status() {
-        return delivery_status;
-    }
-
-    public void setDelivery_status(String delivery_status) {
-        this.delivery_status = delivery_status;
-    }
-
-    public String getCod_status() {
-        return cod_status;
-    }
-
-    public void setCod_status(String cod_status) {
-        this.cod_status = cod_status;
-    }
-
-    public Carrier getCarrier() {
-        return carrier;
-    }
-
-    public void setCarrier(Carrier carrier) {
-        this.carrier = carrier;
     }
 
     public Set<OrderDetail> getOrder_details() {
