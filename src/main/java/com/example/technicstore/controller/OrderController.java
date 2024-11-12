@@ -32,6 +32,17 @@ public class OrderController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    // Lấy thông tin một đơn hàng theo ID
+    @GetMapping("getOrderResponseById/{id}")
+    public ResponseEntity<OrderResponse> getOrderResponseById(@PathVariable Long id) {
+        OrderResponse orderResponse = orderService.getOrderResponseById(id);
+        if (orderResponse != null) {
+            return ResponseEntity.ok(orderResponse);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     // Lấy danh sách đơn hàng theo trạng thái
     @GetMapping("/search/status")
     public List<OrderResponse> getOrdersByStatus(@RequestParam String status) {
@@ -43,6 +54,11 @@ public class OrderController {
     public List<OrderResponse> getOrdersByPaymentMethod(@RequestParam String paymentMethod) {
         return orderService.getOrdersByPaymentMethod(paymentMethod);
     }
+    @GetMapping("/search/findOrdersByKeyword")
+    public List<OrderResponse> findOrdersByKeyword(@RequestParam String search) {
+        return orderService.findOrdersByKeyword(search);
+    }
+
     // Lấy danh sách đơn hàng theo khách hàng
     @GetMapping("/search/customer")
     public List<Order> getOrdersByCustomerId(@RequestParam Long customerId) {
@@ -51,7 +67,7 @@ public class OrderController {
 
     // Lấy danh sách đơn hàng theo ngày đặt hàng
     @GetMapping("/search/order_date")
-    public List<Order> getOrdersByOrderDateBetween(@RequestParam Date startDate, @RequestParam Date  endDate) {
+    public List<Order> getOrdersByOrderDateBetween(@RequestParam Date startDate, @RequestParam Date endDate) {
         return orderService.getOrdersByOrderDateBetween(startDate, endDate);
     }
 

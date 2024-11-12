@@ -48,12 +48,14 @@ public class Variant_AttributeService {
     }
 
     // Xóa thuộc tính biến thể
-    public boolean deleteVariant_Attribute(Long id) {
-        Optional<Variant_Attribute> variant_AttributeOptional = variant_AttributeRepository.findById(id);
-        if (!variant_AttributeOptional.isPresent()) {
+    public boolean deleteVariant_Attribute(Long varintId) {
+        List<Variant_Attribute> variant_Attributes = variant_AttributeRepository.findVariant_AttributeByVariantId(varintId);
+        if (variant_Attributes.isEmpty()) {
             return false;
         }
-        variant_AttributeRepository.deleteById(id);
+        for(Variant_Attribute variant_Attribute: variant_Attributes){
+            variant_AttributeRepository.deleteById(variant_Attribute.getId());
+        }
         return true;
     }
 

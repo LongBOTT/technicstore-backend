@@ -25,4 +25,13 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     // Tìm kiếm đơn hàng theo phương thức thanh toán
     @Query("SELECT o FROM Order o WHERE o.payment_method = :paymentMethod")
     List<Order> findOrdersByPaymentMethod(@Param("paymentMethod") Order.PaymentMethod paymentMethod);
+
+    // Tìm kiếm đơn hàng theo id đơn hàng hoặc tên khách hàng hoặc số điện thoại
+    @Query("SELECT o FROM Order o WHERE " +
+            "CAST(o.id AS string) LIKE CONCAT('%', :search, '%') OR " +
+            "o.customer.name LIKE CONCAT('%', :search, '%') OR " +
+            "o.phone LIKE CONCAT('%', :search, '%')")
+    List<Order> searchOrders(@Param("search") String search);
+
+
 }

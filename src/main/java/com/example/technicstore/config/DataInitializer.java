@@ -6657,6 +6657,7 @@ public class DataInitializer implements CommandLineRunner {
             variant.setPrice(price);
             variant.setQuantity(quantity);
             variant.setProducts(productRepository.findById((long) product_id).get());
+            variant.setStatus("active");
             variantRepository.save(variant);
         }
     }

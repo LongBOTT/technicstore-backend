@@ -11,6 +11,8 @@ public class VariantResponse {
     private double price;
     private double quantity;
     private Long productId; // Mã sản phẩm liên kết
+
+    private String status;
     private List<VariantAttributeResponse> attributes; // Danh sách thuộc tính của phiên bản
 
 
@@ -72,7 +74,13 @@ public class VariantResponse {
         this.productId = productId;
     }
 
+    public String getStatus() {
+        return status;
+    }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public List<VariantAttributeResponse> getAttributes() {
         return attributes;

@@ -59,9 +59,20 @@ public class OrderService {
         }
         return orderResponses;
     }
+
+
     // Lấy đơn hàng theo trạng thái
     public List<OrderResponse> getOrdersByStatus(String status) {
         List<Order> orders = orderRepository.findOrdersByOrderStatus(status);
+        List<OrderResponse> orderResponses = new ArrayList<>();
+        for(Order order : orders) {
+            OrderResponse orderResponse = OrderMapper.toDTO(order);
+            orderResponses.add(orderResponse);
+        }
+        return orderResponses;
+    }
+    public List<OrderResponse> findOrdersByKeyword(String keyword) {
+        List<Order> orders =  orderRepository.searchOrders(keyword);
         List<OrderResponse> orderResponses = new ArrayList<>();
         for(Order order : orders) {
             OrderResponse orderResponse = OrderMapper.toDTO(order);
@@ -128,6 +139,7 @@ public class OrderService {
     public void deleteOrder(Long id) {
         orderRepository.deleteById(id);
     }
+
 
 
 }
