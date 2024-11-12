@@ -1,7 +1,6 @@
 package com.example.technicstore.service;
 
 import com.example.technicstore.DTO.Request.VariantCreationRequest;
-import com.example.technicstore.DTO.Response.VariantResponse;
 import com.example.technicstore.Mapper.VariantMapper;
 import com.example.technicstore.entity.Product;
 import com.example.technicstore.entity.Variant;
@@ -44,7 +43,7 @@ public class VariantService {
 
     // Lấy biến thể theo ID sản phẩm
     public List<Variant> getVariantsByProductId(Long productId) {
-        return variantRepository.findByProductsId(productId);
+        return variantRepository.findByProductsIdAndStatus(productId,"active");
     }
 
     // Lấy biến thể theo ID sản phẩm
@@ -97,35 +96,56 @@ public class VariantService {
     }
 
     // Cập nhật biến thể
-    public Variant updateVariant(Long id, Variant updatedVariant) {
+    public Variant updateVariant(Long id, VariantCreationRequest request) {
         Optional<Variant> variantOptional = variantRepository.findById(id);
-        if (variantOptional.isPresent()) {
-            Variant existingVariant = variantOptional.get();
-            existingVariant.setProducts(updatedVariant.getProducts());
-            existingVariant.setPrice(updatedVariant.getPrice());
-            existingVariant.setQuantity(updatedVariant.getQuantity());
-            existingVariant.setImage(updatedVariant.getImage());
-            return variantRepository.save(existingVariant);
+
+        if (variantOptional.isEmpty()) {
+            throw new RuntimeException("Variant not found");
         }
-        return null;
+
+        Variant existingVariant = variantOptional.get();
+        Product product = productRepository.findById(request.getProductId()).orElseThrow(() -> new RuntimeException("Product not found"));
+        existingVariant.setName(request.getName());
+        existingVariant.setProducts(product);
+        existingVariant.setPrice(request.getPrice());
+        existingVariant.setQuantity(request.getQuantity());
+        existingVariant.setCostPrice(request.getCostPrice());
+        existingVariant.setImage(request.getImage());
+
+        return variantRepository.save(existingVariant);
+
     }
 
-    // Xóa biến thể
-    public void deleteVariant(Long id) {
-        variantRepository.deleteById(id);
-    }
+
 
 
     // Xóa biến thể theo mã sản phẩm
     @Transactional
     public void deleteVariantByProductId(Long productId) {
-        List<Variant> variants = variantRepository.findByProductsId(productId);
+        List<Variant> variants = variantRepository.findByProductsIdAndStatus(productId,"active");
         for (Variant variant : variants) {
             // Xóa variant_attributes của biến thể
             variant_attributeService.deleteVariant_AttributeByVariantId(variant.getId());
+            updateStatus(variant.getId(), "inactive");
         }
-        // Sau đó, xóa tất cả các variants trong một truy vấn duy nhất
-        variantRepository.deleteAll(variants);
     }
 
+    // Cập nhật trạng thái biến thể theo mã biến thể
+    public void deleteVariantById(Long id) {
+        variant_attributeService.deleteVariant_AttributeByVariantId(id);
+        updateStatus(id, "inactive");
     }
+
+    public void updateStatus(Long id, String status) {
+        Optional<Variant> variantOptional = variantRepository.findById(id);
+
+        if (variantOptional.isEmpty()) {
+            throw new RuntimeException("Variant not found");
+        }
+
+        Variant existingVariant = variantOptional.get();
+        existingVariant.setStatus(status);
+        variantRepository.save(existingVariant);
+    }
+
+}

@@ -34,14 +34,18 @@ public class DataInitializer implements CommandLineRunner {
 
     private final ProductRepository productRepository;
 
-
+    private final ImeiRepository imeiRepository;
     private final VariantRepository variantRepository;
 
     private final Variant_AttributeRepository variantValueRepository;
     private final CategoryAttributeRepository categoryAttributeRepository;
 
+    private final StockReceiveRepository stockReceiveRepository;
+    private final StockReceiveDetailRepository stockReceiveDetailRepository;
 
-    public DataInitializer(CustomerRepository customerRepository, AttributeRepository attributeRepository, BrandRepository brandRepository, CategoryRepository categoryRepository, SupplierRepository supplierRepository, CarrierRepository carrierRepository, WarrantyRepository warrantyRepository, RoleRepository roleRepository, FunctionRepository functionRepository, ModuleRepository moduleRepository, DecentralizationRepository decentralizationRepository, AccountRepository accountRepository, ProductRepository productRepository, ImeiRepository imeiRepository, VariantRepository variantRepository, Variant_AttributeRepository variantValueRepository1, CategoryAttributeRepository categoryAttributeRepository, OrderRepository orderRepository, OrderDetailRepository orderDetailRepository) {
+
+    public DataInitializer(StockReceiveRepository stockReceiveRepository, StockReceiveDetailRepository stockReceiveDetailRepository, CustomerRepository customerRepository, AttributeRepository attributeRepository, BrandRepository brandRepository, CategoryRepository categoryRepository, SupplierRepository supplierRepository, CarrierRepository carrierRepository, WarrantyRepository warrantyRepository, RoleRepository roleRepository, FunctionRepository functionRepository, ModuleRepository moduleRepository, DecentralizationRepository decentralizationRepository, AccountRepository accountRepository, ProductRepository productRepository, ImeiRepository imeiRepository, VariantRepository variantRepository, Variant_AttributeRepository variantValueRepository1, CategoryAttributeRepository categoryAttributeRepository, OrderRepository orderRepository, OrderDetailRepository orderDetailRepository) {
+
         this.customerRepository = customerRepository;
         this.attributeRepository = attributeRepository;
         this.brandRepository = brandRepository;
@@ -60,6 +64,9 @@ public class DataInitializer implements CommandLineRunner {
         this.categoryAttributeRepository = categoryAttributeRepository;
         this.orderDetailRepository = orderDetailRepository;
         this.orderRepository = orderRepository;
+        this.imeiRepository = imeiRepository;
+        this.stockReceiveRepository = stockReceiveRepository;
+        this.stockReceiveDetailRepository = stockReceiveDetailRepository;
     }
 
 
@@ -7498,10 +7505,100 @@ public class DataInitializer implements CommandLineRunner {
         SeedDataCategoryAttribute(2L, 15L);
         SeedDataCategoryAttribute(2L, 16L);
 
+        // stockReceive
+        seedDataReceive(1L, 20990000.0, LocalDateTime.now(), "");
+        seedDataReceive(2L, 22990000.0, LocalDateTime.now(), "");
+
+        // stockReceiveDetail
+        seedDataReceiveDetail(1L, 4L, 1, 20990000.0);
+        seedDataReceiveDetail(2L, 5L, 1, 22990000.0);
+
+        // Imei
+        seedDataImei("12345", "Sold", 1L);
+        seedDataImei("12346", "Sold", 2L);
         // order
+
+        seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now(), "abc");
+        seedDataOrder("abc", "Chuẩn bị hàng", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc");
+
+        // orderDetail
+        seedDataOrderDetail(1L, 1, 24990000.0, 24990000.0, "12345");
+        seedDataOrderDetail(2L, 1, 27990000.0, 27990000.0, "12346");
+
+
 
     }
 
+    public void seedDataReceive(Long supplierId, Double total, LocalDateTime date, String note) {
+        List<StockReceive> stockReceives = stockReceiveRepository.findStockReceivesBySupplier_Id(supplierId);
+        if (stockReceives.isEmpty()) {
+            StockReceive stockReceive = new StockReceive();
+            stockReceive.setReceive_date(date);
+            stockReceive.setSupplier(supplierRepository.findById(supplierId).get());
+            stockReceive.setTotal(total);
+            stockReceive.setNote(note);
+            stockReceiveRepository.save(stockReceive);
+        }
+
+    }
+
+    public void seedDataReceiveDetail(Long stockReceiveId, Long variantId, int quantity, Double price) {
+        Optional<StockReceiveDetail> stockReceive = stockReceiveDetailRepository.findStockReceiveDetailByStockReceive_IdAndVariant_Id(stockReceiveId,variantId);
+        if (stockReceive.isEmpty()) {
+            StockReceiveDetail stockReceiveDetail = new StockReceiveDetail();
+            stockReceiveDetail.setStockReceive(stockReceiveRepository.findById(stockReceiveId).get());
+            stockReceiveDetail.setVariant(variantRepository.findById(variantId).get());
+            stockReceiveDetail.setQuantity(quantity);
+            stockReceiveDetail.setPrice(price);
+            stockReceiveDetailRepository.save(stockReceiveDetail);
+        }
+    }
+    public void seedDataOrder(String note, String order_status, String payment_method, String payment_status, double total, Long customerId, LocalDateTime order_date, String address) {
+        List<Order> orders = orderRepository.findOrdersByCustomerId(customerId);
+        if (orders.isEmpty()) {
+            Order order = new Order();
+            order.setNote(note);
+            order.setOrderStatus(order_status);
+            order.setPayment_status(payment_status);
+
+            // Chuyển đổi chuỗi thành enum PaymentMethod
+            try {
+                Order.PaymentMethod method = Order.PaymentMethod.valueOf(payment_method);
+                order.setPayment_method(method);
+            } catch (IllegalArgumentException e) {
+                throw new RuntimeException("Phương thức thanh toán không hợp lệ: " + payment_method);
+            }
+            order.setCustomer(customerRepository.findById(customerId).orElseThrow(() -> new RuntimeException("Customer not found")));
+            order.setOrderDate(order_date);
+            order.setTotal_amount(total);
+            order.setAddress(address);
+            orderRepository.save(order);
+
+        }
+    }
+
+    public void seedDataOrderDetail(Long orderId, int quantity, Double price, Double total, String imeiCode) {
+        OrderDetail orderDetails = orderDetailRepository.findByOrderIdAndImei_ImeiCode(orderId,imeiCode);
+        if (orderDetails == null) {
+            OrderDetail orderDetail = new OrderDetail();
+            orderDetail.setOrder(orderRepository.findById(orderId).orElseThrow(() -> new RuntimeException("Order not found")));
+            orderDetail.setImei(imeiRepository.findImeiByImeiCode(imeiCode).orElseThrow(() -> new RuntimeException("Imei not found")));
+            orderDetail.setQuantity(quantity);
+            orderDetail.setPrice(price);
+            orderDetail.setTotal(total);
+            orderDetailRepository.save(orderDetail);
+        }
+    }
+    public void seedDataImei(String imei_code,String status, Long stockReceiveDetail){
+        Optional<Imei> imeis = imeiRepository.findImeiByImeiCode(imei_code);
+        if (imeis.isEmpty()) {
+            Imei imei = new Imei();
+            imei.setImeiCode(imei_code);
+            imei.setStatus(status);
+            imei.setStockReceiveDetail(stockReceiveDetailRepository.findById(stockReceiveDetail).get());
+            imeiRepository.save(imei);
+        }
+    }
     public void SeedDataCategoryAttribute(Long category_id, Long attribute_id) {
         List<Category_Atrribute> category_attribute = categoryAttributeRepository.findByCategoryIdAndAttributeId(category_id, attribute_id);
         if (category_attribute.isEmpty()) {
@@ -7520,6 +7617,7 @@ public class DataInitializer implements CommandLineRunner {
             variant.setPrice(price);
             variant.setQuantity(quantity);
             variant.setProducts(productRepository.findById((long) product_id).get());
+            variant.setStatus("active");
             variantRepository.save(variant);
         }
     }
@@ -7620,6 +7718,7 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
+
     public void seedDataCarrier(String name) {
         Optional<Carrier> carriers = carrierRepository.findCarrierByName(name);
         if (carriers.isEmpty()) {
@@ -7648,19 +7747,7 @@ public class DataInitializer implements CommandLineRunner {
             order.setOrderStatus(order_status);
             order.setPayment_status(payment_status);
 
-            // Chuyển đổi chuỗi thành enum PaymentMethod
-            try {
-                Order.PaymentMethod method = Order.PaymentMethod.valueOf(payment_method);
-                order.setPayment_method(method);
-            } catch (IllegalArgumentException e) {
-                throw new RuntimeException("Phương thức thanh toán không hợp lệ: " + payment_method);
-            }
-            order.setCustomer(customerRepository.findById(customerId).orElseThrow(() -> new RuntimeException("Customer not found")));
-            order.setOrderDate(order_date);
-            order.setTotal_amount(total);
-            orderRepository.save(order);
         }
-
     }
 
     public void seedDataRole(String name) {

@@ -28,21 +28,12 @@ public class Variant_AttributeController {
         return ResponseEntity.ok(createdVariant_Attribute);
     }
 
-    // Cập nhật thuộc tính biến thể
-    @PutMapping("/{id}")
-    public ResponseEntity<Variant_Attribute> updateVariant_Attribute(@PathVariable Long id, @RequestBody Variant_Attribute variant_Attribute) {
-        Variant_Attribute updatedVariant_Attribute = variant_attributeService.updateVariant_Attribute(id, variant_Attribute);
-        if (updatedVariant_Attribute != null) {
-            return ResponseEntity.ok(updatedVariant_Attribute);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
+
 
     // Xóa thuộc tính biến thể
-    @DeleteMapping("/{id}")
-    public ResponseEntity deleteVariant_Attribute(@PathVariable Long id) {
-        boolean deleted = variant_attributeService.deleteVariant_Attribute(id);
+    @DeleteMapping("/{variantId}")
+    public ResponseEntity deleteVariant_Attribute(@PathVariable Long variantId) {
+        boolean deleted = variant_attributeService.deleteVariant_Attribute(variantId);
         if (deleted) {
             return ResponseEntity.ok().build();
         } else {

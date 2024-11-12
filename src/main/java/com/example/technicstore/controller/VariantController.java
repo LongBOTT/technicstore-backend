@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.example.technicstore.entity.Product;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -31,11 +32,13 @@ public class VariantController {
         return variant.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
+
     // Lấy thông tin biến thể theo ID sản phẩm
     @GetMapping("/search/product/productID")
     public List<Variant> getAllVariantsByProductID(@RequestParam Long productID) {
         return variantService.getVariantsByProductId(productID);
     }
+
     // Tìm các biến thể trong khoảng giá
     @PostMapping("/search/price")
     public List<Variant> getVariantsByPriceRange(@RequestParam Double minPrice,
@@ -54,6 +57,7 @@ public class VariantController {
         List<Variant> variants = variantService.getVariantsByProductsAndPriceRange(products, minPrice, maxPrice);
         return ResponseEntity.ok(variants);
     }
+
     // Tạo mới một biến thể
     @PostMapping
     public ResponseEntity<Variant> createVariant(@RequestBody VariantCreationRequest variantRequest) {
@@ -63,7 +67,7 @@ public class VariantController {
 
     // Cập nhật thông tin biến thể
     @PutMapping("/{id}")
-    public ResponseEntity<Variant> updateVariant(@PathVariable Long id, @RequestBody Variant variant) {
+    public ResponseEntity<Variant> updateVariant(@PathVariable Long id, @RequestBody VariantCreationRequest variant) {
         Variant updatedVariant = variantService.updateVariant(id, variant);
         if (updatedVariant != null) {
             return ResponseEntity.ok(updatedVariant);
@@ -71,13 +75,13 @@ public class VariantController {
             return ResponseEntity.notFound().build();
         }
     }
-
-    // Xóa một biến thể
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteVariant(@PathVariable Long id) {
-        variantService.deleteVariant(id);
+    // Xóa biến thể theo ID
+    @PutMapping("/deleteVariantById/{id}")
+    public ResponseEntity<Variant> deleteVariantById(@PathVariable Long id) {
+        variantService.deleteVariantById(id);
         return ResponseEntity.noContent().build();
     }
+
 
     // Xóa biến thể theo id sản phẩm
     @DeleteMapping("/product/{id}")
@@ -85,6 +89,7 @@ public class VariantController {
         variantService.deleteVariantByProductId(id);
         return ResponseEntity.noContent().build();
     }
+
     // Lấy thông tin biến thể theo ID sản phẩm
     @GetMapping("/search/category/categoryID")
     public List<Variant> getAllVariantsByCategoryId(@RequestParam Long categoryID) {

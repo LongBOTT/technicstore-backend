@@ -21,7 +21,7 @@ public class OrderDetail {
     // IMEI sản phẩm đặt
     @OneToOne
     @JoinColumn(name = "IMEI_code")
-    private Imei Imei;
+    private Imei imei;
 
     // Số lượng sản phẩm được đặt
     private int quantity;
@@ -39,9 +39,9 @@ public class OrderDetail {
     public OrderDetail() {
     }
 
-    public OrderDetail(Order order, com.example.technicstore.entity.Imei imei, int quantity, double price) {
+    public OrderDetail(Order order, Imei imei, int quantity, double price) {
         this.order = order;
-        Imei = imei;
+        this.imei = imei;
         this.quantity = quantity;
         this.price = price;
         this.total = this.price * this.quantity;
@@ -67,12 +67,12 @@ public class OrderDetail {
         this.order = order;
     }
 
-    public com.example.technicstore.entity.Imei getImei() {
-        return Imei;
+    public Imei getImei() {
+        return imei;
     }
 
-    public void setImei(com.example.technicstore.entity.Imei imei) {
-        Imei = imei;
+    public void setImei(Imei imei) {
+        this.imei = imei;
     }
 
     public int getQuantity() {
