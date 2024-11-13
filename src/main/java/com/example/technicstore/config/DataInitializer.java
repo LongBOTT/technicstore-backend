@@ -6557,6 +6557,9 @@ public class DataInitializer implements CommandLineRunner {
         // Imei
         seedDataImei("12345", "Sold", 1L);
         seedDataImei("12346", "Sold", 2L);
+        seedDataImei("0", "default", null);
+
+
         // order
         seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now(), "abc");
         seedDataOrder("abc", "Chuẩn bị hàng", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc");
@@ -6635,7 +6638,10 @@ public class DataInitializer implements CommandLineRunner {
             Imei imei = new Imei();
             imei.setImeiCode(imei_code);
             imei.setStatus(status);
-            imei.setStockReceiveDetail(stockReceiveDetailRepository.findById(stockReceiveDetail).get());
+            if(stockReceiveDetail != null){
+                imei.setStockReceiveDetail(stockReceiveDetailRepository.findById(stockReceiveDetail).get());
+            }
+
             imeiRepository.save(imei);
         }
     }
