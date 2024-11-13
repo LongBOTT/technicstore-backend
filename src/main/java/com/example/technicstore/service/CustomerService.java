@@ -29,9 +29,7 @@ public class CustomerService {
     public List<Customer> getCustomersByName(String name) {
         return customerRepository.findCustomerByNameContainsIgnoreCase(name);
     }
-    public Optional<Customer> findByPhone(String phone) {
-        return customerRepository.findCustomerByPhone(phone);
-    }
+
     public Customer createCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
