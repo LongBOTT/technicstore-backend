@@ -79,7 +79,7 @@ public class OrderController {
     // Tạo mới một đơn hàng
     @PostMapping
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
-        System.out.println("Received Order: " + order); // Log dữ liệu
+
         // Kiểm tra nếu thông tin khách hàng không có hoặc số điện thoại trống
         if (order.getCustomer() == null || order.getCustomer().getPhone() == null || order.getCustomer().getPhone().isEmpty()) {
             return ResponseEntity.badRequest().body(null); // Trả về lỗi nếu không có thông tin khách hàng hoặc số điện thoại
