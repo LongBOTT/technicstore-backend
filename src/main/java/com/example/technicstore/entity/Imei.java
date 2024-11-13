@@ -15,7 +15,7 @@ public class Imei {
 
     private String imeiCode;
     @ManyToOne
-    @JoinColumn(name = "stock_receive_detail_id", unique = false)
+    @JoinColumn(name = "stock_receive_detail_id", unique = false, nullable = true)
     private StockReceiveDetail stockReceiveDetail;
 
     private String status;

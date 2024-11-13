@@ -32,6 +32,7 @@ public class OrderDetail {
     // Tổng tiền
     private double total;
 
+    private Long variantId;
     // endregion
 
     // region Constructor
@@ -99,5 +100,12 @@ public class OrderDetail {
         this.total = total;
     }
 
+    public Long getVariantId() {
+        return variantId;
+    }
+
+    public void setVariantId(Long variantId) {
+        this.variantId = variantId;
+    }
     //endregion
 }

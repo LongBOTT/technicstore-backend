@@ -14,6 +14,7 @@ public class OrderDetailMapper {
         orderDetailDTO.setQuantity(orderDetail.getQuantity());
         orderDetailDTO.setPrice(orderDetail.getPrice());
         orderDetailDTO.setTotal_amount(orderDetail.getTotal());
+        orderDetailDTO.setVariantId(orderDetail.getVariantId());
         return orderDetailDTO;
     }
 
@@ -22,6 +23,7 @@ public class OrderDetailMapper {
         orderDetail.setQuantity(orderDetailRequest.getQuantity());
         orderDetail.setPrice(orderDetailRequest.getPrice());
         orderDetail.setTotal(orderDetailRequest.getTotal_amount());
+        orderDetail.setVariantId(orderDetailRequest.getVariantId());
         return orderDetail;
     }
 }

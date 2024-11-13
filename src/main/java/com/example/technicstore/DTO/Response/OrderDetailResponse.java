@@ -8,6 +8,8 @@ public class OrderDetailResponse {
     private double price;
     private double total_amount;
 
+    private Long variantId;
+
     public OrderDetailResponse() {
     }
 
@@ -49,5 +51,13 @@ public class OrderDetailResponse {
 
     public void setTotal_amount(double total_amount) {
         this.total_amount = total_amount;
+    }
+
+    public Long getVariantId() {
+        return variantId;
+    }
+
+    public void setVariantId(Long variantId) {
+        this.variantId = variantId;
     }
 }
