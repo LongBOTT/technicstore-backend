@@ -19,8 +19,8 @@ public class OrderDetail {
     private Order order;
 
     // IMEI sản phẩm đặt
-    @OneToOne
-    @JoinColumn(name = "IMEI_code")
+    @ManyToOne
+    @JoinColumn(name = "IMEI_code", unique = false)
     private Imei imei;
 
     // Số lượng sản phẩm được đặt
