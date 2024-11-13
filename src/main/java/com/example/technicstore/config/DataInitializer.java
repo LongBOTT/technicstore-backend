@@ -45,6 +45,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
     public DataInitializer(StockReceiveRepository stockReceiveRepository, StockReceiveDetailRepository stockReceiveDetailRepository, CustomerRepository customerRepository, AttributeRepository attributeRepository, BrandRepository brandRepository, CategoryRepository categoryRepository, SupplierRepository supplierRepository, CarrierRepository carrierRepository, WarrantyRepository warrantyRepository, RoleRepository roleRepository, FunctionRepository functionRepository, ModuleRepository moduleRepository, DecentralizationRepository decentralizationRepository, AccountRepository accountRepository, ProductRepository productRepository, ImeiRepository imeiRepository, VariantRepository variantRepository, Variant_AttributeRepository variantValueRepository1, CategoryAttributeRepository categoryAttributeRepository, OrderRepository orderRepository, OrderDetailRepository orderDetailRepository) {
+
         this.customerRepository = customerRepository;
         this.attributeRepository = attributeRepository;
         this.brandRepository = brandRepository;
@@ -475,6 +476,82 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS 16", 50, 1);
         seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 1);
 
+        seedDataVariantAtribute("Trung quốc", 1, 2);
+        seedDataVariantAtribute("09/2022", 2, 2);
+        seedDataVariantAtribute("12", 4, 2);
+        seedDataVariantAtribute("146.7 x 71.5 x 7.8 mm", 5, 2);
+        seedDataVariantAtribute("172g", 6, 2);
+        seedDataVariantAtribute("IP168", 8, 2);
+        seedDataVariantAtribute("Apple A15 Bionic", 9, 2);
+        seedDataVariantAtribute("6", 11, 2);
+        seedDataVariantAtribute("3.22 GHz", 12, 2);
+        seedDataVariantAtribute("6GB", 13, 2);
+        seedDataVariantAtribute("6.1 inch", 14, 2);
+        seedDataVariantAtribute("OLED", 15, 2);
+        seedDataVariantAtribute("Super Retina XDR", 16, 2);
+        seedDataVariantAtribute("1170 x 2532 pixels", 17, 2);
+        seedDataVariantAtribute("60 Hz", 22, 2);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 2);
+        seedDataVariantAtribute("1200 nits", 20, 2);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 2);
+        seedDataVariantAtribute("Không", 26, 2);
+        seedDataVariantAtribute("Double rear camera", 27, 2);
+        seedDataVariantAtribute("Wide", 28, 2);
+        seedDataVariantAtribute("12.0 MP", 29, 2);
+        seedDataVariantAtribute("4K 4230p@30fps,FullHD 1080p@25fps,4K 4320p@24fps,FullHD 1080p@30fps,4K 4230p@60fps,HD 720p@30fps,FullHD 1080p@60fps", 30, 2);
+        seedDataVariantAtribute("Single selfie camera", 32, 2);
+        seedDataVariantAtribute("12.0", 33, 2);
+        seedDataVariantAtribute("Cảm biến tiệm cận", 36, 2);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 2);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 2);
+        seedDataVariantAtribute("1", 39, 2);
+        seedDataVariantAtribute("5G", 40, 2);
+        seedDataVariantAtribute("1 Lightning", 41, 2);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 2);
+        seedDataVariantAtribute("Lithium-ion", 46, 2);
+        seedDataVariantAtribute("3279 mAh", 47, 2);
+        seedDataVariantAtribute("iOS", 49, 2);
+        seedDataVariantAtribute("iOS 16", 50, 2);
+        seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 2);
+
+        seedDataVariantAtribute("Trung quốc", 1, 3);
+        seedDataVariantAtribute("09/2022", 2, 3);
+        seedDataVariantAtribute("12", 4, 3);
+        seedDataVariantAtribute("146.7 x 71.5 x 7.8 mm", 5, 3);
+        seedDataVariantAtribute("172g", 6, 3);
+        seedDataVariantAtribute("IP168", 8, 3);
+        seedDataVariantAtribute("Apple A15 Bionic", 9, 3);
+        seedDataVariantAtribute("6", 11, 3);
+        seedDataVariantAtribute("3.22 GHz", 12, 3);
+        seedDataVariantAtribute("6GB", 13, 3);
+        seedDataVariantAtribute("6.1 inch", 14, 3);
+        seedDataVariantAtribute("OLED", 15, 3);
+        seedDataVariantAtribute("Super Retina XDR", 16, 3);
+        seedDataVariantAtribute("1170 x 2532 pixels", 17, 3);
+        seedDataVariantAtribute("60 Hz", 22, 3);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 3);
+        seedDataVariantAtribute("1200 nits", 20, 3);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 3);
+        seedDataVariantAtribute("Không", 26, 3);
+        seedDataVariantAtribute("Double rear camera", 27, 3);
+        seedDataVariantAtribute("Wide", 28, 3);
+        seedDataVariantAtribute("12.0 MP", 29, 3);
+        seedDataVariantAtribute("4K 4230p@30fps,FullHD 1080p@25fps,4K 4320p@24fps,FullHD 1080p@30fps,4K 4230p@60fps,HD 720p@30fps,FullHD 1080p@60fps", 30, 3);
+        seedDataVariantAtribute("Single selfie camera", 32, 3);
+        seedDataVariantAtribute("12.0", 33, 3);
+        seedDataVariantAtribute("Cảm biến tiệm cận", 36, 3);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 3);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 3);
+        seedDataVariantAtribute("1", 39, 3);
+        seedDataVariantAtribute("5G", 40, 3);
+        seedDataVariantAtribute("1 Lightning", 41, 3);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 3);
+        seedDataVariantAtribute("Lithium-ion", 46, 3);
+        seedDataVariantAtribute("3279 mAh", 47, 3);
+        seedDataVariantAtribute("iOS", 49, 3);
+        seedDataVariantAtribute("iOS 16", 50, 3);
+        seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 3);
+
         // iphone 14 plus
         seedDataProduct("iPhone 14 Plus", "Điện thoại", 0.5, 1, 1, 1, "iphone_14_48a46d1684.png");
 
@@ -535,6 +612,84 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS", 49, 4);
         seedDataVariantAtribute("iOS 16", 50, 4);
         seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 4);
+
+        seedDataVariantAtribute("Trung quốc", 1, 5);
+        seedDataVariantAtribute("09/2022", 2, 5);
+        seedDataVariantAtribute("12", 4, 5);
+        seedDataVariantAtribute("160.8 x 78.1 x 7.8 mm", 5, 5);
+        seedDataVariantAtribute("203g", 6, 5);
+        seedDataVariantAtribute("IP168", 8, 5);
+        seedDataVariantAtribute("Apple A15 Bionic", 9, 5);
+        seedDataVariantAtribute("6", 11, 5);
+        seedDataVariantAtribute("3.22 GHz", 12, 5);
+        seedDataVariantAtribute("6GB", 13, 5);
+        seedDataVariantAtribute("6.7 inch", 14, 5);
+        seedDataVariantAtribute("OLED", 15, 5);
+        seedDataVariantAtribute("Super Retina XDR", 16, 5);
+        seedDataVariantAtribute("1284 x 2778 pixels", 17, 5);
+        seedDataVariantAtribute("60 Hz", 22, 5);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 5);
+        seedDataVariantAtribute("2000 nits", 20, 5);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 5);
+        seedDataVariantAtribute("Không", 26, 5);
+        seedDataVariantAtribute("Double rear camera", 27, 5);
+        seedDataVariantAtribute("Ultra Wide", 28, 5);
+        seedDataVariantAtribute("4K 4230p@30fps,FullHD 1080p@60fps,FullHD 1080p@25fps,HD 720p@30fps,4K 4320p@24fps,4K 4230p@60fps,FullHD 1080p@30fps", 30, 5);
+        seedDataVariantAtribute("Single selfie camera", 32, 5);
+        seedDataVariantAtribute("12.0 MP", 33, 5);
+        seedDataVariantAtribute("Cảm biến tiệm cận", 36, 5);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 5);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 5);
+        seedDataVariantAtribute("1", 39, 5);
+        seedDataVariantAtribute("5G", 40, 5);
+        seedDataVariantAtribute("1 Lightning", 41, 5);
+        seedDataVariantAtribute("802.11 a/b/g/n/ac/ax", 42, 5);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS", 43, 5);
+        seedDataVariantAtribute("Bluetooth v5.3", 44, 5);
+        seedDataVariantAtribute("Lithium-ion", 46, 5);
+        seedDataVariantAtribute("4352 mAh", 47, 5);
+        seedDataVariantAtribute("iOS", 49, 5);
+        seedDataVariantAtribute("iOS 16", 50, 5);
+        seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 5);
+
+        seedDataVariantAtribute("Trung quốc", 1, 6);
+        seedDataVariantAtribute("09/2022", 2, 6);
+        seedDataVariantAtribute("12", 4, 6);
+        seedDataVariantAtribute("160.8 x 78.1 x 7.8 mm", 5, 6);
+        seedDataVariantAtribute("203g", 6, 6);
+        seedDataVariantAtribute("IP168", 8, 6);
+        seedDataVariantAtribute("Apple A15 Bionic", 9, 6);
+        seedDataVariantAtribute("6", 11, 6);
+        seedDataVariantAtribute("3.22 GHz", 12, 6);
+        seedDataVariantAtribute("6GB", 13, 6);
+        seedDataVariantAtribute("6.7 inch", 14, 6);
+        seedDataVariantAtribute("OLED", 15, 6);
+        seedDataVariantAtribute("Super Retina XDR", 16, 6);
+        seedDataVariantAtribute("1284 x 2778 pixels", 17, 6);
+        seedDataVariantAtribute("60 Hz", 22, 6);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 6);
+        seedDataVariantAtribute("2000 nits", 20, 6);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 6);
+        seedDataVariantAtribute("Không", 26, 6);
+        seedDataVariantAtribute("Double rear camera", 27, 6);
+        seedDataVariantAtribute("Ultra Wide", 28, 6);
+        seedDataVariantAtribute("4K 4230p@30fps,FullHD 1080p@60fps,FullHD 1080p@25fps,HD 720p@30fps,4K 4320p@24fps,4K 4230p@60fps,FullHD 1080p@30fps", 30, 6);
+        seedDataVariantAtribute("Single selfie camera", 32, 6);
+        seedDataVariantAtribute("12.0 MP", 33, 6);
+        seedDataVariantAtribute("Cảm biến tiệm cận", 36, 6);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 6);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 6);
+        seedDataVariantAtribute("1", 39, 6);
+        seedDataVariantAtribute("5G", 40, 6);
+        seedDataVariantAtribute("1 Lightning", 41, 6);
+        seedDataVariantAtribute("802.11 a/b/g/n/ac/ax", 42, 6);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS", 43, 6);
+        seedDataVariantAtribute("Bluetooth v5.3", 44, 6);
+        seedDataVariantAtribute("Lithium-ion", 46, 6);
+        seedDataVariantAtribute("4352 mAh", 47, 6);
+        seedDataVariantAtribute("iOS", 49, 6);
+        seedDataVariantAtribute("iOS 16", 50, 6);
+        seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 6);
 
         // iphone 15
         seedDataProduct("iPhone 15", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_a9308b6994.png");
@@ -605,6 +760,100 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS 17", 50, 7);
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 7);
 
+        seedDataVariantAtribute("Trung quốc", 1, 8);
+        seedDataVariantAtribute("09/2023", 2, 8);
+        seedDataVariantAtribute("12", 4, 8);
+        seedDataVariantAtribute("146.7 x 71.5 x 7.8 mm", 5, 8);
+        seedDataVariantAtribute("171g", 6, 8);
+        seedDataVariantAtribute("IP168", 8, 8);
+        seedDataVariantAtribute("Khung máy: Nhôm nguyên khối,Mặt lưng máy: Kính", 7, 8);
+        seedDataVariantAtribute("Apple A16 Bionic", 9, 8);
+        seedDataVariantAtribute("6-Core", 10, 8);
+        seedDataVariantAtribute("6", 11, 8);
+        seedDataVariantAtribute("6GB", 13, 8);
+        seedDataVariantAtribute("6.1 inch", 14, 8);
+        seedDataVariantAtribute("OLED", 15, 8);
+        seedDataVariantAtribute("Super Retina XDR", 16, 8);
+        seedDataVariantAtribute("1179 x 2556 pixels", 17, 8);
+        seedDataVariantAtribute("Phủ ceramic", 18, 8);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 8);
+        seedDataVariantAtribute("2000 nits", 20, 8);
+        seedDataVariantAtribute("2.000.000:1", 21, 8);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 8);
+        seedDataVariantAtribute("Không giới hạn", 25, 8);
+        seedDataVariantAtribute("Không", 26, 8);
+        seedDataVariantAtribute("Double rear camera", 27, 8);
+        seedDataVariantAtribute("Standard", 28, 8);
+        seedDataVariantAtribute("12.0 MP", 29, 8);
+        seedDataVariantAtribute("4K 4320p@24fps,4K 2160p@25fps,4K 4230p@30fps,4K 4230p@60fps,HD 720p@30fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps", 30, 8);
+        seedDataVariantAtribute("Quay chậm (Slow Motion),Chụp chân dung,Chụp góc rộng (Wide),HDR,Chống rung quang học (OIS),Tự động lấy nét (AF),Chạm lấy nét,Flash LED", 31, 8);
+        seedDataVariantAtribute("Single selfie camera", 32, 8);
+        seedDataVariantAtribute("12.0 MP", 33, 8);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD,Quay phim Slow Motion", 34, 8);
+        seedDataVariantAtribute("Tự động lấy nét (AF),HDR,Nhận diện khuôn mặt,Chế độ chân dung,Ổn định hình ảnh quang học,Flash màn hình", 35, 8);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 8);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 8);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 8);
+        seedDataVariantAtribute("1", 39, 8);
+        seedDataVariantAtribute("5G", 40, 8);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 8);
+        seedDataVariantAtribute("Wifi 6", 42, 8);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 8);
+        seedDataVariantAtribute("Bluetooth v5.3", 44, 8);
+        seedDataVariantAtribute("Lithium-ion", 46, 8);
+        seedDataVariantAtribute("20 giờ", 47, 8);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 8);
+        seedDataVariantAtribute("iOS", 49, 8);
+        seedDataVariantAtribute("iOS 17", 50, 8);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 8);
+
+        seedDataVariantAtribute("Trung quốc", 1, 9);
+        seedDataVariantAtribute("09/2023", 2, 9);
+        seedDataVariantAtribute("12", 4, 9);
+        seedDataVariantAtribute("146.7 x 71.5 x 7.8 mm", 5, 9);
+        seedDataVariantAtribute("171g", 6, 9);
+        seedDataVariantAtribute("IP168", 8, 9);
+        seedDataVariantAtribute("Khung máy: Nhôm nguyên khối,Mặt lưng máy: Kính", 7, 9);
+        seedDataVariantAtribute("Apple A16 Bionic", 9, 9);
+        seedDataVariantAtribute("6-Core", 10, 9);
+        seedDataVariantAtribute("6", 11, 9);
+        seedDataVariantAtribute("6GB", 13, 9);
+        seedDataVariantAtribute("6.1 inch", 14, 9);
+        seedDataVariantAtribute("OLED", 15, 9);
+        seedDataVariantAtribute("Super Retina XDR", 16, 9);
+        seedDataVariantAtribute("1179 x 2556 pixels", 17, 9);
+        seedDataVariantAtribute("Phủ ceramic", 18, 9);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 9);
+        seedDataVariantAtribute("2000 nits", 20, 9);
+        seedDataVariantAtribute("2.000.000:1", 21, 9);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 9);
+        seedDataVariantAtribute("Không giới hạn", 25, 9);
+        seedDataVariantAtribute("Không", 26, 9);
+        seedDataVariantAtribute("Double rear camera", 27, 9);
+        seedDataVariantAtribute("Standard", 28, 9);
+        seedDataVariantAtribute("12.0 MP", 29, 9);
+        seedDataVariantAtribute("4K 4320p@24fps,4K 2160p@25fps,4K 4230p@30fps,4K 4230p@60fps,HD 720p@30fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps", 30, 9);
+        seedDataVariantAtribute("Quay chậm (Slow Motion),Chụp chân dung,Chụp góc rộng (Wide),HDR,Chống rung quang học (OIS),Tự động lấy nét (AF),Chạm lấy nét,Flash LED", 31, 9);
+        seedDataVariantAtribute("Single selfie camera", 32, 9);
+        seedDataVariantAtribute("12.0 MP", 33, 9);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD,Quay phim Slow Motion", 34, 9);
+        seedDataVariantAtribute("Tự động lấy nét (AF),HDR,Nhận diện khuôn mặt,Chế độ chân dung,Ổn định hình ảnh quang học,Flash màn hình", 35, 9);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 9);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 9);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 9);
+        seedDataVariantAtribute("1", 39, 9);
+        seedDataVariantAtribute("5G", 40, 9);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 9);
+        seedDataVariantAtribute("Wifi 6", 42, 9);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 9);
+        seedDataVariantAtribute("Bluetooth v5.3", 44, 9);
+        seedDataVariantAtribute("Lithium-ion", 46, 9);
+        seedDataVariantAtribute("20 giờ", 47, 9);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 9);
+        seedDataVariantAtribute("iOS", 49, 9);
+        seedDataVariantAtribute("iOS 17", 50, 9);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 9);
+
         // iphone 15 plus
         seedDataProduct("iPhone 15 Plus", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_a9308b6994.png");
 
@@ -674,6 +923,100 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS", 49, 10);
         seedDataVariantAtribute("iOS 17", 50, 10);
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 10);
+
+        seedDataVariantAtribute("Trung quốc", 1, 11);
+        seedDataVariantAtribute("09/2023", 2, 11);
+        seedDataVariantAtribute("12", 4, 11);
+        seedDataVariantAtribute("160.8 x 78.1 x 7.8 mm", 5, 11);
+        seedDataVariantAtribute("201g", 6, 11);
+        seedDataVariantAtribute("IP68", 8, 11);
+        seedDataVariantAtribute("Khung máy: Nhôm nguyên khối,Mặt lưng máy: Kính", 7, 11);
+        seedDataVariantAtribute("Apple A16 Bionic", 9, 11);
+        seedDataVariantAtribute("6-Core", 10, 11);
+        seedDataVariantAtribute("6 GB", 13, 11);
+        seedDataVariantAtribute("6.7 inch", 14, 11);
+        seedDataVariantAtribute("OLED", 15, 11);
+        seedDataVariantAtribute("Super Retina XDR", 16, 11);
+        seedDataVariantAtribute("1290 x 2796 pixels", 17, 11);
+        seedDataVariantAtribute("Phủ ceramic", 18, 11);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 11);
+        seedDataVariantAtribute("2000 nits", 20, 11);
+        seedDataVariantAtribute("2.000.000:1", 21, 11);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 11);
+        seedDataVariantAtribute("Không giới hạn", 25, 11);
+        seedDataVariantAtribute("Không", 26, 11);
+        seedDataVariantAtribute("Double rear camera", 27, 11);
+        seedDataVariantAtribute("Standard", 28, 11);
+        seedDataVariantAtribute("12.0 MP", 29, 11);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@60fps,4K 2160p@30fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 29, 11);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Nhận diện khuôn mặt,Tự động lấy nét (AF),Chạm lấy nét,Live Photo,Ban đêm (Night Mode),Chuyên nghiệp (Pro)", 31, 11);
+        seedDataVariantAtribute("Single selfie camera", 32, 11);
+        seedDataVariantAtribute("12.0 MP", 33, 11);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 11);
+        seedDataVariantAtribute("Tự động lấy nét (AF),Ban đêm (Night Mode),HDR,Live Photo,Flash màn hình,Nhận diện khuôn mặt,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 11);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 11);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 11);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 11);
+        seedDataVariantAtribute("1", 39, 11);
+        seedDataVariantAtribute("5G", 40, 11);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 11);
+        seedDataVariantAtribute("Wifi 6", 42, 11);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 11);
+        seedDataVariantAtribute("Bluetooth v5.3", 44, 11);
+        seedDataVariantAtribute("NFC", 45, 11);
+        seedDataVariantAtribute("Lithium-ion", 46, 11);
+        seedDataVariantAtribute("26 giờ", 47, 11);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 11);
+        seedDataVariantAtribute("iOS", 49, 11);
+        seedDataVariantAtribute("iOS 17", 50, 11);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 11);
+
+        seedDataVariantAtribute("Trung quốc", 1, 12);
+        seedDataVariantAtribute("09/2023", 2, 12);
+        seedDataVariantAtribute("12", 4, 12);
+        seedDataVariantAtribute("160.8 x 78.1 x 7.8 mm", 5, 12);
+        seedDataVariantAtribute("201g", 6, 12);
+        seedDataVariantAtribute("IP68", 8, 12);
+        seedDataVariantAtribute("Khung máy: Nhôm nguyên khối,Mặt lưng máy: Kính", 7, 12);
+        seedDataVariantAtribute("Apple A16 Bionic", 9, 12);
+        seedDataVariantAtribute("6-Core", 10, 12);
+        seedDataVariantAtribute("6 GB", 13, 12);
+        seedDataVariantAtribute("6.7 inch", 14, 12);
+        seedDataVariantAtribute("OLED", 15, 12);
+        seedDataVariantAtribute("Super Retina XDR", 16, 12);
+        seedDataVariantAtribute("1290 x 2796 pixels", 17, 12);
+        seedDataVariantAtribute("Phủ ceramic", 18, 12);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 12);
+        seedDataVariantAtribute("2000 nits", 20, 12);
+        seedDataVariantAtribute("2.000.000:1", 21, 12);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 12);
+        seedDataVariantAtribute("Không giới hạn", 25, 12);
+        seedDataVariantAtribute("Không", 26, 12);
+        seedDataVariantAtribute("Double rear camera", 27, 12);
+        seedDataVariantAtribute("Standard", 28, 12);
+        seedDataVariantAtribute("12.0 MP", 29, 12);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@60fps,4K 2160p@30fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 29, 12);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Nhận diện khuôn mặt,Tự động lấy nét (AF),Chạm lấy nét,Live Photo,Ban đêm (Night Mode),Chuyên nghiệp (Pro)", 31, 12);
+        seedDataVariantAtribute("Single selfie camera", 32, 12);
+        seedDataVariantAtribute("12.0 MP", 33, 12);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 12);
+        seedDataVariantAtribute("Tự động lấy nét (AF),Ban đêm (Night Mode),HDR,Live Photo,Flash màn hình,Nhận diện khuôn mặt,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 12);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 12);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 12);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 12);
+        seedDataVariantAtribute("1", 39, 12);
+        seedDataVariantAtribute("5G", 40, 12);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 12);
+        seedDataVariantAtribute("Wifi 6", 42, 12);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 12);
+        seedDataVariantAtribute("Bluetooth v5.3", 44, 12);
+        seedDataVariantAtribute("NFC", 45, 12);
+        seedDataVariantAtribute("Lithium-ion", 46, 12);
+        seedDataVariantAtribute("26 giờ", 47, 12);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 12);
+        seedDataVariantAtribute("iOS", 49, 12);
+        seedDataVariantAtribute("iOS 17", 50, 12);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 12);
 
         // iphone 15 pro
         seedDataProduct("iPhone 15 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
@@ -747,6 +1090,141 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS 17", 50, 13);
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 13);
 
+        seedDataVariantAtribute("Trung quốc", 1, 14);
+        seedDataVariantAtribute("09/2023", 2, 14);
+        seedDataVariantAtribute("12", 4, 14);
+        seedDataVariantAtribute("146.6 x 70.6 x 8.25 mm", 5, 14);
+        seedDataVariantAtribute("187g", 6, 14);
+        seedDataVariantAtribute("IP68", 8, 14);
+        seedDataVariantAtribute("Khung máy: Titanium", 7, 14);
+        seedDataVariantAtribute("Apple A17 Pro", 9, 14);
+        seedDataVariantAtribute("6-Core", 10, 14);
+        seedDataVariantAtribute("6", 11, 14);
+        seedDataVariantAtribute("8 GB", 13, 14);
+        seedDataVariantAtribute("6.1 inch", 14, 14);
+        seedDataVariantAtribute("OLED", 15, 14);
+        seedDataVariantAtribute("Super Retina XDR", 16, 14);
+        seedDataVariantAtribute("1179 x 2556 pixels", 17, 14);
+        seedDataVariantAtribute("Phủ ceramic", 18, 14);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 14);
+        seedDataVariantAtribute("2000 nits", 20, 14);
+        seedDataVariantAtribute("2.000.000:1", 21, 14);
+        seedDataVariantAtribute("Triple rear camera", 27, 14);
+        seedDataVariantAtribute("Standard", 28, 14);
+        seedDataVariantAtribute("12.0 MP", 29, 14);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@30fps,4K 2160p@60fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 14);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Nhận diện khuôn mặt,Tự động lấy nét (AF),Chạm lấy nét,Flash LED,Ban đêm (Night Mode),Chuyên nghiệp (Pro),Chụp góc siêu rộng (Ultrawide)", 31, 14);
+        seedDataVariantAtribute("Single selfie camera", 32, 14);
+        seedDataVariantAtribute("12.0 MP", 33, 14);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 14);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Ban đêm (Night Mode),HDR,Live Photo,Flash màn hình,Nhận diện khuôn mặt,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 14);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 14);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 14);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 14);
+        seedDataVariantAtribute("1", 39, 14);
+        seedDataVariantAtribute("5G", 40, 14);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 14);
+        seedDataVariantAtribute("Wifi 6", 42, 14);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 14);
+        seedDataVariantAtribute("v5.3", 44, 14);
+        seedDataVariantAtribute("NFC", 45, 14);
+        seedDataVariantAtribute("Lithium-ion", 46, 14);
+        seedDataVariantAtribute("23 giờ", 47, 14);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 14);
+        seedDataVariantAtribute("iOS", 49, 14);
+        seedDataVariantAtribute("iOS 17", 50, 14);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 14);
+
+        seedDataVariantAtribute("Trung quốc", 1, 15);
+        seedDataVariantAtribute("09/2023", 2, 15);
+        seedDataVariantAtribute("12", 4, 15);
+        seedDataVariantAtribute("146.6 x 70.6 x 8.25 mm", 5, 15);
+        seedDataVariantAtribute("187g", 6, 15);
+        seedDataVariantAtribute("IP68", 8, 15);
+        seedDataVariantAtribute("Khung máy: Titanium", 7, 15);
+        seedDataVariantAtribute("Apple A17 Pro", 9, 15);
+        seedDataVariantAtribute("6-Core", 10, 15);
+        seedDataVariantAtribute("6", 11, 15);
+        seedDataVariantAtribute("8 GB", 13, 15);
+        seedDataVariantAtribute("6.1 inch", 14, 15);
+        seedDataVariantAtribute("OLED", 15, 15);
+        seedDataVariantAtribute("Super Retina XDR", 16, 15);
+        seedDataVariantAtribute("1179 x 2556 pixels", 17, 15);
+        seedDataVariantAtribute("Phủ ceramic", 18, 15);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 15);
+        seedDataVariantAtribute("2000 nits", 20, 15);
+        seedDataVariantAtribute("2.000.000:1", 21, 15);
+        seedDataVariantAtribute("Triple rear camera", 27, 15);
+        seedDataVariantAtribute("Standard", 28, 15);
+        seedDataVariantAtribute("12.0 MP", 29, 15);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@30fps,4K 2160p@60fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 15);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Nhận diện khuôn mặt,Tự động lấy nét (AF),Chạm lấy nét,Flash LED,Ban đêm (Night Mode),Chuyên nghiệp (Pro),Chụp góc siêu rộng (Ultrawide)", 31, 15);
+        seedDataVariantAtribute("Single selfie camera", 32, 15);
+        seedDataVariantAtribute("12.0 MP", 33, 15);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 15);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Ban đêm (Night Mode),HDR,Live Photo,Flash màn hình,Nhận diện khuôn mặt,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 15);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 15);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 15);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 15);
+        seedDataVariantAtribute("1", 39, 15);
+        seedDataVariantAtribute("5G", 40, 15);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 15);
+        seedDataVariantAtribute("Wifi 6", 42, 15);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 15);
+        seedDataVariantAtribute("v5.3", 44, 15);
+        seedDataVariantAtribute("NFC", 45, 15);
+        seedDataVariantAtribute("Lithium-ion", 46, 15);
+        seedDataVariantAtribute("23 giờ", 47, 15);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 15);
+        seedDataVariantAtribute("iOS", 49, 15);
+        seedDataVariantAtribute("iOS 17", 50, 15);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 15);
+
+        seedDataVariantAtribute("Trung quốc", 1, 16);
+        seedDataVariantAtribute("09/2023", 2, 16);
+        seedDataVariantAtribute("12", 4, 16);
+        seedDataVariantAtribute("146.6 x 70.6 x 8.25 mm", 5, 16);
+        seedDataVariantAtribute("187g", 6, 16);
+        seedDataVariantAtribute("IP68", 8, 16);
+        seedDataVariantAtribute("Khung máy: Titanium", 7, 16);
+        seedDataVariantAtribute("Apple A17 Pro", 9, 16);
+        seedDataVariantAtribute("6-Core", 10, 16);
+        seedDataVariantAtribute("6", 11, 16);
+        seedDataVariantAtribute("8 GB", 13, 16);
+        seedDataVariantAtribute("6.1 inch", 14, 16);
+        seedDataVariantAtribute("OLED", 15, 16);
+        seedDataVariantAtribute("Super Retina XDR", 16, 16);
+        seedDataVariantAtribute("1179 x 2556 pixels", 17, 16);
+        seedDataVariantAtribute("Phủ ceramic", 18, 16);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 16);
+        seedDataVariantAtribute("2000 nits", 20, 16);
+        seedDataVariantAtribute("2.000.000:1", 21, 16);
+        seedDataVariantAtribute("Triple rear camera", 27, 16);
+        seedDataVariantAtribute("Standard", 28, 16);
+        seedDataVariantAtribute("12.0 MP", 29, 16);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@30fps,4K 2160p@60fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 16);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Nhận diện khuôn mặt,Tự động lấy nét (AF),Chạm lấy nét,Flash LED,Ban đêm (Night Mode),Chuyên nghiệp (Pro),Chụp góc siêu rộng (Ultrawide)", 31, 16);
+        seedDataVariantAtribute("Single selfie camera", 32, 16);
+        seedDataVariantAtribute("12.0 MP", 33, 16);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 16);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Ban đêm (Night Mode),HDR,Live Photo,Flash màn hình,Nhận diện khuôn mặt,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 16);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 16);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 16);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 16);
+        seedDataVariantAtribute("1", 39, 16);
+        seedDataVariantAtribute("5G", 40, 16);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 16);
+        seedDataVariantAtribute("Wifi 6", 42, 16);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 16);
+        seedDataVariantAtribute("v5.3", 44, 16);
+        seedDataVariantAtribute("NFC", 45, 16);
+        seedDataVariantAtribute("Lithium-ion", 46, 16);
+        seedDataVariantAtribute("23 giờ", 47, 16);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 16);
+        seedDataVariantAtribute("iOS", 49, 16);
+        seedDataVariantAtribute("iOS 17", 50, 16);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 16);
+
         // iphone 15 pro max
         seedDataProduct("iPhone 15 Pro Max", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
@@ -812,6 +1290,94 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS", 49, 17);
         seedDataVariantAtribute("iOS 17", 50, 17);
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 17);
+
+        seedDataVariantAtribute("Trung quốc", 1, 18);
+        seedDataVariantAtribute("09/2023", 2, 18);
+        seedDataVariantAtribute("12", 4, 18);
+        seedDataVariantAtribute("159.9 x 76.7 x 8.25 mm", 5, 18);
+        seedDataVariantAtribute("221g", 6, 18);
+        seedDataVariantAtribute("IP68", 8, 18);
+        seedDataVariantAtribute("Khung máy: Titanium", 7, 18);
+        seedDataVariantAtribute("Apple A17 Pro", 9, 18);
+        seedDataVariantAtribute("6-Core", 10, 18);
+        seedDataVariantAtribute("8 GB", 13, 18);
+        seedDataVariantAtribute("6.7 inch", 14, 18);
+        seedDataVariantAtribute("OLED", 15, 18);
+        seedDataVariantAtribute("Super Retina XDR", 16, 18);
+        seedDataVariantAtribute("1290 x 2796 pixels", 17, 18);
+        seedDataVariantAtribute("Phủ ceramic", 18, 18);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 18);
+        seedDataVariantAtribute("2000 nits", 20, 18);
+        seedDataVariantAtribute("2.000.000:1", 21, 18);
+        seedDataVariantAtribute("Triple rear camera", 27, 18);
+        seedDataVariantAtribute("Standard", 28, 18);
+        seedDataVariantAtribute("12.0 MP", 29, 18);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@60fps,4K 2160p@30fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 18);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Tự động lấy nét (AF),Chạm lấy nét,Flash LED,Ban đêm (Night Mode),Chuyên nghiệp (Pro),Chụp góc siêu rộng (Ultrawide),Chụp chuyển động", 31, 18);
+        seedDataVariantAtribute("Single selfie camera", 32, 18);
+        seedDataVariantAtribute("12.0 MP", 33, 18);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 18);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Tự động lấy nét (AF),Ban đêm (Night Mode),HDR,Flash màn hình,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 18);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 18);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 18);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 18);
+        seedDataVariantAtribute("1", 39, 18);
+        seedDataVariantAtribute("5G", 40, 18);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 18);
+        seedDataVariantAtribute("Wifi 6", 42, 18);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 18);
+        seedDataVariantAtribute("v5.3", 44, 18);
+        seedDataVariantAtribute("NFC", 45, 18);
+        seedDataVariantAtribute("Lithium-ion", 46, 18);
+        seedDataVariantAtribute("29 giờ", 47, 18);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 18);
+        seedDataVariantAtribute("iOS", 49, 18);
+        seedDataVariantAtribute("iOS 17", 50, 18);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 18);
+
+        seedDataVariantAtribute("Trung quốc", 1, 19);
+        seedDataVariantAtribute("09/2023", 2, 19);
+        seedDataVariantAtribute("12", 4, 19);
+        seedDataVariantAtribute("159.9 x 76.7 x 8.25 mm", 5, 19);
+        seedDataVariantAtribute("221g", 6, 19);
+        seedDataVariantAtribute("IP68", 8, 19);
+        seedDataVariantAtribute("Khung máy: Titanium", 7, 19);
+        seedDataVariantAtribute("Apple A17 Pro", 9, 19);
+        seedDataVariantAtribute("6-Core", 10, 19);
+        seedDataVariantAtribute("8 GB", 13, 19);
+        seedDataVariantAtribute("6.7 inch", 14, 19);
+        seedDataVariantAtribute("OLED", 15, 19);
+        seedDataVariantAtribute("Super Retina XDR", 16, 19);
+        seedDataVariantAtribute("1290 x 2796 pixels", 17, 19);
+        seedDataVariantAtribute("Phủ ceramic", 18, 19);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 19);
+        seedDataVariantAtribute("2000 nits", 20, 19);
+        seedDataVariantAtribute("2.000.000:1", 21, 19);
+        seedDataVariantAtribute("Triple rear camera", 27, 19);
+        seedDataVariantAtribute("Standard", 28, 19);
+        seedDataVariantAtribute("12.0 MP", 29, 19);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@60fps,4K 2160p@30fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 19);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Tự động lấy nét (AF),Chạm lấy nét,Flash LED,Ban đêm (Night Mode),Chuyên nghiệp (Pro),Chụp góc siêu rộng (Ultrawide),Chụp chuyển động", 31, 19);
+        seedDataVariantAtribute("Single selfie camera", 32, 19);
+        seedDataVariantAtribute("12.0 MP", 33, 19);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 19);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Tự động lấy nét (AF),Ban đêm (Night Mode),HDR,Flash màn hình,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 19);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 19);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 19);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 19);
+        seedDataVariantAtribute("1", 39, 19);
+        seedDataVariantAtribute("5G", 40, 19);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 19);
+        seedDataVariantAtribute("Wifi 6", 42, 19);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 19);
+        seedDataVariantAtribute("v5.3", 44, 19);
+        seedDataVariantAtribute("NFC", 45, 19);
+        seedDataVariantAtribute("Lithium-ion", 46, 19);
+        seedDataVariantAtribute("29 giờ", 47, 19);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 19);
+        seedDataVariantAtribute("iOS", 49, 19);
+        seedDataVariantAtribute("iOS 17", 50, 19);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 19);
 
         // iphone 16
         seedDataProduct("iPhone 16", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
@@ -881,6 +1447,100 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS", 49, 20);
         seedDataVariantAtribute("iOS 18", 50, 20);
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 20);
+
+        seedDataVariantAtribute("Trung quốc", 1, 21);
+        seedDataVariantAtribute("09/2024", 2, 21);
+        seedDataVariantAtribute("12", 4, 21);
+        seedDataVariantAtribute("146.6 x 71.6 x 7.8 mm", 5, 21);
+        seedDataVariantAtribute("170", 6, 21);
+        seedDataVariantAtribute("IP68", 8, 21);
+        seedDataVariantAtribute("Khung máy: Nhôm nguyên khối,Mặt lưng máy: Kính", 7, 21);
+        seedDataVariantAtribute("Apple A18", 9, 21);
+        seedDataVariantAtribute("6-Core", 10, 21);
+        seedDataVariantAtribute("6 GB", 13, 21);
+        seedDataVariantAtribute("6.1 inch", 14, 21);
+        seedDataVariantAtribute("OLED", 15, 21);
+        seedDataVariantAtribute("Super Retina XDR", 16, 21);
+        seedDataVariantAtribute("1179 x 2556 pixels", 17, 21);
+        seedDataVariantAtribute("Phủ ceramic", 18, 21);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 21);
+        seedDataVariantAtribute("2000 nits", 20, 21);
+        seedDataVariantAtribute("2.000.000:1", 21, 21);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 21);
+        seedDataVariantAtribute("Không giới hạn", 25, 21);
+        seedDataVariantAtribute("Không", 26, 21);
+        seedDataVariantAtribute("Double rear camera", 27, 21);
+        seedDataVariantAtribute("Standard", 28, 21);
+        seedDataVariantAtribute("12.0 MP", 29, 21);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 4230p@30fps,4K 4230p@60fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 21);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Tự động lấy nét (AF), Chạm lấy nét, Flash LED,", 31, 21);
+        seedDataVariantAtribute("Single selfie camera", 32, 21);
+        seedDataVariantAtribute("12.0 MP", 33, 21);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD,Quay phim Slow Motion", 34, 21);
+        seedDataVariantAtribute("Tự động lấy nét (AF),HDR,Nhận diện khuôn mặt, Chế độ chân dung,Ổn định hình ảnh quang học,Flash màn hình", 35, 21);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 21);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 21);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 21);
+        seedDataVariantAtribute("1", 39, 21);
+        seedDataVariantAtribute("5G", 40, 21);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 21);
+        seedDataVariantAtribute("Wifi 7", 42, 21);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,QZSS", 43, 21);
+        seedDataVariantAtribute("v5.3", 44, 21);
+        seedDataVariantAtribute("NFC", 45, 21);
+        seedDataVariantAtribute("Lithium-ion", 46, 21);
+        seedDataVariantAtribute("22 giờ", 47, 21);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 21);
+        seedDataVariantAtribute("iOS", 49, 21);
+        seedDataVariantAtribute("iOS 18", 50, 21);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 21);
+
+        seedDataVariantAtribute("Trung quốc", 1, 22);
+        seedDataVariantAtribute("09/2024", 2, 22);
+        seedDataVariantAtribute("12", 4, 22);
+        seedDataVariantAtribute("146.6 x 71.6 x 7.8 mm", 5, 22);
+        seedDataVariantAtribute("170", 6, 22);
+        seedDataVariantAtribute("IP68", 8, 22);
+        seedDataVariantAtribute("Khung máy: Nhôm nguyên khối,Mặt lưng máy: Kính", 7, 22);
+        seedDataVariantAtribute("Apple A18", 9, 22);
+        seedDataVariantAtribute("6-Core", 10, 22);
+        seedDataVariantAtribute("6 GB", 13, 22);
+        seedDataVariantAtribute("6.1 inch", 14, 22);
+        seedDataVariantAtribute("OLED", 15, 22);
+        seedDataVariantAtribute("Super Retina XDR", 16, 22);
+        seedDataVariantAtribute("1179 x 2556 pixels", 17, 22);
+        seedDataVariantAtribute("Phủ ceramic", 18, 22);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 22);
+        seedDataVariantAtribute("2000 nits", 20, 22);
+        seedDataVariantAtribute("2.000.000:1", 21, 22);
+        seedDataVariantAtribute("Apple GPU 5 nhân", 23, 22);
+        seedDataVariantAtribute("Không giới hạn", 25, 22);
+        seedDataVariantAtribute("Không", 26, 22);
+        seedDataVariantAtribute("Double rear camera", 27, 22);
+        seedDataVariantAtribute("Standard", 28, 22);
+        seedDataVariantAtribute("12.0 MP", 29, 22);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 4230p@30fps,4K 4230p@60fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 22);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Tự động lấy nét (AF), Chạm lấy nét, Flash LED,", 31, 22);
+        seedDataVariantAtribute("Single selfie camera", 32, 22);
+        seedDataVariantAtribute("12.0 MP", 33, 22);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD,Quay phim Slow Motion", 34, 22);
+        seedDataVariantAtribute("Tự động lấy nét (AF),HDR,Nhận diện khuôn mặt, Chế độ chân dung,Ổn định hình ảnh quang học,Flash màn hình", 35, 22);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 22);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 22);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 22);
+        seedDataVariantAtribute("1", 39, 22);
+        seedDataVariantAtribute("5G", 40, 22);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 22);
+        seedDataVariantAtribute("Wifi 7", 42, 22);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,QZSS", 43, 22);
+        seedDataVariantAtribute("v5.3", 44, 22);
+        seedDataVariantAtribute("NFC", 45, 22);
+        seedDataVariantAtribute("Lithium-ion", 46, 22);
+        seedDataVariantAtribute("22 giờ", 47, 22);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 22);
+        seedDataVariantAtribute("iOS", 49, 22);
+        seedDataVariantAtribute("iOS 18", 50, 22);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 22);
 
         // iphone 16 pro
         seedDataProduct("iPhone 16 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
@@ -957,6 +1617,102 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS", 49, 23);
         seedDataVariantAtribute("iOS 18", 50, 23);
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 23);
+
+        seedDataVariantAtribute("Trung quốc", 1, 24);
+        seedDataVariantAtribute("09/2024", 2, 24);
+        seedDataVariantAtribute("12", 4, 24);
+        seedDataVariantAtribute("149.6 x 71.5 x 8.25 mm", 5, 24);
+        seedDataVariantAtribute("199 g", 6, 24);
+        seedDataVariantAtribute("IP68", 8, 24);
+        seedDataVariantAtribute("Khung máy: Titanium", 7, 24);
+        seedDataVariantAtribute("Apple A18 Pro", 9, 24);
+        seedDataVariantAtribute("6-Core", 10, 24);
+        seedDataVariantAtribute("6", 11, 24);
+        seedDataVariantAtribute("8 GB", 13, 24);
+        seedDataVariantAtribute("6.3 inch", 14, 24);
+        seedDataVariantAtribute("OLED", 15, 24);
+        seedDataVariantAtribute("Super Retina XDR", 16, 24);
+        seedDataVariantAtribute("1206  x 2622  pixels", 17, 24);
+        seedDataVariantAtribute("Phủ ceramic", 18, 24);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 24);
+        seedDataVariantAtribute("2000 nits", 20, 24);
+        seedDataVariantAtribute("2.000.000:1", 21, 24);
+        seedDataVariantAtribute("Apple GPU 6 nhân", 23, 24);
+        seedDataVariantAtribute("Không giới hạn", 25, 24);
+        seedDataVariantAtribute("Không", 26, 24);
+        seedDataVariantAtribute("Triple rear camera", 27, 24);
+        seedDataVariantAtribute("Standard", 28, 24);
+        seedDataVariantAtribute("12.0 MP", 29, 24);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@30fps,4K 2160p@60fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 24);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Nhận diện khuôn mặt,Tự động lấy nét (AF),Chạm lấy nét,Flash LED,Ban đêm (Night Mode),Chuyên nghiệp (Pro),Chụp góc siêu rộng (Ultrawide)", 31, 24);
+        seedDataVariantAtribute("Single selfie camera", 32, 24);
+        seedDataVariantAtribute("12.0 MP", 33, 24);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 24);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Ban đêm (Night Mode),HDR,Live Photo,Flash màn hình,Flash màn hình,Nhận diện khuôn mặt,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 24);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 24);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 24);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 24);
+        seedDataVariantAtribute("1", 39, 24);
+        seedDataVariantAtribute("5G", 40, 24);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 24);
+        seedDataVariantAtribute("Wifi 7", 42, 24);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,QZSS,GPS", 43, 24);
+        seedDataVariantAtribute("v5.3", 44, 24);
+        seedDataVariantAtribute("NFC", 45, 24);
+        seedDataVariantAtribute("Lithium-ion", 46, 24);
+        seedDataVariantAtribute("27 giờ", 47, 24);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 24);
+        seedDataVariantAtribute("iOS", 49, 24);
+        seedDataVariantAtribute("iOS 18", 50, 24);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 24);
+
+        seedDataVariantAtribute("Trung quốc", 1, 25);
+        seedDataVariantAtribute("09/2024", 2, 25);
+        seedDataVariantAtribute("12", 4, 25);
+        seedDataVariantAtribute("149.6 x 71.5 x 8.25 mm", 5, 25);
+        seedDataVariantAtribute("199 g", 6, 25);
+        seedDataVariantAtribute("IP68", 8, 25);
+        seedDataVariantAtribute("Khung máy: Titanium", 7, 25);
+        seedDataVariantAtribute("Apple A18 Pro", 9, 25);
+        seedDataVariantAtribute("6-Core", 10, 25);
+        seedDataVariantAtribute("6", 11, 25);
+        seedDataVariantAtribute("8 GB", 13, 25);
+        seedDataVariantAtribute("6.3 inch", 14, 25);
+        seedDataVariantAtribute("OLED", 15, 25);
+        seedDataVariantAtribute("Super Retina XDR", 16, 25);
+        seedDataVariantAtribute("1206  x 2622  pixels", 17, 25);
+        seedDataVariantAtribute("Phủ ceramic", 18, 25);
+        seedDataVariantAtribute("Điện dung đa điểm", 19, 25);
+        seedDataVariantAtribute("2000 nits", 20, 25);
+        seedDataVariantAtribute("2.000.000:1", 21, 25);
+        seedDataVariantAtribute("Apple GPU 6 nhân", 23, 25);
+        seedDataVariantAtribute("Không giới hạn", 25, 25);
+        seedDataVariantAtribute("Không", 26, 25);
+        seedDataVariantAtribute("Triple rear camera", 27, 25);
+        seedDataVariantAtribute("Standard", 28, 25);
+        seedDataVariantAtribute("12.0 MP", 29, 25);
+        seedDataVariantAtribute("4K 2160p@25fps,4K 2160p@24fps,4K 2160p@30fps,4K 2160p@60fps,FullHD 1080p@25fps,FullHD 1080p@60fps,FullHD 1080p@30fps,HD 720p@30fps", 30, 25);
+        seedDataVariantAtribute("Chụp chân dung,Quay chậm (Slow Motion),HDR,Chụp góc rộng (Wide),Chống rung quang học (OIS),Ổn định hình ảnh quang học,Trôi nhanh thời gian (Time Lapse),Toàn cảnh (Panorama),Nhận diện khuôn mặt,Tự động lấy nét (AF),Chạm lấy nét,Flash LED,Ban đêm (Night Mode),Chuyên nghiệp (Pro),Chụp góc siêu rộng (Ultrawide)", 31, 25);
+        seedDataVariantAtribute("Single selfie camera", 32, 25);
+        seedDataVariantAtribute("12.0 MP", 33, 25);
+        seedDataVariantAtribute("Quay phim 4K,Quay phim FullHD", 34, 25);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Ban đêm (Night Mode),HDR,Live Photo,Flash màn hình,Flash màn hình,Nhận diện khuôn mặt,Ổn định hình ảnh quang học,Chế độ chân dung", 35, 25);
+        seedDataVariantAtribute("Cảm biến khí áp kế,Con quay hồi chuyển,Cảm biến ánh sáng,Cảm biến la bàn,Cảm biến gia tốc,Cảm biến tiệm cận", 36, 25);
+        seedDataVariantAtribute("Mở khóa khuôn mặt,Mở khóa bằng mật mã", 37, 25);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 25);
+        seedDataVariantAtribute("1", 39, 25);
+        seedDataVariantAtribute("5G", 40, 25);
+        seedDataVariantAtribute("Cổng sạc: Type C,Audio Jack: Type C", 41, 25);
+        seedDataVariantAtribute("Wifi 7", 42, 25);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,QZSS,GPS", 43, 25);
+        seedDataVariantAtribute("v5.3", 44, 25);
+        seedDataVariantAtribute("NFC", 45, 25);
+        seedDataVariantAtribute("Lithium-ion", 46, 25);
+        seedDataVariantAtribute("27 giờ", 47, 25);
+        seedDataVariantAtribute("Hỗ trợ sạc không dây,Sạc pin nhanh,Sạc ngược cho thiết bị khác", 48, 25);
+        seedDataVariantAtribute("iOS", 49, 25);
+        seedDataVariantAtribute("iOS 18", 50, 25);
+        seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 25);
 
         // sam sung galaxy s24 FE
         seedDataProduct("Samsung Galaxy S24 FE", "Điện thoại", 0.5, 2, 1, 2, "samssung_galaxy_s24_fe_xanh_723e4e6443.png");
@@ -1132,6 +1888,54 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Android", 49, 29);
         seedDataVariantAtribute("Android 14", 50, 29);
         seedDataVariantAtribute("Cáp Type C, Sách HDSD, Que lấy SIM", 51, 29);
+
+        seedDataVariantAtribute("Việt Nam / Trung quốc", 1, 30);
+        seedDataVariantAtribute("01/2024", 2, 30);
+        seedDataVariantAtribute("12", 4, 30);
+        seedDataVariantAtribute("79 x 162.3 x 8.6 mm", 5, 30);
+        seedDataVariantAtribute("232 g", 6, 30);
+        seedDataVariantAtribute("IP68", 8, 30);
+        seedDataVariantAtribute("KKhung máy: Titan", 7, 30);
+        seedDataVariantAtribute("Snapdragon 8 Gen 3", 9, 30);
+        seedDataVariantAtribute("1 x 3.39 GHz + 2 x 3.1 GHz + 3 x 2.9 GHz + 2 x 2.2 GHz", 10, 30);
+        seedDataVariantAtribute("8", 11, 30);
+        seedDataVariantAtribute("3.39 GHz", 12, 30);
+        seedDataVariantAtribute("12 GB", 13, 30);
+        seedDataVariantAtribute("6.8 inch", 14, 30);
+        seedDataVariantAtribute("QHD+", 15, 30);
+        seedDataVariantAtribute("Dynamic AMOLED 2X", 16, 30);
+        seedDataVariantAtribute("3120 x 1440 Pixels ", 17, 30);
+        seedDataVariantAtribute("Corning Gorilla Glass Victus", 18, 30);
+        seedDataVariantAtribute("2600 nits", 20, 30);
+        seedDataVariantAtribute("120 Hz", 22, 30);
+        seedDataVariantAtribute("Adreno 750", 23, 30);
+        seedDataVariantAtribute("Không giới hạn", 25, 30);
+        seedDataVariantAtribute("Không", 26, 30);
+        seedDataVariantAtribute("Quad rear camera", 27, 30);
+        seedDataVariantAtribute("Wide,Telephoto,Telephoto,Ultra Wide", 28, 30);
+        seedDataVariantAtribute("200.0 MP,50.0 MP,10.0 MP,12.0 MP", 29, 30);
+        seedDataVariantAtribute("UHD 8K (7680 x 4320)@30fps", 30, 30);
+        seedDataVariantAtribute("Zoom quang học 3x,Zoom kĩ thuật số 30x,Chống rung kỹ thuật số AI VDIS và quang học OIS,Chụp hình & quay phim với Portrait AI,Chế độ Super HDR,Trợ lí Chỉnh ảnh (Gợi ý chỉnh sửa, Hậu kì sáng tạo),Chụp chân dung,Chụp góc rộng (Wide),HDR,Trôi nhanh thời gian (Time Lapse),Tự động lấy nét (AF),Ban đêm (Night Mode),Chụp góc siêu rộng (Ultrawide),Chống rung quang học (OIS),Zoom kĩ thuật số 100x,Zoom quang học 10x,Toàn cảnh (Panorama),Xóa phông,Quay siêu chậm (Super Slow Motion)", 31, 30);
+        seedDataVariantAtribute("Single selfie camera", 32, 30);
+        seedDataVariantAtribute("12.0 MP", 33, 30);
+        seedDataVariantAtribute("Quay film chân dung", 34, 30);
+        seedDataVariantAtribute("Chụp góc rộng (Wide),Ban đêm (Night Mode),HDR,Làm đẹp (Beautify),Chế độ chân dung", 35, 30);
+        seedDataVariantAtribute("Mở khóa vân tay dưới màn hình,Mở khóa khuôn mặt", 37, 30);
+        seedDataVariantAtribute("Thu nhỏ màn hình sử dụng một tay,Samsung Wallet (Samsung Pay),Phiên dịch Trực tiếp,Trợ lý Chỉnh ảnh,Trợ lý Chat thông minh,Khoanh Vùng Search Đa năng,Samsung DeX,Công nghệ NFC,Đa cửa sổ (chia đôi màn hình),Chạm 2 lần sáng màn hình,Sạc nhanh 45W,Tích hợp S-Pen trong thân máy,Trợ lý Note Quyền năng,AKG Dolby,Chặn tin nhắn,Chặn cuộc gọi,Màn hình luôn bật (Alway on display)", 59, 30);
+        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 30);
+        seedDataVariantAtribute("1", 39, 30);
+        seedDataVariantAtribute("4G, 5G", 40, 30);
+        seedDataVariantAtribute("1 Type C", 41, 30);
+        seedDataVariantAtribute("802.11 a/b/g/n/ac/ax,Dual-band (2.4 GHz/ 5 GHz),2x2 MIMO Wi-Fi Direct", 42, 30);
+        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 30);
+        seedDataVariantAtribute("v5.3", 44, 30);
+        seedDataVariantAtribute("NFC,Bluetooth", 45, 30);
+        seedDataVariantAtribute("Lithium-ion", 46, 30);
+        seedDataVariantAtribute("5000 mAh", 47, 30);
+        seedDataVariantAtribute("Sạc ngược cho thiết bị khác,Sạc pin nhanh,Hỗ trợ sạc không dây,Tiết kiệm pin", 48, 30);
+        seedDataVariantAtribute("Android", 49, 30);
+        seedDataVariantAtribute("Android 14", 50, 30);
+        seedDataVariantAtribute("Cáp Type C, Sách HDSD, Que lấy SIM", 51, 30);
 
         //Samsung Galaxy Z Flip5
         seedDataProduct("Samsung Galaxy Z Flip5", "Điện thoại", 0.5, 2, 1, 2, "2024_3_28_638472353992099331_samsung-galaxy-zflip-5-xanh-ai.jpg");
@@ -1617,34 +2421,32 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sạc, Cáp, Ốp lưng, Sách HDSD, Que lấy SIM", 51, 39);
 
         //MacBook Air
-        seedDataProduct("MacBook Air", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-
-
         // phiên bản  MacBook Air M2 13 2022 8CPU 10GPU 8GB 512GB
+        seedDataProduct("MacBook Air M2 13 2022 8CPU 10GPU 8GB 512GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
         seedDataVariant("MacbookAir13inchm220228CPU10GPU8GB512GB", 31990000.0, 10, 21);
 
         //MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB
-        seedDataVariant("MacBookAir13inchM220228CPU8GPU8GB256GB", 27990000.0, 10, 21);
+        seedDataProduct("MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
+        seedDataVariant("Đen MacBookAir13inchM220228CPU8GPU8GB256GB", 27990000.0, 10, 22);
 
         //MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB
-        seedDataVariant("MacBookAir13inchM120208CPU7GPU8GB256GB", 22990000.0, 10, 21);
+        seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
+        seedDataVariant("Đen MacBookAir13inchM120208CPU7GPU8GB256GB", 22990000.0, 10, 23);
 
         // MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB
-        seedDataVariant("MacBookAir13inchM120208CPU7GPU16GB256GB", 29990000.0, 10, 21);
+        seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
+        seedDataVariant("Đen MacBookAir13inchM120208CPU7GPU16GB256GB", 29990000.0, 10, 24);
 
         // Thông số
         // Laptop MacBook Air 13 inch M2 2022 8CPU 10GPU 8GB/512GB có 3 màu Đen, Trắng, Xám giá 31.990.000
         seedDataVariantAtribute("Đen", 3, 40);
         seedDataVariantAtribute("512GB", 24, 40);
-
-        // thông số kĩ thuật
         seedDataVariantAtribute("Apple", 60, 40);
         seedDataVariantAtribute("M2", 61, 40);
         seedDataVariantAtribute("8 - Core", 10, 40);
         seedDataVariantAtribute("2.3 Ghz", 62, 40);
         seedDataVariantAtribute("Apple", 63, 40);
-        seedDataVariantAtribute("GPU 10 nhân", 64, 40);
-        seedDataVariantAtribute(" Apple M2 GPU 10 nhân", 64, 40);
+        seedDataVariantAtribute("Apple M2 GPU 10 nhân", 64, 40);
         seedDataVariantAtribute("8 GB", 13, 40);
         seedDataVariantAtribute("LPDDR4", 66, 40);
         seedDataVariantAtribute("3200 MHz", 67, 40);
@@ -1685,60 +2487,190 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop MacBook Air 13 inch M2 2022 8CPU 10GPU 8GB/256GB có 3 màu Đen, Trắng, Ghi giá 27.990.000
         seedDataVariantAtribute("Đen", 3, 41);
-        seedDataVariantAtribute("Trắng", 3, 41);
-        seedDataVariantAtribute("Xám", 3, 41);
         seedDataVariantAtribute("256GB", 24, 41);
-        seedDataVariantAtribute("GPU 8 nhân", 64, 41);
-        seedDataVariantAtribute(" Apple M2 GPU 8 nhân", 64, 41);
+        seedDataVariantAtribute("Apple M2 GPU 8 nhân", 64, 41);
         seedDataVariantAtribute("30 W", 75, 41);
+        seedDataVariantAtribute("Apple", 60, 41);
+        seedDataVariantAtribute("M2", 61, 41);
+        seedDataVariantAtribute("8 - Core", 10, 41);
+        seedDataVariantAtribute("2.3 Ghz", 62, 41);
+        seedDataVariantAtribute("Apple", 63, 41);
+        seedDataVariantAtribute("Apple M2 GPU 10 nhân", 64, 41);
+        seedDataVariantAtribute("8 GB", 13, 41);
+        seedDataVariantAtribute("LPDDR4", 66, 41);
+        seedDataVariantAtribute("3200 MHz", 67, 41);
+        seedDataVariantAtribute("3200 MHz", 1, 41);
+        seedDataVariantAtribute("8 GB", 69, 41);
+        seedDataVariantAtribute("SSD", 70, 41);
+        seedDataVariantAtribute("M2. PCIe", 71, 41);
+        seedDataVariantAtribute("13.6 inch", 14, 41);
+        seedDataVariantAtribute("Retina", 15, 41);
+        seedDataVariantAtribute("2560 x 1644 Pixels", 17, 41);
+        seedDataVariantAtribute("LED", 72, 41);
+        seedDataVariantAtribute("60 Hz", 22, 41);
+        seedDataVariantAtribute("IPS", 73, 41);
+        seedDataVariantAtribute("500 nits", 74, 41);
+        seedDataVariantAtribute("2 Type C,Audio Jack: Jack 3.5 mm,Cổng sạc: Magsafe Charger", 41, 41);
+        seedDataVariantAtribute("802.11 ax", 42, 41);
+        seedDataVariantAtribute("v5.0", 44, 41);
+        seedDataVariantAtribute("Full HD Webcam (1080p Webcam)", 74, 41);
+        seedDataVariantAtribute("MacOS", 49, 41);
+        seedDataVariantAtribute("Ventura", 50, 41);
+        seedDataVariantAtribute("Mở khóa vân tay", 37, 41);
+        seedDataVariantAtribute("English International Backlit Keyboard", 52, 41);
+        seedDataVariantAtribute("Không", 53, 41);
+        seedDataVariantAtribute("LED", 54, 41);
+        seedDataVariantAtribute("Trắng", 55, 41);
+        seedDataVariantAtribute("Multi-touch touchpad", 56, 41);
+        seedDataVariantAtribute("Lithium polymer", 46, 41);
+        seedDataVariantAtribute("18 Giờ", 47, 41);
+        seedDataVariantAtribute("Adapter,Dây cáp sạc", 51, 41);
+        seedDataVariantAtribute("4", 57, 41);
+        seedDataVariantAtribute("30.41 x 21.5 x 1.13 cm", 5, 41);
+        seedDataVariantAtribute("1.24 kg", 6, 41);
+        seedDataVariantAtribute("Kim loại", 7, 41);
+        seedDataVariantAtribute("Trung quốc", 1, 41);
+        seedDataVariantAtribute("2022", 2, 41);
+        seedDataVariantAtribute("12", 4, 41);
 
         // Laptop MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB có 3 màu Đen, Trắng, Ghi giá 22.990.000
         seedDataVariantAtribute("Đen", 3, 42);
-        seedDataVariantAtribute("Trắng", 3, 42);
-        seedDataVariantAtribute("Xám", 3, 42);
         seedDataVariantAtribute("256GB", 24, 42);
         seedDataVariantAtribute("M1", 61, 42);
         seedDataVariantAtribute("8", 11, 42);
         seedDataVariantAtribute("8", 76, 42);
         seedDataVariantAtribute("Share", 77, 42);
-        seedDataVariantAtribute("GPU 7 nhân", 64, 42);
-        seedDataVariantAtribute(" Apple M1 GPU 7 nhân", 64, 41);
+        seedDataVariantAtribute("Apple M1 GPU 7 nhân", 64, 42);
+        seedDataVariantAtribute("Apple", 60, 42);
+        seedDataVariantAtribute("8 - Core", 10, 42);
+        seedDataVariantAtribute("2.3 Ghz", 62, 42);
+        seedDataVariantAtribute("Apple", 63, 42);
+        seedDataVariantAtribute("GPU 10 nhân", 64, 42);
+        seedDataVariantAtribute(" Apple M2 GPU 10 nhân", 64, 42);
+        seedDataVariantAtribute("8 GB", 13, 42);
+        seedDataVariantAtribute("LPDDR4", 66, 42);
+        seedDataVariantAtribute("3200 MHz", 67, 42);
+        seedDataVariantAtribute("3200 MHz", 1, 42);
+        seedDataVariantAtribute("8 GB", 69, 42);
+        seedDataVariantAtribute("SSD", 70, 42);
+        seedDataVariantAtribute("M2. PCIe", 71, 42);
+        seedDataVariantAtribute("13.6 inch", 14, 42);
+        seedDataVariantAtribute("Retina", 15, 42);
+        seedDataVariantAtribute("2560 x 1644 Pixels", 17, 42);
+        seedDataVariantAtribute("LED", 72, 42);
+        seedDataVariantAtribute("60 Hz", 22, 42);
+        seedDataVariantAtribute("IPS", 73, 42);
+        seedDataVariantAtribute("500 nits", 74, 42);
+        seedDataVariantAtribute("2 Type C,Audio Jack: Jack 3.5 mm,Cổng sạc: Magsafe Charger", 41, 42);
+        seedDataVariantAtribute("802.11 ax", 42, 42);
+        seedDataVariantAtribute("v5.0", 44, 42);
+        seedDataVariantAtribute("Full HD Webcam (1080p Webcam)", 74, 42);
+        seedDataVariantAtribute("MacOS", 49, 42);
+        seedDataVariantAtribute("Ventura", 50, 42);
+        seedDataVariantAtribute("Mở khóa vân tay", 37, 42);
+        seedDataVariantAtribute("English International Backlit Keyboard", 52, 42);
+        seedDataVariantAtribute("Không", 53, 42);
+        seedDataVariantAtribute("LED", 54, 42);
+        seedDataVariantAtribute("Trắng", 55, 42);
+        seedDataVariantAtribute("Multi-touch touchpad", 56, 42);
+        seedDataVariantAtribute("Lithium polymer", 46, 42);
+        seedDataVariantAtribute("18 Giờ", 47, 42);
+        seedDataVariantAtribute("35 W", 75, 42);
+        seedDataVariantAtribute("Adapter,Dây cáp sạc", 51, 42);
+        seedDataVariantAtribute("4", 57, 42);
+        seedDataVariantAtribute("30.41 x 21.5 x 1.13 cm", 5, 42);
+        seedDataVariantAtribute("1.24 kg", 6, 42);
+        seedDataVariantAtribute("Kim loại", 7, 42);
+        seedDataVariantAtribute("Trung quốc", 1, 42);
+        seedDataVariantAtribute("2022", 2, 42);
+        seedDataVariantAtribute("12", 4, 42);
 
+        seedDataVariantAtribute("Đen", 3, 43);
+        seedDataVariantAtribute("256GB", 24, 43);
+        seedDataVariantAtribute("M1", 61, 43);
+        seedDataVariantAtribute("8", 11, 43);
+        seedDataVariantAtribute("8", 76, 43);
+        seedDataVariantAtribute("Share", 77, 43);
+        seedDataVariantAtribute("Apple M1 GPU 7 nhân", 64, 43);
+        seedDataVariantAtribute("Apple", 60, 43);
+        seedDataVariantAtribute("8 - Core", 10, 43);
+        seedDataVariantAtribute("2.3 Ghz", 62, 43);
+        seedDataVariantAtribute("Apple", 63, 43);
+        seedDataVariantAtribute("GPU 10 nhân", 64, 43);
+        seedDataVariantAtribute(" Apple M2 GPU 10 nhân", 64, 43);
+        seedDataVariantAtribute("8 GB", 13, 43);
+        seedDataVariantAtribute("LPDDR4", 66, 43);
+        seedDataVariantAtribute("3200 MHz", 67, 43);
+        seedDataVariantAtribute("3200 MHz", 1, 43);
+        seedDataVariantAtribute("16 GB", 69, 43);
+        seedDataVariantAtribute("SSD", 70, 43);
+        seedDataVariantAtribute("M2. PCIe", 71, 43);
+        seedDataVariantAtribute("13.6 inch", 14, 43);
+        seedDataVariantAtribute("Retina", 15, 43);
+        seedDataVariantAtribute("2560 x 1644 Pixels", 17, 43);
+        seedDataVariantAtribute("LED", 72, 43);
+        seedDataVariantAtribute("60 Hz", 22, 43);
+        seedDataVariantAtribute("IPS", 73, 43);
+        seedDataVariantAtribute("500 nits", 74, 43);
+        seedDataVariantAtribute("2 Type C,Audio Jack: Jack 3.5 mm,Cổng sạc: Magsafe Charger", 41, 43);
+        seedDataVariantAtribute("802.11 ax", 43, 43);
+        seedDataVariantAtribute("v5.0", 44, 43);
+        seedDataVariantAtribute("Full HD Webcam (1080p Webcam)", 74, 43);
+        seedDataVariantAtribute("MacOS", 49, 43);
+        seedDataVariantAtribute("Ventura", 50, 43);
+        seedDataVariantAtribute("Mở khóa vân tay", 37, 43);
+        seedDataVariantAtribute("English International Backlit Keyboard", 52, 43);
+        seedDataVariantAtribute("Không", 53, 43);
+        seedDataVariantAtribute("LED", 54, 43);
+        seedDataVariantAtribute("Trắng", 55, 43);
+        seedDataVariantAtribute("Multi-touch touchpad", 56, 43);
+        seedDataVariantAtribute("Lithium polymer", 46, 43);
+        seedDataVariantAtribute("18 Giờ", 47, 43);
+        seedDataVariantAtribute("35 W", 75, 43);
+        seedDataVariantAtribute("Adapter,Dây cáp sạc", 51, 43);
+        seedDataVariantAtribute("4", 57, 43);
+        seedDataVariantAtribute("30.41 x 21.5 x 1.13 cm", 5, 43);
+        seedDataVariantAtribute("1.24 kg", 6, 43);
+        seedDataVariantAtribute("Kim loại", 7, 43);
+        seedDataVariantAtribute("Trung quốc", 1, 43);
+        seedDataVariantAtribute("2022", 2, 43);
+        seedDataVariantAtribute("12", 4, 43);
 
         // Macbook pro
         // MacBook pro  14 inch
-        seedDataProduct("MacBook Pro", "Laptop", 1.61, 6, 2, 1, "");
+        seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
-        seedDataVariant("MacBookPro142023M3Pro11CPU14GPU36GB512GB", 48990000.0, 10, 22);
+        seedDataVariant("MacBookPro142023M3Pro11CPU14GPU36GB512GB", 48990000.0, 10, 25);
         seedDataVariantAtribute("Đen", 3, 44);
-        seedDataVariantAtribute("Bạc", 3, 44);
         seedDataVariantAtribute("512GB", 24, 44);
 
+
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB giá 59990000.0
-        seedDataVariant("MacBookPro142023M3Pro11CPU14GPU36GB512GB", 59990000.0, 10, 22);
+        seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
+        seedDataVariant("MacBookPro142023M3Pro11CPU14GPU36GB512GB", 59990000.0, 10, 26);
+
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB 2 màu bạc - đen,  giá 59990000.0
         seedDataVariantAtribute("Đen", 3, 45);
-        seedDataVariantAtribute("Bạc", 3, 45);
         seedDataVariantAtribute("512GB", 24, 45);
 
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
-        seedDataVariant("MacBookPro162023M3Pro11CPU14GPU36GB512GB", 64490000.0, 10, 22);
+        seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
+        seedDataVariant("MacBookPro162023M3Pro11CPU14GPU36GB512GB", 64490000.0, 10, 27);
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB 2 màu bạc - đen,  giá 64490000.0
         seedDataVariantAtribute("Đen", 3, 46); // màu -
-        seedDataVariantAtribute("Bạc", 3, 46); // màu -
         seedDataVariantAtribute("512GB", 24, 46); // bộ nhớ ( rom)
 
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB
-        seedDataVariant("MacBookPro162023M3Pro11CPU14GPU36GB512GB", 74490000.0, 10, 22);
+        seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
+        seedDataVariant("MacBookPro162023M3Pro11CPU14GPU36GB512GB", 74490000.0, 10, 28);
         seedDataVariantAtribute("Đen", 3, 47); // màu
-        seedDataVariantAtribute("Bạc", 3, 47); // màu
         seedDataVariantAtribute("512GB", 24, 47); // bộ nhớ ( rom)
 
         // MacBook Pro 13" 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb
-        seedDataVariant("MacBookPro 132020TouchBarM18CPU8GPU8GB256Gb", 20490000.0, 10, 22);
+        seedDataProduct("MacBook Pro 13\" 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb", "Laptop", 1.61, 6, 2, 1, "");
+        seedDataVariant("MacBookPro 132020TouchBarM18CPU8GPU8GB256Gb", 20490000.0, 10, 29);
         seedDataVariantAtribute("Bạc", 3, 48); // màu bạc
-        seedDataVariantAtribute("Xám", 3, 48); // màu bạc
         seedDataVariantAtribute("512GB", 24, 48); // bộ nhớ ( rom)
 
 
@@ -1950,14 +2882,14 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 48); // Nơi sản xuất
         seedDataVariantAtribute("11/2020", 2, 48); // Năm ra mắt
 
-        // Laptop dell
-        seedDataProduct("Laptop Dell Inspiron ", "Laptop", 1.54, 7, 2, 4, "");
-
-        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB/14"FHD+/Win11/Office HS21
-        seedDataVariant("Laptop Dell Inspiron 14N 5440 i5 1334U", 20190000.0, 10, 23);
-
-
-        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB/14"FHD+/Win11/Office HS21
+//        // Laptop dell
+        seedDataProduct("Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
+//
+//        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB/14"FHD+/Win11/Office HS21
+        seedDataVariant("Laptop Dell Inspiron 14N 5440 i5 1334U", 20190000.0, 10, 30);
+//
+//
+//        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB/14"FHD+/Win11/Office HS21
         seedDataVariantAtribute("Xanh", 3, 49); // màu
         seedDataVariantAtribute("512GB", 24, 49); // bộ nhớ ( rom)
         seedDataVariantAtribute("Dell", 60, 49);  // Hãng
@@ -2000,10 +2932,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("1/2023", 2, 49); // Năm ra mắt
 
 
-        // Laptop Dell Inspiron 15 N3530 i5 1335U/16GB/512GB/15.6"FHD/NVIDIA MX550 2GB/Win11/Office HS21
-
-        // thông số kĩ thuật
-        seedDataVariant("Laptop Dell Inspiron 15N 3530 i5 1355U", 21490000.0, 10, 23);
+//        // Laptop Dell Inspiron 15 N3530 i5 1335U/16GB/512GB/15.6"FHD/NVIDIA MX550 2GB/Win11/Office HS21
+//
+//        // thông số kĩ thuật
+        seedDataProduct("Laptop Dell Inspiron 15 N3530 i5 1335U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
+        seedDataVariant("Laptop Dell Inspiron 15N 3530 i5 1355U", 21490000.0, 10, 31);
         seedDataVariantAtribute("Đen", 3, 50); // màu
         seedDataVariantAtribute("512GB", 24, 50); // bộ nhớ ( rom)
         seedDataVariantAtribute("Dell", 60, 50);  // Hãng
@@ -2052,10 +2985,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 50); // Nơi sản xuất
         seedDataVariantAtribute("2023", 2, 50); // Năm ra mắt
 
+//        // Thông số kỹ thuật
 
-        // Thông số kỹ thuật
-        seedDataVariant("Laptop Dell Inspiron 15N 3530 i7 1335U", 20290000.0, 10, 23);
-        // Laptop Dell Inspiron 15 N3530 i7 1355U/16GB/512GB/15.6"FHD/Win11/Office 365 Personal
+        seedDataProduct("Laptop Dell Inspiron 15N 3530 i7 1335U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
+        seedDataVariant("Laptop Dell Inspiron 15N 3530 i7 1335U", 20290000.0, 10, 32);
+//        // Laptop Dell Inspiron 15 N3530 i7 1355U/16GB/512GB/15.6"FHD/Win11/Office 365 Personal
         seedDataVariantAtribute("Đen", 3, 51); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 51); // Dung lượng ổ cứng
         seedDataVariantAtribute("Dell", 60, 51);  // Hãng
@@ -2108,15 +3042,15 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 51); // Xuất xứ
         seedDataVariantAtribute("2024", 2, 51); // Thời điểm ra mắt
         seedDataVariantAtribute("12 tháng", 4, 51); // Thời gian bảo hành
-
-        // Laptop Dell Vostro
-        seedDataProduct("Laptop Dell Vostro", "Laptop", 1.49, 7, 2, 4, "");
-
-        // Laptop Dell Vostro V3430 i5 1335U/16GB/512GB/14"FHD/Nvidia GeForce MX550 2GB/Win11/Office HS21
-        seedDataVariant("Laptop Dell Vostro V3430 i5 1335U Nvidia GeForce", 19799000.0, 10, 24);
+//
+//        // Laptop Dell Vostro
+        seedDataProduct("Laptop Dell Vostro V3430 i5 1335U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "");
+//
+//        // Laptop Dell Vostro V3430 i5 1335U/16GB/512GB/14"FHD/Nvidia GeForce MX550 2GB/Win11/Office HS21
+        seedDataVariant("Laptop Dell Vostro V3430 i5 1335U Nvidia GeForce", 19799000.0, 10, 33);
         seedDataVariantAtribute("Xám", 3, 52); // màu
         seedDataVariantAtribute("512 GB", 24, 52); // Dung lượng ổ cứng
-        // Thông số kỹ thuật
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Dell", 60, 52);  // Hãng
         seedDataVariantAtribute("Intel Core i5", 61, 52); // CPU
         seedDataVariantAtribute("1335U", 9, 52); // Phiên bản CPU
@@ -2159,10 +3093,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 52); // Nơi sản xuất
         seedDataVariantAtribute("2023", 2, 52); // Năm ra mắt
 
-
-        // Thông số kỹ thuật
-        // Laptop Dell Vostro V3520 i5 1235U/16GB/512GB/15.6"FHD/Win11/Office HS21
-        seedDataVariant("Laptop Dell Vostro V3430 i5 1335U", 16399000.0, 10, 24);
+//
+//        // Thông số kỹ thuật
+//        // Laptop Dell Vostro V3520 i5 1235U/16GB/512GB/15.6"FHD/Win11/Office HS21
+        seedDataProduct("Laptop Dell Vostro V3520 i5 1235U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "");
+//
+        seedDataVariant("Laptop Dell Vostro V3430 i5 1335U", 16399000.0, 10, 34);
         seedDataVariantAtribute("Xám", 3, 53); // màu
         seedDataVariantAtribute("512 GB", 24, 53); // Dung lượng
         seedDataVariantAtribute("Dell", 60, 53);  // Hãng
@@ -2203,27 +3139,29 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 53); // Xuất xứ
         seedDataVariantAtribute("2022", 2, 53); // Thời điểm ra mắt
         seedDataVariantAtribute("12 tháng", 4, 53); // Thời gian bảo hành
-
-        seedDataProduct("Laptop Dell Latitude", "Laptop", 1.49, 7, 2, 4, "");
-
-        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1335U
-        seedDataVariant("Laptop Dell Latitude L3540 i5 1335U", 18790000.0, 10, 25);
+//
+        seedDataProduct("Laptop Dell Latitude L3540 i5 1335U", "Laptop", 1.49, 7, 2, 4, "");
+//
+//        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1335U
+        seedDataVariant("Laptop Dell Latitude L3540 i5 1335U", 18790000.0, 10, 35);
         seedDataVariantAtribute("Xám", 3, 54); // màu
         seedDataVariantAtribute("512 GB", 24, 54); // Dung lượng
-
-        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1235U
-        seedDataVariant("Laptop Dell Latitude L3540 i5 1235U", 16390000.0, 10, 25);
+//
+//        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1235U
+        seedDataProduct("Laptop Dell Latitude L3540 i5 1235U", "Laptop", 1.49, 7, 2, 4, "");
+        seedDataVariant("Laptop Dell Latitude L3540 i5 1235U", 18790000.0, 10, 36);
         seedDataVariantAtribute("Xám", 3, 55); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 55); // Dung lượng
-
-        // Tạo biến seedDataVariant cho Laptop Dell Latitude 3440 i5 1235U
-        seedDataVariant("Laptop Dell Latitude 3440 i5 1235U", 17990000.0, 10, 25);
+//
+//        // Tạo biến seedDataVariant cho Laptop Dell Latitude 3440 i5 1235U
+        seedDataProduct("Laptop Dell Latitude 3440 i5 1235U", "Laptop", 1.49, 7, 2, 4, "");
+        seedDataVariant("Laptop Dell Latitude 3440 i5 1235U", 17990000.0, 10, 37);
         seedDataVariantAtribute("Đen", 3, 56); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 56); // Dung lượng
-
-
-        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1335U
-        // Thông số kỹ thuật
+//
+//
+//        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1335U
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Dell", 60, 54);  // Hãng
         seedDataVariantAtribute("Intel", 61, 54); // Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 54); // Công nghệ CPU
@@ -2270,9 +3208,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 54); // Xuất xứ
         seedDataVariantAtribute("2023", 2, 54); // Thời điểm ra mắt
         seedDataVariantAtribute("12 tháng", 4, 54); // Thời gian bảo hành
-
-        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1235U
-        // Thông số kỹ thuật
+//
+//        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1235U
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Dell", 60, 55);  // Hãng
         seedDataVariantAtribute("Intel", 61, 55); // Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 55); // Công nghệ CPU
@@ -2314,9 +3252,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 55); // Xuất xứ
         seedDataVariantAtribute("2024", 2, 55); // Thời điểm ra mắt
         seedDataVariantAtribute("12 tháng", 4, 55); // Thời gian bảo hành
-
-        // Tạo biến seedDataVariant cho Laptop Dell Latitude 3440 i5 1235U
-        // Thông số kỹ thuật
+//
+//        // Tạo biến seedDataVariant cho Laptop Dell Latitude 3440 i5 1235U
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Dell", 60, 56);  // Hãng
         seedDataVariantAtribute("Intel", 61, 56); // Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 56); // Công nghệ CPU
@@ -2352,14 +3290,13 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 56); // Xuất xứ
         seedDataVariantAtribute("01/2024", 2, 56); // Thời điểm ra mắt
 
-
-        seedDataProduct("Laptop Dell XPS", "Laptop", 1.8, 7, 2, 4, "");
-
-        // Tạo biến seedDataVariant cho Laptop Dell XPS 14 9440 U7 155H
-        seedDataVariant("Laptop Dell XPS 14 9440 U7 155H 64GB", 79990000.0, 10, 26);
+        seedDataProduct("Laptop Dell XPS 14 9440 U7 155H 64GB", "Laptop", 1.8, 7, 2, 4, "");
+//
+//        // Tạo biến seedDataVariant cho Laptop Dell XPS 14 9440 U7 155H
+        seedDataVariant("Laptop Dell XPS 14 9440 U7 155H 64GB", 79990000.0, 10, 38);
         seedDataVariantAtribute("Đen", 3, 57); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 57); // Dung lượng
-        // Thông số kỹ thuật
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Dell", 60, 57);  // Hãng
         seedDataVariantAtribute("Intel", 61, 57); // Hãng CPU
         seedDataVariantAtribute("Ultra 7", 61, 57); // Công nghệ CPU
@@ -2400,12 +3337,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 57); // Thời gian bảo hành
 
         //  Laptop Asus
-        seedDataProduct("Laptop Asus", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataProduct("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
 
         //  Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB/15.6'' 2.8K/Win11
-        seedDataVariant("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", 18590000.0, 10, 27);
+        seedDataVariant("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", 18590000.0, 10, 39);
 
-        // Thông số kĩ thuật
+//        // Thông số kĩ thuật
         seedDataVariantAtribute("Bạc", 3, 58); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 58); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 58);  // Hãng CPU
@@ -2458,9 +3395,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 58); // Xuất xứ
         seedDataVariantAtribute("2024", 2, 58); // Thời điểm ra mắt
         seedDataVariantAtribute("24 tháng", 4, 58); // Thời gian bảo hành
-
-        // Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB/15.6"/GeForce RTX4050 6GB/Win11
-        seedDataVariant("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", 25590000.0, 10, 27);
+//
+//        // Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB/15.6"/GeForce RTX4050 6GB/Win11
+        seedDataProduct("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", 25590000.0, 10, 40);
         seedDataVariantAtribute("Xám", 3, 59); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 59); // Dung lượng ổ cứng
         seedDataVariantAtribute("AMD", 60, 59);  // Hãng CPU
@@ -2517,10 +3455,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 59); // Xuất xứ
         seedDataVariantAtribute("2024", 2, 59); // Thời điểm ra mắt
         seedDataVariantAtribute("24 tháng", 4, 59); // Thời gian bảo hành
-
-        //Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX3050 4GB/Win11
-        seedDataVariant("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", 19190000.0, 10, 27);
-        // Thông số kỹ thuật
+//
+//        //Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX3050 4GB/Win11
+        seedDataProduct("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", 19190000.0, 10, 41);
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 60); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 60); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 60);  // Hãng CPU
@@ -2578,7 +3517,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 60); // Thời gian bảo hành
 
         // Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB/15.6" 2.8K/Win11
-        seedDataVariant("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", 23190000.0, 10, 27);
+        seedDataProduct("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", 23190000.0, 10, 42);
         // Thông số kỹ thuật
         seedDataVariantAtribute("Bạc", 3, 61); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 61); // Dung lượng ổ cứng
@@ -2633,7 +3573,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 61); // Thời gian bảo hành
 
         // Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB/14" OLED 3K/Intel Arc Graphics/Win11
-        seedDataVariant("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", 24290000.0, 10, 27);
+        seedDataProduct("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", 24290000.0, 10, 43);
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 62); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 62); // Dung lượng ổ cứng
@@ -2687,7 +3628,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 62); // Thời gian bảo hành
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB/14'' 3K/Intel Arc/Win11
-        seedDataVariant("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", 30990000.0, 10, 27);
+        seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", 30990000.0, 10, 44);
         // Thông số kỹ thuật
         seedDataVariantAtribute("Xanh", 3, 63); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 63); // Dung lượng ổ cứng
@@ -2738,7 +3680,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 63); // Thời gian bảo hành
 
         // Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB/16" 3.2K/Arc Graphics/Win11
-        seedDataVariant("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", 25890000.0, 10, 27);
+        seedDataProduct("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", 25890000.0, 10, 45);
         seedDataVariantAtribute("Xanh", 3, 64); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 64); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 64);  // Hãng CPU
@@ -2792,7 +3735,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 64); // Thời gian bảo hành
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB/14" 3K/Intel Arc Graphics/Win11
-        seedDataVariant("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", 26990000.0, 10, 27);
+        seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", 26990000.0, 10, 46);
         seedDataVariantAtribute("Xanh", 3, 65); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 65); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 65);  // Hãng CPU
@@ -2846,7 +3790,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 65); // Thời gian bảo hành
 
         // Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX4050 6GB/Win11
-        seedDataVariant("Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB", 23990000.0, 10, 27);
+        seedDataProduct("Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB", 23990000.0, 10, 47);
 
         seedDataVariantAtribute("Đen", 3, 66); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 66); // Dung lượng ổ cứng
@@ -2906,7 +3851,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 66); // Thời gian bảo hành
 
         // Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB/16' 2.5K/Nvidia GeForce RTX4060 8GB/Win11
-        seedDataVariant("Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB", 37990000.0, 10, 27);
+        seedDataProduct("Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
+        seedDataVariant("Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB", 37990000.0, 10, 48);
         // Thông số kỹ thuật
         seedDataVariantAtribute("Xám", 3, 67); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 67); // Dung lượng ổ cứng
@@ -2963,11 +3909,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 67); // Thời gian bảo hành
 
         //Laptop Acer
-        seedDataProduct("Laptop Acer", "Laptop", 1.8, 11, 2, 2, "");
+        seedDataProduct("Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
         //Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB/15.6 FHD/NVIDIA GeForce RTX3050Ti 4GB/Win11
-
-        seedDataVariant("Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB", 22999000.0, 10, 28);
-        // Thông số kỹ thuật
+//
+        seedDataVariant("Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB", 22999000.0, 10, 49);
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 68); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 68); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 68);  // Hãng CPU
@@ -3020,8 +3966,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 68); // Thời gian bảo hành
 
         // Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB/15.6"FHD/RTX2050 4GB/Win11
-        seedDataVariant("Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB", 1798900.0, 10, 28);
-        // Thông số kỹ thuật
+        seedDataProduct("Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
+        seedDataVariant("Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB", 1798900.0, 10, 50);
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 69); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 69); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 69);  // Hãng CPU
@@ -3068,11 +4015,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 69); // Xuất xứ
         seedDataVariantAtribute("2023", 2, 69); // Thời điểm ra mắt
         seedDataVariantAtribute("12 tháng", 4, 69); // Thời gian bảo hành
-
-
-        // Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T/14" QHD/Win11
-        seedDataVariant("Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T", 1898900.0, 10, 28);
-        // Thông số kỹ thuật
+//
+//
+//        // Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T/14" QHD/Win11
+        seedDataProduct("Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T", "Laptop", 1.8, 11, 2, 2, "");
+        seedDataVariant("Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T", 1898900.0, 10, 51);
+//        // Thông số kỹ thuật
         seedDataVariantAtribute("Vàng", 3, 70); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 70); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 70);  // Hãng CPU
@@ -3123,7 +4071,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 70); // Thời gian bảo hành
 
         // Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB/16"WUXGA//Nvidia Geforce RTX4050 6GB/Win11
-        seedDataVariant("Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB", 22798900.0, 10, 28);
+        seedDataProduct("Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
+        seedDataVariant("Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB", 22798900.0, 10, 52);
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 71); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 71); // Dung lượng ổ cứng
@@ -3178,8 +4127,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 71); // Thời gian bảo hành
 
         // Laptop Acer Gaming Predator Helios Neo 14 PHN14-51-99Y8 Intel Core Ultra 9 185H/AI/32GB/1TB/14.5" WQXGA+/Nvidia RTX4060 8GB/Win11
-        seedDataVariant("Laptop Acer Gaming Predator Helios Neo", 46798900.0, 8, 28);
-
+        seedDataProduct("Laptop Acer Gaming Predator Helios Neo", "Laptop", 1.8, 11, 2, 2, "");
+        seedDataVariant("Laptop Acer Gaming Predator Helios Neo", 46798900.0, 8, 53);
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 72); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 72); // Dung lượng ổ cứng
@@ -3226,9 +4175,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("01/2024", 2, 72); // Thời điểm ra mắt
         seedDataVariantAtribute("12 tháng", 4, 72); // Thời gian bảo hành
 
-
         // Laptop Acer Swift Go AI SFG14-73-53X7 Intel Core Ultra 5 125H/16GB/512GB/14" 2.8K/Intel Arc Graphics/Win11
-        seedDataVariant("Laptop Acer Swift Go AI SFG14-73-53X7 Intel Core Ultra 5 125H/16GB/512GB", 23998900.0, 5, 28);
+        seedDataProduct("Laptop Acer Swift Go AI SFG14-73-53X7 Intel Core Ultra 5 125H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
+        seedDataVariant("Laptop Acer Swift Go AI SFG14-73-53X7 Intel Core Ultra 5 125H/16GB/512GB", 23998900.0, 5, 54);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 73); // Màu sắc
@@ -3275,8 +4224,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 73); // Thời gian bảo hành
 
         // Laptop Acer Nitro V 16 ProPanel Gaming ANV16-41-R36Y R7 8845HS/AI/16GB/512GB/16"WUXGA/NVIDIA GeForce RTX4050 6GB/Win11
-
-        seedDataVariant("Laptop Acer Nitro V 16 ProPanel Gaming ANV16-41-R36Y R7 8845HS/AI/16GB/512GB", 29998900.0, 8, 28);
+        seedDataProduct("Laptop Acer Nitro V 16 ProPanel Gaming ANV16-41-R36Y R7 8845HS/AI/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
+        seedDataVariant("Laptop Acer Nitro V 16 ProPanel Gaming ANV16-41-R36Y R7 8845HS/AI/16GB/512GB", 29998900.0, 8, 55);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 74); // Màu sắc
@@ -3325,10 +4274,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 74); // Thời gian bảo hành
 
         //Laptop HP
-        seedDataProduct("Laptop HP", "Laptop", 1.8, 8, 2, 2, "");
+        seedDataProduct("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
         //Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB/16" 144Hz/GeForce RTX3050 6GB/Win11_A9LG9PA
 
-        seedDataVariant("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", 20998900.0, 5, 29);
+        seedDataVariant("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", 20998900.0, 5, 56);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 75); // Màu sắc
@@ -3379,7 +4328,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 75); // Thời gian bảo hành
 
         // Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB/16.1" 144Hz/GeForce RTX4060 8GB/Win11_8C5N2PA
-        seedDataVariant("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", 32998900.0, 5, 29);
+        seedDataProduct("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
+        seedDataVariant("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", 32998900.0, 5, 57);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 76); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 76); // Dung lượng ổ cứng
@@ -3427,7 +4378,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 76); // Thời gian bảo hành
 
         //Laptop HP 245 G10 R7- 7730U/16GB/512GB/14" FHD/Win11_8F157PA
-        seedDataVariant("Laptop HP 245 G10 R7- 7730U/16GB/512GB", 15998900.0, 5, 29);
+        seedDataProduct("Laptop HP 245 G10 R7- 7730U/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
+        seedDataVariant("Laptop HP 245 G10 R7- 7730U/16GB/512GB", 15998900.0, 5, 58);
         // Thông số kỹ thuật
         seedDataVariantAtribute("Bạc", 3, 77); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 77); // Dung lượng ổ cứng
@@ -3469,9 +4421,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2024", 2, 77); // Thời điểm ra mắt
         seedDataVariantAtribute("12 tháng", 4, 77); // Thời gian bảo hành
 
-
         // Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB/14'' 2.8K Touch/Pen/Win11
-        seedDataVariant("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", 30998900.0, 7, 29);
+        seedDataProduct("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
+        seedDataVariant("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", 30998900.0, 7, 59);
 
         seedDataVariantAtribute("Intel", 9, 78); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core Ultra 7", 61, 78); // Bộ xử lý - Công nghệ CPU
@@ -3525,8 +4477,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Xanh", 3, 78); // Thông tin hàng hóa - Màu sắc
 
         // Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB/16.1"FHD/Nvidia RTX3050 6GB/Win11
-
-        seedDataVariant("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", 20999900.0, 7, 29);
+        seedDataProduct("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
+        seedDataVariant("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", 20999900.0, 7, 60);
         seedDataVariantAtribute("AMD", 9, 79); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 5", 61, 79); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("7640HS", 10, 79); // Bộ xử lý - Loại CPU
@@ -3572,7 +4524,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đen", 3, 79); // Thông tin hàng hóa - Màu sắc
 
         // Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB/14" FHD Touch/Intel Graphics/Win11_Bạc_9H8V2PT
-        seedDataVariant("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", 25999900.0, 8, 29);
+        seedDataProduct("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
+        seedDataVariant("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", 25999900.0, 8, 61);
         seedDataVariantAtribute("Intel", 9, 80); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 80); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1360P", 10, 80); // Bộ xử lý - Loại CPU
@@ -3624,10 +4577,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Bạc", 3, 80); // Thông tin hàng hóa - Màu sắc
 
         // Laptop MSI
-        seedDataProduct("Laptop MSI", "Laptop", 1.8, 12, 2, 2, "");
+        seedDataProduct("Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB", "Laptop", 1.8, 12, 2, 2, "");
         // Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB/15.6FHD/RTX3050 6GB/Win11_Balo
 
-        seedDataVariant("Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB", 21999900.0, 8, 30);
+        seedDataVariant("Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB", 21999900.0, 8, 62);
         seedDataVariantAtribute("Intel", 9, 81); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 81); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13500H", 10, 81); // Bộ xử lý - Loại CPU
@@ -3684,7 +4637,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đen", 3, 81); // Thông tin hàng hóa - Màu sắc
 
         // Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB/14" FHD/RTX3050 6GB/W11_Balo
-        seedDataVariant("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", 25599900.0, 8, 30);
+        seedDataProduct("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
+        seedDataVariant("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", 25599900.0, 8, 63);
         seedDataVariantAtribute("Intel", 9, 82); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 82); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13620H", 10, 82); // Bộ xử lý - Loại CPU
@@ -3741,9 +4695,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 82); // Thông tin Pin và Sạc - Hướng dẫn bảo quản và sử dụng
         seedDataVariantAtribute("Đen", 3, 82); // Thông tin hàng hóa - Màu sắc
 
-
         // Laptop MSI Gaming Katana 15 B13VFK-676VN i7 13620H/AI/16GB/1TB/Geforce RTX 4060 8GB/15.6"FHD/Win11_Balo
-        seedDataVariant("Laptop MSI Gaming Katana 15 B13VFK-676VN i7 13620H/AI/16GB/1TB", 29999900.0, 8, 30);
+        seedDataProduct("Laptop MSI Gaming Katana 15 B13VFK-676VN i7 13620H/AI/16GB/1TB", "Laptop", 1.8, 12, 2, 2, "");
+        seedDataVariant("Laptop MSI Gaming Katana 15 B13VFK-676VN i7 13620H/AI/16GB/1TB", 29999900.0, 8, 64);
         seedDataVariantAtribute("Intel", 9, 83); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 83); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13620H", 10, 83); // Bộ xử lý - Loại CPU
@@ -3802,9 +4756,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 83); // Thông tin Pin và Sạc - Hướng dẫn bảo quản và sử dụng
         seedDataVariantAtribute("Đen", 3, 83); // Thông tin hàng hóa - Màu sắc
 
-
         // Laptop MSI Gaming Thin 15 B13UCX-2080VN i5 13420H/16GB/512GB/15.6" FHD/RTX 2050 4GB/Win 11_Balo
-        seedDataVariant("Laptop MSI Gaming Thin 15 B13UCX-2080VN i5 13420H/16GB/512GB", 18699900.0, 8, 30);
+        seedDataProduct("Laptop MSI Gaming Thin 15 B13UCX-2080VN i5 13420H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
+        seedDataVariant("Laptop MSI Gaming Thin 15 B13UCX-2080VN i5 13420H/16GB/512GB", 18699900.0, 8, 65);
         seedDataVariantAtribute("Intel", 9, 84); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 84); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 84); // Bộ xử lý - Loại CPU
@@ -3859,7 +4813,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Xám", 3, 84); // Thông tin hàng hóa - Màu sắc
 
         // Laptop MSI Gaming Katana15 B13VFK-2099VN i7 13620H/AI/32GB/1TB/15.6"FHD/RTX4060 8GB/W11_Balo
-        seedDataVariant("Laptop MSI Gaming Katana15 B13VFK-2099VN i7 13620H/AI/32GB/1TB", 29699900.0, 5, 30);
+        seedDataProduct("Laptop MSI Gaming Katana15 B13VFK-2099VN i7 13620H/AI/32GB/1TB", "Laptop", 1.8, 12, 2, 2, "");
+        seedDataVariant("Laptop MSI Gaming Katana15 B13VFK-2099VN i7 13620H/AI/32GB/1TB", 29699900.0, 5, 66);
         seedDataVariantAtribute("Intel", 9, 85); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 85); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13620H", 10, 85); // Bộ xử lý - Loại CPU
@@ -3915,7 +4870,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đen", 3, 85); // Thông tin hàng hóa - Màu sắc
 
         // Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB/15.6"FHD/RTX4050 6GB/Win 11_Balo
-        seedDataVariant("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB", 26699900.0, 8, 30);
+        seedDataProduct("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
+        seedDataVariant("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB", 26699900.0, 8, 67);
         seedDataVariantAtribute("AMD", 9, 86); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 86); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("8845HS", 10, 86); // Bộ xử lý - Loại CPU
@@ -3973,8 +4929,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 86); // Thông tin Pin và Sạc - Hướng dẫn bảo quản và sử dụng
         seedDataVariantAtribute("Đen", 3, 86); // Thông tin hàng hóa - Màu sắc
 
-
-        seedDataVariant("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB", 26899900.0, 8, 30);
+        seedDataProduct("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/64GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
+        seedDataVariant("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/64GB/512GB", 26899900.0, 8, 68);
         seedDataVariantAtribute("AMD", 9, 87); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 87); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("8845HS", 10, 87); // Bộ xử lý - Loại CPU
@@ -4027,9 +4983,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2.25 kg", 6, 87); // Thiết kế & Trọng lượng - Trọng lượng sản phẩ
 
 
-        seedDataProduct("Laptop Lenovo", "Laptop", 1.8, 9, 2, 2, "");
+        seedDataProduct("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
         // Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB/14"WUXGA/Win 11
-        seedDataVariant("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", 20799900.0, 8, 31);
+        seedDataVariant("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", 20799900.0, 8, 69);
         seedDataVariantAtribute("Intel", 9, 88); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 88); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 88); // Bộ xử lý - Loại CPU
@@ -4088,7 +5044,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Lenovo Ideapad Slim 5 15IRU9 CORE 5_120U/32GB/512G/15.3"WUXGA/Win11
-        seedDataVariant("Laptop Lenovo Ideapad Slim 5 15IRU9 CORE 5_120U/32GB/512G", 20699900.0, 5, 31);
+        seedDataProduct("Laptop Lenovo Ideapad Slim 5 15IRU9 CORE 5_120U/32GB/512G", "Laptop", 1.8, 9, 2, 2, "");
+        seedDataVariant("Laptop Lenovo Ideapad Slim 5 15IRU9 CORE 5_120U/32GB/512G", 20699900.0, 5, 70);
         seedDataVariantAtribute("Intel", 9, 89); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core 5", 61, 89); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("120U", 10, 89); // Bộ xử lý - Loại CPU
@@ -4140,9 +5097,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 89); // Thông tin Pin và Sạc - Hướng dẫn bảo quản và sử dụng
         seedDataVariantAtribute("Xám", 3, 89); // Thông tin hàng hóa - Màu sắc
 
-
         // Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB/14.0"WUXGA/Win 11
-        seedDataVariant("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", 22699900.0, 5, 31);
+        seedDataProduct("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
+        seedDataVariant("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", 22699900.0, 5, 71);
         seedDataVariantAtribute("Intel", 9, 90); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 90); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1355U", 10, 90); // Bộ xử lý - Loại CPU
@@ -4194,9 +5151,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 90); // Thông tin Pin và Sạc - Hướng dẫn bảo quản và sử dụng
         seedDataVariantAtribute("Xám", 3, 90); // Thông tin hàng hóa - Màu sắc
 
-
         // Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB/15.6"FHD/Win 11
-        seedDataVariant("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", 15699900.0, 7, 31);
+        seedDataProduct("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
+        seedDataVariant("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", 15699900.0, 7, 72);
         seedDataVariantAtribute("Intel", 9, 91); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 91); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 91); // Bộ xử lý - Loại CPU
@@ -4247,9 +5204,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 91); // Thông tin Pin và Sạc - Hướng dẫn bảo quản và sử dụng
         seedDataVariantAtribute("Xám", 3, 91); // Thông tin hàng hóa - Màu sắc
 
-
         //Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/AI/24GB/512GB/15.6"FHD/RTX4060 8GB/Win11
-        seedDataVariant("Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/AI/24GB/512GB", 30699900.0, 7, 31);
+        seedDataProduct("Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/AI/24GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
+        seedDataVariant("Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/AI/24GB/512GB", 30699900.0, 7, 73);
         seedDataVariantAtribute("AMD", 9, 92); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 92); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("7435HS", 10, 92); // Bộ xử lý - Loại CPU
@@ -4305,7 +5262,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/AI/12GB/512GB/15.6"FHD/RTX4050_6GB/W11_83GS001QVN
-        seedDataVariant("Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/AI/12GB/512GB", 25699900.0, 7, 31);
+        seedDataProduct("Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/AI/12GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
+        seedDataVariant("Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/AI/12GB/512GB", 25699900.0, 7, 74);
         seedDataVariantAtribute("Intel", 9, 93); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 93); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("12450HX", 10, 93); // Bộ xử lý - Loại CPU
@@ -4361,7 +5319,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Lenovo Gaming Legion 9 16IRX8 i9 13980HX/AI/64GB/2TB/16"3.2K Mini LED/RTX4090 16GB/Win11
-        seedDataVariant("Laptop Lenovo Gaming Legion 9 16IRX8 i9 13980HX/AI/64GB/2TB", 128699900.0, 7, 31);
+        seedDataProduct("Laptop Lenovo Gaming Legion 9 16IRX8 i9 13980HX/AI/64GB/2TB", "Laptop", 1.8, 9, 2, 2, "");
+        seedDataVariant("Laptop Lenovo Gaming Legion 9 16IRX8 i9 13980HX/AI/64GB/2TB", 128699900.0, 7, 75);
         seedDataVariantAtribute("Intel", 9, 94); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i9", 61, 94); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13980HX", 10, 94); // Bộ xử lý - Loại CPU
@@ -4417,2078 +5376,2078 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 94); // Thông tin Pin và Sạc - Hướng dẫn bảo quản và sử dụng
         seedDataVariantAtribute("Đen", 3, 94); // Thông tin hàng hóa - Màu sắc
 
-        // Ipad
-        // iPad Air 11 inch M2 2024
-        seedDataProduct("iPad Air", "Ipad", 0.462, 13, 3, 3, "");
-
-        //iPad Air 11 inch M2 2024 Wifi 128GB
-        // màu tím
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 128GB", 22999000.0, 8, 32);
-
-        seedDataVariantAtribute("Tím", 3, 95); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("128 GB", 24, 95); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 95); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 95); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 95); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 95); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 95); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 95); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 95); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 95); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 95); // Loại CPU
-        seedDataVariantAtribute("8", 11, 95); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 95); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 95); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 95); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 95); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 95); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 95); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 95); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 95); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 95); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 95); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 95); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 95); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 95); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 95); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 95); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 95); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 95); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 95); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 95); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 95); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 95); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 95); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 95); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 95); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 95); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 95); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 95); // Phụ kiện trong hộp
-
-        // màu đen
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 128GB", 22999990.0, 8, 32);
-
-        seedDataVariantAtribute("Đen", 3, 96); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("128 GB", 24, 96); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 96); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 96); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 96); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 96); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 96); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 96); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 96); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 96); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 96); // Loại CPU
-        seedDataVariantAtribute("8", 11, 96); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 96); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 96); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 96); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 96); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 96); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 96); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 96); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 96); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 96); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 96); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 96); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 96); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 96); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 96); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 96); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 96); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 96); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 96); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 96); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 96); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 96); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 96); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 96); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 96); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 96); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 96); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 96); // Phụ kiện trong hộp
-
-
-        // màu trắng
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 128GB", 22999001.0, 8, 32);
-        seedDataVariantAtribute("Trắng", 3, 97); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("128 GB", 24, 97); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 97); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 97); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 97); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 97); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 97); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 97); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 97); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 97); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 97); // Loại CPU
-        seedDataVariantAtribute("8", 11, 97); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 97); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 97); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 97); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 97); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 97); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 97); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 97); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 97); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 97); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 97); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 97); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 97); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 97); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 97); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 97); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 97); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 97); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 97); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 97); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 97); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 97); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 97); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 97); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 97); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 97); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 97); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 97); // Phụ kiện trong hộp
-
-        //
-        // màu tím
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 512GB", 26999002.0, 8, 32);
-
-        seedDataVariantAtribute("Tím", 3, 98); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 98); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 98); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 98); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 98); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 98); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 98); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 98); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 98); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 98); // Loại CPU
-        seedDataVariantAtribute("8", 11, 98); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 98); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 98); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 98); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 98); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 98); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 98); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 98); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 98); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 98); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 98); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 98); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 98); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 98); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 98); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 98); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 98); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 98); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 98); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 98); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 98); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 98); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 98); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 98); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 98); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 98); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 98); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 98); // Phụ kiện trong hộp
-
-        // màu đen
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 512GB", 26999993.0, 8, 32);
-
-        seedDataVariantAtribute("Đen", 3, 99); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("512 GB", 24, 99); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 99); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 99); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 99); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 99); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 99); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 99); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 99); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 99); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 99); // Loại CPU
-        seedDataVariantAtribute("8", 11, 99); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 99); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 99); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 99); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 99); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 99); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 98); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 99); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 99); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 99); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 99); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 99); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 99); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 99); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 99); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 99); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 99); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 99); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 99); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 99); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 99); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 99); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 99); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 99); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 99); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 99); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 99); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 99); // Phụ kiện trong hộp
-
-
-        // màu trắng
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 512GB", 26999004.0, 8, 32);
-        seedDataVariantAtribute("Trắng", 3, 100); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("512 GB", 24, 100); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 100); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 100); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 100); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 100); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 100); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 100); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 100); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 100); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 100); // Loại CPU
-        seedDataVariantAtribute("8", 11, 100); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 100); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 100); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 100); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 100); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 100); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 100); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 100); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 100); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 100); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 100); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 100); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 100); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 100); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 100); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 100); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 100); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 100); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 100); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 100); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 100); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 100); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 100); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 100); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 100); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 100); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 100); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 100); // Phụ kiện trong hộp
-
-        // màu tím
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 1TB", 28999002.0, 8, 32);
-
-        seedDataVariantAtribute("Tím", 3, 101); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("1TB", 24, 101); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 101); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 101); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 101); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 101); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 101); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 101); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 101); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 101); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 101); // Loại CPU
-        seedDataVariantAtribute("8", 11, 101); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 101); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 101); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 101); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 101); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 101); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 101); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 101); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 101); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 101); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 101); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 101); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 101); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 101); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 101); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 101); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 101); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 101); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 101); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 101); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 101); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 101); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 101); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 101); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 101); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 101); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 101); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 101); // Phụ kiện trong hộp
-
-        // màu đen
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 1TB", 28999993.0, 8, 32);
-
-        seedDataVariantAtribute("Đen", 3, 102); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("1TB", 24, 102); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 102); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 102); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 102); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 102); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 102); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 102); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 102); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 102); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 102); // Loại CPU
-        seedDataVariantAtribute("8", 11, 102); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 102); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 102); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 102); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 102); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 102); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 102); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 102); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 102); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 102); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 102); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 102); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 102); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 102); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 102); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 102); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 102); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 102); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 102); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 102); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 102); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 102); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 102); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 102); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 102); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 102); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 102); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 102); // Phụ kiện trong hộp
-
-        // màu trắng
-        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 1TB", 28999004.0, 8, 32);
-        seedDataVariantAtribute("Trắng", 3, 103); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("1TB", 24, 103); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 103); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 103); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 103); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 103); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 103); // Kích thước
-        seedDataVariantAtribute("462 g", 6, 103); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 103); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 103); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 103); // Loại CPU
-        seedDataVariantAtribute("8", 11, 103); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 103); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 103); // Kích thước màn hình
-        seedDataVariantAtribute("Liquid Retina", 15, 103); // Công nghệ màn hình
-        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 103); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 103); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 103); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 103); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Ultra Wide", 27, 103); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 103); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 103); // Aperture (Camera 1)
-        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 103); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 103); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 103); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 103); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 103); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 103); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 103); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 103); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 103); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 103); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 103); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 103); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 103); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 103); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 103); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 103); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 103); // Phụ kiện trong hộp
-
-        // màu trắng
-        // iPad Air 13 inch M2 2024 Wifi 128GB
-
-        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 128GB", 22999005.0, 8, 32);
-        seedDataVariantAtribute("Trắng", 3, 104); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("1TB", 24, 104); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 104); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 104); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 104); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 104); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 104); // Kích thước
-        seedDataVariantAtribute("617 g", 6, 104); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 104); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 104); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 104); // Loại CPU
-        seedDataVariantAtribute("Apple M2 8 nhân", 10, 104); // CPU
-        seedDataVariantAtribute("8", 11, 104); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 104); // Dung lượng RAM
-        seedDataVariantAtribute("13 inch", 14, 104); // Kích thước màn hình
-        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 104); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 104); // Chuẩn màn hình
-        seedDataVariantAtribute("600 nits", 20, 104); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 104); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Single rear camera", 27, 104); // Số camera sau
-        seedDataVariantAtribute("Ultra Wide", 27, 104); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 104); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/2.4", 29, 104); // Aperture (Camera 1)
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 104); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 104); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 104); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 104); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 104); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 104); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 104); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 104); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 104); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 104); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 104); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 104); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 104); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 104); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 104); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 104); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 104); // Phụ kiện trong hộp
-
-        // màu xám
-        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 128GB", 22999006.0, 8, 32);
-        seedDataVariantAtribute("Xám", 3, 105); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 105); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 105); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 105); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 105); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 105); // Kích thước
-        seedDataVariantAtribute("617 g", 6, 105); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 105); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 105); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 105); // Loại CPU
-        seedDataVariantAtribute("Apple M2 8 nhân", 10, 105); // CPU
-        seedDataVariantAtribute("8", 11, 105); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 105); // Dung lượng RAM
-        seedDataVariantAtribute("13 inch", 14, 105); // Kích thước màn hình
-        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 105); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 105); // Chuẩn màn hình
-        seedDataVariantAtribute("600 nits", 20, 105); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 105); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Single rear camera", 27, 105); // Số camera sau
-        seedDataVariantAtribute("Ultra Wide", 27, 105); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 105); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/2.4", 29, 105); // Aperture (Camera 1)
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 105); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 105); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 105); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 105); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 105); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 105); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 105); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 105); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 105); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 105); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 105); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 105); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 105); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 105); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 105); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 105); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 105); // Phụ kiện trong hộp
-
-        // màu trắng
-        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 512GB", 26999007.0, 8, 32);
-        seedDataVariantAtribute("Trắng", 3, 106); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 106); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 106); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 106); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 106); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 106); // Kích thước
-        seedDataVariantAtribute("617 g", 6, 106); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 106); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 106); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 106); // Loại CPU
-        seedDataVariantAtribute("Apple M2 8 nhân", 10, 106); // CPU
-        seedDataVariantAtribute("8", 11, 106); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 106); // Dung lượng RAM
-        seedDataVariantAtribute("13 inch", 14, 106); // Kích thước màn hình
-        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 106); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 106); // Chuẩn màn hình
-        seedDataVariantAtribute("600 nits", 20, 106); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 106); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Single rear camera", 27, 106); // Số camera sau
-        seedDataVariantAtribute("Ultra Wide", 27, 106); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 106); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/2.4", 29, 106); // Aperture (Camera 1)
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 106); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 106); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 106); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 106); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 106); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 106); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 106); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 106); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 106); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 106); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 106); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 106); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 106); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 106); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 106); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 106); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 106); // Phụ kiện trong hộp
-
-        // màu xám
-        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 512GB", 26999008.0, 8, 32);
-        seedDataVariantAtribute("Xám", 3, 107); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 107); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 107); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 107); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 107); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 107); // Kích thước
-        seedDataVariantAtribute("617 g", 6, 107); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 107); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 107); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 107); // Loại CPU
-        seedDataVariantAtribute("Apple M2 8 nhân", 10, 107); // CPU
-        seedDataVariantAtribute("8", 11, 107); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 107); // Dung lượng RAM
-        seedDataVariantAtribute("13 inch", 14, 107); // Kích thước màn hình
-        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 107); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 107); // Chuẩn màn hình
-        seedDataVariantAtribute("600 nits", 20, 107); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 107); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Single rear camera", 27, 107); // Số camera sau
-        seedDataVariantAtribute("Ultra Wide", 27, 107); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 107); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/2.4", 29, 107); // Aperture (Camera 1)
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 107); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 107); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 107); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 107); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 107); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 107); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 107); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 107); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 107); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 107); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 107); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 107); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 107); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 107); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 107); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 107); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 107); // Phụ kiện trong hộp
-
-        // màu trắng
-        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 1TB", 28999009.0, 8, 32);
-        seedDataVariantAtribute("Trắng", 3, 108); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 108); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 108); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 108); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 108); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 108); // Kích thước
-        seedDataVariantAtribute("617 g", 6, 108); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 108); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 108); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 108); // Loại CPU
-        seedDataVariantAtribute("Apple M2 8 nhân", 10, 108); // CPU
-        seedDataVariantAtribute("8", 11, 108); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 108); // Dung lượng RAM
-        seedDataVariantAtribute("13 inch", 14, 108); // Kích thước màn hình
-        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 108); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 108); // Chuẩn màn hình
-        seedDataVariantAtribute("600 nits", 20, 108); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 108); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Single rear camera", 27, 108); // Số camera sau
-        seedDataVariantAtribute("Ultra Wide", 27, 108); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 108); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/2.4", 29, 108); // Aperture (Camera 1)
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 108); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 108); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 108); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 108); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 108); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 108); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 108); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 108); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 108); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 108); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 108); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 108); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 108); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 108); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 108); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 108); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 108); // Phụ kiện trong hộp
-
-        // màu xám
-        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 1TB", 28999010.0, 8, 32);
-        seedDataVariantAtribute("Xám", 3, 109); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 109); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 109); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 109); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 109); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 109); // Kích thước
-        seedDataVariantAtribute("617 g", 6, 109); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 109); // Chất liệu
-        seedDataVariantAtribute("Apple M2", 9, 109); // CPU Model
-        seedDataVariantAtribute("8 - Core", 10, 109); // Loại CPU
-        seedDataVariantAtribute("Apple M2 8 nhân", 10, 109); // CPU
-        seedDataVariantAtribute("8", 11, 109); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 109); // Dung lượng RAM
-        seedDataVariantAtribute("13 inch", 14, 109); // Kích thước màn hình
-        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 109); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina", 16, 109); // Chuẩn màn hình
-        seedDataVariantAtribute("600 nits", 20, 109); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 109); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Single rear camera", 27, 109); // Số camera sau
-        seedDataVariantAtribute("Ultra Wide", 27, 109); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 109); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/2.4", 29, 109); // Aperture (Camera 1)
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 109); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 109); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 109); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("ƒ/2.4", 34, 109); // Aperture (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim FullHD", 34, 109); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 109); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 109); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 109); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 109); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 109); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 109); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 109); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 109); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 109); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 109); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 109); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 109); // Phụ kiện trong hộp
-
-
-        // iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB
-        // iPad Air 11 inch M2 2024
-        seedDataProduct("iPad Pro", "Ipad", 0.466, 13, 3, 3, "");
-
-        // màu đen
-        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB", 33999011.0, 8, 33);
-
-        seedDataVariantAtribute("Đen", 3, 110); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 110); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 110); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 110); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 110); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 110); // Kích thước
-        seedDataVariantAtribute("446 g", 6, 110); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 110); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 110); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 110); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 110); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 110); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 110); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 110); // Công nghệ màn hình
-        seedDataVariantAtribute("2752 x 2064 pixel", 17, 110); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 110); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 110); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 110); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 110); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 110); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 110); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 110); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 110); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 110); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 110); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 110); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 110); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 110); // Bảo mật
-        seedDataVariantAtribute("1 eSim", 38, 110); // Thẻ SIM
-        seedDataVariantAtribute("5G", 39, 110); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 110); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 110); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 110); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 110); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 110); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 110); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 110); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 110); // Phụ kiện trong hộp
-
-        // màu xám 256
-        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB", 33999012.0, 8, 33);
-        seedDataVariantAtribute("Xám", 3, 111); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("1 TB", 24, 111); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 111); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 111); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 111); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 111); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 111); // Kích thước
-        seedDataVariantAtribute("446 g", 6, 111); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 111); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 111); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 111); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 111); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 111); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 111); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 111); // Công nghệ màn hình
-        seedDataVariantAtribute("2752 x 2064 pixel", 17, 111); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 111); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 111); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 111); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 111); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 111); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 111); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 111); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 111); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 111); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 111); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 111); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 111); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 111); // Bảo mật
-        seedDataVariantAtribute("1 eSim", 38, 111); // Thẻ SIM
-        seedDataVariantAtribute("5G", 39, 111); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 111); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 111); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 111); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 111); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 111); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 111); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 111); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 111); // Phụ kiện trong hộp
-
-        // màu đen
-        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 512GB", 36999013.0, 8, 33);
-
-        seedDataVariantAtribute("Đen", 3, 112); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("512GB", 24, 112); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 112); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 112); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 112); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 112); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 112); // Kích thước
-        seedDataVariantAtribute("446 g", 6, 112); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 112); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 112); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 112); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 112); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 112); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 112); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 112); // Công nghệ màn hình
-        seedDataVariantAtribute("2752 x 2064 pixel", 17, 112); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 112); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 112); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 112); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 112); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 112); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 112); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 112); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 112); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 112); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 112); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 112); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 112); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 112); // Bảo mật
-        seedDataVariantAtribute("1 eSim", 38, 112); // Thẻ SIM
-        seedDataVariantAtribute("5G", 39, 112); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 112); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 112); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 112); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 112); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 112); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 112); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 112); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 112); // Phụ kiện trong hộp
-
-        // màu xám
-        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 512GB", 36999014.0, 8, 33);
-        seedDataVariantAtribute("512GB", 24, 113); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 113); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 113); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 113); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 113); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 113); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 113); // Kích thước
-        seedDataVariantAtribute("446 g", 6, 113); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 113); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 113); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 113); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 113); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 113); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 113); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 113); // Công nghệ màn hình
-        seedDataVariantAtribute("2752 x 2064 pixel", 17, 113); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 113); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 113); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 113); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 113); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 113); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 113); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 113); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 113); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 113); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 113); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 113); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 113); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 113); // Bảo mật
-        seedDataVariantAtribute("1 eSim", 38, 113); // Thẻ SIM
-        seedDataVariantAtribute("5G", 39, 113); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 113); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 113); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 113); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 113); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 113); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 113); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 113); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 113); // Phụ kiện trong hộp
-
-        // màu đen
-        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 1TB", 45999014.0, 8, 33);
-
-        seedDataVariantAtribute("Đen", 3, 114); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("1TB", 24, 114); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 114); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 114); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 114); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 114); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 114); // Kích thước
-        seedDataVariantAtribute("446 g", 6, 114); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 114); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 114); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 114); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 114); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 114); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 114); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 114); // Công nghệ màn hình
-        seedDataVariantAtribute("2752 x 2064 pixel", 17, 114); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 114); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 114); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 114); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 114); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 114); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 114); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 114); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 114); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 114); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 114); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 114); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 114); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 114); // Bảo mật
-        seedDataVariantAtribute("1 eSim", 38, 114); // Thẻ SIM
-        seedDataVariantAtribute("5G", 39, 114); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 114); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 114); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 114); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 114); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 114); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 114); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 114); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 114); // Phụ kiện trong hộp
-
-        // màu xám
-        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 1TB", 45999015.0, 8, 33);
-        seedDataVariantAtribute("1TB", 24, 115); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 115); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 115); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 115); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 115); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 115); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 115); // Kích thước
-        seedDataVariantAtribute("446 g", 6, 115); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 115); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 115); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 115); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 115); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 115); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 115); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 115); // Công nghệ màn hình
-        seedDataVariantAtribute("2752 x 2064 pixel", 17, 115); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 115); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 115); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 115); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 115); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 115); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 115); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 115); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 115); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 115); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 115); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 115); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 115); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 115); // Bảo mật
-        seedDataVariantAtribute("1 eSim", 38, 115); // Thẻ SIM
-        seedDataVariantAtribute("5G", 39, 115); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 115); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 115); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 115); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 115); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 115); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 115); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 115); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 115); // Phụ kiện trong hộp
-
-        // iPad Pro 11 inch M4 2024 Wifi 256GB
-        seedDataVariant("iPad Pro 11 inch M4 2024 256GB", 33999016.0, 8, 33);
-        seedDataVariantAtribute("256GB", 24, 116); // Dung lượng
-        seedDataVariantAtribute("Đen", 3, 116); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 116); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 116); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 116); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 116); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 116); // Kích thước
-        seedDataVariantAtribute("444 g", 6, 116); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 116); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 116); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 116); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 116); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 116); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 116); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 116); // Công nghệ màn hình
-        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 116); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 116); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 116); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 116); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 116); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 116); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 116); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 116); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 116); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 116); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 116); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 116); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 116); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 116); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 116); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 116); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 116); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 116); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 116); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 116); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 116); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 116); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 116); // Phụ kiện trong hộp
-
-        seedDataVariant("iPad Pro 11 inch M4 2024 256GB ", 33999017.0, 8, 33);
-        seedDataVariantAtribute("256GB", 24, 117); // Dung lượng
-        seedDataVariantAtribute("Bạc", 3, 117); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 117); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 117); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 117); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 117); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 117); // Kích thước
-        seedDataVariantAtribute("444 g", 6, 117); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 117); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 117); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 117); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 117); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 117); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 117); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 117); // Công nghệ màn hình
-        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 117); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 117); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 117); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 117); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 117); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 117); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 117); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 117); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 117); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 117); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 117); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 117); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 117); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 117); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 117); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 117); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 117); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 117); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 117); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 117); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 117); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 117); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 117); // Phụ kiện trong hộp
-
-        // iPad Pro 11 inch M4 2024 Wifi 512GB
-        seedDataVariant("iPad Pro 11 inch M4 2024 512GB", 36999018.0, 8, 33);
-        seedDataVariantAtribute("Đen", 3, 118); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("512GB", 24, 118); // Dung lượng
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 118); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 118); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 118); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 118); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 118); // Kích thước
-        seedDataVariantAtribute("444 g", 6, 118); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 118); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 118); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 118); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 118); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 118); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 118); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 118); // Công nghệ màn hình
-        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 118); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 118); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 118); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 118); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 118); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 118); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 118); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 118); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 118); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 118); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 118); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 118); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 118); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 118); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 118); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 118); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 118); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 118); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 118); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 118); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 118); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 118); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 118); // Phụ kiện trong hộp
-
-        seedDataVariant("iPad Pro 11 inch M4 2024 512GB ", 36999118.0, 8, 33);
-        seedDataVariantAtribute("512GB", 24, 119); // Dung lượng
-        seedDataVariantAtribute("Bạc", 3, 119); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 119); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 119); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 119); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 119); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 119); // Kích thước
-        seedDataVariantAtribute("444 g", 6, 119); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 119); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 119); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 119); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 119); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 119); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 119); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 119); // Công nghệ màn hình
-        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 119); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 119); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 119); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 119); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 119); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 119); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 119); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 119); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 119); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 119); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 119); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 119); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 119); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 119); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 119); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 119); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 119); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 119); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 119); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 119); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 119); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 119); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 119); // Phụ kiện trong hộp
-
-        // iPad Pro 11 inch M4 2024 Wifi 1TB
-        seedDataVariant("iPad Pro 11 inch M4 2024 1TB", 36999019.0, 8, 33);
-        seedDataVariantAtribute("1TB", 24, 120); // Dung lượng
-        seedDataVariantAtribute("Đen", 3, 120); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 120); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 120); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 120); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 120); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 120); // Kích thước
-        seedDataVariantAtribute("444 g", 6, 120); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 120); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 120); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 120); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 120); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 120); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 120); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 120); // Công nghệ màn hình
-        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 120); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 120); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 120); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 120); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 120); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 120); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 120); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 120); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 120); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 120); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 120); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 120); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 120); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 120); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 120); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 120); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 120); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 120); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 120); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 120); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 120); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 120); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 120); // Phụ kiện trong hộp
-
-        seedDataVariant("iPad Pro 11 inch M4 2024 1TB ", 36999020.0, 8, 33);
-        seedDataVariantAtribute("1TB", 24, 121); // Dung lượng
-        seedDataVariantAtribute("Bạc", 3, 121); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 121); // Xuất xứ
-        seedDataVariantAtribute("05/2024", 2, 121); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 121); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 121); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 121); // Kích thước
-        seedDataVariantAtribute("444 g", 6, 121); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 121); // Chất liệu
-        seedDataVariantAtribute("Apple M4", 9, 121); // CPU Model
-        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 121); // Loại CPU & CPU
-        seedDataVariantAtribute("10", 11, 121); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 121); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 121); // Kích thước màn hình
-        seedDataVariantAtribute("OLED", 15, 121); // Công nghệ màn hình
-        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 121); // Độ phân giải
-        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 121); // Chuẩn màn hình
-        seedDataVariantAtribute("1000 nits", 20, 121); // Độ sáng
-        seedDataVariantAtribute("2.000.000:1", 21, 121); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 121); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 121); // Số camera sau và Camera Type
-        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 121); // Độ phân giải Camera
-        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 121); // Độ mở Camera
-        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 121); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 121); // Số Camera Selfie
-        seedDataVariantAtribute("Quay phim FullHD", 34, 121); // Quay phim camera selfie
-        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 121); // Tính năng camera selfie
-        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 121); // Cảm biến
-        seedDataVariantAtribute("Mật khẩu", 37, 121); // Bảo mật
-        seedDataVariantAtribute("5G", 39, 121); // Hỗ trợ mạng
-        seedDataVariantAtribute("Type C", 41, 121); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 121); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 121); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 121); // Loại PIN
-        seedDataVariantAtribute("36.59 Wh", 48, 121); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 121); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 121); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 121); // Phụ kiện trong hộp
-
-        // iPad mini 6 2021 8.3 inch WiFi 64GB
-        seedDataProduct("iPad Mini", "Ipad", 0.462, 13, 3, 3, "");
-        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 64GB ", 12999018.0, 8, 34);
-
-        seedDataVariantAtribute("Xám", 3, 122); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("64GB", 24, 122); // Dung lượng
-        seedDataVariantAtribute("Trung Quốc", 1, 122); // Xuất xứ
-        seedDataVariantAtribute("09/2021", 2, 122); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 122); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 122); // Kích thước
-        seedDataVariantAtribute("293 g", 6, 122); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("70%", 13, 122); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Không", 18, 122); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Nhôm nguyên khối", 7, 122); // Chất liệu
-        seedDataVariantAtribute("Apple A15 Bionic", 9, 122); // CPU Model
-        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 122); // Loại CPU & CPU
-        seedDataVariantAtribute("6", 11, 122); // Số nhân
-        seedDataVariantAtribute("2.5 GHz", 12, 122); // Tốc độ tối đa
-        seedDataVariantAtribute("4 GB", 79, 122); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 122); // Loại RAM
-        seedDataVariantAtribute("8.3 inch", 14, 122); // Kích thước màn hình
-        seedDataVariantAtribute("IPS LCD", 15, 122); // Công nghệ màn hình
-        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 122); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina HD", 16, 122); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 122); // Màu màn hình
-        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 122); // Chất liệu mặt kính
-        seedDataVariantAtribute("Điện dung đa điểm", 63, 122); // Loại cảm ứng
-        seedDataVariantAtribute("324 ppi", 22, 122); // Mật độ điểm ảnh
-        seedDataVariantAtribute("4:3", 26, 122); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 122); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("467.478", 80, 122); // ANTUTU
-        seedDataVariantAtribute("Tùy bộ nhớ", 82, 122); // Danh bạ lưu trữ
-        seedDataVariantAtribute("Không", 83, 122); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("Standard", 27, 122); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 122); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 122); // Aperture (Camera 1)
-        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 122); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 122); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 122); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim HD", 34, 122); // Quay phim camera selfie
-        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 122); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 122); // Cảm biến
-        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 122); // Bảo mật
-        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 122); // Wifi
-        seedDataVariantAtribute("Computer sync", 43, 122); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 122); // Loại PIN
-        seedDataVariantAtribute("10 Giờ", 48, 122); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 122); // OS
-        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 122); // Phụ kiện trong hộp
-
-        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 64GB ", 12999019.0, 8, 34);
-
-        seedDataVariantAtribute("Tím", 3, 123); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("64GB", 24, 123); // Dung lượng
-        seedDataVariantAtribute("Trung Quốc", 1, 123); // Xuất xứ
-        seedDataVariantAtribute("09/2021", 2, 123); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 123); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 123); // Kích thước
-        seedDataVariantAtribute("293 g", 6, 123); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("70%", 13, 123); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Không", 18, 123); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Nhôm nguyên khối", 7, 123); // Chất liệu
-        seedDataVariantAtribute("Apple A15 Bionic", 9, 123); // CPU Model
-        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 123); // Loại CPU & CPU
-        seedDataVariantAtribute("6", 11, 123); // Số nhân
-        seedDataVariantAtribute("2.5 GHz", 12, 123); // Tốc độ tối đa
-        seedDataVariantAtribute("4 GB", 79, 123); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 123); // Loại RAM
-        seedDataVariantAtribute("8.3 inch", 14, 123); // Kích thước màn hình
-        seedDataVariantAtribute("IPS LCD", 15, 123); // Công nghệ màn hình
-        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 123); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina HD", 16, 123); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 123); // Màu màn hình
-        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 123); // Chất liệu mặt kính
-        seedDataVariantAtribute("Điện dung đa điểm", 63, 123); // Loại cảm ứng
-        seedDataVariantAtribute("324 ppi", 22, 123); // Mật độ điểm ảnh
-        seedDataVariantAtribute("4:3", 26, 123); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 123); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("467.478", 80, 123); // ANTUTU
-        seedDataVariantAtribute("Tùy bộ nhớ", 82, 123); // Danh bạ lưu trữ
-        seedDataVariantAtribute("Không", 83, 123); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("Standard", 27, 123); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 123); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 123); // Aperture (Camera 1)
-        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 123); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 123); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 123); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim HD", 34, 123); // Quay phim camera selfie
-        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 123); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 123); // Cảm biến
-        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 123); // Bảo mật
-        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 123); // Wifi
-        seedDataVariantAtribute("Computer sync", 43, 123); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 123); // Loại PIN
-        seedDataVariantAtribute("10 Giờ", 48, 123); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 123); // OS
-        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 123); // Phụ kiện trong hộp
-
-
-        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 256GB ", 16999018.0, 8, 34);
-
-        seedDataVariantAtribute("Xám", 3, 124); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("256GB", 24, 124); // Dung lượng
-        seedDataVariantAtribute("Trung Quốc", 1, 124); // Xuất xứ
-        seedDataVariantAtribute("09/2021", 2, 124); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 124); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 124); // Kích thước
-        seedDataVariantAtribute("293 g", 6, 124); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("70%", 13, 124); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Không", 18, 124); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Nhôm nguyên khối", 7, 124); // Chất liệu
-        seedDataVariantAtribute("Apple A15 Bionic", 9, 124); // CPU Model
-        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 124); // Loại CPU & CPU
-        seedDataVariantAtribute("6", 11, 124); // Số nhân
-        seedDataVariantAtribute("2.5 GHz", 12, 124); // Tốc độ tối đa
-        seedDataVariantAtribute("4 GB", 79, 124); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 124); // Loại RAM
-        seedDataVariantAtribute("8.3 inch", 14, 124); // Kích thước màn hình
-        seedDataVariantAtribute("IPS LCD", 15, 124); // Công nghệ màn hình
-        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 124); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina HD", 16, 124); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 124); // Màu màn hình
-        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 124); // Chất liệu mặt kính
-        seedDataVariantAtribute("Điện dung đa điểm", 63, 124); // Loại cảm ứng
-        seedDataVariantAtribute("324 ppi", 22, 124); // Mật độ điểm ảnh
-        seedDataVariantAtribute("4:3", 26, 124); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 124); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("467.478", 80, 124); // ANTUTU
-        seedDataVariantAtribute("Tùy bộ nhớ", 82, 124); // Danh bạ lưu trữ
-        seedDataVariantAtribute("Không", 83, 124); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("Standard", 27, 124); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 124); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 124); // Aperture (Camera 1)
-        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 124); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 124); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 124); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim HD", 34, 124); // Quay phim camera selfie
-        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 124); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 124); // Cảm biến
-        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 124); // Bảo mật
-        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 124); // Wifi
-        seedDataVariantAtribute("Computer sync", 43, 124); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 124); // Loại PIN
-        seedDataVariantAtribute("10 Giờ", 48, 124); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 124); // OS
-        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 124); // Phụ kiện trong hộp
-
-        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 256GB ", 16999019.0, 8, 34);
-
-        seedDataVariantAtribute("Tím", 3, 125); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("256GB", 24, 125); // Dung lượng
-        seedDataVariantAtribute("Trung Quốc", 1, 125); // Xuất xứ
-        seedDataVariantAtribute("09/2021", 2, 125); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 125); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 125); // Kích thước
-        seedDataVariantAtribute("293 g", 6, 125); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("70%", 13, 125); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Không", 18, 125); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Nhôm nguyên khối", 7, 125); // Chất liệu
-        seedDataVariantAtribute("Apple A15 Bionic", 9, 125); // CPU Model
-        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 125); // Loại CPU & CPU
-        seedDataVariantAtribute("6", 11, 125); // Số nhân
-        seedDataVariantAtribute("2.5 GHz", 12, 125); // Tốc độ tối đa
-        seedDataVariantAtribute("4 GB", 79, 125); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 125); // Loại RAM
-        seedDataVariantAtribute("8.3 inch", 14, 125); // Kích thước màn hình
-        seedDataVariantAtribute("IPS LCD", 15, 125); // Công nghệ màn hình
-        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 125); // Độ phân giải
-        seedDataVariantAtribute("Liquid Retina HD", 16, 125); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 125); // Màu màn hình
-        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 125); // Chất liệu mặt kính
-        seedDataVariantAtribute("Điện dung đa điểm", 63, 125); // Loại cảm ứng
-        seedDataVariantAtribute("324 ppi", 22, 125); // Mật độ điểm ảnh
-        seedDataVariantAtribute("4:3", 26, 125); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 125); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("467.478", 80, 125); // ANTUTU
-        seedDataVariantAtribute("Tùy bộ nhớ", 82, 125); // Danh bạ lưu trữ
-        seedDataVariantAtribute("Không", 83, 125); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("Standard", 27, 125); // Camera Type 1
-        seedDataVariantAtribute("12.0 MP", 28, 125); // Resolution (Camera 1)
-        seedDataVariantAtribute("ƒ/1.8", 29, 125); // Aperture (Camera 1)
-        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 125); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 125); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 125); // Resolution (Camera Selfie 1)
-        seedDataVariantAtribute("Quay phim HD", 34, 125); // Quay phim camera selfie
-        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 125); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 125); // Cảm biến
-        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 125); // Bảo mật
-        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 125); // Wifi
-        seedDataVariantAtribute("Computer sync", 43, 125); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 125); // Loại PIN
-        seedDataVariantAtribute("10 Giờ", 48, 125); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 125); // OS
-        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 125); // Phụ kiện trong hộp
-
-        // Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB
-
-        seedDataProduct("Samsung Galaxy Tab", "Ipad", 0.571, 13, 3, 3, "");
-
-        seedDataVariant("Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB ", 25999018.0, 8, 35);
-        seedDataVariantAtribute("256 GB", 24, 126); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 126); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 126); // Xuất xứ
-        seedDataVariantAtribute("10/2024", 2, 126); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 126); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 126); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("Dài 285.4 mm - Ngang 185.4 mm - Dày 5.7 mm", 5, 126); // Kích thước
-        seedDataVariantAtribute("571 g", 6, 126); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("IP68", 18, 126); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Khung viền: Armor aluminum, Mặt lưng máy: Armor aluminum", 7, 126); // Chất liệu
-        seedDataVariantAtribute("Dimensity 9300+", 9, 126); // CPU Model
-        seedDataVariantAtribute("8", 11, 126); // Số nhân
-        seedDataVariantAtribute("12 GB", 79, 126); // Dung lượng RAM
-        seedDataVariantAtribute("12.4 inch", 14, 126); // Kích thước màn hình
-        seedDataVariantAtribute("Dynamic AMOLED 2X", 15, 126); // Công nghệ màn hình
-        seedDataVariantAtribute("1752 x 2800 Pixels", 17, 126); // Độ phân giải
-        seedDataVariantAtribute("Dynamic AMOLED 2X", 16, 126); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 126); // Màu màn hình
-        seedDataVariantAtribute("120", 22, 126); // Tần số quét
-        seedDataVariantAtribute("ARM Immortalis G720", 24, 126); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Không giới hạn", 82, 126); // Danh bạ lưu trữ
-        seedDataVariantAtribute("MicroSD", 83, 126); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("1.5 TB", 84, 126); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Double rear camera", 27, 126); // Số camera sau
-        seedDataVariantAtribute("Resolution (Camera 1): 13.0 MP, Resolution (Camera 2): 8.0 MP", 28, 126); // Độ phân giải Camera
-        seedDataVariantAtribute("4K 2160p@30fps", 30, 126); // Quay phim
-        seedDataVariantAtribute("Tự động lấy nét (AF), Quét tài liệu, Xóa phông, Chụp góc siêu rộng (Ultrawide), Trôi nhanh thời gian (Time Lapse), Toàn cảnh (Panorama), Chuyên nghiệp (Pro), HDR", 35, 126); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 126); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 126); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("Xóa phông, Chế độ chân dung, Trôi nhanh thời gian (Time lapse), Làm đẹp (Beautify), Chụp góc rộng (Wide), Bộ lọc màu, Hẹn giờ chụp tự động", 35, 126); // Tính năng camera selfie
-        seedDataVariantAtribute("Mở khóa vân tay dưới màn hình", 37, 126); // Bảo mật
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 126); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E, 802.11 a/b/g/n, MIMO, Wi-Fi Direct", 42, 126); // Wifi
-        seedDataVariantAtribute("GPS, GLONASS, BEIDOU, GALILEO, QZSS", 46, 126); // GPS
-        seedDataVariantAtribute("v5.3", 44, 126); // Bluetooth
-        seedDataVariantAtribute("Bluetooth", 43, 126); // Kết nối khác
-        seedDataVariantAtribute("Pin Li-ion", 47, 126); // Loại PIN
-        seedDataVariantAtribute("10090 mAh", 48, 126); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 126); // OS
-        seedDataVariantAtribute("Android 14", 50, 126); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Sách HDSD, Bút cảm ứng", 57, 126); // Phụ kiện trong hộp
-
-        // Samsung Galaxy Tab S10 Ultra 5G 12GB 256GB
-        seedDataVariant("Samsung Galaxy Tab S10 Ultra 5G 12GB 256GB", 33999018.0, 8, 35);
-        seedDataVariantAtribute("256 GB", 24, 127); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 127); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 127); // Xuất xứ
-        seedDataVariantAtribute("10/2024", 2, 127); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 127); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 127); // Hướng dẫn bảo quản
-        seedDataVariantAtribute("Dài 326.4 mm - Ngang 208.6 mm - Dày 5.4 mm", 5, 127); // Kích thước
-        seedDataVariantAtribute("723 g", 6, 127); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("IP68", 18, 127); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Khung màn hình: Armor aluminum, Mặt lưng máy: Armor aluminum", 7, 127); // Chất liệu
-        seedDataVariantAtribute("Dimensity 9300+", 9, 127); // CPU Model
-        seedDataVariantAtribute("8", 11, 127); // Số nhân
-        seedDataVariantAtribute("12 GB", 79, 127); // Dung lượng RAM
-        seedDataVariantAtribute("14.6 inch", 14, 127); // Kích thước màn hình
-        seedDataVariantAtribute("2960 x 1848 Pixels", 17, 127); // Độ phân giải
-        seedDataVariantAtribute("Dynamic AMOLED 2X", 16, 127); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 127); // Màu màn hình
-        seedDataVariantAtribute("Corning Gorilla Glass", 62, 127); // Chất liệu mặt kính
-        seedDataVariantAtribute("ARM Immortalis G720", 24, 127); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Không giới hạn", 82, 127); // Danh bạ lưu trữ
-        seedDataVariantAtribute("MicroSD", 83, 127); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("1.5 TB", 84, 127); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Double rear camera", 27, 127); // Số camera sau
-        seedDataVariantAtribute("Resolution (Camera 1): 13.0 MP, Resolution (Camera 2): 8.0 MP", 28, 127); // Độ phân giải Camera
-        seedDataVariantAtribute("4K 2160p@30fps", 30, 127); // Quay phim
-        seedDataVariantAtribute("Tự động lấy nét (AF), Zoom quang học, Zoom kỹ thuật số, Xóa phông, Chụp góc siêu rộng (Ultrawide), Trôi nhanh thời gian (Time Lapse), Toàn cảnh (Panorama), Chuyên nghiệp (Pro), HDR, Quét tài liệu", 35, 127); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 127); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 127); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("Chế độ chân dung, Xóa phông, Làm đẹp (Beautify), Chụp góc rộng (Wide), Bộ lọc màu, Hẹn giờ chụp tự động", 35, 127); // Tính năng camera selfie
-        seedDataVariantAtribute("Mở khóa vân tay dưới màn hình", 37, 127); // Bảo mật
-        seedDataVariantAtribute("1", 38, 127); // Số khe SIM
-        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 39, 127); // Thẻ SIM
-        seedDataVariantAtribute("5G", 40, 127); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 127); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 7, MIMO, 802.11 a/b/g/n", 42, 127); // Wifi
-        seedDataVariantAtribute("GPS, GLONASS, BEIDOU, GALILEO, QZSS", 46, 127); // GPS
-        seedDataVariantAtribute("v5.3", 44, 127); // Bluetooth
-        seedDataVariantAtribute("Pin Li-ion", 47, 127); // Loại PIN
-        seedDataVariantAtribute("11200 mAh", 48, 127); // Dung lượng pin
-        seedDataVariantAtribute("Sạc pin nhanh", 85, 127); // Thông tin thêm
-        seedDataVariantAtribute("Android", 49, 127); // OS
-        seedDataVariantAtribute("Android 14", 50, 127); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Que lấy SIM, Sách HDSD, Bút cảm ứng", 57, 127); // Phụ kiện trong hộp
-
-
-        // Samsung Galaxy Tab S9 FE WiFi 6GB 128GB
-        seedDataVariant("Samsung Galaxy Tab S9 FE WiFi 6GB 128GB", 9999018.0, 8, 35);
-        seedDataVariantAtribute("128 GB", 24, 128); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 128); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 128); // Xuất xứ
-        seedDataVariantAtribute("10/2023", 2, 128); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 128); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 128); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("254.3 x 165.8 x 6.5 mm", 5, 128); // Kích thước
-        seedDataVariantAtribute("520 g", 6, 128); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("IP68", 18, 128); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Mặt lưng máy: Kim loại", 7, 128); // Chất liệu
-        seedDataVariantAtribute("Exynos 1380", 9, 128); // CPU Model
-        seedDataVariantAtribute("8 x 2.4 GHz", 10, 128); // CPU
-        seedDataVariantAtribute("8", 11, 128); // Số nhân
-        seedDataVariantAtribute("2.4 GHz", 12, 128); // Tốc độ tối đa
-        seedDataVariantAtribute("6 GB", 79, 128); // Dung lượng RAM
-        seedDataVariantAtribute("10.9 inch", 14, 128); // Kích thước màn hình
-        seedDataVariantAtribute("LCD", 15, 128); // Công nghệ màn hình
-        seedDataVariantAtribute("2304 x 1440 Pixels", 17, 128); // Độ phân giải
-        seedDataVariantAtribute("WUXGA", 16, 128); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 128); // Màu màn hình
-        seedDataVariantAtribute("Điện dung đa điểm", 63, 128); // Loại cảm ứng
-        seedDataVariantAtribute("90 Hz", 22, 128); // Tần số quét
-        seedDataVariantAtribute("HDR10+", 73, 128); // Độ phủ màu
-        seedDataVariantAtribute("16:10", 26, 128); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Mali-G68", 24, 128); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Không giới hạn", 82, 128); // Danh bạ lưu trữ
-        seedDataVariantAtribute("1 TB", 84, 128); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Double rear camera", 27, 128); // Số camera sau
-        seedDataVariantAtribute("Resolution (Camera 1): 8.0 MP, Resolution (Camera 2): 8.0 MP", 28, 128); // Độ phân giải Camera
-        seedDataVariantAtribute("4K 2160p@30fps", 30, 128); // Quay phim
-        seedDataVariantAtribute("Tự động lấy nét (AF), HDR, Chuyên nghiệp (Pro), Xóa phông, Toàn cảnh (Panorama), Chụp chuyển động, Chạm lấy nét, Làm đẹp (Beautify), Chụp góc siêu rộng (Ultrawide), Zoom kỹ thuật số", 35, 128); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 128); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 128); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("Chụp góc rộng (Wide), HDR, Xoá phông, Bộ lọc màu, Flash màn hình", 35, 128); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến gia tốc, Cảm biến ánh sáng", 36, 128); // Cảm biến
-        seedDataVariantAtribute("Mở khóa vân tay", 37, 128); // Bảo mật
-        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Type C", 41, 128); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 ac, Dual-band (2.4 GHz/ 5 GHz), Wi-Fi Direct", 42, 128); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 128); // Bluetooth
-        seedDataVariantAtribute("Bluetooth", 43, 128); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 128); // Loại PIN
-        seedDataVariantAtribute("8000 mAh", 48, 128); // Dung lượng pin
-        seedDataVariantAtribute("Sạc pin nhanh", 85, 128); // Thông tin thêm
-        seedDataVariantAtribute("Android", 49, 128); // OS
-        seedDataVariantAtribute("Android 13.0", 50, 128); // Version
-        seedDataVariantAtribute("Sách HDSD, Bút cảm ứng", 57, 128); // Phụ kiện trong hộp
-
-        // Samsung Galaxy Tab A9 Plus WiFi 4GB 64GB
-        seedDataVariant("Samsung Galaxy Tab A9 Plus WiFi 4GB 64GB", 8999018.0, 8, 35);
-        seedDataVariantAtribute("64 GB", 24, 129); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 129); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 129); // Xuất xứ
-        seedDataVariantAtribute("10/2023", 2, 129); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 129); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 129); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("257.1 x 168.7 x 6.9 mm", 5, 129); // Kích thước
-        seedDataVariantAtribute("510 g", 6, 129); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Mặt lưng máy: Kim loại", 7, 129); // Chất liệu
-        seedDataVariantAtribute("Snapdragon 695 5G", 9, 129); // CPU Model
-        seedDataVariantAtribute("2 x 2.2 GHz + 6 x 1.7 GHz", 10, 129); // CPU
-        seedDataVariantAtribute("8", 11, 129); // Số nhân
-        seedDataVariantAtribute("4 GB", 79, 129); // Dung lượng RAM
-        seedDataVariantAtribute("11 inch", 14, 129); // Kích thước màn hình
-        seedDataVariantAtribute("LCD Chính:", 15, 129); // Công nghệ màn hình
-        seedDataVariantAtribute("1200 x 1920 Pixels", 17, 129); // Độ phân giải
-        seedDataVariantAtribute("WUXGA", 16, 129); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 129); // Màu màn hình
-        seedDataVariantAtribute("Điện dung đa điểm", 63, 129); // Loại cảm ứng
-        seedDataVariantAtribute("90 Hz", 22, 129); // Tần số quét
-        seedDataVariantAtribute("570 nits", 20, 129); // Độ sáng
-        seedDataVariantAtribute("16:10", 26, 129); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Không giới hạn", 82, 129); // Danh bạ lưu trữ
-        seedDataVariantAtribute("MicroSD", 83, 129); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("1 TB", 84, 129); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Single rear camera", 27, 129); // Số camera sau
-        seedDataVariantAtribute("Wide", 27, 129); // Camera
-        seedDataVariantAtribute("8.0 MP", 28, 129); // Resolution (Camera)
-        seedDataVariantAtribute("ƒ/2.0", 29, 129); // Aperture (Camera)
-        seedDataVariantAtribute("Single selfie camera", 32, 129); // Số Camera Selfie
-        seedDataVariantAtribute("5.0 MP", 33, 129); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("ƒ/2.2", 34, 129); // Aperture (Camera Selfie)
-        seedDataVariantAtribute("Cảm biến gia tốc, Cảm biến ánh sáng", 36, 129); // Cảm biến
-        seedDataVariantAtribute("Mở khóa khuôn mặt", 37, 129); // Bảo mật
-        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Type C", 41, 129); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 ac", 42, 129); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 129); // Bluetooth
-        seedDataVariantAtribute("Bluetooth", 43, 129); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 129); // Loại PIN
-        seedDataVariantAtribute("7040 mAh", 48, 129); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 129); // OS
-        seedDataVariantAtribute("Android 13.0", 50, 129); // Version
-        seedDataVariantAtribute("Sách HDSD", 57, 129); // Phụ kiện trong hộp
-
-
-        // Samsung Galaxy Tab S9 FE Plus WiFi 8GB 128GB
-        seedDataVariant("Samsung Galaxy Tab S9 FE Plus WiFi 8GB 128GB", 13999019.0, 8, 35);
-        seedDataVariantAtribute("128 GB", 24, 130); // Dung lượng
-        seedDataVariantAtribute("Bạc", 3, 130); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 130); // Xuất xứ
-        seedDataVariantAtribute("10/2023", 2, 130); // Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 130); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 130); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("285.4 x 185.4 x 6.5 mm", 5, 130); // Kích thước
-        seedDataVariantAtribute("627 g", 6, 130); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("IP68", 18, 130); // Chuẩn kháng nước / Bụi bẩn
-        seedDataVariantAtribute("Mặt lưng máy: Kim loại", 7, 130); // Chất liệu
-        seedDataVariantAtribute("Exynos 1380", 9, 130); // CPU Model
-        seedDataVariantAtribute("8 x 2.4 GHz", 10, 130); // CPU
-        seedDataVariantAtribute("8", 11, 130); // Số nhân
-        seedDataVariantAtribute("2.4 GHz", 12, 130); // Tốc độ tối đa
-        seedDataVariantAtribute("8 GB", 79, 130); // Dung lượng RAM
-        seedDataVariantAtribute("12.4 inch", 14, 130); // Kích thước màn hình
-        seedDataVariantAtribute("PLS LCD", 15, 130); // Công nghệ màn hình
-        seedDataVariantAtribute("2560 x 1600 Pixels", 17, 130); // Độ phân giải
-        seedDataVariantAtribute("WQXGA", 16, 130); // Chuẩn màn hình
-        seedDataVariantAtribute("16 Triệu", 78, 130); // Màu màn hình
-        seedDataVariantAtribute("Điện dung đa điểm", 63, 130); // Loại cảm ứng
-        seedDataVariantAtribute("90 Hz", 22, 130); // Tần số quét
-        seedDataVariantAtribute("16:10", 26, 130); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Mali-G68", 24, 130); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("MicroSD", 83, 130); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("1 TB", 84, 130); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Double rear camera", 27, 130); // Số camera sau
-        seedDataVariantAtribute("Wide", 27, 130); // Camera
-        seedDataVariantAtribute("Resolution (Camera 1): 8.0 MP, Resolution (Camera 2): 8.0 MP", 28, 130); // Độ phân giải Camera
-        seedDataVariantAtribute("4K 2160p@30fps", 30, 130); // Quay phim
-        seedDataVariantAtribute("HDR, Bộ lọc màu, Chuyên nghiệp (Pro), Xóa phông, Toàn cảnh (Panorama), Trôi nhanh thời gian (Time Lapse), Chụp chuyển động, Chạm lấy nét, Làm đẹp (Beautify), Zoom kỹ thuật số, Tự động lấy nét (AF), Ban đêm (Night Mode)", 35, 130); // Tính năng camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 130); // Số Camera Selfie
-        seedDataVariantAtribute("12.0 MP", 33, 130); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("Tự động lấy nét (AF), Xoá phông, HDR, Chuyên nghiệp (Pro), Chụp góc rộng (Wide)", 35, 130); // Tính năng camera selfie
-        seedDataVariantAtribute("Cảm biến gia tốc, Cảm biến ánh sáng", 36, 130); // Cảm biến
-        seedDataVariantAtribute("Mở khóa vân tay", 37, 130); // Bảo mật
-        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Type C", 41, 130); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 ac", 42, 130); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 130); // Bluetooth
-        seedDataVariantAtribute("Bluetooth", 43, 130); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 130); // Loại PIN
-        seedDataVariantAtribute("10090 mAh", 48, 130); // Dung lượng pin
-        seedDataVariantAtribute("Sạc pin nhanh", 85, 130); // Thông tin thêm
-        seedDataVariantAtribute("Android", 49, 130); // OS
-        seedDataVariantAtribute("Android 13.0", 50, 130); // Version
-        seedDataVariantAtribute("Sách HDSD, Bút cảm ứng", 57, 130); // Phụ kiện trong hộp
-
-        // Xiaomi Pad 6S Pro WiFi 8GB 256GB
-
-
-        seedDataProduct("Xiaomi Pad", "Ipad", 0.571, 13, 3, 3, "");
-        seedDataVariant("Xiaomi Pad 6S Pro WiFi 8GB 256GB ", 12999118.0, 8, 36);
-        seedDataVariantAtribute("256GB", 24, 131); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 131); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Việt Nam", 1, 131); // Xuất xứ
-        seedDataVariantAtribute("09/2024", 2, 131); // Thời điểm ra mắt
-        seedDataVariantAtribute("18", 4, 131); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("278.7 x 191.58 x 6.26 mm", 5, 131); // Kích thước
-        seedDataVariantAtribute("590 g", 6, 131); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("88.5%", 13, 131); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Hợp kim nhôm", 7, 131); // Chất liệu
-        seedDataVariantAtribute("Snapdragon 8 Gen 2", 9, 131); // CPU Model
-        seedDataVariantAtribute("8", 11, 131); // Số nhân
-        seedDataVariantAtribute("8 GB", 79, 131); // Dung lượng RAM
-        seedDataVariantAtribute("12.4 inch", 14, 131); // Kích thước màn hình
-        seedDataVariantAtribute("2032 x 3048 Pixels", 17, 131); // Độ phân giải
-        seedDataVariantAtribute("3K", 16, 131); // Chuẩn màn hình
-        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 131); // Màu màn hình
-        seedDataVariantAtribute("Corning Gorilla Glass", 62, 131); // Chất liệu mặt kính
-        seedDataVariantAtribute("294 ppi", 22, 131); // Mật độ điểm ảnh
-        seedDataVariantAtribute("144", 23, 131); // Tần số quét
-        seedDataVariantAtribute("900 nits", 20, 131); // Độ sáng
-        seedDataVariantAtribute("100% DCI-P3", 73, 131); // Độ phủ màu
-        seedDataVariantAtribute("3:2", 26, 131); // Tỷ lệ màn hình
-        seedDataVariantAtribute("1400:1", 21, 131); // Độ tương phản
-        seedDataVariantAtribute("Double rear camera", 27, 131); // Số camera sau
-        seedDataVariantAtribute("Resolution (Camera 1): 50 MP, Aperture (Camera 1): ƒ/1.8, Pixel size (Camera 1): 0.64 µm", 28, 131); // Camera 1
-        seedDataVariantAtribute("Resolution (Camera 2): 2.0 MP, Aperture (Camera 2): ƒ/2.4, Pixel size (Camera 2): 1.75 µm", 28, 131); // Camera 2
-        seedDataVariantAtribute("1080p@60fps, 1080p@30fps, 720p@30fps", 30, 131); // Quay phim camera sau
-        seedDataVariantAtribute("32.0 MP", 33, 131); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("ƒ/2.2", 34, 131); // Aperture (Camera Selfie)
-        seedDataVariantAtribute("720p@30fps, 1080p@30fps", 30, 131); // Quay phim camera selfie
-        seedDataVariantAtribute("Làm đẹp (Beautify), Xóa phông", 35, 131); // Tính năng camera selfie
-        seedDataVariantAtribute("Mở khoá vân tay cạnh viền", 37, 131); // Bảo mật
-        seedDataVariantAtribute("Type C", 41, 131); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 7", 42, 131); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 131); // Bluetooth
-        seedDataVariantAtribute("Bluetooth", 43, 131); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 131); // Loại PIN
-        seedDataVariantAtribute("10000 mAh", 48, 131); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 131); // OS
-        seedDataVariantAtribute("Android 14", 50, 131); // Version
-
-        // Xiaomi Pad 6 WiFi 8GB 256GB
-        seedDataVariant("Xiaomi Pad 6 WiFi 8GB 256GB", 9299019.0, 8, 36);
-        seedDataVariantAtribute("256GB", 24, 132); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 132); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Trung Quốc", 1, 132); // Xuất xứ
-        seedDataVariantAtribute("08/2023", 2, 132); // Thời điểm ra mắt
-        seedDataVariantAtribute("18", 4, 132); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 132); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("253.95 x 165.18 x 6.51 mm", 5, 132); // Kích thước
-        seedDataVariantAtribute("490 g", 6, 132); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Khung máy: Kim loại", 7, 132); // Chất liệu
-        seedDataVariantAtribute("Snapdragon 870", 9, 132); // CPU Model
-        seedDataVariantAtribute("8", 11, 132); // Số nhân
-        seedDataVariantAtribute("3.20 GHz", 12, 132); // Tốc độ tối đa
-        seedDataVariantAtribute("8 GB", 79, 132); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 132); // Loại RAM
-        seedDataVariantAtribute("11.0 inch", 14, 132); // Kích thước màn hình
-        seedDataVariantAtribute("IPS LCD", 15, 132); // Công nghệ màn hình
-        seedDataVariantAtribute("2880 x 1800 Pixels", 17, 132); // Độ phân giải
-        seedDataVariantAtribute("WQHD+", 16, 132); // Chuẩn màn hình
-        seedDataVariantAtribute("144 Hz", 23, 132); // Tần số quét
-        seedDataVariantAtribute("Adreno 650", 24, 132); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Không", 83, 132); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("Single rear camera", 27, 132); // Số camera sau
-        seedDataVariantAtribute("Standard", 27, 132); // Camera
-        seedDataVariantAtribute("13.0 MP", 28, 132); // Resolution (Camera)
-        seedDataVariantAtribute("ƒ/1.9", 29, 132); // Aperture (Camera)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 132); // Quay phim camera sau
-        seedDataVariantAtribute("8.0 MP", 33, 132); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("ƒ/2.1", 34, 132); // Aperture (Camera Selfie)
-        seedDataVariantAtribute("Quay phim HD, Quay phim FullHD", 30, 132); // Quay phim camera selfie
-        seedDataVariantAtribute("Bộ lọc màu, HDR, Tự động lấy nét (AF)", 35, 132); // Tính năng camera selfie
-        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Jack 3.5 mm", 41, 132); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 a/b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz), Wifi 6", 42, 132); // Wifi
-        seedDataVariantAtribute("v5.2", 44, 132); // Bluetooth
-        seedDataVariantAtribute("OTG", 43, 132); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 132); // Loại PIN
-        seedDataVariantAtribute("8840 mAh", 48, 132); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 132); // OS
-        seedDataVariantAtribute("Android 13.0", 50, 132); // Version
-        seedDataVariantAtribute("Sách HDSD, Cáp USB-A to USB-C, Sạc", 57, 132); // Phụ kiện trong hộp
-
-        // màu đen
-        seedDataVariant("Xiaomi Pad 6 WiFi 8GB 256GB", 9299020.0, 8, 36);
-        seedDataVariantAtribute("256GB", 24, 133); // Dung lượng
-        seedDataVariantAtribute("Đen", 3, 133); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Trung Quốc", 1, 133); // Xuất xứ
-        seedDataVariantAtribute("08/2023", 2, 133); // Thời điểm ra mắt
-        seedDataVariantAtribute("18", 4, 133); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 133); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("253.95 x 165.18 x 6.51 mm", 5, 133); // Kích thước
-        seedDataVariantAtribute("490 g", 6, 133); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Khung máy: Kim loại", 7, 133); // Chất liệu
-        seedDataVariantAtribute("Snapdragon 870", 9, 133); // CPU Model
-        seedDataVariantAtribute("8", 11, 133); // Số nhân
-        seedDataVariantAtribute("3.20 GHz", 12, 133); // Tốc độ tối đa
-        seedDataVariantAtribute("8 GB", 79, 133); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 133); // Loại RAM
-        seedDataVariantAtribute("11.0 inch", 14, 133); // Kích thước màn hình
-        seedDataVariantAtribute("IPS LCD", 15, 133); // Công nghệ màn hình
-        seedDataVariantAtribute("2880 x 1800 Pixels", 17, 133); // Độ phân giải
-        seedDataVariantAtribute("WQHD+", 16, 133); // Chuẩn màn hình
-        seedDataVariantAtribute("144 Hz", 23, 133); // Tần số quét
-        seedDataVariantAtribute("Adreno 650", 24, 133); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Không", 83, 133); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("Single rear camera", 27, 133); // Số camera sau
-        seedDataVariantAtribute("Standard", 27, 133); // Camera
-        seedDataVariantAtribute("13.0 MP", 28, 133); // Resolution (Camera)
-        seedDataVariantAtribute("ƒ/1.9", 29, 133); // Aperture (Camera)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 133); // Quay phim camera sau
-        seedDataVariantAtribute("8.0 MP", 33, 133); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("ƒ/2.1", 34, 133); // Aperture (Camera Selfie)
-        seedDataVariantAtribute("Quay phim HD, Quay phim FullHD", 30, 133); // Quay phim camera selfie
-        seedDataVariantAtribute("Bộ lọc màu, HDR, Tự động lấy nét (AF)", 35, 133); // Tính năng camera selfie
-        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Jack 3.5 mm", 41, 133); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 a/b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz), Wifi 6", 42, 133); // Wifi
-        seedDataVariantAtribute("v5.2", 44, 133); // Bluetooth
-        seedDataVariantAtribute("OTG", 43, 133); // Kết nối khác
-        seedDataVariantAtribute("Lithium polymer", 47, 133); // Loại PIN
-        seedDataVariantAtribute("8840 mAh", 48, 133); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 133); // OS
-        seedDataVariantAtribute("Android 13.0", 50, 133); // Version
-        seedDataVariantAtribute("Sách HDSD, Cáp USB-A to USB-C, Sạc", 57, 133); // Phụ kiện trong hộp
-
-        //Xiaomi Redmi Pad Pro WiFi 8GB 128GB
-        seedDataProduct("Xiaomi Redmi Pad", "Ipad", 0.571, 13, 3, 3, "");
-
-        seedDataVariant("Xiaomi Redmi Pad Pro WiFi 8GB 128GB", 9299021.0, 8, 37);
-        seedDataVariantAtribute("128GB", 24, 134); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 134); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Trung Quốc", 1, 134); // Xuất xứ
-        seedDataVariantAtribute("06/2024", 2, 134); // Thời điểm ra mắt
-        seedDataVariantAtribute("18", 4, 134); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("280 x 181.85 x 7.52 mm", 5, 134); // Kích thước
-        seedDataVariantAtribute("571 g", 6, 134); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("83.60%", 13, 134); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Khung máy: Kim loại", 7, 134); // Chất liệu
-        seedDataVariantAtribute("Snapdragon 7s Gen 2", 9, 134); // CPU Model
-        seedDataVariantAtribute("Octa-Core", 10, 134); // Loại CPU
-        seedDataVariantAtribute("8", 11, 134); // Số nhân
-        seedDataVariantAtribute("2.4 GHz", 12, 134); // Tốc độ tối đa
-        seedDataVariantAtribute("8 GB", 79, 134); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 134); // Loại RAM
-        seedDataVariantAtribute("12.1 inch", 14, 134); // Kích thước màn hình
-        seedDataVariantAtribute("LCD", 15, 134); // Công nghệ màn hình
-        seedDataVariantAtribute("1600 x 2560 Pixels", 17, 134); // Độ phân giải
-        seedDataVariantAtribute("2.5K", 16, 134); // Chuẩn màn hình
-        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 134); // Màu màn hình
-        seedDataVariantAtribute("Gorilla Glass 3", 62, 134); // Chất liệu mặt kính
-        seedDataVariantAtribute("249PPI", 22, 134); // Mật độ điểm ảnh
-        seedDataVariantAtribute("120", 23, 134); // Tần số quét
-        seedDataVariantAtribute("600 nits", 20, 134); // Độ sáng
-        seedDataVariantAtribute("16:10", 26, 134); // Tỷ lệ màn hình
-        seedDataVariantAtribute("1500:1", 21, 134); // Độ tương phản
-        seedDataVariantAtribute("Qualcomm Adreno", 24, 134); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Khoảng 105 GB", 85, 134); // Bộ nhớ còn lại
-        seedDataVariantAtribute("MicroSD", 83, 134); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("1.5 TB", 84, 134); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Single rear camera", 27, 134); // Số camera sau
-        seedDataVariantAtribute("Standard", 27, 134); // Camera
-        seedDataVariantAtribute("8.0 MP", 28, 134); // Resolution (Camera)
-        seedDataVariantAtribute("ƒ/2.0", 29, 134); // Aperture (Camera)
-        seedDataVariantAtribute("1.12 µm", 85, 134); // Pixel size (Camera)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 134); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 134); // Số Camera Selfie
-        seedDataVariantAtribute("8.0 MP", 33, 134); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("ƒ/2.28", 34, 134); // Aperture (Camera Selfie)
-        seedDataVariantAtribute("1.12 µm", 85, 134); // Pixel size (Camera Selfie)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 134); // Quay phim camera selfie
-        seedDataVariantAtribute("Cảm biến gia tốc, Con quay hồi chuyển, Cảm biến ánh sáng, Cảm biến nhiệt độ, Cảm biến la bàn, Cảm biến từ trường", 36, 134); // Cảm biến
-        seedDataVariantAtribute("Type C", 41, 134); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 a/b/g, Wifi 6, Dual-band (2.4 GHz/ 5 GHz), MIMO, Wi-Fi Direct", 42, 134); // Wifi
-        seedDataVariantAtribute("v5.2", 44, 134); // Bluetooth
-        seedDataVariantAtribute("1 viên Lithium polymer", 47, 134); // Loại PIN
-        seedDataVariantAtribute("10000 mAh", 48, 134); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 134); // OS
-        seedDataVariantAtribute("Android U (Hyper OS)", 50, 134); // Version
-        seedDataVariantAtribute("Sạc, Cáp, Sách HDSD, Que lấy thẻ nhớ", 57, 134); // Phụ kiện trong hộp
-
-
-        // xanh duương
-        seedDataVariant("Xiaomi Redmi Pad Pro WiFi 8GB 128GB", 9299022.0, 8, 37);
-        seedDataVariantAtribute("128GB", 24, 135); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 135); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Trung Quốc", 1, 135); // Xuất xứ
-        seedDataVariantAtribute("06/2024", 2, 135); // Thời điểm ra mắt
-        seedDataVariantAtribute("18", 4, 135); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("280 x 181.85 x 7.52 mm", 5, 135); // Kích thước
-        seedDataVariantAtribute("571 g", 6, 135); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("83.60%", 13, 135); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Khung máy: Kim loại", 7, 135); // Chất liệu
-        seedDataVariantAtribute("Snapdragon 7s Gen 2", 9, 135); // CPU Model
-        seedDataVariantAtribute("Octa-Core", 10, 135); // Loại CPU
-        seedDataVariantAtribute("8", 11, 135); // Số nhân
-        seedDataVariantAtribute("2.4 GHz", 12, 135); // Tốc độ tối đa
-        seedDataVariantAtribute("8 GB", 79, 135); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 135); // Loại RAM
-        seedDataVariantAtribute("12.1 inch", 14, 135); // Kích thước màn hình
-        seedDataVariantAtribute("LCD", 15, 135); // Công nghệ màn hình
-        seedDataVariantAtribute("1600 x 2560 Pixels", 17, 135); // Độ phân giải
-        seedDataVariantAtribute("2.5K", 16, 135); // Chuẩn màn hình
-        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 135); // Màu màn hình
-        seedDataVariantAtribute("Gorilla Glass 3", 62, 135); // Chất liệu mặt kính
-        seedDataVariantAtribute("249PPI", 22, 135); // Mật độ điểm ảnh
-        seedDataVariantAtribute("120", 23, 135); // Tần số quét
-        seedDataVariantAtribute("600 nits", 20, 135); // Độ sáng
-        seedDataVariantAtribute("16:10", 26, 135); // Tỷ lệ màn hình
-        seedDataVariantAtribute("1500:1", 21, 135); // Độ tương phản
-        seedDataVariantAtribute("Qualcomm Adreno", 24, 135); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Khoảng 105 GB", 85, 135); // Bộ nhớ còn lại
-        seedDataVariantAtribute("MicroSD", 83, 135); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("1.5 TB", 84, 135); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Single rear camera", 27, 135); // Số camera sau
-        seedDataVariantAtribute("Standard", 27, 135); // Camera
-        seedDataVariantAtribute("8.0 MP", 28, 135); // Resolution (Camera)
-        seedDataVariantAtribute("ƒ/2.0", 29, 135); // Aperture (Camera)
-        seedDataVariantAtribute("1.12 µm", 85, 135); // Pixel size (Camera)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 135); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 135); // Số Camera Selfie
-        seedDataVariantAtribute("8.0 MP", 33, 135); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("ƒ/2.28", 34, 135); // Aperture (Camera Selfie)
-        seedDataVariantAtribute("1.12 µm", 85, 135); // Pixel size (Camera Selfie)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 135); // Quay phim camera selfie
-        seedDataVariantAtribute("Cảm biến gia tốc, Con quay hồi chuyển, Cảm biến ánh sáng, Cảm biến nhiệt độ, Cảm biến la bàn, Cảm biến từ trường", 36, 135); // Cảm biến
-        seedDataVariantAtribute("Type C", 41, 135); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 a/b/g, Wifi 6, Dual-band (2.4 GHz/ 5 GHz), MIMO, Wi-Fi Direct", 42, 135); // Wifi
-        seedDataVariantAtribute("v5.2", 44, 135); // Bluetooth
-        seedDataVariantAtribute("1 viên Lithium polymer", 47, 135); // Loại PIN
-        seedDataVariantAtribute("10000 mAh", 48, 135); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 135); // OS
-        seedDataVariantAtribute("Android U (Hyper OS)", 50, 135); // Version
-        seedDataVariantAtribute("Sạc, Cáp, Sách HDSD, Que lấy thẻ nhớ", 57, 135); // Phụ kiện trong hộp
-
-
-        // Xiaomi Poco Pad WiFi 8GB 256GB
-        seedDataVariant("Xiaomi Poco Pad WiFi 8GB 256GB", 7299021.0, 8, 37);
-        seedDataVariantAtribute("256GB", 24, 136); // Dung lượng
-        seedDataVariantAtribute("Xám", 3, 136); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("Trung Quốc", 1, 136); // Xuất xứ
-        seedDataVariantAtribute("06/2024", 2, 136); // Thời điểm ra mắt
-        seedDataVariantAtribute("18", 4, 136); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("280 x 181.85 x 7.52 mm", 5, 136); // Kích thước
-        seedDataVariantAtribute("571 g", 6, 136); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("83.60%", 13, 136); // Tỷ lệ diện tích sử dụng màn hình
-        seedDataVariantAtribute("Khung máy: Kim loại", 7, 136); // Chất liệu
-        seedDataVariantAtribute("Snapdragon 7s Gen 2", 9, 136); // CPU Model
-        seedDataVariantAtribute("Octa-Core", 10, 136); // Loại CPU
-        seedDataVariantAtribute("8", 11, 136); // Số nhân
-        seedDataVariantAtribute("2.4 GHz", 12, 136); // Tốc độ tối đa
-        seedDataVariantAtribute("8 GB", 79, 136); // Dung lượng RAM
-        seedDataVariantAtribute("LPDDR4X", 66, 136); // Loại RAM
-        seedDataVariantAtribute("12.1 inch", 14, 136); // Kích thước màn hình
-        seedDataVariantAtribute("LCD", 15, 136); // Công nghệ màn hình
-        seedDataVariantAtribute("1600 x 2560 Pixels", 17, 136); // Độ phân giải
-        seedDataVariantAtribute("2.5K", 16, 136); // Chuẩn màn hình
-        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 136); // Màu màn hình
-        seedDataVariantAtribute("Gorilla Glass 3", 62, 136); // Chất liệu mặt kính
-        seedDataVariantAtribute("249PPI", 22, 136); // Mật độ điểm ảnh
-        seedDataVariantAtribute("120", 23, 136); // Tần số quét
-        seedDataVariantAtribute("600 nits", 20, 136); // Độ sáng
-        seedDataVariantAtribute("16:10", 26, 136); // Tỷ lệ màn hình
-        seedDataVariantAtribute("1500:1", 21, 136); // Độ tương phản
-        seedDataVariantAtribute("Qualcomm Adreno", 24, 136); // Chip đồ hoạ (GPU)
-        seedDataVariantAtribute("Khoảng 230 GB", 85, 136); // Bộ nhớ còn lại
-        seedDataVariantAtribute("MicroSD", 83, 136); // Thẻ nhớ ngoài
-        seedDataVariantAtribute("1.5 TB", 84, 136); // Hỗ trợ thẻ nhớ tối đa
-        seedDataVariantAtribute("Single rear camera", 27, 136); // Số camera sau
-        seedDataVariantAtribute("Standard", 27, 136); // Camera
-        seedDataVariantAtribute("8.0 MP", 28, 136); // Resolution (Camera)
-        seedDataVariantAtribute("ƒ/2.0", 29, 136); // Aperture (Camera)
-        seedDataVariantAtribute("1.12 µm", 85, 136); // Pixel size (Camera)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 136); // Quay phim camera sau
-        seedDataVariantAtribute("Single selfie camera", 32, 136); // Số Camera Selfie
-        seedDataVariantAtribute("8.0 MP", 33, 136); // Resolution (Camera Selfie)
-        seedDataVariantAtribute("ƒ/2.28", 34, 136); // Aperture (Camera Selfie)
-        seedDataVariantAtribute("1.12 µm", 85, 136); // Pixel size (Camera Selfie)
-        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 136); // Quay phim camera selfie
-        seedDataVariantAtribute("Cảm biến gia tốc, Con quay hồi chuyển, Cảm biến ánh sáng, Cảm biến nhiệt độ, Cảm biến la bàn, Cảm biến từ trường", 36, 136); // Cảm biến
-        seedDataVariantAtribute("Type C", 41, 136); // Cổng giao tiếp
-        seedDataVariantAtribute("802.11 a/b/g, Wifi 6, Dual-band (2.4 GHz/ 5 GHz), MIMO, Wi-Fi Direct", 42, 136); // Wifi
-        seedDataVariantAtribute("v5.2", 44, 136); // Bluetooth
-        seedDataVariantAtribute("1 viên Lithium polymer", 47, 136); // Loại PIN
-        seedDataVariantAtribute("10000 mAh", 48, 136); // Dung lượng pin
-        seedDataVariantAtribute("Android", 49, 136); // OS
-        seedDataVariantAtribute("Android U (Hyper OS)", 50, 136); // Version
-        seedDataVariantAtribute("Sạc, Cáp, Sách HDSD, Que lấy thẻ nhớ", 57, 136); // Phụ kiện trong hộp
-
-
-        // Tai nghe AirPods Pro 2022
-        seedDataProduct("Tai nghe AirPods", "Apple", 0.571, 14, 8, 3, "");
-
-
-        seedDataVariant("Tai nghe AirPods Pro 2022", 5299021.0, 8, 38);
-        seedDataVariantAtribute("AirPods Pro 2", 87, 137); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 137); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 137); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 137); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("Trắng", 3, 137); // Màu sắc
-        seedDataVariantAtribute("50.8 g", 6, 137); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 137); // Loại tai nghe
-        seedDataVariantAtribute("v5.3", 44, 137); // Bluetooth
-        seedDataVariantAtribute("Chống ồn, Sạc không dây", 35, 137); // Tính năng
-        seedDataVariantAtribute("macOS", 49, 137); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Dây cáp sạc", 57, 137); // Phụ kiện đi kèm
-
-        // Tai nghe AirPods 3 2022 Hộp sạc dây
-        seedDataVariant("Tai nghe AirPods Pro 2022", 4099021.0, 8, 38);
-        seedDataVariantAtribute("AirPods 3", 87, 138); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 138); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 138); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 138); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("Trắng", 3, 138); // Màu sắc
-        seedDataVariantAtribute("54.4 x 21.38 x 46.40 mm", 5, 138); // Kích thước
-        seedDataVariantAtribute("37.91 g", 6, 138); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 138); // Loại tai nghe
-        seedDataVariantAtribute("3 - 5 giờ", 48, 138); // Thời gian sử dụng/1 lần sạc
-        seedDataVariantAtribute("6 Giờ", 47, 138); // Dung lượng pin
-        seedDataVariantAtribute("v5.0", 44, 138); // Bluetooth
-        seedDataVariantAtribute("Cổng sạc: Lightning", 41, 138); // Cổng giao tiếp
-        seedDataVariantAtribute("Nghe nhạc, Chống nước", 35, 138); // Tính năng
-        seedDataVariantAtribute("iOS", 49, 138); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Sách HDSD, Cáp", 57, 138); // Phụ kiện đi kèm
-
-        // Tai nghe AirPods Pro 2023 USB-C
-        seedDataVariant("Tai nghe AirPods Pro 2023 USB-C", 5799021.0, 10, 38);
-        seedDataVariantAtribute("AirPods Pro", 87, 139); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 139); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 139); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Trắng", 3, 139); // Màu sắc
-        seedDataVariantAtribute("Tai nghe không dây", 86, 139); // Loại tai nghe
-        seedDataVariantAtribute("Chống ồn, Sạc không dây", 35, 139); // Tính năng
-        seedDataVariantAtribute("Dây cáp sạc", 57, 139); // Phụ kiện đi kèm
-
-        // Tai nghe AirPods 4 - Chủ Động Khử Tiếng Ồn
-        seedDataVariant("Tai nghe AirPods 4", 4799021.0, 10, 38);
-        seedDataVariantAtribute("AirPods 4", 87, 140); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 140); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 140); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Trắng", 3, 140); // Màu sắc
-        seedDataVariantAtribute("240 g", 6, 140); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 140); // Loại tai nghe
-        seedDataVariantAtribute("5 Giờ", 47, 140); // Dung lượng pin
-        seedDataVariantAtribute("Cổng sạc: USB Type-C", 41, 140); // Cổng giao tiếp
-        seedDataVariantAtribute("Chế độ xuyên âm, Sạc không dây, Chống ồn, Nghe nhạc, Kháng nước IP54", 35, 140); // Tính năng
-        seedDataVariantAtribute("Sách HDSD, Hộp sạc không dây", 57, 140); // Phụ kiện đi kèm
-
-        // Tai nghe Apple EarPods 2023 USB-C
-        seedDataProduct("Tai nghe Apple EarPods USB-C", "Apple", 0.031, 14, 8, 3, "");
-
-        seedDataVariant("Tai nghe Apple EarPods USB-C", 599000.0, 10, 39);
-        seedDataVariantAtribute("EarPods (USB-C)", 87, 141); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 141); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 141); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 141); // Hướng dẫn sử dụng
-        seedDataVariantAtribute("Trắng", 3, 141); // Màu sắc
-        seedDataVariantAtribute("31 g", 6, 141); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe nhét tai", 86, 141); // Loại tai nghe
-        seedDataVariantAtribute("Điều khiển cuộc gọi, Điều khiển nhạc, Chống ồn", 45, 141); // Tính năng
-
-        // Tai nghe Beats Studio Buds
-        seedDataProduct("Tai nghe Beats Studio Buds", "Apple", 0.058, 14, 8, 3, "");
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 3199001.0, 10, 40);
-        seedDataVariantAtribute("Beats Studio Buds", 87, 142); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 142); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 142); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 142); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("Hồng", 3, 142); // Màu sắc
-        seedDataVariantAtribute("58 g", 6, 142); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 142); // Loại tai nghe
-        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 142); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 142); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 142); // Phụ kiện đi kèm
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 3199000.0, 10, 40);
-        seedDataVariantAtribute("Beats Studio Buds", 87, 143); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 143); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 143); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 143); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("Đen", 3, 143); // Màu sắc
-        seedDataVariantAtribute("58 g", 6, 143); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 143); // Loại tai nghe
-        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 143); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 143); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 143); // Phụ kiện đi kèm
-
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 3199003.0, 10, 40);
-        seedDataVariantAtribute("Beats Studio Buds", 87, 144); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 144); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 144); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 144); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("Xanh", 3, 144); // Màu sắc
-        seedDataVariantAtribute("58 g", 6, 144); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 144); // Loại tai nghe
-        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 144); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 144); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 144); // Phụ kiện đi kèm
-
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 3199005.0, 10, 40);
-        seedDataVariantAtribute("Beats Studio Buds", 87, 145); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 145); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 145); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 145); // Hướng dẫn bảo quản và sử dụng
-        seedDataVariantAtribute("Đỏ", 3, 145); // Màu sắc
-        seedDataVariantAtribute("58 g", 6, 145); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 145); // Loại tai nghe
-        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 145); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 145); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 145); // Phụ kiện đi kèm
-
-        // Tai nghe AirPods Max
-        seedDataProduct("Tai nghe AirPods Max", "Apple", 0.1, 14, 8, 3, "");
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 12199005.0, 10, 41);
-        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 146); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 146); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 146); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Xanh lá", 3, 146); // Màu sắc
-        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 146); // Kích thước
-        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 146); // Chất liệu
-        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 146); // Loại tai nghe
-        seedDataVariantAtribute("20 Giờ", 47, 146); // Dung lượng pin
-        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 146); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 146); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 146); // Phụ kiện đi kèm
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 12199006.0, 10, 41);
-        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 147); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 147); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 147); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Trắng", 3, 147); // Màu sắc
-        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 147); // Kích thước
-        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 147); // Chất liệu
-        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 147); // Loại tai nghe
-        seedDataVariantAtribute("20 Giờ", 47, 147); // Dung lượng pin
-        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 147); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 147); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 147); // Phụ kiện đi kèm
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 12199055.0, 10, 41);
-        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 148); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 148); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 148); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Hồng", 3, 148); // Màu sắc
-        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 148); // Kích thước
-        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 148); // Chất liệu
-        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 148); // Loại tai nghe
-        seedDataVariantAtribute("20 Giờ", 47, 148); // Dung lượng pin
-        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 148); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 148); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 148); // Phụ kiện đi kèm
-
-
-        seedDataVariant("Tai nghe Beats Studio Buds", 12199045.0, 10, 41);
-        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 149); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 149); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 149); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Xám", 3, 149); // Màu sắc
-        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 149); // Kích thước
-        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 149); // Chất liệu
-        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 149); // Loại tai nghe
-        seedDataVariantAtribute("20 Giờ", 47, 149); // Dung lượng pin
-        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 149); // Tính năng
-        seedDataVariantAtribute("TVOS", 49, 149); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 149); // Phụ kiện đi kèm
-
-        // Tai nghe Beats Fit Pro True Wireless Earbuds
-
-        seedDataProduct("Tai nghe Beats Fit Pro True Wireless Earbuds", "Apple", 0.005, 14, 8, 3, "");
-
-        seedDataVariant("Tai nghe Beats Fit Pro True Wireless Earbuds", 4199005.0, 10, 41);
-        seedDataVariantAtribute("Beats Fit Pro True Wireless Earbuds", 87, 150); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 150); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 150); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Đen", 3, 150); // Màu sắc
-        seedDataVariantAtribute("190 g", 6, 150); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Tai nghe nhét tai, Tai nghe không dây : Bluetooth", 86, 150); // Loại tai nghe
-        seedDataVariantAtribute("6 giờ", 48, 150); // Thời gian sử dụng/1 lần sạc
-        seedDataVariantAtribute("Điện thoại", 11, 150); // Sử dụng cho thiết bị
-        seedDataVariantAtribute("v5.0", 44, 150); // Bluetooth
-        seedDataVariantAtribute("Chống ồn, Nghe nhạc", 35, 150); // Tính năng
-        seedDataVariantAtribute("Sách HDSD", 48, 150); // Phụ kiện đi kèm
+//        // Ipad
+//        // iPad Air 11 inch M2 2024
+//        seedDataProduct("iPad Air", "Ipad", 0.462, 13, 3, 3, "");
+//
+//        //iPad Air 11 inch M2 2024 Wifi 128GB
+//        // màu tím
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 128GB", 22999000.0, 8, 32);
+//
+//        seedDataVariantAtribute("Tím", 3, 95); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("128 GB", 24, 95); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 95); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 95); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 95); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 95); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 95); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 95); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 95); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 95); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 95); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 95); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 95); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 95); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 95); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 95); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 95); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 95); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 95); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 95); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 95); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 95); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 95); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 95); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 95); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 95); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 95); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 95); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 95); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 95); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 95); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 95); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 95); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 95); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 95); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 95); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 95); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 95); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 95); // Phụ kiện trong hộp
+//
+//        // màu đen
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 128GB", 22999990.0, 8, 32);
+//
+//        seedDataVariantAtribute("Đen", 3, 96); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("128 GB", 24, 96); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 96); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 96); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 96); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 96); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 96); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 96); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 96); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 96); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 96); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 96); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 96); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 96); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 96); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 96); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 96); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 96); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 96); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 96); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 96); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 96); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 96); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 96); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 96); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 96); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 96); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 96); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 96); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 96); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 96); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 96); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 96); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 96); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 96); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 96); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 96); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 96); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 96); // Phụ kiện trong hộp
+//
+//
+//        // màu trắng
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 128GB", 22999001.0, 8, 32);
+//        seedDataVariantAtribute("Trắng", 3, 97); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("128 GB", 24, 97); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 97); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 97); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 97); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 97); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 97); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 97); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 97); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 97); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 97); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 97); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 97); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 97); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 97); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 97); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 97); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 97); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 97); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 97); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 97); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 97); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 97); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 97); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 97); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 97); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 97); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 97); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 97); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 97); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 97); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 97); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 97); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 97); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 97); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 97); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 97); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 97); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 97); // Phụ kiện trong hộp
+//
+//        //
+//        // màu tím
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 512GB", 26999002.0, 8, 32);
+//
+//        seedDataVariantAtribute("Tím", 3, 98); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 98); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 98); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 98); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 98); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 98); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 98); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 98); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 98); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 98); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 98); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 98); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 98); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 98); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 98); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 98); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 98); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 98); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 98); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 98); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 98); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 98); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 98); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 98); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 98); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 98); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 98); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 98); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 98); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 98); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 98); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 98); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 98); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 98); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 98); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 98); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 98); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 98); // Phụ kiện trong hộp
+//
+//        // màu đen
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 512GB", 26999993.0, 8, 32);
+//
+//        seedDataVariantAtribute("Đen", 3, 99); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("512 GB", 24, 99); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 99); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 99); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 99); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 99); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 99); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 99); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 99); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 99); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 99); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 99); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 99); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 99); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 99); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 99); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 99); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 98); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 99); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 99); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 99); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 99); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 99); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 99); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 99); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 99); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 99); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 99); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 99); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 99); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 99); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 99); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 99); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 99); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 99); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 99); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 99); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 99); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 99); // Phụ kiện trong hộp
+//
+//
+//        // màu trắng
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 512GB", 26999004.0, 8, 32);
+//        seedDataVariantAtribute("Trắng", 3, 100); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("512 GB", 24, 100); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 100); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 100); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 100); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 100); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 100); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 100); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 100); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 100); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 100); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 100); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 100); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 100); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 100); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 100); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 100); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 100); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 100); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 100); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 100); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 100); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 100); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 100); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 100); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 100); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 100); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 100); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 100); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 100); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 100); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 100); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 100); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 100); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 100); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 100); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 100); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 100); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 100); // Phụ kiện trong hộp
+//
+//        // màu tím
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 1TB", 28999002.0, 8, 32);
+//
+//        seedDataVariantAtribute("Tím", 3, 101); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("1TB", 24, 101); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 101); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 101); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 101); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 101); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 101); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 101); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 101); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 101); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 101); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 101); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 101); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 101); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 101); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 101); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 101); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 101); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 101); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 101); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 101); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 101); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 101); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 101); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 101); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 101); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 101); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 101); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 101); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 101); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 101); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 101); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 101); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 101); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 101); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 101); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 101); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 101); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 101); // Phụ kiện trong hộp
+//
+//        // màu đen
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 1TB", 28999993.0, 8, 32);
+//
+//        seedDataVariantAtribute("Đen", 3, 102); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("1TB", 24, 102); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 102); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 102); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 102); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 102); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 102); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 102); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 102); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 102); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 102); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 102); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 102); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 102); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 102); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 102); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 102); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 102); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 102); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 102); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 102); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 102); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 102); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 102); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 102); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 102); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 102); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 102); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 102); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 102); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 102); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 102); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 102); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 102); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 102); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 102); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 102); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 102); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 102); // Phụ kiện trong hộp
+//
+//        // màu trắng
+//        seedDataVariant("iPad Air 11 inch M2 2024 Wifi 1TB", 28999004.0, 8, 32);
+//        seedDataVariantAtribute("Trắng", 3, 103); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("1TB", 24, 103); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 103); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 103); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 103); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 103); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("247.6 x 178.5 x 6.1 mm", 5, 103); // Kích thước
+//        seedDataVariantAtribute("462 g", 6, 103); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 103); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 103); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 103); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 103); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 103); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 103); // Kích thước màn hình
+//        seedDataVariantAtribute("Liquid Retina", 15, 103); // Công nghệ màn hình
+//        seedDataVariantAtribute("2360 x 1640 Pixels", 17, 103); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 103); // Chuẩn màn hình
+//        seedDataVariantAtribute("500 nits", 20, 103); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 103); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Ultra Wide", 27, 103); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 103); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 103); // Aperture (Camera 1)
+//        seedDataVariantAtribute("FullHD 1080p@120fps, FullHD 1080p@30fps, FullHD 1080p@240fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps, 4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@25fps, FullHD 1080p@60fps", 30, 103); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 103); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 103); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 103); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 103); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 103); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 103); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 103); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 103); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 103); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 103); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 103); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 103); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 103); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 103); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 103); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 103); // Phụ kiện trong hộp
+//
+//        // màu trắng
+//        // iPad Air 13 inch M2 2024 Wifi 128GB
+//
+//        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 128GB", 22999005.0, 8, 32);
+//        seedDataVariantAtribute("Trắng", 3, 104); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("1TB", 24, 104); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 104); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 104); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 104); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 104); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 104); // Kích thước
+//        seedDataVariantAtribute("617 g", 6, 104); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 104); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 104); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 104); // Loại CPU
+//        seedDataVariantAtribute("Apple M2 8 nhân", 10, 104); // CPU
+//        seedDataVariantAtribute("8", 11, 104); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 104); // Dung lượng RAM
+//        seedDataVariantAtribute("13 inch", 14, 104); // Kích thước màn hình
+//        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 104); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 104); // Chuẩn màn hình
+//        seedDataVariantAtribute("600 nits", 20, 104); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 104); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Single rear camera", 27, 104); // Số camera sau
+//        seedDataVariantAtribute("Ultra Wide", 27, 104); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 104); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/2.4", 29, 104); // Aperture (Camera 1)
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 104); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 104); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 104); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 104); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 104); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 104); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 104); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 104); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 104); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 104); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 104); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 104); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 104); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 104); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 104); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 104); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 104); // Phụ kiện trong hộp
+//
+//        // màu xám
+//        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 128GB", 22999006.0, 8, 32);
+//        seedDataVariantAtribute("Xám", 3, 105); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 105); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 105); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 105); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 105); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 105); // Kích thước
+//        seedDataVariantAtribute("617 g", 6, 105); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 105); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 105); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 105); // Loại CPU
+//        seedDataVariantAtribute("Apple M2 8 nhân", 10, 105); // CPU
+//        seedDataVariantAtribute("8", 11, 105); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 105); // Dung lượng RAM
+//        seedDataVariantAtribute("13 inch", 14, 105); // Kích thước màn hình
+//        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 105); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 105); // Chuẩn màn hình
+//        seedDataVariantAtribute("600 nits", 20, 105); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 105); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Single rear camera", 27, 105); // Số camera sau
+//        seedDataVariantAtribute("Ultra Wide", 27, 105); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 105); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/2.4", 29, 105); // Aperture (Camera 1)
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 105); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 105); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 105); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 105); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 105); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 105); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 105); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 105); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 105); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 105); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 105); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 105); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 105); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 105); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 105); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 105); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 105); // Phụ kiện trong hộp
+//
+//        // màu trắng
+//        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 512GB", 26999007.0, 8, 32);
+//        seedDataVariantAtribute("Trắng", 3, 106); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 106); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 106); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 106); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 106); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 106); // Kích thước
+//        seedDataVariantAtribute("617 g", 6, 106); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 106); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 106); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 106); // Loại CPU
+//        seedDataVariantAtribute("Apple M2 8 nhân", 10, 106); // CPU
+//        seedDataVariantAtribute("8", 11, 106); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 106); // Dung lượng RAM
+//        seedDataVariantAtribute("13 inch", 14, 106); // Kích thước màn hình
+//        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 106); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 106); // Chuẩn màn hình
+//        seedDataVariantAtribute("600 nits", 20, 106); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 106); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Single rear camera", 27, 106); // Số camera sau
+//        seedDataVariantAtribute("Ultra Wide", 27, 106); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 106); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/2.4", 29, 106); // Aperture (Camera 1)
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 106); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 106); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 106); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 106); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 106); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 106); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 106); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 106); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 106); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 106); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 106); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 106); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 106); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 106); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 106); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 106); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 106); // Phụ kiện trong hộp
+//
+//        // màu xám
+//        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 512GB", 26999008.0, 8, 32);
+//        seedDataVariantAtribute("Xám", 3, 107); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 107); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 107); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 107); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 107); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 107); // Kích thước
+//        seedDataVariantAtribute("617 g", 6, 107); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 107); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 107); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 107); // Loại CPU
+//        seedDataVariantAtribute("Apple M2 8 nhân", 10, 107); // CPU
+//        seedDataVariantAtribute("8", 11, 107); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 107); // Dung lượng RAM
+//        seedDataVariantAtribute("13 inch", 14, 107); // Kích thước màn hình
+//        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 107); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 107); // Chuẩn màn hình
+//        seedDataVariantAtribute("600 nits", 20, 107); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 107); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Single rear camera", 27, 107); // Số camera sau
+//        seedDataVariantAtribute("Ultra Wide", 27, 107); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 107); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/2.4", 29, 107); // Aperture (Camera 1)
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 107); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 107); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 107); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 107); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 107); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 107); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 107); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 107); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 107); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 107); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 107); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 107); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 107); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 107); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 107); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 107); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 107); // Phụ kiện trong hộp
+//
+//        // màu trắng
+//        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 1TB", 28999009.0, 8, 32);
+//        seedDataVariantAtribute("Trắng", 3, 108); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 108); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 108); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 108); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 108); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 108); // Kích thước
+//        seedDataVariantAtribute("617 g", 6, 108); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 108); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 108); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 108); // Loại CPU
+//        seedDataVariantAtribute("Apple M2 8 nhân", 10, 108); // CPU
+//        seedDataVariantAtribute("8", 11, 108); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 108); // Dung lượng RAM
+//        seedDataVariantAtribute("13 inch", 14, 108); // Kích thước màn hình
+//        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 108); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 108); // Chuẩn màn hình
+//        seedDataVariantAtribute("600 nits", 20, 108); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 108); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Single rear camera", 27, 108); // Số camera sau
+//        seedDataVariantAtribute("Ultra Wide", 27, 108); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 108); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/2.4", 29, 108); // Aperture (Camera 1)
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 108); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 108); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 108); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 108); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 108); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 108); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 108); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 108); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 108); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 108); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 108); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 108); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 108); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 108); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 108); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 108); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 108); // Phụ kiện trong hộp
+//
+//        // màu xám
+//        seedDataVariant("iPad Air 13 inch M2 2024 Wifi 1TB", 28999010.0, 8, 32);
+//        seedDataVariantAtribute("Xám", 3, 109); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 109); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 109); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 109); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 109); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("280.6 x 214.9 x 6.1 mm", 5, 109); // Kích thước
+//        seedDataVariantAtribute("617 g", 6, 109); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 109); // Chất liệu
+//        seedDataVariantAtribute("Apple M2", 9, 109); // CPU Model
+//        seedDataVariantAtribute("8 - Core", 10, 109); // Loại CPU
+//        seedDataVariantAtribute("Apple M2 8 nhân", 10, 109); // CPU
+//        seedDataVariantAtribute("8", 11, 109); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 109); // Dung lượng RAM
+//        seedDataVariantAtribute("13 inch", 14, 109); // Kích thước màn hình
+//        seedDataVariantAtribute("2732 x 2048 Pixels", 17, 109); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina", 16, 109); // Chuẩn màn hình
+//        seedDataVariantAtribute("600 nits", 20, 109); // Độ sáng
+//        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 109); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Single rear camera", 27, 109); // Số camera sau
+//        seedDataVariantAtribute("Ultra Wide", 27, 109); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 109); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/2.4", 29, 109); // Aperture (Camera 1)
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, FullHD 1080p@240fps, FullHD 1080p@120fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 109); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 109); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 109); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("ƒ/2.4", 34, 109); // Aperture (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 109); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 109); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 109); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 109); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 109); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 109); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 109); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 109); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 109); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 109); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 109); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 109); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 109); // Phụ kiện trong hộp
+//
+//
+//        // iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB
+//        // iPad Air 11 inch M2 2024
+//        seedDataProduct("iPad Pro", "Ipad", 0.466, 13, 3, 3, "");
+//
+//        // màu đen
+//        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB", 33999011.0, 8, 33);
+//
+//        seedDataVariantAtribute("Đen", 3, 110); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 110); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 110); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 110); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 110); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 110); // Kích thước
+//        seedDataVariantAtribute("446 g", 6, 110); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 110); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 110); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 110); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 110); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 110); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 110); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 110); // Công nghệ màn hình
+//        seedDataVariantAtribute("2752 x 2064 pixel", 17, 110); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 110); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 110); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 110); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 110); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 110); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 110); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 110); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 110); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 110); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 110); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 110); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 110); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 110); // Bảo mật
+//        seedDataVariantAtribute("1 eSim", 38, 110); // Thẻ SIM
+//        seedDataVariantAtribute("5G", 39, 110); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 110); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 110); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 110); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 110); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 110); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 110); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 110); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 110); // Phụ kiện trong hộp
+//
+//        // màu xám 256
+//        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB", 33999012.0, 8, 33);
+//        seedDataVariantAtribute("Xám", 3, 111); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("1 TB", 24, 111); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 111); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 111); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 111); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 111); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 111); // Kích thước
+//        seedDataVariantAtribute("446 g", 6, 111); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 111); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 111); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 111); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 111); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 111); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 111); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 111); // Công nghệ màn hình
+//        seedDataVariantAtribute("2752 x 2064 pixel", 17, 111); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 111); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 111); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 111); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 111); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 111); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 111); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 111); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 111); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 111); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 111); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 111); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 111); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 111); // Bảo mật
+//        seedDataVariantAtribute("1 eSim", 38, 111); // Thẻ SIM
+//        seedDataVariantAtribute("5G", 39, 111); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 111); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 111); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 111); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 111); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 111); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 111); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 111); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 111); // Phụ kiện trong hộp
+//
+//        // màu đen
+//        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 512GB", 36999013.0, 8, 33);
+//
+//        seedDataVariantAtribute("Đen", 3, 112); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("512GB", 24, 112); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 112); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 112); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 112); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 112); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 112); // Kích thước
+//        seedDataVariantAtribute("446 g", 6, 112); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 112); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 112); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 112); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 112); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 112); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 112); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 112); // Công nghệ màn hình
+//        seedDataVariantAtribute("2752 x 2064 pixel", 17, 112); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 112); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 112); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 112); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 112); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 112); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 112); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 112); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 112); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 112); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 112); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 112); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 112); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 112); // Bảo mật
+//        seedDataVariantAtribute("1 eSim", 38, 112); // Thẻ SIM
+//        seedDataVariantAtribute("5G", 39, 112); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 112); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 112); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 112); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 112); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 112); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 112); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 112); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 112); // Phụ kiện trong hộp
+//
+//        // màu xám
+//        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 512GB", 36999014.0, 8, 33);
+//        seedDataVariantAtribute("512GB", 24, 113); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 113); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 113); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 113); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 113); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 113); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 113); // Kích thước
+//        seedDataVariantAtribute("446 g", 6, 113); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 113); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 113); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 113); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 113); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 113); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 113); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 113); // Công nghệ màn hình
+//        seedDataVariantAtribute("2752 x 2064 pixel", 17, 113); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 113); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 113); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 113); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 113); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 113); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 113); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 113); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 113); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 113); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 113); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 113); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 113); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 113); // Bảo mật
+//        seedDataVariantAtribute("1 eSim", 38, 113); // Thẻ SIM
+//        seedDataVariantAtribute("5G", 39, 113); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 113); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 113); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 113); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 113); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 113); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 113); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 113); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 113); // Phụ kiện trong hộp
+//
+//        // màu đen
+//        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 1TB", 45999014.0, 8, 33);
+//
+//        seedDataVariantAtribute("Đen", 3, 114); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("1TB", 24, 114); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 114); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 114); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 114); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 114); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 114); // Kích thước
+//        seedDataVariantAtribute("446 g", 6, 114); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 114); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 114); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 114); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 114); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 114); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 114); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 114); // Công nghệ màn hình
+//        seedDataVariantAtribute("2752 x 2064 pixel", 17, 114); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 114); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 114); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 114); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 114); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 114); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 114); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 114); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 114); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 114); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 114); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 114); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 114); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 114); // Bảo mật
+//        seedDataVariantAtribute("1 eSim", 38, 114); // Thẻ SIM
+//        seedDataVariantAtribute("5G", 39, 114); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 114); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 114); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 114); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 114); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 114); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 114); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 114); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 114); // Phụ kiện trong hộp
+//
+//        // màu xám
+//        seedDataVariant("iPad Pro 11 inch M4 2024 Wifi + Cellular 1TB", 45999015.0, 8, 33);
+//        seedDataVariantAtribute("1TB", 24, 115); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 115); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 115); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 115); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 115); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 115); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 115); // Kích thước
+//        seedDataVariantAtribute("446 g", 6, 115); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 115); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 115); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 115); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 115); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 115); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 115); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 115); // Công nghệ màn hình
+//        seedDataVariantAtribute("2752 x 2064 pixel", 17, 115); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 115); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 115); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 115); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 115); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 115); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 115); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 115); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 115); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 115); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 115); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 115); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 115); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 115); // Bảo mật
+//        seedDataVariantAtribute("1 eSim", 38, 115); // Thẻ SIM
+//        seedDataVariantAtribute("5G", 39, 115); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 115); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 115); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 115); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 115); // Loại PIN
+//        seedDataVariantAtribute("28.93 Wh", 48, 115); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 115); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 115); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 115); // Phụ kiện trong hộp
+//
+//        // iPad Pro 11 inch M4 2024 Wifi 256GB
+//        seedDataVariant("iPad Pro 11 inch M4 2024 256GB", 33999016.0, 8, 33);
+//        seedDataVariantAtribute("256GB", 24, 116); // Dung lượng
+//        seedDataVariantAtribute("Đen", 3, 116); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 116); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 116); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 116); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 116); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 116); // Kích thước
+//        seedDataVariantAtribute("444 g", 6, 116); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 116); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 116); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 116); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 116); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 116); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 116); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 116); // Công nghệ màn hình
+//        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 116); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 116); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 116); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 116); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 116); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 116); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 116); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 116); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 116); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 116); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 116); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 116); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 116); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 116); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 116); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 116); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 116); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 116); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 116); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 116); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 116); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 116); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 116); // Phụ kiện trong hộp
+//
+//        seedDataVariant("iPad Pro 11 inch M4 2024 256GB ", 33999017.0, 8, 33);
+//        seedDataVariantAtribute("256GB", 24, 117); // Dung lượng
+//        seedDataVariantAtribute("Bạc", 3, 117); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 117); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 117); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 117); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 117); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 117); // Kích thước
+//        seedDataVariantAtribute("444 g", 6, 117); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 117); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 117); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 117); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 117); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 117); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 117); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 117); // Công nghệ màn hình
+//        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 117); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 117); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 117); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 117); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 117); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 117); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 117); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 117); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 117); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 117); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 117); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 117); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 117); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 117); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 117); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 117); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 117); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 117); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 117); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 117); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 117); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 117); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 117); // Phụ kiện trong hộp
+//
+//        // iPad Pro 11 inch M4 2024 Wifi 512GB
+//        seedDataVariant("iPad Pro 11 inch M4 2024 512GB", 36999018.0, 8, 33);
+//        seedDataVariantAtribute("Đen", 3, 118); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("512GB", 24, 118); // Dung lượng
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 118); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 118); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 118); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 118); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 118); // Kích thước
+//        seedDataVariantAtribute("444 g", 6, 118); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 118); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 118); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 118); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 118); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 118); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 118); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 118); // Công nghệ màn hình
+//        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 118); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 118); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 118); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 118); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 118); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 118); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 118); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 118); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 118); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 118); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 118); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 118); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 118); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 118); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 118); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 118); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 118); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 118); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 118); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 118); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 118); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 118); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 118); // Phụ kiện trong hộp
+//
+//        seedDataVariant("iPad Pro 11 inch M4 2024 512GB ", 36999118.0, 8, 33);
+//        seedDataVariantAtribute("512GB", 24, 119); // Dung lượng
+//        seedDataVariantAtribute("Bạc", 3, 119); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 119); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 119); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 119); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 119); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 119); // Kích thước
+//        seedDataVariantAtribute("444 g", 6, 119); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 119); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 119); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 119); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 119); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 119); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 119); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 119); // Công nghệ màn hình
+//        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 119); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 119); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 119); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 119); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 119); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 119); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 119); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 119); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 119); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 119); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 119); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 119); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 119); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 119); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 119); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 119); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 119); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 119); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 119); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 119); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 119); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 119); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 119); // Phụ kiện trong hộp
+//
+//        // iPad Pro 11 inch M4 2024 Wifi 1TB
+//        seedDataVariant("iPad Pro 11 inch M4 2024 1TB", 36999019.0, 8, 33);
+//        seedDataVariantAtribute("1TB", 24, 120); // Dung lượng
+//        seedDataVariantAtribute("Đen", 3, 120); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 120); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 120); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 120); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 120); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 120); // Kích thước
+//        seedDataVariantAtribute("444 g", 6, 120); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 120); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 120); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 120); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 120); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 120); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 120); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 120); // Công nghệ màn hình
+//        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 120); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 120); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 120); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 120); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 120); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 120); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 120); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 120); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 120); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 120); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 120); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 120); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 120); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 120); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 120); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 120); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 120); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 120); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 120); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 120); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 120); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 120); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 120); // Phụ kiện trong hộp
+//
+//        seedDataVariant("iPad Pro 11 inch M4 2024 1TB ", 36999020.0, 8, 33);
+//        seedDataVariantAtribute("1TB", 24, 121); // Dung lượng
+//        seedDataVariantAtribute("Bạc", 3, 121); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 121); // Xuất xứ
+//        seedDataVariantAtribute("05/2024", 2, 121); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 121); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 121); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("249.7 x 177.5 x 5.3 mm", 5, 121); // Kích thước
+//        seedDataVariantAtribute("444 g", 6, 121); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Vỏ máy: Nhôm tái chế", 7, 121); // Chất liệu
+//        seedDataVariantAtribute("Apple M4", 9, 121); // CPU Model
+//        seedDataVariantAtribute("10 - Core, Apple M4 10 nhân", 10, 121); // Loại CPU & CPU
+//        seedDataVariantAtribute("10", 11, 121); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 121); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 121); // Kích thước màn hình
+//        seedDataVariantAtribute("OLED", 15, 121); // Công nghệ màn hình
+//        seedDataVariantAtribute("2420 x 1668 Pixel", 17, 121); // Độ phân giải
+//        seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 121); // Chuẩn màn hình
+//        seedDataVariantAtribute("1000 nits", 20, 121); // Độ sáng
+//        seedDataVariantAtribute("2.000.000:1", 21, 121); // Độ tương phản
+//        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 121); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 121); // Số camera sau và Camera Type
+//        seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 121); // Độ phân giải Camera
+//        seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 121); // Độ mở Camera
+//        seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1080p@60fps, FullHD 1080p@30fps, FullHD 1080p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 121); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 121); // Số Camera Selfie
+//        seedDataVariantAtribute("Quay phim FullHD", 34, 121); // Quay phim camera selfie
+//        seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide), Xóa phông", 35, 121); // Tính năng camera selfie
+//        seedDataVariantAtribute("Face ID, LiDAR Scanner, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 121); // Cảm biến
+//        seedDataVariantAtribute("Mật khẩu", 37, 121); // Bảo mật
+//        seedDataVariantAtribute("5G", 39, 121); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Type C", 41, 121); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E", 42, 121); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 121); // Bluetooth
+//        seedDataVariantAtribute("Lithium polymer", 47, 121); // Loại PIN
+//        seedDataVariantAtribute("36.59 Wh", 48, 121); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 121); // OS
+//        seedDataVariantAtribute("iPadOS 17", 50, 121); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad, Khăn lau", 57, 121); // Phụ kiện trong hộp
+//
+//        // iPad mini 6 2021 8.3 inch WiFi 64GB
+//        seedDataProduct("iPad Mini", "Ipad", 0.462, 13, 3, 3, "");
+//        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 64GB ", 12999018.0, 8, 34);
+//
+//        seedDataVariantAtribute("Xám", 3, 122); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("64GB", 24, 122); // Dung lượng
+//        seedDataVariantAtribute("Trung Quốc", 1, 122); // Xuất xứ
+//        seedDataVariantAtribute("09/2021", 2, 122); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 122); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 122); // Kích thước
+//        seedDataVariantAtribute("293 g", 6, 122); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("70%", 13, 122); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Không", 18, 122); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Nhôm nguyên khối", 7, 122); // Chất liệu
+//        seedDataVariantAtribute("Apple A15 Bionic", 9, 122); // CPU Model
+//        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 122); // Loại CPU & CPU
+//        seedDataVariantAtribute("6", 11, 122); // Số nhân
+//        seedDataVariantAtribute("2.5 GHz", 12, 122); // Tốc độ tối đa
+//        seedDataVariantAtribute("4 GB", 79, 122); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 122); // Loại RAM
+//        seedDataVariantAtribute("8.3 inch", 14, 122); // Kích thước màn hình
+//        seedDataVariantAtribute("IPS LCD", 15, 122); // Công nghệ màn hình
+//        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 122); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina HD", 16, 122); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 122); // Màu màn hình
+//        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 122); // Chất liệu mặt kính
+//        seedDataVariantAtribute("Điện dung đa điểm", 63, 122); // Loại cảm ứng
+//        seedDataVariantAtribute("324 ppi", 22, 122); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("4:3", 26, 122); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 122); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("467.478", 80, 122); // ANTUTU
+//        seedDataVariantAtribute("Tùy bộ nhớ", 82, 122); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("Không", 83, 122); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("Standard", 27, 122); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 122); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 122); // Aperture (Camera 1)
+//        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 122); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 122); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 122); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim HD", 34, 122); // Quay phim camera selfie
+//        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 122); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 122); // Cảm biến
+//        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 122); // Bảo mật
+//        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 122); // Wifi
+//        seedDataVariantAtribute("Computer sync", 43, 122); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 122); // Loại PIN
+//        seedDataVariantAtribute("10 Giờ", 48, 122); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 122); // OS
+//        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 122); // Phụ kiện trong hộp
+//
+//        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 64GB ", 12999019.0, 8, 34);
+//
+//        seedDataVariantAtribute("Tím", 3, 123); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("64GB", 24, 123); // Dung lượng
+//        seedDataVariantAtribute("Trung Quốc", 1, 123); // Xuất xứ
+//        seedDataVariantAtribute("09/2021", 2, 123); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 123); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 123); // Kích thước
+//        seedDataVariantAtribute("293 g", 6, 123); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("70%", 13, 123); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Không", 18, 123); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Nhôm nguyên khối", 7, 123); // Chất liệu
+//        seedDataVariantAtribute("Apple A15 Bionic", 9, 123); // CPU Model
+//        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 123); // Loại CPU & CPU
+//        seedDataVariantAtribute("6", 11, 123); // Số nhân
+//        seedDataVariantAtribute("2.5 GHz", 12, 123); // Tốc độ tối đa
+//        seedDataVariantAtribute("4 GB", 79, 123); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 123); // Loại RAM
+//        seedDataVariantAtribute("8.3 inch", 14, 123); // Kích thước màn hình
+//        seedDataVariantAtribute("IPS LCD", 15, 123); // Công nghệ màn hình
+//        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 123); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina HD", 16, 123); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 123); // Màu màn hình
+//        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 123); // Chất liệu mặt kính
+//        seedDataVariantAtribute("Điện dung đa điểm", 63, 123); // Loại cảm ứng
+//        seedDataVariantAtribute("324 ppi", 22, 123); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("4:3", 26, 123); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 123); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("467.478", 80, 123); // ANTUTU
+//        seedDataVariantAtribute("Tùy bộ nhớ", 82, 123); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("Không", 83, 123); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("Standard", 27, 123); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 123); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 123); // Aperture (Camera 1)
+//        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 123); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 123); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 123); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim HD", 34, 123); // Quay phim camera selfie
+//        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 123); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 123); // Cảm biến
+//        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 123); // Bảo mật
+//        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 123); // Wifi
+//        seedDataVariantAtribute("Computer sync", 43, 123); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 123); // Loại PIN
+//        seedDataVariantAtribute("10 Giờ", 48, 123); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 123); // OS
+//        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 123); // Phụ kiện trong hộp
+//
+//
+//        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 256GB ", 16999018.0, 8, 34);
+//
+//        seedDataVariantAtribute("Xám", 3, 124); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("256GB", 24, 124); // Dung lượng
+//        seedDataVariantAtribute("Trung Quốc", 1, 124); // Xuất xứ
+//        seedDataVariantAtribute("09/2021", 2, 124); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 124); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 124); // Kích thước
+//        seedDataVariantAtribute("293 g", 6, 124); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("70%", 13, 124); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Không", 18, 124); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Nhôm nguyên khối", 7, 124); // Chất liệu
+//        seedDataVariantAtribute("Apple A15 Bionic", 9, 124); // CPU Model
+//        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 124); // Loại CPU & CPU
+//        seedDataVariantAtribute("6", 11, 124); // Số nhân
+//        seedDataVariantAtribute("2.5 GHz", 12, 124); // Tốc độ tối đa
+//        seedDataVariantAtribute("4 GB", 79, 124); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 124); // Loại RAM
+//        seedDataVariantAtribute("8.3 inch", 14, 124); // Kích thước màn hình
+//        seedDataVariantAtribute("IPS LCD", 15, 124); // Công nghệ màn hình
+//        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 124); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina HD", 16, 124); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 124); // Màu màn hình
+//        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 124); // Chất liệu mặt kính
+//        seedDataVariantAtribute("Điện dung đa điểm", 63, 124); // Loại cảm ứng
+//        seedDataVariantAtribute("324 ppi", 22, 124); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("4:3", 26, 124); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 124); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("467.478", 80, 124); // ANTUTU
+//        seedDataVariantAtribute("Tùy bộ nhớ", 82, 124); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("Không", 83, 124); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("Standard", 27, 124); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 124); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 124); // Aperture (Camera 1)
+//        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 124); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 124); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 124); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim HD", 34, 124); // Quay phim camera selfie
+//        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 124); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 124); // Cảm biến
+//        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 124); // Bảo mật
+//        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 124); // Wifi
+//        seedDataVariantAtribute("Computer sync", 43, 124); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 124); // Loại PIN
+//        seedDataVariantAtribute("10 Giờ", 48, 124); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 124); // OS
+//        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 124); // Phụ kiện trong hộp
+//
+//        seedDataVariant("iPad mini 6 2021 8.3 inch WiFi 256GB ", 16999019.0, 8, 34);
+//
+//        seedDataVariantAtribute("Tím", 3, 125); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("256GB", 24, 125); // Dung lượng
+//        seedDataVariantAtribute("Trung Quốc", 1, 125); // Xuất xứ
+//        seedDataVariantAtribute("09/2021", 2, 125); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 125); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("134.8 x 6.3 x 195.4 mm", 5, 125); // Kích thước
+//        seedDataVariantAtribute("293 g", 6, 125); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("70%", 13, 125); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Không", 18, 125); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Nhôm nguyên khối", 7, 125); // Chất liệu
+//        seedDataVariantAtribute("Apple A15 Bionic", 9, 125); // CPU Model
+//        seedDataVariantAtribute("Hexa-Core, 2 x 2.5 GHz Vortex + 4 x 1.6 GHz Tempest", 10, 125); // Loại CPU & CPU
+//        seedDataVariantAtribute("6", 11, 125); // Số nhân
+//        seedDataVariantAtribute("2.5 GHz", 12, 125); // Tốc độ tối đa
+//        seedDataVariantAtribute("4 GB", 79, 125); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 125); // Loại RAM
+//        seedDataVariantAtribute("8.3 inch", 14, 125); // Kích thước màn hình
+//        seedDataVariantAtribute("IPS LCD", 15, 125); // Công nghệ màn hình
+//        seedDataVariantAtribute("2048 x 1536 Pixels", 17, 125); // Độ phân giải
+//        seedDataVariantAtribute("Liquid Retina HD", 16, 125); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 125); // Màu màn hình
+//        seedDataVariantAtribute("Kính cường lực Oleophobic", 62, 125); // Chất liệu mặt kính
+//        seedDataVariantAtribute("Điện dung đa điểm", 63, 125); // Loại cảm ứng
+//        seedDataVariantAtribute("324 ppi", 22, 125); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("4:3", 26, 125); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("Apple GPU 5 nhân", 24, 125); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("467.478", 80, 125); // ANTUTU
+//        seedDataVariantAtribute("Tùy bộ nhớ", 82, 125); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("Không", 83, 125); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("Standard", 27, 125); // Camera Type 1
+//        seedDataVariantAtribute("12.0 MP", 28, 125); // Resolution (Camera 1)
+//        seedDataVariantAtribute("ƒ/1.8", 29, 125); // Aperture (Camera 1)
+//        seedDataVariantAtribute("Tự động lấy nét (AF), ISO Setting, Nhận diện khuôn mặt, Trôi nhanh thời gian (Time Lapse), Gắn thẻ ảnh địa lý, Zoom kỹ thuật số, Cài đặt cân bằng trắng, Toàn cảnh (Panorama), HDR, Quay chậm (Slow Motion)", 35, 125); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 125); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 125); // Resolution (Camera Selfie 1)
+//        seedDataVariantAtribute("Quay phim HD", 34, 125); // Quay phim camera selfie
+//        seedDataVariantAtribute("Tự động lấy nét (AF)", 35, 125); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến ánh sáng, Con quay hồi chuyển, Cảm biến tiệm cận, Cảm biến la bàn, Cảm biến trọng lực, Cảm biến vân tay", 36, 125); // Cảm biến
+//        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 125); // Bảo mật
+//        seedDataVariantAtribute("802.11 b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz)", 42, 125); // Wifi
+//        seedDataVariantAtribute("Computer sync", 43, 125); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 125); // Loại PIN
+//        seedDataVariantAtribute("10 Giờ", 48, 125); // Dung lượng pin
+//        seedDataVariantAtribute("iPadOS", 49, 125); // OS
+//        seedDataVariantAtribute("Sạc, Sách HDSD, Cáp", 57, 125); // Phụ kiện trong hộp
+//
+//        // Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB
+//
+//        seedDataProduct("Samsung Galaxy Tab", "Ipad", 0.571, 13, 3, 3, "");
+//
+//        seedDataVariant("Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB ", 25999018.0, 8, 35);
+//        seedDataVariantAtribute("256 GB", 24, 126); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 126); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 126); // Xuất xứ
+//        seedDataVariantAtribute("10/2024", 2, 126); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 126); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 126); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("Dài 285.4 mm - Ngang 185.4 mm - Dày 5.7 mm", 5, 126); // Kích thước
+//        seedDataVariantAtribute("571 g", 6, 126); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("IP68", 18, 126); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Khung viền: Armor aluminum, Mặt lưng máy: Armor aluminum", 7, 126); // Chất liệu
+//        seedDataVariantAtribute("Dimensity 9300+", 9, 126); // CPU Model
+//        seedDataVariantAtribute("8", 11, 126); // Số nhân
+//        seedDataVariantAtribute("12 GB", 79, 126); // Dung lượng RAM
+//        seedDataVariantAtribute("12.4 inch", 14, 126); // Kích thước màn hình
+//        seedDataVariantAtribute("Dynamic AMOLED 2X", 15, 126); // Công nghệ màn hình
+//        seedDataVariantAtribute("1752 x 2800 Pixels", 17, 126); // Độ phân giải
+//        seedDataVariantAtribute("Dynamic AMOLED 2X", 16, 126); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 126); // Màu màn hình
+//        seedDataVariantAtribute("120", 22, 126); // Tần số quét
+//        seedDataVariantAtribute("ARM Immortalis G720", 24, 126); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Không giới hạn", 82, 126); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("MicroSD", 83, 126); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("1.5 TB", 84, 126); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Double rear camera", 27, 126); // Số camera sau
+//        seedDataVariantAtribute("Resolution (Camera 1): 13.0 MP, Resolution (Camera 2): 8.0 MP", 28, 126); // Độ phân giải Camera
+//        seedDataVariantAtribute("4K 2160p@30fps", 30, 126); // Quay phim
+//        seedDataVariantAtribute("Tự động lấy nét (AF), Quét tài liệu, Xóa phông, Chụp góc siêu rộng (Ultrawide), Trôi nhanh thời gian (Time Lapse), Toàn cảnh (Panorama), Chuyên nghiệp (Pro), HDR", 35, 126); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 126); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 126); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("Xóa phông, Chế độ chân dung, Trôi nhanh thời gian (Time lapse), Làm đẹp (Beautify), Chụp góc rộng (Wide), Bộ lọc màu, Hẹn giờ chụp tự động", 35, 126); // Tính năng camera selfie
+//        seedDataVariantAtribute("Mở khóa vân tay dưới màn hình", 37, 126); // Bảo mật
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 126); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 6E, 802.11 a/b/g/n, MIMO, Wi-Fi Direct", 42, 126); // Wifi
+//        seedDataVariantAtribute("GPS, GLONASS, BEIDOU, GALILEO, QZSS", 46, 126); // GPS
+//        seedDataVariantAtribute("v5.3", 44, 126); // Bluetooth
+//        seedDataVariantAtribute("Bluetooth", 43, 126); // Kết nối khác
+//        seedDataVariantAtribute("Pin Li-ion", 47, 126); // Loại PIN
+//        seedDataVariantAtribute("10090 mAh", 48, 126); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 126); // OS
+//        seedDataVariantAtribute("Android 14", 50, 126); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Sách HDSD, Bút cảm ứng", 57, 126); // Phụ kiện trong hộp
+//
+//        // Samsung Galaxy Tab S10 Ultra 5G 12GB 256GB
+//        seedDataVariant("Samsung Galaxy Tab S10 Ultra 5G 12GB 256GB", 33999018.0, 8, 35);
+//        seedDataVariantAtribute("256 GB", 24, 127); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 127); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 127); // Xuất xứ
+//        seedDataVariantAtribute("10/2024", 2, 127); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 127); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 127); // Hướng dẫn bảo quản
+//        seedDataVariantAtribute("Dài 326.4 mm - Ngang 208.6 mm - Dày 5.4 mm", 5, 127); // Kích thước
+//        seedDataVariantAtribute("723 g", 6, 127); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("IP68", 18, 127); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Khung màn hình: Armor aluminum, Mặt lưng máy: Armor aluminum", 7, 127); // Chất liệu
+//        seedDataVariantAtribute("Dimensity 9300+", 9, 127); // CPU Model
+//        seedDataVariantAtribute("8", 11, 127); // Số nhân
+//        seedDataVariantAtribute("12 GB", 79, 127); // Dung lượng RAM
+//        seedDataVariantAtribute("14.6 inch", 14, 127); // Kích thước màn hình
+//        seedDataVariantAtribute("2960 x 1848 Pixels", 17, 127); // Độ phân giải
+//        seedDataVariantAtribute("Dynamic AMOLED 2X", 16, 127); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 127); // Màu màn hình
+//        seedDataVariantAtribute("Corning Gorilla Glass", 62, 127); // Chất liệu mặt kính
+//        seedDataVariantAtribute("ARM Immortalis G720", 24, 127); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Không giới hạn", 82, 127); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("MicroSD", 83, 127); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("1.5 TB", 84, 127); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Double rear camera", 27, 127); // Số camera sau
+//        seedDataVariantAtribute("Resolution (Camera 1): 13.0 MP, Resolution (Camera 2): 8.0 MP", 28, 127); // Độ phân giải Camera
+//        seedDataVariantAtribute("4K 2160p@30fps", 30, 127); // Quay phim
+//        seedDataVariantAtribute("Tự động lấy nét (AF), Zoom quang học, Zoom kỹ thuật số, Xóa phông, Chụp góc siêu rộng (Ultrawide), Trôi nhanh thời gian (Time Lapse), Toàn cảnh (Panorama), Chuyên nghiệp (Pro), HDR, Quét tài liệu", 35, 127); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 127); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 127); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("Chế độ chân dung, Xóa phông, Làm đẹp (Beautify), Chụp góc rộng (Wide), Bộ lọc màu, Hẹn giờ chụp tự động", 35, 127); // Tính năng camera selfie
+//        seedDataVariantAtribute("Mở khóa vân tay dưới màn hình", 37, 127); // Bảo mật
+//        seedDataVariantAtribute("1", 38, 127); // Số khe SIM
+//        seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 39, 127); // Thẻ SIM
+//        seedDataVariantAtribute("5G", 40, 127); // Hỗ trợ mạng
+//        seedDataVariantAtribute("Cổng sạc: Type C", 41, 127); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 7, MIMO, 802.11 a/b/g/n", 42, 127); // Wifi
+//        seedDataVariantAtribute("GPS, GLONASS, BEIDOU, GALILEO, QZSS", 46, 127); // GPS
+//        seedDataVariantAtribute("v5.3", 44, 127); // Bluetooth
+//        seedDataVariantAtribute("Pin Li-ion", 47, 127); // Loại PIN
+//        seedDataVariantAtribute("11200 mAh", 48, 127); // Dung lượng pin
+//        seedDataVariantAtribute("Sạc pin nhanh", 85, 127); // Thông tin thêm
+//        seedDataVariantAtribute("Android", 49, 127); // OS
+//        seedDataVariantAtribute("Android 14", 50, 127); // Version
+//        seedDataVariantAtribute("Dây cáp sạc, Que lấy SIM, Sách HDSD, Bút cảm ứng", 57, 127); // Phụ kiện trong hộp
+//
+//
+//        // Samsung Galaxy Tab S9 FE WiFi 6GB 128GB
+//        seedDataVariant("Samsung Galaxy Tab S9 FE WiFi 6GB 128GB", 9999018.0, 8, 35);
+//        seedDataVariantAtribute("128 GB", 24, 128); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 128); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 128); // Xuất xứ
+//        seedDataVariantAtribute("10/2023", 2, 128); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 128); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 128); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("254.3 x 165.8 x 6.5 mm", 5, 128); // Kích thước
+//        seedDataVariantAtribute("520 g", 6, 128); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("IP68", 18, 128); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Mặt lưng máy: Kim loại", 7, 128); // Chất liệu
+//        seedDataVariantAtribute("Exynos 1380", 9, 128); // CPU Model
+//        seedDataVariantAtribute("8 x 2.4 GHz", 10, 128); // CPU
+//        seedDataVariantAtribute("8", 11, 128); // Số nhân
+//        seedDataVariantAtribute("2.4 GHz", 12, 128); // Tốc độ tối đa
+//        seedDataVariantAtribute("6 GB", 79, 128); // Dung lượng RAM
+//        seedDataVariantAtribute("10.9 inch", 14, 128); // Kích thước màn hình
+//        seedDataVariantAtribute("LCD", 15, 128); // Công nghệ màn hình
+//        seedDataVariantAtribute("2304 x 1440 Pixels", 17, 128); // Độ phân giải
+//        seedDataVariantAtribute("WUXGA", 16, 128); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 128); // Màu màn hình
+//        seedDataVariantAtribute("Điện dung đa điểm", 63, 128); // Loại cảm ứng
+//        seedDataVariantAtribute("90 Hz", 22, 128); // Tần số quét
+//        seedDataVariantAtribute("HDR10+", 73, 128); // Độ phủ màu
+//        seedDataVariantAtribute("16:10", 26, 128); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("Mali-G68", 24, 128); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Không giới hạn", 82, 128); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("1 TB", 84, 128); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Double rear camera", 27, 128); // Số camera sau
+//        seedDataVariantAtribute("Resolution (Camera 1): 8.0 MP, Resolution (Camera 2): 8.0 MP", 28, 128); // Độ phân giải Camera
+//        seedDataVariantAtribute("4K 2160p@30fps", 30, 128); // Quay phim
+//        seedDataVariantAtribute("Tự động lấy nét (AF), HDR, Chuyên nghiệp (Pro), Xóa phông, Toàn cảnh (Panorama), Chụp chuyển động, Chạm lấy nét, Làm đẹp (Beautify), Chụp góc siêu rộng (Ultrawide), Zoom kỹ thuật số", 35, 128); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 128); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 128); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("Chụp góc rộng (Wide), HDR, Xoá phông, Bộ lọc màu, Flash màn hình", 35, 128); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến gia tốc, Cảm biến ánh sáng", 36, 128); // Cảm biến
+//        seedDataVariantAtribute("Mở khóa vân tay", 37, 128); // Bảo mật
+//        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Type C", 41, 128); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 ac, Dual-band (2.4 GHz/ 5 GHz), Wi-Fi Direct", 42, 128); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 128); // Bluetooth
+//        seedDataVariantAtribute("Bluetooth", 43, 128); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 128); // Loại PIN
+//        seedDataVariantAtribute("8000 mAh", 48, 128); // Dung lượng pin
+//        seedDataVariantAtribute("Sạc pin nhanh", 85, 128); // Thông tin thêm
+//        seedDataVariantAtribute("Android", 49, 128); // OS
+//        seedDataVariantAtribute("Android 13.0", 50, 128); // Version
+//        seedDataVariantAtribute("Sách HDSD, Bút cảm ứng", 57, 128); // Phụ kiện trong hộp
+//
+//        // Samsung Galaxy Tab A9 Plus WiFi 4GB 64GB
+//        seedDataVariant("Samsung Galaxy Tab A9 Plus WiFi 4GB 64GB", 8999018.0, 8, 35);
+//        seedDataVariantAtribute("64 GB", 24, 129); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 129); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 129); // Xuất xứ
+//        seedDataVariantAtribute("10/2023", 2, 129); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 129); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 129); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("257.1 x 168.7 x 6.9 mm", 5, 129); // Kích thước
+//        seedDataVariantAtribute("510 g", 6, 129); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Mặt lưng máy: Kim loại", 7, 129); // Chất liệu
+//        seedDataVariantAtribute("Snapdragon 695 5G", 9, 129); // CPU Model
+//        seedDataVariantAtribute("2 x 2.2 GHz + 6 x 1.7 GHz", 10, 129); // CPU
+//        seedDataVariantAtribute("8", 11, 129); // Số nhân
+//        seedDataVariantAtribute("4 GB", 79, 129); // Dung lượng RAM
+//        seedDataVariantAtribute("11 inch", 14, 129); // Kích thước màn hình
+//        seedDataVariantAtribute("LCD Chính:", 15, 129); // Công nghệ màn hình
+//        seedDataVariantAtribute("1200 x 1920 Pixels", 17, 129); // Độ phân giải
+//        seedDataVariantAtribute("WUXGA", 16, 129); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 129); // Màu màn hình
+//        seedDataVariantAtribute("Điện dung đa điểm", 63, 129); // Loại cảm ứng
+//        seedDataVariantAtribute("90 Hz", 22, 129); // Tần số quét
+//        seedDataVariantAtribute("570 nits", 20, 129); // Độ sáng
+//        seedDataVariantAtribute("16:10", 26, 129); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("Không giới hạn", 82, 129); // Danh bạ lưu trữ
+//        seedDataVariantAtribute("MicroSD", 83, 129); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("1 TB", 84, 129); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Single rear camera", 27, 129); // Số camera sau
+//        seedDataVariantAtribute("Wide", 27, 129); // Camera
+//        seedDataVariantAtribute("8.0 MP", 28, 129); // Resolution (Camera)
+//        seedDataVariantAtribute("ƒ/2.0", 29, 129); // Aperture (Camera)
+//        seedDataVariantAtribute("Single selfie camera", 32, 129); // Số Camera Selfie
+//        seedDataVariantAtribute("5.0 MP", 33, 129); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("ƒ/2.2", 34, 129); // Aperture (Camera Selfie)
+//        seedDataVariantAtribute("Cảm biến gia tốc, Cảm biến ánh sáng", 36, 129); // Cảm biến
+//        seedDataVariantAtribute("Mở khóa khuôn mặt", 37, 129); // Bảo mật
+//        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Type C", 41, 129); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 ac", 42, 129); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 129); // Bluetooth
+//        seedDataVariantAtribute("Bluetooth", 43, 129); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 129); // Loại PIN
+//        seedDataVariantAtribute("7040 mAh", 48, 129); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 129); // OS
+//        seedDataVariantAtribute("Android 13.0", 50, 129); // Version
+//        seedDataVariantAtribute("Sách HDSD", 57, 129); // Phụ kiện trong hộp
+//
+//
+//        // Samsung Galaxy Tab S9 FE Plus WiFi 8GB 128GB
+//        seedDataVariant("Samsung Galaxy Tab S9 FE Plus WiFi 8GB 128GB", 13999019.0, 8, 35);
+//        seedDataVariantAtribute("128 GB", 24, 130); // Dung lượng
+//        seedDataVariantAtribute("Bạc", 3, 130); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 130); // Xuất xứ
+//        seedDataVariantAtribute("10/2023", 2, 130); // Thời điểm ra mắt
+//        seedDataVariantAtribute("12", 4, 130); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 130); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("285.4 x 185.4 x 6.5 mm", 5, 130); // Kích thước
+//        seedDataVariantAtribute("627 g", 6, 130); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("IP68", 18, 130); // Chuẩn kháng nước / Bụi bẩn
+//        seedDataVariantAtribute("Mặt lưng máy: Kim loại", 7, 130); // Chất liệu
+//        seedDataVariantAtribute("Exynos 1380", 9, 130); // CPU Model
+//        seedDataVariantAtribute("8 x 2.4 GHz", 10, 130); // CPU
+//        seedDataVariantAtribute("8", 11, 130); // Số nhân
+//        seedDataVariantAtribute("2.4 GHz", 12, 130); // Tốc độ tối đa
+//        seedDataVariantAtribute("8 GB", 79, 130); // Dung lượng RAM
+//        seedDataVariantAtribute("12.4 inch", 14, 130); // Kích thước màn hình
+//        seedDataVariantAtribute("PLS LCD", 15, 130); // Công nghệ màn hình
+//        seedDataVariantAtribute("2560 x 1600 Pixels", 17, 130); // Độ phân giải
+//        seedDataVariantAtribute("WQXGA", 16, 130); // Chuẩn màn hình
+//        seedDataVariantAtribute("16 Triệu", 78, 130); // Màu màn hình
+//        seedDataVariantAtribute("Điện dung đa điểm", 63, 130); // Loại cảm ứng
+//        seedDataVariantAtribute("90 Hz", 22, 130); // Tần số quét
+//        seedDataVariantAtribute("16:10", 26, 130); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("Mali-G68", 24, 130); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("MicroSD", 83, 130); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("1 TB", 84, 130); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Double rear camera", 27, 130); // Số camera sau
+//        seedDataVariantAtribute("Wide", 27, 130); // Camera
+//        seedDataVariantAtribute("Resolution (Camera 1): 8.0 MP, Resolution (Camera 2): 8.0 MP", 28, 130); // Độ phân giải Camera
+//        seedDataVariantAtribute("4K 2160p@30fps", 30, 130); // Quay phim
+//        seedDataVariantAtribute("HDR, Bộ lọc màu, Chuyên nghiệp (Pro), Xóa phông, Toàn cảnh (Panorama), Trôi nhanh thời gian (Time Lapse), Chụp chuyển động, Chạm lấy nét, Làm đẹp (Beautify), Zoom kỹ thuật số, Tự động lấy nét (AF), Ban đêm (Night Mode)", 35, 130); // Tính năng camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 130); // Số Camera Selfie
+//        seedDataVariantAtribute("12.0 MP", 33, 130); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("Tự động lấy nét (AF), Xoá phông, HDR, Chuyên nghiệp (Pro), Chụp góc rộng (Wide)", 35, 130); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cảm biến gia tốc, Cảm biến ánh sáng", 36, 130); // Cảm biến
+//        seedDataVariantAtribute("Mở khóa vân tay", 37, 130); // Bảo mật
+//        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Type C", 41, 130); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 ac", 42, 130); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 130); // Bluetooth
+//        seedDataVariantAtribute("Bluetooth", 43, 130); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 130); // Loại PIN
+//        seedDataVariantAtribute("10090 mAh", 48, 130); // Dung lượng pin
+//        seedDataVariantAtribute("Sạc pin nhanh", 85, 130); // Thông tin thêm
+//        seedDataVariantAtribute("Android", 49, 130); // OS
+//        seedDataVariantAtribute("Android 13.0", 50, 130); // Version
+//        seedDataVariantAtribute("Sách HDSD, Bút cảm ứng", 57, 130); // Phụ kiện trong hộp
+//
+//        // Xiaomi Pad 6S Pro WiFi 8GB 256GB
+//
+//
+//        seedDataProduct("Xiaomi Pad", "Ipad", 0.571, 13, 3, 3, "");
+//        seedDataVariant("Xiaomi Pad 6S Pro WiFi 8GB 256GB ", 12999118.0, 8, 36);
+//        seedDataVariantAtribute("256GB", 24, 131); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 131); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Việt Nam", 1, 131); // Xuất xứ
+//        seedDataVariantAtribute("09/2024", 2, 131); // Thời điểm ra mắt
+//        seedDataVariantAtribute("18", 4, 131); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("278.7 x 191.58 x 6.26 mm", 5, 131); // Kích thước
+//        seedDataVariantAtribute("590 g", 6, 131); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("88.5%", 13, 131); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Hợp kim nhôm", 7, 131); // Chất liệu
+//        seedDataVariantAtribute("Snapdragon 8 Gen 2", 9, 131); // CPU Model
+//        seedDataVariantAtribute("8", 11, 131); // Số nhân
+//        seedDataVariantAtribute("8 GB", 79, 131); // Dung lượng RAM
+//        seedDataVariantAtribute("12.4 inch", 14, 131); // Kích thước màn hình
+//        seedDataVariantAtribute("2032 x 3048 Pixels", 17, 131); // Độ phân giải
+//        seedDataVariantAtribute("3K", 16, 131); // Chuẩn màn hình
+//        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 131); // Màu màn hình
+//        seedDataVariantAtribute("Corning Gorilla Glass", 62, 131); // Chất liệu mặt kính
+//        seedDataVariantAtribute("294 ppi", 22, 131); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("144", 23, 131); // Tần số quét
+//        seedDataVariantAtribute("900 nits", 20, 131); // Độ sáng
+//        seedDataVariantAtribute("100% DCI-P3", 73, 131); // Độ phủ màu
+//        seedDataVariantAtribute("3:2", 26, 131); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("1400:1", 21, 131); // Độ tương phản
+//        seedDataVariantAtribute("Double rear camera", 27, 131); // Số camera sau
+//        seedDataVariantAtribute("Resolution (Camera 1): 50 MP, Aperture (Camera 1): ƒ/1.8, Pixel size (Camera 1): 0.64 µm", 28, 131); // Camera 1
+//        seedDataVariantAtribute("Resolution (Camera 2): 2.0 MP, Aperture (Camera 2): ƒ/2.4, Pixel size (Camera 2): 1.75 µm", 28, 131); // Camera 2
+//        seedDataVariantAtribute("1080p@60fps, 1080p@30fps, 720p@30fps", 30, 131); // Quay phim camera sau
+//        seedDataVariantAtribute("32.0 MP", 33, 131); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("ƒ/2.2", 34, 131); // Aperture (Camera Selfie)
+//        seedDataVariantAtribute("720p@30fps, 1080p@30fps", 30, 131); // Quay phim camera selfie
+//        seedDataVariantAtribute("Làm đẹp (Beautify), Xóa phông", 35, 131); // Tính năng camera selfie
+//        seedDataVariantAtribute("Mở khoá vân tay cạnh viền", 37, 131); // Bảo mật
+//        seedDataVariantAtribute("Type C", 41, 131); // Cổng giao tiếp
+//        seedDataVariantAtribute("Wifi 7", 42, 131); // Wifi
+//        seedDataVariantAtribute("v5.3", 44, 131); // Bluetooth
+//        seedDataVariantAtribute("Bluetooth", 43, 131); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 131); // Loại PIN
+//        seedDataVariantAtribute("10000 mAh", 48, 131); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 131); // OS
+//        seedDataVariantAtribute("Android 14", 50, 131); // Version
+//
+//        // Xiaomi Pad 6 WiFi 8GB 256GB
+//        seedDataVariant("Xiaomi Pad 6 WiFi 8GB 256GB", 9299019.0, 8, 36);
+//        seedDataVariantAtribute("256GB", 24, 132); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 132); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Trung Quốc", 1, 132); // Xuất xứ
+//        seedDataVariantAtribute("08/2023", 2, 132); // Thời điểm ra mắt
+//        seedDataVariantAtribute("18", 4, 132); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 132); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("253.95 x 165.18 x 6.51 mm", 5, 132); // Kích thước
+//        seedDataVariantAtribute("490 g", 6, 132); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Khung máy: Kim loại", 7, 132); // Chất liệu
+//        seedDataVariantAtribute("Snapdragon 870", 9, 132); // CPU Model
+//        seedDataVariantAtribute("8", 11, 132); // Số nhân
+//        seedDataVariantAtribute("3.20 GHz", 12, 132); // Tốc độ tối đa
+//        seedDataVariantAtribute("8 GB", 79, 132); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 132); // Loại RAM
+//        seedDataVariantAtribute("11.0 inch", 14, 132); // Kích thước màn hình
+//        seedDataVariantAtribute("IPS LCD", 15, 132); // Công nghệ màn hình
+//        seedDataVariantAtribute("2880 x 1800 Pixels", 17, 132); // Độ phân giải
+//        seedDataVariantAtribute("WQHD+", 16, 132); // Chuẩn màn hình
+//        seedDataVariantAtribute("144 Hz", 23, 132); // Tần số quét
+//        seedDataVariantAtribute("Adreno 650", 24, 132); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Không", 83, 132); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("Single rear camera", 27, 132); // Số camera sau
+//        seedDataVariantAtribute("Standard", 27, 132); // Camera
+//        seedDataVariantAtribute("13.0 MP", 28, 132); // Resolution (Camera)
+//        seedDataVariantAtribute("ƒ/1.9", 29, 132); // Aperture (Camera)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 132); // Quay phim camera sau
+//        seedDataVariantAtribute("8.0 MP", 33, 132); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("ƒ/2.1", 34, 132); // Aperture (Camera Selfie)
+//        seedDataVariantAtribute("Quay phim HD, Quay phim FullHD", 30, 132); // Quay phim camera selfie
+//        seedDataVariantAtribute("Bộ lọc màu, HDR, Tự động lấy nét (AF)", 35, 132); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Jack 3.5 mm", 41, 132); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 a/b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz), Wifi 6", 42, 132); // Wifi
+//        seedDataVariantAtribute("v5.2", 44, 132); // Bluetooth
+//        seedDataVariantAtribute("OTG", 43, 132); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 132); // Loại PIN
+//        seedDataVariantAtribute("8840 mAh", 48, 132); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 132); // OS
+//        seedDataVariantAtribute("Android 13.0", 50, 132); // Version
+//        seedDataVariantAtribute("Sách HDSD, Cáp USB-A to USB-C, Sạc", 57, 132); // Phụ kiện trong hộp
+//
+//        // màu đen
+//        seedDataVariant("Xiaomi Pad 6 WiFi 8GB 256GB", 9299020.0, 8, 36);
+//        seedDataVariantAtribute("256GB", 24, 133); // Dung lượng
+//        seedDataVariantAtribute("Đen", 3, 133); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Trung Quốc", 1, 133); // Xuất xứ
+//        seedDataVariantAtribute("08/2023", 2, 133); // Thời điểm ra mắt
+//        seedDataVariantAtribute("18", 4, 133); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 133); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("253.95 x 165.18 x 6.51 mm", 5, 133); // Kích thước
+//        seedDataVariantAtribute("490 g", 6, 133); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Khung máy: Kim loại", 7, 133); // Chất liệu
+//        seedDataVariantAtribute("Snapdragon 870", 9, 133); // CPU Model
+//        seedDataVariantAtribute("8", 11, 133); // Số nhân
+//        seedDataVariantAtribute("3.20 GHz", 12, 133); // Tốc độ tối đa
+//        seedDataVariantAtribute("8 GB", 79, 133); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 133); // Loại RAM
+//        seedDataVariantAtribute("11.0 inch", 14, 133); // Kích thước màn hình
+//        seedDataVariantAtribute("IPS LCD", 15, 133); // Công nghệ màn hình
+//        seedDataVariantAtribute("2880 x 1800 Pixels", 17, 133); // Độ phân giải
+//        seedDataVariantAtribute("WQHD+", 16, 133); // Chuẩn màn hình
+//        seedDataVariantAtribute("144 Hz", 23, 133); // Tần số quét
+//        seedDataVariantAtribute("Adreno 650", 24, 133); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Không", 83, 133); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("Single rear camera", 27, 133); // Số camera sau
+//        seedDataVariantAtribute("Standard", 27, 133); // Camera
+//        seedDataVariantAtribute("13.0 MP", 28, 133); // Resolution (Camera)
+//        seedDataVariantAtribute("ƒ/1.9", 29, 133); // Aperture (Camera)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 133); // Quay phim camera sau
+//        seedDataVariantAtribute("8.0 MP", 33, 133); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("ƒ/2.1", 34, 133); // Aperture (Camera Selfie)
+//        seedDataVariantAtribute("Quay phim HD, Quay phim FullHD", 30, 133); // Quay phim camera selfie
+//        seedDataVariantAtribute("Bộ lọc màu, HDR, Tự động lấy nét (AF)", 35, 133); // Tính năng camera selfie
+//        seedDataVariantAtribute("Cổng sạc: Type C, Audio Jack: Jack 3.5 mm", 41, 133); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 a/b/g/n/ac, Dual-band (2.4 GHz/ 5 GHz), Wifi 6", 42, 133); // Wifi
+//        seedDataVariantAtribute("v5.2", 44, 133); // Bluetooth
+//        seedDataVariantAtribute("OTG", 43, 133); // Kết nối khác
+//        seedDataVariantAtribute("Lithium polymer", 47, 133); // Loại PIN
+//        seedDataVariantAtribute("8840 mAh", 48, 133); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 133); // OS
+//        seedDataVariantAtribute("Android 13.0", 50, 133); // Version
+//        seedDataVariantAtribute("Sách HDSD, Cáp USB-A to USB-C, Sạc", 57, 133); // Phụ kiện trong hộp
+//
+//        //Xiaomi Redmi Pad Pro WiFi 8GB 128GB
+//        seedDataProduct("Xiaomi Redmi Pad", "Ipad", 0.571, 13, 3, 3, "");
+//
+//        seedDataVariant("Xiaomi Redmi Pad Pro WiFi 8GB 128GB", 9299021.0, 8, 37);
+//        seedDataVariantAtribute("128GB", 24, 134); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 134); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Trung Quốc", 1, 134); // Xuất xứ
+//        seedDataVariantAtribute("06/2024", 2, 134); // Thời điểm ra mắt
+//        seedDataVariantAtribute("18", 4, 134); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("280 x 181.85 x 7.52 mm", 5, 134); // Kích thước
+//        seedDataVariantAtribute("571 g", 6, 134); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("83.60%", 13, 134); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Khung máy: Kim loại", 7, 134); // Chất liệu
+//        seedDataVariantAtribute("Snapdragon 7s Gen 2", 9, 134); // CPU Model
+//        seedDataVariantAtribute("Octa-Core", 10, 134); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 134); // Số nhân
+//        seedDataVariantAtribute("2.4 GHz", 12, 134); // Tốc độ tối đa
+//        seedDataVariantAtribute("8 GB", 79, 134); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 134); // Loại RAM
+//        seedDataVariantAtribute("12.1 inch", 14, 134); // Kích thước màn hình
+//        seedDataVariantAtribute("LCD", 15, 134); // Công nghệ màn hình
+//        seedDataVariantAtribute("1600 x 2560 Pixels", 17, 134); // Độ phân giải
+//        seedDataVariantAtribute("2.5K", 16, 134); // Chuẩn màn hình
+//        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 134); // Màu màn hình
+//        seedDataVariantAtribute("Gorilla Glass 3", 62, 134); // Chất liệu mặt kính
+//        seedDataVariantAtribute("249PPI", 22, 134); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("120", 23, 134); // Tần số quét
+//        seedDataVariantAtribute("600 nits", 20, 134); // Độ sáng
+//        seedDataVariantAtribute("16:10", 26, 134); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("1500:1", 21, 134); // Độ tương phản
+//        seedDataVariantAtribute("Qualcomm Adreno", 24, 134); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Khoảng 105 GB", 85, 134); // Bộ nhớ còn lại
+//        seedDataVariantAtribute("MicroSD", 83, 134); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("1.5 TB", 84, 134); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Single rear camera", 27, 134); // Số camera sau
+//        seedDataVariantAtribute("Standard", 27, 134); // Camera
+//        seedDataVariantAtribute("8.0 MP", 28, 134); // Resolution (Camera)
+//        seedDataVariantAtribute("ƒ/2.0", 29, 134); // Aperture (Camera)
+//        seedDataVariantAtribute("1.12 µm", 85, 134); // Pixel size (Camera)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 134); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 134); // Số Camera Selfie
+//        seedDataVariantAtribute("8.0 MP", 33, 134); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("ƒ/2.28", 34, 134); // Aperture (Camera Selfie)
+//        seedDataVariantAtribute("1.12 µm", 85, 134); // Pixel size (Camera Selfie)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 134); // Quay phim camera selfie
+//        seedDataVariantAtribute("Cảm biến gia tốc, Con quay hồi chuyển, Cảm biến ánh sáng, Cảm biến nhiệt độ, Cảm biến la bàn, Cảm biến từ trường", 36, 134); // Cảm biến
+//        seedDataVariantAtribute("Type C", 41, 134); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 a/b/g, Wifi 6, Dual-band (2.4 GHz/ 5 GHz), MIMO, Wi-Fi Direct", 42, 134); // Wifi
+//        seedDataVariantAtribute("v5.2", 44, 134); // Bluetooth
+//        seedDataVariantAtribute("1 viên Lithium polymer", 47, 134); // Loại PIN
+//        seedDataVariantAtribute("10000 mAh", 48, 134); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 134); // OS
+//        seedDataVariantAtribute("Android U (Hyper OS)", 50, 134); // Version
+//        seedDataVariantAtribute("Sạc, Cáp, Sách HDSD, Que lấy thẻ nhớ", 57, 134); // Phụ kiện trong hộp
+//
+//
+//        // xanh duương
+//        seedDataVariant("Xiaomi Redmi Pad Pro WiFi 8GB 128GB", 9299022.0, 8, 37);
+//        seedDataVariantAtribute("128GB", 24, 135); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 135); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Trung Quốc", 1, 135); // Xuất xứ
+//        seedDataVariantAtribute("06/2024", 2, 135); // Thời điểm ra mắt
+//        seedDataVariantAtribute("18", 4, 135); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("280 x 181.85 x 7.52 mm", 5, 135); // Kích thước
+//        seedDataVariantAtribute("571 g", 6, 135); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("83.60%", 13, 135); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Khung máy: Kim loại", 7, 135); // Chất liệu
+//        seedDataVariantAtribute("Snapdragon 7s Gen 2", 9, 135); // CPU Model
+//        seedDataVariantAtribute("Octa-Core", 10, 135); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 135); // Số nhân
+//        seedDataVariantAtribute("2.4 GHz", 12, 135); // Tốc độ tối đa
+//        seedDataVariantAtribute("8 GB", 79, 135); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 135); // Loại RAM
+//        seedDataVariantAtribute("12.1 inch", 14, 135); // Kích thước màn hình
+//        seedDataVariantAtribute("LCD", 15, 135); // Công nghệ màn hình
+//        seedDataVariantAtribute("1600 x 2560 Pixels", 17, 135); // Độ phân giải
+//        seedDataVariantAtribute("2.5K", 16, 135); // Chuẩn màn hình
+//        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 135); // Màu màn hình
+//        seedDataVariantAtribute("Gorilla Glass 3", 62, 135); // Chất liệu mặt kính
+//        seedDataVariantAtribute("249PPI", 22, 135); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("120", 23, 135); // Tần số quét
+//        seedDataVariantAtribute("600 nits", 20, 135); // Độ sáng
+//        seedDataVariantAtribute("16:10", 26, 135); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("1500:1", 21, 135); // Độ tương phản
+//        seedDataVariantAtribute("Qualcomm Adreno", 24, 135); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Khoảng 105 GB", 85, 135); // Bộ nhớ còn lại
+//        seedDataVariantAtribute("MicroSD", 83, 135); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("1.5 TB", 84, 135); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Single rear camera", 27, 135); // Số camera sau
+//        seedDataVariantAtribute("Standard", 27, 135); // Camera
+//        seedDataVariantAtribute("8.0 MP", 28, 135); // Resolution (Camera)
+//        seedDataVariantAtribute("ƒ/2.0", 29, 135); // Aperture (Camera)
+//        seedDataVariantAtribute("1.12 µm", 85, 135); // Pixel size (Camera)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 135); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 135); // Số Camera Selfie
+//        seedDataVariantAtribute("8.0 MP", 33, 135); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("ƒ/2.28", 34, 135); // Aperture (Camera Selfie)
+//        seedDataVariantAtribute("1.12 µm", 85, 135); // Pixel size (Camera Selfie)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 135); // Quay phim camera selfie
+//        seedDataVariantAtribute("Cảm biến gia tốc, Con quay hồi chuyển, Cảm biến ánh sáng, Cảm biến nhiệt độ, Cảm biến la bàn, Cảm biến từ trường", 36, 135); // Cảm biến
+//        seedDataVariantAtribute("Type C", 41, 135); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 a/b/g, Wifi 6, Dual-band (2.4 GHz/ 5 GHz), MIMO, Wi-Fi Direct", 42, 135); // Wifi
+//        seedDataVariantAtribute("v5.2", 44, 135); // Bluetooth
+//        seedDataVariantAtribute("1 viên Lithium polymer", 47, 135); // Loại PIN
+//        seedDataVariantAtribute("10000 mAh", 48, 135); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 135); // OS
+//        seedDataVariantAtribute("Android U (Hyper OS)", 50, 135); // Version
+//        seedDataVariantAtribute("Sạc, Cáp, Sách HDSD, Que lấy thẻ nhớ", 57, 135); // Phụ kiện trong hộp
+//
+//
+//        // Xiaomi Poco Pad WiFi 8GB 256GB
+//        seedDataVariant("Xiaomi Poco Pad WiFi 8GB 256GB", 7299021.0, 8, 37);
+//        seedDataVariantAtribute("256GB", 24, 136); // Dung lượng
+//        seedDataVariantAtribute("Xám", 3, 136); // Thông tin hàng hóa - Màu sắc
+//        seedDataVariantAtribute("Trung Quốc", 1, 136); // Xuất xứ
+//        seedDataVariantAtribute("06/2024", 2, 136); // Thời điểm ra mắt
+//        seedDataVariantAtribute("18", 4, 136); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("280 x 181.85 x 7.52 mm", 5, 136); // Kích thước
+//        seedDataVariantAtribute("571 g", 6, 136); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("83.60%", 13, 136); // Tỷ lệ diện tích sử dụng màn hình
+//        seedDataVariantAtribute("Khung máy: Kim loại", 7, 136); // Chất liệu
+//        seedDataVariantAtribute("Snapdragon 7s Gen 2", 9, 136); // CPU Model
+//        seedDataVariantAtribute("Octa-Core", 10, 136); // Loại CPU
+//        seedDataVariantAtribute("8", 11, 136); // Số nhân
+//        seedDataVariantAtribute("2.4 GHz", 12, 136); // Tốc độ tối đa
+//        seedDataVariantAtribute("8 GB", 79, 136); // Dung lượng RAM
+//        seedDataVariantAtribute("LPDDR4X", 66, 136); // Loại RAM
+//        seedDataVariantAtribute("12.1 inch", 14, 136); // Kích thước màn hình
+//        seedDataVariantAtribute("LCD", 15, 136); // Công nghệ màn hình
+//        seedDataVariantAtribute("1600 x 2560 Pixels", 17, 136); // Độ phân giải
+//        seedDataVariantAtribute("2.5K", 16, 136); // Chuẩn màn hình
+//        seedDataVariantAtribute("Hơn 68 tỷ màu", 78, 136); // Màu màn hình
+//        seedDataVariantAtribute("Gorilla Glass 3", 62, 136); // Chất liệu mặt kính
+//        seedDataVariantAtribute("249PPI", 22, 136); // Mật độ điểm ảnh
+//        seedDataVariantAtribute("120", 23, 136); // Tần số quét
+//        seedDataVariantAtribute("600 nits", 20, 136); // Độ sáng
+//        seedDataVariantAtribute("16:10", 26, 136); // Tỷ lệ màn hình
+//        seedDataVariantAtribute("1500:1", 21, 136); // Độ tương phản
+//        seedDataVariantAtribute("Qualcomm Adreno", 24, 136); // Chip đồ hoạ (GPU)
+//        seedDataVariantAtribute("Khoảng 230 GB", 85, 136); // Bộ nhớ còn lại
+//        seedDataVariantAtribute("MicroSD", 83, 136); // Thẻ nhớ ngoài
+//        seedDataVariantAtribute("1.5 TB", 84, 136); // Hỗ trợ thẻ nhớ tối đa
+//        seedDataVariantAtribute("Single rear camera", 27, 136); // Số camera sau
+//        seedDataVariantAtribute("Standard", 27, 136); // Camera
+//        seedDataVariantAtribute("8.0 MP", 28, 136); // Resolution (Camera)
+//        seedDataVariantAtribute("ƒ/2.0", 29, 136); // Aperture (Camera)
+//        seedDataVariantAtribute("1.12 µm", 85, 136); // Pixel size (Camera)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 136); // Quay phim camera sau
+//        seedDataVariantAtribute("Single selfie camera", 32, 136); // Số Camera Selfie
+//        seedDataVariantAtribute("8.0 MP", 33, 136); // Resolution (Camera Selfie)
+//        seedDataVariantAtribute("ƒ/2.28", 34, 136); // Aperture (Camera Selfie)
+//        seedDataVariantAtribute("1.12 µm", 85, 136); // Pixel size (Camera Selfie)
+//        seedDataVariantAtribute("1080p@30fps, 720p@30fps", 30, 136); // Quay phim camera selfie
+//        seedDataVariantAtribute("Cảm biến gia tốc, Con quay hồi chuyển, Cảm biến ánh sáng, Cảm biến nhiệt độ, Cảm biến la bàn, Cảm biến từ trường", 36, 136); // Cảm biến
+//        seedDataVariantAtribute("Type C", 41, 136); // Cổng giao tiếp
+//        seedDataVariantAtribute("802.11 a/b/g, Wifi 6, Dual-band (2.4 GHz/ 5 GHz), MIMO, Wi-Fi Direct", 42, 136); // Wifi
+//        seedDataVariantAtribute("v5.2", 44, 136); // Bluetooth
+//        seedDataVariantAtribute("1 viên Lithium polymer", 47, 136); // Loại PIN
+//        seedDataVariantAtribute("10000 mAh", 48, 136); // Dung lượng pin
+//        seedDataVariantAtribute("Android", 49, 136); // OS
+//        seedDataVariantAtribute("Android U (Hyper OS)", 50, 136); // Version
+//        seedDataVariantAtribute("Sạc, Cáp, Sách HDSD, Que lấy thẻ nhớ", 57, 136); // Phụ kiện trong hộp
+//
+//
+//        // Tai nghe AirPods Pro 2022
+//        seedDataProduct("Tai nghe AirPods", "Apple", 0.571, 14, 8, 3, "");
+//
+//
+//        seedDataVariant("Tai nghe AirPods Pro 2022", 5299021.0, 8, 38);
+//        seedDataVariantAtribute("AirPods Pro 2", 87, 137); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 137); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 137); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 137); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("Trắng", 3, 137); // Màu sắc
+//        seedDataVariantAtribute("50.8 g", 6, 137); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 137); // Loại tai nghe
+//        seedDataVariantAtribute("v5.3", 44, 137); // Bluetooth
+//        seedDataVariantAtribute("Chống ồn, Sạc không dây", 35, 137); // Tính năng
+//        seedDataVariantAtribute("macOS", 49, 137); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Dây cáp sạc", 57, 137); // Phụ kiện đi kèm
+//
+//        // Tai nghe AirPods 3 2022 Hộp sạc dây
+//        seedDataVariant("Tai nghe AirPods Pro 2022", 4099021.0, 8, 38);
+//        seedDataVariantAtribute("AirPods 3", 87, 138); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 138); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 138); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 138); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("Trắng", 3, 138); // Màu sắc
+//        seedDataVariantAtribute("54.4 x 21.38 x 46.40 mm", 5, 138); // Kích thước
+//        seedDataVariantAtribute("37.91 g", 6, 138); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 138); // Loại tai nghe
+//        seedDataVariantAtribute("3 - 5 giờ", 48, 138); // Thời gian sử dụng/1 lần sạc
+//        seedDataVariantAtribute("6 Giờ", 47, 138); // Dung lượng pin
+//        seedDataVariantAtribute("v5.0", 44, 138); // Bluetooth
+//        seedDataVariantAtribute("Cổng sạc: Lightning", 41, 138); // Cổng giao tiếp
+//        seedDataVariantAtribute("Nghe nhạc, Chống nước", 35, 138); // Tính năng
+//        seedDataVariantAtribute("iOS", 49, 138); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Sách HDSD, Cáp", 57, 138); // Phụ kiện đi kèm
+//
+//        // Tai nghe AirPods Pro 2023 USB-C
+//        seedDataVariant("Tai nghe AirPods Pro 2023 USB-C", 5799021.0, 10, 38);
+//        seedDataVariantAtribute("AirPods Pro", 87, 139); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 139); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 139); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Trắng", 3, 139); // Màu sắc
+//        seedDataVariantAtribute("Tai nghe không dây", 86, 139); // Loại tai nghe
+//        seedDataVariantAtribute("Chống ồn, Sạc không dây", 35, 139); // Tính năng
+//        seedDataVariantAtribute("Dây cáp sạc", 57, 139); // Phụ kiện đi kèm
+//
+//        // Tai nghe AirPods 4 - Chủ Động Khử Tiếng Ồn
+//        seedDataVariant("Tai nghe AirPods 4", 4799021.0, 10, 38);
+//        seedDataVariantAtribute("AirPods 4", 87, 140); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 140); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 140); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Trắng", 3, 140); // Màu sắc
+//        seedDataVariantAtribute("240 g", 6, 140); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 140); // Loại tai nghe
+//        seedDataVariantAtribute("5 Giờ", 47, 140); // Dung lượng pin
+//        seedDataVariantAtribute("Cổng sạc: USB Type-C", 41, 140); // Cổng giao tiếp
+//        seedDataVariantAtribute("Chế độ xuyên âm, Sạc không dây, Chống ồn, Nghe nhạc, Kháng nước IP54", 35, 140); // Tính năng
+//        seedDataVariantAtribute("Sách HDSD, Hộp sạc không dây", 57, 140); // Phụ kiện đi kèm
+//
+//        // Tai nghe Apple EarPods 2023 USB-C
+//        seedDataProduct("Tai nghe Apple EarPods USB-C", "Apple", 0.031, 14, 8, 3, "");
+//
+//        seedDataVariant("Tai nghe Apple EarPods USB-C", 599000.0, 10, 39);
+//        seedDataVariantAtribute("EarPods (USB-C)", 87, 141); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 141); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 141); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 141); // Hướng dẫn sử dụng
+//        seedDataVariantAtribute("Trắng", 3, 141); // Màu sắc
+//        seedDataVariantAtribute("31 g", 6, 141); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe nhét tai", 86, 141); // Loại tai nghe
+//        seedDataVariantAtribute("Điều khiển cuộc gọi, Điều khiển nhạc, Chống ồn", 45, 141); // Tính năng
+//
+//        // Tai nghe Beats Studio Buds
+//        seedDataProduct("Tai nghe Beats Studio Buds", "Apple", 0.058, 14, 8, 3, "");
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 3199001.0, 10, 40);
+//        seedDataVariantAtribute("Beats Studio Buds", 87, 142); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 142); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 142); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 142); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("Hồng", 3, 142); // Màu sắc
+//        seedDataVariantAtribute("58 g", 6, 142); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 142); // Loại tai nghe
+//        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 142); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 142); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 142); // Phụ kiện đi kèm
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 3199000.0, 10, 40);
+//        seedDataVariantAtribute("Beats Studio Buds", 87, 143); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 143); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 143); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 143); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("Đen", 3, 143); // Màu sắc
+//        seedDataVariantAtribute("58 g", 6, 143); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 143); // Loại tai nghe
+//        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 143); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 143); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 143); // Phụ kiện đi kèm
+//
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 3199003.0, 10, 40);
+//        seedDataVariantAtribute("Beats Studio Buds", 87, 144); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 144); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 144); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 144); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("Xanh", 3, 144); // Màu sắc
+//        seedDataVariantAtribute("58 g", 6, 144); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 144); // Loại tai nghe
+//        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 144); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 144); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 144); // Phụ kiện đi kèm
+//
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 3199005.0, 10, 40);
+//        seedDataVariantAtribute("Beats Studio Buds", 87, 145); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 145); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 145); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. Xem trong sách hướng dẫn sử dụng", 48, 145); // Hướng dẫn bảo quản và sử dụng
+//        seedDataVariantAtribute("Đỏ", 3, 145); // Màu sắc
+//        seedDataVariantAtribute("58 g", 6, 145); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe không dây : Bluetooth", 86, 145); // Loại tai nghe
+//        seedDataVariantAtribute("Chống nước, Chống ồn", 35, 145); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 145); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 145); // Phụ kiện đi kèm
+//
+//        // Tai nghe AirPods Max
+//        seedDataProduct("Tai nghe AirPods Max", "Apple", 0.1, 14, 8, 3, "");
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 12199005.0, 10, 41);
+//        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 146); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 146); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 146); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Xanh lá", 3, 146); // Màu sắc
+//        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 146); // Kích thước
+//        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 146); // Chất liệu
+//        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 146); // Loại tai nghe
+//        seedDataVariantAtribute("20 Giờ", 47, 146); // Dung lượng pin
+//        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 146); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 146); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 146); // Phụ kiện đi kèm
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 12199006.0, 10, 41);
+//        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 147); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 147); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 147); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Trắng", 3, 147); // Màu sắc
+//        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 147); // Kích thước
+//        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 147); // Chất liệu
+//        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 147); // Loại tai nghe
+//        seedDataVariantAtribute("20 Giờ", 47, 147); // Dung lượng pin
+//        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 147); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 147); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 147); // Phụ kiện đi kèm
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 12199055.0, 10, 41);
+//        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 148); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 148); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 148); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Hồng", 3, 148); // Màu sắc
+//        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 148); // Kích thước
+//        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 148); // Chất liệu
+//        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 148); // Loại tai nghe
+//        seedDataVariantAtribute("20 Giờ", 47, 148); // Dung lượng pin
+//        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 148); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 148); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 148); // Phụ kiện đi kèm
+//
+//
+//        seedDataVariant("Tai nghe Beats Studio Buds", 12199045.0, 10, 41);
+//        seedDataVariantAtribute("Tai nghe AirPods Max", 87, 149); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 149); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 149); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Xám", 3, 149); // Màu sắc
+//        seedDataVariantAtribute("187.3 x 168.6 x 83.4 mm", 5, 149); // Kích thước
+//        seedDataVariantAtribute("Vải, Khung máy: Kim loại", 7, 149); // Chất liệu
+//        seedDataVariantAtribute("Tai nghe chụp tai : Bluetooth", 86, 149); // Loại tai nghe
+//        seedDataVariantAtribute("20 Giờ", 47, 149); // Dung lượng pin
+//        seedDataVariantAtribute("Nghe nhạc, Chống ồn", 35, 149); // Tính năng
+//        seedDataVariantAtribute("TVOS", 49, 149); // Hệ điều hành tương thích
+//        seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 149); // Phụ kiện đi kèm
+//
+//        // Tai nghe Beats Fit Pro True Wireless Earbuds
+//
+//        seedDataProduct("Tai nghe Beats Fit Pro True Wireless Earbuds", "Apple", 0.005, 14, 8, 3, "");
+//
+//        seedDataVariant("Tai nghe Beats Fit Pro True Wireless Earbuds", 4199005.0, 10, 41);
+//        seedDataVariantAtribute("Beats Fit Pro True Wireless Earbuds", 87, 150); // Model
+//        seedDataVariantAtribute("Trung Quốc", 1, 150); // Xuất xứ
+//        seedDataVariantAtribute("12", 4, 150); // Thời gian bảo hành (tháng)
+//        seedDataVariantAtribute("Đen", 3, 150); // Màu sắc
+//        seedDataVariantAtribute("190 g", 6, 150); // Trọng lượng sản phẩm
+//        seedDataVariantAtribute("Tai nghe nhét tai, Tai nghe không dây : Bluetooth", 86, 150); // Loại tai nghe
+//        seedDataVariantAtribute("6 giờ", 48, 150); // Thời gian sử dụng/1 lần sạc
+//        seedDataVariantAtribute("Điện thoại", 11, 150); // Sử dụng cho thiết bị
+//        seedDataVariantAtribute("v5.0", 44, 150); // Bluetooth
+//        seedDataVariantAtribute("Chống ồn, Nghe nhạc", 35, 150); // Tính năng
+//        seedDataVariantAtribute("Sách HDSD", 48, 150); // Phụ kiện đi kèm
 
 
         // endregion
@@ -6561,6 +7520,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // order
+
         seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now(), "abc");
         seedDataOrder("abc", "Chuẩn bị hàng", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc");
 
@@ -6785,7 +7745,16 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
+    public void seedDataOrder(String note, String order_status, String payment_method, String payment_status, double total, Long customerId, LocalDateTime order_date) {
+        List<Order> orders = orderRepository.findOrdersByCustomerId(customerId);
+        if (orders.isEmpty()) {
+            Order order = new Order();
+            order.setNote(note);
+            order.setOrderStatus(order_status);
+            order.setPayment_status(payment_status);
 
+        }
+    }
 
     public void seedDataRole(String name) {
         Optional<Role> roles = roleRepository.findRoleByName(name);

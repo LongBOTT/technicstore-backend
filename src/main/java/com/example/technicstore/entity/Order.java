@@ -1,10 +1,7 @@
 package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.dialect.identity.HANAIdentityColumnSupport;
-
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.Set;
 
 @Entity
@@ -24,7 +21,6 @@ public class Order {
     private Customer customer;
 
     // Ngày đặt hàng
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime orderDate;
 
     // Tổng tiền của đơn đặt hàng
@@ -33,13 +29,12 @@ public class Order {
     // Trạng thái đơn đặt hàng
     private String orderStatus;
 
-    // Trạng thái thanh toan
+    // Trạng thái thanh toán
     private String payment_status;
 
-
-    // Danh sách chi tiết đơn đặt hàng
-    @OneToMany(mappedBy = "order")
-    private Set<OrderDetail> order_details;
+    // Danh sách chi tiết đơn đặt hàng (nếu cần)
+    // @OneToMany(mappedBy = "order")
+    // private Set<OrderDetail> order_details;
 
     // Phương thức thanh toán (Tiền mặt hoặc Chuyển khoản)
     @Column(name = "payment_method", nullable = false)
@@ -52,18 +47,17 @@ public class Order {
 
     private String address;
 
-    private String phone ;
+    private String phone;
 
     // endregion
 
     // region Constructor
 
-    public Order() {
-    }
+    public Order() {}
 
     // endregion
 
-    //region Getter and Setter
+    // region Getter and Setter
 
     public Long getId() {
         return id;
@@ -89,14 +83,6 @@ public class Order {
         this.orderDate = orderDate;
     }
 
-    public String getOrderStatus() {
-        return orderStatus;
-    }
-
-    public void setOrderStatus(String orderStatus) {
-        this.orderStatus = orderStatus;
-    }
-
     public double getTotal_amount() {
         return total_amount;
     }
@@ -105,6 +91,13 @@ public class Order {
         this.total_amount = total_amount;
     }
 
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
 
     public String getPayment_status() {
         return payment_status;
@@ -112,14 +105,6 @@ public class Order {
 
     public void setPayment_status(String payment_status) {
         this.payment_status = payment_status;
-    }
-
-    public Set<OrderDetail> getOrder_details() {
-        return order_details;
-    }
-
-    public void setOrder_details(Set<OrderDetail> order_details) {
-        this.order_details = order_details;
     }
 
     public PaymentMethod getPayment_method() {
@@ -154,7 +139,7 @@ public class Order {
         this.phone = phone;
     }
 
-//endregion
+    // endregion
 
     public enum PaymentMethod {
         Cash("Tiền mặt"),
@@ -162,12 +147,10 @@ public class Order {
 
         private final String description;
 
-        // Constructor cho enum
         PaymentMethod(String description) {
             this.description = description;
         }
 
-        // Phương thức để lấy mô tả
         public String getDescription() {
             return description;
         }

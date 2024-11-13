@@ -18,10 +18,12 @@ import java.util.Optional;
 public class OrderController {
 
     @Autowired
-    private OrderService orderService;
+    private CustomerService customerService;
 
     @Autowired
-    CustomerService customerService;
+    private OrderService orderService;
+
+
     // Lấy danh sách tất cả đơn hàng
     @GetMapping
     public List<OrderResponse> getAllOrders() {
@@ -99,6 +101,8 @@ public class OrderController {
         Order createdOrder = orderService.createOrder(order);
         return ResponseEntity.ok(createdOrder);
     }
+
+
 
     // Cập nhật thông tin đơn hàng
     @PutMapping("/{id}")

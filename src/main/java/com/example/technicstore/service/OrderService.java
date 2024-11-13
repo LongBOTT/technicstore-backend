@@ -137,7 +137,7 @@ public class OrderService {
             existingOrder.setTotal_amount(updatedOrder.getTotal_amount());
             existingOrder.setOrderStatus(updatedOrder.getOrderStatus());
             existingOrder.setPayment_status(updatedOrder.getPayment_status());
-            existingOrder.setOrder_details(updatedOrder.getOrder_details());
+//            existingOrder.setOrder_details(updatedOrder.getOrder_details());
             existingOrder.setPayment_method(updatedOrder.getPayment_method());
             existingOrder.setNote(updatedOrder.getNote());
             return orderRepository.save(existingOrder);
