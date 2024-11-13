@@ -37,6 +37,9 @@ public class ImeiService {
         return imeiRepository.findImeiByStockReceiveDetail_Id(stockReceiveDetailId);
     }
 
+    public List<Imei> searchImeis(String query) {
+        return imeiRepository.searchByImeiCodeOrVariantName(query);
+    }
 
     // Lấy IMEI theo mã IMEI
     public Optional<Imei> getImeiByImeiCode(String imeiCode) {
