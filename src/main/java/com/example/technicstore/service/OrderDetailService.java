@@ -19,6 +19,8 @@ public class OrderDetailService {
         this.orderDetailRepository = orderDetailRepository;
     }
 
+    @Autowired
+    private ImeiService imeiService;
     // Tìm kiếm chi tiết theo đơn hàng
     public List<OrderDetail> getOrderDetailsByOrderId(Long orderId) {
         return orderDetailRepository.findByOrderId(orderId);
@@ -35,4 +37,17 @@ public class OrderDetailService {
     public OrderDetail createOrderDetail(OrderDetail orderDetail) {
         return orderDetailRepository.save(orderDetail);
     }
+
+    public OrderDetail updateOrderDetail(Long id, Long imeiId) {
+        Optional<OrderDetail> orderDetailOptional = orderDetailRepository.findById(id);
+        if (orderDetailOptional.isPresent()) {
+            OrderDetail orderDetail = orderDetailOptional.get();
+            Imei imei = imeiService.getImeiById(imeiId)
+                    .orElseThrow(() -> new RuntimeException("IMEI không tồn tại"));
+            orderDetail.setImei(imei);
+            return orderDetailRepository.save(orderDetail);
+        }
+        throw new RuntimeException("OrderDetail không tồn tại");
+    }
+
 }

@@ -2,6 +2,7 @@ package com.example.technicstore.controller;
 
 import com.example.technicstore.DTO.Request.ImeiRequest;
 import com.example.technicstore.entity.Imei;
+import com.example.technicstore.entity.Product;
 import com.example.technicstore.service.ImeiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -41,7 +42,11 @@ public class ImeiController {
         return ResponseEntity.ok(response);
     }
 
-
+    @GetMapping("/search")
+    public ResponseEntity<List<Imei>> searchImeis(@RequestParam String query) {
+        List<Imei> results = imeiService.searchImeis(query);
+        return ResponseEntity.ok(results);
+    }
 
     // Tạo mới một IMEI
     @PostMapping
@@ -66,5 +71,16 @@ public class ImeiController {
     public ResponseEntity<Void> deleteImei(@PathVariable Long id) {
         imeiService.deleteImei(id);
         return ResponseEntity.noContent().build();
+    }
+
+    // xóa sản phẩm bằng cách cập nhật  trạng thái theo id
+    @PutMapping("/updateStatus/{id}")
+    public ResponseEntity<Imei> updateStatus(@PathVariable Long id) {
+        Imei updatedImei = imeiService.updateImeiStatus(id);
+        if (updatedImei != null) {
+            return ResponseEntity.ok(updatedImei);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

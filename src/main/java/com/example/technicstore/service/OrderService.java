@@ -1,12 +1,12 @@
 package com.example.technicstore.service;
 
+import com.example.technicstore.DTO.Response.ImeiResponse;
 import com.example.technicstore.DTO.Response.OrderDetailResponse;
 import com.example.technicstore.DTO.Response.OrderResponse;
+import com.example.technicstore.Mapper.ImeiMapper;
 import com.example.technicstore.Mapper.OrderDetailMapper;
 import com.example.technicstore.Mapper.OrderMapper;
-import com.example.technicstore.entity.Customer;
-import com.example.technicstore.entity.Order;
-import com.example.technicstore.entity.OrderDetail;
+import com.example.technicstore.entity.*;
 import com.example.technicstore.repository.CustomerRepository;
 import com.example.technicstore.repository.OrderDetailRepository;
 import com.example.technicstore.repository.OrderRepository;
@@ -27,6 +27,15 @@ public class OrderService {
     private OrderDetailRepository orderDetailRepository;
     @Autowired
     private CustomerRepository customerRepository;
+
+    @Autowired
+    private VariantService variantService;
+
+    @Autowired
+    private StockReceiveDetailService stockReceiveDetailService;
+
+    @Autowired
+    private ImeiService imeiService;
 
     // Lấy tất cả đơn hàng
     public List<Order> getAllOrders() {
@@ -121,6 +130,23 @@ public class OrderService {
         List<OrderDetailResponse> orderDetailResponses = new ArrayList<>();
         for (OrderDetail orderDetail : orderDetails) {
             OrderDetailResponse orderDetailResponse = OrderDetailMapper.toDTO(orderDetail);
+            Optional<Variant> variant = variantService.getVariantById(orderDetail.getVariantId());
+            orderDetailResponse.setVariant(variant.get());
+            List<StockReceiveDetail> stockReceiveDetails = stockReceiveDetailService.findStockReceiveDetailsByVariant_Id(orderDetail.getVariantId());
+            for (StockReceiveDetail stockReceiveDetail : stockReceiveDetails) {
+                if (stockReceiveDetail.getId() != null) {
+                    List<Imei> imeis = imeiService.getImeisByStockReceiveDetailId(stockReceiveDetail.getId());
+                    List<ImeiResponse> imeisResponses = new ArrayList<>();
+                    for (Imei imei : imeis) {
+                        if ("available".equals(imei.getStatus())) {
+                            ImeiResponse imeiResponse = ImeiMapper.toDTO(imei);
+                            imeisResponses.add(imeiResponse);
+                        }
+                    }
+                    orderDetailResponse.setImeis(imeisResponses);
+                }
+            }
+
             orderDetailResponses.add(orderDetailResponse);
         }
         orderResponse.setOrderDetailResponseList(orderDetailResponses);
