@@ -1,5 +1,6 @@
 package com.example.technicstore.controller;
 
+import com.example.technicstore.DTO.Response.CustomerResponse;
 import com.example.technicstore.entity.Customer;
 import com.example.technicstore.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,5 +68,10 @@ public class CustomerController {
     public ResponseEntity<Void> deleteCustomer(@PathVariable Long id) {
         customerService.deleteCustomer(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/getAll")
+    public List<CustomerResponse> getCustomerResponse() {
+        return customerService.getCustomerResponse();
     }
 }

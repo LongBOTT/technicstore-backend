@@ -1,5 +1,10 @@
 package com.example.technicstore.DTO.Response;
 
+import com.example.technicstore.entity.Imei;
+import com.example.technicstore.entity.Variant;
+
+import java.util.List;
+
 public class OrderDetailResponse {
     private Long id;
     private Long orderId;
@@ -8,6 +13,10 @@ public class OrderDetailResponse {
     private double price;
     private double total_amount;
 
+    private Variant variant;
+    private Imei imei;
+
+    private List<ImeiResponse> imeis;
     public OrderDetailResponse() {
     }
 
@@ -49,5 +58,29 @@ public class OrderDetailResponse {
 
     public void setTotal_amount(double total_amount) {
         this.total_amount = total_amount;
+    }
+
+    public Variant getVariant() {
+        return variant;
+    }
+
+    public void setVariant(Variant variant) {
+        this.variant = variant;
+    }
+
+    public List<ImeiResponse> getImeis() {
+        return imeis;
+    }
+
+    public void setImeis(List<ImeiResponse> imeis) {
+        this.imeis = imeis;
+    }
+
+    public Imei getImei() {
+        return imei;
+    }
+
+    public void setImei(Imei imei) {
+        this.imei = imei;
     }
 }

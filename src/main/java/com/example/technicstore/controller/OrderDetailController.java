@@ -4,10 +4,12 @@ import com.example.technicstore.entity.Imei;
 import com.example.technicstore.entity.OrderDetail;
 import com.example.technicstore.service.OrderDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -28,8 +30,6 @@ public class OrderDetailController {
     }
 
 
-
-
     // Lấy chi tiết đơn đặt hàng theo ID
     @GetMapping("/{id}")
     public ResponseEntity<OrderDetail> getOrderDetailById(@PathVariable Long id) {
@@ -39,9 +39,32 @@ public class OrderDetailController {
 
     // Tạo chi tiết đơn đặt hàng mới
     @PostMapping
-    public OrderDetail createOrderDetail(@RequestBody OrderDetail orderDetail) {
-        return orderDetailService.createOrderDetail(orderDetail);
+    public ResponseEntity<OrderDetail> createOrderDetail(@RequestBody OrderDetail orderDetail) {
+        try {
+            OrderDetail createdOrderDetail = orderDetailService.createOrderDetail(orderDetail);
+            return ResponseEntity.ok(createdOrderDetail);
+        } catch (Exception e) {
+            e.printStackTrace(); // Log chi tiết lỗi
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
     }
+
+    // Cập nhật chi tiết đơn đặt hàng
+
+    @PutMapping("/{id}")
+    public ResponseEntity<OrderDetail> updateOrderDetail(@PathVariable Long id, @RequestBody Map<String, Long> requestBody) {
+        try {
+            Long imeiId = requestBody.get("imeiId");
+            OrderDetail updatedOrderDetail = orderDetailService.updateOrderDetail(id, imeiId);
+            return ResponseEntity.ok(updatedOrderDetail);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        } catch (Exception e) {
+            e.printStackTrace(); // Log chi tiết lỗi
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
 
 
 }

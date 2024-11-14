@@ -1,7 +1,9 @@
 package com.example.technicstore.controller;
 
 import com.example.technicstore.DTO.Response.OrderResponse;
+import com.example.technicstore.entity.Customer;
 import com.example.technicstore.entity.Order;
+import com.example.technicstore.service.CustomerService;
 import com.example.technicstore.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +16,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/orders")
 public class OrderController {
+
+    @Autowired
+    private CustomerService customerService;
 
     @Autowired
     private OrderService orderService;
@@ -74,13 +79,35 @@ public class OrderController {
     // Tạo mới một đơn hàng
     @PostMapping
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
+
+        // Kiểm tra nếu thông tin khách hàng không có hoặc số điện thoại trống
+        if (order.getCustomer() == null || order.getCustomer().getPhone() == null || order.getCustomer().getPhone().isEmpty()) {
+            return ResponseEntity.badRequest().body(null); // Trả về lỗi nếu không có thông tin khách hàng hoặc số điện thoại
+        }
+
+        // Tìm kiếm khách hàng dựa trên số điện thoại
+        Optional<Customer> existingCustomer = customerService.findByPhone(order.getCustomer().getPhone());
+
+        if (existingCustomer.isPresent()) {
+            // Nếu khách hàng đã tồn tại, thiết lập khách hàng vào order
+            order.setCustomer(existingCustomer.get());
+        } else {
+            // Nếu khách hàng chưa tồn tại, tạo mới khách hàng
+            Customer newCustomer = customerService.createCustomer(order.getCustomer());
+            order.setCustomer(newCustomer);
+        }
+
+        // Tạo đơn hàng
         Order createdOrder = orderService.createOrder(order);
         return ResponseEntity.ok(createdOrder);
     }
 
+
+
     // Cập nhật thông tin đơn hàng
     @PutMapping("/{id}")
     public ResponseEntity<Order> updateOrder(@PathVariable Long id, @RequestBody Order order) {
+        System.out.println("Received order data: " + order); // Log để kiểm tra dữ liệu nhận được
         Order updatedOrder = orderService.updateOrder(id, order);
         if (updatedOrder != null) {
             return ResponseEntity.ok(updatedOrder);

@@ -13,4 +13,6 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
     // Tìm kiếm gần đúng theo tên khách hàng
     List<Customer> findCustomerByNameContainsIgnoreCase(String name);
+
+    Optional<Customer> findCustomerByPhone(String phone);
 }

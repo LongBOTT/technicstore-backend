@@ -36,6 +36,10 @@ public class StockReceiveDetailService {
         return stockReceiveDetailRepository.findStockReceiveDetailsByStockReceive_Id(stockReceiveId);
     }
 
+    // Lấy chi tiết phiếu nhập theo id phiên bản
+    public List<StockReceiveDetail> findStockReceiveDetailsByVariant_Id(Long variantId) {
+        return stockReceiveDetailRepository.findStockReceiveDetailsByVariant_Id(variantId);
+    }
     // Tạo chi tiết phiếu nhập
     public StockReceiveDetail createStockReceiveDetail(StockReceiveDetailRequest stockReceiveDetailRequest) {
         StockReceiveDetail stockReceiveDetail = StockReceiveDetailMapper.toEntity(stockReceiveDetailRequest);

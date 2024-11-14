@@ -12,6 +12,8 @@ public interface StockReceiveDetailRepository extends JpaRepository<StockReceive
     // lấy tất cả chi tiết phiếu nhập theo id phiếu nhập
    List<StockReceiveDetail> findStockReceiveDetailsByStockReceive_Id(long stockReceiveId);
 
+    List<StockReceiveDetail> findStockReceiveDetailsByVariant_Id(long variantId);
+
    // lấy chi tiết phiếu nhập theo id chi tiết phiếu nhập
    Optional<StockReceiveDetail> findStockReceiveDetailById(long stockReceiveDetailId);
 

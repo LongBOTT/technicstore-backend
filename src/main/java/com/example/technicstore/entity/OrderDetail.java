@@ -19,8 +19,8 @@ public class OrderDetail {
     private Order order;
 
     // IMEI sản phẩm đặt
-    @OneToOne
-    @JoinColumn(name = "IMEI_code")
+    @ManyToOne
+    @JoinColumn(name = "IMEI_code", unique = false)
     private Imei imei;
 
     // Số lượng sản phẩm được đặt
@@ -32,6 +32,7 @@ public class OrderDetail {
     // Tổng tiền
     private double total;
 
+    private Long variantId;
     // endregion
 
     // region Constructor
@@ -99,5 +100,12 @@ public class OrderDetail {
         this.total = total;
     }
 
+    public Long getVariantId() {
+        return variantId;
+    }
+
+    public void setVariantId(Long variantId) {
+        this.variantId = variantId;
+    }
     //endregion
 }
