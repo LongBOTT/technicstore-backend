@@ -418,10 +418,10 @@ public class DataInitializer implements CommandLineRunner {
         //iPhone 14
         seedDataProduct("iPhone 14", "Điện thoại", 0.5, 1, 1, 1, "iphone_14_48a46d1684.png");
 
-        // phiên bản iphone 14
-        seedDataVariant("iphone14", 21990000.0, 10, 1);
-        seedDataVariant("iphone14", 24990000.0, 10, 1);
-        seedDataVariant("iphone14", 27990000.0, 10, 1);
+        // phiên bản iphone 14  String image , String name, Double price, int quantity, int product_id
+        seedDataVariant("/src/assets/products/ip14.jpg", "iphone14-Đen-128GB", 21990000.0, 10, 1);
+        seedDataVariant("/src/assets/productsip14xanh256.jpg", "iphone14-Xanh-256GB",  24990000.0, 10, 1);
+        seedDataVariant("/src/assets/products/iphone14-Trang-512GB.jpg","iphone14-Trang-512GB", 27990000.0, 10, 1);
 
         // Thông số
         // điện thoại iphone 14 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 21.990.000
@@ -556,9 +556,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 14 Plus", "Điện thoại", 0.5, 1, 1, 1, "iphone_14_48a46d1684.png");
 
         // phiên bản iphone 14 plus
-        seedDataVariant("iphone14plus", 24990000.0, 10, 2);
-        seedDataVariant("iphone14plus", 27990000.0, 10, 2);
-        seedDataVariant("iphone14plus", 32990000.0, 10, 2);
+        seedDataVariant("/src/assets/products/iphone14plus-Đen-128GB.jpg", "iphone14plus-Đen-128GB " ,24990000.0, 10, 2);
+        seedDataVariant("/src/assets/products/iphone14plus-Trắng-256GB.jpg", "iphone14plus-Trắng-256GB ", 27990000.0, 10, 2);
+        seedDataVariant("/src/assets/products/iphone14plus-Xanh-512GB.jpg", "iphone14plus-Xanh-512GB ",32990000.0, 10, 2);
 
         // Thông số
         // điện thoại iphone 14 plus dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 24.990.000
@@ -695,9 +695,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_a9308b6994.png");
 
         // phiên bản iphone 15
-        seedDataVariant("iphone15", 22990000.0, 10, 3);
-        seedDataVariant("iphone15", 25990000.0, 10, 3);
-        seedDataVariant("iphone15", 31990000.0, 10, 3);
+        seedDataVariant("/src/assets/products/iphone15-Đen-128GB.jpg", "iphone15-Đen-128GB", 22990000.0, 10, 3);
+        seedDataVariant("/src/assets/products/iphone15-Trắng-256GB.jpg", "iphone15-Trắng-256GB", 25990000.0, 10, 3);
+        seedDataVariant("/src/assets/products/iphone15-Xanh-512GB.jpg", "iphone15-Xanh-512GB", 31990000.0, 10, 3);
 
         // Thông số
         // điện thoại iphone 15 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 22.990.000
@@ -858,9 +858,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Plus", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_a9308b6994.png");
 
         // phiên bản iphone 15 plus
-        seedDataVariant("iphone15plus", 25990000.0, 10, 4);
-        seedDataVariant("iphone15plus", 28990000.0, 10, 4);
-        seedDataVariant("iphone15plus", 34990000.0, 10, 4);
+
+        seedDataVariant("/src/assets/products/iphone15plus-Đen-128GB.jpg", "iphone15plus-Đen-128GB", 25990000.0, 10, 4);
+        seedDataVariant("/src/assets/products/iphone15plus-Trắng-256GB.jpg", "iphone15plus-Trắng-256GB", 28990000.0, 10, 4);
+        seedDataVariant("/src/assets/products/iphone15plus-Xanh-512GB.jpg", "iphone15plus-Xanh-512GB", 34990000.0, 10, 4);
 
         // Thông số
         // điện thoại iphone 15 plus dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
@@ -1022,10 +1023,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro
-        seedDataVariant("iphone15pro", 28990000.0, 10, 5);
-        seedDataVariant("iphone15pro", 31990000.0, 10, 5);
-        seedDataVariant("iphone15pro", 37990000.0, 10, 5);
-        seedDataVariant("iphone15pro", 43990000.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Đen-128GB.jpg", "iphone15pro-Đen-128GB", 28990000.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Trắng-256GB.jpg", "iphone15pro-Trắng-256GB", 31990000.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Xanh-512GB.jpg", "iphone15pro-Xanh-512GB", 37990900.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Đen-1TB.jpg", "iphone15pro-Đen-1TB", 43990000.0, 10, 5);
+
 
         // Thông số
         // điện thoại iphone 15 pro dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 28.990.000
@@ -1180,6 +1182,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS 17", 50, 15);
         seedDataVariantAtribute("Cáp USB-C to USB-C, Sách HDSD, Que lấy SIM", 51, 15);
 
+
+
         seedDataVariantAtribute("Trung quốc", 1, 16);
         seedDataVariantAtribute("09/2023", 2, 16);
         seedDataVariantAtribute("12", 4, 16);
@@ -1229,9 +1233,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Pro Max", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro max
-        seedDataVariant("iphone15promax", 34990000.0, 10, 6);
-        seedDataVariant("iphone15promax", 40990000.0, 10, 6);
-        seedDataVariant("iphone15promax", 46990000.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Đen-256GB.jpg", "iphone15promax-Đen-256GB", 34990000.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Trắng-512GB.jpg", "iphone15promax-Trắng-512GB", 40990000.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Xanh-1TB.jpg", "iphone15promax-Xanh-1TB", 46990000.0, 10, 6);
 
         // Thông số
         // điện thoại iphone 15 pro max dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 34.990.000
@@ -1383,9 +1387,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 16", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16
-        seedDataVariant("iphone16", 22990000.0, 10, 7);
-        seedDataVariant("iphone16", 25990000.0, 10, 7);
-        seedDataVariant("iphone16", 30990000.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Đen-128GB.jpg", "iphone16-Đen-128GB", 22990000.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Trắng-256GB.jpg", "iphone16-Trắng-256GB", 25990000.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Xanh-512GB.jpg", "iphone16-Xanh-512GB", 30990000.0, 10, 7);
+
 
         // Thông số
         // điện thoại iphone 16 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 22.990.000
@@ -1546,10 +1551,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 16 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16 pro
-        seedDataVariant("iphone16pro", 28990000.0, 10, 8);
-        seedDataVariant("iphone16pro", 31990000.0, 10, 8);
-        seedDataVariant("iphone16pro", 37990000.0, 10, 8);
-        seedDataVariant("iphone16pro", 43990000.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Đen-128GB.jpg", "iphone16pro-Đen-128GB", 28990000.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Trắng-256GB.jpg", "iphone16pro-Trắng-256GB", 31990000.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Xanh-512GB.jpg", "iphone16pro-Xanh-512GB", 37990200.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Đen-1TB.jpg", "iphone16pro-Đen-1TB", 43990090.0, 10, 8);
+
 
         // Thông số
         // điện thoại iphone 16 pro dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 28.990.000
@@ -1718,7 +1724,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S24 FE", "Điện thoại", 0.5, 2, 1, 2, "samssung_galaxy_s24_fe_xanh_723e4e6443.png");
 
         // phiên bản samsung galaxy s24 FE
-        seedDataVariant("samsunggalaxys24fe", 16990000.0, 10, 9);
+        seedDataVariant("/src/assets/products/SamsungGalaxys24fe-Đen-128GB.jpg", "SamsungGalaxys24fe-Đen-128GB", 16990000.0, 10, 9);
+
 
         // Thông số
         // điện thoại samsung galaxy s24 FE dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 16.990.000
@@ -1768,7 +1775,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S23", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s23_591dfc2c85.png");
 
         // phiên bản samsung galaxy s23
-        seedDataVariant("samsunggalaxys23", 24990000.0, 10, 10);
+        seedDataVariant("/src/assets/products/samsunggalaxys23-Xanh-256GB.jpg", "samsunggalaxys23-Xanh-256GB", 24990000.0, 10, 10);
+
+
 
         // Thông số
         // điện thoại samsung galaxy s23 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 24.990.000
@@ -1828,8 +1837,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S24 Ultra", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s24_ultra_2f8a5ee174.png");
 
         // phiên bản Samsung Galaxy S24 Ultra
-        seedDataVariant("samsunggalaxys24ultra", 33990000.0, 10, 11);
-        seedDataVariant("samsunggalaxys24ultra", 37990000.0, 10, 11);
+        seedDataVariant("/src/assets/products/samsunggalaxys24ultra-Đen-256GB.jpg", "samsunggalaxys24ultra-Đen-256GB", 33997000.0, 10, 11);
+        seedDataVariant("/src/assets/products/samsunggalaxys24ultra-Xanh-512GB.jpg", "samsunggalaxys24ultra-Xanh-512GB", 37990800.0, 10, 11);
 
         // Thông số
         // điện thoại Samsung Galaxy S24 Ultra dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 33.990.000
@@ -1941,7 +1950,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy Z Flip5", "Điện thoại", 0.5, 2, 1, 2, "2024_3_28_638472353992099331_samsung-galaxy-zflip-5-xanh-ai.jpg");
 
         // phiên bản Samsung Galaxy Z Flip5
-        seedDataVariant("samsunggalaxyzflip5", 25990000.0, 10, 12);
+        seedDataVariant("/src/assets/products/samsunggalaxyzflip5-Đen-256GB.jpg", "samsunggalaxyzflip5-Đen-256GB", 25990000.0, 10, 12);
+
 
         // Thông số
         // điện thoại Samsung Galaxy Z Flip5 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
@@ -2000,7 +2010,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy A06", "Điện thoại", 0.5, 2, 1, 1, "samsung_galaxy_a06_blue_black_1_46d3694f11.png");
 
         // phiên bản Samsung Galaxy A06
-        seedDataVariant("samsunggalaxya06", 3490000.0, 10, 13);
+        seedDataVariant("/src/assets/products/samsunggalaxya06-Đen-128GB.jpg", "samsunggalaxya06-Đen-128GB", 3490000.0, 10, 13);
+
 
         // Thông số
         // điện thoại Samsung Galaxy A06 dung lượng128 GB có 3 màu Đen, Trắng, Xanh giá 3.490.000
@@ -2052,7 +2063,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy A05", "Điện thoại", 0.5, 2, 1, 1, "2023_10_4_638320083060239206_samsung-galaxy-a05-xanh-3.jpg");
 
         // phiên bản Samsung Galaxy A05
-        seedDataVariant("samsunggalaxya05", 2790000.0, 10, 14);
+        seedDataVariant("/src/assets/products/samsunggalaxya05-Xanh-128GB.jpg", "samsunggalaxya05-Xanh-128GB", 2790000.0, 10, 14);
+
 
         // Thông số
         // điện thoại Samsung Galaxy A05 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 2.790.000
@@ -2097,7 +2109,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("OPPO A3", "Điện thoại", 0.5, 4, 1, 1, "oppo_a3_tim_5_a81a5f4bf7.jpg");
 
         // phiên bản OPPO A3
-        seedDataVariant("oppoa3", 4990000.0, 10, 15);
+        seedDataVariant("/src/assets/products/oppoa3-Đen-128GB.jpg", "oppoa3-Đen-128GB", 4990000.0, 10, 15);
 
         // Thông số
         // điện thoại OPPO A3 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.990.000
@@ -2151,7 +2163,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("OPPO Reno12", "Điện thoại", 0.5, 4, 1, 1, "oppo_reno_12_trang_d776379731.jpg");
 
         // phiên bản OPPO Reno12 256 GB
-        seedDataVariant("opporeno12", 12690000.0, 10, 16);
+        seedDataVariant("/src/assets/products/opporeno12-Xanh-256GB.jpg", "opporeno12-Xanh-256GB", 12690000.0, 10, 16);
+
 
         // Thông số
         // điện thoại OPPO Reno12 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 12.690.000
@@ -2212,7 +2225,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi POCO X6", "Điện thoại", 0.5, 3, 1, 1, "00909923_poco_x6_blue_5e570f66db.png");
 
         // phiên bản Xiaomi POCO X6 256 GB
-        seedDataVariant("xiaomipocox6", 8990000.0, 10, 17);
+        seedDataVariant("/src/assets/products/xiaomipocox6-Xanh-256GB.jpg", "xiaomipocox6-Xanh-256GB", 8990000.0, 10, 17);
 
         // Thông số
         // điện thoại Xiaomi POCO X6 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 8.990.000
@@ -2267,7 +2280,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi Poco M6", "Điện thoại", 0.5, 3, 1, 1, "poco_m6_cc5c059d02.png");
 
         // phiên bản Xiaomi Poco M6 128 GB
-        seedDataVariant("xiaomipocom6", 4290000.0, 10, 18);
+        seedDataVariant("/src/assets/products/xiaomipocom6-Đen-128GB.jpg", "xiaomipocom6-Đen-128GB", 4290000.0, 10, 18);
+
 
         // Thông số
         // điện thoại Xiaomi Poco M6 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.290.000
@@ -2322,7 +2336,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi Redmi Note 13", "Điện thoại", 0.5, 3, 1, 1, "2024_1_5_638400663079293145_xiaomi-redmi-note-13-xanh.png");
 
         // phiên bản Xiaomi Redmi Note 13 128 GB
-        seedDataVariant("xiaomiredminote13", 4990000.0, 10, 19);
+        seedDataVariant("/src/assets/products/xiaomiredminote13-Xanh-128GB.jpg", "xiaomiredminote13-Xanh-128GB", 4990000.0, 10, 19);
+
+
 
         // Thông số
         // điện thoại Xiaomi Redmi Note 13 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.990.000
@@ -2371,7 +2387,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi Redmi Note 13 Pro+", "Điện thoại", 0.5, 3, 1, 1, "2024_1_5_638400663079293145_xiaomi-redmi-note-13-xanh.png");
 
         // phiên bản Xiaomi Redmi Note 13 Pro+ 256 GB
-        seedDataVariant("xiaomiredminote13proplus", 8990000.0, 10, 20);
+        seedDataVariant("/src/assets/products/", "xiaomiredminote13proplus-Trắng-256GB", 8990000.0, 10, 20);
+
 
         // Thông số
         // điện thoại Xiaomi Redmi Note 13 Pro+ dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 8.990.000
@@ -2423,19 +2440,19 @@ public class DataInitializer implements CommandLineRunner {
         //MacBook Air
         // phiên bản  MacBook Air M2 13 2022 8CPU 10GPU 8GB 512GB
         seedDataProduct("MacBook Air M2 13 2022 8CPU 10GPU 8GB 512GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("MacbookAir13inchm220228CPU10GPU8GB512GB", 31990000.0, 10, 21);
+        seedDataVariant("/src/assets/products/", "MacbookAir13inchm220228CPU10GPU8GB512GB-Đen-512GB",31990000.0, 10, 21);
 
         //MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB
         seedDataProduct("MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("Đen MacBookAir13inchM220228CPU8GPU8GB256GB", 27990000.0, 10, 22);
+        seedDataVariant("/src/assets/products/", "Đen MacBookAir13inchM220228CPU8GPU8GB256GB-xám-256GB",27990000.0, 10, 22);
 
         //MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB
         seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("Đen MacBookAir13inchM120208CPU7GPU8GB256GB", 22990000.0, 10, 23);
+        seedDataVariant("/src/assets/products/", "Đen MacBookAir13inchM120208CPU7GPU8GB256GB-trắng-256GB",22990000.0, 10, 23);
 
         // MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB
         seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("Đen MacBookAir13inchM120208CPU7GPU16GB256GB", 29990000.0, 10, 24);
+        seedDataVariant("/src/assets/products/", "MacBookAir13inchM120208CPU7GPU16GB256GB-Đen-256GB ",29990000.0, 10, 24);
 
         // Thông số
         // Laptop MacBook Air 13 inch M2 2022 8CPU 10GPU 8GB/512GB có 3 màu Đen, Trắng, Xám giá 31.990.000
@@ -2486,7 +2503,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12", 4, 40);
 
         // Laptop MacBook Air 13 inch M2 2022 8CPU 10GPU 8GB/256GB có 3 màu Đen, Trắng, Ghi giá 27.990.000
-        seedDataVariantAtribute("Đen", 3, 41);
+        seedDataVariantAtribute("Xám", 3, 41);
         seedDataVariantAtribute("256GB", 24, 41);
         seedDataVariantAtribute("Apple M2 GPU 8 nhân", 64, 41);
         seedDataVariantAtribute("30 W", 75, 41);
@@ -2534,7 +2551,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12", 4, 41);
 
         // Laptop MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB có 3 màu Đen, Trắng, Ghi giá 22.990.000
-        seedDataVariantAtribute("Đen", 3, 42);
+        seedDataVariantAtribute("Trắng", 3, 42);
         seedDataVariantAtribute("256GB", 24, 42);
         seedDataVariantAtribute("M1", 61, 42);
         seedDataVariantAtribute("8", 11, 42);
@@ -2641,35 +2658,36 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
-        seedDataVariant("MacBookPro142023M3Pro11CPU14GPU36GB512GB", 48990000.0, 10, 25);
+        seedDataVariant("/src/assets/products/", "MacBookPro142023-Đen-512GB", 48990000.0, 10, 25);
         seedDataVariantAtribute("Đen", 3, 44);
         seedDataVariantAtribute("512GB", 24, 44);
 
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB giá 59990000.0
         seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("MacBookPro142023M3Pro11CPU14GPU36GB512GB", 59990000.0, 10, 26);
+        seedDataVariant("/src/assets/products/", "MacBookPro142023-Đen-512GB", 59990000.0, 10, 26);
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB 2 màu bạc - đen,  giá 59990000.0
         seedDataVariantAtribute("Đen", 3, 45);
         seedDataVariantAtribute("512GB", 24, 45);
 
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
+
         seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("MacBookPro162023M3Pro11CPU14GPU36GB512GB", 64490000.0, 10, 27);
+        seedDataVariant("/src/assets/products/", "MacBookPro162023-Đen-512GB", 64490000.0, 10, 27);
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB 2 màu bạc - đen,  giá 64490000.0
         seedDataVariantAtribute("Đen", 3, 46); // màu -
         seedDataVariantAtribute("512GB", 24, 46); // bộ nhớ ( rom)
 
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB
         seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("MacBookPro162023M3Pro11CPU14GPU36GB512GB", 74490000.0, 10, 28);
+        seedDataVariant("/src/assets/products/", "MacBookPro162023-Đen-512GB", 74490000.0, 10, 28);
         seedDataVariantAtribute("Đen", 3, 47); // màu
         seedDataVariantAtribute("512GB", 24, 47); // bộ nhớ ( rom)
 
         // MacBook Pro 13" 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb
-        seedDataProduct("MacBook Pro 13\" 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("MacBookPro 132020TouchBarM18CPU8GPU8GB256Gb", 20490000.0, 10, 29);
+        seedDataProduct("MacBook Pro 13 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb", "Laptop", 1.61, 6, 2, 1, "");
+        seedDataVariant("/src/assets/products/", "MacBookPro132020-Bạc-256GB", 20490000.0, 10, 29);
         seedDataVariantAtribute("Bạc", 3, 48); // màu bạc
         seedDataVariantAtribute("512GB", 24, 48); // bộ nhớ ( rom)
 
@@ -2886,7 +2904,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
 //
 //        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB/14"FHD+/Win11/Office HS21
-        seedDataVariant("Laptop Dell Inspiron 14N 5440 i5 1334U", 20190000.0, 10, 30);
+        seedDataVariant("/src/assets/products/", "LaptopDellInspiron14-Xanh-512GB", 20190000.0, 10, 30);
+
 //
 //
 //        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB/14"FHD+/Win11/Office HS21
@@ -2936,7 +2955,8 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        // thông số kĩ thuật
         seedDataProduct("Laptop Dell Inspiron 15 N3530 i5 1335U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
-        seedDataVariant("Laptop Dell Inspiron 15N 3530 i5 1355U", 21490000.0, 10, 31);
+        seedDataVariant("/src/assets/products/", "LaptopDellInspiron15-Đen-512GB", 21490000.0, 10, 31);
+
         seedDataVariantAtribute("Đen", 3, 50); // màu
         seedDataVariantAtribute("512GB", 24, 50); // bộ nhớ ( rom)
         seedDataVariantAtribute("Dell", 60, 50);  // Hãng
@@ -2988,7 +3008,8 @@ public class DataInitializer implements CommandLineRunner {
 //        // Thông số kỹ thuật
 
         seedDataProduct("Laptop Dell Inspiron 15N 3530 i7 1335U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
-        seedDataVariant("Laptop Dell Inspiron 15N 3530 i7 1335U", 20290000.0, 10, 32);
+        seedDataVariant("/src/assets/products/", "LaptopDellInspiron15-Đen-512GB", 20290000.0, 10, 32);
+
 //        // Laptop Dell Inspiron 15 N3530 i7 1355U/16GB/512GB/15.6"FHD/Win11/Office 365 Personal
         seedDataVariantAtribute("Đen", 3, 51); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 51); // Dung lượng ổ cứng
@@ -3047,7 +3068,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell Vostro V3430 i5 1335U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "");
 //
 //        // Laptop Dell Vostro V3430 i5 1335U/16GB/512GB/14"FHD/Nvidia GeForce MX550 2GB/Win11/Office HS21
-        seedDataVariant("Laptop Dell Vostro V3430 i5 1335U Nvidia GeForce", 19799000.0, 10, 33);
+        seedDataVariant("/src/assets/products/", "LaptopDellVostroV3430-Xám-512GB", 19799000.0, 10, 33);
+
         seedDataVariantAtribute("Xám", 3, 52); // màu
         seedDataVariantAtribute("512 GB", 24, 52); // Dung lượng ổ cứng
 //        // Thông số kỹ thuật
@@ -3098,7 +3120,8 @@ public class DataInitializer implements CommandLineRunner {
 //        // Laptop Dell Vostro V3520 i5 1235U/16GB/512GB/15.6"FHD/Win11/Office HS21
         seedDataProduct("Laptop Dell Vostro V3520 i5 1235U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "");
 //
-        seedDataVariant("Laptop Dell Vostro V3430 i5 1335U", 16399000.0, 10, 34);
+        seedDataVariant("/src/assets/products/", "LaptopDellVostroV3430-Xám-512GB", 16399000.0, 10, 34);
+
         seedDataVariantAtribute("Xám", 3, 53); // màu
         seedDataVariantAtribute("512 GB", 24, 53); // Dung lượng
         seedDataVariantAtribute("Dell", 60, 53);  // Hãng
@@ -3143,19 +3166,22 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell Latitude L3540 i5 1335U", "Laptop", 1.49, 7, 2, 4, "");
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1335U
-        seedDataVariant("Laptop Dell Latitude L3540 i5 1335U", 18790000.0, 10, 35);
+        seedDataVariant("/src/assets/products/", "LaptopDellLatitudeL3540-Xám-512GB", 18790000.0, 10, 35);
+
         seedDataVariantAtribute("Xám", 3, 54); // màu
         seedDataVariantAtribute("512 GB", 24, 54); // Dung lượng
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1235U
         seedDataProduct("Laptop Dell Latitude L3540 i5 1235U", "Laptop", 1.49, 7, 2, 4, "");
-        seedDataVariant("Laptop Dell Latitude L3540 i5 1235U", 18790000.0, 10, 36);
+        seedDataVariant("/src/assets/products/", "LaptopDellLatitudeL3540-Xám-512GB", 18790000.0, 10, 36);
+
         seedDataVariantAtribute("Xám", 3, 55); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 55); // Dung lượng
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude 3440 i5 1235U
         seedDataProduct("Laptop Dell Latitude 3440 i5 1235U", "Laptop", 1.49, 7, 2, 4, "");
-        seedDataVariant("Laptop Dell Latitude 3440 i5 1235U", 17990000.0, 10, 37);
+        seedDataVariant("/src/assets/products/", "LaptopDellLatitude3440-Đen-512GB", 17990000.0, 10, 37);
+
         seedDataVariantAtribute("Đen", 3, 56); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 56); // Dung lượng
 //
@@ -3293,7 +3319,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell XPS 14 9440 U7 155H 64GB", "Laptop", 1.8, 7, 2, 4, "");
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell XPS 14 9440 U7 155H
-        seedDataVariant("Laptop Dell XPS 14 9440 U7 155H 64GB", 79990000.0, 10, 38);
+        seedDataVariant("/src/assets/products/", "LaptopDellXPS-Đen-1TB", 79990000.0, 10, 38);
+
         seedDataVariantAtribute("Đen", 3, 57); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 57); // Dung lượng
 //        // Thông số kỹ thuật
@@ -3340,7 +3367,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
 
         //  Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB/15.6'' 2.8K/Win11
-        seedDataVariant("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", 18590000.0, 10, 39);
+        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Bạc-512GB", 18590000.0, 10, 39);
+
 
 //        // Thông số kĩ thuật
         seedDataVariantAtribute("Bạc", 3, 58); // Màu sắc
@@ -3398,7 +3426,8 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        // Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB/15.6"/GeForce RTX4050 6GB/Win11
         seedDataProduct("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", 25590000.0, 10, 40);
+        seedDataVariant("/src/assets/products/", "LaptopAsusTUF-Xám-512GB", 25590000.0, 10, 40);
+
         seedDataVariantAtribute("Xám", 3, 59); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 59); // Dung lượng ổ cứng
         seedDataVariantAtribute("AMD", 60, 59);  // Hãng CPU
@@ -3458,7 +3487,8 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        //Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX3050 4GB/Win11
         seedDataProduct("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", 19190000.0, 10, 41);
+        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Đen-512GB", 19190000.0, 10, 41);
+
 //        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 60); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 60); // Dung lượng ổ cứng
@@ -3518,7 +3548,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB/15.6" 2.8K/Win11
         seedDataProduct("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", 23190000.0, 10, 42);
+        seedDataVariant("/src/assets/products/", "LaptopASUSVivobook-Bạc-512GB", 23190000.0, 10, 42);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Bạc", 3, 61); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 61); // Dung lượng ổ cứng
@@ -3574,7 +3605,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB/14" OLED 3K/Intel Arc Graphics/Win11
         seedDataProduct("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", 24290000.0, 10, 43);
+        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Đen-1TB", 24290000.0, 10, 43);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 62); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 62); // Dung lượng ổ cứng
@@ -3629,7 +3661,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB/14'' 3K/Intel Arc/Win11
         seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", 30990000.0, 10, 44);
+        seedDataVariant("/src/assets/products/", "LaptopAsusZenbook-Xanh-1TB", 30990000.0, 10, 44);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Xanh", 3, 63); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 63); // Dung lượng ổ cứng
@@ -3681,7 +3714,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB/16" 3.2K/Arc Graphics/Win11
         seedDataProduct("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", 25890000.0, 10, 45);
+        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Xanh-512GB", 25890000.0, 10, 45);
+
         seedDataVariantAtribute("Xanh", 3, 64); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 64); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 64);  // Hãng CPU
@@ -3736,7 +3770,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB/14" 3K/Intel Arc Graphics/Win11
         seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", 26990000.0, 10, 46);
+        seedDataVariant("/src/assets/products/", "LaptopAsusZenbook-Xanh-512GB", 26990000.0, 10, 46);
+
         seedDataVariantAtribute("Xanh", 3, 65); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 65); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 60, 65);  // Hãng CPU
@@ -3791,7 +3826,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX4050 6GB/Win11
         seedDataProduct("Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB", 23990000.0, 10, 47);
+        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Đen-512GB", 23990000.0, 10, 47);
+
 
         seedDataVariantAtribute("Đen", 3, 66); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 66); // Dung lượng ổ cứng
@@ -3852,7 +3888,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB/16' 2.5K/Nvidia GeForce RTX4060 8GB/Win11
         seedDataProduct("Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB", 37990000.0, 10, 48);
+        seedDataVariant("/src/assets/products/", "LaptopAsusROGStrix-Xám-512GB", 37990000.0, 10, 48);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Xám", 3, 67); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 67); // Dung lượng ổ cứng
@@ -3912,7 +3949,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
         //Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB/15.6 FHD/NVIDIA GeForce RTX3050Ti 4GB/Win11
 //
-        seedDataVariant("Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB", 22999000.0, 10, 49);
+        seedDataVariant("/src/assets/products/", "LaptopAcerNitro-Đen-512GB", 22999000.0, 10, 49);
+
 //        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 68); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 68); // Dung lượng ổ cứng
@@ -3967,7 +4005,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB/15.6"FHD/RTX2050 4GB/Win11
         seedDataProduct("Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
-        seedDataVariant("Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB", 1798900.0, 10, 50);
+        seedDataVariant("/src/assets/products/", "LaptopAcerAspire-Đen-512GB", 1798900.0, 10, 50);
+
 //        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 69); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 69); // Dung lượng ổ cứng
@@ -4019,7 +4058,8 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        // Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T/14" QHD/Win11
         seedDataProduct("Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T", "Laptop", 1.8, 11, 2, 2, "");
-        seedDataVariant("Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T", 1898900.0, 10, 51);
+        seedDataVariant("/src/assets/products/", "LaptopAcerSwift-Vàng-1TB", 1898900.0, 10, 51);
+
 //        // Thông số kỹ thuật
         seedDataVariantAtribute("Vàng", 3, 70); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 70); // Dung lượng ổ cứng
@@ -4072,7 +4112,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB/16"WUXGA//Nvidia Geforce RTX4050 6GB/Win11
         seedDataProduct("Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
-        seedDataVariant("Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB", 22798900.0, 10, 52);
+        seedDataVariant("/src/assets/products/", "LaptopAcerNitro-Đen-512GB", 22798900.0, 10, 52);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 71); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 71); // Dung lượng ổ cứng
@@ -4128,7 +4169,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Acer Gaming Predator Helios Neo 14 PHN14-51-99Y8 Intel Core Ultra 9 185H/AI/32GB/1TB/14.5" WQXGA+/Nvidia RTX4060 8GB/Win11
         seedDataProduct("Laptop Acer Gaming Predator Helios Neo", "Laptop", 1.8, 11, 2, 2, "");
-        seedDataVariant("Laptop Acer Gaming Predator Helios Neo", 46798900.0, 8, 53);
+        seedDataVariant("/src/assets/products/", "LaptopAcerPredator-Đen-1TB", 46798900.0, 8, 53);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 72); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 72); // Dung lượng ổ cứng
@@ -4177,7 +4219,9 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Acer Swift Go AI SFG14-73-53X7 Intel Core Ultra 5 125H/16GB/512GB/14" 2.8K/Intel Arc Graphics/Win11
         seedDataProduct("Laptop Acer Swift Go AI SFG14-73-53X7 Intel Core Ultra 5 125H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
-        seedDataVariant("Laptop Acer Swift Go AI SFG14-73-53X7 Intel Core Ultra 5 125H/16GB/512GB", 23998900.0, 5, 54);
+        seedDataVariant("/src/assets/products/", "LaptopAcerSwiftGo-Đen-512GB", 23998900.0, 5, 54);
+
+
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 73); // Màu sắc
@@ -4225,7 +4269,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Acer Nitro V 16 ProPanel Gaming ANV16-41-R36Y R7 8845HS/AI/16GB/512GB/16"WUXGA/NVIDIA GeForce RTX4050 6GB/Win11
         seedDataProduct("Laptop Acer Nitro V 16 ProPanel Gaming ANV16-41-R36Y R7 8845HS/AI/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "");
-        seedDataVariant("Laptop Acer Nitro V 16 ProPanel Gaming ANV16-41-R36Y R7 8845HS/AI/16GB/512GB", 29998900.0, 8, 55);
+        seedDataVariant("/src/assets/products/", "LaptopAcerNitroV-Đen-512GB", 29998900.0, 8, 55);
+
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 74); // Màu sắc
@@ -4277,7 +4322,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
         //Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB/16" 144Hz/GeForce RTX3050 6GB/Win11_A9LG9PA
 
-        seedDataVariant("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", 20998900.0, 5, 56);
+        seedDataVariant("/src/assets/products/", "LaptopHPVictus-Đen-512GB", 20998900.0, 5, 56);
+
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 75); // Màu sắc
@@ -4329,7 +4375,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB/16.1" 144Hz/GeForce RTX4060 8GB/Win11_8C5N2PA
         seedDataProduct("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
-        seedDataVariant("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", 32998900.0, 5, 57);
+        seedDataVariant("/src/assets/products/", "LaptopHPVictus-Đen-512GB", 32998900.0, 5, 57);
+
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 76); // Màu sắc
@@ -4379,7 +4426,8 @@ public class DataInitializer implements CommandLineRunner {
 
         //Laptop HP 245 G10 R7- 7730U/16GB/512GB/14" FHD/Win11_8F157PA
         seedDataProduct("Laptop HP 245 G10 R7- 7730U/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
-        seedDataVariant("Laptop HP 245 G10 R7- 7730U/16GB/512GB", 15998900.0, 5, 58);
+        seedDataVariant("/src/assets/products/", "LaptopHP-Bạc-512GB", 15998900.0, 5, 58);
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Bạc", 3, 77); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 77); // Dung lượng ổ cứng
@@ -4423,8 +4471,9 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB/14'' 2.8K Touch/Pen/Win11
         seedDataProduct("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
-        seedDataVariant("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", 30998900.0, 7, 59);
+        seedDataVariant("/src/assets/products/", "LaptopHPEnvy-Xanh-512GB", 30998900.0, 7, 59);
 
+        seedDataVariantAtribute("512 GB", 24, 78); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 9, 78); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core Ultra 7", 61, 78); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("155U", 10, 78); // Bộ xử lý - Loại CPU
@@ -4478,7 +4527,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB/16.1"FHD/Nvidia RTX3050 6GB/Win11
         seedDataProduct("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
-        seedDataVariant("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", 20999900.0, 7, 60);
+        seedDataVariant("/src/assets/products/", "LaptopHPVictus-Đen-512GB", 20999900.0, 7, 60);
+
         seedDataVariantAtribute("AMD", 9, 79); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 5", 61, 79); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("7640HS", 10, 79); // Bộ xử lý - Loại CPU
@@ -4525,7 +4575,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB/14" FHD Touch/Intel Graphics/Win11_Bạc_9H8V2PT
         seedDataProduct("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "");
-        seedDataVariant("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", 25999900.0, 8, 61);
+        seedDataVariant("/src/assets/products/", "LaptopHPProBook-Bạc-512GB", 25999900.0, 8, 61);
+
         seedDataVariantAtribute("Intel", 9, 80); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 80); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1360P", 10, 80); // Bộ xử lý - Loại CPU
@@ -4580,7 +4631,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB", "Laptop", 1.8, 12, 2, 2, "");
         // Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB/15.6FHD/RTX3050 6GB/Win11_Balo
 
-        seedDataVariant("Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB", 21999900.0, 8, 62);
+        seedDataVariant("LaptopMSIGamingKatana15B13UDXK-2213VN", "LaptopMSIKatana-Đen-1TB", 21999900.0, 8, 62);
+
         seedDataVariantAtribute("Intel", 9, 81); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 81); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13500H", 10, 81); // Bộ xử lý - Loại CPU
@@ -4638,7 +4690,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB/14" FHD/RTX3050 6GB/W11_Balo
         seedDataProduct("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
-        seedDataVariant("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", 25599900.0, 8, 63);
+        seedDataVariant("/src/assets/products/", "LaptopMSICyborg-Đen-512GB", 25599900.0, 8, 63);
+
         seedDataVariantAtribute("Intel", 9, 82); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 82); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13620H", 10, 82); // Bộ xử lý - Loại CPU
@@ -4697,7 +4750,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop MSI Gaming Katana 15 B13VFK-676VN i7 13620H/AI/16GB/1TB/Geforce RTX 4060 8GB/15.6"FHD/Win11_Balo
         seedDataProduct("Laptop MSI Gaming Katana 15 B13VFK-676VN i7 13620H/AI/16GB/1TB", "Laptop", 1.8, 12, 2, 2, "");
-        seedDataVariant("Laptop MSI Gaming Katana 15 B13VFK-676VN i7 13620H/AI/16GB/1TB", 29999900.0, 8, 64);
+        seedDataVariant("/src/assets/products/", "LaptopMSIKatana-Đen-1TB", 29999900.0, 8, 64);
+
         seedDataVariantAtribute("Intel", 9, 83); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 83); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13620H", 10, 83); // Bộ xử lý - Loại CPU
@@ -4758,7 +4812,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop MSI Gaming Thin 15 B13UCX-2080VN i5 13420H/16GB/512GB/15.6" FHD/RTX 2050 4GB/Win 11_Balo
         seedDataProduct("Laptop MSI Gaming Thin 15 B13UCX-2080VN i5 13420H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
-        seedDataVariant("Laptop MSI Gaming Thin 15 B13UCX-2080VN i5 13420H/16GB/512GB", 18699900.0, 8, 65);
+        seedDataVariant("/src/assets/products/", "LaptopMSIThin-Xám-512GB", 18699900.0, 8, 65);
+
         seedDataVariantAtribute("Intel", 9, 84); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 84); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 84); // Bộ xử lý - Loại CPU
@@ -4814,7 +4869,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop MSI Gaming Katana15 B13VFK-2099VN i7 13620H/AI/32GB/1TB/15.6"FHD/RTX4060 8GB/W11_Balo
         seedDataProduct("Laptop MSI Gaming Katana15 B13VFK-2099VN i7 13620H/AI/32GB/1TB", "Laptop", 1.8, 12, 2, 2, "");
-        seedDataVariant("Laptop MSI Gaming Katana15 B13VFK-2099VN i7 13620H/AI/32GB/1TB", 29699900.0, 5, 66);
+        seedDataVariant("/src/assets/products/", "LaptopMSIKatana-Đen-1TB", 29699900.0, 5, 66);
+
         seedDataVariantAtribute("Intel", 9, 85); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 85); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13620H", 10, 85); // Bộ xử lý - Loại CPU
@@ -4871,7 +4927,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB/15.6"FHD/RTX4050 6GB/Win 11_Balo
         seedDataProduct("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
-        seedDataVariant("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/16GB/512GB", 26699900.0, 8, 67);
+        seedDataVariant("/src/assets/products/", "LaptopMSIKatana-Đen-512GB", 26699900.0, 8, 67);
+
         seedDataVariantAtribute("AMD", 9, 86); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 86); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("8845HS", 10, 86); // Bộ xử lý - Loại CPU
@@ -4930,7 +4987,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đen", 3, 86); // Thông tin hàng hóa - Màu sắc
 
         seedDataProduct("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/64GB/512GB", "Laptop", 1.8, 12, 2, 2, "");
-        seedDataVariant("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/64GB/512GB", 26899900.0, 8, 68);
+        seedDataVariant("/src/assets/products/", "LaptopMSIKatana-Đen-512GB", 26699990.0, 8, 67);
+
         seedDataVariantAtribute("AMD", 9, 87); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 87); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("8845HS", 10, 87); // Bộ xử lý - Loại CPU
@@ -4985,7 +5043,8 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataProduct("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
         // Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB/14"WUXGA/Win 11
-        seedDataVariant("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", 20799900.0, 8, 69);
+        seedDataVariant("/src/assets/products/", "LaptopLenovoThinkPad-Đen-512GB", 20799900.0, 8, 69);
+
         seedDataVariantAtribute("Intel", 9, 88); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 88); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 88); // Bộ xử lý - Loại CPU
@@ -5045,7 +5104,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Lenovo Ideapad Slim 5 15IRU9 CORE 5_120U/32GB/512G/15.3"WUXGA/Win11
         seedDataProduct("Laptop Lenovo Ideapad Slim 5 15IRU9 CORE 5_120U/32GB/512G", "Laptop", 1.8, 9, 2, 2, "");
-        seedDataVariant("Laptop Lenovo Ideapad Slim 5 15IRU9 CORE 5_120U/32GB/512G", 20699900.0, 5, 70);
+        seedDataVariant("/src/assets/products/", "LaptopLenovoIdeapad-Xám-512GB", 20699900.0, 5, 70);
+
         seedDataVariantAtribute("Intel", 9, 89); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core 5", 61, 89); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("120U", 10, 89); // Bộ xử lý - Loại CPU
@@ -5099,7 +5159,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB/14.0"WUXGA/Win 11
         seedDataProduct("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
-        seedDataVariant("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", 22699900.0, 5, 71);
+        seedDataVariant("/src/assets/products/", "LaptopLenovoThinkPad-Xám-512GB", 22699900.0, 5, 71);
+
         seedDataVariantAtribute("Intel", 9, 90); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 90); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1355U", 10, 90); // Bộ xử lý - Loại CPU
@@ -5153,7 +5214,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB/15.6"FHD/Win 11
         seedDataProduct("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
-        seedDataVariant("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", 15699900.0, 7, 72);
+        seedDataVariant("/src/assets/products/", "LaptopLenovoV15-Đen-512GB", 15699900.0, 7, 72);
+
         seedDataVariantAtribute("Intel", 9, 91); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 91); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 91); // Bộ xử lý - Loại CPU
@@ -5206,7 +5268,8 @@ public class DataInitializer implements CommandLineRunner {
 
         //Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/AI/24GB/512GB/15.6"FHD/RTX4060 8GB/Win11
         seedDataProduct("Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/AI/24GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
-        seedDataVariant("Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/AI/24GB/512GB", 30699900.0, 7, 73);
+        seedDataVariant("LaptopLenovoGamingLOQ15ARP9", "LaptopLenovoLOQ-Xám-512GB", 30699900.0, 7, 73);
+
         seedDataVariantAtribute("AMD", 9, 92); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 92); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("7435HS", 10, 92); // Bộ xử lý - Loại CPU
@@ -5263,7 +5326,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/AI/12GB/512GB/15.6"FHD/RTX4050_6GB/W11_83GS001QVN
         seedDataProduct("Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/AI/12GB/512GB", "Laptop", 1.8, 9, 2, 2, "");
-        seedDataVariant("Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/AI/12GB/512GB", 25699900.0, 7, 74);
+        seedDataVariant("LaptopLenovoGamingLOQ15ARP9", "LaptopLenovoLOQ-Xám-512GB", 30699909.0, 7, 74);
+
         seedDataVariantAtribute("Intel", 9, 93); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 93); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("12450HX", 10, 93); // Bộ xử lý - Loại CPU
@@ -5320,7 +5384,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Lenovo Gaming Legion 9 16IRX8 i9 13980HX/AI/64GB/2TB/16"3.2K Mini LED/RTX4090 16GB/Win11
         seedDataProduct("Laptop Lenovo Gaming Legion 9 16IRX8 i9 13980HX/AI/64GB/2TB", "Laptop", 1.8, 9, 2, 2, "");
-        seedDataVariant("Laptop Lenovo Gaming Legion 9 16IRX8 i9 13980HX/AI/64GB/2TB", 128699900.0, 7, 75);
+        seedDataVariant("LaptopLenovoGamingLegion916IRX8", "LaptopLenovoLegion-Đen-2TB", 128699900.0, 7, 75);
+
         seedDataVariantAtribute("Intel", 9, 94); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i9", 61, 94); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13980HX", 10, 94); // Bộ xử lý - Loại CPU
@@ -7609,11 +7674,12 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    public void seedDataVariant(String image, Double price, int quantity, int product_id) {
+    public void seedDataVariant(String image , String name, Double price, int quantity, int product_id) {
         List<Variant> variants = variantRepository.findByProductsIdAndPrice((long) product_id, price);
         if (variants.isEmpty()) {
             Variant variant = new Variant();
             variant.setImage(image);
+            variant.setName(name);
             variant.setPrice(price);
             variant.setQuantity(quantity);
             variant.setProducts(productRepository.findById((long) product_id).get());
