@@ -107,6 +107,7 @@ public class OrderController {
     // Cập nhật thông tin đơn hàng
     @PutMapping("/{id}")
     public ResponseEntity<Order> updateOrder(@PathVariable Long id, @RequestBody Order order) {
+        System.out.println("Received order data: " + order); // Log để kiểm tra dữ liệu nhận được
         Order updatedOrder = orderService.updateOrder(id, order);
         if (updatedOrder != null) {
             return ResponseEntity.ok(updatedOrder);

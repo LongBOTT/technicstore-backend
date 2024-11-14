@@ -4,6 +4,7 @@ import com.example.technicstore.DTO.Request.ImeiRequest;
 import com.example.technicstore.Mapper.ImeiMapper;
 import com.example.technicstore.entity.Brand;
 import com.example.technicstore.entity.Imei;
+import com.example.technicstore.entity.Product;
 import com.example.technicstore.entity.StockReceiveDetail;
 import com.example.technicstore.repository.ImeiRepository;
 import com.example.technicstore.repository.StockReceiveDetailRepository;
@@ -37,6 +38,9 @@ public class ImeiService {
         return imeiRepository.findImeiByStockReceiveDetail_Id(stockReceiveDetailId);
     }
 
+    public List<Imei> searchImeis(String query) {
+        return imeiRepository.searchByImeiCodeOrVariantName(query);
+    }
 
     // Lấy IMEI theo mã IMEI
     public Optional<Imei> getImeiByImeiCode(String imeiCode) {
@@ -63,6 +67,17 @@ public class ImeiService {
         return null;
     }
 
+    public Imei updateImeiStatus(Long id) {
+        Optional<Imei> imeiOptional = imeiRepository.findById(id);
+
+        if (imeiOptional.isEmpty()) {
+            throw new RuntimeException("imei not found");
+        }
+
+        Imei existingImei = imeiOptional.get();
+        existingImei.setStatus("sold");
+        return imeiRepository.save(existingImei);
+    }
     // Xóa IMEI
     public void deleteImei(Long id) {
         imeiRepository.deleteById(id);

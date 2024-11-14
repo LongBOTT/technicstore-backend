@@ -7521,12 +7521,12 @@ public class DataInitializer implements CommandLineRunner {
 
         // order
 
-        seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now(), "abc");
-        seedDataOrder("abc", "Chuẩn bị hàng", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc");
+        seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now(), "abc", "0374974098");
+        seedDataOrder("abc", "Chuẩn bị hàng", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc","0374974097");
 
         // orderDetail
-        seedDataOrderDetail(1L, 1, 24990000.0, 24990000.0, "12345");
-        seedDataOrderDetail(2L, 1, 27990000.0, 27990000.0, "12346");
+        seedDataOrderDetail(1L,1L,1, 24990000.0, 24990000.0, "12345");
+        seedDataOrderDetail(2L, 1L,1, 27990000.0, 27990000.0, "12346");
 
 
 
@@ -7556,7 +7556,7 @@ public class DataInitializer implements CommandLineRunner {
             stockReceiveDetailRepository.save(stockReceiveDetail);
         }
     }
-    public void seedDataOrder(String note, String order_status, String payment_method, String payment_status, double total, Long customerId, LocalDateTime order_date, String address) {
+    public void seedDataOrder(String note, String order_status, String payment_method, String payment_status, double total, Long customerId, LocalDateTime order_date, String address,String phone) {
         List<Order> orders = orderRepository.findOrdersByCustomerId(customerId);
         if (orders.isEmpty()) {
             Order order = new Order();
@@ -7575,15 +7575,17 @@ public class DataInitializer implements CommandLineRunner {
             order.setOrderDate(order_date);
             order.setTotal_amount(total);
             order.setAddress(address);
+            order.setPhone(phone);
             orderRepository.save(order);
 
         }
     }
 
-    public void seedDataOrderDetail(Long orderId, int quantity, Double price, Double total, String imeiCode) {
+    public void seedDataOrderDetail(Long orderId,Long variantId, int quantity, Double price, Double total, String imeiCode) {
         OrderDetail orderDetails = orderDetailRepository.findByOrderIdAndImei_ImeiCode(orderId,imeiCode);
         if (orderDetails == null) {
             OrderDetail orderDetail = new OrderDetail();
+            orderDetail.setVariantId(variantId);
             orderDetail.setOrder(orderRepository.findById(orderId).orElseThrow(() -> new RuntimeException("Order not found")));
             orderDetail.setImei(imeiRepository.findImeiByImeiCode(imeiCode).orElseThrow(() -> new RuntimeException("Imei not found")));
             orderDetail.setQuantity(quantity);

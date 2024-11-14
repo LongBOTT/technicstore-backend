@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -29,8 +30,6 @@ public class OrderDetailController {
     }
 
 
-
-
     // Lấy chi tiết đơn đặt hàng theo ID
     @GetMapping("/{id}")
     public ResponseEntity<OrderDetail> getOrderDetailById(@PathVariable Long id) {
@@ -49,6 +48,23 @@ public class OrderDetailController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
+
+    // Cập nhật chi tiết đơn đặt hàng
+
+    @PutMapping("/{id}")
+    public ResponseEntity<OrderDetail> updateOrderDetail(@PathVariable Long id, @RequestBody Map<String, Long> requestBody) {
+        try {
+            Long imeiId = requestBody.get("imeiId");
+            OrderDetail updatedOrderDetail = orderDetailService.updateOrderDetail(id, imeiId);
+            return ResponseEntity.ok(updatedOrderDetail);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        } catch (Exception e) {
+            e.printStackTrace(); // Log chi tiết lỗi
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
 
 
 }
