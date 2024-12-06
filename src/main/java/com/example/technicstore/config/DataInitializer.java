@@ -2444,15 +2444,15 @@ public class DataInitializer implements CommandLineRunner {
 
         //MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB
         seedDataProduct("MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("/src/assets/products/", "Đen MacBookAir13inchM220228CPU8GPU8GB256GB-xám-256GB",27990000.0, 10, 22);
+        seedDataVariant("/src/assets/products/Đen MacBookAir13inchM220228CPU8GPU8GB256GB-xám-256GB", "Đen MacBookAir13inchM220228CPU8GPU8GB256GB-xám-256GB",27990000.0, 10, 22);
 
         //MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB
         seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("/src/assets/products/", "Đen MacBookAir13inchM120208CPU7GPU8GB256GB-trắng-256GB",22990000.0, 10, 23);
+        seedDataVariant("/src/assets/products/MacBookAir13inchM120208CPU7GPU8GB256GB-trắng-256GB", "MacBookAir13inchM120208CPU7GPU8GB256GB-trắng-256GB",22990000.0, 10, 23);
 
         // MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB
         seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("/src/assets/products/", "MacBookAir13inchM120208CPU7GPU16GB256GB-Đen-256GB ",29990000.0, 10, 24);
+        seedDataVariant("/src/assets/products/MacBookAir13inchM120208CPU7GPU16GB256GB-Đen-256GB", "MacBookAir13inchM120208CPU7GPU16GB256GB-Đen-256GB ",29990000.0, 10, 24);
 
         // Thông số
         // Laptop MacBook Air 13 inch M2 2022 8CPU 10GPU 8GB/512GB có 3 màu Đen, Trắng, Xám giá 31.990.000
@@ -2658,14 +2658,14 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
-        seedDataVariant("/src/assets/products/", "MacBookPro142023-Đen-512GB", 48990000.0, 10, 25);
+        seedDataVariant("/src/assets/products/MacBookPro142023-Đen-512GB", "MacBookPro142023-Đen-512GB", 48990000.0, 10, 25);
         seedDataVariantAtribute("Đen", 3, 44);
         seedDataVariantAtribute("512GB", 24, 44);
 
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB giá 59990000.0
         seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("/src/assets/products/", "MacBookPro142023-Đen-512GB", 59990000.0, 10, 26);
+        seedDataVariant("/src/assets/products/MacBookPro142023-32GB-Đen-512GB", "MacBookPro142023-Đen-512GB", 59990000.0, 10, 26);
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB 2 màu bạc - đen,  giá 59990000.0
         seedDataVariantAtribute("Đen", 3, 45);
@@ -2674,20 +2674,20 @@ public class DataInitializer implements CommandLineRunner {
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
 
         seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("/src/assets/products/", "MacBookPro162023-Đen-512GB", 64490000.0, 10, 27);
+        seedDataVariant("/src/assets/products/MacBookPro162023-18GB-Đen-512GB", "MacBookPro162023-Đen-512GB", 64490000.0, 10, 27);
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB 2 màu bạc - đen,  giá 64490000.0
         seedDataVariantAtribute("Đen", 3, 46); // màu -
         seedDataVariantAtribute("512GB", 24, 46); // bộ nhớ ( rom)
 
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB
         seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("/src/assets/products/", "MacBookPro162023-Đen-512GB", 74490000.0, 10, 28);
+        seedDataVariant("/src/assets/products/MacBookPro162023-Đen-512GB", "MacBookPro162023-Đen-512GB", 74490000.0, 10, 28);
         seedDataVariantAtribute("Đen", 3, 47); // màu
         seedDataVariantAtribute("512GB", 24, 47); // bộ nhớ ( rom)
 
         // MacBook Pro 13" 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb
         seedDataProduct("MacBook Pro 13 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb", "Laptop", 1.61, 6, 2, 1, "");
-        seedDataVariant("/src/assets/products/", "MacBookPro132020-Bạc-256GB", 20490000.0, 10, 29);
+        seedDataVariant("/src/assets/products/MacBookPro132020-Bạc-256GB", "MacBookPro132020-Bạc-256GB", 20490000.0, 10, 29);
         seedDataVariantAtribute("Bạc", 3, 48); // màu bạc
         seedDataVariantAtribute("512GB", 24, 48); // bộ nhớ ( rom)
 
@@ -2904,7 +2904,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
 //
 //        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1334U/16GB/512GB/14"FHD+/Win11/Office HS21
-        seedDataVariant("/src/assets/products/", "LaptopDellInspiron14-Xanh-512GB", 20190000.0, 10, 30);
+        seedDataVariant("/src/assets/products/LaptopDellInspiron14-Xanh-512GB", "LaptopDellInspiron14-Xanh-512GB", 20190000.0, 10, 30);
 
 //
 //
@@ -2955,7 +2955,7 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        // thông số kĩ thuật
         seedDataProduct("Laptop Dell Inspiron 15 N3530 i5 1335U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
-        seedDataVariant("/src/assets/products/", "LaptopDellInspiron15-Đen-512GB", 21490000.0, 10, 31);
+        seedDataVariant("/src/assets/products/LaptopDellInspiron15-Đen-512GB", "LaptopDellInspiron15-Đen-512GB", 21490000.0, 10, 31);
 
         seedDataVariantAtribute("Đen", 3, 50); // màu
         seedDataVariantAtribute("512GB", 24, 50); // bộ nhớ ( rom)
@@ -3008,7 +3008,7 @@ public class DataInitializer implements CommandLineRunner {
 //        // Thông số kỹ thuật
 
         seedDataProduct("Laptop Dell Inspiron 15N 3530 i7 1335U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "");
-        seedDataVariant("/src/assets/products/", "LaptopDellInspiron15-Đen-512GB", 20290000.0, 10, 32);
+        seedDataVariant("/src/assets/products/LaptopDellInspiron15-Đen-512GB", "LaptopDellInspiron15-Đen-512GB", 20290000.0, 10, 32);
 
 //        // Laptop Dell Inspiron 15 N3530 i7 1355U/16GB/512GB/15.6"FHD/Win11/Office 365 Personal
         seedDataVariantAtribute("Đen", 3, 51); // Màu sắc
@@ -3068,7 +3068,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell Vostro V3430 i5 1335U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "");
 //
 //        // Laptop Dell Vostro V3430 i5 1335U/16GB/512GB/14"FHD/Nvidia GeForce MX550 2GB/Win11/Office HS21
-        seedDataVariant("/src/assets/products/", "LaptopDellVostroV3430-Xám-512GB", 19799000.0, 10, 33);
+        seedDataVariant("/src/assets/products/LaptopDellVostroV3430-Xám-512GB", "LaptopDellVostroV3430-Xám-512GB", 19799000.0, 10, 33);
 
         seedDataVariantAtribute("Xám", 3, 52); // màu
         seedDataVariantAtribute("512 GB", 24, 52); // Dung lượng ổ cứng
@@ -3120,7 +3120,7 @@ public class DataInitializer implements CommandLineRunner {
 //        // Laptop Dell Vostro V3520 i5 1235U/16GB/512GB/15.6"FHD/Win11/Office HS21
         seedDataProduct("Laptop Dell Vostro V3520 i5 1235U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "");
 //
-        seedDataVariant("/src/assets/products/", "LaptopDellVostroV3430-Xám-512GB", 16399000.0, 10, 34);
+        seedDataVariant("/src/assets/products/LaptopDellVostroV3430-Xám-512GB", "LaptopDellVostroV3430-Xám-512GB", 16399000.0, 10, 34);
 
         seedDataVariantAtribute("Xám", 3, 53); // màu
         seedDataVariantAtribute("512 GB", 24, 53); // Dung lượng
@@ -3166,21 +3166,21 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell Latitude L3540 i5 1335U", "Laptop", 1.49, 7, 2, 4, "");
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1335U
-        seedDataVariant("/src/assets/products/", "LaptopDellLatitudeL3540-Xám-512GB", 18790000.0, 10, 35);
+        seedDataVariant("/src/assets/products/LaptopDellLatitudeL3540-Xám-512GB", "LaptopDellLatitudeL3540-Xám-512GB", 18790000.0, 10, 35);
 
         seedDataVariantAtribute("Xám", 3, 54); // màu
         seedDataVariantAtribute("512 GB", 24, 54); // Dung lượng
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1235U
         seedDataProduct("Laptop Dell Latitude L3540 i5 1235U", "Laptop", 1.49, 7, 2, 4, "");
-        seedDataVariant("/src/assets/products/", "LaptopDellLatitudeL3540-Xám-512GB", 18790000.0, 10, 36);
+        seedDataVariant("/src/assets/products/LaptopDellLatitudeL3540-Xám-512GB", "LaptopDellLatitudeL3540-Xám-512GB", 18790000.0, 10, 36);
 
         seedDataVariantAtribute("Xám", 3, 55); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 55); // Dung lượng
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude 3440 i5 1235U
         seedDataProduct("Laptop Dell Latitude 3440 i5 1235U", "Laptop", 1.49, 7, 2, 4, "");
-        seedDataVariant("/src/assets/products/", "LaptopDellLatitude3440-Đen-512GB", 17990000.0, 10, 37);
+        seedDataVariant("/src/assets/products/LaptopDellLatitude3440-Đen-512GB", "LaptopDellLatitude3440-Đen-512GB", 17990000.0, 10, 37);
 
         seedDataVariantAtribute("Đen", 3, 56); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 56); // Dung lượng
@@ -3319,7 +3319,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Dell XPS 14 9440 U7 155H 64GB", "Laptop", 1.8, 7, 2, 4, "");
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell XPS 14 9440 U7 155H
-        seedDataVariant("/src/assets/products/", "LaptopDellXPS-Đen-1TB", 79990000.0, 10, 38);
+        seedDataVariant("/src/assets/products/LaptopDellXPS-Đen-1TB", "LaptopDellXPS-Đen-1TB", 79990000.0, 10, 38);
 
         seedDataVariantAtribute("Đen", 3, 57); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 57); // Dung lượng
@@ -3367,7 +3367,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
 
         //  Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB/15.6'' 2.8K/Win11
-        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Bạc-512GB", 18590000.0, 10, 39);
+        seedDataVariant("/src/assets/products/LaptopAsusVivobook-Bạc-512GB", "LaptopAsusVivobook-Bạc-512GB", 18590000.0, 10, 39);
 
 
 //        // Thông số kĩ thuật
@@ -3426,7 +3426,7 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        // Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB/15.6"/GeForce RTX4050 6GB/Win11
         seedDataProduct("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("/src/assets/products/", "LaptopAsusTUF-Xám-512GB", 25590000.0, 10, 40);
+        seedDataVariant("/src/assets/products/LaptopAsusTUF-Xám-512GB", "LaptopAsusTUF-Xám-512GB", 25590000.0, 10, 40);
 
         seedDataVariantAtribute("Xám", 3, 59); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 59); // Dung lượng ổ cứng
@@ -3487,7 +3487,7 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        //Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX3050 4GB/Win11
         seedDataProduct("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Đen-512GB", 19190000.0, 10, 41);
+        seedDataVariant("/src/assets/products/LaptopAsusVivobook-Đen-512GB", "LaptopAsusVivobook-Đen-512GB", 19190000.0, 10, 41);
 
 //        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 60); // Màu sắc
@@ -3548,7 +3548,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB/15.6" 2.8K/Win11
         seedDataProduct("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("/src/assets/products/", "LaptopASUSVivobook-Bạc-512GB", 23190000.0, 10, 42);
+        seedDataVariant("/src/assets/products/LaptopASUSVivobook-Bạc-512GBLaptopASUSVivobook-Bạc-512GB", "LaptopASUSVivobook-Bạc-512GB", 23190000.0, 10, 42);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Bạc", 3, 61); // Màu sắc
@@ -3605,7 +3605,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB/14" OLED 3K/Intel Arc Graphics/Win11
         seedDataProduct("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Đen-1TB", 24290000.0, 10, 43);
+        seedDataVariant("/src/assets/products/LaptopAsusVivobook-Đen-1TB", "LaptopAsusVivobook-Đen-1TB", 24290000.0, 10, 43);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 62); // Màu sắc
@@ -3661,7 +3661,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB/14'' 3K/Intel Arc/Win11
         seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("/src/assets/products/", "LaptopAsusZenbook-Xanh-1TB", 30990000.0, 10, 44);
+        seedDataVariant("/src/assets/products/LaptopAsusZenbook-Xanh-1TB", "LaptopAsusZenbook-Xanh-1TB", 30990000.0, 10, 44);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Xanh", 3, 63); // Màu sắc
@@ -3714,7 +3714,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB/16" 3.2K/Arc Graphics/Win11
         seedDataProduct("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("/src/assets/products/", "LaptopAsusVivobook-Xanh-512GB", 25890000.0, 10, 45);
+        seedDataVariant("/src/assets/products/LaptopAsusVivobook-Xanh-512GB", "LaptopAsusVivobook-Xanh-512GB", 25890000.0, 10, 45);
 
         seedDataVariantAtribute("Xanh", 3, 64); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 64); // Dung lượng ổ cứng
@@ -3770,7 +3770,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB/14" 3K/Intel Arc Graphics/Win11
         seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "");
-        seedDataVariant("/src/assets/products/", "LaptopAsusZenbook-Xanh-512GB", 26990000.0, 10, 46);
+        seedDataVariant("/src/assets/products/LaptopAsusZenbook-Xanh-512GB", "LaptopAsusZenbook-Xanh-512GB", 26990000.0, 10, 46);
 
         seedDataVariantAtribute("Xanh", 3, 65); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 65); // Dung lượng ổ cứng
