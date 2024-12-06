@@ -3,6 +3,7 @@ package com.example.technicstore.service;
 import com.example.technicstore.DTO.Response.ImeiResponse;
 import com.example.technicstore.DTO.Response.OrderDetailResponse;
 import com.example.technicstore.DTO.Response.OrderResponse;
+import com.example.technicstore.DTO.Response.OrderStatisticsDTO;
 import com.example.technicstore.Mapper.ImeiMapper;
 import com.example.technicstore.Mapper.OrderDetailMapper;
 import com.example.technicstore.Mapper.OrderMapper;
@@ -13,11 +14,13 @@ import com.example.technicstore.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
-
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 @Service
 public class OrderService {
 
@@ -176,5 +179,34 @@ public class OrderService {
         orderRepository.deleteById(id);
     }
 
+    public OrderStatisticsDTO getOrderStatistics() {
 
+
+        // Tính doanh thu trong ngày hôm nay
+        Double revenue = orderRepository.calculateRevenue();
+
+        // Tính số lượng đơn hàng mới trong ngày hôm nay
+        Long newOrders = orderRepository.countNewOrdersToday();
+
+        // Tính số lượng đơn hàng bị hủy trong ngày hôm nay
+        Long canceledOrders = orderRepository.countCanceledOrdersToday();
+
+        // Tính số lượng đơn hàng trả lại trong ngày hôm nay
+        Long returnedOrders = orderRepository.countReturnedOrdersToday();
+
+        // Tính toán ngày bắt đầu (7 ngày trước)
+        LocalDateTime startDate = LocalDate.now().minusDays(7).atStartOfDay();
+
+        // Tính doanh thu trong 7 ngày gần nhất
+        List<Object[]> revenueLast7Days = orderRepository.calculateRevenueLast7Days(startDate);
+
+        // Top 5 sản phẩm bán chạy trong ngày hôm nay
+        List<Object[]> topSellingProductsToday = orderRepository.getTopSellingProductsToday();
+
+        // Top 5 thể loại bán chạy trong ngày hôm nay
+        List<Object[]> topSellingCategoriesToday = orderRepository.getTopSellingCategoriesToday();
+
+        // Trả về kết quả thống kê dưới dạng DTO
+        return new OrderStatisticsDTO(revenue, newOrders, canceledOrders, returnedOrders, revenueLast7Days, topSellingProductsToday, topSellingCategoriesToday);
+    }
 }

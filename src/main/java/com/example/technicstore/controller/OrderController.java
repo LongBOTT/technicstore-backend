@@ -1,6 +1,7 @@
 package com.example.technicstore.controller;
 
 import com.example.technicstore.DTO.Response.OrderResponse;
+import com.example.technicstore.DTO.Response.OrderStatisticsDTO;
 import com.example.technicstore.entity.Customer;
 import com.example.technicstore.entity.Order;
 import com.example.technicstore.service.CustomerService;
@@ -123,5 +124,9 @@ public class OrderController {
         return ResponseEntity.noContent().build();
     }
 
-
+    @GetMapping("/statistics")
+    public ResponseEntity<OrderStatisticsDTO> getOrderStatistics() {
+        OrderStatisticsDTO stats = orderService.getOrderStatistics();
+        return ResponseEntity.ok(stats);
+    }
 }
