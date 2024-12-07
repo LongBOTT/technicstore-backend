@@ -419,9 +419,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 14", "Điện thoại", 0.5, 1, 1, 1, "iphone_14_48a46d1684.png");
 
         // phiên bản iphone 14  String image , String name, Double price, int quantity, int product_id
-        seedDataVariant("/src/assets/products/ip14.jpg", "iphone14-Đen-128GB", 21990000.0, 10, 1);
-        seedDataVariant("/src/assets/productsip14xanh256.jpg", "iphone14-Xanh-256GB",  24990000.0, 10, 1);
-        seedDataVariant("/src/assets/products/iphone14-Trang-512GB.jpg","iphone14-Trang-512GB", 27990000.0, 10, 1);
+        seedDataVariant("/src/assets/products/iphone14-Den-128GB.jpg", "iphone14 Đen 128GB", 21990000.0, 10, 1);
+        seedDataVariant("/src/assets/products/iphone14-Xanh-256GB.jpg", "iphone14 Xanh 256GB",  24990000.0, 10, 1);
+        seedDataVariant("/src/assets/products/iphone14-Trang-512GB.jpg","iphone14 Trắng 512GB", 27990000.0, 10, 1);
 
         // Thông số
         // điện thoại iphone 14 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 21.990.000
@@ -456,7 +456,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Điện dung đa điểm", 19, 1);
         seedDataVariantAtribute("1200 nits", 20, 1);
         seedDataVariantAtribute("Apple GPU 5 nhân", 23, 1);
-        seedDataVariantAtribute("Không", 26, 1);
+        seedDataVariantAtribute("Không", 26, 1);    
         seedDataVariantAtribute("Double rear camera", 27, 1);
         seedDataVariantAtribute("Wide", 28, 1);
         seedDataVariantAtribute("12.0 MP", 29, 1);
@@ -556,8 +556,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 14 Plus", "Điện thoại", 0.5, 1, 1, 1, "iphone_14_48a46d1684.png");
 
         // phiên bản iphone 14 plus
-        seedDataVariant("/src/assets/products/iphone14plus-Đen-128GB.jpg", "iphone14plus-Đen-128GB " ,24990000.0, 10, 2);
-        seedDataVariant("/src/assets/products/iphone14plus-Trắng-256GB.jpg", "iphone14plus-Trắng-256GB ", 27990000.0, 10, 2);
+        seedDataVariant("/src/assets/products/iphone14plus-Den-128GB.jpg", "iphone14plus-Đen-128GB " ,24990000.0, 10, 2);
+        seedDataVariant("/src/assets/products/iphone14plus-Trang-256GB.jpg", "iphone14plus-Vàng-256GB ", 27990000.0, 10, 2);
         seedDataVariant("/src/assets/products/iphone14plus-Xanh-512GB.jpg", "iphone14plus-Xanh-512GB ",32990000.0, 10, 2);
 
         // Thông số
@@ -566,7 +566,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("128GB", 24, 4);
 
         // điện thoại iphone 14 plus dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 27.990.000
-        seedDataVariantAtribute("Trắng", 3, 5);
+        seedDataVariantAtribute("Vàng", 3, 5);
         seedDataVariantAtribute("256GB", 24, 5);
 
         // điện thoại iphone 14 plus dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 32.990.000
@@ -695,8 +695,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_a9308b6994.png");
 
         // phiên bản iphone 15
-        seedDataVariant("/src/assets/products/iphone15-Đen-128GB.jpg", "iphone15-Đen-128GB", 22990000.0, 10, 3);
-        seedDataVariant("/src/assets/products/iphone15-Trắng-256GB.jpg", "iphone15-Trắng-256GB", 25990000.0, 10, 3);
+        seedDataVariant("/src/assets/products/iphone15-Den-128GB.jpg", "iphone15-Đen-128GB", 22990000.0, 10, 3);
+        seedDataVariant("/src/assets/products/iphone15-Vang-256GB.jpg", "iphone15-Vàng-256GB", 25990000.0, 10, 3);
         seedDataVariant("/src/assets/products/iphone15-Xanh-512GB.jpg", "iphone15-Xanh-512GB", 31990000.0, 10, 3);
 
         // Thông số
@@ -859,8 +859,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // phiên bản iphone 15 plus
 
-        seedDataVariant("/src/assets/products/iphone15plus-Đen-128GB.jpg", "iphone15plus-Đen-128GB", 25990000.0, 10, 4);
-        seedDataVariant("/src/assets/products/iphone15plus-Trắng-256GB.jpg", "iphone15plus-Trắng-256GB", 28990000.0, 10, 4);
+        seedDataVariant("/src/assets/products/iphone15plus-Den-128GB.jpg", "iphone15plus-Đen-128GB", 25990000.0, 10, 4);
+        seedDataVariant("/src/assets/products/iphone15plus-Vang-256GB.jpg", "iphone15plus-Vàng-256GB", 28990000.0, 10, 4);
         seedDataVariant("/src/assets/products/iphone15plus-Xanh-512GB.jpg", "iphone15plus-Xanh-512GB", 34990000.0, 10, 4);
 
         // Thông số
@@ -1023,10 +1023,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro
-        seedDataVariant("/src/assets/products/iphone15pro-Đen-128GB.jpg", "iphone15pro-Đen-128GB", 28990000.0, 10, 5);
-        seedDataVariant("/src/assets/products/iphone15pro-Trắng-256GB.jpg", "iphone15pro-Trắng-256GB", 31990000.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Den-128GB.jpg", "iphone15pro-Đen-128GB", 28990000.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Trang-256GB.jpg", "iphone15pro-Trắng-256GB", 31990000.0, 10, 5);
         seedDataVariant("/src/assets/products/iphone15pro-Xanh-512GB.jpg", "iphone15pro-Xanh-512GB", 37990900.0, 10, 5);
-        seedDataVariant("/src/assets/products/iphone15pro-Đen-1TB.jpg", "iphone15pro-Đen-1TB", 43990000.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Den-1TB.jpg", "iphone15pro-Đen-1TB", 43990000.0, 10, 5);
 
 
         // Thông số
@@ -1233,8 +1233,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Pro Max", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro max
-        seedDataVariant("/src/assets/products/iphone15promax-Đen-256GB.jpg", "iphone15promax-Đen-256GB", 34990000.0, 10, 6);
-        seedDataVariant("/src/assets/products/iphone15promax-Trắng-512GB.jpg", "iphone15promax-Trắng-512GB", 40990000.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Den-256GB.jpg", "iphone15promax-Đen-256GB", 34990000.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Trang-512GB.jpg", "iphone15promax-Trắng-512GB", 40990000.0, 10, 6);
         seedDataVariant("/src/assets/products/iphone15promax-Xanh-1TB.jpg", "iphone15promax-Xanh-1TB", 46990000.0, 10, 6);
 
         // Thông số
@@ -1387,9 +1387,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 16", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16
-        seedDataVariant("/src/assets/products/iphone16-Đen-128GB.jpg", "iphone16-Đen-128GB", 22990000.0, 10, 7);
-        seedDataVariant("/src/assets/products/iphone16-Trắng-256GB.jpg", "iphone16-Trắng-256GB", 25990000.0, 10, 7);
-        seedDataVariant("/src/assets/products/iphone16-Xanh-512GB.jpg", "iphone16-Xanh-512GB", 30990000.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Den-128GB.png", "iphone16-Đen-128GB", 22990000.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Trang-256GB.png", "iphone16-Trắng-256GB", 25990000.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Xanh-512GB.png", "iphone16-Xanh-512GB", 30990000.0, 10, 7);
 
 
         // Thông số
@@ -1551,10 +1551,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 16 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16 pro
-        seedDataVariant("/src/assets/products/iphone16pro-Đen-128GB.jpg", "iphone16pro-Đen-128GB", 28990000.0, 10, 8);
-        seedDataVariant("/src/assets/products/iphone16pro-Trắng-256GB.jpg", "iphone16pro-Trắng-256GB", 31990000.0, 10, 8);
-        seedDataVariant("/src/assets/products/iphone16pro-Xanh-512GB.jpg", "iphone16pro-Xanh-512GB", 37990200.0, 10, 8);
-        seedDataVariant("/src/assets/products/iphone16pro-Đen-1TB.jpg", "iphone16pro-Đen-1TB", 43990090.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Den-128GB.png", "iphone16pro-Đen-128GB", 28990000.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Trang-256GB.png", "iphone16pro-Trắng-256GB", 31990000.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Xanh-512GB.png", "iphone16pro-Xanh-512GB", 37990200.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Den-1TB.png", "iphone16pro-Đen-1TB", 43990090.0, 10, 8);
 
 
         // Thông số
@@ -1724,7 +1724,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S24 FE", "Điện thoại", 0.5, 2, 1, 2, "samssung_galaxy_s24_fe_xanh_723e4e6443.png");
 
         // phiên bản samsung galaxy s24 FE
-        seedDataVariant("/src/assets/products/SamsungGalaxys24fe-Đen-128GB.jpg", "SamsungGalaxys24fe-Đen-128GB", 16990000.0, 10, 9);
+        seedDataVariant("/src/assets/products/SamsungGalaxys24fe-Den-128GB.png", "SamsungGalaxys24fe-Đen-128GB", 16990000.0, 10, 9);
 
 
         // Thông số
@@ -1775,7 +1775,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S23", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s23_591dfc2c85.png");
 
         // phiên bản samsung galaxy s23
-        seedDataVariant("/src/assets/products/samsunggalaxys23-Xanh-256GB.jpg", "samsunggalaxys23-Xanh-256GB", 24990000.0, 10, 10);
+        seedDataVariant("/src/assets/products/Samsunggalaxys23-Xanh-256GB.jpg", "samsunggalaxys23-Xanh-256GB", 24990000.0, 10, 10);
 
 
 
@@ -1837,8 +1837,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S24 Ultra", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s24_ultra_2f8a5ee174.png");
 
         // phiên bản Samsung Galaxy S24 Ultra
-        seedDataVariant("/src/assets/products/samsunggalaxys24ultra-Đen-256GB.jpg", "samsunggalaxys24ultra-Đen-256GB", 33997000.0, 10, 11);
-        seedDataVariant("/src/assets/products/samsunggalaxys24ultra-Xanh-512GB.jpg", "samsunggalaxys24ultra-Xanh-512GB", 37990800.0, 10, 11);
+        seedDataVariant("/src/assets/products/Samsunggalaxys24ultra-Den-256GB.png", "samsunggalaxys24ultra-Đen-256GB", 33997000.0, 10, 11);
+        seedDataVariant("/src/assets/products/Samsunggalaxys24ultra-Tim-512GB.png", "samsunggalaxys24ultra-Tím-512GB", 37990800.0, 10, 11);
 
         // Thông số
         // điện thoại Samsung Galaxy S24 Ultra dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 33.990.000
@@ -1846,7 +1846,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("256GB", 24, 29);
 
         // điện thoại Samsung Galaxy S24 Ultra dung lượng 512 GB có 3 màu Đen, Trắng, Xanh giá 37.990.000
-        seedDataVariantAtribute("Xanh", 3, 30);
+        seedDataVariantAtribute("Tím", 3, 30);
         seedDataVariantAtribute("512GB", 24, 30);
 
         // thông số kĩ thuật
@@ -1950,12 +1950,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy Z Flip5", "Điện thoại", 0.5, 2, 1, 2, "2024_3_28_638472353992099331_samsung-galaxy-zflip-5-xanh-ai.jpg");
 
         // phiên bản Samsung Galaxy Z Flip5
-        seedDataVariant("/src/assets/products/samsunggalaxyzflip5-Đen-256GB.jpg", "samsunggalaxyzflip5-Đen-256GB", 25990000.0, 10, 12);
+        seedDataVariant("/src/assets/products/Samsunggalaxyzflip5-Xam-256GB.jpg", "samsunggalaxyzflip5-Xám-256GB", 25990000.0, 10, 12);
 
 
         // Thông số
         // điện thoại Samsung Galaxy Z Flip5 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
-        seedDataVariantAtribute("Đen", 3, 31);
+        seedDataVariantAtribute("Xám", 3, 31);
         seedDataVariantAtribute("256GB", 24, 31);
 
         // thông số kĩ thuật
@@ -2010,7 +2010,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy A06", "Điện thoại", 0.5, 2, 1, 1, "samsung_galaxy_a06_blue_black_1_46d3694f11.png");
 
         // phiên bản Samsung Galaxy A06
-        seedDataVariant("/src/assets/products/samsunggalaxya06-Đen-128GB.jpg", "samsunggalaxya06-Đen-128GB", 3490000.0, 10, 13);
+        seedDataVariant("/src/assets/products/Samsunggalaxya06-Den-128GB.png", "samsunggalaxya06-Đen-128GB", 3490000.0, 10, 13);
 
 
         // Thông số
@@ -2063,12 +2063,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy A05", "Điện thoại", 0.5, 2, 1, 1, "2023_10_4_638320083060239206_samsung-galaxy-a05-xanh-3.jpg");
 
         // phiên bản Samsung Galaxy A05
-        seedDataVariant("/src/assets/products/samsunggalaxya05-Xanh-128GB.jpg", "samsunggalaxya05-Xanh-128GB", 2790000.0, 10, 14);
+        seedDataVariant("/src/assets/products/Samsunggalaxya05-Xanh-128GB.jpg", "samsunggalaxya05-Xanh-128GB", 2790000.0, 10, 14);
 
 
         // Thông số
         // điện thoại Samsung Galaxy A05 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 2.790.000
-        seedDataVariantAtribute("Xanh", 3, 33);
+        seedDataVariantAtribute("Xanh lá", 3, 33);
         seedDataVariantAtribute("128GB", 24, 33);
 
         // thông số kĩ thuật
@@ -2109,7 +2109,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("OPPO A3", "Điện thoại", 0.5, 4, 1, 1, "oppo_a3_tim_5_a81a5f4bf7.jpg");
 
         // phiên bản OPPO A3
-        seedDataVariant("/src/assets/products/oppoa3-Đen-128GB.jpg", "oppoa3-Đen-128GB", 4990000.0, 10, 15);
+        seedDataVariant("/src/assets/products/Oppoa3-Đen-128GB.jpg", "oppoa3-Đen-128GB", 4990000.0, 10, 15);
 
         // Thông số
         // điện thoại OPPO A3 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.990.000
@@ -2163,12 +2163,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("OPPO Reno12", "Điện thoại", 0.5, 4, 1, 1, "oppo_reno_12_trang_d776379731.jpg");
 
         // phiên bản OPPO Reno12 256 GB
-        seedDataVariant("/src/assets/products/opporeno12-Xanh-256GB.jpg", "opporeno12-Xanh-256GB", 12690000.0, 10, 16);
-
+        seedDataVariant("/src/assets/products/Opporeno12-Den-256GB.jpg", "opporeno12-Đen-256GB", 12690000.0, 10, 16);
 
         // Thông số
-        // điện thoại OPPO Reno12 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 12.690.000
-        seedDataVariantAtribute("Xanh", 3, 35);
+        // điện thoại OPPO Reno12 dung lượng 256 GB có 3 màu Đen, Trắng, Đen giá 12.690.000
+        seedDataVariantAtribute("Đen", 3, 35);
         seedDataVariantAtribute("256GB", 24, 35);
 
         // thông số kĩ thuật
@@ -2225,7 +2224,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi POCO X6", "Điện thoại", 0.5, 3, 1, 1, "00909923_poco_x6_blue_5e570f66db.png");
 
         // phiên bản Xiaomi POCO X6 256 GB
-        seedDataVariant("/src/assets/products/xiaomipocox6-Xanh-256GB.jpg", "xiaomipocox6-Xanh-256GB", 8990000.0, 10, 17);
+        seedDataVariant("/src/assets/products/Xiaomipocox6-Xanh-256GB.png", "xiaomipocox6-Xanh-256GB", 8990000.0, 10, 17);
 
         // Thông số
         // điện thoại Xiaomi POCO X6 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 8.990.000
@@ -2280,7 +2279,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi Poco M6", "Điện thoại", 0.5, 3, 1, 1, "poco_m6_cc5c059d02.png");
 
         // phiên bản Xiaomi Poco M6 128 GB
-        seedDataVariant("/src/assets/products/xiaomipocom6-Đen-128GB.jpg", "xiaomipocom6-Đen-128GB", 4290000.0, 10, 18);
+        seedDataVariant("/src/assets/products/Xiaomipocom6-Den-128GB.jpg", "xiaomipocom6-Đen-128GB", 4290000.0, 10, 18);
 
 
         // Thông số
@@ -2336,7 +2335,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi Redmi Note 13", "Điện thoại", 0.5, 3, 1, 1, "2024_1_5_638400663079293145_xiaomi-redmi-note-13-xanh.png");
 
         // phiên bản Xiaomi Redmi Note 13 128 GB
-        seedDataVariant("/src/assets/products/xiaomiredminote13-Xanh-128GB.jpg", "xiaomiredminote13-Xanh-128GB", 4990000.0, 10, 19);
+        seedDataVariant("/src/assets/products/Xiaomiredminote13-Xanh-128GB.jpg", "xiaomiredminote13-Xanh-128GB", 4990000.0, 10, 19);
 
 
 
@@ -2387,7 +2386,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi Redmi Note 13 Pro+", "Điện thoại", 0.5, 3, 1, 1, "2024_1_5_638400663079293145_xiaomi-redmi-note-13-xanh.png");
 
         // phiên bản Xiaomi Redmi Note 13 Pro+ 256 GB
-        seedDataVariant("/src/assets/products/", "xiaomiredminote13proplus-Trắng-256GB", 8990000.0, 10, 20);
+        seedDataVariant("/src/assets/products/Xiaomiredminote13proplus-Trang-256GB.png", "Xiaomiredminote13proplus-Trắng-256GB", 8990000.0, 10, 20);
 
 
         // Thông số
@@ -7594,7 +7593,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataOrderDetail(2L, 1L,1, 27990000.0, 27990000.0, "12346");
 
 
-
+        System.out.println("Khởi tạo xong");
     }
 
     public void seedDataReceive(Long supplierId, Double total, LocalDateTime date, String note) {
