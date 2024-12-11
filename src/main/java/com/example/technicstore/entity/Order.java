@@ -2,6 +2,7 @@ package com.example.technicstore.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -33,8 +34,8 @@ public class Order {
     private String payment_status;
 
     // Danh sách chi tiết đơn đặt hàng (nếu cần)
-    // @OneToMany(mappedBy = "order")
-    // private Set<OrderDetail> order_details;
+     @OneToMany(mappedBy = "order")
+     private List<OrderDetail> orderDetails;
 
     // Phương thức thanh toán (Tiền mặt hoặc Chuyển khoản)
     @Column(name = "payment_method", nullable = false)
