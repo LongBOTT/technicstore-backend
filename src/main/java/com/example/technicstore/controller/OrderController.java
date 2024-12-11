@@ -7,11 +7,15 @@ import com.example.technicstore.entity.Order;
 import com.example.technicstore.service.CustomerService;
 import com.example.technicstore.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -128,5 +132,12 @@ public class OrderController {
     public ResponseEntity<OrderStatisticsDTO> getOrderStatistics() {
         OrderStatisticsDTO stats = orderService.getOrderStatistics();
         return ResponseEntity.ok(stats);
+    }
+
+    @GetMapping("/statistics-revenue")
+    public ResponseEntity<Map<String, Object>> getStatistics(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime startDate,
+                                                             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime endDate) {
+        Map<String, Object> statistics = orderService.getOrderStatistics(startDate, endDate);
+        return ResponseEntity.ok(statistics);
     }
 }

@@ -15,10 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 @Service
@@ -208,5 +205,37 @@ public class OrderService {
 
         // Trả về kết quả thống kê dưới dạng DTO
         return new OrderStatisticsDTO(revenue, newOrders, canceledOrders, returnedOrders, revenueLast7Days, topSellingProductsToday, topSellingCategoriesToday);
+    }
+
+    public Map<String, Object> getOrderStatistics(LocalDateTime startDate, LocalDateTime endDate) {
+        // Lấy tổng quan
+        Object[] summaryStats = orderRepository.getStatisticsBetweenDates(startDate, endDate);
+
+        // Lấy thống kê theo ngày
+        List<Object[]> dailyStats = orderRepository.getDailyStatistics(startDate, endDate);
+
+        // Tạo response data
+        Map<String, Object> response = new HashMap<>();
+        response.put("totalOrders", summaryStats[0]);
+        response.put("totalRevenue", summaryStats[1]);
+        response.put("totalCostPrice", summaryStats[2]);
+        response.put("totalProfit", summaryStats[3]);
+
+        List<Map<String, Object>> dailyData = new ArrayList<>();
+        for (Object[] daily : dailyStats) {
+            Map<String, Object> dailyMap = new HashMap<>();
+            dailyMap.put("date", daily[0]);
+            dailyMap.put("totalOrders", daily[1]);
+            dailyMap.put("cashOrders", daily[2]);
+            dailyMap.put("bankTransferOrders", daily[3]);
+            dailyMap.put("totalQuantity", daily[4]);
+            dailyMap.put("totalRevenue", daily[5]);
+            dailyMap.put("totalCostPrice", daily[6]);
+            dailyMap.put("totalProfit", daily[7]);
+            dailyData.add(dailyMap);
+        }
+
+        response.put("dailyStats", dailyData);
+        return response;
     }
 }

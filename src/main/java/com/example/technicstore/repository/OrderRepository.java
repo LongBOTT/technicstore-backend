@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+
 public interface OrderRepository extends JpaRepository<Order, Long> {
     // Tìm kiếm đơn hàng theo id
     Order findOrderById(Long id);
@@ -58,6 +59,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "AND o.orderDate >= :startDate " + // Dùng tham số cho ngày bắt đầu
             "GROUP BY DATE(o.orderDate) ORDER BY DATE(o.orderDate) DESC")
     List<Object[]> calculateRevenueLast7Days(@Param("startDate") LocalDateTime startDate);
+
     // Top 5 sản phẩm bán chạy trong ngày hiện tại
     @Query("SELECT v.name, SUM(od.quantity) FROM OrderDetail od " +
             "JOIN Variant v ON od.variantId = v.id " +
@@ -66,7 +68,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     List<Object[]> getTopSellingProductsToday();
 
 
-//    // Top 5 thể loại bán chạy trong ngày hiện tại
+    // Top 5 thể loại bán chạy trong ngày hiện tại
     @Query("SELECT c.name, SUM(od.quantity) FROM OrderDetail od " +
             "JOIN Variant v ON od.variantId = v.id " +
             "JOIN v.products p " +
@@ -75,4 +77,24 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "GROUP BY c.name ORDER BY SUM(od.quantity) DESC")
     List<Object[]> getTopSellingCategoriesToday();
 
+    // Truy vấn để lấy tổng đơn hàng, doanh thu, giá vốn, lợi nhuận trong khoảng thời gian
+    @Query("SELECT COUNT(o), SUM(o.total_amount), SUM(od.price * od.quantity), SUM((od.price - v.costPrice) * od.quantity) " +
+            "FROM Order o JOIN o.orderDetails od " +
+            "JOIN Variant v ON od.variantId = v.id " +
+            "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
+            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng')")
+    Object[] getStatisticsBetweenDates(@Param("startDate") LocalDateTime startDate, @Param("endDate") LocalDateTime endDate);
+
+
+
+    // Truy vấn để lấy thông tin từng ngày trong khoảng thời gian
+    @Query("SELECT o.orderDate, COUNT(o), SUM(CASE WHEN o.paymentMethod = 'Cash' THEN 1 ELSE 0 END), " +
+            "SUM(CASE WHEN o.paymentMethod = 'BankTransfer' THEN 1 ELSE 0 END), SUM(od.quantity), SUM(o.total_amount), " +
+            "SUM(od.price * od.quantity), SUM((od.price - v.costPrice) * od.quantity) " +
+            "FROM Order o JOIN o.orderDetails od " +
+            "JOIN Variant v ON od.variantId = v.id"+
+            "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate "+
+            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
+            "GROUP BY DATE(o.orderDate")
+    List<Object[]> getDailyStatistics(@Param("startDate") LocalDateTime startDate, @Param("endDate") LocalDateTime endDate);
 }
