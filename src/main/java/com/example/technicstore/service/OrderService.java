@@ -211,6 +211,11 @@ public class OrderService {
         // Lấy tổng quan
         Object[] summaryStats = orderRepository.getStatisticsBetweenDates(startDate, endDate);
 
+        // Kiểm tra nếu summaryStats là null hoặc không có đủ 4 phần tử
+        if (summaryStats == null || summaryStats.length < 4) {
+            summaryStats = new Object[]{0L, 0.0, 0.0, 0.0}; // Gán giá trị mặc định là 0
+        }
+
         // Lấy thống kê theo ngày
         List<Object[]> dailyStats = orderRepository.getDailyStatistics(startDate, endDate);
 
@@ -221,6 +226,7 @@ public class OrderService {
         response.put("totalCostPrice", summaryStats[2]);
         response.put("totalProfit", summaryStats[3]);
 
+        // Xử lý thống kê theo ngày
         List<Map<String, Object>> dailyData = new ArrayList<>();
         for (Object[] daily : dailyStats) {
             Map<String, Object> dailyMap = new HashMap<>();
@@ -238,4 +244,5 @@ public class OrderService {
         response.put("dailyStats", dailyData);
         return response;
     }
+
 }

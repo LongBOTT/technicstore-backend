@@ -135,9 +135,25 @@ public class OrderController {
     }
 
     @GetMapping("/statistics-revenue")
-    public ResponseEntity<Map<String, Object>> getStatistics(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime startDate,
-                                                             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime endDate) {
-        Map<String, Object> statistics = orderService.getOrderStatistics(startDate, endDate);
+    public ResponseEntity<Map<String, Object>> getStatistics(
+            @RequestParam String startDate,
+            @RequestParam String endDate) {
+
+        System.out.println("Start Date String: " + startDate);
+        System.out.println("End Date String: " + endDate);
+
+        // Loại bỏ khoảng trắng nếu có và chuyển đổi sang LocalDateTime
+        startDate = startDate.trim();
+        endDate = endDate.trim();
+
+        LocalDateTime start = LocalDateTime.parse(startDate);
+        LocalDateTime end = LocalDateTime.parse(endDate);
+
+        System.out.println("Parsed Start Date: " + start);
+        System.out.println("Parsed End Date: " + end);
+
+        Map<String, Object> statistics = orderService.getOrderStatistics(start, end);
         return ResponseEntity.ok(statistics);
     }
+
 }

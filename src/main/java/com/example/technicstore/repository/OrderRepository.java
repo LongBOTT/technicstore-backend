@@ -88,13 +88,15 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
 
     // Truy vấn để lấy thông tin từng ngày trong khoảng thời gian
-    @Query("SELECT o.orderDate, COUNT(o), SUM(CASE WHEN o.paymentMethod = 'Cash' THEN 1 ELSE 0 END), " +
-            "SUM(CASE WHEN o.paymentMethod = 'BankTransfer' THEN 1 ELSE 0 END), SUM(od.quantity), SUM(o.total_amount), " +
+    @Query("SELECT o.orderDate, COUNT(o), SUM(CASE WHEN o.payment_method = 'Cash' THEN 1 ELSE 0 END), " +
+            "SUM(CASE WHEN o.payment_method = 'BankTransfer' THEN 1 ELSE 0 END), SUM(od.quantity), SUM(o.total_amount), " +
             "SUM(od.price * od.quantity), SUM((od.price - v.costPrice) * od.quantity) " +
             "FROM Order o JOIN o.orderDetails od " +
-            "JOIN Variant v ON od.variantId = v.id"+
-            "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate "+
+            "JOIN Variant v ON od.variantId = v.id " +
+            "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
             "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
-            "GROUP BY DATE(o.orderDate")
+            "GROUP BY DATE(o.orderDate)")
     List<Object[]> getDailyStatistics(@Param("startDate") LocalDateTime startDate, @Param("endDate") LocalDateTime endDate);
+
+
 }
