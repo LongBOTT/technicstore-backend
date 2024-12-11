@@ -77,26 +77,53 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "GROUP BY c.name ORDER BY SUM(od.quantity) DESC")
     List<Object[]> getTopSellingCategoriesToday();
 
-    // Truy vấn để lấy tổng đơn hàng, doanh thu, giá vốn, lợi nhuận trong khoảng thời gian
-    @Query("SELECT COUNT(o), SUM(o.total_amount), SUM(od.price * od.quantity), SUM((od.price - v.costPrice) * od.quantity) " +
-            "FROM Order o JOIN o.orderDetails od " +
-            "JOIN Variant v ON od.variantId = v.id " +
-            "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
-            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng')")
-    Object[] getStatisticsBetweenDates(@Param("startDate") LocalDateTime startDate, @Param("endDate") LocalDateTime endDate);
 
-
-
-    // Truy vấn để lấy thông tin từng ngày trong khoảng thời gian
-    @Query("SELECT o.orderDate, COUNT(o), SUM(CASE WHEN o.payment_method = 'Cash' THEN 1 ELSE 0 END), " +
-            "SUM(CASE WHEN o.payment_method = 'BankTransfer' THEN 1 ELSE 0 END), SUM(od.quantity), SUM(o.total_amount), " +
-            "SUM(od.price * od.quantity), SUM((od.price - v.costPrice) * od.quantity) " +
-            "FROM Order o JOIN o.orderDetails od " +
+    @Query("SELECT DATE(o.orderDate), " +
+            "COUNT(o), " +
+            "SUM(CASE WHEN o.payment_method = 'Cash' THEN 1 ELSE 0 END) AS cashOrders, " +
+            "SUM(CASE WHEN o.payment_method = 'BankTransfer' THEN 1 ELSE 0 END) AS bankTransferOrders, " +
+            "SUM(od.quantity) AS totalQuantity, " +
+            "SUM(o.total_amount) AS totalRevenue, " +
+            "SUM(CASE WHEN o.payment_method = 'Cash' THEN od.price * od.quantity ELSE 0 END) AS cashRevenue, " +
+            "SUM(CASE WHEN o.payment_method = 'BankTransfer' THEN od.price * od.quantity ELSE 0 END) AS transferRevenue, " +
+            "SUM(od.price * od.quantity) AS totalSales, " +
+            "SUM((od.price - v.costPrice) * od.quantity) AS totalProfit, " +
+            "SUM(v.costPrice * od.quantity) AS totalCostPrice " +
+            "FROM Order o " +
+            "JOIN o.orderDetails od " +
             "JOIN Variant v ON od.variantId = v.id " +
             "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
             "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
             "GROUP BY DATE(o.orderDate)")
-    List<Object[]> getDailyStatistics(@Param("startDate") LocalDateTime startDate, @Param("endDate") LocalDateTime endDate);
+    List<Object[]> getDailyStatistics(@Param("startDate") LocalDateTime startDate,
+                                      @Param("endDate") LocalDateTime endDate);
 
+
+
+    @Query("SELECT DATE(o.orderDate) AS orderDate, v.name, SUM(od.quantity) AS totalQuantity, " +
+            "SUM(od.quantity * od.price) AS revenue, " +
+            "SUM(od.quantity * v.costPrice) AS costPrice, " +
+            "SUM(od.quantity * (od.price - v.costPrice)) AS profit " +
+            "FROM Order o JOIN o.orderDetails od " +
+            "JOIN Variant v ON od.variantId = v.id " +
+            "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
+            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
+            "GROUP BY DATE(o.orderDate), v.id")
+    List<Object[]> getProductSalesStatisticsByDate(@Param("startDate") LocalDateTime startDate,
+                                                   @Param("endDate") LocalDateTime endDate);
+
+    @Query("SELECT DATE(o.orderDate) AS orderDate, c.name AS categoryName, SUM(od.quantity) AS totalQuantity, " +
+            "SUM(od.quantity * od.price) AS revenue, " +
+            "SUM(od.quantity * v.costPrice) AS costPrice, " +
+            "SUM(od.quantity * (od.price - v.costPrice)) AS profit " +
+            "FROM Order o JOIN o.orderDetails od " +
+            "JOIN Variant v ON od.variantId = v.id " +
+            "JOIN v.products p " +
+            "JOIN p.category c " +
+            "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
+            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
+            "GROUP BY DATE(o.orderDate), c.id")
+    List<Object[]> getCategorySalesStatisticsByDate(@Param("startDate") LocalDateTime startDate,
+                                                    @Param("endDate") LocalDateTime endDate);
 
 }

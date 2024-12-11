@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -146,14 +147,51 @@ public class OrderController {
         startDate = startDate.trim();
         endDate = endDate.trim();
 
-        LocalDateTime start = LocalDateTime.parse(startDate);
-        LocalDateTime end = LocalDateTime.parse(endDate);
+        // Loại bỏ khoảng trắng nếu có và chuyển đổi sang LocalDateTime
+        startDate = startDate.trim();
+        endDate = endDate.trim();
 
-        System.out.println("Parsed Start Date: " + start);
-        System.out.println("Parsed End Date: " + end);
+        // Chuyển từ String sang LocalDateTime với giờ là 00:00:00 cho startDate và 23:59:59 cho endDate
+        LocalDateTime start = LocalDate.parse(startDate).atStartOfDay();  // bắt đầu ngày
+        LocalDateTime end = LocalDate.parse(endDate).atTime(LocalTime.MAX);  // kết thúc ngày
 
         Map<String, Object> statistics = orderService.getOrderStatistics(start, end);
         return ResponseEntity.ok(statistics);
     }
+    @GetMapping("/statistics-product-sales")
+    public ResponseEntity<Map<String, Object>> getProductSalesStatisticsByDate(
+            @RequestParam String startDate,
+            @RequestParam String endDate) {
+
+        // Loại bỏ khoảng trắng nếu có và chuyển đổi sang LocalDateTime
+        startDate = startDate.trim();
+        endDate = endDate.trim();
+
+        // Chuyển từ String sang LocalDateTime với giờ là 00:00:00 cho startDate và 23:59:59 cho endDate
+        LocalDateTime start = LocalDate.parse(startDate).atStartOfDay();  // bắt đầu ngày
+        LocalDateTime end = LocalDate.parse(endDate).atTime(LocalTime.MAX);  // kết thúc ngày
+
+        // Gọi service để lấy thống kê
+        Map<String, Object> statistics = orderService.getProductSalesStatisticsByDate(start, end);
+        return ResponseEntity.ok(statistics);
+    }
+    @GetMapping("/statistics-category-sales")
+    public ResponseEntity<Map<String, Object>> getCategorySalesStatisticsByDate(
+            @RequestParam String startDate,
+            @RequestParam String endDate) {
+
+        // Loại bỏ khoảng trắng nếu có và chuyển đổi sang LocalDateTime
+        startDate = startDate.trim();
+        endDate = endDate.trim();
+
+        // Chuyển từ String sang LocalDateTime với giờ là 00:00:00 cho startDate và 23:59:59 cho endDate
+        LocalDateTime start = LocalDate.parse(startDate).atStartOfDay();  // bắt đầu ngày
+        LocalDateTime end = LocalDate.parse(endDate).atTime(LocalTime.MAX);  // kết thúc ngày
+
+        // Gọi service để lấy thống kê
+        Map<String, Object> statistics = orderService.getCategorySalesStatisticsByDate(start, end);
+        return ResponseEntity.ok(statistics);
+    }
 
 }
+

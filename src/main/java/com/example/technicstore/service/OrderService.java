@@ -208,40 +208,80 @@ public class OrderService {
     }
 
     public Map<String, Object> getOrderStatistics(LocalDateTime startDate, LocalDateTime endDate) {
-        // Lấy tổng quan
-        Object[] summaryStats = orderRepository.getStatisticsBetweenDates(startDate, endDate);
 
-        // Kiểm tra nếu summaryStats là null hoặc không có đủ 4 phần tử
-        if (summaryStats == null || summaryStats.length < 4) {
-            summaryStats = new Object[]{0L, 0.0, 0.0, 0.0}; // Gán giá trị mặc định là 0
-        }
-
-        // Lấy thống kê theo ngày
+        // Lấy thống kê theo ngày từ repository
         List<Object[]> dailyStats = orderRepository.getDailyStatistics(startDate, endDate);
 
         // Tạo response data
         Map<String, Object> response = new HashMap<>();
-        response.put("totalOrders", summaryStats[0]);
-        response.put("totalRevenue", summaryStats[1]);
-        response.put("totalCostPrice", summaryStats[2]);
-        response.put("totalProfit", summaryStats[3]);
 
         // Xử lý thống kê theo ngày
         List<Map<String, Object>> dailyData = new ArrayList<>();
         for (Object[] daily : dailyStats) {
             Map<String, Object> dailyMap = new HashMap<>();
-            dailyMap.put("date", daily[0]);
-            dailyMap.put("totalOrders", daily[1]);
-            dailyMap.put("cashOrders", daily[2]);
-            dailyMap.put("bankTransferOrders", daily[3]);
-            dailyMap.put("totalQuantity", daily[4]);
-            dailyMap.put("totalRevenue", daily[5]);
-            dailyMap.put("totalCostPrice", daily[6]);
-            dailyMap.put("totalProfit", daily[7]);
+            dailyMap.put("date", daily[0]); // Ngày
+            dailyMap.put("totalOrders", daily[1]); // Tổng số đơn hàng
+            dailyMap.put("cashOrders", daily[2]); // Số đơn tiền mặt
+            dailyMap.put("bankTransferOrders", daily[3]); // Số đơn chuyển khoản
+            dailyMap.put("totalQuantity", daily[4]); // Lượng hàng bán
+            dailyMap.put("totalRevenue", daily[5]); // Tổng doanh thu
+            dailyMap.put("cashRevenue", daily[6]); // Doanh thu tiền mặt
+            dailyMap.put("transferRevenue", daily[7]); // Doanh thu chuyển khoản
+            dailyMap.put("totalSales", daily[8]); // Tổng doanh số
+            dailyMap.put("totalProfit", daily[9]); // Tổng lợi nhuận
+            dailyMap.put("totalCostPrice", daily[10]); // Tổng giá vốn
             dailyData.add(dailyMap);
         }
 
         response.put("dailyStats", dailyData);
+        return response;
+    }
+
+    public Map<String, Object> getProductSalesStatisticsByDate(LocalDateTime startDate, LocalDateTime endDate) {
+        // Lấy thống kê sản phẩm bán theo ngày
+        List<Object[]> statistics = orderRepository.getProductSalesStatisticsByDate(startDate, endDate);
+
+        // Tạo response data
+        Map<String, Object> response = new HashMap<>();
+
+        // Xử lý dữ liệu trả về từ truy vấn
+        List<Map<String, Object>> productStats = new ArrayList<>();
+        for (Object[] stat : statistics) {
+            Map<String, Object> productStat = new HashMap<>();
+            productStat.put("orderDate", stat[0]);  // Ngày của đơn hàng
+            productStat.put("productName", stat[1]);  // Tên sản phẩm
+            productStat.put("totalQuantity", stat[2]);  // Tổng số lượng bán
+            productStat.put("revenue", stat[3]);  // Doanh thu
+            productStat.put("costPrice", stat[4]);  // Giá vốn
+            productStat.put("profit", stat[5]);  // Lợi nhuận
+            productStats.add(productStat);
+        }
+
+        response.put("productStats", productStats);
+        return response;
+    }
+
+    public Map<String, Object> getCategorySalesStatisticsByDate(LocalDateTime startDate, LocalDateTime endDate) {
+        // Lấy thống kê thể loại bán theo ngày
+        List<Object[]> statistics = orderRepository.getCategorySalesStatisticsByDate(startDate, endDate);
+
+        // Tạo response data
+        Map<String, Object> response = new HashMap<>();
+
+        // Xử lý dữ liệu trả về từ truy vấn
+        List<Map<String, Object>> categoryStats = new ArrayList<>();
+        for (Object[] stat : statistics) {
+            Map<String, Object> categoryStat = new HashMap<>();
+            categoryStat.put("orderDate", stat[0]);  // Ngày của đơn hàng
+            categoryStat.put("categoryName", stat[1]);  // Tên thể loại
+            categoryStat.put("totalQuantity", stat[2]);  // Tổng số lượng bán
+            categoryStat.put("revenue", stat[3]);  // Doanh thu
+            categoryStat.put("costPrice", stat[4]);  // Giá vốn
+            categoryStat.put("profit", stat[5]);  // Lợi nhuận
+            categoryStats.add(categoryStat);
+        }
+
+        response.put("categoryStats", categoryStats);
         return response;
     }
 
