@@ -310,11 +310,8 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataAttribute("Loại màn hình", "Màn hình");
         seedDataAttribute("Tấm nền", "Màn hình");
-
         seedDataAttribute("Webcam", "Giao tiếp và kết nối");
-
         seedDataAttribute("Power Supply", "Thông tin Pin và sạc");
-
         seedDataAttribute("Số luồng", "Bộ xử lý");
         seedDataAttribute("Bộ nhớ", "Đồ họa");
         seedDataAttribute("Độ phủ màu", "Đồ họa");
@@ -355,6 +352,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataBrand("Citizen");
         seedDataBrand("Casio");
         seedDataBrand("Orient");
+        seedDataBrand("Fujihome");
 
         // endregion
 
@@ -366,7 +364,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         seedDataCategory("PHỤ KIỆN");
-        seedDataCategory("ĐIỆN MÁY");
+        seedDataCategory("ĐIỆN MÁY"); //6
 
         // Loa,tai nghe
         seedDataCategory("Loa");
@@ -469,12 +467,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("1", 39, 1);
         seedDataVariantAtribute("5G", 40, 1);
         seedDataVariantAtribute("1 Lightning", 41, 1);
-        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 1);
-        seedDataVariantAtribute("Lithium-ion", 46, 1);
-        seedDataVariantAtribute("3279 mAh", 47, 1);
-        seedDataVariantAtribute("iOS", 49, 1);
-        seedDataVariantAtribute("iOS 16", 50, 1);
-        seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 1);
+
 
         seedDataVariantAtribute("Trung quốc", 1, 2);
         seedDataVariantAtribute("09/2022", 2, 2);
@@ -506,13 +499,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("1 eSIM, 1 Nano SIM", 38, 2);
         seedDataVariantAtribute("1", 39, 2);
         seedDataVariantAtribute("5G", 40, 2);
-        seedDataVariantAtribute("1 Lightning", 41, 2);
-        seedDataVariantAtribute("BEIDOU,GALILEO,GLONASS,GPS,QZSS", 43, 2);
-        seedDataVariantAtribute("Lithium-ion", 46, 2);
-        seedDataVariantAtribute("3279 mAh", 47, 2);
-        seedDataVariantAtribute("iOS", 49, 2);
-        seedDataVariantAtribute("iOS 16", 50, 2);
-        seedDataVariantAtribute("Cáp sạc, Sách HDSD, Que lấy SIM", 51, 2);
+
 
         seedDataVariantAtribute("Trung quốc", 1, 3);
         seedDataVariantAtribute("09/2022", 2, 3);
@@ -4938,74 +4925,300 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("1.28 inch", 14, 117); // Kích thước màn hình
         seedDataVariantAtribute("AMOLED Chính", 15, 117); // Công nghệ màn hình
 
-        seedDataVariant("/src/assets/products/2023_5_23_638204602657032897_amazfit.jpg", "Amazfit GTR Mini" , 2199305.0, 10, 82);
-        seedDataVariantAtribute("GTR Mini", 87, 118); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 118); // Xuất xứ
-        seedDataVariantAtribute("12", 4, 118); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 118); // Hướng dẫn bảo quản
-        seedDataVariantAtribute("5 ATM (Đi tắm, Đi bơi)", 8, 118); // Chống nước
-        seedDataVariantAtribute("Khung máy: Thép không gỉ, Mặt kính: Kính cường lực, Dây: Silicone", 7, 118); // Chất liệu
-        seedDataVariantAtribute("Tối đa 28 ngày Chế độ bình thường", 44, 118); // Thời gian sử dụng pin
-        seedDataVariantAtribute("2 giờ", 44, 118); // Thời gian sạc đầy
-        seedDataVariantAtribute("1.28 inch", 14, 118); // Kích thước màn hình
-        seedDataVariantAtribute("AMOLED Chính", 15, 118); // Công nghệ màn hình
 
         seedDataProduct("Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band", "Apple", 0.180, 14, 4, 3, "/src/assets/products/AmazfitGTRMini.jpg");
 
         seedDataVariant("/src/assets/products/AppleWatchUltra2Xanh.jpg", "Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band" , 20199005.0, 10, 83);
-        seedDataVariantAtribute("Apple Watch Ultra 2 49mm viền Titanium", 87, 119); // Model
-        seedDataVariantAtribute("12", 4, 119); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("0.463 kg", 6, 119); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("iOS 17", 49, 119); // Version yêu cầu tối thiểu
+        seedDataVariantAtribute("Apple Watch Ultra 2 49mm viền Titanium", 87, 118); // Model
+        seedDataVariantAtribute("12", 4, 118); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("0.463 kg", 6, 118); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("iOS 17", 49, 118); // Version yêu cầu tối thiểu
 
-        seedDataVariant("/src/assets/products/AppleWatchUltra2Cam.jpg", "Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band" , 20199305.0, 10, 83);
-        seedDataVariantAtribute("Apple Watch Ultra 2 49mm viền Titanium", 87, 119); // Model
-        seedDataVariantAtribute("12", 4, 120); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("0.463 kg", 6, 120); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("iOS 17", 49, 120); // Version yêu cầu tối thiểu
 
         seedDataProduct("Xiaomi Smart Band 9", "Xiami", 0.180, 3, 4, 3, "/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg");
 
         seedDataVariant("/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg", "Xiaomi Smart Band 9" , 999115.0, 10, 84);
-        seedDataVariantAtribute("46.53 x 21.63 x 10.95 mm", 5, 121); // Kích thước
-        seedDataVariantAtribute("15.8 g", 6, 121); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("5 ATM (Đi tắm, Đi bơi)", 8, 121); // Chống nước
-        seedDataVariantAtribute("Vỏ thân máy: Nhôm + Nhựa cao cấp", 7, 121); // Chất liệu
-        seedDataVariantAtribute("1.62 inch", 14, 121); // Kích thước màn hình
-        seedDataVariantAtribute("AMOLED", 15, 121); // Công nghệ màn hình
-        seedDataVariantAtribute("192 x 490 Pixels", 16, 121); // Độ phân giải
-        seedDataVariantAtribute("21 ngày Chế độ bình thường", 44, 121); // Thời gian sử dụng pin
-        seedDataVariantAtribute("Đa ngôn ngữ", 48, 121); // Ngôn ngữ
-        seedDataVariantAtribute("Android, iOS", 49, 121); // Hệ điều hành tương thích
+        seedDataVariantAtribute("46.53 x 21.63 x 10.95 mm", 5, 119); // Kích thước
+        seedDataVariantAtribute("15.8 g", 6, 119); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("5 ATM (Đi tắm, Đi bơi)", 8, 119); // Chống nước
+        seedDataVariantAtribute("Vỏ thân máy: Nhôm + Nhựa cao cấp", 7, 119); // Chất liệu
+        seedDataVariantAtribute("1.62 inch", 14, 119); // Kích thước màn hình
+        seedDataVariantAtribute("AMOLED", 15, 119); // Công nghệ màn hình
+        seedDataVariantAtribute("192 x 490 Pixels", 16, 119); // Độ phân giải
+        seedDataVariantAtribute("21 ngày Chế độ bình thường", 44, 119); // Thời gian sử dụng pin
+        seedDataVariantAtribute("Đa ngôn ngữ", 48, 119); // Ngôn ngữ
+        seedDataVariantAtribute("Android, iOS", 49, 119); // Hệ điều hành tương thích
 
-        seedDataVariant("/src/assets/products/xiaomi_band_9_den_4_fb95285611.jpg", "Xiaomi Smart Band 9" , 999105.0, 10, 84);
-        seedDataVariantAtribute("46.53 x 21.63 x 10.95 mm", 5, 122); // Kích thước
-        seedDataVariantAtribute("15.8 g", 6, 122); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("5 ATM (Đi tắm, Đi bơi)", 8, 122); // Chống nước
-        seedDataVariantAtribute("Vỏ thân máy: Nhôm + Nhựa cao cấp", 7, 122); // Chất liệu
-        seedDataVariantAtribute("1.62 inch", 14, 122); // Kích thước màn hình
-        seedDataVariantAtribute("AMOLED", 15, 122); // Công nghệ màn hình
-        seedDataVariantAtribute("192 x 490 Pixels", 16, 122); // Độ phân giải
-        seedDataVariantAtribute("21 ngày Chế độ bình thường", 44, 122); // Thời gian sử dụng pin
-        seedDataVariantAtribute("Đa ngôn ngữ", 48, 122); // Ngôn ngữ
-        seedDataVariantAtribute("Android, iOS", 49, 122); // Hệ điều hành tương thích
-        seedDataVariantAtribute("v5.4", 44, 122); // Bluetooth
-        seedDataVariantAtribute("Cảm biến gia tốc, Con quay hồi chuyển, Cảm biến ánh sáng, Cảm biến nhịp tim", 36, 122); // Cảm biến
 
         seedDataProduct("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su ", "Aple", 0.180, 14, 4, 3, "/src/assets/products/2023_10_9_638324588772574350_apple.jpg");
         seedDataVariant("/src/assets/products/2023_10_9_638324588772574350_apple.jpg", "Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su " , 12999105.0, 10, 85);
-        seedDataVariantAtribute("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm", 87, 123); // Model
-        seedDataVariantAtribute("Trung Quốc", 1, 123); // Xuất xứ
-        seedDataVariantAtribute("09/2023", 2, 123); // Thời điểm ra mắt
+        seedDataVariantAtribute("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm", 87, 120); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 120); // Xuất xứ
+        seedDataVariantAtribute("09/2023", 2, 120); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 120); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("45 x 38 x 10.7 mm", 5, 120); // Kích thước
+        seedDataVariantAtribute("38.7 g", 6, 120); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("IPX6", 8, 120); // Chống nước
+        seedDataVariantAtribute("Viền máy: Nhôm, Dây: Cao su", 7, 120); // Chất liệu
+        seedDataVariantAtribute("18 giờ", 44, 120); // Thời gian sử dụng pin
+        seedDataVariantAtribute("Đa ngôn ngữ", 48, 120); // Ngôn ngữ
+        seedDataVariantAtribute("iOS", 49, 120); // Hệ điều hành tương thích
+        seedDataVariantAtribute("Cuộc gọi, Tin nhắn", 35, 120); // Hiển thị thông báo
+
+        seedDataProduct("Samsung Galaxy Fit3", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg");
+        seedDataVariant("/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg", "Samsung Galaxy Fit3" , 1299105.0, 10, 86);
+        seedDataVariantAtribute("Galaxy Fit3", 87, 121); // Model
+        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 121); // Xuất xứ
+        seedDataVariantAtribute("02/2024", 2, 121); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 121); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 121); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 121); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("42.9 x 28.8 x 9.9 mm", 5, 121); // Kích thước
+        seedDataVariantAtribute("36.2 g", 6, 121); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("IP68", 8, 121); // Chống nước
+        seedDataVariantAtribute("Viền máy: Kim loại nhôm", 7, 121); // Chất liệu
+        seedDataVariantAtribute("Mặt đồng hồ chữ nhật", 86, 121); // Kiểu dáng thiết kế
+        seedDataVariantAtribute("1.6 inch", 14, 121); // Kích thước màn hình
+        seedDataVariantAtribute("AMOLED", 15, 121); // Công nghệ màn hình
+        seedDataVariantAtribute("256 x 402 Pixels", 16, 121); // Độ phân giải
+        seedDataVariantAtribute("13 ngày", 44, 121); // Thời gian sử dụng pin
+
+        seedDataProduct("Samsung Galaxy Watch6 BT 40mm", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg");
+        seedDataVariant("/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg", "Samsung Galaxy Watch6 BT 40mm" , 1299105.0, 10, 87);
+        seedDataVariantAtribute("Galaxy Watch6 BT 40mm", 87, 122); // Model
+        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 122); // Xuất xứ
+        seedDataVariantAtribute("2023", 2, 122); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 122); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 122); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 122); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("39.3 x 40.4 x 9.8 mm", 5, 122); // Kích thước
+        seedDataVariantAtribute("48.2 g", 6, 122); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Có", 8, 122); // Chống nước
+        seedDataVariantAtribute("Mặt kính: Kính Sapphire", 7, 122); // Chất liệu
+        seedDataVariantAtribute("Mặt đồng hồ tròn", 86, 122); // Kiểu dáng mặt đồng hồ
+        seedDataVariantAtribute("Sạc không dây", 57, 122); // Cổng sạc
+        seedDataVariantAtribute("Khoảng 1.5 ngày", 44, 122); // Thời gian sử dụng pin
+        seedDataVariantAtribute("Bluetooth, Wi-, GPS", 44, 122); // Kết nối
+        seedDataVariantAtribute("Đa ngôn ngữ", 48, 122); // Ngôn ngữ
+        seedDataVariantAtribute("Android", 49, 122); // Hệ điều hành tương thích
+
+        seedDataProduct("Samsung Galaxy Watch7 LTE 40mm", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png");
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png", "Samsung Galaxy Watch7 LTE 40mm" , 7299105.0, 10, 88);
+        seedDataVariantAtribute("Galaxy Watch7 LTE 40mm", 87, 123); // Model
+        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 123); // Xuất xứ
+        seedDataVariantAtribute("07/2024", 2, 123); // Thời điểm ra mắt
         seedDataVariantAtribute("12", 4, 123); // Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("45 x 38 x 10.7 mm", 5, 123); // Kích thước
-        seedDataVariantAtribute("38.7 g", 6, 123); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("IPX6", 8, 123); // Chống nước
-        seedDataVariantAtribute("Viền máy: Nhôm, Dây: Cao su", 7, 123); // Chất liệu
-        seedDataVariantAtribute("18 giờ", 44, 123); // Thời gian sử dụng pin
-        seedDataVariantAtribute("Đa ngôn ngữ", 48, 123); // Ngôn ngữ
-        seedDataVariantAtribute("iOS", 49, 123); // Hệ điều hành tương thích
-        seedDataVariantAtribute("Cuộc gọi, Tin nhắn", 35, 123); // Hiển thị thông báo
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 123); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 123); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("40.4 x 40.4 x 9.7 mm", 5, 123); // Kích thước
+        seedDataVariantAtribute("26.6 g", 6, 123); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("IP68", 8, 123); // Chống nước
+        seedDataVariantAtribute("240 mm", 8, 123); // Độ dài dây
+        seedDataVariantAtribute("24.1 mm", 8, 123); // Độ rộng dây
+        seedDataVariantAtribute("Khung máy: Hợp kim nhôm, Mặt kính: Kính Sapphire, Dây: Silicone", 7, 123); // Chất liệu
+        seedDataVariantAtribute("Mặt đồng hồ tròn", 86, 123); // Kiểu dáng thiết kế
+        seedDataVariantAtribute("1.3 inch", 14, 123); // Kích thước màn hình
+        seedDataVariantAtribute("Super AMOLED", 15, 123); // Công nghệ màn hình
+        seedDataVariantAtribute("432 x 432 pixels", 16, 123); // Độ phân giải
+        seedDataVariantAtribute("Exynos W1000", 58, 123); // CPU
+        seedDataVariantAtribute("Sạc không dây", 57, 123); // Cổng sạc
+        seedDataVariantAtribute("40 giờ Chế độ tiết kiệm Pin - tắt AOD", 44, 123); // Thời gian sử dụng pin
+
+
+        seedDataProduct("Samsung Galaxy Watch FE", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png");
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png", "Samsung Galaxy Watch FE" , 8299105.0, 10, 89);
+        seedDataVariantAtribute("Galaxy Watch FE 40mm", 87, 124); // Model
+        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 124); // Xuất xứ
+        seedDataVariantAtribute("07/2024", 2, 124); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 124); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 124); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 124); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("39.3 x 40.4 x 9.8 mm", 5, 124); // Kích thước
+        seedDataVariantAtribute("26.6 g", 6, 124); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("5 ATM (Đi tắm, Đi bơi)", 8, 124); // Chống nước
+        seedDataVariantAtribute("240 mm", 8, 124); // Độ dài dây
+        seedDataVariantAtribute("24.1 mm", 8, 124); // Độ rộng dây
+        seedDataVariantAtribute("Kim loại nguyên khối, Dây: Silicone", 7, 124); // Chất liệu
+        seedDataVariantAtribute("Mặt đồng hồ tròn", 86, 124); // Kiểu dáng thiết kế
+
+        seedDataProduct("Samsung Galaxy Watch Ultra LTE 47mm", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png");
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png", "Samsung Galaxy Watch Ultra LTE 47mm" , 20299105.0, 10, 90);
+        seedDataVariantAtribute("Galaxy Watch Ultra", 87, 125); // Model
+        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 125); // Xuất xứ
+        seedDataVariantAtribute("07/2024", 2, 125); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 125); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 125); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 125); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("47.4 x 47.4 x 12.1 mm", 5, 125); // Kích thước
+        seedDataVariantAtribute("94 g", 6, 125); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("IP68", 8, 125); // Chống nước
+        seedDataVariantAtribute("240 mm", 8, 125); // Độ dài dây
+        seedDataVariantAtribute("24.1 mm", 8, 125); // Độ rộng dây
+        seedDataVariantAtribute("Khung máy: Titan, Mặt kính: Kính Sapphire, Dây: Silicone", 7, 125); // Chất liệu
+        seedDataVariantAtribute("Mặt đồng hồ tròn", 86, 125); // Kiểu dáng thiết kế
+        seedDataVariantAtribute("1.47 inch", 14, 125); // Kích thước màn hình
+        seedDataVariantAtribute("Super AMOLED", 15, 125); // Công nghệ màn hình
+        seedDataVariantAtribute("480 x 480 pixels", 16, 125); // Độ phân giải
+        seedDataVariantAtribute("Exynos W1000", 58, 125); // CPU
+        seedDataVariantAtribute("Sạc không dây", 57, 125); // Cổng sạc
+
+        // Phụ Kiện Điện Tử
+        seedDataProduct("Quạt sạc cầm tay Hotwell ", "Xiaomi", 0.180, 3, 6, 3, "/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg");
+        seedDataVariant("/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg", "Quạt sạc cầm tay Hotwell" , 1199105.0, 10, 91);
+        seedDataVariantAtribute("FR12H1", 87, 126); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 126); // Xuất xứ
+        seedDataVariantAtribute("2024", 2, 126); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 126); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 126); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 126); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Trắng", 3, 126); // Màu sắc
+        seedDataVariantAtribute("19.6 x 9.8 x 3.8 cm", 5, 126); // Kích thước
+        seedDataVariantAtribute("200 g", 6, 126); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Khung lồng quạt: Nhựa ABS", 7, 126); // Chất liệu
+        seedDataVariantAtribute("Tổng: 5 W", 58, 126); // Công suất
+        seedDataVariantAtribute("5 V", 59, 126); // Điện áp
+        seedDataVariantAtribute("Bảo hành tại hãng", 4, 126); // Chế độ bảo hành
+
+        seedDataProduct("Quạt tháp Xiaomi Smart Tower Fan ", "Xiaomi", 1.0, 3, 6, 3, "/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg");
+        seedDataVariant("/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg", "Quạt tháp Xiaomi Smart Tower Fan" , 1098105.0, 10, 92);
+        seedDataVariantAtribute("Máy quạt đứng thông minh Xiaomi Fan 1C", 87, 127); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 127); // Xuất xứ
+        seedDataVariantAtribute("2023", 2, 127); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 127); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Tấm làm mát và lưới lọc bụi: 0 tháng, Điều khiển: 0 tháng", 4, 127); // Thời hạn bảo hành phụ kiện
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 127); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 127); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Trắng", 3, 127); // Màu sắc
+        seedDataVariantAtribute("31 x 31 x 111.1 cm", 5, 127); // Kích thước
+        seedDataVariantAtribute("5.5 kg", 6, 127); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Nhựa", 7, 127); // Chất liệu
+        seedDataVariantAtribute("Quạt đứng", 86, 127); // Kiểu dáng thiết kế
+        seedDataVariantAtribute("22 W", 58, 127); // Công suất
+
+        seedDataProduct("Quạt máy đứng Xiaomi Smart Fan 2 Lite ", "Xiaomi", 1.0, 3, 6, 3, "/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg");
+        seedDataVariant("/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg", "Quạt máy đứng Xiaomi Smart Fan 2 Lite (PYV4007GL)" , 1099105.0, 10, 93);
+        seedDataVariantAtribute("Quạt máy đứng Xiaomi Smart Fan 2 Lite", 87, 128); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 128); // Xuất xứ
+        seedDataVariantAtribute("2021", 2, 128); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 128); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 128); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 128); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Trắng", 3, 128); // Màu sắc
+        seedDataVariantAtribute("642 - 1000 x 330 x 343 mm", 5, 128); // Kích thước
+        seedDataVariantAtribute("3.5 kg", 6, 128); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Nhựa", 7, 128); // Chất liệu
+        seedDataVariantAtribute("38 W", 58, 128); // Công suất
+        seedDataVariantAtribute("220 V", 59, 128); // Điện áp
+        seedDataVariantAtribute("27 m3/h", 60, 128); // Lưu lượng gió
+
+
+        seedDataProduct("Quạt sưởi gốm Ceramic Fujihome FH2000M 2000W", "Fujihome", 1.0, 18, 6, 3, "/src/assets/products/00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png");
+        seedDataVariant("/src/assets/products/00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png", "Quạt sưởi gốm Ceramic Fujihome " , 1119105.0, 10, 94);
+        seedDataVariantAtribute("FH2000M", 87, 129); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 129); // Xuất xứ
+        seedDataVariantAtribute("2022", 2, 129); // Thời điểm ra mắt
+        seedDataVariantAtribute("24", 4, 129); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 129); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 129); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Xanh", 3, 129); // Màu sắc
+        seedDataVariantAtribute("Bảo hành tại hãng", 4, 129); // Chế độ bảo hành
+        seedDataVariantAtribute("Sưởi gốm", 86, 129); // Loại quạt sưởi
+        seedDataVariantAtribute("Sưởi gốm", 35, 129); // Công nghệ sưởi
+        seedDataVariantAtribute("Tổng: 2000 W", 58, 129); // Công suất
+        seedDataVariantAtribute("220 V / 50 Hz", 59, 129); // Điện áp
+        seedDataVariantAtribute("10 - 20 m2", 60, 129); // Phạm vi làm ấm
+
+        seedDataProduct("Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge", "Xiaomi", 0.5, 3, 9, 3, "/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg");
+        seedDataVariant("/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg", "Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge" , 1399105.0, 10, 95);
+        seedDataVariantAtribute("TRIP10000", 87, 130); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 130); // Xuất xứ
+        seedDataVariantAtribute("12", 4, 130); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Trắng", 3, 130); // Màu sắc
+        seedDataVariantAtribute("86 x 63 x 24 mm", 5, 130); // Kích thước
+        seedDataVariantAtribute("190 g", 6, 130); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Nhựa PC, Nhựa ABS", 7, 130); // Chất liệu
+        seedDataVariantAtribute("65%", 58, 130); // Hiệu suất sử dụng
+        seedDataVariantAtribute("QC 3.0", 59, 130); // Tiêu chuẩn sạc
+        seedDataVariantAtribute("18 W", 60, 130); // Công suất sạc tối đa
+        seedDataVariantAtribute("6 - 10 giờ", 61, 130); // Thời gian sạc đầy
+
+        seedDataProduct("Chuột Gaming không dây Logitech G305 Lightspeed", "Xiami", 0.5, 3, 13, 3, "/src/assets/products/2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg");
+        seedDataVariant("/src/assets/products/2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg", "Chuột Gaming không dây Logitech G305 Lightspeed" , 599105.0, 10, 96);
+        seedDataVariantAtribute("G305", 87, 131); // Model
+        seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 131); // Xuất xứ
+        seedDataVariantAtribute("12", 4, 131); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Đen", 3, 131); // Màu sắc
+        seedDataVariantAtribute("99 g", 6, 131); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Chuột không dây", 86, 131); // Loại chuột
+        seedDataVariantAtribute("USB", 59, 131); // Kiểu kết nối
+        seedDataVariantAtribute("Laptop, Máy tính để bàn", 63, 131); // Sử dụng cho thiết bị
+
+        seedDataProduct("Bàn phím không dây HyperWork HyperOne Gen 2", "Xiaomi", 0.5, 3, 14, 3, "/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
+        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Bàn phím không dây HyperWork HyperOne Gen 2" , 799105.0, 10, 97);
+        seedDataVariantAtribute("HPW-KB1-G2-BLK", 87, 132); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 132); // Xuất xứ
+        seedDataVariantAtribute("12", 4, 132); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Đen", 3, 132); // Màu sắc
+        seedDataVariantAtribute("0.60 -1.2 x 28 x 12 cm", 5, 132); // Kích thước
+        seedDataVariantAtribute("295 g", 6, 132); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Bàn phím không dây", 86, 132); // Loại bàn phím
+        seedDataVariantAtribute("Windows, macOS, Android", 49, 132); // Hệ điều hành tương thích
+        seedDataVariantAtribute("Bluetooth", 59, 132); // Kiểu kết nối
+
+        seedDataProduct("Chuột không dây HyperWork Silentium", "Xiaomi", 0.5, 3, 13, 3, "/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
+        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Chuột không dây HyperWork Silentium" , 799175.0, 10, 97);
+        seedDataVariantAtribute("HPW-KB1-G2-BLK", 87, 133); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 133); // Xuất xứ
+        seedDataVariantAtribute("12", 4, 133); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Đen", 3, 133); // Màu sắc
+        seedDataVariantAtribute("0.60 -1.2 x 28 x 12 cm", 5, 133); // Kích thước
+        seedDataVariantAtribute("295 g", 6, 133); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Bàn phím không dây", 86, 133); // Loại bàn phím
+        seedDataVariantAtribute("Windows, macOS, Android", 49, 133); // Hệ điều hành tương thích
+        seedDataVariantAtribute("Bluetooth", 59, 133); // Kiểu kết nối
+
+        seedDataProduct("Cáp Hub USB-C to HDMI 5in1 1549 Ugreen", "Xiaomi", 0.5, 3, 10, 3, "/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg");
+        seedDataVariant("/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg", "Cáp Hub USB-C to HDMI 5in1 1549 Ugreen" , 99105.0, 10, 98);
+        seedDataVariantAtribute("CM478", 87, 134); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 134); // Xuất xứ
+        seedDataVariantAtribute("12", 4, 134); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 134); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 134); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Xám đen", 3, 134); // Màu sắc
+        seedDataVariantAtribute("11.5 x 3.5 x 1.25 cm", 5, 134); // Kích thước
+        seedDataVariantAtribute("0.1 kg", 6, 134); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("15 cm", 66, 134); // Độ dài dây cáp
+        seedDataVariantAtribute("Vỏ: Hợp kim", 7, 134); // Chất liệu
+        seedDataVariantAtribute("5A", 58, 134); // Cường độ dòng điện
+        seedDataVariantAtribute("Laptop, Máy tính để bàn", 63, 134); // Sử dụng cho thiết bị
+        seedDataVariantAtribute("1 x USB-C (Dây liền)", 67, 134); // Cổng đầu vào
+        seedDataVariantAtribute("1 x USB-A (USB 3.0)", 68, 134); // Cổng đầu ra
+        seedDataVariantAtribute("Truyền dữ liệu", 35, 134); // Tính năng
+
+        seedDataProduct("Bộ sạc nhanh 1 cổng 30W ", "Xiaomi", 0.5, 3, 10, 3, "/src/assets/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg");
+        seedDataVariant("/src/assets/products/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg", "Bộ sạc nhanh 1 cổng 30W kèm cáp Type-C to Type-C 1M Smart Serie Devia" , 199105.0, 10, 99);
+        seedDataVariantAtribute("Bộ sạc devia 30w", 87, 135); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 135); // Xuất xứ
+        seedDataVariantAtribute("12", 4, 135); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 135); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 135); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Trắng", 3, 135); // Màu sắc
+        seedDataVariantAtribute("78.7 x 42.4 x 27.3 mm", 5, 135); // Kích thước
+        seedDataVariantAtribute("50 g", 6, 135); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("1 m", 66, 135); // Độ dài dây cáp
+        seedDataVariantAtribute("Nhựa PC, Nhựa ABS", 7, 135); // Chất liệu
+        seedDataVariantAtribute("3A", 58, 135); // Cường độ dòng điện
+        seedDataVariantAtribute("Điện thoại, Máy tính bảng", 63, 135); // Sử dụng cho thiết bị
+        seedDataVariantAtribute("Type C", 67, 135); // Cổng cáp kết nối
+        seedDataVariantAtribute("Sạc nhanh", 35, 135); // Tính năng
+
+
+
+
+
+
+
+
 
 
 
