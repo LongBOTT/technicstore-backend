@@ -43,7 +43,6 @@ public class DataInitializer implements CommandLineRunner {
     private final StockReceiveRepository stockReceiveRepository;
     private final StockReceiveDetailRepository stockReceiveDetailRepository;
 
-
     public DataInitializer(StockReceiveRepository stockReceiveRepository, StockReceiveDetailRepository stockReceiveDetailRepository, CustomerRepository customerRepository, AttributeRepository attributeRepository, BrandRepository brandRepository, CategoryRepository categoryRepository, SupplierRepository supplierRepository, CarrierRepository carrierRepository, WarrantyRepository warrantyRepository, RoleRepository roleRepository, FunctionRepository functionRepository, ModuleRepository moduleRepository, DecentralizationRepository decentralizationRepository, AccountRepository accountRepository, ProductRepository productRepository, ImeiRepository imeiRepository, VariantRepository variantRepository, Variant_AttributeRepository variantValueRepository1, CategoryAttributeRepository categoryAttributeRepository, OrderRepository orderRepository, OrderDetailRepository orderDetailRepository) {
 
         this.customerRepository = customerRepository;
@@ -328,8 +327,8 @@ public class DataInitializer implements CommandLineRunner {
 
         // region brand
         //   Thương hiệu điện thoại
-        seedDataBrand("iPhone");
-        seedDataBrand("Samsung");
+        seedDataBrand("iPhone"); //1
+        seedDataBrand("Samsung"); // 2
         seedDataBrand("Xiaomi");
         seedDataBrand("Oppo");
         seedDataBrand("Realme");
@@ -352,7 +351,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataBrand("Citizen");
         seedDataBrand("Casio");
         seedDataBrand("Orient");
-        seedDataBrand("Fujihome");
+        seedDataBrand("Fujihome"); //18
+        seedDataBrand("Mouse"); // 19
+        seedDataBrand("Sunhouse");
+        seedDataBrand("Philips");
+        seedDataBrand("Samsung Galaxy Tab"); //22
+        seedDataBrand("Xiaomi Pad"); //23
 
         // endregion
 
@@ -454,7 +458,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Điện dung đa điểm", 19, 1);
         seedDataVariantAtribute("1200 nits", 20, 1);
         seedDataVariantAtribute("Apple GPU 5 nhân", 23, 1);
-        seedDataVariantAtribute("Không", 26, 1);    
+        seedDataVariantAtribute("Không", 26, 1);
         seedDataVariantAtribute("Double rear camera", 27, 1);
         seedDataVariantAtribute("Wide", 28, 1);
         seedDataVariantAtribute("12.0 MP", 29, 1);
@@ -769,9 +773,9 @@ public class DataInitializer implements CommandLineRunner {
 
         // phiên bản iphone 15 plus
 
-        seedDataVariant("/src/assets/products/iphone15plusDen128GB.jpg", "iphone15plus Đen 128GB", 25990020.0, 10, 4);
-        seedDataVariant("/src/assets/products/iphone15plusVang256GB.jpg", "iphone15plus Vàng 256GB", 28990230.0, 10, 4);
-        seedDataVariant("/src/assets/products/iphone15plusXanh512GB.jpg", "iphone15plus Xanh 512GB", 34990000.0, 10, 4);
+        seedDataVariant("/src/assets/products/iphone15plus-Den-128GB.jpg", "iphone15plus Đen 128GB", 25990020.0, 10, 4);
+        seedDataVariant("/src/assets/products/iphone15plus-Vang-256GB.jpg", "iphone15plus Vàng 256GB", 28990230.0, 10, 4);
+        seedDataVariant("/src/assets/products/iphone15plus-Xanh-512GB.jpg", "iphone15plus Xanh 512GB", 34990000.0, 10, 4);
 
         // Thông số
         // điện thoại iphone 15 plus dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
@@ -884,10 +888,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro
-        seedDataVariant("/src/assets/products/iphone15pro Den 128GB.jpg", "iphone15pro Đen 128GB", 28990200.0, 10, 5);
-        seedDataVariant("/src/assets/products/iphone15pro Trang 256GB.jpg", "iphone15pro Trắng 256GB", 31990009.0, 10, 5);
-        seedDataVariant("/src/assets/products/iphone15pro Xanh 512GB.jpg", "iphone15pro Xanh 512GB", 37990900.0, 10, 5);
-        seedDataVariant("/src/assets/products/iphone15pro Den 1TB.jpg", "iphone15pro Đen 1TB", 43990000.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Den-128GB.jpg", "iphone15pro Đen 128GB", 28990200.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Trang-256GB.jpg", "iphone15pro Trắng 256GB", 31990009.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Xanh-512GB.jpg", "iphone15pro Xanh 512GB", 37990900.0, 10, 5);
+        seedDataVariant("/src/assets/products/iphone15pro-Den-1TB.jpg", "iphone15pro Đen 1TB", 43990000.0, 10, 5);
 
 
         // Thông số
@@ -1040,9 +1044,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Pro Max", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro max
-        seedDataVariant("/src/assets/products/iphone15promax Den 256GB.jpg", "iphone15promax Đen 256GB", 34990020.0, 10, 6);
-        seedDataVariant("/src/assets/products/iphone15promax Trang 512GB.jpg", "iphone15promax Trắng 512GB", 40990000.0, 10, 6);
-        seedDataVariant("/src/assets/products/iphone15promax Xanh 1TB.jpg", "iphone15promax Xanh 1TB", 46990000.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Den-256GB.jpg", "iphone15promax Đen 256GB", 34990020.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Trang-512GB.jpg", "iphone15promax Trắng 512GB", 40990000.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15promax-Xanh-1TB.jpg", "iphone15promax Xanh 1TB", 46990000.0, 10, 6);
 
         // Thông số
         // điện thoại iphone 15 pro max dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 34.990.000
@@ -1159,9 +1163,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 16", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16
-        seedDataVariant("/src/assets/products/iphone16 Den 128GB.png", "iphone16 Đen 128GB", 22990020.0, 10, 7);
-        seedDataVariant("/src/assets/products/iphone16 Trang 256GB.png", "iphone16 Trắng 256GB", 25990200.0, 10, 7);
-        seedDataVariant("/src/assets/products/iphone16 Xanh 512GB.png", "iphone16 Xanh 512GB", 30990000.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Den-128GB.png", "iphone16 Đen 128GB", 22990020.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Trang-256GB.png", "iphone16 Trắng 256GB", 25990200.0, 10, 7);
+        seedDataVariant("/src/assets/products/iphone16-Xanh-512GB.png", "iphone16 Xanh 512GB", 30990000.0, 10, 7);
 
 
         // Thông số
@@ -1290,10 +1294,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 16 Pro", "Điện thoại", 0.5, 1, 1, 1, "iphone_16_f27848b783.png");
 
         // phiên bản iphone 16 pro
-        seedDataVariant("/src/assets/products/iphone16pro Den 128GB.png", "iphone16pro Đen 128GB", 28990040.0, 10, 8);
-        seedDataVariant("/src/assets/products/iphone16pro Trang 256GB.png", "iphone16pro Trắng 256GB", 31990020.0, 10, 8);
-        seedDataVariant("/src/assets/products/iphone16pro Xanh 512GB.png", "iphone16pro Xanh 512GB", 37990200.0, 10, 8);
-        seedDataVariant("/src/assets/products/iphone16pro Den 1TB.png", "iphone16pro Đen 1TB", 43990090.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Den-128GB.png", "iphone16pro Đen 128GB", 28990040.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Trang-256GB.png", "iphone16pro Trắng 256GB", 31990020.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Xanh-512GB.png", "iphone16pro Xanh 512GB", 37990200.0, 10, 8);
+        seedDataVariant("/src/assets/products/iphone16pro-Den-1TB.png", "iphone16pro Đen 1TB", 43990090.0, 10, 8);
 
 
         // Thông số
@@ -1427,7 +1431,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S24 FE", "Điện thoại", 0.5, 2, 1, 2, "samssung_galaxy_s24_fe_xanh_723e4e6443.png");
 
         // phiên bản samsung galaxy s24 FE
-        seedDataVariant("/src/assets/products/SamsungGalaxys24fe Den 128GB.png", "SamsungGalaxys24fe Đen 128GB", 16990000.0, 10, 9);
+        seedDataVariant("/src/assets/products/SamsungGalaxys24fe-Den-128GB.png", "SamsungGalaxys24fe Đen 128GB", 16990000.0, 10, 9);
 
         // Thông số
         // điện thoại samsung galaxy s24 FE dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 16.990.000
@@ -1502,8 +1506,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S24 Ultra", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s24_ultra_2f8a5ee174.png");
 
         // phiên bản Samsung Galaxy S24 Ultra
-        seedDataVariant("/src/assets/products/Samsunggalaxys24ultra Den 256GB.png", "samsunggalaxys24ultra Đen 256GB", 33997000.0, 10, 11);
-        seedDataVariant("/src/assets/products/Samsunggalaxys24ultra Tim 512GB.png", "samsunggalaxys24ultra Tím 512GB", 37990800.0, 10, 11);
+        seedDataVariant("/src/assets/products/Samsunggalaxys24ultra-Den-256GB.png", "samsunggalaxys24ultra Đen 256GB", 33997000.0, 10, 11);
+        seedDataVariant("/src/assets/products/Samsunggalaxys24ultra-Tim-512GB.png", "samsunggalaxys24ultra Tím 512GB", 37990800.0, 10, 11);
 
         // Thông số
         // điện thoại Samsung Galaxy S24 Ultra dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 33.990.000
@@ -1586,7 +1590,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy Z Flip5", "Điện thoại", 0.5, 2, 1, 2, "2024_3_28_638472353992099331_samsung-galaxy-zflip-5-xanh-ai.jpg");
 
         // phiên bản Samsung Galaxy Z Flip5
-        seedDataVariant("/src/assets/products/Samsunggalaxyzflip5 Xam 256GB.jpg", "samsunggalaxyzflip5 Xám 256GB", 25990000.0, 10, 12);
+        seedDataVariant("/src/assets/products/Samsunggalaxyzflip5-Xam-256GB.jpg", "samsunggalaxyzflip5 Xám 256GB", 25990000.0, 10, 12);
 
         // Thông số
         // điện thoại Samsung Galaxy Z Flip5 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 25.990.000
@@ -1622,7 +1626,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy A06", "Điện thoại", 0.5, 2, 1, 1, "samsung_galaxy_a06_blue_black_1_46d3694f11.png");
 
         // phiên bản Samsung Galaxy A06
-        seedDataVariant("/src/assets/products/Samsunggalaxya06 Den 128GB.png", "samsunggalaxya06 Đen 128GB", 3490000.0, 10, 13);
+        seedDataVariant("/src/assets/products/Samsunggalaxya06-Den-128GB.png", "samsunggalaxya06 Đen 128GB", 3490000.0, 10, 13);
 
         // Thông số
         // điện thoại Samsung Galaxy A06 dung lượng128 GB có 3 màu Đen, Trắng, Xanh giá 3.490.000
@@ -1707,7 +1711,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("OPPO A3", "Điện thoại", 0.5, 4, 1, 1, "oppo_a3_tim_5_a81a5f4bf7.jpg");
 
         // phiên bản OPPO A3
-        seedDataVariant("/src/assets/products/Oppoa3 Đen 128GB.jpg", "oppoa3 Đen 128GB", 4993020.0, 10, 15);
+        seedDataVariant("/src/assets/products/Oppoa3-Đen-128GB.jpg", "oppoa3 Đen 128GB", 4993020.0, 10, 15);
 
         // Thông số
         // điện thoại OPPO A3 dung lượng 128 GB có 3 màu Đen, Trắng, Xanh giá 4.990.000
@@ -1761,7 +1765,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("OPPO Reno12", "Điện thoại", 0.5, 4, 1, 1, "oppo_reno_12_trang_d776379731.jpg");
 
         // phiên bản OPPO Reno12 256 GB
-        seedDataVariant("/src/assets/products/Opporeno12 Den 256GB.jpg", "opporeno12 Đen 256GB", 12690000.0, 10, 16);
+        seedDataVariant("/src/assets/products/Opporeno12-Den-256GB.jpg", "opporeno12 Đen 256GB", 12690000.0, 10, 16);
 
         // Thông số
         // điện thoại OPPO Reno12 dung lượng 256 GB có 3 màu Đen, Trắng, Đen giá 12.690.000
@@ -1822,7 +1826,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi POCO X6", "Điện thoại", 0.5, 3, 1, 1, "00909923_poco_x6_blue_5e570f66db.png");
 
         // phiên bản Xiaomi POCO X6 256 GB
-        seedDataVariant("/src/assets/products/Xiaomipocox6Xanh256GB.png", "xiaomipocox6 Xanh 256GB", 8990002.0, 10, 17);
+        seedDataVariant("/src/assets/products/Xiaomipocox6-Xanh-256GB.png", "xiaomipocox6 Xanh 256GB", 8990002.0, 10, 17);
 
         // Thông số
         // điện thoại Xiaomi POCO X6 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 8.990.000
@@ -1862,7 +1866,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Xiaomi Poco M6", "Điện thoại", 0.5, 3, 1, 1, "poco_m6_cc5c059d02.png");
 
         // phiên bản Xiaomi Poco M6 128 GB
-        seedDataVariant("/src/assets/products/Xiaomipocom6Den128GB.jpg", "xiaomipocom6 Đen 128GB", 4290020.0, 10, 18);
+        seedDataVariant("/src/assets/products/Xiaomipocom6-Den-128GB.jpg", "xiaomipocom6 Đen 128GB", 4290020.0, 10, 18);
 
 
         // Thông số
@@ -2004,19 +2008,19 @@ public class DataInitializer implements CommandLineRunner {
         //MacBook Air
         // phiên bản  MacBook Air M2 13 2022 8CPU 10GPU 8GB 512GB
         seedDataProduct("MacBook Air M2 13 2022 8CPU 10GPU 8GB 512GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBden.png", "MacbookAir13inchm220228CPU10GPU8GB512GB Đen 512GB",31990040.0, 10, 21);
+        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBden.png", "MacbookAir 13inch m2 2022 8CPU \n 10GPU 8GB 512GB Đen 512GB",31990040.0, 10, 21);
 
         //MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB
         seedDataProduct("MacBook Air 13 inch M2 2022 8CPU 8GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBxam.png", "MacBookAir13inchM220228CPU8GPU8GB256GB xám 256GB",27990020.0, 10, 22);
+        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBxam.png", "MacBookAir 13inch M2 2022 8CPU \n 8GPU 8GB 256GB Xám 256GB",27990020.0, 10, 22);
 
         //MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB
         seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 8GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBtrang.png", "MacBookAir13inchM120208CPU7GPU8GB256GB trắng 256GB",22990400.0, 10, 23);
+        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBtrang.png", "MacBookAir 13inchM1 2020 8CPU \n  7GPU 8GB 256GB Trắng 256GB",22990400.0, 10, 23);
 
         // MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB
         seedDataProduct("MacBook Air 13 inch M1 2020 8CPU 7GPU 16GB/256GB", "Laptop", 1.29, 6, 2, 2, "2022_6_7_637901915720184032_macbook-air-m2-2022-den-dd.jpg");
-        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBden.png", "MacBookAir13inchM120208CPU7GPU16GB256GB Đen 256GB ",29990000.0, 10, 24);
+        seedDataVariant("/src/assets/products/MacbookAir13inchm220228CPU10GPU8GB512GBden.png", "MacBookAir 13inch M1 2020 8CPU 7GPU \n 16GB 256GB Đen 256GB ",29990000.0, 10, 24);
 
         // Thông số
         // Laptop MacBook Air 13 inch M2 2022 8CPU 10GPU 8GB/512GB có 3 màu Đen, Trắng, Xám giá 31.990.000
@@ -2176,17 +2180,17 @@ public class DataInitializer implements CommandLineRunner {
 
         // Macbook pro
         // MacBook pro  14 inch
-        seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "/src/assets/products/MacBookPro142023.png");
+        seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "MacBookPro142023.png");
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
-        seedDataVariant("/src/assets/products/MacBookPro142023.png", "MacBookPro142023 Đen 512GB", 48990020.0, 10, 25);
+        seedDataVariant("/src/assets/products/MacBookPro142023.png", "MacBook Pro 14 2023 ", 48990020.0, 10, 25);
         seedDataVariantAtribute("Đen", 3, 44);
         seedDataVariantAtribute("512GB", 24, 44);
 
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB giá 59990000.0
-        seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "/src/assets/products/MacBookPro142023.png");
-        seedDataVariant("/src/assets/products/MacBookPro142023.png", "MacBookPro142023 Đen 512GB", 59992000.0, 10, 26);
+        seedDataProduct("MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "MacBookPro142023.png");
+        seedDataVariant("/src/assets/products/MacBookPro142023.png", "MacBook Pro 14 2023 ", 59992000.0, 10, 26);
 
         // Phiên bản MacBook Pro 14 2023 M3 Pro 11 CPU/14GPU/36GB/512GB 2 màu bạc   đen,  giá 59990000.0
         seedDataVariantAtribute("Đen", 3, 45);
@@ -2194,21 +2198,21 @@ public class DataInitializer implements CommandLineRunner {
 
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB
 
-        seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "/src/assets/products/MacBookPro142023.png");
-        seedDataVariant("/src/assets/products/MacBookPro142023.png", "MacBookPro162023 Đen 512GB", 64490500.0, 10, 27);
+        seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB", "Laptop", 1.61, 6, 2, 1, "MacBookPro142023.png");
+        seedDataVariant("/src/assets/products/MacBookPro142023.png", "MacBook Pro 16 2023 ", 64490500.0, 10, 27);
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/18GB/512GB 2 màu bạc   đen,  giá 64490000.0
         seedDataVariantAtribute("Đen", 3, 46); // màu
         seedDataVariantAtribute("512GB", 24, 46); // bộ nhớ ( rom)
 
         // Phiên bản MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB
-        seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "/src/assets/products/MacBookPro162023den.png");
-        seedDataVariant("/src/assets/products/MacBookPro162023den.png", "MacBookPro162023 Đen 512GB", 74490000.0, 10, 28);
+        seedDataProduct("MacBook Pro 16 2023 M3 Pro 11 CPU/14GPU/36GB/512GB", "Laptop", 1.61, 6, 2, 1, "MacBookPro162023den.png");
+        seedDataVariant("/src/assets/products/MacBookPro162023den.png", "MacBook Pro 16 2023 ", 74490000.0, 10, 28);
         seedDataVariantAtribute("Đen", 3, 47); // màu
         seedDataVariantAtribute("512GB", 24, 47); // bộ nhớ ( rom)
 
         // MacBook Pro 13" 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb
-        seedDataProduct("MacBook Pro 13 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb", "Laptop", 1.61, 6, 2, 1, "/src/assets/products/MacBookPro162023bac.png");
-        seedDataVariant("/src/assets/products/MacBookPro162023bac.png", "MacBookPro116020 Bạc 256GB", 20490000.0, 10, 29);
+        seedDataProduct("MacBook Pro 13 2020 Touch Bar M1 8CPU 8GPU 8GB/256Gb", "Laptop", 1.61, 6, 2, 1, "MacBookPro162023bac.png");
+        seedDataVariant("/src/assets/products/MacBookPro162023bac.png", "MacBook Pro 11 2023 ", 20490000.0, 10, 29);
         seedDataVariantAtribute("Bạc", 3, 48); // màu bạc
         seedDataVariantAtribute("512GB", 24, 48); // bộ nhớ ( rom)
 
@@ -2389,10 +2393,10 @@ public class DataInitializer implements CommandLineRunner {
 
 
 //        // Laptop dell
-        seedDataProduct("Laptop Dell Inspiron 14 N5440 i5 1174U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "/src/assets/products/LaptopDellInspiron14.png");
+        seedDataProduct("Laptop Dell Inspiron 14 N5440 i5 1174U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "LaptopDellInspiron14.png");
 //
 //        // Phiên bản Laptop Dell Inspiron 14 N5440 i5 1174U/16GB/512GB/14"FHD+/Win11/Office HS21
-        seedDataVariant("/src/assets/products/LaptopDellInspiron14.png", "LaptopDellInspiron14 Xanh 512GB", 20190000.0, 10, 30);
+        seedDataVariant("/src/assets/products/LaptopDellInspiron14.png", "Laptop Dell Inspiron 14 ", 20190000.0, 10, 30);
 
 //
 //
@@ -2426,8 +2430,8 @@ public class DataInitializer implements CommandLineRunner {
 //        // Laptop Dell Inspiron 15 N3530 i5 1175U/16GB/512GB/15.6"FHD/NVIDIA MX550 2GB/Win11/Office HS21
 //
 //        // thông số kĩ thuật
-        seedDataProduct("Laptop Dell Inspiron 15 N3530 i5 1175U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "/src/assets/products/LaptopDellInspiron15.jpg");
-        seedDataVariant("/src/assets/products/LaptopDellInspiron15.jpg", "LaptopDellInspiron15 Bạc 512GB", 21490000.0, 10, 31);
+        seedDataProduct("Laptop Dell Inspiron 15 N3530 i5 1175U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "LaptopDellInspiron15.jpg");
+        seedDataVariant("/src/assets/products/LaptopDellInspiron15.jpg", "Laptop Dell Inspiron15 ", 21490000.0, 10, 31);
 
         seedDataVariantAtribute("Bạc", 3, 50); // màu
         seedDataVariantAtribute("512GB", 24, 50); // bộ nhớ ( rom)
@@ -2466,8 +2470,8 @@ public class DataInitializer implements CommandLineRunner {
 
 //        // Thông số kỹ thuật
 
-        seedDataProduct("Laptop Dell Inspiron 15N 3530 i7 1175U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "/src/assets/products/LaptopDellInspiron15den.png");
-        seedDataVariant("/src/assets/products/LaptopDellInspiron15den.png", "LaptopDellInspiron15 Đen 512GB", 20290000.0, 10, 32);
+        seedDataProduct("Laptop Dell Inspiron 15N 3530 i7 1175U/16GB/512GB", "Laptop", 1.54, 7, 2, 4, "LaptopDellInspiron15den.png");
+        seedDataVariant("/src/assets/products/LaptopDellInspiron15den.png", "Laptop Dell Inspiron15 ", 20290000.0, 10, 32);
 
 //        // Laptop Dell Inspiron 15 N3530 i7 1355U/16GB/512GB/15.6"FHD/Win11/Office 365 Personal
         seedDataVariantAtribute("Đen", 3, 51); // Màu sắc
@@ -2524,10 +2528,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 51); // Thời gian bảo hành
 //
 //        // Laptop Dell Vostro
-        seedDataProduct("Laptop Dell Vostro V3430 i5 1175U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "/src/assets/products/LaptopDellVostroV3430.png");
+        seedDataProduct("Laptop Dell Vostro V3430 i5 1175U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "LaptopDellVostroV3430.png");
 //
 //        // Laptop Dell Vostro V3430 i5 1175U/16GB/512GB/14"FHD/Nvidia GeForce MX550 2GB/Win11/Office HS21
-        seedDataVariant("/src/assets/products/LaptopDellVostroV3430.png", "LaptopDellVostroV3430 Xám 512GB", 19799000.0, 10, 33);
+        seedDataVariant("/src/assets/products/LaptopDellVostroV3430.png", "Laptop Dell VostroV3430 Xám 512GB", 19799000.0, 10, 33);
 
         seedDataVariantAtribute("Xám", 3, 52); // màu
         seedDataVariantAtribute("512 GB", 24, 52); // Dung lượng ổ cứng
@@ -2577,9 +2581,9 @@ public class DataInitializer implements CommandLineRunner {
 //
 //        // Thông số kỹ thuật
 //        // Laptop Dell Vostro V3520 i5 1235U/16GB/512GB/15.6"FHD/Win11/Office HS21
-        seedDataProduct("Laptop Dell Vostro V3520 i5 1235U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "/src/assets/products/LaptopDellVostroV3430.png");
+        seedDataProduct("Laptop Dell Vostro V3520 i5 1235U/16GB/512GB", "Laptop", 1.49, 7, 2, 4, "LaptopDellVostroV3430.png");
 //
-        seedDataVariant("/src/assets/products/LaptopDellVostroV3430.png", "LaptopDellVostroV3430 Xám 512GB", 16399000.0, 10, 34);
+        seedDataVariant("/src/assets/products/LaptopDellVostroV3430.png", "Laptop Dell Vostro V3430 Xám 512GB", 16399000.0, 10, 34);
 
         seedDataVariantAtribute("Xám", 3, 53); // màu
         seedDataVariantAtribute("512 GB", 24, 53); // Dung lượng
@@ -2609,24 +2613,24 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Windows 11 Home Single Language", 50, 53); // Phiên bản OS
 
 //
-        seedDataProduct("Laptop Dell Latitude L3540 i5 1175U", "Laptop", 1.49, 7, 2, 4, "/src/assets/products/LaptopDellLatitudeL3540xam.png");
+        seedDataProduct("Laptop Dell Latitude L3540 i5 1175U", "Laptop", 1.49, 7, 2, 4, "dell_inspiron_n3520_i5_1235u_71045026_5_f86c7b12fe.jpg");
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1175U
-        seedDataVariant("/src/assets/products/LaptopDellLatitudeL3540xam.png", "LaptopDellLatitudeL3540 Xám 512GB", 18790000.0, 10, 35);
+        seedDataVariant("/src/assets/products/dell_inspiron_n3520_i5_1235u_71045026_5_f86c7b12fe (1).jpg", "Laptop Dell LatitudeL 3540 Xám 512GB", 18790000.0, 10, 35);
 
         seedDataVariantAtribute("Xám", 3, 54); // màu
         seedDataVariantAtribute("512 GB", 24, 54); // Dung lượng
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude L3540 i5 1235U
-        seedDataProduct("Laptop Dell Latitude L3540 i5 1235U", "Laptop", 1.49, 7, 2, 4, "/src/assets/products/LaptopDellLatitudeL3540xam.png");
-        seedDataVariant("/src/assets/products/LaptopDellLatitudeL3540xam.png", "LaptopDellLatitudeL3540 Xám 512GB", 18790700.0, 10, 36);
+        seedDataProduct("Laptop Dell Latitude L3540 i5 1235U", "Laptop", 1.49, 7, 2, 4, "dell_inspiron_n3520_i5_1235u_71045026_5_f86c7b12fe.jpg");
+        seedDataVariant("/src/assets/products/dell_inspiron_n3520_i5_1235u_71045026_5_f86c7b12fe (1).jpg", "LaptopDellLatitudeL3540 Xám 512GB", 18790700.0, 10, 36);
 
         seedDataVariantAtribute("Xám", 3, 55); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 55); // Dung lượng
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell Latitude 3440 i5 1235U
-        seedDataProduct("Laptop Dell Latitude 3440 i5 1235U", "Laptop", 1.49, 7, 2, 4, "/src/assets/products/LaptopDellLatitude3440i5.png");
-        seedDataVariant("/src/assets/products/LaptopDellLatitude3440i5.png", "LaptopDellLatitude3440 Đen 512GB", 17990000.0, 10, 37);
+        seedDataProduct("Laptop Dell Latitude 3440 i5 1235U", "Laptop", 1.49, 7, 2, 4, "dell_inspiron_n3520_i5_1235u_71045026_5_f86c7b12fe.jpg");
+        seedDataVariant("/src/assets/products/dell_inspiron_n3520_i5_1235u_71045026_5_f86c7b12fe (1).jpg", "LaptopDellLatitude3440 Đen 512GB", 17990000.0, 10, 37);
 
         seedDataVariantAtribute("Đen", 3, 56); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 56); // Dung lượng
@@ -2750,10 +2754,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trung Quốc", 1, 56); // Xuất xứ
         seedDataVariantAtribute("01/2024", 2, 56); // Thời điểm ra mắt
 
-        seedDataProduct("Laptop Dell XPS 14 9440 U7 155H 64GB", "Laptop", 1.8, 7, 2, 4, "/src/assets/products/LaptopDellXPS.png");
+        seedDataProduct("Laptop Dell XPS 14 9440 U7 155H 64GB", "Laptop", 1.8, 7, 2, 4, "LaptopDellXPS.jpg");
 //
 //        // Tạo biến seedDataVariant cho Laptop Dell XPS 14 9440 U7 155H
-        seedDataVariant("/src/assets/products/LaptopDellXPS.png", "LaptopDellXPS Đen 1TB", 79990000.0, 10, 38);
+        seedDataVariant("/src/assets/products/LaptopDellXPS.jpg", "LaptopDellXPS Đen 1TB", 79990000.0, 10, 38);
 
         seedDataVariantAtribute("Đen", 3, 57); // Màu sắc
         seedDataVariantAtribute("1 TB", 24, 57); // Dung lượng
@@ -2787,10 +2791,10 @@ public class DataInitializer implements CommandLineRunner {
 
 
         //  Laptop Asus
-        seedDataProduct("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusVivobook.png");
+        seedDataProduct("Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusVivobook.png");
 
         //  Laptop Asus Vivobook 15 OLED A1505VA-MA466W i5-13500H/16GB/512GB/15.6'' 2.8K/Win11
-        seedDataVariant("/src/assets/products/LaptopAsusVivobook.png", "LaptopAsusVivobook Bạc 512GB", 18590000.0, 10, 39);
+        seedDataVariant("/src/assets/products/LaptopAsusVivobook.png", "Laptop Asus Vivobook ", 18590000.0, 10, 39);
 
 
 //        // Thông số kĩ thuật
@@ -2848,8 +2852,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 58); // Thời gian bảo hành
 //
 //        // Laptop Asus TUF Gaming FA507NUR LP101W R7 7435HS/16GB/512GB/15.6"/GeForce RTX4050 6GB/Win11
-        seedDataProduct("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusTUF.jpg");
-        seedDataVariant("/src/assets/products/LaptopAsusTUF.jpg", "LaptopAsusTUF Xám 512GB", 25590000.0, 10, 40);
+        seedDataProduct("Laptop Asus TUF Gaming FA507NUR-LP101W R7-7435HS/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusTUF.jpg");
+        seedDataVariant("/src/assets/products/LaptopAsusTUF.jpg", "Laptop Asus TUF ", 25590000.0, 10, 40);
 
         seedDataVariantAtribute("Xám", 3, 59); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 59); // Dung lượng ổ cứng
@@ -2909,8 +2913,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 59); // Thời gian bảo hành
 //
 //        //Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX3050 4GB/Win11
-        seedDataProduct("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusVivobook.png");
-        seedDataVariant("/src/assets/products/LaptopAsusVivobook.png", "LaptopAsusVivobook Đen 512GB", 19190000.0, 10, 41);
+        seedDataProduct("Laptop Asus Gaming Vivobook K3605ZC-RP564W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusVivobook.png");
+        seedDataVariant("/src/assets/products/LaptopAsusVivobook.png", "Laptop Asus Vivobook", 19190000.0, 10, 41);
 
 //        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 60); // Màu sắc
@@ -2946,8 +2950,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB/15.6" 2.8K/Win11
-        seedDataProduct("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusVivobookbac.png");
-        seedDataVariant("/src/assets/products/LaptopAsusVivobookbac.png", "LaptopASUSVivobook Bạc 512GB", 23190000.0, 10, 42);
+        seedDataProduct("Laptop ASUS Vivobook 15 OLED A1505VA-MA469W i9-13900H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusVivobookbac.png");
+        seedDataVariant("/src/assets/products/LaptopAsusVivobookbac.png", "Laptop ASUS Vivobook ", 23190000.0, 10, 42);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Bạc", 3, 61); // Màu sắc
@@ -3003,8 +3007,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 61); // Thời gian bảo hành
 
         // Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB/14" OLED 3K/Intel Arc Graphics/Win11
-        seedDataProduct("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusVivobookden.png");
-        seedDataVariant("/src/assets/products/LaptopAsusVivobookden.png", "LaptopAsusVivobook Đen 1TB", 24290000.0, 10, 43);
+        seedDataProduct("Laptop Asus Vivobook S14 S5406MA-PP161W Ultra 5 125H/AI/16GB/1TB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusVivobookden.jpg");
+        seedDataVariant("/src/assets/products/LaptopAsusVivobookden.jpg", "Laptop Asus Vivobook ", 24290000.0, 10, 43);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 62); // Màu sắc
@@ -3041,8 +3045,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB/14'' 3K/Intel Arc/Win11
-        seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusZenbookxanh.jpg");
-        seedDataVariant("/src/assets/products/LaptopAsusZenbookxanh.jpg", "LaptopAsusZenbook Xanh 1TB", 30990200.0, 10, 44);
+        seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP152W Intel Core Ultra 7-155H/AI/32GB/1TB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusZenbookxanh.jpg");
+        seedDataVariant("/src/assets/products/LaptopAsusZenbookxanh.jpg", "Laptop Asus Zenbook ", 30990200.0, 10, 44);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Xanh", 3, 63); // Màu sắc
@@ -3094,8 +3098,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 63); // Thời gian bảo hành
 
         // Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB/16" 3.2K/Arc Graphics/Win11
-        seedDataProduct("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusVivobook.png");
-        seedDataVariant("/src/assets/products/LaptopAsusVivobook.png", "LaptopAsusVivobook Xanh 512GB", 25890000.0, 10, 45);
+        seedDataProduct("Laptop Asus Vivobook S16 OLED S5606MA-MX051W Intel Core Ultra 7-155H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusVivobook.png");
+        seedDataVariant("/src/assets/products/LaptopAsusVivobook.png", "Laptop Asus Vivobook ", 25890000.0, 10, 45);
 
         seedDataVariantAtribute("Xanh", 3, 64); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 64); // Dung lượng ổ cứng
@@ -3132,8 +3136,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB/14" 3K/Intel Arc Graphics/Win11
-        seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusVivobookbac.png");
-        seedDataVariant("/src/assets/products/LaptopAsusVivobookbac.png", "LaptopAsusZenbook Bạc 512GB", 26990000.0, 10, 46);
+        seedDataProduct("Laptop Asus Zenbook 14 OLED UX3405MA-PP151W Ultra 5 125H/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusVivobookbac.png");
+        seedDataVariant("/src/assets/products/LaptopAsusVivobookbac.png", "Laptop Asus Zenbook ", 26990000.0, 10, 46);
 
         seedDataVariantAtribute("Bạc", 3, 65); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 65); // Dung lượng ổ cứng
@@ -3188,8 +3192,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("24 tháng", 4, 65); // Thời gian bảo hành
 
         // Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB/16"/Nvidia GeForce RTX4050 6GB/Win11
-        seedDataProduct("Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusVivobookden.png");
-        seedDataVariant("/src/assets/products/LaptopAsusVivobookden.png", "LaptopAsusVivobook Đen 512GB", 23990000.0, 10, 47);
+        seedDataProduct("Laptop Asus Gaming Vivobook K3605ZU-RP296W i5-12500H/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusVivobookden.jpg");
+        seedDataVariant("/src/assets/products/LaptopAsusVivobookden.jpg", "Laptop Asus Vivobook", 23990000.0, 10, 47);
 
 
         seedDataVariantAtribute("Đen", 3, 66); // Màu sắc
@@ -3225,12 +3229,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("300 nits", 21, 66); // Độ sáng
         seedDataVariantAtribute("45% NTSC", 78, 66); // Độ phủ màu
         seedDataVariantAtribute("16:10", 80, 66); // Tỷ lệ màn hình
-        
+
 
 
         // Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-11950HX/AI/16GB/512GB/16' 2.5K/Nvidia GeForce RTX4060 8GB/Win11
-        seedDataProduct("Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "/src/assets/products/LaptopAsusROGStrix.jpg");
-        seedDataVariant("/src/assets/products/LaptopAsusROGStrix.jpg", "LaptopAsusROGStrix Xám 512GB", 37990000.0, 10, 48);
+        seedDataProduct("Laptop Asus Gaming ROG Strix G16 G614JV-N4156W i7-13650HX/AI/16GB/512GB", "Laptop", 1.8, 10, 2, 2, "LaptopAsusROGStrix.jpg");
+        seedDataVariant("/src/assets/products/LaptopAsusROGStrix.jpg", "Laptop Asus ROGStrix ", 37990000.0, 10, 48);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Xám", 3, 67); // Màu sắc
@@ -3277,21 +3281,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("RGB 4 Zone", 55, 67); // Công nghệ đèn bàn phím
         seedDataVariantAtribute("RGB", 55, 67); // Màu đèn LED
         seedDataVariantAtribute("Multi-touch touchpad", 56, 67); // Touchpad
-        seedDataVariantAtribute("90 WHrs", 47, 67); // Dung lượng pin
-        seedDataVariantAtribute("280 W", 75, 67); // Power Supply
-        seedDataVariantAtribute("Sạc", 51, 67); // Phụ kiện trong hộp
-        seedDataVariantAtribute("35.4 x 26.4 x 2.26 ~ 3.04 cm", 5, 67); // Kích thước
-        seedDataVariantAtribute("2.5 kg", 6, 67); // Trọng lượng sản phẩm
-        seedDataVariantAtribute("Kim loại", 7, 67); // Chất liệu
-        seedDataVariantAtribute("Trung Quốc", 1, 67); // Xuất xứ
-        seedDataVariantAtribute("2024", 2, 67); // Thời điểm ra mắt
-        seedDataVariantAtribute("24 tháng", 4, 67); // Thời gian bảo hành
 
         //Laptop Acer
-        seedDataProduct("Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "/src/assets/products/LaptopAcerNitro.png");
+        seedDataProduct("Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "LaptopAcerNitro5Tiger.png");
         //Laptop Acer Nitro 5 Tiger Gaming AN515-58-773Y i7 12700H/16GB/512GB/15.6 FHD/NVIDIA GeForce RTX3050Ti 4GB/Win11
 //
-        seedDataVariant("/src/assets/products/LaptopAcerNitro.png", "LaptopAcerNitro Đen 512GB", 22999000.0, 10, 49);
+        seedDataVariant("/src/assets/products/LaptopAcerNitro5Tiger.png", "LaptopAcerNitro Đen 512GB", 22999000.0, 10, 49);
 
 //        // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 68); // Màu sắc
@@ -3329,7 +3324,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB/15.6"FHD/RTX2050 4GB/Win11
-        seedDataProduct("Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "/src/assets/products/LaptopAcerAspire7.png");
+        seedDataProduct("Laptop Acer Aspire 7 Gaming A715-76G-73FM i7 12650H/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "LaptopAcerAspire7.png");
         seedDataVariant("/src/assets/products/LaptopAcerAspire7.png", "LaptopAcerAspire Đen 512GB", 1798900.0, 10, 50);
 
 //        // Thông số kỹ thuật
@@ -3381,7 +3376,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12 tháng", 4, 69); // Thời gian bảo hành
 //
 //        // Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T/14" QHD/Win11
-        seedDataProduct("Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T", "Laptop", 1.8, 11, 2, 2, "/src/assets/products/LaptopAcerSwift3.jpg");
+        seedDataProduct("Laptop Acer Swift 3 SF314-512-741L i7 1260P/16GB/1T", "Laptop", 1.8, 11, 2, 2, "LaptopAcerSwift3.jpg");
         seedDataVariant("/src/assets/products/LaptopAcerSwift3.jpg", "LaptopAcerSwift Vàng 1TB", 1898900.0, 10, 51);
 
 //        // Thông số kỹ thuật
@@ -3419,7 +3414,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB/16"WUXGA//Nvidia Geforce RTX4050 6GB/Win11
-        seedDataProduct("Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "/src/assets/products/LaptopAcerNitro16.png");
+        seedDataProduct("Laptop Acer Nitro 16 Phoenix Gaming AN16-41-R50Z R5 7640HS/16GB/512GB", "Laptop", 1.8, 11, 2, 2, "LaptopAcerNitro16.png");
         seedDataVariant("/src/assets/products/LaptopAcerNitro16.png", "LaptopAcerNitro Đen 512GB", 22798900.0, 10, 52);
 
         // Thông số kỹ thuật
@@ -3459,7 +3454,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("HD Webcam (720p Webcam)", 74, 71); // Webcam
 
         // Laptop Acer Gaming Predator Helios Neo 14 PHN14-51-99Y8 Intel Core Ultra 9 185H/AI/32GB/1TB/14.5" WQXGA+/Nvidia RTX4060 8GB/Win11
-        seedDataProduct("Laptop Acer Gaming Predator Helios Neo", "Laptop", 1.8, 11, 2, 2, "/src/assets/products/LaptopAcerGamingPredator.png");
+        seedDataProduct("Laptop Acer Gaming Predator Helios Neo", "Laptop", 1.8, 11, 2, 2, "LaptopAcerGamingPredator.png");
         seedDataVariant("/src/assets/products/LaptopAcerGamingPredator.png", "LaptopAcerPredator Đen 1TB", 46798900.0, 8, 53);
 
         // Thông số kỹ thuật
@@ -3494,7 +3489,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("HD Webcam (720p Webcam)", 74, 72); // Webcam
 
         //Laptop HP
-        seedDataProduct("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "/src/assets/products/LaptopHPGamingVictus.png");
+        seedDataProduct("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus.png");
         //Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB/16" 144Hz/GeForce RTX3050 6GB/Win11_A9LG9PA
 
         seedDataVariant("/src/assets/products/LaptopHPGamingVictus.png", "LaptopHPVictus Đen 512GB", 20998900.0, 5, 54);
@@ -3539,9 +3534,9 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB/16.1" 144Hz/GeForce RTX4060 8GB/Win11_8C5N2PA
-        seedDataProduct("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "/src/assets/products/LaptopHPGamingVictus16.png");
+        seedDataProduct("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus16.png");
         seedDataVariant("/src/assets/products/LaptopHPGamingVictus16.png", "LaptopHPVictus Đen 512GB", 32998900.0, 5, 54);
-        
+
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 74); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 74); // Dung lượng ổ cứng
@@ -3573,7 +3568,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB/14'' 2.8K Touch/Pen/Win11
-        seedDataProduct("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "/src/assets/products/LaptopHPEnvyX360.png");
+        seedDataProduct("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPEnvyX360.png");
         seedDataVariant("/src/assets/products/LaptopHPEnvyX360.png", "LaptopHPEnvy Xanh 512GB", 30998900.0, 7, 56);
 
         seedDataVariantAtribute("512 GB", 24, 75); // Dung lượng ổ cứng
@@ -3610,7 +3605,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB/16.1"FHD/Nvidia RTX3050 6GB/Win11
-        seedDataProduct("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "/src/assets/products/LaptopHPGamingVictus.png");
+        seedDataProduct("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus.png");
         seedDataVariant("/src/assets/products/LaptopHPGamingVictus.png", "LaptopHPVictus Đen 512GB", 20999900.0, 7, 57);
 
         seedDataVariantAtribute("AMD", 9, 76); // Bộ xử lý - Hãng CPU
@@ -3658,7 +3653,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đen", 3, 76); // Thông tin hàng hóa - Màu sắc
 
         // Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB/14" FHD Touch/Intel Graphics/Win11_Bạc_9H8V2PT
-        seedDataProduct("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "/src/assets/products/LaptopHPProBook.png");
+        seedDataProduct("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPProBook.png");
         seedDataVariant("/src/assets/products/LaptopHPProBook.png", "LaptopHPProBook Bạc 512GB", 25999900.0, 8, 58);
 
         seedDataVariantAtribute("Intel", 9, 77); // Bộ xử lý - Hãng CPU
@@ -3689,7 +3684,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("16:09", 81, 77); // Màn hình - Tỷ lệ màn hình
 
         // Laptop MSI
-        seedDataProduct("Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB", "Laptop", 1.8, 12, 2, 2, "/src/assets/products/LaptopMSIGamingKatana15.png");
+        seedDataProduct("Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB", "Laptop", 1.8, 12, 2, 2, "LaptopMSIGamingKatana15.png");
         // Laptop MSI Gaming Katana 15 B13UDXK-2213VN i5 13500H/16GB/1TB/15.6FHD/RTX3050 6GB/Win11_Balo
 
         seedDataVariant("/src/assets/products/LaptopMSIGamingKatana15.png", "LaptopMSIKatana Đen 1TB", 21999900.0, 8, 59);
@@ -3730,7 +3725,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Windows", 49, 78); // Hệ điều hành - OS
 
         // Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB/14" FHD/RTX3050 6GB/W11_Balo
-        seedDataProduct("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "/src/assets/products/LaptopMSIGamingCyborg14.png");
+        seedDataProduct("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "LaptopMSIGamingCyborg14.png");
         seedDataVariant("/src/assets/products/LaptopMSIGamingCyborg14.png", "LaptopMSICyborg Đen 512GB", 25599900.0, 8, 60);
 
         seedDataVariantAtribute("Intel", 9, 79); // Bộ xử lý - Hãng CPU
@@ -3775,7 +3770,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("LED", 53, 79); // Bàn phím & TouchPad - Đèn bàn phím
 
 
-        seedDataProduct("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/64GB/512GB", "Laptop", 1.8, 12, 2, 2, "/src/assets/products/LaptopMSIGamingKatanaA15.jpg");
+        seedDataProduct("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/64GB/512GB", "Laptop", 1.8, 12, 2, 2, "LaptopMSIGamingKatanaA15.jpg");
         seedDataVariant("/src/assets/products/LaptopMSIGamingKatanaA15.jpg", "LaptopMSIKatana Đen 512GB", 26699990.0, 8, 61);
 
         seedDataVariantAtribute("AMD", 9, 80); // Bộ xử lý - Hãng CPU
@@ -3811,8 +3806,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Wifi 6E", 42, 80); // Giao tiếp và kết nối - Wifi
         seedDataVariantAtribute("v5.2", 44, 80); // Giao tiếp và kết nối - Bluetooth
 
-
-        seedDataProduct("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "/src/assets/products/LaptopLenovoThinkPad.jpg");
+        seedDataProduct("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "LaptopLenovoThinkPad.jpg");
         // Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB/14"WUXGA/Win 11
         seedDataVariant("/src/assets/products/LaptopLenovoThinkPad.jpg", "LaptopLenovoThinkPad Đen 512GB", 20799900.0, 8, 62);
 
@@ -3860,7 +3854,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB/14.0"WUXGA/Win 11
-        seedDataProduct("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "/src/assets/products/LaptopLenovoThinkPad.jpg\"");
+        seedDataProduct("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "LaptopLenovoThinkPad.jpg");
         seedDataVariant("/src/assets/products/LaptopLenovoThinkPad.jpg", "LaptopLenovoThinkPad Xám 512GB", 22699900.0, 5, 63);
 
         seedDataVariantAtribute("Intel", 9, 82); // Bộ xử lý - Hãng CPU
@@ -3901,7 +3895,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Backlit Chiclet Keyboard", 51, 82); // Bàn phím & TouchPad - Kiểu bàn phím
 
         // Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB/15.6"FHD/Win 11
-        seedDataProduct("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "/src/assets/products/LaptopLenovoV15.jpg");
+        seedDataProduct("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "LaptopLenovoV15.jpg");
         seedDataVariant("/src/assets/products/LaptopLenovoV15.jpg", "LaptopLenovoV15 Đen 512GB", 15699900.0, 7, 64);
 
         seedDataVariantAtribute("Intel", 9, 83); // Bộ xử lý - Hãng CPU
@@ -3944,11 +3938,11 @@ public class DataInitializer implements CommandLineRunner {
 
         // Ipad
         // iPad Air 11 inch M2 2024
-        seedDataProduct("iPad Air 11inch", "Ipad", 0.462, 13, 3, 3, "/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg");
+        seedDataProduct("iPad Air 11 inch M2 2024 Wifi Tím 128GB", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBtim.jpg");
 
         //iPad Air 11 inch M2 2024 Wifi 128GB
         // màu tím
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtim.jpg", " iPad Air 11 inch M2 2024 Wifi 128GB Tím  " ,22299900.0 , 8, 65);
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtim.jpg", " iPad Air 11 inch M2 2024 Wifi Tím 128GB" ,22299900.0 , 8, 65);
         seedDataVariantAtribute("Tím", 3, 84); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("128 GB", 24, 84); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 84); // Xuất xứ
@@ -3967,7 +3961,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2360 x 1640 Pixels", 17, 84); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 84); // Chuẩn màn hình
         seedDataVariantAtribute("500 nits", 20, 84); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 84); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Ultra Wide", 27, 84); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 84); // Resolution (Camera 1)
         seedDataVariantAtribute("ƒ/1.8", 29, 84); // Aperture (Camera 1)
@@ -3980,17 +3973,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 84); // Cảm biến
         seedDataVariantAtribute("Mật khẩu", 37, 84); // Bảo mật
         seedDataVariantAtribute("5G", 39, 84); // Hỗ trợ mạng
-        seedDataVariantAtribute("Cổng sạc: Type C", 41, 84); // Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 84); // Wifi
-        seedDataVariantAtribute("v5.3", 44, 84); // Bluetooth
-        seedDataVariantAtribute("Lithium polymer", 47, 84); // Loại PIN
-        seedDataVariantAtribute("28.93 Wh", 48, 84); // Dung lượng pin
-        seedDataVariantAtribute("iPadOS", 49, 84); // OS
-        seedDataVariantAtribute("iPadOS 17", 50, 84); // Version
-        seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 84); // Phụ kiện trong hộp
+
 
         // màu đen
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", " iPad Air 11 inch M2 2024 Wifi 128GB Xám  " ,22299901.0 , 8, 65);
+        seedDataProduct("iPad Air 11 inch M2 2024 Wifi Xám 128GB", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBxam.jpg");
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", " iPad Air 11 inch M2 2024 Wifi Xám 128GB" ,22299901.0 , 8, 66);
         seedDataVariantAtribute("Xám", 3, 85); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("128 GB", 24, 85); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 85); // Xuất xứ
@@ -4009,7 +3996,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2360 x 1640 Pixels", 17, 85); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 85); // Chuẩn màn hình
         seedDataVariantAtribute("500 nits", 20, 85); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 85); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Ultra Wide", 27, 85); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 85); // Resolution (Camera 1)
         seedDataVariantAtribute("ƒ/1.8", 29, 85); // Aperture (Camera 1)
@@ -4020,7 +4006,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Quay phim FullHD", 34, 85); // Quay phim camera selfie
 
         // màu trắng
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi 128GB Trắng  " ,22999001.0 , 8, 65);
+        seedDataProduct("iPad Air 11 inch M2 2024 Wifi Trắng 128GB", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBtrang.jpg");
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi Trắng 128GB" ,22999001.0 , 8, 67);
         seedDataVariantAtribute("Trắng", 3, 86); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("128 GB", 24, 86); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 86); // Xuất xứ
@@ -4039,7 +4026,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2360 x 1640 Pixels", 17, 86); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 86); // Chuẩn màn hình
         seedDataVariantAtribute("500 nits", 20, 86); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 86); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Ultra Wide", 27, 86); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 86); // Resolution (Camera 1)
         seedDataVariantAtribute("ƒ/1.8", 29, 86); // Aperture (Camera 1)
@@ -4062,7 +4048,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 86); // Phụ kiện trong hộp
 
         //
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", " iPad Air 11 inch M2 2024 Wifi 512GB Xám  " ,26999993.0 , 8, 65);
+        seedDataProduct("iPad Air 11 inch M2 2024 Wifi Xám 512 GB", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBxam.jpg");
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", "iPad Air 11 inch M2 2024 Wifi Xám 512GB" ,26999993.0 , 8, 68);
         // màu đen
         seedDataVariantAtribute("Xám", 3, 87); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("512 GB", 24, 87); // Dung lượng
@@ -4082,7 +4069,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2360 x 1640 Pixels", 17, 87); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 87); // Chuẩn màn hình
         seedDataVariantAtribute("500 nits", 20, 87); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 87); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Ultra Wide", 27, 87); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 87); // Resolution (Camera 1)
         seedDataVariantAtribute("ƒ/1.8", 29, 87); // Aperture (Camera 1)
@@ -4094,7 +4080,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Trôi nhanh thời gian (Time lapse), Chụp góc rộng (Wide)", 35, 87); // Tính năng camera selfie
 
         // màu trắng
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi 512GB Trắng  " ,26999995.0 , 8, 65);
+        seedDataProduct("iPad Air 11 inch M2 2024 Wifi Trắng 512GB", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBtrang.jpg");
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi Trắng 512GB" ,26999995.0 , 8, 69);
         seedDataVariantAtribute("Trắng", 3, 88); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("512 GB", 24, 88); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 88); // Xuất xứ
@@ -4113,7 +4100,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2360 x 1640 Pixels", 17, 88); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 88); // Chuẩn màn hình
         seedDataVariantAtribute("500 nits", 20, 88); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 88); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Ultra Wide", 27, 88); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 88); // Resolution (Camera 1)
         seedDataVariantAtribute("ƒ/1.8", 29, 88); // Aperture (Camera 1)
@@ -4122,11 +4108,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12.0 MP", 33, 88); // Resolution (Camera Selfie 1)
         seedDataVariantAtribute("ƒ/2.4", 34, 88); // Aperture (Camera Selfie 1)
         seedDataVariantAtribute("Quay phim FullHD", 34, 88); // Quay phim camera selfie
-        
+
         // màu đen
-
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", " iPad Air 11 inch M2 2024 Wifi 1TB Xám  " ,28999995.0 , 8, 65);
-
+        seedDataProduct("iPad Air 11 inch M2 2024 Wifi Xám 1TB", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBxam.jpg");
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", " iPad Air 11 inch M2 2024 Wifi Xám 1TB" ,28999995.0 , 8, 70);
         seedDataVariantAtribute("Xám", 3, 89); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("1TB", 24, 89); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 89); // Xuất xứ
@@ -4144,8 +4129,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Liquid Retina", 15, 89); // Công nghệ màn hình
         seedDataVariantAtribute("2360 x 1640 Pixels", 17, 89); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 89); // Chuẩn màn hình
-        seedDataVariantAtribute("500 nits", 20, 89); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 89); // Chip đồ hoạ (GPU)
+        seedDataVariantAtribute("500 nits", 20, 89); // Độ sán
         seedDataVariantAtribute("Ultra Wide", 27, 89); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 89); // Resolution (Camera 1)
         seedDataVariantAtribute("ƒ/1.8", 29, 89); // Aperture (Camera 1)
@@ -4158,8 +4142,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cảm biến vân tay, Con quay hồi chuyển, Cảm biến gia tốc kế, Cảm biến khí áp kế, Cảm biến ánh sáng", 36, 89); // Cảm biến
 
         // màu trắng
-
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi 1TB Trắng  " ,28999994.0 , 8, 65);
+        seedDataProduct("iPad Air 11 inch M2 2024 Wifi Trắng 1TB ", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBtrang.jpg");
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", "iPad Air 11 inch M2 2024 Wifi Trắng 1TB" ,28999994.0 , 8, 71);
         seedDataVariantAtribute("Trắng", 3, 90); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("1TB", 24, 90); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 90); // Xuất xứ
@@ -4178,7 +4162,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2360 x 1640 Pixels", 17, 90); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 90); // Chuẩn màn hình
         seedDataVariantAtribute("500 nits", 20, 90); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 90); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Ultra Wide", 27, 90); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 90); // Resolution (Camera 1)
         seedDataVariantAtribute("ƒ/1.8", 29, 90); // Aperture (Camera 1)
@@ -4202,8 +4185,9 @@ public class DataInitializer implements CommandLineRunner {
 
         // màu trắng
         // iPad Air 13 inch M2 2024 Wifi 128GB
-        seedDataProduct("iPad Air 13 inch", "Ipad", 0.462, 13, 3, 3, "/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg");
-        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", " iPad Air 13 inch M2 2024 Wifi 512GB Trắng  " ,26999005.0 , 8, 66);
+
+        seedDataProduct("iPad Air 13 inch M2 2024 Wifi Trắng 512GB", "Ipad", 0.462, 13, 3, 3, "iPadAir13inchM22024Wifi128GBtrang.jpg");
+        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", "iPad Air 13 inch M2 2024 Wifi Trắng 512GB" ,26999005.0 , 8, 72);
         seedDataVariantAtribute("Trắng", 3, 91); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 91); // Xuất xứ
         seedDataVariantAtribute("05/2024", 2, 91); // Thời điểm ra mắt
@@ -4221,7 +4205,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2732 x 2048 Pixels", 17, 91); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 91); // Chuẩn màn hình
         seedDataVariantAtribute("600 nits", 20, 91); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 91); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Single rear camera", 27, 91); // Số camera sau
         seedDataVariantAtribute("Ultra Wide", 27, 91); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 91); // Resolution (Camera 1)
@@ -4231,10 +4214,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12.0 MP", 33, 91); // Resolution (Camera Selfie 1)
         seedDataVariantAtribute("ƒ/2.4", 34, 91); // Aperture (Camera Selfie 1)
         seedDataVariantAtribute("Quay phim FullHD", 34, 91); // Quay phim camera selfie
-        
-        // màu trắng
-        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", " iPad Air 13 inch M2 2024 Wifi 1TB Trắng  " ,28999009.0 , 8, 66);
 
+        // màu trắng
+        seedDataProduct("iPad Air 13 inch M2 2024 Wifi Trắng 1TB", "Ipad", 0.462, 13, 3, 3, "iPadAir13inchM22024Wifi128GBtrang.jpg");
+        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", "iPad Air 13 inch M2 2024 Wifi Trắng 1TB" ,28999009.0 , 8, 73);
+        seedDataVariantAtribute("1TB", 24, 92); // Dung lượng
         seedDataVariantAtribute("Trắng", 3, 92); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 92); // Xuất xứ
         seedDataVariantAtribute("05/2024", 2, 92); // Thời điểm ra mắt
@@ -4252,7 +4236,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2732 x 2048 Pixels", 17, 92); // Độ phân giải
         seedDataVariantAtribute("Liquid Retina", 16, 92); // Chuẩn màn hình
         seedDataVariantAtribute("600 nits", 20, 92); // Độ sáng
-        seedDataVariantAtribute("Apple GPU 9 Nhân", 24, 92); // Chip đồ hoạ (GPU)
+
         seedDataVariantAtribute("Single rear camera", 27, 92); // Số camera sau
         seedDataVariantAtribute("Ultra Wide", 27, 92); // Camera Type 1
         seedDataVariantAtribute("12.0 MP", 28, 92); // Resolution (Camera 1)
@@ -4277,11 +4261,11 @@ public class DataInitializer implements CommandLineRunner {
 
 //
         // iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB
-
         // iPad Air 11 inch M2 2024
-        seedDataProduct("iPad Pro", "Ipad", 0.466, 13, 3, 3, "/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg");
-        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", " iPad Pro 11 inch M4 2024 Wifi 256GB Đen  " ,33999011.0 , 8, 67);
+        seedDataProduct("iPad Pro 11 inch M4 2024 Wifi Đen 256GB", "Ipad", 0.466, 13, 3, 3, "iPadPro11inchM42024Wifi256GBĐen.jpg");
+        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", "iPad Pro 11 inch M4 2024 Wifi Đen 256GB" ,33999011.0 , 8, 74);
         // màu đen
+        seedDataVariantAtribute("256GB", 24, 93); // Dung lượng
         seedDataVariantAtribute("Đen", 3, 93); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 93); // Xuất xứ
         seedDataVariantAtribute("05/2024", 2, 93); // Thời điểm ra mắt
@@ -4300,17 +4284,15 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 93); // Chuẩn màn hình
         seedDataVariantAtribute("1000 nits", 20, 93); // Độ sáng
         seedDataVariantAtribute("2.000.000:1", 21, 93); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 93); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 93); // Số camera sau và Camera Type
         seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 93); // Độ phân giải Camera
         seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 93); // Độ mở Camera
         seedDataVariantAtribute("4K 2160p@30fps, HD 720p@30fps, FullHD 1060p@60fps, FullHD 1060p@30fps, FullHD 1060p@25fps, 4K 2160p@60fps, 4K 2160p@25fps, 4K 2160p@24fps", 30, 93); // Quay phim camera sau
         seedDataVariantAtribute("Single selfie camera", 32, 93); // Số Camera Selfie
 
-
 //        // màu đen
-        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", " iPad Pro 11 inch M4 2024 Wifi 512GB Đen  " ,33999012.0 , 8, 67);
-
+        seedDataProduct("iPad Pro 11 inch M4 2024 Wifi Đen 512GB", "Ipad", 0.466, 13, 3, 3, "iPadPro11inchM42024Wifi256GBĐen.jpg");
+        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", " iPad Pro 11 inch M4 2024 Wifi Đen 512GB" ,33999012.0 , 8, 75);
         seedDataVariantAtribute("Đen", 3, 94); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("512GB", 24, 94); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 94); // Xuất xứ
@@ -4330,7 +4312,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Ultra Liquid Retina XDR", 16, 94); // Chuẩn màn hình
         seedDataVariantAtribute("1000 nits", 20, 94); // Độ sáng
         seedDataVariantAtribute("2.000.000:1", 21, 94); // Độ tương phản
-        seedDataVariantAtribute("Apple GPU 10 nhân", 24, 94); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Double rear camera, Camera Type 1: Ultra Wide, Camera Type 2: Wide", 27, 94); // Số camera sau và Camera Type
         seedDataVariantAtribute("Resolution (Camera 1): 12.0 MP, Resolution (Camera 2): 12.0 MP", 28, 94); // Độ phân giải Camera
         seedDataVariantAtribute("Aperture (Camera 1): ƒ/2.4, Aperture (Camera 2): ƒ/1.8", 29, 94); // Độ mở Camera
@@ -4342,9 +4323,8 @@ public class DataInitializer implements CommandLineRunner {
 //
 
         // iPad mini 6 2021 8.3 inch WiFi 64GB
-        seedDataProduct("iPad Mini", "Ipad", 0.462, 13, 3, 3, "/src/assets/products/iPadmini620218.3inchWiFi64GBxam.jpg");
-        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBxam.jpg", " iPad mini 6 2021 8.3 inch WiFi 64GB Xám  " ,12999018.0 , 8, 68);
-
+        seedDataProduct("iPad mini 6 2021 8.3 inch WiFi Xám 64GB", "Ipad", 0.462, 13, 3, 3, "iPadmini620218.3inchWiFi64GBxam.jpg");
+        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBxam.jpg", " iPad mini 6 2021 8.3 inch WiFi Xám 64GB" ,12999018.0 , 8, 76);
         seedDataVariantAtribute("Xám", 3, 95); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("64GB", 24, 95); // Dung lượng
         seedDataVariantAtribute("Trung Quốc", 1, 95); // Xuất xứ
@@ -4383,7 +4363,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Quay phim HD", 34, 95); // Quay phim camera selfie
 
 
-        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBhong.jpg", " iPad mini 6 2021 8.3 inch WiFi 64GB Hồng  " ,16999018.0 , 8, 68);
+        seedDataProduct("iPad mini 6 2021 8.3 inch WiFi Hồng 256GB", "Ipad", 0.462, 13, 3, 3, "iPadmini620218.3inchWiFi64GBhong.jpg");
+        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBhong.jpg", " iPad mini 6 2021 8.3 inch WiFi Hồng 256GB" ,16999018.0 , 8, 77);
         seedDataVariantAtribute("Hồng", 3, 96); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("256GB", 24, 96); // Dung lượng
         seedDataVariantAtribute("Trung Quốc", 1, 96); // Xuất xứ
@@ -4421,9 +4402,9 @@ public class DataInitializer implements CommandLineRunner {
 
         // Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB
 
-        seedDataProduct("Samsung Galaxy Tab", "Ipad", 0.571, 13, 3, 3, "/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png");
+        seedDataProduct("Samsung Galaxy Tab S10 Plus Wifi Xám 12GB", "Ipad", 0.571, 22, 3, 3, "SamsungGalaxyTabS10Ultra5G12GB256GBxam.png");
 
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB Xám " ,25999018.0 , 8, 69);
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Plus Wifi Xám 12GB" ,25999018.0 , 8, 78);
         seedDataVariantAtribute("256 GB", 24, 97); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 97); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 97); // Xuất xứ
@@ -4443,7 +4424,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Dynamic AMOLED 2X", 16, 97); // Chuẩn màn hình
         seedDataVariantAtribute("16 Triệu", 78, 97); // Màu màn hình
         seedDataVariantAtribute("120", 22, 97); // Tần số quét
-        seedDataVariantAtribute("ARM Immortalis G720", 24, 97); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Không giới hạn", 82, 97); // Danh bạ lưu trữ
         seedDataVariantAtribute("MicroSD", 83, 97); // Thẻ nhớ ngoài
         seedDataVariantAtribute("1.5 TB", 84, 97); // Hỗ trợ thẻ nhớ tối đa
@@ -4455,8 +4435,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("12.0 MP", 33, 97); // Resolution (Camera Selfie)
 
         // Samsung Galaxy Tab S10 Ultra 5G 12GB 256GB
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Ultra 5G 12GB 256GB Xám  " ,33999018.0 , 8, 69);
-
+        seedDataProduct("Samsung Galaxy Tab S10 Ultra 5G Xám 12GB", "Ipad", 0.571, 22, 3, 3, "SamsungGalaxyTabS10Ultra5G12GB256GBxam.png");
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Ultra 5G Xám 12GB" ,33999018.0 , 8, 79);
         seedDataVariantAtribute("256 GB", 24, 98); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 98); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 98); // Xuất xứ
@@ -4475,7 +4455,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Dynamic AMOLED 2X", 16, 98); // Chuẩn màn hình
         seedDataVariantAtribute("16 Triệu", 78, 98); // Màu màn hình
         seedDataVariantAtribute("Corning Gorilla Glass", 62, 98); // Chất liệu mặt kính
-        seedDataVariantAtribute("ARM Immortalis G720", 24, 98); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Không giới hạn", 82, 98); // Danh bạ lưu trữ
         seedDataVariantAtribute("MicroSD", 83, 98); // Thẻ nhớ ngoài
         seedDataVariantAtribute("1.5 TB", 84, 98); // Hỗ trợ thẻ nhớ tối đa
@@ -4491,9 +4470,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Samsung Galaxy Tab S9 FE WiFi 6GB 128GB
-        seedDataProduct("Samsung Galaxy Tab S9", "Ipad", 0.571, 13, 3, 3, "/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBxam.jpg");
-
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBxam.jpg", "Samsung Galaxy Tab S9 FE WiFi 6GB 128GB Xám  " ,9999018.0 , 8, 70);
+        seedDataProduct("Samsung Galaxy Tab S9 FE WiFi 6GB Xám 128GB", "Ipad", 0.571, 22, 3, 3, "SamsungGalaxyTabS9FEWiFi6GB128GBxam.jpg");
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBxam.jpg", "Samsung Galaxy Tab S9 FE WiFi 6GB Xám 128GB" ,9999018.0 , 8, 80);
         seedDataVariantAtribute("128 GB", 24, 99); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 99); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 99); // Xuất xứ
@@ -4518,7 +4496,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("90 Hz", 22, 99); // Tần số quét
         seedDataVariantAtribute("HDR10+", 73, 99); // Độ phủ màu
         seedDataVariantAtribute("16:10", 26, 99); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Mali-G68", 24, 99); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Không giới hạn", 82, 99); // Danh bạ lưu trữ
         seedDataVariantAtribute("1 TB", 84, 99); // Hỗ trợ thẻ nhớ tối đa
         seedDataVariantAtribute("Double rear camera", 27, 99); // Số camera sau
@@ -4531,10 +4508,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cảm biến gia tốc, Cảm biến ánh sáng", 36, 99); // Cảm biến
         seedDataVariantAtribute("Mở khóa vân tay", 37, 99); // Bảo mật
 
-
-
         // Samsung Galaxy Tab S9 FE Plus WiFi 8GB 128GB
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBbac.jpg", "Samsung Galaxy Tab S9 FE Plus WiFi 8GB 128GB Bạc " ,9999918.0 , 8, 70);
+        seedDataProduct("Samsung Galaxy Tab S9 FE Plus WiFi 8GB Bạc 128GB", "Ipad", 0.571, 22, 3, 3, "SamsungGalaxyTabS9FEWiFi6GB128GBbac.jpg");
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBbac.jpg", "Samsung Galaxy Tab S9 FE Plus WiFi 8GB Bạc 128GB " ,9999918.0 , 8, 81);
         seedDataVariantAtribute("128 GB", 24, 100); // Dung lượng
         seedDataVariantAtribute("Bạc", 3, 100); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 100); // Xuất xứ
@@ -4558,7 +4534,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Điện dung đa điểm", 63, 100); // Loại cảm ứng
         seedDataVariantAtribute("90 Hz", 22, 100); // Tần số quét
         seedDataVariantAtribute("16:10", 26, 100); // Tỷ lệ màn hình
-        seedDataVariantAtribute("Mali-G68", 24, 100); // Chip đồ hoạ (GPU)
+
         seedDataVariantAtribute("MicroSD", 83, 100); // Thẻ nhớ ngoài
         seedDataVariantAtribute("1 TB", 84, 100); // Hỗ trợ thẻ nhớ tối đa
         seedDataVariantAtribute("Double rear camera", 27, 100); // Số camera sau
@@ -4574,9 +4550,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Xiaomi Pad 6S Pro WiFi 8GB 256GB
-
-        seedDataProduct("Xiaomi Pad", "Ipad", 0.571, 13, 3, 3, "/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png");
-        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6S Pro WiFi 8GB 256GB Xám " ,12999118.0 , 8, 71);
+        seedDataProduct("Xiaomi Pad 6S Pro WiFi 8GB Xám 256GB", "Ipad", 0.571, 23, 3, 3, "XiaomiPad6SProWiFi8GB256GB.png");
+        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6S Pro WiFi 8GB Xám 256GB" ,12999118.0 , 8, 82);
         seedDataVariantAtribute("256GB", 24, 101); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 101); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam", 1, 101); // Xuất xứ
@@ -4608,9 +4583,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("ƒ/2.2", 34, 101); // Aperture (Camera Selfie)
 
         // Xiaomi Pad 6 WiFi 8GB 256GB
-        seedDataVariant("/src/assets/products/XiaomiPad6WiFi8GB256GB.jpg", "Xiaomi Pad 6 WiFi 16GB 256GB Đen " ,9299019.0 , 8, 71);
+        seedDataProduct("Xiaomi Red Mi Pad 6 WiFi 16GB Xám 256GB", "Ipad", 0.571, 23, 3, 3, "2023_8_9_638271866314863589_xiaomi-pad-6-xanh-3.jpg");
+        seedDataVariant("/src/assets/products/2023_8_9_638271910620849769_xiaomi-pad-6-den-3.jpg", "Xiaomi Red Mi Pad 6 WiFi 16GB Xám 256GB " ,9299019.0 , 8, 83);
         seedDataVariantAtribute("256GB", 24, 102); // Dung lượng
-        seedDataVariantAtribute("Đen", 3, 102); // Thông tin hàng hóa - Màu sắc
+        seedDataVariantAtribute("Xám", 3, 102); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 102); // Xuất xứ
         seedDataVariantAtribute("08/2023", 2, 102); // Thời điểm ra mắt
         seedDataVariantAtribute("18", 4, 102); // Thời gian bảo hành (tháng)
@@ -4628,7 +4604,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2880 x 1800 Pixels", 17, 102); // Độ phân giải
         seedDataVariantAtribute("WQHD+", 16, 102); // Chuẩn màn hình
         seedDataVariantAtribute("144 Hz", 23, 102); // Tần số quét
-        seedDataVariantAtribute("Adreno 650", 24, 102); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Không", 83, 102); // Thẻ nhớ ngoài
         seedDataVariantAtribute("Single rear camera", 27, 102); // Số camera sau
         seedDataVariantAtribute("Standard", 27, 102); // Camera
@@ -4637,7 +4612,8 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // màu đen
-        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6 WiFi 8GB 256GB Đen " ,9299020.0 , 8, 71);
+        seedDataProduct("Xiaomi Pad 6 WiFi 8GB Đen 256GB", "Ipad", 0.571, 23, 3, 3, "XiaomiPad6SProWiFi8GB256GB.png");
+        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6 WiFi 8GB Đen 256GB" ,9299020.0 , 8, 84);
         seedDataVariantAtribute("256GB", 24, 103); // Dung lượng
         seedDataVariantAtribute("Đen", 3, 103); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 103); // Xuất xứ
@@ -4657,7 +4633,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2880 x 1800 Pixels", 17, 103); // Độ phân giải
         seedDataVariantAtribute("WQHD+", 16, 103); // Chuẩn màn hình
         seedDataVariantAtribute("144 Hz", 23, 103); // Tần số quét
-        seedDataVariantAtribute("Adreno 650", 24, 103); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Không", 83, 103); // Thẻ nhớ ngoài
         seedDataVariantAtribute("Single rear camera", 27, 103); // Số camera sau
         seedDataVariantAtribute("Standard", 27, 103); // Camera
@@ -4670,8 +4645,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Bộ lọc màu, HDR, Tự động lấy nét (AF)", 35, 103); // Tính năng camera selfie
 
         //Xiaomi Redmi Pad Pro WiFi 8GB 128GB
-        seedDataProduct("Xiaomi Redmi Pad", "Ipad", 0.571, 13, 3, 3, "/src/assets/products/XiaomiRedmiPadProWiFi8GB128GBxam.jpg");
-        seedDataVariant("/src/assets/products/XiaomiRedmiPadProWiFi8GB128GBxam.jpg", "Xiaomi Redmi Pad Pro WiFi 8GB 128GB Xám " ,9299021.0 , 8, 72);
+        seedDataProduct("Xiaomi Redmi Pad Pro WiFi 8GB Xám 128GB", "Ipad", 0.571, 23, 3, 3, "XiaomiRedmiPadProWiFi8GB128GBxam.jpg");
+        seedDataVariant("/src/assets/products/XiaomiRedmiPadProWiFi8GB128GBxam.jpg", "Xiaomi Redmi Pad Pro WiFi 8GB Xám 128GB" ,9299021.0 , 8, 85);
 
         seedDataVariantAtribute("128GB", 24, 104); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 104); // Thông tin hàng hóa - Màu sắc
@@ -4699,7 +4674,6 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("600 nits", 20, 104); // Độ sáng
         seedDataVariantAtribute("16:10", 26, 104); // Tỷ lệ màn hình
         seedDataVariantAtribute("1500:1", 21, 104); // Độ tương phản
-        seedDataVariantAtribute("Qualcomm Adreno", 24, 104); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Khoảng 105 GB", 85, 104); // Bộ nhớ còn lại
         seedDataVariantAtribute("MicroSD", 83, 104); // Thẻ nhớ ngoài
         seedDataVariantAtribute("1.5 TB", 84, 104); // Hỗ trợ thẻ nhớ tối đa
@@ -4707,7 +4681,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Standard", 27, 104); // Camera
 
         // Xiaomi Poco Pad WiFi 8GB 256GB
-        seedDataVariant("/src/assets/products/XiaomiPocoPadWiFi8GBxam.jpg", "Xiaomi Poco Pad WiFi 8GB 256GB Xám " ,7299021.0 , 8, 72);
+        seedDataProduct("Xiaomi Poco Pad WiFi 8GB Xám 256GB", "Ipad", 0.571, 23, 3, 3, "XiaomiRedmiPadProWiFi8GB128GBxam.jpg");
+        seedDataVariant("/src/assets/products/XiaomiPocoPadWiFi8GBxam.jpg", "Xiaomi Poco Pad WiFi 8GB Xám 256GB" ,7299021.0 , 8, 86);
         seedDataVariantAtribute("256GB", 24, 105); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 105); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 105); // Xuất xứ
@@ -4734,14 +4709,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("600 nits", 20, 105); // Độ sáng
         seedDataVariantAtribute("16:10", 26, 105); // Tỷ lệ màn hình
         seedDataVariantAtribute("1500:1", 21, 105); // Độ tương phản
-        seedDataVariantAtribute("Qualcomm Adreno", 24, 105); // Chip đồ hoạ (GPU)
         seedDataVariantAtribute("Khoảng 230 GB", 85, 105); // Bộ nhớ còn lại
 
 
-//
         // Tai nghe AirPods Pro 2022
-        seedDataProduct("Tai nghe AirPods Pro 2022 ", "Apple", 0.571, 14, 8, 3, "/src/assets/products/TaingheAirPodsPro2022.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPodsPro2022.jpg", " Tai nghe AirPods Pro 2022 Trắng ",5299021.0, 8, 73);
+        seedDataProduct("Tai nghe AirPods Pro 2022 ", "Apple", 0.571, 14, 8, 3, "TaingheAirPodsPro2022.jpg");
+        seedDataVariant("/src/assets/products/TaingheAirPodsPro2022.jpg", " Tai nghe AirPods Pro 2022 Trắng",5299021.0, 8, 87);
         seedDataVariantAtribute("AirPods Pro 2", 87, 106); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 106); // Xuất xứ
         seedDataVariantAtribute("12", 4, 106); // Thời gian bảo hành (tháng)
@@ -4755,8 +4728,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Dây cáp sạc", 57, 106); // Phụ kiện đi kèm
 //
         // Tai nghe AirPods 3 2022 Hộp sạc dây
-        seedDataProduct("Tai nghe AirPods 3", "Apple", 0.571, 14, 8, 3, "/src/assets/products/TaingheAirPods32022.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPods32022.jpg", "Tai nghe AirPods 3 2022 Trắng ", 4099021.0, 8, 74);
+        seedDataProduct("Tai nghe AirPods 3", "Apple", 0.571, 14, 8, 3, "TaingheAirPods32022.jpg");
+        seedDataVariant("/src/assets/products/TaingheAirPods32022.jpg", "Tai nghe AirPods 3 2022 Trắng ", 4099021.0, 8, 88);
         seedDataVariantAtribute("AirPods 3", 87, 107); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 107); // Xuất xứ
         seedDataVariantAtribute("12", 4, 107); // Thời gian bảo hành (tháng)
@@ -4774,9 +4747,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sách HDSD, Cáp", 57, 107); // Phụ kiện đi kèm
 
 //         Tai nghe AirPods Pro 2023 USB-C
-        seedDataProduct("Tai nghe AirPods Pro 2023 USB-C", "Apple", 0.571, 14, 8, 3, "/src/assets/products/TaingheAirPodsPro2023USB-C.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPodsPro2023USB-C.jpg", "Tai nghe AirPods Pro 2023 USB-C Trắng" , 5799021.0, 10, 75);
+        seedDataProduct("Tai nghe AirPods Pro 2023 USB-C", "Apple", 0.571, 14, 8, 3, "TaingheAirPodsPro2023USB-C.jpg");
+        seedDataVariant("/src/assets/products/TaingheAirPodsPro2023USB-C.jpg", "Tai nghe AirPods Pro 2023 USB-C Trắng" , 5799021.0, 10, 89);
         seedDataVariantAtribute("AirPods Pro", 87, 108); // Model
+        seedDataVariantAtribute("Trắng", 3, 108); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 108); // Xuất xứ
         seedDataVariantAtribute("12", 4, 108); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("Trắng", 3, 108); // Màu sắc
@@ -4785,8 +4759,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Dây cáp sạc", 57, 108); // Phụ kiện đi kèm
 
         // Tai nghe AirPods 4 - Chủ Động Khử Tiếng Ồn
-        seedDataProduct("Tai nghe AirPods 4", "Apple", 0.571, 14, 8, 3, "/src/assets/products/TaingheAirPods4.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPods4.jpg", "Tai nghe AirPods 4 Trắng", 4799021.0, 10, 76);
+        seedDataProduct("Tai nghe AirPods 4", "Apple", 0.571, 14, 8, 3, "TaingheAirPods4.jpg");
+        seedDataVariant("/src/assets/products/TaingheAirPods4.jpg", "Tai nghe AirPods 4 Trắng", 4799021.0, 10, 90);
         seedDataVariantAtribute("AirPods 4", 87, 109); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 109); // Xuất xứ
         seedDataVariantAtribute("12", 4, 109); // Thời gian bảo hành (tháng)
@@ -4799,9 +4773,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sách HDSD, Hộp sạc không dây", 57, 109); // Phụ kiện đi kèm
 
         // Tai nghe Apple EarPods 2023 USB-C
-        seedDataProduct("Tai nghe Apple EarPods USB-C", "Apple", 0.031, 14, 8, 3, "/src/assets/products/TaingheAppleEarPodsUSB-C.jpg");
+        seedDataProduct("Tai nghe Apple EarPods USB-C", "Apple", 0.031, 14, 8, 3, "TaingheAppleEarPodsUSB-C.jpg");
 
-        seedDataVariant("/src/assets/products/TaingheAppleEarPodsUSB-C.jpg", "Tai nghe Apple EarPods USB-C Trắng " , 599000.0, 10, 77);
+        seedDataVariant("/src/assets/products/TaingheAppleEarPodsUSB-C.jpg", "Tai nghe Apple EarPods USB-C Trắng " , 599000.0, 10, 91);
         seedDataVariantAtribute("EarPods (USB-C)", 87, 110); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 110); // Xuất xứ
         seedDataVariantAtribute("12", 4, 110); // Thời gian bảo hành (tháng)
@@ -4812,9 +4786,9 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Điều khiển cuộc gọi, Điều khiển nhạc, Chống ồn", 45, 110); // Tính năng
 
         // Tai nghe Beats Studio Buds
-        seedDataProduct("Tai nghe Beats Studio Buds", "Apple", 0.058, 14, 8, 3, "/src/assets/products/TaingheBeatsStudioBudsDen.jpg");
+        seedDataProduct("Tai nghe Beats Studio Buds Hồng", "Apple", 0.058, 14, 8, 3, "TaingheBeatsStudioBudsDen.jpg");
 
-        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsHong.jpg", "Beats Studio Buds Hồng",3199001.0, 10, 78);
+        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsHong.jpg", "Beats Studio Buds Hồng",3199001.0, 10, 92);
         seedDataVariantAtribute("Beats Studio Buds", 87, 111); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 111); // Xuất xứ
         seedDataVariantAtribute("12", 4, 111); // Thời gian bảo hành (tháng)
@@ -4826,7 +4800,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("TVOS", 49, 111); // Hệ điều hành tương thích
         seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 111); // Phụ kiện đi kèm
 
-        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsDen.jpg", "Beats Studio Buds Đen", 3199000.0, 10, 78);
+        seedDataProduct("Tai nghe Beats Studio Buds Đen", "Apple", 0.058, 14, 8, 3, "TaingheBeatsStudioBudsHong.jpg");
+        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsHong.jpg", "Beats Studio Buds Đen", 3199000.0, 10, 93);
         seedDataVariantAtribute("Beats Studio Buds", 87, 112); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 112); // Xuất xứ
         seedDataVariantAtribute("12", 4, 112); // Thời gian bảo hành (tháng)
@@ -4840,9 +4815,9 @@ public class DataInitializer implements CommandLineRunner {
 //
 
         // Tai nghe AirPods Max
-        seedDataProduct("Tai nghe AirPods Max", "Apple", 0.1, 14, 8, 3, "/src/assets/products/TaingheAirPodsMaxBac.jpg");
+        seedDataProduct("Tai nghe AirPods Max Bạc", "Apple", 0.1, 14, 8, 3, "TaingheAirPodsMaxBac.jpg");
 
-        seedDataVariant("/src/assets/products/TaingheAirPodsMaxBac.jpg"," Tai nghe AirPods Max Bạc" ,  12199005.0, 10, 79);
+        seedDataVariant("/src/assets/products/TaingheAirPodsMaxBac.jpg"," Tai nghe AirPods Max Bạc" ,  12199005.0, 10, 94);
         seedDataVariantAtribute("Tai nghe AirPods Max", 87, 113); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 113); // Xuất xứ
         seedDataVariantAtribute("12", 4, 113); // Thời gian bảo hành (tháng)
@@ -4855,8 +4830,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("TVOS", 49, 113); // Hệ điều hành tương thích
         seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 113); // Phụ kiện đi kèm
 
-
-        seedDataVariant("/src/assets/products/TaingheAirPodsMaxXam.jpg","Tai nghe AirPods Max Xám" ,  12199025.0, 10, 79);
+        seedDataProduct("Tai nghe AirPods Max Xám", "Apple", 0.1, 14, 8, 3, "TaingheAirPodsMaxXam.jpg");
+        seedDataVariant("/src/assets/products/TaingheAirPodsMaxXam.jpg","Tai nghe AirPods Max Xám" ,  12199025.0, 10, 95);
         seedDataVariantAtribute("Tai nghe AirPods Max", 87, 114); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 114); // Xuất xứ
         seedDataVariantAtribute("12", 4, 114); // Thời gian bảo hành (tháng)
@@ -4871,8 +4846,8 @@ public class DataInitializer implements CommandLineRunner {
 //
         // Tai nghe Beats Fit Pro True Wireless Earbuds
 
-        seedDataProduct("Tai nghe Beats Fit Pro True Wireless Earbuds", "Apple", 0.005, 14, 8, 3, "/src/assets/products/TaingheBeatsFitProTrueWirelessEarbuds.jpg");
-        seedDataVariant("/src/assets/products/TaingheBeatsFitProTrueWirelessEarbuds.jpg", "Tai nghe Beats Fit Pro True Wireless Earbuds Đen" , 4199005.0, 10, 80);
+        seedDataProduct("Tai nghe Beats Fit Pro True Wireless Earbuds", "Apple", 0.005, 14, 8, 3, "TaingheBeatsFitProTrueWirelessEarbuds.jpg");
+        seedDataVariant("/src/assets/products/TaingheBeatsFitProTrueWirelessEarbuds.jpg", "Tai nghe Beats Fit Pro True Wireless Earbuds Đen" , 4199005.0, 10, 96);
 
         seedDataVariantAtribute("Beats Fit Pro True Wireless Earbuds", 87, 115); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 115); // Xuất xứ
@@ -4888,10 +4863,11 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Đồng hồ
-        seedDataProduct("Amazfit BIP", "Xiaomi", 0.160, 3, 4, 3, "/src/assets/products/AmazfitBIP.png");
-        seedDataVariant("/src/assets/products/AmazfitBIP.png", "Tai nghe Amazfit BIP Đen" , 4199305.0, 10, 81);
+        seedDataProduct("Amazfit BIP", "Xiaomi", 0.160, 3, 4, 3, "AmazfitBIP.png");
+        seedDataVariant("/src/assets/products/AmazfitBIP.png", "Tai nghe Amazfit BIP Đen" , 4199305.0, 10, 97);
         seedDataVariantAtribute("Amazfit BIP 5 46mm", 87, 116); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 116); // Xuất xứ
+        seedDataVariantAtribute("Đen", 3, 116); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("2023", 2, 116); // Thời điểm ra mắt
         seedDataVariantAtribute("12", 4, 116); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 116); // Hướng dẫn bảo quản
@@ -4910,11 +4886,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cảm biến PPG, Cảm biến gia tốc 3 trục", 36, 116); // Cảm biến
 
 
-        seedDataProduct("Amazfit GTR Mini", "Xiaomi", 0.180, 3, 4, 3, "/src/assets/products/AmazfitGTRMini.jpg");
+        seedDataProduct("Amazfit GTR Mini", "Xiaomi", 0.180, 3, 4, 3, "AmazfitGTRMini.jpg");
 
-        seedDataVariant("/src/assets/products/AmazfitGTRMini.jpg", "Amazfit GTR Mini" , 2199305.0, 10, 82);
+        seedDataVariant("/src/assets/products/AmazfitGTRMini.jpg", "Amazfit GTR Mini" , 2199305.0, 10, 98);
         seedDataVariantAtribute("GTR Mini", 87, 117); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 117); // Xuất xứ
+        seedDataVariantAtribute("Trắng", 3, 117); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("12", 4, 117); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 117); // Hướng dẫn bảo quản
         seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 117); // Hướng dẫn sử dụng
@@ -4926,20 +4903,22 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("AMOLED Chính", 15, 117); // Công nghệ màn hình
 
 
-        seedDataProduct("Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band", "Apple", 0.180, 14, 4, 3, "/src/assets/products/AmazfitGTRMini.jpg");
+        seedDataProduct("Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band", "Apple", 0.180, 14, 4, 3, "AmazfitGTRMini.jpg");
 
-        seedDataVariant("/src/assets/products/AppleWatchUltra2Xanh.jpg", "Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band" , 20199005.0, 10, 83);
+        seedDataVariant("/src/assets/products/AppleWatchUltra2Xanh.jpg", "Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band" , 20199005.0, 10, 99);
         seedDataVariantAtribute("Apple Watch Ultra 2 49mm viền Titanium", 87, 118); // Model
         seedDataVariantAtribute("12", 4, 118); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("0.463 kg", 6, 118); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Xanh", 3, 118); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("iOS 17", 49, 118); // Version yêu cầu tối thiểu
 
 
-        seedDataProduct("Xiaomi Smart Band 9", "Xiami", 0.180, 3, 4, 3, "/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg");
+        seedDataProduct("Xiaomi Smart Band 9", "Xiami", 0.180, 3, 4, 3, "xiaomi_band_9_trang_3_f653c876a3.jpg");
 
-        seedDataVariant("/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg", "Xiaomi Smart Band 9" , 999115.0, 10, 84);
+        seedDataVariant("/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg", "Xiaomi Smart Band 9" , 999115.0, 10, 100);
         seedDataVariantAtribute("46.53 x 21.63 x 10.95 mm", 5, 119); // Kích thước
         seedDataVariantAtribute("15.8 g", 6, 119); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Trắng", 3, 119); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("5 ATM (Đi tắm, Đi bơi)", 8, 119); // Chống nước
         seedDataVariantAtribute("Vỏ thân máy: Nhôm + Nhựa cao cấp", 7, 119); // Chất liệu
         seedDataVariantAtribute("1.62 inch", 14, 119); // Kích thước màn hình
@@ -4950,11 +4929,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Android, iOS", 49, 119); // Hệ điều hành tương thích
 
 
-        seedDataProduct("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su ", "Aple", 0.180, 14, 4, 3, "/src/assets/products/2023_10_9_638324588772574350_apple.jpg");
-        seedDataVariant("/src/assets/products/2023_10_9_638324588772574350_apple.jpg", "Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su " , 12999105.0, 10, 85);
+        seedDataProduct("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su ", "Aple", 0.180, 14, 4, 3, "2023_10_9_638324588772574350_apple.jpg");
+        seedDataVariant("/src/assets/products/2023_10_9_638324588772574350_apple.jpg", "Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su " , 12999105.0, 10, 101);
         seedDataVariantAtribute("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm", 87, 120); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 120); // Xuất xứ
         seedDataVariantAtribute("09/2023", 2, 120); // Thời điểm ra mắt
+        seedDataVariantAtribute("Đen", 3, 120); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("12", 4, 120); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("45 x 38 x 10.7 mm", 5, 120); // Kích thước
         seedDataVariantAtribute("38.7 g", 6, 120); // Trọng lượng sản phẩm
@@ -4965,11 +4945,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS", 49, 120); // Hệ điều hành tương thích
         seedDataVariantAtribute("Cuộc gọi, Tin nhắn", 35, 120); // Hiển thị thông báo
 
-        seedDataProduct("Samsung Galaxy Fit3", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg");
-        seedDataVariant("/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg", "Samsung Galaxy Fit3" , 1299105.0, 10, 86);
+        seedDataProduct("Samsung Galaxy Fit3", "Samsung", 0.180, 2, 4, 3, "2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg");
+        seedDataVariant("/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg", "Samsung Galaxy Fit3" , 1299105.0, 10, 102);
         seedDataVariantAtribute("Galaxy Fit3", 87, 121); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 121); // Xuất xứ
         seedDataVariantAtribute("02/2024", 2, 121); // Thời điểm ra mắt
+        seedDataVariantAtribute("Đen", 3, 121); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("12", 4, 121); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 121); // Hướng dẫn bảo quản
         seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 121); // Hướng dẫn sử dụng
@@ -4983,9 +4964,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("256 x 402 Pixels", 16, 121); // Độ phân giải
         seedDataVariantAtribute("13 ngày", 44, 121); // Thời gian sử dụng pin
 
-        seedDataProduct("Samsung Galaxy Watch6 BT 40mm", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg");
-        seedDataVariant("/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg", "Samsung Galaxy Watch6 BT 40mm" , 1299105.0, 10, 87);
+        seedDataProduct("Samsung Galaxy Watch6 BT 40mm", "Samsung", 0.180, 2, 4, 3, "2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg");
+        seedDataVariant("/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg", "Samsung Galaxy Watch6 BT 40mm" , 1299105.0, 10, 103);
         seedDataVariantAtribute("Galaxy Watch6 BT 40mm", 87, 122); // Model
+        seedDataVariantAtribute("Vàng", 3, 122); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 122); // Xuất xứ
         seedDataVariantAtribute("2023", 2, 122); // Thời điểm ra mắt
         seedDataVariantAtribute("12", 4, 122); // Thời gian bảo hành (tháng)
@@ -5002,9 +4984,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đa ngôn ngữ", 48, 122); // Ngôn ngữ
         seedDataVariantAtribute("Android", 49, 122); // Hệ điều hành tương thích
 
-        seedDataProduct("Samsung Galaxy Watch7 LTE 40mm", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png");
-        seedDataVariant("/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png", "Samsung Galaxy Watch7 LTE 40mm" , 7299105.0, 10, 88);
+        seedDataProduct("Samsung Galaxy Watch7 LTE 40mm", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch7_40mm_green_9975309aba.png");
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png", "Samsung Galaxy Watch7 LTE 40mm" , 7299105.0, 10, 104);
         seedDataVariantAtribute("Galaxy Watch7 LTE 40mm", 87, 123); // Model
+        seedDataVariantAtribute("Nâu", 3, 123); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 123); // Xuất xứ
         seedDataVariantAtribute("07/2024", 2, 123); // Thời điểm ra mắt
         seedDataVariantAtribute("12", 4, 123); // Thời gian bảo hành (tháng)
@@ -5025,10 +5008,11 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("40 giờ Chế độ tiết kiệm Pin - tắt AOD", 44, 123); // Thời gian sử dụng pin
 
 
-        seedDataProduct("Samsung Galaxy Watch FE", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png");
-        seedDataVariant("/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png", "Samsung Galaxy Watch FE" , 8299105.0, 10, 89);
+        seedDataProduct("Samsung Galaxy Watch FE", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch_fe_black_af8a8c8abc.png");
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png", "Samsung Galaxy Watch FE" , 8299105.0, 10, 105);
         seedDataVariantAtribute("Galaxy Watch FE 40mm", 87, 124); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 124); // Xuất xứ
+        seedDataVariantAtribute("Đen", 3, 124); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("07/2024", 2, 124); // Thời điểm ra mắt
         seedDataVariantAtribute("12", 4, 124); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 124); // Hướng dẫn bảo quản
@@ -5041,9 +5025,10 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Kim loại nguyên khối, Dây: Silicone", 7, 124); // Chất liệu
         seedDataVariantAtribute("Mặt đồng hồ tròn", 86, 124); // Kiểu dáng thiết kế
 
-        seedDataProduct("Samsung Galaxy Watch Ultra LTE 47mm", "Samsung", 0.180, 2, 4, 3, "/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png");
-        seedDataVariant("/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png", "Samsung Galaxy Watch Ultra LTE 47mm" , 20299105.0, 10, 90);
+        seedDataProduct("Samsung Galaxy Watch Ultra LTE 47mm", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch_ultra_silver_black_454ec16181.png");
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png", "Samsung Galaxy Watch Ultra LTE 47mm" , 20299105.0, 10, 106);
         seedDataVariantAtribute("Galaxy Watch Ultra", 87, 125); // Model
+        seedDataVariantAtribute("Đen", 3, 125); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 125); // Xuất xứ
         seedDataVariantAtribute("07/2024", 2, 125); // Thời điểm ra mắt
         seedDataVariantAtribute("12", 4, 125); // Thời gian bảo hành (tháng)
@@ -5063,8 +5048,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sạc không dây", 57, 125); // Cổng sạc
 
         // Phụ Kiện Điện Tử
-        seedDataProduct("Quạt sạc cầm tay Hotwell ", "Xiaomi", 0.180, 3, 6, 3, "/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg");
-        seedDataVariant("/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg", "Quạt sạc cầm tay Hotwell" , 1199105.0, 10, 91);
+        seedDataProduct("Quạt sạc cầm tay Hotwell ", "Xiaomi", 0.180, 3, 6, 3, "2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg");
+        seedDataVariant("/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg", "Quạt sạc cầm tay Hotwell" , 1199105.0, 10, 107);
         seedDataVariantAtribute("FR12H1", 87, 126); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 126); // Xuất xứ
         seedDataVariantAtribute("2024", 2, 126); // Thời điểm ra mắt
@@ -5079,8 +5064,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("5 V", 59, 126); // Điện áp
         seedDataVariantAtribute("Bảo hành tại hãng", 4, 126); // Chế độ bảo hành
 
-        seedDataProduct("Quạt tháp Xiaomi Smart Tower Fan ", "Xiaomi", 1.0, 3, 6, 3, "/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg");
-        seedDataVariant("/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg", "Quạt tháp Xiaomi Smart Tower Fan" , 1098105.0, 10, 92);
+        seedDataProduct("Quạt tháp Xiaomi Smart Tower Fan ", "Xiaomi", 1.0, 3, 6, 3, "2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg");
+        seedDataVariant("/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg", "Quạt tháp Xiaomi Smart Tower Fan" , 1098105.0, 10, 108);
         seedDataVariantAtribute("Máy quạt đứng thông minh Xiaomi Fan 1C", 87, 127); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 127); // Xuất xứ
         seedDataVariantAtribute("2023", 2, 127); // Thời điểm ra mắt
@@ -5095,11 +5080,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Quạt đứng", 86, 127); // Kiểu dáng thiết kế
         seedDataVariantAtribute("22 W", 58, 127); // Công suất
 
-        seedDataProduct("Quạt máy đứng Xiaomi Smart Fan 2 Lite ", "Xiaomi", 1.0, 3, 6, 3, "/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg");
-        seedDataVariant("/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg", "Quạt máy đứng Xiaomi Smart Fan 2 Lite (PYV4007GL)" , 1099105.0, 10, 93);
+        seedDataProduct("Quạt máy đứng Xiaomi Smart Fan 2 Lite ", "Xiaomi", 1.0, 3, 6, 3, "2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg");
+        seedDataVariant("/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg", "Quạt máy đứng Xiaomi Smart Fan 2 Lite (PYV4007GL)" , 1099105.0, 10, 109);
         seedDataVariantAtribute("Quạt máy đứng Xiaomi Smart Fan 2 Lite", 87, 128); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 128); // Xuất xứ
         seedDataVariantAtribute("2021", 2, 128); // Thời điểm ra mắt
+        seedDataVariantAtribute("Trắng", 3, 128); // Màu sắc
         seedDataVariantAtribute("12", 4, 128); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 128); // Hướng dẫn bảo quản
         seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 128); // Hướng dẫn sử dụng
@@ -5112,8 +5098,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("27 m3/h", 60, 128); // Lưu lượng gió
 
 
-        seedDataProduct("Quạt sưởi gốm Ceramic Fujihome FH2000M 2000W", "Fujihome", 1.0, 18, 6, 3, "/src/assets/products/00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png");
-        seedDataVariant("/src/assets/products/00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png", "Quạt sưởi gốm Ceramic Fujihome " , 1119105.0, 10, 94);
+        seedDataProduct("Quạt sưởi gốm Ceramic Fujihome FH2000M 2000W", "Fujihome", 1.0, 18, 6, 3, "00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png");
+        seedDataVariant("/src/assets/products/00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png", "Quạt sưởi gốm Ceramic Fujihome " , 1119105.0, 10, 110);
         seedDataVariantAtribute("FH2000M", 87, 129); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 129); // Xuất xứ
         seedDataVariantAtribute("2022", 2, 129); // Thời điểm ra mắt
@@ -5128,8 +5114,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("220 V / 50 Hz", 59, 129); // Điện áp
         seedDataVariantAtribute("10 - 20 m2", 60, 129); // Phạm vi làm ấm
 
-        seedDataProduct("Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge", "Xiaomi", 0.5, 3, 9, 3, "/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg");
-        seedDataVariant("/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg", "Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge" , 1399105.0, 10, 95);
+        seedDataProduct("Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge", "Xiaomi", 0.5, 3, 9, 3, "2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg");
+        seedDataVariant("/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg", "Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge" , 1399105.0, 10, 111);
         seedDataVariantAtribute("TRIP10000", 87, 130); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 130); // Xuất xứ
         seedDataVariantAtribute("12", 4, 130); // Thời gian bảo hành (tháng)
@@ -5142,8 +5128,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("18 W", 60, 130); // Công suất sạc tối đa
         seedDataVariantAtribute("6 - 10 giờ", 61, 130); // Thời gian sạc đầy
 
-        seedDataProduct("Chuột Gaming không dây Logitech G305 Lightspeed", "Xiami", 0.5, 3, 13, 3, "/src/assets/products/2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg");
-        seedDataVariant("/src/assets/products/2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg", "Chuột Gaming không dây Logitech G305 Lightspeed" , 599105.0, 10, 96);
+        seedDataProduct("Chuột Gaming không dây Logitech G305 Lightspeed", "Xiami", 0.5, 19, 13, 3, "2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg");
+        seedDataVariant("/src/assets/products/2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg", "Chuột Gaming không dây Logitech G305 Lightspeed" , 599105.0, 10, 112);
         seedDataVariantAtribute("G305", 87, 131); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 131); // Xuất xứ
         seedDataVariantAtribute("12", 4, 131); // Thời gian bảo hành (tháng)
@@ -5153,8 +5139,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("USB", 59, 131); // Kiểu kết nối
         seedDataVariantAtribute("Laptop, Máy tính để bàn", 63, 131); // Sử dụng cho thiết bị
 
-        seedDataProduct("Bàn phím không dây HyperWork HyperOne Gen 2", "Xiaomi", 0.5, 3, 14, 3, "/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
-        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Bàn phím không dây HyperWork HyperOne Gen 2" , 799105.0, 10, 97);
+        seedDataProduct("Bàn phím không dây HyperWork HyperOne Gen 2", "Xiaomi", 0.5, 19, 14, 3, "ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
+        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Bàn phím không dây HyperWork HyperOne Gen 2" , 799105.0, 10, 113);
         seedDataVariantAtribute("HPW-KB1-G2-BLK", 87, 132); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 132); // Xuất xứ
         seedDataVariantAtribute("12", 4, 132); // Thời gian bảo hành (tháng)
@@ -5165,8 +5151,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Windows, macOS, Android", 49, 132); // Hệ điều hành tương thích
         seedDataVariantAtribute("Bluetooth", 59, 132); // Kiểu kết nối
 
-        seedDataProduct("Chuột không dây HyperWork Silentium", "Xiaomi", 0.5, 3, 13, 3, "/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
-        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Chuột không dây HyperWork Silentium" , 799175.0, 10, 97);
+        seedDataProduct("Chuột không dây HyperWork Silentium", "Xiaomi", 0.5, 19, 13, 3, "ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
+        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Chuột không dây HyperWork Silentium" , 799175.0, 10, 114);
         seedDataVariantAtribute("HPW-KB1-G2-BLK", 87, 133); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 133); // Xuất xứ
         seedDataVariantAtribute("12", 4, 133); // Thời gian bảo hành (tháng)
@@ -5177,8 +5163,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Windows, macOS, Android", 49, 133); // Hệ điều hành tương thích
         seedDataVariantAtribute("Bluetooth", 59, 133); // Kiểu kết nối
 
-        seedDataProduct("Cáp Hub USB-C to HDMI 5in1 1549 Ugreen", "Xiaomi", 0.5, 3, 10, 3, "/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg");
-        seedDataVariant("/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg", "Cáp Hub USB-C to HDMI 5in1 1549 Ugreen" , 99105.0, 10, 98);
+        seedDataProduct("Cáp Hub USB-C to HDMI 5in1 1549 Ugreen", "Xiaomi", 0.5, 3, 10, 3, "2024_5_20_638518124703463958_ugreen-15495.jpg");
+        seedDataVariant("/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg", "Cáp Hub USB-C to HDMI 5in1 1549 Ugreen" , 99105.0, 10, 115);
         seedDataVariantAtribute("CM478", 87, 134); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 134); // Xuất xứ
         seedDataVariantAtribute("12", 4, 134); // Thời gian bảo hành (tháng)
@@ -5195,8 +5181,8 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("1 x USB-A (USB 3.0)", 68, 134); // Cổng đầu ra
         seedDataVariantAtribute("Truyền dữ liệu", 35, 134); // Tính năng
 
-        seedDataProduct("Bộ sạc nhanh 1 cổng 30W ", "Xiaomi", 0.5, 3, 10, 3, "/src/assets/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg");
-        seedDataVariant("/src/assets/products/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg", "Bộ sạc nhanh 1 cổng 30W kèm cáp Type-C to Type-C 1M Smart Serie Devia" , 199105.0, 10, 99);
+        seedDataProduct("Bộ sạc nhanh 1 cổng 30W ", "Xiaomi", 0.5, 3, 10, 3, "bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg");
+        seedDataVariant("/src/assets/products/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg", "Bộ sạc nhanh 1 cổng 30W kèm cáp Type-C to Type-C 1M Smart Serie Devia" , 199105.0, 10, 116);
         seedDataVariantAtribute("Bộ sạc devia 30w", 87, 135); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 135); // Xuất xứ
         seedDataVariantAtribute("12", 4, 135); // Thời gian bảo hành (tháng)
@@ -5211,6 +5197,84 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Điện thoại, Máy tính bảng", 63, 135); // Sử dụng cho thiết bị
         seedDataVariantAtribute("Type C", 67, 135); // Cổng cáp kết nối
         seedDataVariantAtribute("Sạc nhanh", 35, 135); // Tính năng
+
+        seedDataProduct("Nồi áp suất điện Sunhouse 6 lit SHD1657", "Sunhouse", 0.5, 20, 6, 3, "noi-ap-suat-dien-sunhouse-6-lit-shd1657-nau-1.jpg");
+        seedDataVariant("/src/assets/products/noi-ap-suat-dien-sunhouse-6-lit-shd1657-nau-1.jpg", "Nồi áp suất điện Sunhouse 6 lit SHD1657" , 1499105.0, 10, 117);
+        seedDataVariantAtribute("SHD1657", 87, 136); // Model
+        seedDataVariantAtribute("Việt Nam", 1, 136); // Xuất xứ
+        seedDataVariantAtribute("2019", 2, 136); // Năm ra mắt
+        seedDataVariantAtribute("12", 4, 136); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Nâu", 3, 136); // Màu sắc
+        seedDataVariantAtribute("4.62 kg", 6, 136); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Lòng nồi: Hợp kim nhôm phủ chống dính", 7, 136); // Chất liệu
+        seedDataVariantAtribute("6 lít", 58, 136); // Dung tích thực
+        seedDataVariantAtribute("1000 W", 59, 136); // Công suất
+        seedDataVariantAtribute("Nút vặn", 60, 136); // Bảng điều khiển
+        seedDataVariantAtribute("Nấu gà/vịt, Nấu canh, Làm bánh, Nấu cháo, Nấu cơm, Giữ ấm", 35, 136); // Chức năng chính
+        seedDataVariantAtribute("Dây điện có thể tháo rời, Nắp tháo rời", 35, 136); // Tiện ích
+        seedDataVariantAtribute("1 van", 61, 136); // Van an toàn
+        seedDataVariantAtribute("Van xả áp khi áp suất cao, Khoá nắp nồi khi có áp suất cao", 62, 136); // An toàn sử dụng
+        seedDataVariantAtribute("Dây nguồn, Muỗng cơm, Cốc đong", 66, 136); // Phụ kiện trong hộp
+
+        seedDataProduct("Bình thủy điện Sunhouse 3.5 lít SH1535", "Sunhouse", 0.5, 20, 6, 3, "binh-thuy-dien-sunhouse-3-5-lit-sh1535-1.jpg");
+        seedDataVariant("/src/assets/products/binh-thuy-dien-sunhouse-3-5-lit-sh1535-1.jpg", "Bình thủy điện Sunhouse 3.5 lít SH1535" , 1099115.0, 10, 118);
+        seedDataVariantAtribute("SH1535", 87, 137); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 137); // Xuất xứ
+        seedDataVariantAtribute("2016", 2, 137); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 137); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 137); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 137); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Trắng", 3, 137); // Màu sắc
+        seedDataVariantAtribute("259 x 224 x 306 mm", 5, 137); // Kích thước
+        seedDataVariantAtribute("3.1 kg", 6, 137); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Ruột bình: Inox 304, Vỏ bình: Nhựa", 7, 137); // Chất liệu
+        seedDataVariantAtribute("3.5 lít", 58, 137); // Dung tích sử dụng
+        seedDataVariantAtribute("750 W", 59, 137); // Công suất
+        seedDataVariantAtribute("220 V", 60, 137); // Điện áp
+        seedDataVariantAtribute("Không", 61, 137); // Hẹn giờ đun sôi
+        seedDataVariantAtribute("Bơm tay", 62, 137); // Cách lấy nước
+        seedDataVariantAtribute("Đun sôi 100 độ C, Giữ ấm 80 độ C", 63, 137); // Nhiệt độ bình
+        seedDataVariantAtribute("Cột hiển thị mực nước, Tự đun sôi lại khi nước nguội, Có chế độ tẩy cặn", 35, 137); // Tiện ích
+        seedDataVariantAtribute("Khoá bơm tay rót nước", 64, 137); // An toàn sử dụng
+
+        seedDataProduct("Máy sấy tóc Philips BHC010/10", "Philips", 0.5, 21, 6, 3, "may-say-toc-philips-bhc010-10-den-1.jpg");
+        seedDataVariant("/src/assets/products/may-say-toc-philips-bhc010-10-den-1.jpg", "Bình thủy điện Sunhouse 3.5 lít SH1535" , 999215.0, 10, 119);
+        seedDataVariantAtribute("BHC010/10", 87, 138); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 138); // Xuất xứ
+        seedDataVariantAtribute("24", 4, 138); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 138); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Đen", 3, 138); // Màu sắc
+        seedDataVariantAtribute("220 x 77 x 114 mm", 5, 138); // Kích thước
+        seedDataVariantAtribute("340 g", 6, 138); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Vỏ: Nhựa", 7, 138); // Chất liệu
+        seedDataVariantAtribute("Tay cầm gấp gọn", 86, 138); // Kiểu dáng
+        seedDataVariantAtribute("1.5 m", 66, 138); // Chiều dài dây điện
+        seedDataVariantAtribute("1200 W", 59, 138); // Công suất
+        seedDataVariantAtribute("220 V", 60, 138); // Điện áp
+        seedDataVariantAtribute("3 chế độ", 61, 138); // Chế độ sấy
+        seedDataVariantAtribute("Sấy mát", 35, 138); // Tiện ích
+        seedDataVariantAtribute("Đầu sấy", 66, 138); // Phụ kiện trong hộp
+
+        seedDataProduct("Bàn ủi hơi nước Sunhouse SHD2067", "Sunhouse", 0.5, 20, 6, 3, "ban-ui-hoi-nuoc-sunhouse-shd2067-ct1.jpg");
+        seedDataVariant("/src/assets/products/ban-ui-hoi-nuoc-sunhouse-shd2067-ct1.jpg", "Bàn ủi hơi nước Sunhouse SHD2067" , 599215.0, 10, 120);
+        seedDataVariantAtribute("SHD2067", 87, 139); // Model
+        seedDataVariantAtribute("Trung Quốc", 1, 139); // Xuất xứ
+        seedDataVariantAtribute("2019", 2, 139); // Thời điểm ra mắt
+        seedDataVariantAtribute("12", 4, 139); // Thời gian bảo hành (tháng)
+        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ.", 48, 139); // Hướng dẫn bảo quản
+        seedDataVariantAtribute("Xem trong sách hướng dẫn sử dụng", 48, 139); // Hướng dẫn sử dụng
+        seedDataVariantAtribute("Vàng", 3, 139); // Màu sắc
+        seedDataVariantAtribute("290 x 110 x 156 mm", 5, 139); // Kích thước
+        seedDataVariantAtribute("670 g", 6, 139); // Trọng lượng sản phẩm
+        seedDataVariantAtribute("Ceramic", 7, 139); // Chất liệu
+        seedDataVariantAtribute("Bàn ủi hơi nước", 86, 139); // Loại bàn ủi
+        seedDataVariantAtribute("1800 W", 59, 139); // Công suất
+        seedDataVariantAtribute("220 V", 60, 139); // Điện áp
+        seedDataVariantAtribute("0.16 lít", 61, 139); // Bình nước
+        seedDataVariantAtribute("Phun tia, Phun hơi thẳng đứng, Ủi hơi nước", 35, 139); // Chức năng
+        seedDataVariantAtribute("Chống xoắn dây nguồn, Nút trượt xả cặn, Mặt đế chống dính, Chống đóng cặn lỗ phun hơi nước", 35, 139); // Tiện ích
+        seedDataVariantAtribute("Tự ngắt điện khi quá tải", 64, 139); // An toàn sử dụng
+        seedDataVariantAtribute("Cốc", 66, 139); // Phụ kiện trong hộp
 
 
 
@@ -5390,16 +5454,16 @@ public class DataInitializer implements CommandLineRunner {
 
     public void seedDataVariant(String image , String name, Double price, int quantity, int product_id) {
         List<Variant> variants = variantRepository.findByProductsIdAndPrice((long) product_id, price);
-        if (variants.isEmpty()) {
-            Variant variant = new Variant();
-            variant.setImage(image);
-            variant.setName(name);
-            variant.setPrice(price);
-            variant.setQuantity(quantity);
-            variant.setProducts(productRepository.findById((long) product_id).get());
-            variant.setStatus("active");
-            variantRepository.save(variant);
-        }
+//        if (variants.isEmpty()) {
+        Variant variant = new Variant();
+        variant.setImage(image);
+        variant.setName(name);
+        variant.setPrice(price);
+        variant.setQuantity(quantity);
+        variant.setProducts(productRepository.findById((long) product_id).get());
+        variant.setStatus("active");
+        variantRepository.save(variant);
+//        }
     }
 
     public void seedDataVariantAtribute(String value, int attribute_id, int variant_id) {
@@ -5415,18 +5479,18 @@ public class DataInitializer implements CommandLineRunner {
 
     public void seedDataProduct(String name, String description, Double weight, int brand_id, int category_id, int warranty_id, String image) {
         Optional<Product> products = productRepository.findProductByName(name);
-        if (products.isEmpty()) {
-            Product product = new Product();
-            product.setName(name);
-            product.setDescription(description);
-            product.setWeight(weight + "kg");
-            product.setBrand(brandRepository.findById((long) brand_id).get());
-            product.setCategory(categoryRepository.findById((long) category_id).get());
-            product.setWarranty(warrantyRepository.findById((long) warranty_id).get());
-            product.setImage("/src/assets/products/" + image);
-            product.setStatus("active");
-            productRepository.save(product);
-        }
+//        if (products.isEmpty()) {
+        Product product = new Product();
+        product.setName(name);
+        product.setDescription(description);
+        product.setWeight(weight + "kg");
+        product.setBrand(brandRepository.findById((long) brand_id).get());
+        product.setCategory(categoryRepository.findById((long) category_id).get());
+        product.setWarranty(warrantyRepository.findById((long) warranty_id).get());
+        product.setImage("/src/assets/products/" + image);
+        product.setStatus("active");
+        productRepository.save(product);
+//        }
     }
 
     public void seedDataCustomer(String name, String phone, String address, String email, String district, String city) {
