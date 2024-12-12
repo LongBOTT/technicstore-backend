@@ -4080,7 +4080,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // màu trắng
         seedDataProduct("iPad Air 11inch trắng", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBtrang.jpg");
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi  " ,26999995.0 , 8, 65);
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi  " ,26999995.0 , 8, 69);
         seedDataVariantAtribute("Trắng", 3, 88); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("512 GB", 24, 88); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 88); // Xuất xứ
@@ -4110,7 +4110,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // màu đen
         seedDataProduct("iPad Air 11inch xám", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBxam.jpg");
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", " iPad Air 11 inch M2 2024 Wifi    " ,28999995.0 , 8, 66);
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", " iPad Air 11 inch M2 2024 Wifi    " ,28999995.0 , 8, 70);
         seedDataVariantAtribute("Xám", 3, 89); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("1TB", 24, 89); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 89); // Xuất xứ
@@ -4142,7 +4142,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // màu trắng
         seedDataProduct("iPad Air 11inchtrắng", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBtrang.jpg");
-        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi  " ,28999994.0 , 8, 67);
+        seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBtrang.jpg", " iPad Air 11 inch M2 2024 Wifi  " ,28999994.0 , 8, 71);
         seedDataVariantAtribute("Trắng", 3, 90); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("1TB", 24, 90); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 90); // Xuất xứ
@@ -4186,7 +4186,7 @@ public class DataInitializer implements CommandLineRunner {
         // iPad Air 13 inch M2 2024 Wifi 128GB
 
         seedDataProduct("iPad Air 13 inch", "Ipad", 0.462, 13, 3, 3, "iPadAir13inchM22024Wifi128GBtrang.jpg");
-        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", " iPad Air 13 inch M2 2024 Wifi 512GB Trắng  " ,26999005.0 , 8, 68);
+        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", " iPad Air 13 inch M2 2024 Wifi 512GB Trắng  " ,26999005.0 , 8, 72);
         seedDataVariantAtribute("Trắng", 3, 91); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 91); // Xuất xứ
         seedDataVariantAtribute("05/2024", 2, 91); // Thời điểm ra mắt
@@ -4216,7 +4216,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // màu trắng
         seedDataProduct("iPad Air 13 inchtrang1tb", "Ipad", 0.462, 13, 3, 3, "iPadAir13inchM22024Wifi128GBtrang.jpg");
-        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", " iPad Air 13 inch M2 2024 Wifi   " ,28999009.0 , 8, 69);
+        seedDataVariant("/src/assets/products/iPadAir13inchM22024Wifi128GBtrang.jpg", " iPad Air 13 inch M2 2024 Wifi   " ,28999009.0 , 8, 73);
         seedDataVariantAtribute("1TB", 24, 92); // Dung lượng
         seedDataVariantAtribute("Trắng", 3, 92); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 92); // Xuất xứ
@@ -4262,7 +4262,7 @@ public class DataInitializer implements CommandLineRunner {
         // iPad Pro 11 inch M4 2024 Wifi + Cellular 256GB
         // iPad Air 11 inch M2 2024
         seedDataProduct("iPad Pro den 256gb", "Ipad", 0.466, 13, 3, 3, "iPadPro11inchM42024Wifi256GBĐen.jpg");
-        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", " iPad Pro 11 inch M4 2024 Wifi  " ,33999011.0 , 8, 67);
+        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", " iPad Pro 11 inch M4 2024 Wifi  " ,33999011.0 , 8, 74);
         // màu đen
         seedDataVariantAtribute("256GB", 24, 93); // Dung lượng
         seedDataVariantAtribute("Đen", 3, 93); // Thông tin hàng hóa - Màu sắc
@@ -4291,7 +4291,7 @@ public class DataInitializer implements CommandLineRunner {
 
 //        // màu đen
         seedDataProduct("iPad Pro den 512gb", "Ipad", 0.466, 13, 3, 3, "iPadPro11inchM42024Wifi256GBĐen.jpg");
-        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", " iPad Pro 11 inch M4 2024 Wifi " ,33999012.0 , 8, 67);
+        seedDataVariant("/src/assets/products/iPadPro11inchM42024Wifi256GBĐen.jpg", " iPad Pro 11 inch M4 2024 Wifi " ,33999012.0 , 8, 75);
         seedDataVariantAtribute("Đen", 3, 94); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("512GB", 24, 94); // Dung lượng
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 94); // Xuất xứ
@@ -4323,7 +4323,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // iPad mini 6 2021 8.3 inch WiFi 64GB
         seedDataProduct("iPad Mini xam 64gb", "Ipad", 0.462, 13, 3, 3, "iPadmini620218.3inchWiFi64GBxam.jpg");
-        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBxam.jpg", " iPad mini 6 2021 8.3 inch WiFi " ,12999018.0 , 8, 68);
+        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBxam.jpg", " iPad mini 6 2021 8.3 inch WiFi " ,12999018.0 , 8, 76);
         seedDataVariantAtribute("Xám", 3, 95); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("64GB", 24, 95); // Dung lượng
         seedDataVariantAtribute("Trung Quốc", 1, 95); // Xuất xứ
@@ -4363,7 +4363,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         seedDataProduct("iPad Mini Hồng 256gb", "Ipad", 0.462, 13, 3, 3, "iPadmini620218.3inchWiFi64GBhong.jpg");
-        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBhong.jpg", " iPad mini 6 2021 8.3 inch WiFi  " ,16999018.0 , 8, 68);
+        seedDataVariant("/src/assets/products/iPadmini620218.3inchWiFi64GBhong.jpg", " iPad mini 6 2021 8.3 inch WiFi  " ,16999018.0 , 8, 77);
         seedDataVariantAtribute("Hồng", 3, 96); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("256GB", 24, 96); // Dung lượng
         seedDataVariantAtribute("Trung Quốc", 1, 96); // Xuất xứ
@@ -4403,7 +4403,7 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataProduct("Samsung Galaxy Tab ", "Ipad", 0.571, 13, 3, 3, "SamsungGalaxyTabS10Ultra5G12GB256GBxam.png");
 
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Plus Wifi 12GB" ,25999018.0 , 8, 69);
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Plus Wifi 12GB" ,25999018.0 , 8, 78);
         seedDataVariantAtribute("256 GB", 24, 97); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 97); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 97); // Xuất xứ
@@ -4435,7 +4435,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Samsung Galaxy Tab S10 Ultra 5G 12GB 256GB
         seedDataProduct("Samsung Galaxy Tab Xám 256gb", "Ipad", 0.571, 13, 3, 3, "SamsungGalaxyTabS10Ultra5G12GB256GBxam.png");
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Ultra 5G 12GB" ,33999018.0 , 8, 69);
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS10Ultra5G12GB256GBxam.png", "Samsung Galaxy Tab S10 Ultra 5G 12GB" ,33999018.0 , 8, 79);
         seedDataVariantAtribute("256 GB", 24, 98); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 98); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 98); // Xuất xứ
@@ -4470,7 +4470,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Samsung Galaxy Tab S9 FE WiFi 6GB 128GB
         seedDataProduct("Samsung Galaxy Tab S9 128GB", "Ipad", 0.571, 13, 3, 3, "SamsungGalaxyTabS9FEWiFi6GB128GBxam.jpg");
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBxam.jpg", "Samsung Galaxy Tab S9 FE WiFi 6GB   " ,9999018.0 , 8, 70);
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBxam.jpg", "Samsung Galaxy Tab S9 FE WiFi 6GB   " ,9999018.0 , 8, 80);
         seedDataVariantAtribute("128 GB", 24, 99); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 99); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 99); // Xuất xứ
@@ -4509,7 +4509,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Samsung Galaxy Tab S9 FE Plus WiFi 8GB 128GB
         seedDataProduct("Samsung Galaxy Tab S9 ", "Ipad", 0.571, 13, 3, 3, "SamsungGalaxyTabS9FEWiFi6GB128GBbac.jpg");
-        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBbac.jpg", "Samsung Galaxy Tab S9 FE Plus WiFi 8GB " ,9999918.0 , 8, 71);
+        seedDataVariant("/src/assets/products/SamsungGalaxyTabS9FEWiFi6GB128GBbac.jpg", "Samsung Galaxy Tab S9 FE Plus WiFi 8GB " ,9999918.0 , 8, 81);
         seedDataVariantAtribute("128 GB", 24, 100); // Dung lượng
         seedDataVariantAtribute("Bạc", 3, 100); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 100); // Xuất xứ
@@ -4550,7 +4550,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Xiaomi Pad 6S Pro WiFi 8GB 256GB
         seedDataProduct("Xiaomi Pad", "Ipad", 0.571, 13, 3, 3, "XiaomiPad6SProWiFi8GB256GB.png");
-        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6S Pro WiFi 8GB" ,12999118.0 , 8, 72);
+        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6S Pro WiFi 8GB" ,12999118.0 , 8, 82);
         seedDataVariantAtribute("256GB", 24, 101); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 101); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Việt Nam", 1, 101); // Xuất xứ
@@ -4583,7 +4583,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Xiaomi Pad 6 WiFi 8GB 256GB
         seedDataProduct("Xiaomi Redmi Pad 256gb Xám", "Ipad", 0.571, 13, 3, 3, "2024_6_6_638532313860390827_xiaomi-redmi-pad-pro-den.jpg");
-        seedDataVariant("/src/assets/products/2024_6_6_638532313860390827_xiaomi-redmi-pad-pro-den.jpg", "Xiaomi Red Mi Pad 6 WiFi 16GB  " ,9299019.0 , 8, 73);
+        seedDataVariant("/src/assets/products/2024_6_6_638532313860390827_xiaomi-redmi-pad-pro-den.jpg", "Xiaomi Red Mi Pad 6 WiFi 16GB  " ,9299019.0 , 8, 83);
         seedDataVariantAtribute("256GB", 24, 102); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 102); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 102); // Xuất xứ
@@ -4612,7 +4612,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // màu đen
         seedDataProduct("Xiaomi Pad 256gb Đen", "Ipad", 0.571, 13, 3, 3, "XiaomiPad6SProWiFi8GB256GB.png");
-        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6 WiFi 8GB " ,9299020.0 , 8, 74);
+        seedDataVariant("/src/assets/products/XiaomiPad6SProWiFi8GB256GB.png", "Xiaomi Pad 6 WiFi 8GB " ,9299020.0 , 8, 84);
         seedDataVariantAtribute("256GB", 24, 103); // Dung lượng
         seedDataVariantAtribute("Đen", 3, 103); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 103); // Xuất xứ
@@ -4645,7 +4645,7 @@ public class DataInitializer implements CommandLineRunner {
 
         //Xiaomi Redmi Pad Pro WiFi 8GB 128GB
         seedDataProduct("Xiaomi Redmi Pad Xám 128gb", "Ipad", 0.571, 13, 3, 3, "XiaomiRedmiPadProWiFi8GB128GBxam.jpg");
-        seedDataVariant("/src/assets/products/XiaomiRedmiPadProWiFi8GB128GBxam.jpg", "Xiaomi Redmi Pad Pro WiFi 8GB 128GB Xám " ,9299021.0 , 8, 75);
+        seedDataVariant("/src/assets/products/XiaomiRedmiPadProWiFi8GB128GBxam.jpg", "Xiaomi Redmi Pad Pro WiFi 8GB 128GB Xám " ,9299021.0 , 8, 85);
 
         seedDataVariantAtribute("128GB", 24, 104); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 104); // Thông tin hàng hóa - Màu sắc
@@ -4681,7 +4681,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Xiaomi Poco Pad WiFi 8GB 256GB
         seedDataProduct("Xiaomi Poco Pad 256Gb", "Ipad", 0.571, 13, 3, 3, "XiaomiRedmiPadProWiFi8GB128GBxam.jpg");
-        seedDataVariant("/src/assets/products/XiaomiPocoPadWiFi8GBxam.jpg", "Xiaomi Poco Pad WiFi 8GB " ,7299021.0 , 8, 76);
+        seedDataVariant("/src/assets/products/XiaomiPocoPadWiFi8GBxam.jpg", "Xiaomi Poco Pad WiFi 8GB " ,7299021.0 , 8, 86);
         seedDataVariantAtribute("256GB", 24, 105); // Dung lượng
         seedDataVariantAtribute("Xám", 3, 105); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 105); // Xuất xứ
@@ -4713,7 +4713,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Tai nghe AirPods Pro 2022
         seedDataProduct("Tai nghe AirPods Pro 2022 ", "Apple", 0.571, 14, 8, 3, "TaingheAirPodsPro2022.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPodsPro2022.jpg", " Tai nghe AirPods Pro 2022 Trắng ",5299021.0, 8, 77);
+        seedDataVariant("/src/assets/products/TaingheAirPodsPro2022.jpg", " Tai nghe AirPods Pro 2022 Trắng ",5299021.0, 8, 87);
         seedDataVariantAtribute("AirPods Pro 2", 87, 106); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 106); // Xuất xứ
         seedDataVariantAtribute("12", 4, 106); // Thời gian bảo hành (tháng)
@@ -4728,7 +4728,7 @@ public class DataInitializer implements CommandLineRunner {
 //
         // Tai nghe AirPods 3 2022 Hộp sạc dây
         seedDataProduct("Tai nghe AirPods 3", "Apple", 0.571, 14, 8, 3, "TaingheAirPods32022.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPods32022.jpg", "Tai nghe AirPods 3 2022 Trắng ", 4099021.0, 8, 78);
+        seedDataVariant("/src/assets/products/TaingheAirPods32022.jpg", "Tai nghe AirPods 3 2022 Trắng ", 4099021.0, 8, 88);
         seedDataVariantAtribute("AirPods 3", 87, 107); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 107); // Xuất xứ
         seedDataVariantAtribute("12", 4, 107); // Thời gian bảo hành (tháng)
@@ -4747,7 +4747,7 @@ public class DataInitializer implements CommandLineRunner {
 
 //         Tai nghe AirPods Pro 2023 USB-C
         seedDataProduct("Tai nghe AirPods Pro 2023 USB-C", "Apple", 0.571, 14, 8, 3, "TaingheAirPodsPro2023USB-C.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPodsPro2023USB-C.jpg", "Tai nghe AirPods Pro 2023 USB-C Trắng" , 5799021.0, 10, 79);
+        seedDataVariant("/src/assets/products/TaingheAirPodsPro2023USB-C.jpg", "Tai nghe AirPods Pro 2023 USB-C Trắng" , 5799021.0, 10, 89);
         seedDataVariantAtribute("AirPods Pro", 87, 108); // Model
         seedDataVariantAtribute("Trắng", 3, 108); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Trung Quốc", 1, 108); // Xuất xứ
@@ -4759,7 +4759,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Tai nghe AirPods 4 - Chủ Động Khử Tiếng Ồn
         seedDataProduct("Tai nghe AirPods 4", "Apple", 0.571, 14, 8, 3, "TaingheAirPods4.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPods4.jpg", "Tai nghe AirPods 4 Trắng", 4799021.0, 10, 76);
+        seedDataVariant("/src/assets/products/TaingheAirPods4.jpg", "Tai nghe AirPods 4 Trắng", 4799021.0, 10, 90);
         seedDataVariantAtribute("AirPods 4", 87, 109); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 109); // Xuất xứ
         seedDataVariantAtribute("12", 4, 109); // Thời gian bảo hành (tháng)
@@ -4774,7 +4774,7 @@ public class DataInitializer implements CommandLineRunner {
         // Tai nghe Apple EarPods 2023 USB-C
         seedDataProduct("Tai nghe Apple EarPods USB-C", "Apple", 0.031, 14, 8, 3, "TaingheAppleEarPodsUSB-C.jpg");
 
-        seedDataVariant("/src/assets/products/TaingheAppleEarPodsUSB-C.jpg", "Tai nghe Apple EarPods USB-C Trắng " , 599000.0, 10, 80);
+        seedDataVariant("/src/assets/products/TaingheAppleEarPodsUSB-C.jpg", "Tai nghe Apple EarPods USB-C Trắng " , 599000.0, 10, 91);
         seedDataVariantAtribute("EarPods (USB-C)", 87, 110); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 110); // Xuất xứ
         seedDataVariantAtribute("12", 4, 110); // Thời gian bảo hành (tháng)
@@ -4787,7 +4787,7 @@ public class DataInitializer implements CommandLineRunner {
         // Tai nghe Beats Studio Buds
         seedDataProduct("Tai nghe Beats Studio Buds Hồng", "Apple", 0.058, 14, 8, 3, "TaingheBeatsStudioBudsDen.jpg");
 
-        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsHong.jpg", "Beats Studio Buds Hồng",3199001.0, 10, 81);
+        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsHong.jpg", "Beats Studio Buds Hồng",3199001.0, 10, 92);
         seedDataVariantAtribute("Beats Studio Buds", 87, 111); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 111); // Xuất xứ
         seedDataVariantAtribute("12", 4, 111); // Thời gian bảo hành (tháng)
@@ -4800,7 +4800,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB-C to USB-C", 48, 111); // Phụ kiện đi kèm
 
         seedDataProduct("Tai nghe Beats Studio Buds Đen", "Apple", 0.058, 14, 8, 3, "TaingheBeatsStudioBudsHong.jpg");
-        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsHong.jpg", "Beats Studio Buds Đen", 3199000.0, 10, 82);
+        seedDataVariant("/src/assets/products/TaingheBeatsStudioBudsHong.jpg", "Beats Studio Buds Đen", 3199000.0, 10, 93);
         seedDataVariantAtribute("Beats Studio Buds", 87, 112); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 112); // Xuất xứ
         seedDataVariantAtribute("12", 4, 112); // Thời gian bảo hành (tháng)
@@ -4816,7 +4816,7 @@ public class DataInitializer implements CommandLineRunner {
         // Tai nghe AirPods Max
         seedDataProduct("Tai nghe AirPods Max Bạc", "Apple", 0.1, 14, 8, 3, "TaingheAirPodsMaxBac.jpg");
 
-        seedDataVariant("/src/assets/products/TaingheAirPodsMaxBac.jpg"," Tai nghe AirPods Max Bạc" ,  12199005.0, 10, 83);
+        seedDataVariant("/src/assets/products/TaingheAirPodsMaxBac.jpg"," Tai nghe AirPods Max Bạc" ,  12199005.0, 10, 94);
         seedDataVariantAtribute("Tai nghe AirPods Max", 87, 113); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 113); // Xuất xứ
         seedDataVariantAtribute("12", 4, 113); // Thời gian bảo hành (tháng)
@@ -4830,7 +4830,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cáp USB to Lighting, Smart Case, Sách HDSD", 48, 113); // Phụ kiện đi kèm
 
         seedDataProduct("Tai nghe AirPods Max Xám", "Apple", 0.1, 14, 8, 3, "TaingheAirPodsMaxXam.jpg");
-        seedDataVariant("/src/assets/products/TaingheAirPodsMaxXam.jpg","Tai nghe AirPods Max Xám" ,  12199025.0, 10, 84);
+        seedDataVariant("/src/assets/products/TaingheAirPodsMaxXam.jpg","Tai nghe AirPods Max Xám" ,  12199025.0, 10, 95);
         seedDataVariantAtribute("Tai nghe AirPods Max", 87, 114); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 114); // Xuất xứ
         seedDataVariantAtribute("12", 4, 114); // Thời gian bảo hành (tháng)
@@ -4846,7 +4846,7 @@ public class DataInitializer implements CommandLineRunner {
         // Tai nghe Beats Fit Pro True Wireless Earbuds
 
         seedDataProduct("Tai nghe Beats Fit Pro True Wireless Earbuds", "Apple", 0.005, 14, 8, 3, "TaingheBeatsFitProTrueWirelessEarbuds.jpg");
-        seedDataVariant("/src/assets/products/TaingheBeatsFitProTrueWirelessEarbuds.jpg", "Tai nghe Beats Fit Pro True Wireless Earbuds Đen" , 4199005.0, 10, 85);
+        seedDataVariant("/src/assets/products/TaingheBeatsFitProTrueWirelessEarbuds.jpg", "Tai nghe Beats Fit Pro True Wireless Earbuds Đen" , 4199005.0, 10, 96);
 
         seedDataVariantAtribute("Beats Fit Pro True Wireless Earbuds", 87, 115); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 115); // Xuất xứ
@@ -4863,7 +4863,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Đồng hồ
         seedDataProduct("Amazfit BIP", "Xiaomi", 0.160, 3, 4, 3, "AmazfitBIP.png");
-        seedDataVariant("/src/assets/products/AmazfitBIP.png", "Tai nghe Amazfit BIP Đen" , 4199305.0, 10, 86);
+        seedDataVariant("/src/assets/products/AmazfitBIP.png", "Tai nghe Amazfit BIP Đen" , 4199305.0, 10, 97);
         seedDataVariantAtribute("Amazfit BIP 5 46mm", 87, 116); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 116); // Xuất xứ
         seedDataVariantAtribute("Đen", 3, 116); // Thông tin hàng hóa - Màu
@@ -4887,7 +4887,7 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataProduct("Amazfit GTR Mini", "Xiaomi", 0.180, 3, 4, 3, "AmazfitGTRMini.jpg");
 
-        seedDataVariant("/src/assets/products/AmazfitGTRMini.jpg", "Amazfit GTR Mini" , 2199305.0, 10, 87);
+        seedDataVariant("/src/assets/products/AmazfitGTRMini.jpg", "Amazfit GTR Mini" , 2199305.0, 10, 98);
         seedDataVariantAtribute("GTR Mini", 87, 117); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 117); // Xuất xứ
         seedDataVariantAtribute("Trắng", 3, 117); // Thông tin hàng hóa - Màu
@@ -4904,7 +4904,7 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataProduct("Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band", "Apple", 0.180, 14, 4, 3, "AmazfitGTRMini.jpg");
 
-        seedDataVariant("/src/assets/products/AppleWatchUltra2Xanh.jpg", "Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band" , 20199005.0, 10, 88);
+        seedDataVariant("/src/assets/products/AppleWatchUltra2Xanh.jpg", "Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band" , 20199005.0, 10, 99);
         seedDataVariantAtribute("Apple Watch Ultra 2 49mm viền Titanium", 87, 118); // Model
         seedDataVariantAtribute("12", 4, 118); // Thời gian bảo hành (tháng)
         seedDataVariantAtribute("0.463 kg", 6, 118); // Trọng lượng sản phẩm
@@ -4914,7 +4914,7 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataProduct("Xiaomi Smart Band 9", "Xiami", 0.180, 3, 4, 3, "xiaomi_band_9_trang_3_f653c876a3.jpg");
 
-        seedDataVariant("/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg", "Xiaomi Smart Band 9" , 999115.0, 10, 89);
+        seedDataVariant("/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg", "Xiaomi Smart Band 9" , 999115.0, 10, 100);
         seedDataVariantAtribute("46.53 x 21.63 x 10.95 mm", 5, 119); // Kích thước
         seedDataVariantAtribute("15.8 g", 6, 119); // Trọng lượng sản phẩm
         seedDataVariantAtribute("Trắng", 3, 119); // Thông tin hàng hóa - Màu
@@ -4929,7 +4929,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         seedDataProduct("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su ", "Aple", 0.180, 14, 4, 3, "2023_10_9_638324588772574350_apple.jpg");
-        seedDataVariant("/src/assets/products/2023_10_9_638324588772574350_apple.jpg", "Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su " , 12999105.0, 10, 90);
+        seedDataVariant("/src/assets/products/2023_10_9_638324588772574350_apple.jpg", "Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su " , 12999105.0, 10, 101);
         seedDataVariantAtribute("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm", 87, 120); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 120); // Xuất xứ
         seedDataVariantAtribute("09/2023", 2, 120); // Thời điểm ra mắt
@@ -4945,7 +4945,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cuộc gọi, Tin nhắn", 35, 120); // Hiển thị thông báo
 
         seedDataProduct("Samsung Galaxy Fit3", "Samsung", 0.180, 2, 4, 3, "2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg");
-        seedDataVariant("/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg", "Samsung Galaxy Fit3" , 1299105.0, 10, 91);
+        seedDataVariant("/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg", "Samsung Galaxy Fit3" , 1299105.0, 10, 102);
         seedDataVariantAtribute("Galaxy Fit3", 87, 121); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 121); // Xuất xứ
         seedDataVariantAtribute("02/2024", 2, 121); // Thời điểm ra mắt
@@ -4964,7 +4964,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("13 ngày", 44, 121); // Thời gian sử dụng pin
 
         seedDataProduct("Samsung Galaxy Watch6 BT 40mm", "Samsung", 0.180, 2, 4, 3, "2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg");
-        seedDataVariant("/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg", "Samsung Galaxy Watch6 BT 40mm" , 1299105.0, 10, 92);
+        seedDataVariant("/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg", "Samsung Galaxy Watch6 BT 40mm" , 1299105.0, 10, 103);
         seedDataVariantAtribute("Galaxy Watch6 BT 40mm", 87, 122); // Model
         seedDataVariantAtribute("Vàng", 3, 122); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 122); // Xuất xứ
@@ -4984,7 +4984,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Android", 49, 122); // Hệ điều hành tương thích
 
         seedDataProduct("Samsung Galaxy Watch7 LTE 40mm", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch7_40mm_green_9975309aba.png");
-        seedDataVariant("/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png", "Samsung Galaxy Watch7 LTE 40mm" , 7299105.0, 10, 93);
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png", "Samsung Galaxy Watch7 LTE 40mm" , 7299105.0, 10, 104);
         seedDataVariantAtribute("Galaxy Watch7 LTE 40mm", 87, 123); // Model
         seedDataVariantAtribute("Nâu", 3, 123); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 123); // Xuất xứ
@@ -5008,7 +5008,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         seedDataProduct("Samsung Galaxy Watch FE", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch_fe_black_af8a8c8abc.png");
-        seedDataVariant("/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png", "Samsung Galaxy Watch FE" , 8299105.0, 10, 94);
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png", "Samsung Galaxy Watch FE" , 8299105.0, 10, 105);
         seedDataVariantAtribute("Galaxy Watch FE 40mm", 87, 124); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 124); // Xuất xứ
         seedDataVariantAtribute("Đen", 3, 124); // Thông tin hàng hóa - Màu
@@ -5025,7 +5025,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Mặt đồng hồ tròn", 86, 124); // Kiểu dáng thiết kế
 
         seedDataProduct("Samsung Galaxy Watch Ultra LTE 47mm", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch_ultra_silver_black_454ec16181.png");
-        seedDataVariant("/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png", "Samsung Galaxy Watch Ultra LTE 47mm" , 20299105.0, 10, 95);
+        seedDataVariant("/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png", "Samsung Galaxy Watch Ultra LTE 47mm" , 20299105.0, 10, 106);
         seedDataVariantAtribute("Galaxy Watch Ultra", 87, 125); // Model
         seedDataVariantAtribute("Đen", 3, 125); // Thông tin hàng hóa - Màu
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 125); // Xuất xứ
@@ -5048,7 +5048,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Phụ Kiện Điện Tử
         seedDataProduct("Quạt sạc cầm tay Hotwell ", "Xiaomi", 0.180, 3, 6, 3, "2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg");
-        seedDataVariant("/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg", "Quạt sạc cầm tay Hotwell" , 1199105.0, 10, 96);
+        seedDataVariant("/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg", "Quạt sạc cầm tay Hotwell" , 1199105.0, 10, 107);
         seedDataVariantAtribute("FR12H1", 87, 126); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 126); // Xuất xứ
         seedDataVariantAtribute("2024", 2, 126); // Thời điểm ra mắt
@@ -5064,7 +5064,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Bảo hành tại hãng", 4, 126); // Chế độ bảo hành
 
         seedDataProduct("Quạt tháp Xiaomi Smart Tower Fan ", "Xiaomi", 1.0, 3, 6, 3, "2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg");
-        seedDataVariant("/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg", "Quạt tháp Xiaomi Smart Tower Fan" , 1098105.0, 10, 97);
+        seedDataVariant("/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg", "Quạt tháp Xiaomi Smart Tower Fan" , 1098105.0, 10, 108);
         seedDataVariantAtribute("Máy quạt đứng thông minh Xiaomi Fan 1C", 87, 127); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 127); // Xuất xứ
         seedDataVariantAtribute("2023", 2, 127); // Thời điểm ra mắt
@@ -5080,7 +5080,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("22 W", 58, 127); // Công suất
 
         seedDataProduct("Quạt máy đứng Xiaomi Smart Fan 2 Lite ", "Xiaomi", 1.0, 3, 6, 3, "2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg");
-        seedDataVariant("/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg", "Quạt máy đứng Xiaomi Smart Fan 2 Lite (PYV4007GL)" , 1099105.0, 10, 98);
+        seedDataVariant("/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg", "Quạt máy đứng Xiaomi Smart Fan 2 Lite (PYV4007GL)" , 1099105.0, 10, 109);
         seedDataVariantAtribute("Quạt máy đứng Xiaomi Smart Fan 2 Lite", 87, 128); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 128); // Xuất xứ
         seedDataVariantAtribute("2021", 2, 128); // Thời điểm ra mắt
@@ -5098,7 +5098,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         seedDataProduct("Quạt sưởi gốm Ceramic Fujihome FH2000M 2000W", "Fujihome", 1.0, 18, 6, 3, "00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png");
-        seedDataVariant("/src/assets/products/00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png", "Quạt sưởi gốm Ceramic Fujihome " , 1119105.0, 10, 99);
+        seedDataVariant("/src/assets/products/00912173_quat_suoi_gom_ceramic_fujihome_fh2000m_2000w_629f74b7b7.png", "Quạt sưởi gốm Ceramic Fujihome " , 1119105.0, 10, 110);
         seedDataVariantAtribute("FH2000M", 87, 129); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 129); // Xuất xứ
         seedDataVariantAtribute("2022", 2, 129); // Thời điểm ra mắt
@@ -5114,7 +5114,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("10 - 20 m2", 60, 129); // Phạm vi làm ấm
 
         seedDataProduct("Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge", "Xiaomi", 0.5, 3, 9, 3, "2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg");
-        seedDataVariant("/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg", "Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge" , 1399105.0, 10, 100);
+        seedDataVariant("/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg", "Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge" , 1399105.0, 10, 111);
         seedDataVariantAtribute("TRIP10000", 87, 130); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 130); // Xuất xứ
         seedDataVariantAtribute("12", 4, 130); // Thời gian bảo hành (tháng)
@@ -5128,7 +5128,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("6 - 10 giờ", 61, 130); // Thời gian sạc đầy
 
         seedDataProduct("Chuột Gaming không dây Logitech G305 Lightspeed", "Xiami", 0.5, 19, 13, 3, "2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg");
-        seedDataVariant("/src/assets/products/2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg", "Chuột Gaming không dây Logitech G305 Lightspeed" , 599105.0, 10, 101);
+        seedDataVariant("/src/assets/products/2024_6_6_638532949083597300_logitech-g305-lightspeed-black.jpg", "Chuột Gaming không dây Logitech G305 Lightspeed" , 599105.0, 10, 112);
         seedDataVariantAtribute("G305", 87, 131); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 131); // Xuất xứ
         seedDataVariantAtribute("12", 4, 131); // Thời gian bảo hành (tháng)
@@ -5139,7 +5139,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Laptop, Máy tính để bàn", 63, 131); // Sử dụng cho thiết bị
 
         seedDataProduct("Bàn phím không dây HyperWork HyperOne Gen 2", "Xiaomi", 0.5, 19, 14, 3, "ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
-        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Bàn phím không dây HyperWork HyperOne Gen 2" , 799105.0, 10, 102);
+        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Bàn phím không dây HyperWork HyperOne Gen 2" , 799105.0, 10, 113);
         seedDataVariantAtribute("HPW-KB1-G2-BLK", 87, 132); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 132); // Xuất xứ
         seedDataVariantAtribute("12", 4, 132); // Thời gian bảo hành (tháng)
@@ -5151,7 +5151,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Bluetooth", 59, 132); // Kiểu kết nối
 
         seedDataProduct("Chuột không dây HyperWork Silentium", "Xiaomi", 0.5, 19, 13, 3, "ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg");
-        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Chuột không dây HyperWork Silentium" , 799175.0, 10, 103);
+        seedDataVariant("/src/assets/products/ban_phim_khong_day_hyperwork_hyperone_gen_2_1_561c59dd7b.jpg", "Chuột không dây HyperWork Silentium" , 799175.0, 10, 114);
         seedDataVariantAtribute("HPW-KB1-G2-BLK", 87, 133); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 133); // Xuất xứ
         seedDataVariantAtribute("12", 4, 133); // Thời gian bảo hành (tháng)
@@ -5163,7 +5163,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Bluetooth", 59, 133); // Kiểu kết nối
 
         seedDataProduct("Cáp Hub USB-C to HDMI 5in1 1549 Ugreen", "Xiaomi", 0.5, 3, 10, 3, "2024_5_20_638518124703463958_ugreen-15495.jpg");
-        seedDataVariant("/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg", "Cáp Hub USB-C to HDMI 5in1 1549 Ugreen" , 99105.0, 10, 104);
+        seedDataVariant("/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg", "Cáp Hub USB-C to HDMI 5in1 1549 Ugreen" , 99105.0, 10, 115);
         seedDataVariantAtribute("CM478", 87, 134); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 134); // Xuất xứ
         seedDataVariantAtribute("12", 4, 134); // Thời gian bảo hành (tháng)
@@ -5181,7 +5181,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Truyền dữ liệu", 35, 134); // Tính năng
 
         seedDataProduct("Bộ sạc nhanh 1 cổng 30W ", "Xiaomi", 0.5, 3, 10, 3, "bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg");
-        seedDataVariant("/src/assets/products/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg", "Bộ sạc nhanh 1 cổng 30W kèm cáp Type-C to Type-C 1M Smart Serie Devia" , 199105.0, 10, 105);
+        seedDataVariant("/src/assets/products/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg", "Bộ sạc nhanh 1 cổng 30W kèm cáp Type-C to Type-C 1M Smart Serie Devia" , 199105.0, 10, 116);
         seedDataVariantAtribute("Bộ sạc devia 30w", 87, 135); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 135); // Xuất xứ
         seedDataVariantAtribute("12", 4, 135); // Thời gian bảo hành (tháng)
@@ -5198,7 +5198,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sạc nhanh", 35, 135); // Tính năng
 
         seedDataProduct("Nồi áp suất điện Sunhouse 6 lit SHD1657", "Sunhouse", 0.5, 20, 6, 3, "noi-ap-suat-dien-sunhouse-6-lit-shd1657-nau-1.jpg");
-        seedDataVariant("/src/assets/products/noi-ap-suat-dien-sunhouse-6-lit-shd1657-nau-1.jpg", "Nồi áp suất điện Sunhouse 6 lit SHD1657" , 1499105.0, 10, 106);
+        seedDataVariant("/src/assets/products/noi-ap-suat-dien-sunhouse-6-lit-shd1657-nau-1.jpg", "Nồi áp suất điện Sunhouse 6 lit SHD1657" , 1499105.0, 10, 117);
         seedDataVariantAtribute("SHD1657", 87, 136); // Model
         seedDataVariantAtribute("Việt Nam", 1, 136); // Xuất xứ
         seedDataVariantAtribute("2019", 2, 136); // Năm ra mắt
@@ -5216,7 +5216,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Dây nguồn, Muỗng cơm, Cốc đong", 66, 136); // Phụ kiện trong hộp
 
         seedDataProduct("Bình thủy điện Sunhouse 3.5 lít SH1535", "Sunhouse", 0.5, 20, 6, 3, "binh-thuy-dien-sunhouse-3-5-lit-sh1535-1.jpg");
-        seedDataVariant("/src/assets/products/binh-thuy-dien-sunhouse-3-5-lit-sh1535-1.jpg", "Bình thủy điện Sunhouse 3.5 lít SH1535" , 1099115.0, 10, 107);
+        seedDataVariant("/src/assets/products/binh-thuy-dien-sunhouse-3-5-lit-sh1535-1.jpg", "Bình thủy điện Sunhouse 3.5 lít SH1535" , 1099115.0, 10, 118);
         seedDataVariantAtribute("SH1535", 87, 137); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 137); // Xuất xứ
         seedDataVariantAtribute("2016", 2, 137); // Thời điểm ra mắt
@@ -5237,7 +5237,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Khoá bơm tay rót nước", 64, 137); // An toàn sử dụng
 
         seedDataProduct("Máy sấy tóc Philips BHC010/10", "Philips", 0.5, 21, 6, 3, "may-say-toc-philips-bhc010-10-den-1.jpg");
-        seedDataVariant("/src/assets/products/may-say-toc-philips-bhc010-10-den-1.jpg", "Bình thủy điện Sunhouse 3.5 lít SH1535" , 999215.0, 10, 108);
+        seedDataVariant("/src/assets/products/may-say-toc-philips-bhc010-10-den-1.jpg", "Bình thủy điện Sunhouse 3.5 lít SH1535" , 999215.0, 10, 119);
         seedDataVariantAtribute("BHC010/10", 87, 138); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 138); // Xuất xứ
         seedDataVariantAtribute("24", 4, 138); // Thời gian bảo hành (tháng)
@@ -5255,7 +5255,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đầu sấy", 66, 138); // Phụ kiện trong hộp
 
         seedDataProduct("Bàn ủi hơi nước Sunhouse SHD2067", "Sunhouse", 0.5, 20, 6, 3, "ban-ui-hoi-nuoc-sunhouse-shd2067-ct1.jpg");
-        seedDataVariant("/src/assets/products/ban-ui-hoi-nuoc-sunhouse-shd2067-ct1.jpg", "Bàn ủi hơi nước Sunhouse SHD2067" , 599215.0, 10, 109);
+        seedDataVariant("/src/assets/products/ban-ui-hoi-nuoc-sunhouse-shd2067-ct1.jpg", "Bàn ủi hơi nước Sunhouse SHD2067" , 599215.0, 10, 120);
         seedDataVariantAtribute("SHD2067", 87, 139); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 139); // Xuất xứ
         seedDataVariantAtribute("2019", 2, 139); // Thời điểm ra mắt
