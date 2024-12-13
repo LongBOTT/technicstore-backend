@@ -4047,7 +4047,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Dây cáp sạc, Củ sạc iPad", 57, 86); // Phụ kiện trong hộp
 
         //
-        seedDataProduct("iPad Air 11inch xám", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBxam.jpg");
+        seedDataProduct("iPad Air 11inch i ", "Ipad", 0.462, 13, 3, 3, "iPadAir11inchM22024Wifi128GBxam.jpg");
         seedDataVariant("/src/assets/products/iPadAir11inchM22024Wifi128GBxam.jpg", "iPad Air 11 inch M2 2024 Wifi  " ,26999993.0 , 8, 68);
         // màu đen
         seedDataVariantAtribute("Xám", 3, 87); // Thông tin hàng hóa - Màu sắc
