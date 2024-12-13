@@ -56,10 +56,7 @@ public class OrderDetailService {
             imeiService.updateImeiStatus(imeiId);
 
             Variant variant = variantService.getVariantById(imei.getStockReceiveDetail().getVariant().getId()).orElseThrow(() -> new RuntimeException("Variant khong ton tai"));
-            System.out.println("name: " + variant.getName());
-            System.out.println("id"+variant.getId());
             double quantity = variant.getQuantity()-1;
-            System.out.println("quantity: " + quantity);
             variantService.updateVariantQuantity(variant.getId(),variant.getQuantity()-1);
             return orderDetailRepository.save(orderDetail);
         }

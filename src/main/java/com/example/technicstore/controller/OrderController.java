@@ -4,10 +4,12 @@ import com.example.technicstore.DTO.Response.OrderResponse;
 import com.example.technicstore.DTO.Response.OrderStatisticsDTO;
 import com.example.technicstore.entity.Customer;
 import com.example.technicstore.entity.Order;
+import com.example.technicstore.entity.OrderDetail;
 import com.example.technicstore.service.CustomerService;
 import com.example.technicstore.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -192,6 +194,8 @@ public class OrderController {
         Map<String, Object> statistics = orderService.getCategorySalesStatisticsByDate(start, end);
         return ResponseEntity.ok(statistics);
     }
+
+
 
 }
 

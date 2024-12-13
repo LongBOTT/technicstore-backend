@@ -38,7 +38,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
 
     // Tính doanh thu: Các đơn hàng  không có trạng thái 'Chờ duyệt', 'Đã hủy' và 'Trả hàng' trong ngày hôm nay
-    @Query("SELECT SUM(o.total_amount) FROM Order o WHERE o.orderStatus NOT IN ('Chờ duyệt','Đã hủy', 'Trả hàng') AND DATE(o.orderDate) = CURRENT_DATE")
+    @Query("SELECT SUM(o.total_amount) FROM Order o WHERE o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') AND DATE(o.orderDate) = CURRENT_DATE")
     Double calculateRevenue();
 
     // Đếm số đơn hàng mới trong ngày hôm nay (trạng thái 'Chờ duyệt')
@@ -64,7 +64,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     @Query("SELECT v.name, SUM(od.quantity)" +
             "FROM Order o JOIN o.orderDetails od " +
             "JOIN Variant v ON od.variantId = v.id " +
-            "WHERE o.orderStatus NOT IN ('Chờ duyệt', 'Đã hủy', 'Trả hàng') AND DATE(od.order.orderDate) = CURRENT_DATE " +
+            "WHERE o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') AND DATE(od.order.orderDate) = CURRENT_DATE " +
             "GROUP BY v.name ORDER BY SUM(od.quantity) DESC")
     List<Object[]> getTopSellingProductsToday();
 
@@ -75,7 +75,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "JOIN Variant v ON od.variantId = v.id " +
             "JOIN v.products p " +
             "JOIN p.category c " +
-            "WHERE o.orderStatus NOT IN ('Chờ duyệt', 'Đã hủy', 'Trả hàng') AND DATE(od.order.orderDate) = CURRENT_DATE " +
+            "WHERE o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') AND DATE(od.order.orderDate) = CURRENT_DATE " +
             "GROUP BY c.name ORDER BY SUM(od.quantity) DESC")
     List<Object[]> getTopSellingCategoriesToday();
 
@@ -95,7 +95,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "JOIN o.orderDetails od " +
             "JOIN Variant v ON od.variantId = v.id " +
             "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
-            "AND o.orderStatus NOT IN ('Chờ duyệt', 'Đã hủy', 'Trả hàng') " +
+            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
             "GROUP BY DATE(o.orderDate)")
     List<Object[]> getDailyStatistics(@Param("startDate") LocalDateTime startDate,
                                       @Param("endDate") LocalDateTime endDate);
@@ -109,7 +109,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "FROM Order o JOIN o.orderDetails od " +
             "JOIN Variant v ON od.variantId = v.id " +
             "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
-            "AND o.orderStatus NOT IN ('Chờ duyệt', 'Đã hủy', 'Trả hàng') " +
+            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
             "GROUP BY DATE(o.orderDate), v.id")
     List<Object[]> getProductSalesStatisticsByDate(@Param("startDate") LocalDateTime startDate,
                                                    @Param("endDate") LocalDateTime endDate);
@@ -123,7 +123,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
             "JOIN v.products p " +
             "JOIN p.category c " +
             "WHERE o.orderDate >= :startDate AND o.orderDate <= :endDate " +
-            "AND o.orderStatus NOT IN ('Chờ duyệt', 'Đã hủy', 'Trả hàng') " +
+            "AND o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
             "GROUP BY DATE(o.orderDate), c.id")
     List<Object[]> getCategorySalesStatisticsByDate(@Param("startDate") LocalDateTime startDate,
                                                     @Param("endDate") LocalDateTime endDate);

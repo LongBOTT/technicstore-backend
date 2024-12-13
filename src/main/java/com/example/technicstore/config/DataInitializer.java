@@ -7510,23 +7510,23 @@ public class DataInitializer implements CommandLineRunner {
         seedDataReceive(2L, 22990000.0, LocalDateTime.now(), "");
 
         // stockReceiveDetail
-        seedDataReceiveDetail(1L, 4L, 1, 20990000.0);
-        seedDataReceiveDetail(2L, 5L, 1, 22990000.0);
+        seedDataReceiveDetail(1L, 1L, 1, 20990000.0);
+        seedDataReceiveDetail(2L, 1L, 1, 20990000.0);
 
         // Imei
-        seedDataImei("12345", "Sold", 1L);
-        seedDataImei("12346", "Sold", 2L);
+        seedDataImei("12345", "available", 1L);
+        seedDataImei("12346", "available", 2L);
         seedDataImei("0", "default", null);
 
 
         // order
 
         seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now(), "abc", "0374974098");
-        seedDataOrder("abc", "Chuẩn bị hàng", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc","0374974097");
+        seedDataOrder("abc", "Chờ duyệt", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc","0374974097");
 
         // orderDetail
-        seedDataOrderDetail(1L,1L,1, 24990000.0, 24990000.0, "12345");
-        seedDataOrderDetail(2L, 1L,1, 27990000.0, 27990000.0, "12346");
+        seedDataOrderDetail(1L,1L,1, 24990000.0, 24990000.0, 3L);
+        seedDataOrderDetail(2L, 1L,1, 27990000.0, 27990000.0, 3L);
 
 
 
@@ -7581,13 +7581,13 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    public void seedDataOrderDetail(Long orderId,Long variantId, int quantity, Double price, Double total, String imeiCode) {
-        OrderDetail orderDetails = orderDetailRepository.findByOrderIdAndImei_ImeiCode(orderId,imeiCode);
+    public void seedDataOrderDetail(Long orderId,Long variantId, int quantity, Double price, Double total, Long imeiId) {
+        OrderDetail orderDetails = orderDetailRepository.findByOrderIdAndImei_Id(orderId,imeiId);
         if (orderDetails == null) {
             OrderDetail orderDetail = new OrderDetail();
             orderDetail.setVariantId(variantId);
             orderDetail.setOrder(orderRepository.findById(orderId).orElseThrow(() -> new RuntimeException("Order not found")));
-            orderDetail.setImei(imeiRepository.findImeiByImeiCode(imeiCode).orElseThrow(() -> new RuntimeException("Imei not found")));
+            orderDetail.setImei(imeiRepository.findImeiById(imeiId).orElseThrow(() -> new RuntimeException("Imei not found")));
             orderDetail.setQuantity(quantity);
             orderDetail.setPrice(price);
             orderDetail.setTotal(total);

@@ -3,6 +3,7 @@ package com.example.technicstore.controller;
 import com.example.technicstore.DTO.Request.ProductCreationRequest;
 import com.example.technicstore.entity.Imei;
 import com.example.technicstore.entity.OrderDetail;
+import com.example.technicstore.entity.Variant;
 import com.example.technicstore.service.OrderDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

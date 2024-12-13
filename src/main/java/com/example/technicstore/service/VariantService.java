@@ -2,8 +2,10 @@ package com.example.technicstore.service;
 
 import com.example.technicstore.DTO.Request.VariantCreationRequest;
 import com.example.technicstore.Mapper.VariantMapper;
+import com.example.technicstore.entity.Imei;
 import com.example.technicstore.entity.Product;
 import com.example.technicstore.entity.Variant;
+import com.example.technicstore.repository.ImeiRepository;
 import com.example.technicstore.repository.ProductRepository;
 import com.example.technicstore.repository.VariantRepository;
 import jakarta.transaction.Transactional;
@@ -30,6 +32,12 @@ public class VariantService {
     @Autowired
     private VariantMapper variantMapper;
 
+    @Autowired
+    private ImeiService imeiService;
+
+    @Autowired
+    private ImeiRepository imeiRepository;
+
     // Lấy tất cả biến thể
     public List<Variant> getAllVariants() {
         return variantRepository.findAll();
@@ -43,7 +51,7 @@ public class VariantService {
 
     // Lấy biến thể theo ID sản phẩm
     public List<Variant> getVariantsByProductId(Long productId) {
-        return variantRepository.findByProductsIdAndStatus(productId,"active");
+        return variantRepository.findByProductsIdAndStatus(productId, "active");
     }
 
     // Lấy biến thể theo ID sản phẩm
@@ -127,11 +135,10 @@ public class VariantService {
     }
 
 
-
     // Xóa biến thể theo mã sản phẩm
     @Transactional
     public void deleteVariantByProductId(Long productId) {
-        List<Variant> variants = variantRepository.findByProductsIdAndStatus(productId,"active");
+        List<Variant> variants = variantRepository.findByProductsIdAndStatus(productId, "active");
         for (Variant variant : variants) {
             // Xóa variant_attributes của biến thể
             variant_attributeService.deleteVariant_AttributeByVariantId(variant.getId());
@@ -157,4 +164,26 @@ public class VariantService {
         variantRepository.save(existingVariant);
     }
 
+    // cập nhật lại số lương phiên bản và trạng thái imei của phiên bản đó khi trả hàng
+
+    public void updateReturnOrder(Long variantId, Long imeiId) {
+        Optional<Variant> variantOptional = variantRepository.findById(variantId);
+        if (variantOptional.isEmpty()) {
+            throw new RuntimeException("Variant not found");
+        }
+        Variant existingVariant = variantOptional.get();
+        existingVariant.setQuantity(existingVariant.getQuantity() + 1);
+        variantRepository.save(existingVariant);
+
+
+        Optional<Imei> imeiOptional = imeiRepository.findById(imeiId);
+        if (imeiOptional.isEmpty()) {
+            throw new RuntimeException("imei not found");
+        }
+
+        Imei existingImei = imeiOptional.get();
+        existingImei.setStatus("available");
+        imeiRepository.save(existingImei);
+
+    }
 }
