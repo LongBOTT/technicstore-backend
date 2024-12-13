@@ -352,11 +352,17 @@ public class DataInitializer implements CommandLineRunner {
         seedDataBrand("Casio");
         seedDataBrand("Orient");
         seedDataBrand("Fujihome"); //18
-        seedDataBrand("Mouse"); // 19
+        seedDataBrand("Logitech"); // 19
         seedDataBrand("Sunhouse");
         seedDataBrand("Philips");
         seedDataBrand("Samsung Galaxy Tab"); //22
         seedDataBrand("Xiaomi Pad"); //23
+        seedDataBrand("Xiaomi Band"); //24
+        seedDataBrand("Apple Watch"); //25
+        seedDataBrand("Samsung Galaxy Watch"); //26
+        seedDataBrand("Hotwell"); //27
+        seedDataBrand("UmeTravel"); //28
+        seedDataBrand("Ugreen"); //29
 
         // endregion
 
@@ -3492,7 +3498,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus.png");
         //Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB/16" 144Hz/GeForce RTX3050 6GB/Win11_A9LG9PA
 
-        seedDataVariant("/src/assets/products/LaptopHPGamingVictus.png", "LaptopHPVictus Đen 512GB", 20998900.0, 5, 54);
+        seedDataVariant("/src/assets/products/LaptopHPGamingVictus.png", "Laptop HP Gaming Victus 16-s0173AX R5-7640HS/16GB/512GB", 20998900.0, 5, 54);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 73); // Màu sắc
@@ -3535,7 +3541,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB/16.1" 144Hz/GeForce RTX4060 8GB/Win11_8C5N2PA
         seedDataProduct("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus16.png");
-        seedDataVariant("/src/assets/products/LaptopHPGamingVictus16.png", "LaptopHPVictus Đen 512GB", 32998900.0, 5, 55);
+        seedDataVariant("/src/assets/products/LaptopHPGamingVictus16.png", "Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", 32998900.0, 5, 55);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 74); // Màu sắc
@@ -3571,6 +3577,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop HP Envy X360 14-fc0089TU Ultra 7-155U/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPEnvyX360.png");
         seedDataVariant("/src/assets/products/LaptopHPEnvyX360.png", "LaptopHPEnvy Xanh 512GB", 30998900.0, 7, 56);
 
+        seedDataVariantAtribute("Xanh", 3, 75); // Màu sắc
         seedDataVariantAtribute("512 GB", 24, 75); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 9, 75); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core Ultra 7", 61, 75); // Bộ xử lý - Công nghệ CPU
@@ -3606,8 +3613,9 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB/16.1"FHD/Nvidia RTX3050 6GB/Win11
         seedDataProduct("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus.png");
-        seedDataVariant("/src/assets/products/LaptopHPGamingVictus.png", "LaptopHPVictus Đen 512GB", 20999900.0, 7, 57);
+        seedDataVariant("/src/assets/products/LaptopHPGamingVictus.png", "Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", 20999900.0, 7, 57);
 
+        seedDataVariantAtribute("Đen", 3, 76); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("AMD", 9, 76); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 5", 61, 76); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("7640HS", 10, 76); // Bộ xử lý - Loại CPU
@@ -3650,12 +3658,12 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("2023", 2, 76); // Thông tin hàng hóa - Thời điểm ra mắt
         seedDataVariantAtribute("12", 4, 76); // Thông tin hàng hóa - Thời gian bảo hành (tháng)
         seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. & Xem trong sách hướng dẫn sử dụng", 48, 76); // Thông tin Pin và Sạc - Hướng dẫn bảo quản
-        seedDataVariantAtribute("Đen", 3, 76); // Thông tin hàng hóa - Màu sắc
 
         // Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB/14" FHD Touch/Intel Graphics/Win11_Bạc_9H8V2PT
         seedDataProduct("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPProBook.png");
         seedDataVariant("/src/assets/products/LaptopHPProBook.png", "LaptopHPProBook Bạc 512GB", 25999900.0, 8, 58);
 
+        seedDataVariantAtribute("Bạc", 3, 77); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Intel", 9, 77); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 77); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1360P", 10, 77); // Bộ xử lý - Loại CPU
@@ -3689,6 +3697,7 @@ public class DataInitializer implements CommandLineRunner {
 
         seedDataVariant("/src/assets/products/LaptopMSIGamingKatana15.png", "LaptopMSIKatana Đen 1TB", 21999900.0, 8, 59);
 
+        seedDataVariantAtribute("Đen", 3, 78); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Intel", 9, 78); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 78); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13500H", 10, 78); // Bộ xử lý - Loại CPU
@@ -3728,6 +3737,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "LaptopMSIGamingCyborg14.png");
         seedDataVariant("/src/assets/products/LaptopMSIGamingCyborg14.png", "LaptopMSICyborg Đen 512GB", 25599900.0, 8, 60);
 
+        seedDataVariantAtribute("Đen", 3, 79); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Intel", 9, 79); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 79); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13620H", 10, 79); // Bộ xử lý - Loại CPU
@@ -3773,6 +3783,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop MSI Gaming Katana A15 AI B8VE-402VN R7 8845HS/64GB/512GB", "Laptop", 1.8, 12, 2, 2, "LaptopMSIGamingKatanaA15.jpg");
         seedDataVariant("/src/assets/products/LaptopMSIGamingKatanaA15.jpg", "LaptopMSIKatana Đen 512GB", 26699990.0, 8, 61);
 
+        seedDataVariantAtribute("Đen", 3, 80); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("AMD", 9, 80); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 80); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("8845HS", 10, 80); // Bộ xử lý - Loại CPU
@@ -3809,7 +3820,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "LaptopLenovoThinkPad.jpg");
         // Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB/14"WUXGA/Win 11
         seedDataVariant("/src/assets/products/LaptopLenovoThinkPad.jpg", "LaptopLenovoThinkPad Đen 512GB", 20799900.0, 8, 62);
-
+        seedDataVariantAtribute("Đen", 3, 81); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Intel", 9, 81); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 81); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 81); // Bộ xử lý - Loại CPU
@@ -3857,6 +3868,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Lenovo ThinkPad E14 Gen 5 i7-1355U/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "LaptopLenovoThinkPad.jpg");
         seedDataVariant("/src/assets/products/LaptopLenovoThinkPad.jpg", "LaptopLenovoThinkPad Xám 512GB", 22699900.0, 5, 63);
 
+        seedDataVariantAtribute("Xám", 3, 82); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Intel", 9, 82); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 82); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1355U", 10, 82); // Bộ xử lý - Loại CPU
@@ -3898,6 +3910,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Laptop Lenovo V15 G4 IRU i5 13420H/16GB/512GB", "Laptop", 1.8, 9, 2, 2, "LaptopLenovoV15.jpg");
         seedDataVariant("/src/assets/products/LaptopLenovoV15.jpg", "LaptopLenovoV15 Đen 512GB", 15699900.0, 7, 64);
 
+        seedDataVariantAtribute("Đen", 3, 83); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Intel", 9, 83); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 83); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 83); // Bộ xử lý - Loại CPU
@@ -4863,7 +4876,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Đồng hồ
-        seedDataProduct("Amazfit BIP", "Xiaomi", 0.160, 3, 4, 3, "AmazfitBIP.png");
+        seedDataProduct("Amazfit BIP", "Xiaomi", 0.160, 24, 4, 3, "AmazfitBIP.png");
         seedDataVariant("/src/assets/products/AmazfitBIP.png", "Tai nghe Amazfit BIP Đen" , 4199305.0, 10, 97);
         seedDataVariantAtribute("Amazfit BIP 5 46mm", 87, 116); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 116); // Xuất xứ
@@ -4886,7 +4899,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Cảm biến PPG, Cảm biến gia tốc 3 trục", 36, 116); // Cảm biến
 
 
-        seedDataProduct("Amazfit GTR Mini", "Xiaomi", 0.180, 3, 4, 3, "AmazfitGTRMini.jpg");
+        seedDataProduct("Amazfit GTR Mini", "Xiaomi", 0.180, 24, 4, 3, "AmazfitGTRMini.jpg");
 
         seedDataVariant("/src/assets/products/AmazfitGTRMini.jpg", "Amazfit GTR Mini" , 2199305.0, 10, 98);
         seedDataVariantAtribute("GTR Mini", 87, 117); // Model
@@ -4903,7 +4916,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("AMOLED Chính", 15, 117); // Công nghệ màn hình
 
 
-        seedDataProduct("Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band", "Apple", 0.180, 14, 4, 3, "AmazfitGTRMini.jpg");
+        seedDataProduct("Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band", "Apple", 0.180, 25, 4, 3, "AmazfitGTRMini.jpg");
 
         seedDataVariant("/src/assets/products/AppleWatchUltra2Xanh.jpg", "Apple Watch Ultra 2 49mm viền Titanium Dây Ocean Band" , 20199005.0, 10, 99);
         seedDataVariantAtribute("Apple Watch Ultra 2 49mm viền Titanium", 87, 118); // Model
@@ -4913,7 +4926,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS 17", 49, 118); // Version yêu cầu tối thiểu
 
 
-        seedDataProduct("Xiaomi Smart Band 9", "Xiami", 0.180, 3, 4, 3, "xiaomi_band_9_trang_3_f653c876a3.jpg");
+        seedDataProduct("Xiaomi Smart Band 9", "Xiami", 0.180, 24, 4, 3, "xiaomi_band_9_trang_3_f653c876a3.jpg");
 
         seedDataVariant("/src/assets/products/xiaomi_band_9_trang_3_f653c876a3.jpg", "Xiaomi Smart Band 9" , 999115.0, 10, 100);
         seedDataVariantAtribute("46.53 x 21.63 x 10.95 mm", 5, 119); // Kích thước
@@ -4929,7 +4942,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Android, iOS", 49, 119); // Hệ điều hành tương thích
 
 
-        seedDataProduct("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su ", "Aple", 0.180, 14, 4, 3, "2023_10_9_638324588772574350_apple.jpg");
+        seedDataProduct("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su ", "Aple", 0.180, 25, 4, 3, "2023_10_9_638324588772574350_apple.jpg");
         seedDataVariant("/src/assets/products/2023_10_9_638324588772574350_apple.jpg", "Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm Dây cao su " , 12999105.0, 10, 101);
         seedDataVariantAtribute("Apple Watch Series 9 GPS + Cellular 45mm Viền nhôm", 87, 120); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 120); // Xuất xứ
@@ -4945,7 +4958,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("iOS", 49, 120); // Hệ điều hành tương thích
         seedDataVariantAtribute("Cuộc gọi, Tin nhắn", 35, 120); // Hiển thị thông báo
 
-        seedDataProduct("Samsung Galaxy Fit3", "Samsung", 0.180, 2, 4, 3, "2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg");
+        seedDataProduct("Samsung Galaxy Fit3", "Samsung", 0.180, 26, 4, 3, "2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg");
         seedDataVariant("/src/assets/products/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg", "Samsung Galaxy Fit3" , 1299105.0, 10, 102);
         seedDataVariantAtribute("Galaxy Fit3", 87, 121); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 121); // Xuất xứ
@@ -4964,7 +4977,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("256 x 402 Pixels", 16, 121); // Độ phân giải
         seedDataVariantAtribute("13 ngày", 44, 121); // Thời gian sử dụng pin
 
-        seedDataProduct("Samsung Galaxy Watch6 BT 40mm", "Samsung", 0.180, 2, 4, 3, "2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg");
+        seedDataProduct("Samsung Galaxy Watch6 BT 40mm", "Samsung", 0.180, 26, 4, 3, "2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg");
         seedDataVariant("/src/assets/products/2023_7_25_638258823929528383_samsung-galaxy-watch6-vang-1.jpg", "Samsung Galaxy Watch6 BT 40mm" , 1299105.0, 10, 103);
         seedDataVariantAtribute("Galaxy Watch6 BT 40mm", 87, 122); // Model
         seedDataVariantAtribute("Vàng", 3, 122); // Thông tin hàng hóa - Màu
@@ -4984,7 +4997,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Đa ngôn ngữ", 48, 122); // Ngôn ngữ
         seedDataVariantAtribute("Android", 49, 122); // Hệ điều hành tương thích
 
-        seedDataProduct("Samsung Galaxy Watch7 LTE 40mm", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch7_40mm_green_9975309aba.png");
+        seedDataProduct("Samsung Galaxy Watch7 LTE 40mm", "Samsung", 0.180, 26, 4, 3, "samsung_galaxy_watch7_40mm_green_9975309aba.png");
         seedDataVariant("/src/assets/products/samsung_galaxy_watch7_40mm_green_9975309aba.png", "Samsung Galaxy Watch7 LTE 40mm" , 7299105.0, 10, 104);
         seedDataVariantAtribute("Galaxy Watch7 LTE 40mm", 87, 123); // Model
         seedDataVariantAtribute("Nâu", 3, 123); // Thông tin hàng hóa - Màu
@@ -5008,7 +5021,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("40 giờ Chế độ tiết kiệm Pin - tắt AOD", 44, 123); // Thời gian sử dụng pin
 
 
-        seedDataProduct("Samsung Galaxy Watch FE", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch_fe_black_af8a8c8abc.png");
+        seedDataProduct("Samsung Galaxy Watch FE", "Samsung", 0.180, 26, 4, 3, "samsung_galaxy_watch_fe_black_af8a8c8abc.png");
         seedDataVariant("/src/assets/products/samsung_galaxy_watch_fe_black_af8a8c8abc.png", "Samsung Galaxy Watch FE" , 8299105.0, 10, 105);
         seedDataVariantAtribute("Galaxy Watch FE 40mm", 87, 124); // Model
         seedDataVariantAtribute("Việt Nam / Trung Quốc", 1, 124); // Xuất xứ
@@ -5025,7 +5038,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Kim loại nguyên khối, Dây: Silicone", 7, 124); // Chất liệu
         seedDataVariantAtribute("Mặt đồng hồ tròn", 86, 124); // Kiểu dáng thiết kế
 
-        seedDataProduct("Samsung Galaxy Watch Ultra LTE 47mm", "Samsung", 0.180, 2, 4, 3, "samsung_galaxy_watch_ultra_silver_black_454ec16181.png");
+        seedDataProduct("Samsung Galaxy Watch Ultra LTE 47mm", "Samsung", 0.180, 26, 4, 3, "samsung_galaxy_watch_ultra_silver_black_454ec16181.png");
         seedDataVariant("/src/assets/products/samsung_galaxy_watch_ultra_silver_black_454ec16181.png", "Samsung Galaxy Watch Ultra LTE 47mm" , 20299105.0, 10, 106);
         seedDataVariantAtribute("Galaxy Watch Ultra", 87, 125); // Model
         seedDataVariantAtribute("Đen", 3, 125); // Thông tin hàng hóa - Màu
@@ -5048,7 +5061,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Sạc không dây", 57, 125); // Cổng sạc
 
         // Phụ Kiện Điện Tử
-        seedDataProduct("Quạt sạc cầm tay Hotwell ", "Xiaomi", 0.180, 3, 6, 3, "2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg");
+        seedDataProduct("Quạt sạc cầm tay Hotwell ", "Xiaomi", 0.180, 27, 6, 3, "2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg");
         seedDataVariant("/src/assets/products/2024_5_21_638519081533397837_quat-sac-cam-tay-hotwell-fr12h1-1.jpg", "Quạt sạc cầm tay Hotwell" , 1199105.0, 10, 107);
         seedDataVariantAtribute("FR12H1", 87, 126); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 126); // Xuất xứ
@@ -5064,7 +5077,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("5 V", 59, 126); // Điện áp
         seedDataVariantAtribute("Bảo hành tại hãng", 4, 126); // Chế độ bảo hành
 
-        seedDataProduct("Quạt tháp Xiaomi Smart Tower Fan ", "Xiaomi", 1.0, 3, 6, 3, "2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg");
+        seedDataProduct("Quạt tháp Xiaomi Smart Tower Fan ", "Xiaomi", 1.0, 27, 6, 3, "2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg");
         seedDataVariant("/src/assets/products/2023_4_20_638176062564130716_quat-thap-xiaomi-smart-tower-fan-4.jpg", "Quạt tháp Xiaomi Smart Tower Fan" , 1098105.0, 10, 108);
         seedDataVariantAtribute("Máy quạt đứng thông minh Xiaomi Fan 1C", 87, 127); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 127); // Xuất xứ
@@ -5080,7 +5093,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Quạt đứng", 86, 127); // Kiểu dáng thiết kế
         seedDataVariantAtribute("22 W", 58, 127); // Công suất
 
-        seedDataProduct("Quạt máy đứng Xiaomi Smart Fan 2 Lite ", "Xiaomi", 1.0, 3, 6, 3, "2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg");
+        seedDataProduct("Quạt máy đứng Xiaomi Smart Fan 2 Lite ", "Xiaomi", 1.0, 27, 6, 3, "2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg");
         seedDataVariant("/src/assets/products/2021_6_23_637600624151529277_xiaomi-smart-fan-2-lite-pyv4007gl-trang-1.jpg", "Quạt máy đứng Xiaomi Smart Fan 2 Lite (PYV4007GL)" , 1099105.0, 10, 109);
         seedDataVariantAtribute("Quạt máy đứng Xiaomi Smart Fan 2 Lite", 87, 128); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 128); // Xuất xứ
@@ -5114,7 +5127,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("220 V / 50 Hz", 59, 129); // Điện áp
         seedDataVariantAtribute("10 - 20 m2", 60, 129); // Phạm vi làm ấm
 
-        seedDataProduct("Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge", "Xiaomi", 0.5, 3, 9, 3, "2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg");
+        seedDataProduct("Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge", "Xiaomi", 0.5, 28, 9, 3, "2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg");
         seedDataVariant("/src/assets/products/2022_9_5_637979820693210196_pin-sac-du-phong-quick-charge-li-polymer-10000mah-umetravel-trip10000-den.jpg", "Pin sạc dự phòng UmeTravel 10000mAh TRIP10000 Quick Charge" , 1399105.0, 10, 111);
         seedDataVariantAtribute("TRIP10000", 87, 130); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 130); // Xuất xứ
@@ -5163,7 +5176,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("Windows, macOS, Android", 49, 133); // Hệ điều hành tương thích
         seedDataVariantAtribute("Bluetooth", 59, 133); // Kiểu kết nối
 
-        seedDataProduct("Cáp Hub USB-C to HDMI 5in1 1549 Ugreen", "Xiaomi", 0.5, 3, 10, 3, "2024_5_20_638518124703463958_ugreen-15495.jpg");
+        seedDataProduct("Cáp Hub USB-C to HDMI 5in1 1549 Ugreen", "Xiaomi", 0.5, 29, 10, 3, "2024_5_20_638518124703463958_ugreen-15495.jpg");
         seedDataVariant("/src/assets/products/2024_5_20_638518124703463958_ugreen-15495.jpg", "Cáp Hub USB-C to HDMI 5in1 1549 Ugreen" , 99105.0, 10, 115);
         seedDataVariantAtribute("CM478", 87, 134); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 134); // Xuất xứ
@@ -5181,7 +5194,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariantAtribute("1 x USB-A (USB 3.0)", 68, 134); // Cổng đầu ra
         seedDataVariantAtribute("Truyền dữ liệu", 35, 134); // Tính năng
 
-        seedDataProduct("Bộ sạc nhanh 1 cổng 30W ", "Xiaomi", 0.5, 3, 10, 3, "bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg");
+        seedDataProduct("Bộ sạc nhanh 1 cổng 30W ", "Xiaomi", 0.5, 29, 10, 3, "bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg");
         seedDataVariant("/src/assets/products/bo_sac_nhanh_1_cong_30w_kem_cap_type_c_to_type_c_1m_smart_serie_devia_3_dae9db5b53.jpg", "Bộ sạc nhanh 1 cổng 30W kèm cáp Type-C to Type-C 1M Smart Serie Devia" , 199105.0, 10, 116);
         seedDataVariantAtribute("Bộ sạc devia 30w", 87, 135); // Model
         seedDataVariantAtribute("Trung Quốc", 1, 135); // Xuất xứ
