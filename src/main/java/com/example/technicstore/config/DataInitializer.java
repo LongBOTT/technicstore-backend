@@ -3535,7 +3535,7 @@ public class DataInitializer implements CommandLineRunner {
 
         // Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB/16.1" 144Hz/GeForce RTX4060 8GB/Win11_8C5N2PA
         seedDataProduct("Laptop HP Gaming Victus 16-r0127TX i7-13700H/AI/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus16.png");
-        seedDataVariant("/src/assets/products/LaptopHPGamingVictus16.png", "LaptopHPVictus Đen 512GB", 32998900.0, 5, 54);
+        seedDataVariant("/src/assets/products/LaptopHPGamingVictus16.png", "LaptopHPVictus Đen 512GB", 32998900.0, 5, 55);
 
         // Thông số kỹ thuật
         seedDataVariantAtribute("Đen", 3, 74); // Màu sắc
