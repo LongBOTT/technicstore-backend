@@ -1050,7 +1050,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("iPhone 15 Pro Max", "Điện thoại", 0.5, 1, 1, 1, "iphone_15_pro_max_f589ed5358.png");
 
         // phiên bản iphone 15 pro max
-        seedDataVariant("/src/assets/products/iphone15promax-Den-256GB.jpg", "iphone15promax Đen 256GB", 34990020.0, 10, 6);
+        seedDataVariant("/src/assets/products/iphone15pro-Den-128GB.jpg", "iphone15promax Đen 256GB", 34990020.0, 10, 6);
         seedDataVariant("/src/assets/products/iphone15promax-Trang-512GB.jpg", "iphone15promax Trắng 512GB", 40990000.0, 10, 6);
         seedDataVariant("/src/assets/products/iphone15promax-Xanh-1TB.jpg", "iphone15promax Xanh 1TB", 46990000.0, 10, 6);
 
@@ -1470,7 +1470,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataProduct("Samsung Galaxy S23", "Điện thoại", 0.5, 2, 1, 2, "samsung_galaxy_s23_591dfc2c85.png");
 
         // phiên bản samsung galaxy s23
-        seedDataVariant("/src/assets/products/Samsunggalaxys23 Xanh 256GB.jpg", "samsunggalaxys23 Xanh 256GB", 24990300.0, 10, 10);
+        seedDataVariant("/src/assets/products/Samsunggalaxys23-Xanh-256GB.jpg", "Samsung Galaxy S23 Xanh 256GB", 24990300.0, 10, 10);
 
         // Thông số
         // điện thoại samsung galaxy s23 dung lượng 256 GB có 3 màu Đen, Trắng, Xanh giá 24.990.000
@@ -3612,58 +3612,48 @@ public class DataInitializer implements CommandLineRunner {
 
 
         // Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB/16.1"FHD/Nvidia RTX3050 6GB/Win11
-        seedDataProduct("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus.png");
-        seedDataVariant("/src/assets/products/LaptopHPGamingVictus.png", "Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", 20999900.0, 7, 57);
+        seedDataProduct("Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPGamingVictus16.png");
+        seedDataVariant("/src/assets/products/LaptopHPGamingVictus16.png", "Laptop HP Gaming Victus 16-s0078AX R5-7640HS/16GB/512GB", 30998900.0, 7, 57);
 
-        seedDataVariantAtribute("Đen", 3, 76); // Thông tin hàng hóa - Màu sắc
-        seedDataVariantAtribute("AMD", 9, 76); // Bộ xử lý - Hãng CPU
-        seedDataVariantAtribute("Ryzen 5", 61, 76); // Bộ xử lý - Công nghệ CPU
-        seedDataVariantAtribute("7640HS", 10, 76); // Bộ xử lý - Loại CPU
-        seedDataVariantAtribute("4.30 GHz", 12, 76); // Bộ xử lý - Tốc độ CPU tối thiểu
-        seedDataVariantAtribute("NVIDIA", 83, 76); // Đồ họa - Hãng (Card rời)
-        seedDataVariantAtribute("GeForce RTX 3050", 84, 76); // Đồ họa - Model (Card rời)
-        seedDataVariantAtribute("6 GB", 77, 76); // Đồ họa - Bộ nhớ
-        seedDataVariantAtribute("143", 85, 76); // Đồ họa - Hiệu suất AI (TOPS)
-        seedDataVariantAtribute("16 GB", 79, 76); // RAM - Dung lượng RAM
-        seedDataVariantAtribute("DDR5", 66, 76); // RAM - Loại RAM
-        seedDataVariantAtribute("2", 67, 76); // RAM - Số khe cắm rời
-        seedDataVariantAtribute("1", 72, 76); // RAM - Số khe RAM còn lại
-        seedDataVariantAtribute("32 GB", 68, 76); // RAM - Hỗ trợ RAM tối đa
+        seedDataVariantAtribute("Xanh", 3, 76); // Màu sắc
+        seedDataVariantAtribute("512 GB", 24, 76); // Dung lượng ổ cứng
+        seedDataVariantAtribute("Intel", 9, 76); // Bộ xử lý - Hãng CPU
+        seedDataVariantAtribute("Core Ultra 7", 61, 76); // Bộ xử lý - Công nghệ CPU
+        seedDataVariantAtribute("155U", 10, 76); // Bộ xử lý - Loại CPU
+        seedDataVariantAtribute("1.7", 12, 76); // Bộ xử lý - Tốc độ CPU tối thiểu
+        seedDataVariantAtribute("10", 85, 76); // Bộ xử lý - Hiệu suất xử lý AI của CPU
+        seedDataVariantAtribute("Intel", 63, 76); // Đồ họa - Hãng (Card Oboard)
+        seedDataVariantAtribute("UHD", 64, 76); // Đồ họa - Model (Card Oboard)
+        seedDataVariantAtribute("Intel UHD Graphics", 65, 76); // Đồ họa - Tên đầy đủ (Card onboard)
+        seedDataVariantAtribute("16 GB (2 thanh 8 GB)", 79, 76); // RAM - Dung lượng RAM
+        seedDataVariantAtribute("LPDDR5", 66, 76); // RAM - Loại RAM
+        seedDataVariantAtribute("2", 67, 76); // RAM - Số RAM onboard
+        seedDataVariantAtribute("Không nâng cấp", 68, 76); // RAM - Hỗ trợ RAM tối đa
         seedDataVariantAtribute("SSD", 70, 76); // Lưu trữ - Kiểu ổ cứng
-        seedDataVariantAtribute("M.2 NVMe", 73, 76); // Lưu trữ - Loại SSD
-        seedDataVariantAtribute("512 GB", 23, 76); // Lưu trữ - Dung lượng
-        seedDataVariantAtribute("16.0 inch", 14, 76); // Màn hình - Kích thước màn hình
-        seedDataVariantAtribute("Anti-glare LED UWVA", 15, 76); // Màn hình - Công nghệ màn hình
-        seedDataVariantAtribute("1920 x 1060 Pixels", 17, 76); // Màn hình - Độ phân giải
-        seedDataVariantAtribute("LCD", 19, 76); // Màn hình - Loại màn hình
-        seedDataVariantAtribute("144 Hz", 22, 76); // Màn hình - Tần số quét
-        seedDataVariantAtribute("WVA", 73, 76); // Màn hình - Tấm nền
-        seedDataVariantAtribute("USB", 41, 76); // Giao tiếp và kết nối - Cổng giao tiếp
-        seedDataVariantAtribute("Wifi 6E", 42, 76); // Giao tiếp và kết nối - Wifi
+        seedDataVariantAtribute("1", 71, 76); // Lưu trữ - Tổng số khe cắm SSD/HDD
+        seedDataVariantAtribute("0", 72, 76); // Lưu trữ - Số khe SSD/HDD còn lại
+        seedDataVariantAtribute("Nâng cấp tối đa 2TB (SSD M2 PCIe)", 73, 76); // Lưu trữ - Dung lượng nâng cấp tối đa ổ cứng
+        seedDataVariantAtribute("1 M.2 NVMe", 73, 76); // Lưu trữ - Loại SSD
+        seedDataVariantAtribute("512", 23, 76); // Lưu trữ - Dung lượng
+        seedDataVariantAtribute("14 inch", 14, 76); // Màn hình - Kích thước màn hình
+        seedDataVariantAtribute("OLED", 15, 76); // Màn hình - Công nghệ màn hình
+        seedDataVariantAtribute("2880 x 1800 Pixels", 17, 76); // Màn hình - Độ phân giải
+        seedDataVariantAtribute("OLED", 19, 76); // Màn hình - Loại màn hình
+        seedDataVariantAtribute("120", 22, 76); // Màn hình - Tần số quét
+        seedDataVariantAtribute("OLED", 73, 76); // Màn hình - Tấm nền
+        seedDataVariantAtribute("100% DCI-P3", 78, 76); // Màn hình - Độ phủ màu
+        seedDataVariantAtribute("16:10", 81, 76); // Màn hình - Tỷ lệ màn hình
+        seedDataVariantAtribute("2 USB Type-A", 41, 76); // Giao tiếp và kết nối - Cổng giao tiếp
+        seedDataVariantAtribute("802.11 a/b/g/n/ac/ax", 42, 76); // Giao tiếp và kết nối - Wifi
         seedDataVariantAtribute("v5.3", 44, 76); // Giao tiếp và kết nối - Bluetooth
-        seedDataVariantAtribute("Full HD Webcam (1060p Webcam)", 74, 76); // Giao tiếp và kết nối - Webcam
-        seedDataVariantAtribute("Windows", 49, 76); // Hệ điều hành - OS
-        seedDataVariantAtribute("Windows 11 Home", 50, 76); // Hệ điều hành - Version
-        seedDataVariantAtribute("Mở khóa bằng mật mã", 37, 76); // Bảo mật - Bảo mật
-        seedDataVariantAtribute("Chiclet Keyboard", 51, 76); // Bàn phím & TouchPad - Kiểu bàn phím
-        seedDataVariantAtribute("Có", 52, 76); // Bàn phím & TouchPad - Bàn phím số
-        seedDataVariantAtribute("Không", 53, 76); // Bàn phím & TouchPad - Đèn bàn phím
-        seedDataVariantAtribute("Multi-touch touchpad", 56, 76); // Bàn phím & TouchPad - TouchPad
-        seedDataVariantAtribute("4 Cell", 47, 76); // Thông tin pin & sạc - Dung lượng pin
-        seedDataVariantAtribute("Sạc", 57, 76); // Phụ kiện trong hộp
-        seedDataVariantAtribute("36.9 x 25.94 x 2.29 cm", 5, 76); // Thiết kế & Trọng lượng - Kích thước
-        seedDataVariantAtribute("2.31 kg", 6, 76); // Thiết kế & Trọng lượng - Trọng lượng sản phẩm
-        seedDataVariantAtribute("Nhựa", 7, 76); // Thiết kế & Trọng lượng - Chất liệu
-        seedDataVariantAtribute("Trung Quốc", 1, 76); // Thông tin hàng hóa - Xuất xứ
-        seedDataVariantAtribute("2023", 2, 76); // Thông tin hàng hóa - Thời điểm ra mắt
-        seedDataVariantAtribute("12", 4, 76); // Thông tin hàng hóa - Thời gian bảo hành (tháng)
-        seedDataVariantAtribute("Để nơi khô ráo, nhẹ tay, dễ vỡ. & Xem trong sách hướng dẫn sử dụng", 48, 76); // Thông tin Pin và Sạc - Hướng dẫn bảo quản
+        seedDataVariantAtribute("5.0 MP", 74, 76); // Giao tiếp và kết nối - Webcam
 
         // Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB/14" FHD Touch/Intel Graphics/Win11_Bạc_9H8V2PT
         seedDataProduct("Laptop HP ProBook 440 G10 i7-1360P/16GB/512GB", "Laptop", 1.8, 8, 2, 2, "LaptopHPProBook.png");
         seedDataVariant("/src/assets/products/LaptopHPProBook.png", "LaptopHPProBook Bạc 512GB", 25999900.0, 8, 58);
 
         seedDataVariantAtribute("Bạc", 3, 77); // Thông tin hàng hóa - Màu sắc
+        seedDataVariantAtribute("512 GB", 24, 77); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 9, 77); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 77); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1360P", 10, 77); // Bộ xử lý - Loại CPU
@@ -3698,6 +3688,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariant("/src/assets/products/LaptopMSIGamingKatana15.png", "LaptopMSIKatana Đen 1TB", 21999900.0, 8, 59);
 
         seedDataVariantAtribute("Đen", 3, 78); // Thông tin hàng hóa - Màu sắc
+        seedDataVariantAtribute("1TB", 24, 78); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 9, 78); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 78); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13500H", 10, 78); // Bộ xử lý - Loại CPU
@@ -3736,7 +3727,7 @@ public class DataInitializer implements CommandLineRunner {
         // Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB/14" FHD/RTX3050 6GB/W11_Balo
         seedDataProduct("Laptop MSI Gaming Cyborg 14 A13UDX-099VN i7-13620H/16GB/512GB", "Laptop", 1.8, 12, 2, 2, "LaptopMSIGamingCyborg14.png");
         seedDataVariant("/src/assets/products/LaptopMSIGamingCyborg14.png", "LaptopMSICyborg Đen 512GB", 25599900.0, 8, 60);
-
+        seedDataVariantAtribute("512GB", 24, 79); // Dung lượng ổ cứng
         seedDataVariantAtribute("Đen", 3, 79); // Thông tin hàng hóa - Màu sắc
         seedDataVariantAtribute("Intel", 9, 79); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 79); // Bộ xử lý - Công nghệ CPU
@@ -3784,6 +3775,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariant("/src/assets/products/LaptopMSIGamingKatanaA15.jpg", "LaptopMSIKatana Đen 512GB", 26699990.0, 8, 61);
 
         seedDataVariantAtribute("Đen", 3, 80); // Thông tin hàng hóa - Màu sắc
+        seedDataVariantAtribute("512GB", 24, 80); // Dung lượng ổ cứng
         seedDataVariantAtribute("AMD", 9, 80); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Ryzen 7", 61, 80); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("8845HS", 10, 80); // Bộ xử lý - Loại CPU
@@ -3821,6 +3813,7 @@ public class DataInitializer implements CommandLineRunner {
         // Laptop Lenovo ThinkPad E14 G5 I5 13420H/16GB/512GB/14"WUXGA/Win 11
         seedDataVariant("/src/assets/products/LaptopLenovoThinkPad.jpg", "LaptopLenovoThinkPad Đen 512GB", 20799900.0, 8, 62);
         seedDataVariantAtribute("Đen", 3, 81); // Thông tin hàng hóa - Màu sắc
+        seedDataVariantAtribute("512GB", 24, 81); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 9, 81); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 81); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 81); // Bộ xử lý - Loại CPU
@@ -3869,6 +3862,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariant("/src/assets/products/LaptopLenovoThinkPad.jpg", "LaptopLenovoThinkPad Xám 512GB", 22699900.0, 5, 63);
 
         seedDataVariantAtribute("Xám", 3, 82); // Thông tin hàng hóa - Màu sắc
+        seedDataVariantAtribute("512GB", 24, 82); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 9, 82); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i7", 61, 82); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("1355U", 10, 82); // Bộ xử lý - Loại CPU
@@ -3911,6 +3905,7 @@ public class DataInitializer implements CommandLineRunner {
         seedDataVariant("/src/assets/products/LaptopLenovoV15.jpg", "LaptopLenovoV15 Đen 512GB", 15699900.0, 7, 64);
 
         seedDataVariantAtribute("Đen", 3, 83); // Thông tin hàng hóa - Màu sắc
+        seedDataVariantAtribute("512GB", 24, 83); // Dung lượng ổ cứng
         seedDataVariantAtribute("Intel", 9, 83); // Bộ xử lý - Hãng CPU
         seedDataVariantAtribute("Core i5", 61, 83); // Bộ xử lý - Công nghệ CPU
         seedDataVariantAtribute("13420H", 10, 83); // Bộ xử lý - Loại CPU
@@ -5369,12 +5364,18 @@ public class DataInitializer implements CommandLineRunner {
 
         // order
 
-        seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now(), "abc", "0374974098");
+        seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now().plusDays(-4), "abc", "0374974098");
+        seedDataOrder("abc", "Chờ duyệt", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now().plusDays(-2), "abc","0374974097");
+        seedDataOrder("abc", "Chờ duyệt", "Cash", "Chưa thanh toán", 24990000.0, 1L, LocalDateTime.now().plusDays(-1), "abc", "0374974098");
         seedDataOrder("abc", "Chờ duyệt", "BankTransfer", "Đã thanh toán", 27990000.0, 2L, LocalDateTime.now(), "abc","0374974097");
+
 
         // orderDetail
         seedDataOrderDetail(1L,1L,1, 24990000.0, 24990000.0, 3L);
-        seedDataOrderDetail(2L, 1L,1, 27990000.0, 27990000.0, 3L);
+        seedDataOrderDetail(2L, 1L,1, 27990000.0, 27990000.0, 3L);// order
+        seedDataOrderDetail(3L,1L,1, 24990000.0, 24990000.0, 3L);
+        seedDataOrderDetail(4L, 1L,1, 27990000.0, 27990000.0, 3L);
+        // orderDetail
 
 
         System.out.println("Khởi tạo xong");
@@ -5406,7 +5407,7 @@ public class DataInitializer implements CommandLineRunner {
     }
     public void seedDataOrder(String note, String order_status, String payment_method, String payment_status, double total, Long customerId, LocalDateTime order_date, String address,String phone) {
         List<Order> orders = orderRepository.findOrdersByCustomerId(customerId);
-        if (orders.isEmpty()) {
+//        if (orders.isEmpty()) {
             Order order = new Order();
             order.setNote(note);
             order.setOrderStatus(order_status);
@@ -5426,7 +5427,7 @@ public class DataInitializer implements CommandLineRunner {
             order.setPhone(phone);
             orderRepository.save(order);
 
-        }
+//        }
     }
 
     public void seedDataOrderDetail(Long orderId,Long variantId, int quantity, Double price, Double total, Long imeiId) {
