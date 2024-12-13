@@ -116,6 +116,15 @@ public class VariantService {
 
     }
 
+    public void updateVariantQuantity(Long id, double quantity) {
+        Optional<Variant> variantOptional = variantRepository.findById(id);
+        if (variantOptional.isEmpty()) {
+            throw new RuntimeException("Variant not found");
+        }
+        Variant existingVariant = variantOptional.get();
+        existingVariant.setQuantity(quantity);
+        variantRepository.save(existingVariant);
+    }
 
 
 

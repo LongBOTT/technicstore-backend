@@ -1,5 +1,6 @@
 package com.example.technicstore.controller;
 
+import com.example.technicstore.DTO.Request.ProductCreationRequest;
 import com.example.technicstore.entity.Imei;
 import com.example.technicstore.entity.OrderDetail;
 import com.example.technicstore.service.OrderDetailService;
@@ -51,10 +52,9 @@ public class OrderDetailController {
 
     // Cập nhật chi tiết đơn đặt hàng
 
-    @PutMapping("/{id}")
-    public ResponseEntity<OrderDetail> updateOrderDetail(@PathVariable Long id, @RequestBody Map<String, Long> requestBody) {
+    @PutMapping("/{id}/{imeiId}")
+    public ResponseEntity<OrderDetail> updateOrderDetail(@PathVariable Long id, @PathVariable Long imeiId) {
         try {
-            Long imeiId = requestBody.get("imeiId");
             OrderDetail updatedOrderDetail = orderDetailService.updateOrderDetail(id, imeiId);
             return ResponseEntity.ok(updatedOrderDetail);
         } catch (RuntimeException e) {

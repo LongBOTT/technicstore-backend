@@ -54,6 +54,8 @@ public class StockReceiveDetailService {
         int updatedQuantity = (int) (variant.getQuantity() + stockReceiveDetailRequest.getQuantity());
         variant.setQuantity(updatedQuantity);
 
+        // cập nhật giá nhập của phiên bản sản phẩm
+        variant.setCostPrice(stockReceiveDetailRequest.getPrice());
         // Lưu phiên bản sản phẩm đã cập nhật vào database
         variantRepository.save(variant);
 

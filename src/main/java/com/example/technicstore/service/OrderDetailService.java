@@ -2,6 +2,8 @@ package com.example.technicstore.service;
 
 import com.example.technicstore.entity.Imei;
 import com.example.technicstore.entity.OrderDetail;
+import com.example.technicstore.entity.StockReceiveDetail;
+import com.example.technicstore.entity.Variant;
 import com.example.technicstore.repository.OrderDetailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +23,12 @@ public class OrderDetailService {
 
     @Autowired
     private ImeiService imeiService;
+
+    @Autowired
+    private VariantService variantService;
+
+    @Autowired
+    private StockReceiveDetailService stockReceiveDetailService;
     // Tìm kiếm chi tiết theo đơn hàng
     public List<OrderDetail> getOrderDetailsByOrderId(Long orderId) {
         return orderDetailRepository.findByOrderId(orderId);
@@ -45,6 +53,14 @@ public class OrderDetailService {
             Imei imei = imeiService.getImeiById(imeiId)
                     .orElseThrow(() -> new RuntimeException("IMEI không tồn tại"));
             orderDetail.setImei(imei);
+            imeiService.updateImeiStatus(imeiId);
+
+            Variant variant = variantService.getVariantById(imei.getStockReceiveDetail().getVariant().getId()).orElseThrow(() -> new RuntimeException("Variant khong ton tai"));
+            System.out.println("name: " + variant.getName());
+            System.out.println("id"+variant.getId());
+            double quantity = variant.getQuantity()-1;
+            System.out.println("quantity: " + quantity);
+            variantService.updateVariantQuantity(variant.getId(),variant.getQuantity()-1);
             return orderDetailRepository.save(orderDetail);
         }
         throw new RuntimeException("OrderDetail không tồn tại");
