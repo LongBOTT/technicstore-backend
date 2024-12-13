@@ -16,13 +16,13 @@ public class Review {
 
     // Khóa ngoại đến bảng Variants
     @ManyToOne
-    @JoinColumn(name = "variant_id")
-    private Variant variant;
+    @JoinColumn(name = "product_id")
+    private Product product;
 
     // Khóa ngoại đến bảng Accounts
     @ManyToOne
-    @JoinColumn(name = "account_id")
-    private Account account;
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
 
     // Đánh giá sản phẩm (từ 1 đến 5)
     @Column(name = "rating")
@@ -54,20 +54,20 @@ public class Review {
         this.id = id;
     }
 
-    public Variant getVariant() {
-        return variant;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setVariant(Variant variant) {
-        this.variant = variant;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
-    public Account getAccount() {
-        return account;
+    public Product getProduct() {
+        return product;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public int getRating() {

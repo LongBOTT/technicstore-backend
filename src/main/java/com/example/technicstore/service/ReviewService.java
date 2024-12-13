@@ -12,8 +12,8 @@ public class ReviewService {
     @Autowired
     private ReviewRepository reviewRepository;
     // Tìm kiếm theo ID phiên bản
-    public List<Review> findByVariantId(Long variantId) {
-        return reviewRepository.findByVariantId(variantId);
+    public List<Review> findByProductId(Long productId) {
+        return reviewRepository.findReviewByProductId(productId);
     }
 
     // Tạo mới đánh giá

@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface ReviewRepository extends JpaRepository<Review, Long>{
 
     // Tìm kiếm theo ID phiên bản
-    List<Review> findByVariantId(Long variantId);
+    List<Review> findReviewByProductId(Long productId);
 
 
 
