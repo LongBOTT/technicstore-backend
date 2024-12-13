@@ -11,6 +11,7 @@ import java.util.Optional;
 public interface ImeiRepository extends JpaRepository<Imei, Long> {
 
     // Tìm kiếm theo mã IMEI
+    Optional<Imei> findImeiById(long id);
     Optional<Imei> findImeiByImeiCode(String imeiCode);
 
 

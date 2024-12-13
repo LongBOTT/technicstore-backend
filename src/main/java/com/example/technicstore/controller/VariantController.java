@@ -3,8 +3,10 @@ package com.example.technicstore.controller;
 import com.example.technicstore.DTO.Request.VariantCreationRequest;
 import com.example.technicstore.DTO.Response.VariantResponse;
 import com.example.technicstore.entity.Variant;
+import com.example.technicstore.service.OrderService;
 import com.example.technicstore.service.VariantService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.example.technicstore.entity.Product;
@@ -75,6 +77,7 @@ public class VariantController {
             return ResponseEntity.notFound().build();
         }
     }
+
     // Xóa biến thể theo ID
     @PutMapping("/deleteVariantById/{id}")
     public ResponseEntity<Variant> deleteVariantById(@PathVariable Long id) {
@@ -101,4 +104,18 @@ public class VariantController {
     public List<Variant> getAllVariantsByBrandId(@RequestParam Long brandID) {
         return variantService.getVariantsByBrandId(brandID);
     }
+
+    // Cập nhật lại số lượng và imei của đơn trả hàng
+    @PutMapping("/returnOrder/{variantId}/{imeiId}")
+    public ResponseEntity<String> updateReturnOrder(@PathVariable Long variantId, @PathVariable Long imeiId) {
+        try {
+            // Gọi service để cập nhật đơn trả hàng
+            variantService.updateReturnOrder(variantId, imeiId);
+            return new ResponseEntity<>("Cập nhật đơn trả hàng thành công!", HttpStatus.OK);
+        } catch (RuntimeException e) {
+            // Trả về thông báo lỗi nếu gặp exception
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
+
 }

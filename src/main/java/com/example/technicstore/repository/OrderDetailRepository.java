@@ -11,7 +11,7 @@ public interface OrderDetailRepository extends JpaRepository<OrderDetail, Long> 
     List<OrderDetail> findByOrderId(Long orderId);
 
     // Tìm kiếm chi tiết đơn hàng theo id đơn hàng và theo imei
-    OrderDetail findByOrderIdAndImei_ImeiCode(Long orderId, String imeiCode);
+    OrderDetail findByOrderIdAndImei_Id(Long orderId,Long imeiId);
 
 
 }
