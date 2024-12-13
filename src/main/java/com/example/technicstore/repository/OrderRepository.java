@@ -55,7 +55,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
     // Tính doanh thu trong 7 ngày gần nhất
     @Query("SELECT DATE(o.orderDate), SUM(o.total_amount) FROM Order o " +
-            "WHERE  o.orderStatus NOT IN ('Chờ duyệt','Đã hủy', 'Trả hàng') " +
+            "WHERE  o.orderStatus NOT IN ('Đã hủy', 'Trả hàng') " +
             "AND o.orderDate >= :startDate " + // Dùng tham số cho ngày bắt đầu
             "GROUP BY DATE(o.orderDate) ORDER BY DATE(o.orderDate) DESC")
     List<Object[]> calculateRevenueLast7Days(@Param("startDate") LocalDateTime startDate);
